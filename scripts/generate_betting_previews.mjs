@@ -57,6 +57,22 @@ if (posts.length > 0) {
 
 // --- FUNCTIONS ---
 
+function getConferenceHashtag(conference) {
+  const conferenceMap = {
+    "SEC": "#SEC",
+    "Big Ten": "#BIG10", 
+    "Big 12": "#BIG12",
+    "ACC": "#ACC",
+    "Pac-12": "#PAC12",
+    "American Athletic": "#AAC",
+    "Mountain West": "#MWC",
+    "Sun Belt": "#SUNBELT",
+    "Conference USA": "#CUSA",
+    "Mid-American": "#MAC"
+  };
+  return conferenceMap[conference] || `#${conference.replace(/\s+/g, '')}`;
+}
+
 function createBettingPreviewPost(game) {
   // Get odds from DraftKings or ESPN Bet
   const odds = getOdds(game);
@@ -83,19 +99,19 @@ function createBettingPreviewPost(game) {
   
   if (isAwayFavorite) {
     // Away team is favorite (positive spread) - show spread for away, moneyline for home
-    awayTeamText = `${awayInfo.name} (${odds.spread})`;
+    awayTeamText = `${awayInfo.name} (-${odds.spread})`;
     homeTeamText = `${homeInfo.name} (+${odds.homeMoneyline})`;
   } else {
     // Home team is favorite (negative spread) - show spread for home, moneyline for away
     awayTeamText = `${awayInfo.name} (+${odds.awayMoneyline})`;
-    homeTeamText = `${homeInfo.name} (${Math.abs(odds.spread)})`;
+    homeTeamText = `${homeInfo.name} (-${Math.abs(odds.spread)})`;
   }
   
-  // Format time
-  const gameTime = formatGameTime(game.startDate);
+  // Get conference hashtag
+  const conferenceTag = getConferenceHashtag(game.homeConference);
   
   // Create post text
-  const text = `Week 3 Preview\n${awayTeamText} @ ${homeTeamText}. O/U: ${odds.overUnder}\n${gameTime}\n#${awayInfo.hashtag.replace('#', '')} #${homeInfo.hashtag.replace('#', '')}`;
+  const text = `Week 3 ${conferenceTag} Preview\n${awayTeamText} @ ${homeTeamText}. O/U: ${odds.overUnder}\n#${awayInfo.hashtag.replace('#', '')} #${homeInfo.hashtag.replace('#', '')}`;
   
   // Check if already posted
   const id = `betting_preview_${game.id}`;
@@ -169,44 +185,6 @@ function getTeamInfo(teamName) {
   };
 }
 
-function formatGameTime(startDate) {
-  try {
-    const date = new Date(startDate);
-    
-    // Convert UTC to Central Time by working with UTC hours directly
-    const centralOffset = -6; // Central Time is UTC-6
-    let hours = date.getUTCHours() + centralOffset;
-    
-    // Handle day rollover
-    if (hours < 0) hours += 24;
-    if (hours >= 24) hours -= 24;
-    
-    const minutes = date.getUTCMinutes();
-    const dayOfWeekUTC = date.getUTCDay();
-    
-    // Adjust day of week if we crossed midnight
-    let dayOfWeek = dayOfWeekUTC;
-    if (hours < date.getUTCHours() && centralOffset < 0) {
-      dayOfWeek = (dayOfWeekUTC + 6) % 7; // Previous day
-    } else if (hours > date.getUTCHours() && centralOffset > 0) {
-      dayOfWeek = (dayOfWeekUTC + 1) % 7; // Next day
-    }
-    
-    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const dayName = days[dayOfWeek];
-    
-    const ampm = hours >= 12 ? 'PM' : 'AM';
-    const displayHours = hours % 12;
-    const finalHours = displayHours ? displayHours : 12;
-    
-    const timeStr = minutes < 10 ? `${finalHours}:0${minutes}` : `${finalHours}:${minutes}`;
-    
-    return `${dayName} at ${timeStr} ${ampm} CT`;
-  } catch (error) {
-    console.error(`Error formatting time for ${startDate}:`, error);
-    return "Time TBD";
-  }
-}
 
 function loadJson(file, fallback) {
   try {
