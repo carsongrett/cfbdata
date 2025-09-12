@@ -24,7 +24,8 @@ jobs:
         
     - name: Reset posted_ids.json (if requested)
       if: ${{ inputs.reset_posted_ids == 'true' }}
-      run: echo '{"ids": []}' > posted_ids.json
+      run: |
+        echo '{"ids": []}' > posted_ids.json
       
     - name: Cache betting lines
       run: node scripts/cache_betting_lines.mjs
