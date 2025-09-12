@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-12T13:04:21.463Z",
+  "generatedAt": "2025-09-12T23:03:30.447Z",
   "posts": [
     {
       "id": "final_401754531",
@@ -188,6 +188,24 @@
       "text": "Week 3 Preview\nBoston College Eagles (13.5) @ Stanford Cardinal (+390). O/U: 44.5\nSaturday at 8:30 PM CT\n#WeAreBC #GoStanford",
       "link": "https://www.espn.com/college-football/game/_/gameId/401754533",
       "expiresAt": "2025-09-13T13:04:21.424Z",
+      "source": "cfbd"
+    },
+    {
+      "id": "betting_preview_401752705",
+      "kind": "betting_preview",
+      "priority": 90,
+      "text": "Week 3 Preview\nGeorgia Bulldogs (4) @ Tennessee Volunteers (+160). O/U: 50.5\nSaturday at 8:30 AM CT\n#GoDawgs #GBO",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752705",
+      "expiresAt": "2025-09-13T23:01:37.180Z",
+      "source": "cfbd"
+    },
+    {
+      "id": "betting_preview_401752705",
+      "kind": "betting_preview",
+      "priority": 90,
+      "text": "Week 3 Preview\nGeorgia Bulldogs (4) @ Tennessee Volunteers (+160). O/U: 50.5\nSaturday at 8:30 AM CT\n#GoDawgs #GBO",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752705",
+      "expiresAt": "2025-09-13T23:03:30.442Z",
       "source": "cfbd"
     }
   ]

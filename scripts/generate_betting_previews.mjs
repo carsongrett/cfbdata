@@ -144,7 +144,14 @@ function getTeamInfo(teamName) {
   // Try exact match first
   let team = teamHashtags.find(t => t.team === teamName);
   
-  // Try partial matches
+  // Try starts-with matching (best for short names like "Tennessee" -> "Tennessee Volunteers")
+  if (!team) {
+    team = teamHashtags.find(t => 
+      t.team.toLowerCase().startsWith(teamName.toLowerCase())
+    );
+  }
+  
+  // Fallback to contains matching for cases like "Ohio State" -> "Ohio State Buckeyes"
   if (!team) {
     team = teamHashtags.find(t => 
       t.team.toLowerCase().includes(teamName.toLowerCase()) ||
