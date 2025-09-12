@@ -172,20 +172,36 @@ function getTeamInfo(teamName) {
 function formatGameTime(startDate) {
   try {
     const date = new Date(startDate);
-    const centralTime = new Date(date.getTime() - (6 * 60 * 60 * 1000)); // Convert to CT
+    
+    // Convert UTC to Central Time by working with UTC hours directly
+    const centralOffset = -6; // Central Time is UTC-6
+    let hours = date.getUTCHours() + centralOffset;
+    
+    // Handle day rollover
+    if (hours < 0) hours += 24;
+    if (hours >= 24) hours -= 24;
+    
+    const minutes = date.getUTCMinutes();
+    const dayOfWeekUTC = date.getUTCDay();
+    
+    // Adjust day of week if we crossed midnight
+    let dayOfWeek = dayOfWeekUTC;
+    if (hours < date.getUTCHours() && centralOffset < 0) {
+      dayOfWeek = (dayOfWeekUTC + 6) % 7; // Previous day
+    } else if (hours > date.getUTCHours() && centralOffset > 0) {
+      dayOfWeek = (dayOfWeekUTC + 1) % 7; // Next day
+    }
     
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const dayOfWeek = days[centralTime.getDay()];
+    const dayName = days[dayOfWeek];
     
-    let hours = centralTime.getHours();
-    const minutes = centralTime.getMinutes();
     const ampm = hours >= 12 ? 'PM' : 'AM';
-    hours = hours % 12;
-    hours = hours ? hours : 12; // 0 should be 12
+    const displayHours = hours % 12;
+    const finalHours = displayHours ? displayHours : 12;
     
-    const timeStr = minutes < 10 ? `${hours}:0${minutes}` : `${hours}:${minutes}`;
+    const timeStr = minutes < 10 ? `${finalHours}:0${minutes}` : `${finalHours}:${minutes}`;
     
-    return `${dayOfWeek} at ${timeStr} ${ampm} CT`;
+    return `${dayName} at ${timeStr} ${ampm} CT`;
   } catch (error) {
     console.error(`Error formatting time for ${startDate}:`, error);
     return "Time TBD";
