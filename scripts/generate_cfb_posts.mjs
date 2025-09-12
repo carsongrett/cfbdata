@@ -190,7 +190,16 @@ const spRatingsPosts = await processSPRatings();
 drafts.push(...spRatingsPosts);
 
 // --- WRITE OUTPUT ---
-writeJson("public/cfb_queue.json", { generatedAt: nowIso, posts: drafts });
+// Read existing queue to preserve betting previews and other posts
+const existingQueue = readJson("public/cfb_queue.json", { posts: [] });
+const existingPosts = existingQueue.posts || [];
+
+// Merge existing posts with new posts, avoiding duplicates
+const existingIds = new Set(existingPosts.map(p => p.id));
+const newPosts = drafts.filter(d => !existingIds.has(d.id));
+const allPosts = [...existingPosts, ...newPosts];
+
+writeJson("public/cfb_queue.json", { generatedAt: nowIso, posts: allPosts });
 writeJson("posted_ids.json", { ids: [...posted.ids, ...drafts.map(d => d.id)] });
 
 // --- POLL PROCESSING FUNCTIONS ---
