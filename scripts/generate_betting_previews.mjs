@@ -75,26 +75,21 @@ function createBettingPreviewPost(game) {
   }
   
   // Determine favorite and underdog
-  const isHomeFavorite = odds.spread < 0;
-  const favorite = isHomeFavorite ? homeInfo : awayInfo;
-  const underdog = isHomeFavorite ? awayInfo : homeInfo;
+  // Positive spread means away team is favorite, negative spread means home team is favorite
+  const isAwayFavorite = odds.spread > 0;
   
-  // Format spread
-  const spreadText = isHomeFavorite ? 
-    `${homeInfo.name} (${odds.spread})` : 
-    `${awayInfo.name} (+${Math.abs(odds.spread)})`;
+  // Format teams with appropriate odds
+  let awayTeamText, homeTeamText;
   
-  // Format moneyline for underdog
-  const underdogMoneyline = isHomeFavorite ? odds.awayMoneyline : odds.homeMoneyline;
-  const moneylineText = `+${underdogMoneyline}`;
-  
-  // Format teams
-  const awayTeamText = isHomeFavorite ? 
-    `${awayInfo.name} (${moneylineText})` : 
-    awayInfo.name;
-  const homeTeamText = isHomeFavorite ? 
-    homeInfo.name : 
-    `${homeInfo.name} (${moneylineText})`;
+  if (isAwayFavorite) {
+    // Away team is favorite (positive spread) - show spread for away, moneyline for home
+    awayTeamText = `${awayInfo.name} (${odds.spread})`;
+    homeTeamText = `${homeInfo.name} (+${odds.homeMoneyline})`;
+  } else {
+    // Home team is favorite (negative spread) - show spread for home, moneyline for away
+    awayTeamText = `${awayInfo.name} (+${odds.awayMoneyline})`;
+    homeTeamText = `${homeInfo.name} (${Math.abs(odds.spread)})`;
+  }
   
   // Format time
   const gameTime = formatGameTime(game.startDate);
