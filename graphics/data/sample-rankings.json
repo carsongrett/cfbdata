@@ -1,0 +1,37 @@
+{
+  "title": "COLLEGE FOOTBALL POWER RANKINGS",
+  "subtitle": "VIA CFB DATA",
+  "showRecords": true,
+  "teams": [
+    {
+      "rank": 1,
+      "name": "Georgia Bulldogs",
+      "record": "8-0",
+      "conference": "SEC"
+    },
+    {
+      "rank": 2,
+      "name": "Alabama Crimson Tide", 
+      "record": "7-1",
+      "conference": "SEC"
+    },
+    {
+      "rank": 3,
+      "name": "Ohio State Buckeyes",
+      "record": "8-0", 
+      "conference": "Big Ten"
+    },
+    {
+      "rank": 4,
+      "name": "Michigan Wolverines",
+      "record": "8-0",
+      "conference": "Big Ten"
+    },
+    {
+      "rank": 5,
+      "name": "Texas Longhorns",
+      "record": "7-1",
+      "conference": "SEC"
+    }
+  ]
+}

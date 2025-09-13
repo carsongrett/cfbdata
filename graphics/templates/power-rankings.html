@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFB Power Rankings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .team-bar {
+            height: 120px;
+            transition: all 0.2s ease;
+        }
+        
+        .team-bar:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .rank-number {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+        
+        .team-name {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .team-subtext {
+            font-size: 1.25rem;
+            font-weight: 600;
+            opacity: 0.9;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .team-logo {
+            font-size: 3rem;
+            font-weight: 900;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cfb-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 m-0 p-0">
+    <div class="w-[1600px] h-[900px] bg-gray-100 relative overflow-hidden">
+        <!-- Main Content Container -->
+        <div class="p-12 h-full flex flex-col">
+            <!-- Header -->
+            <div class="mb-8">
+                <h1 class="text-6xl font-black text-gray-900 mb-2 tracking-tight">
+                    COLLEGE FOOTBALL POWER RANKINGS
+                </h1>
+                <p class="text-2xl font-semibold text-gray-700">
+                    VIA CFB DATA
+                </p>
+            </div>
+            
+            <!-- Teams Container -->
+            <div class="flex-1 flex flex-col justify-center space-y-4">
+                <!-- Team 1 -->
+                <div class="team-bar bg-red-600 rounded-lg flex items-center px-8 shadow-lg">
+                    <div class="rank-number text-white mr-8">1</div>
+                    <div class="flex-1">
+                        <div class="team-name text-white">GEORGIA BULLDOGS</div>
+                        <div class="team-subtext text-white">8-0</div>
+                    </div>
+                    <div class="team-logo text-white">G</div>
+                </div>
+                
+                <!-- Team 2 -->
+                <div class="team-bar bg-red-800 rounded-lg flex items-center px-8 shadow-lg">
+                    <div class="rank-number text-white mr-8">2</div>
+                    <div class="flex-1">
+                        <div class="team-name text-white">ALABAMA CRIMSON TIDE</div>
+                        <div class="team-subtext text-white">7-1</div>
+                    </div>
+                    <div class="team-logo text-white">A</div>
+                </div>
+                
+                <!-- Team 3 -->
+                <div class="team-bar bg-red-600 rounded-lg flex items-center px-8 shadow-lg">
+                    <div class="rank-number text-white mr-8">3</div>
+                    <div class="flex-1">
+                        <div class="team-name text-white">OHIO STATE BUCKEYES</div>
+                        <div class="team-subtext text-white">8-0</div>
+                    </div>
+                    <div class="team-logo text-white">O</div>
+                </div>
+                
+                <!-- Team 4 -->
+                <div class="team-bar bg-blue-900 rounded-lg flex items-center px-8 shadow-lg">
+                    <div class="rank-number text-white mr-8">4</div>
+                    <div class="flex-1">
+                        <div class="team-name text-white">MICHIGAN WOLVERINES</div>
+                        <div class="team-subtext text-white">8-0</div>
+                    </div>
+                    <div class="team-logo text-white">M</div>
+                </div>
+                
+                <!-- Team 5 -->
+                <div class="team-bar bg-orange-600 rounded-lg flex items-center px-8 shadow-lg">
+                    <div class="rank-number text-white mr-8">5</div>
+                    <div class="flex-1">
+                        <div class="team-name text-white">TEXAS LONGHORNS</div>
+                        <div class="team-subtext text-white">7-1</div>
+                    </div>
+                    <div class="team-logo text-white">T</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CFB Data Logo (Bottom Right) -->
+        <div class="absolute bottom-6 right-6">
+            <div class="cfb-logo text-gray-800">
+                CFB DATA
+            </div>
+        </div>
+    </div>
+</body>
+</html>
