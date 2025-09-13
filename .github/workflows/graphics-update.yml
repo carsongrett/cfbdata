@@ -1,0 +1,97 @@
+name: Update CFB Graphics
+
+on:
+  # Run daily at 6 AM UTC (adjust timezone as needed)
+  schedule:
+    - cron: '0 6 * * *'
+  # Allow manual trigger
+  workflow_dispatch:
+  # Run on push to main branch (for testing)
+  push:
+    branches: [ main ]
+    paths:
+      - 'graphics/scripts/**'
+      - 'graphics/data/**'
+
+jobs:
+  update-graphics:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: |
+        cd graphics
+        npm install
+        
+    - name: Install Playwright browsers
+      run: |
+        cd graphics
+        npx playwright install chromium
+        
+    - name: Test basic script execution
+      run: |
+        cd graphics
+        echo "Testing Node.js and script access..."
+        node --version
+        ls -la scripts/
+        echo "✅ Basic setup complete"
+        
+    - name: Generate Team Graphics
+      run: |
+        cd graphics
+        echo "🎨 Generating team graphics..."
+        node scripts/generate-cfbd-leaders.mjs
+        echo "✅ Team graphics generated"
+        
+    - name: Generate Player Graphics
+      run: |
+        cd graphics
+        echo "🎨 Generating player graphics..."
+        node scripts/generate-player-leaders.mjs
+        echo "✅ Player graphics generated"
+        
+    - name: List Generated Files
+      run: |
+        cd graphics
+        echo "📁 Generated files:"
+        ls -la output/*.png | head -20
+        echo "Total PNG files: $(ls output/*.png | wc -l)"
+        
+    - name: Check for Changes
+      id: changes
+      run: |
+        cd graphics
+        git add output/*.png
+        if git diff --staged --quiet; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "📝 No changes detected in graphics"
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "📝 Changes detected in graphics"
+          git diff --staged --name-only
+        fi
+        
+    - name: Commit Graphics Updates
+      if: steps.changes.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "🤖 Auto-update CFB graphics - $(date '+%Y-%m-%d %H:%M')"
+        echo "✅ Graphics committed successfully"
+        
+    - name: Push Changes
+      if: steps.changes.outputs.changed == 'true'
+      run: |
+        git push
+        echo "✅ Changes pushed to repository"
