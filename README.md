@@ -1,26 +1,30 @@
 # botcfb
 
-A College Football content generation bot that creates social media posts from ESPN data.
+A College Football content generation bot that creates social media posts from ESPN and CollegeFootballData APIs.
 
 ## Overview
 
 This project automatically generates CFB social media content by:
-- Fetching completed games from ESPN's API
+- Fetching completed games from ESPN's API for final score analysis
 - Analyzing game results for upsets, blowouts, nailbiters, etc.
 - Extracting top performer statistics
 - Fetching weekly poll data from CollegeFootballData (CFBD) API
 - Generating poll rankings and movers posts
-- Generating curated posts with appropriate hashtags
+- Fetching betting lines data from CFBD API for game previews
+- Generating betting preview posts with spreads, moneylines, and over/under
+- Generating curated posts with appropriate hashtags and conference tags
 - Maintaining a web interface for content review and copying
 
 ## Architecture
 
 ### Scripts
 - `scripts/generate_cfb_posts.mjs` - Generates final score posts and weekly poll posts
-- Future scripts can be added for different post types (previews, halftime updates, etc.)
+- `scripts/generate_betting_previews.mjs` - Generates betting preview posts for upcoming games
+- `scripts/cache_betting_lines.mjs` - Fetches and caches betting lines data from CFBD API
+- Future scripts can be added for different post types (halftime updates, etc.)
 
 ### Workflows
-- `.github/workflows/generate-cfb.yml` - Runs the content generation script (final scores + polls)
+- `.github/workflows/generate-cfb.yml` - Runs all content generation scripts (final scores + polls + betting previews)
 - Additional workflows can be added for other post types
 
 ### Data Flow
@@ -29,8 +33,9 @@ This project automatically generates CFB social media content by:
 3. Generate social media posts with metadata
 4. Write to `public/cfb_queue.json` with different `kind` values
 5. Cache poll data in `public/poll_cache.json` for week-over-week comparisons
-6. Track posted content in `posted_ids.json` to prevent duplicates
-7. Web interface displays posts by category with copy functionality
+6. Cache betting lines data in `public/betting_lines_cache.json` to reduce API calls
+7. Track posted content in `posted_ids.json` to prevent duplicates
+8. Web interface displays posts by category with copy functionality
 
 ## Post Types
 
@@ -38,9 +43,9 @@ Currently supports:
 - **Final Scores** (`kind: "final"`) - Completed game results with analysis
 - **Poll Top 10** (`kind: "poll_top10"`) - Weekly AP Top 10, Coaches Poll Top 10, and SP+ Power Rankings
 - **Poll Movers** (`kind: "poll_movers"`) - Teams that moved 3+ spots in polls/rankings
+- **Betting Previews** (`kind: "betting_preview"`) - Upcoming game betting analysis with spreads, moneylines, and over/under
 
 Planned expansion:
-- **Game Previews** (`kind: "preview"`) - Upcoming game analysis
 - **Halftime Updates** (`kind: "halftime"`) - Live game score updates
 - **Recruiting News** (`kind: "recruiting"`) - Recruiting updates
 - **Transfer Portal** (`kind: "transfers"`) - Transfer news
@@ -53,11 +58,14 @@ Planned expansion:
 ├── public/
 │   ├── cfb_queue.json        # Generated posts queue (all types)
 │   ├── poll_cache.json       # Cached poll data for week-over-week comparisons
+│   ├── betting_lines_cache.json # Cached betting lines data from CFBD API
 │   └── team_hashtags.json    # Team hashtag mappings for social media posts
 ├── scripts/
-│   └── generate_cfb_posts.mjs # Content generation script (final scores + polls)
+│   ├── generate_cfb_posts.mjs # Content generation script (final scores + polls)
+│   ├── generate_betting_previews.mjs # Betting preview generation script
+│   └── cache_betting_lines.mjs # Betting lines caching script
 └── .github/workflows/
-    └── generate-cfb.yml      # Workflow to run content generation
+    └── generate-cfb.yml      # Workflow to run all content generation
 ```
 
 ## Installation & Setup
@@ -79,16 +87,62 @@ Set the following environment variable:
 ## Usage
 
 ### Manual Generation
-Run the script locally:
+Run the scripts locally:
 ```bash
+# Generate all content (final scores + polls + betting previews)
 node scripts/generate_cfb_posts.mjs
+node scripts/generate_betting_previews.mjs
+
+# Or cache betting lines first (if needed)
+node scripts/cache_betting_lines.mjs
 ```
 
 ### Automated Generation
 The GitHub Action workflow can be triggered manually from the Actions tab. It includes an optional input to reset `posted_ids.json` for re-testing the same games.
 
 ### Web Interface
-Open `index.html` in a browser to view, filter, and copy generated posts. The interface includes separate tabs for "Final Scores" and "Polls" content.
+Open `index.html` in a browser to view, filter, and copy generated posts. The interface includes separate tabs for "Final Scores", "Polls", and "Betting Previews" content.
+
+## Betting Previews Feature
+
+The bot generates betting preview posts for upcoming conference games, providing comprehensive betting analysis and odds information.
+
+### Betting Preview Posts
+- **Format**: `Week X #CONFERENCE Preview\nTeam A (spread) @ Team B (moneyline). O/U: X.X\n#HashtagA #HashtagB`
+- **Data Source**: CollegeFootballData (CFBD) API for betting lines
+- **Caching**: Betting lines are cached in `public/betting_lines_cache.json` to reduce API calls
+- **Team Matching**: Intelligent team name matching from API short names to full team names in `team_hashtags.json`
+
+### Betting Data Included
+- **Point Spreads**: Favorites show negative spreads (e.g., `(-7)`)
+- **Moneylines**: Underdogs show positive moneylines (e.g., `(+160)`)
+- **Over/Under**: Total points line (e.g., `O/U: 46.5`)
+- **Conference Tags**: Automatic conference hashtags in titles (e.g., `#SEC`, `#BIG10`)
+
+### Team Matching Logic
+The system uses a three-tiered approach to match API team names to full team names:
+1. **Exact Match**: Direct string comparison
+2. **Starts-With Match**: API name matches beginning of full name (e.g., "Tennessee" → "Tennessee Volunteers")
+3. **Contains Match**: Fallback for complex cases (e.g., "Ohio State" → "Ohio State Buckeyes")
+
+### Conference Mapping
+Automatic conference hashtag generation:
+- SEC → #SEC
+- Big Ten → #BIG10
+- Big 12 → #BIG12
+- ACC → #ACC
+- Pac-12 → #PAC12
+- American Athletic → #AAC
+- Mountain West → #MWC
+- Sun Belt → #SUNBELT
+- Conference USA → #CUSA
+- Mid-American → #MAC
+
+### Caching Strategy
+- Betting lines are fetched and cached to minimize API calls
+- Cache includes game details, odds, and team information
+- Scripts check cache before making new API requests
+- Cache is updated when new data is available
 
 ## Polls Feature
 
@@ -128,19 +182,21 @@ The bot generates two types of poll-related posts each week for multiple ranking
 
 ## Adding New Post Types
 
-To add a new type of posts (e.g., game previews):
+To add a new type of posts (e.g., halftime updates):
 
-1. **Create new script**: `scripts/generate_preview_posts.mjs`
-   - Follow the same pattern as existing script
-   - Use different API endpoints and logic
+1. **Create new script**: `scripts/generate_halftime_posts.mjs`
+   - Follow the same pattern as existing scripts
+   - Use appropriate API endpoints and logic
    - Write to same `public/cfb_queue.json` with different `kind` value
+   - Include proper team matching and hashtag generation
 
-2. **Create new workflow**: `.github/workflows/generate-preview-posts.yml`
-   - Copy existing workflow structure
-   - Change the script it runs
-   - Set appropriate schedule
+2. **Update main workflow**: Add the new script to `.github/workflows/generate-cfb.yml`
+   - Add the script to the workflow steps
+   - Set appropriate schedule and conditions
 
 3. **Update web interface**: Add new tab to `index.html` for the new post type
+
+4. **Update documentation**: Add the new post type to this README
 
 ## Configuration
 
@@ -151,7 +207,8 @@ To add a new type of posts (e.g., game previews):
 - `LOOKBACK_DAYS`: How many days back to fetch games (default: 5)
 - `BASE`: ESPN API endpoint for scoreboard data
 - `CFBD_BASE`: CollegeFootballData API endpoint
-- Priority scoring: Upsets (90), Blowouts (70), Regular games (60), Polls (80-85)
+- Priority scoring: Betting Previews (90), Upsets (90), Blowouts (70), Regular games (60), Polls (80-85)
+- Betting previews: Conference games only, includes spreads, moneylines, and over/under
 
 ## Available Polls/Rankings
 
