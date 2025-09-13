@@ -161,7 +161,7 @@ function createPostElement(p) {
     </div>
     <div class="button-group">
       <button>Copy</button>
-      <button onclick="openTwitterPost('${p.text.replace(/'/g, "\\'")}')">X</button>
+      <button>X</button>
       <button class="${isPosted ? 'posted' : ''}" ${isPosted ? 'disabled' : ''}>
         ${isPosted ? 'Posted' : 'Mark as Posted'}
       </button>
@@ -172,6 +172,11 @@ function createPostElement(p) {
     await navigator.clipboard.writeText(p.text);
     el.querySelector("button").textContent = "Copied";
     setTimeout(()=>el.querySelector("button").textContent="Copy",900);
+  };
+  
+  // X button functionality
+  el.querySelectorAll("button")[1].onclick = () => {
+    openTwitterPost(p.text);
   };
   
   // Mark as posted button functionality
