@@ -194,7 +194,7 @@
       "id": "stadium_spotlight_michigan",
       "kind": "stadiums",
       "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Michigan Stadium\n\n• Team: Michigan\n• Capacity: 107,601\n• Location: Ann Arbor, MI\n• Surface: Turf\n• Elevation: 256 ft\n\nHome of the Michigan\n\n#MichiganFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Michigan Stadium\n• Team: Michigan\n• Capacity: 107,601\n• Location: Ann Arbor, MI\n• Surface: Turf\n• Elevation: 256 ft\n\n#Michigan #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.119Z",
       "source": "venues"
@@ -203,7 +203,7 @@
       "id": "stadium_spotlight_penn_state",
       "kind": "stadiums",
       "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Beaver Stadium\n\n• Team: Penn State\n• Capacity: 106,572\n• Location: University Park, PA\n• Surface: Grass\n• Elevation: 354 ft\n\nHome of the Penn State\n\n#PennStateFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Beaver Stadium\n• Team: Penn State\n• Capacity: 106,572\n• Location: University Park, PA\n• Surface: Grass\n• Elevation: 354 ft\n\n#PennState #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -212,7 +212,7 @@
       "id": "stadium_spotlight_ohio_state",
       "kind": "stadiums",
       "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Ohio Stadium\n\n• Team: Ohio State\n• Capacity: 102,780\n• Location: Columbus, OH\n• Surface: Turf\n• Elevation: 217 ft\n\nHome of the Ohio State\n\n#OhioStateFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Ohio Stadium\n• Team: Ohio State\n• Capacity: 102,780\n• Location: Columbus, OH\n• Surface: Turf\n• Elevation: 217 ft\n\n#OhioState #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -221,7 +221,7 @@
       "id": "stadium_spotlight_texas_a&m",
       "kind": "stadiums",
       "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Kyle Field\n\n• Team: Texas A&M\n• Capacity: 102,733\n• Location: College Station, TX\n• Surface: Grass\n• Elevation: 109 ft\n\nHome of the Texas A&M\n\n#TexasA&MFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Kyle Field\n• Team: Texas A&M\n• Capacity: 102,733\n• Location: College Station, TX\n• Surface: Grass\n• Elevation: 109 ft\n\n#TexasA&M #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -230,7 +230,7 @@
       "id": "stadium_spotlight_tennessee",
       "kind": "stadiums",
       "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Neyland Stadium\n\n• Team: Tennessee\n• Capacity: 102,455\n• Location: Knoxville, TN\n• Surface: Grass\n• Elevation: 272 ft\n\nHome of the Tennessee\n\n#TennesseeFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Neyland Stadium\n• Team: Tennessee\n• Capacity: 102,455\n• Location: Knoxville, TN\n• Surface: Grass\n• Elevation: 272 ft\n\n#Tennessee #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -239,7 +239,7 @@
       "id": "stadium_spotlight_alabama",
       "kind": "stadiums",
       "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Bryant-Denny Stadium\n\n• Team: Alabama\n• Capacity: 101,821\n• Location: Tuscaloosa, AL\n• Surface: Grass\n• Elevation: 70 ft\n\nHome of the Alabama\n\n#AlabamaFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Bryant-Denny Stadium\n• Team: Alabama\n• Capacity: 101,821\n• Location: Tuscaloosa, AL\n• Surface: Grass\n• Elevation: 70 ft\n\n#Alabama #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -248,7 +248,7 @@
       "id": "stadium_spotlight_texas",
       "kind": "stadiums",
       "priority": 85,
-      "text": "🏟️ Stadium Spotlight: DKR-Texas Memorial Stadium\n\n• Team: Texas\n• Capacity: 100,119\n• Location: Austin, TX\n• Surface: Turf\n• Elevation: 160 ft\n\nHome of the Texas\n\n#TexasFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: DKR-Texas Memorial Stadium\n• Team: Texas\n• Capacity: 100,119\n• Location: Austin, TX\n• Surface: Turf\n• Elevation: 160 ft\n\n#Texas #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -257,7 +257,7 @@
       "id": "stadium_spotlight_georgia",
       "kind": "stadiums",
       "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Sanford Stadium\n\n• Team: Georgia\n• Capacity: 92,746\n• Location: Athens, GA\n• Surface: Grass\n• Elevation: 186 ft\n\nHome of the Georgia\n\n#GeorgiaFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Sanford Stadium\n• Team: Georgia\n• Capacity: 92,746\n• Location: Athens, GA\n• Surface: Grass\n• Elevation: 186 ft\n\n#Georgia #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -266,7 +266,7 @@
       "id": "stadium_spotlight_ucla",
       "kind": "stadiums",
       "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Rose Bowl\n\n• Team: UCLA\n• Capacity: 88,565\n• Location: Pasadena, CA\n• Surface: Grass\n• Elevation: 245 ft\n\nHome of the UCLA\n\n#UCLAFootball #PAC12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Rose Bowl\n• Team: UCLA\n• Capacity: 88,565\n• Location: Pasadena, CA\n• Surface: Grass\n• Elevation: 245 ft\n\n#UCLA #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -275,7 +275,7 @@
       "id": "stadium_spotlight_florida",
       "kind": "stadiums",
       "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Ben Hill Griffin Stadium\n\n• Team: Florida\n• Capacity: 88,548\n• Location: Gainesville, FL\n• Surface: Grass\n• Elevation: 45 ft\n\nHome of the Florida\n\n#FloridaFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Ben Hill Griffin Stadium\n• Team: Florida\n• Capacity: 88,548\n• Location: Gainesville, FL\n• Surface: Grass\n• Elevation: 45 ft\n\n#Florida #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -284,7 +284,7 @@
       "id": "stadium_spotlight_auburn",
       "kind": "stadiums",
       "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Jordan-Hare Stadium\n\n• Team: Auburn\n• Capacity: 87,451\n• Location: Auburn, AL\n• Surface: Grass\n• Elevation: 201 ft\n\nHome of the Auburn\n\n#AuburnFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Jordan-Hare Stadium\n• Team: Auburn\n• Capacity: 87,451\n• Location: Auburn, AL\n• Surface: Grass\n• Elevation: 201 ft\n\n#Auburn #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -293,7 +293,7 @@
       "id": "stadium_spotlight_oklahoma",
       "kind": "stadiums",
       "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Norman, OK)\n\n• Team: Oklahoma\n• Capacity: 86,112\n• Location: Norman, OK\n• Surface: Grass\n• Elevation: 355 ft\n\nHome of the Oklahoma\n\n#OklahomaFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Norman, OK)\n• Team: Oklahoma\n• Capacity: 86,112\n• Location: Norman, OK\n• Surface: Grass\n• Elevation: 355 ft\n\n#Oklahoma #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -302,7 +302,7 @@
       "id": "stadium_spotlight_wisconsin",
       "kind": "stadiums",
       "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Camp Randall Stadium\n\n• Team: Wisconsin\n• Capacity: 80,321\n• Location: Madison, WI\n• Surface: Turf\n• Elevation: 264 ft\n\nHome of the Wisconsin\n\n#WisconsinFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Camp Randall Stadium\n• Team: Wisconsin\n• Capacity: 80,321\n• Location: Madison, WI\n• Surface: Turf\n• Elevation: 264 ft\n\n#Wisconsin #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -311,7 +311,7 @@
       "id": "stadium_spotlight_south_carolina",
       "kind": "stadiums",
       "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Williams-Brice Stadium\n\n• Team: South Carolina\n• Capacity: 80,250\n• Location: Columbia, SC\n• Surface: Grass\n• Elevation: 61 ft\n\nHome of the South Carolina\n\n#SouthCarolinaFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Williams-Brice Stadium\n• Team: South Carolina\n• Capacity: 80,250\n• Location: Columbia, SC\n• Surface: Grass\n• Elevation: 61 ft\n\n#SouthCarolina #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -320,7 +320,7 @@
       "id": "stadium_spotlight_usc",
       "kind": "stadiums",
       "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Los Angeles Memorial Coliseum\n\n• Team: USC\n• Capacity: 77,500\n• Location: Los Angeles, CA\n• Surface: Grass\n• Elevation: 43 ft\n\nHome of the USC\n\n#USCFootball #PAC12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Los Angeles Memorial Coliseum\n• Team: USC\n• Capacity: 77,500\n• Location: Los Angeles, CA\n• Surface: Grass\n• Elevation: 43 ft\n\n#USC #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -329,7 +329,7 @@
       "id": "stadium_spotlight_michigan_state",
       "kind": "stadiums",
       "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Spartan Stadium\n\n• Team: Michigan State\n• Capacity: 75,005\n• Location: East Lansing, MI\n• Surface: Grass\n• Elevation: 255 ft\n\nHome of the Michigan State\n\n#MichiganStateFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Spartan Stadium\n• Team: Michigan State\n• Capacity: 75,005\n• Location: East Lansing, MI\n• Surface: Grass\n• Elevation: 255 ft\n\n#MichiganState #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -338,7 +338,7 @@
       "id": "stadium_spotlight_iowa",
       "kind": "stadiums",
       "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Kinnick Stadium\n\n• Team: Iowa\n• Capacity: 69,250\n• Location: Iowa City, IA\n• Surface: Turf\n• Elevation: 221 ft\n\nHome of the Iowa\n\n#IowaFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Kinnick Stadium\n• Team: Iowa\n• Capacity: 69,250\n• Location: Iowa City, IA\n• Surface: Turf\n• Elevation: 221 ft\n\n#Iowa #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -347,7 +347,7 @@
       "id": "stadium_spotlight_pittsburgh",
       "kind": "stadiums",
       "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Acrisure Stadium\n\n• Team: Pittsburgh\n• Capacity: 68,400\n• Location: Pittsburgh, PA\n• Surface: Grass\n• Elevation: 221 ft\n\nHome of the Pittsburgh\n\n#PittsburghFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Acrisure Stadium\n• Team: Pittsburgh\n• Capacity: 68,400\n• Location: Pittsburgh, PA\n• Surface: Grass\n• Elevation: 221 ft\n\n#Pittsburgh #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -356,7 +356,7 @@
       "id": "stadium_spotlight_florida_state",
       "kind": "stadiums",
       "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Doak Campbell Stadium\n\n• Team: Florida State\n• Capacity: 67,277\n• Location: Tallahassee, FL\n• Surface: Grass\n• Elevation: 20 ft\n\nHome of the Florida State\n\n#FloridaStateFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Doak Campbell Stadium\n• Team: Florida State\n• Capacity: 67,277\n• Location: Tallahassee, FL\n• Surface: Grass\n• Elevation: 20 ft\n\n#FloridaState #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -365,7 +365,7 @@
       "id": "stadium_spotlight_arizona_state",
       "kind": "stadiums",
       "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Mountain America Stadium\n\n• Team: Arizona State\n• Capacity: 65,870\n• Location: Tempe, AZ\n• Surface: Grass\n• Elevation: 360 ft\n\nHome of the Arizona State\n\n#ArizonaStateFootball #PAC12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Mountain America Stadium\n• Team: Arizona State\n• Capacity: 65,870\n• Location: Tempe, AZ\n• Surface: Grass\n• Elevation: 360 ft\n\n#ArizonaState #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -374,7 +374,7 @@
       "id": "stadium_spotlight_miami",
       "kind": "stadiums",
       "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Hard Rock Stadium\n\n• Team: Miami\n• Capacity: 64,767\n• Location: Miami Gardens, FL\n• Surface: Turf\n• Elevation: 3 ft\n\nHome of the Miami\n\n#MiamiFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Hard Rock Stadium\n• Team: Miami\n• Capacity: 64,767\n• Location: Miami Gardens, FL\n• Surface: Turf\n• Elevation: 3 ft\n\n#Miami #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -383,7 +383,7 @@
       "id": "stadium_spotlight_ole_miss",
       "kind": "stadiums",
       "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Vaught-Hemingway Stadium\n\n• Team: Ole Miss\n• Capacity: 64,038\n• Location: Oxford, MS\n• Surface: Grass\n• Elevation: 147 ft\n\nHome of the Ole Miss\n\n#OleMissFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Vaught-Hemingway Stadium\n• Team: Ole Miss\n• Capacity: 64,038\n• Location: Oxford, MS\n• Surface: Grass\n• Elevation: 147 ft\n\n#OleMiss #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -392,7 +392,7 @@
       "id": "stadium_spotlight_byu",
       "kind": "stadiums",
       "priority": 83,
-      "text": "🏟️ Stadium Spotlight: LaVell Edwards Stadium\n\n• Team: BYU\n• Capacity: 63,470\n• Location: Provo, UT\n• Surface: Grass\n• Elevation: 1412 ft\n\nHome of the BYU\n\n#BYUFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: LaVell Edwards Stadium\n• Team: BYU\n• Capacity: 63,470\n• Location: Provo, UT\n• Surface: Grass\n• Elevation: 1412 ft\n\n#BYU #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -401,7 +401,7 @@
       "id": "stadium_spotlight_cal",
       "kind": "stadiums",
       "priority": 83,
-      "text": "🏟️ Stadium Spotlight: California Memorial Stadium\n\n• Team: Cal\n• Capacity: 62,467\n• Location: Berkeley, CA\n• Surface: Turf\n• Elevation: 125 ft\n\nHome of the Cal\n\n#CalFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: California Memorial Stadium\n• Team: Cal\n• Capacity: 62,467\n• Location: Berkeley, CA\n• Surface: Turf\n• Elevation: 125 ft\n\n#Cal #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -410,7 +410,7 @@
       "id": "stadium_spotlight_iowa_state",
       "kind": "stadiums",
       "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Jack Trice Stadium\n\n• Team: Iowa State\n• Capacity: 61,500\n• Location: Ames, IA\n• Surface: Grass\n• Elevation: 275 ft\n\nHome of the Iowa State\n\n#IowaStateFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Jack Trice Stadium\n• Team: Iowa State\n• Capacity: 61,500\n• Location: Ames, IA\n• Surface: Grass\n• Elevation: 275 ft\n\n#IowaState #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -419,7 +419,7 @@
       "id": "stadium_spotlight_virginia",
       "kind": "stadiums",
       "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Scott Stadium\n\n• Team: Virginia\n• Capacity: 61,500\n• Location: Charlottesville, VA\n• Surface: Grass\n• Elevation: 170 ft\n\nHome of the Virginia\n\n#VirginiaFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Scott Stadium\n• Team: Virginia\n• Capacity: 61,500\n• Location: Charlottesville, VA\n• Surface: Grass\n• Elevation: 170 ft\n\n#Virginia #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -428,7 +428,7 @@
       "id": "stadium_spotlight_mississippi_state",
       "kind": "stadiums",
       "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Davis Wade Stadium\n\n• Team: Mississippi State\n• Capacity: 61,337\n• Location: Starkville, MS\n• Surface: Grass\n• Elevation: 110 ft\n\nHome of the Mississippi State\n\n#MississippiStateFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Davis Wade Stadium\n• Team: Mississippi State\n• Capacity: 61,337\n• Location: Starkville, MS\n• Surface: Grass\n• Elevation: 110 ft\n\n#MississippiState #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -437,7 +437,7 @@
       "id": "stadium_spotlight_kentucky",
       "kind": "stadiums",
       "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Kroger Field\n\n• Team: Kentucky\n• Capacity: 61,000\n• Location: Lexington, KY\n• Surface: Turf\n• Elevation: 307 ft\n\nHome of the Kentucky\n\n#KentuckyFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Kroger Field\n• Team: Kentucky\n• Capacity: 61,000\n• Location: Lexington, KY\n• Surface: Turf\n• Elevation: 307 ft\n\n#Kentucky #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -446,7 +446,7 @@
       "id": "stadium_spotlight_texas_tech",
       "kind": "stadiums",
       "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Jones AT&T Stadium\n\n• Team: Texas Tech\n• Capacity: 60,454\n• Location: Lubbock, TX\n• Surface: Turf\n• Elevation: 981 ft\n\nHome of the Texas Tech\n\n#TexasTechFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Jones AT&T Stadium\n• Team: Texas Tech\n• Capacity: 60,454\n• Location: Lubbock, TX\n• Surface: Turf\n• Elevation: 981 ft\n\n#TexasTech #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -455,7 +455,7 @@
       "id": "stadium_spotlight_west_virginia",
       "kind": "stadiums",
       "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Milan Puskar Stadium\n\n• Team: West Virginia\n• Capacity: 60,000\n• Location: Morgantown, WV\n• Surface: Turf\n• Elevation: 327 ft\n\nHome of the West Virginia\n\n#WestVirginiaFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Milan Puskar Stadium\n• Team: West Virginia\n• Capacity: 60,000\n• Location: Morgantown, WV\n• Surface: Turf\n• Elevation: 327 ft\n\n#WestVirginia #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -464,7 +464,7 @@
       "id": "stadium_spotlight_louisville",
       "kind": "stadiums",
       "priority": 82,
-      "text": "🏟️ Stadium Spotlight: L&N Federal Credit Union Stadium\n\n• Team: Louisville\n• Capacity: 60,000\n• Location: Louisville, KY\n• Surface: Turf\n• Elevation: 139 ft\n\nHome of the Louisville\n\n#LouisvilleFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: L&N Federal Credit Union Stadium\n• Team: Louisville\n• Capacity: 60,000\n• Location: Louisville, KY\n• Surface: Turf\n• Elevation: 139 ft\n\n#Louisville #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -473,7 +473,7 @@
       "id": "stadium_spotlight_nc_state",
       "kind": "stadiums",
       "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Carter-Finley Stadium\n\n• Team: NC State\n• Capacity: 58,000\n• Location: Raleigh, NC\n• Surface: Grass\n• Elevation: 117 ft\n\nHome of the NC State\n\n#NCStateFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Carter-Finley Stadium\n• Team: NC State\n• Capacity: 58,000\n• Location: Raleigh, NC\n• Surface: Grass\n• Elevation: 117 ft\n\n#NCState #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -482,7 +482,7 @@
       "id": "stadium_spotlight_purdue",
       "kind": "stadiums",
       "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Ross-Ade Stadium\n\n• Team: Purdue\n• Capacity: 57,282\n• Location: West Lafayette, IN\n• Surface: Grass\n• Elevation: 198 ft\n\nHome of the Purdue\n\n#PurdueFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Ross-Ade Stadium\n• Team: Purdue\n• Capacity: 57,282\n• Location: West Lafayette, IN\n• Surface: Grass\n• Elevation: 198 ft\n\n#Purdue #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -491,7 +491,7 @@
       "id": "stadium_spotlight_oklahoma_state",
       "kind": "stadiums",
       "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Boone Pickens Stadium\n\n• Team: Oklahoma State\n• Capacity: 55,509\n• Location: Stillwater, OK\n• Surface: Turf\n• Elevation: 276 ft\n\nHome of the Oklahoma State\n\n#OklahomaStateFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Boone Pickens Stadium\n• Team: Oklahoma State\n• Capacity: 55,509\n• Location: Stillwater, OK\n• Surface: Turf\n• Elevation: 276 ft\n\n#OklahomaState #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -500,7 +500,7 @@
       "id": "stadium_spotlight_georgia_tech",
       "kind": "stadiums",
       "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Bobby Dodd Stadium\n\n• Team: Georgia Tech\n• Capacity: 55,000\n• Location: Atlanta, GA\n• Surface: Turf\n• Elevation: 279 ft\n\nHome of the Georgia Tech\n\n#GeorgiaTechFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Bobby Dodd Stadium\n• Team: Georgia Tech\n• Capacity: 55,000\n• Location: Atlanta, GA\n• Surface: Turf\n• Elevation: 279 ft\n\n#GeorgiaTech #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -509,7 +509,7 @@
       "id": "stadium_spotlight_oregon",
       "kind": "stadiums",
       "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Autzen Stadium\n\n• Team: Oregon\n• Capacity: 54,000\n• Location: Eugene, OR\n• Surface: Turf\n• Elevation: 127 ft\n\nHome of the Oregon\n\n#OregonFootball #PAC12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Autzen Stadium\n• Team: Oregon\n• Capacity: 54,000\n• Location: Eugene, OR\n• Surface: Turf\n• Elevation: 127 ft\n\n#Oregon #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -518,7 +518,7 @@
       "id": "stadium_spotlight_rutgers",
       "kind": "stadiums",
       "priority": 82,
-      "text": "🏟️ Stadium Spotlight: SHI Stadium\n\n• Team: Rutgers\n• Capacity: 52,454\n• Location: Piscataway, NJ\n• Surface: Turf\n• Elevation: Unknown\n\nHome of the Rutgers\n\n#RutgersFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: SHI Stadium\n• Team: Rutgers\n• Capacity: 52,454\n• Location: Piscataway, NJ\n• Surface: Turf\n• Elevation: Unknown\n\n#Rutgers #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -527,7 +527,7 @@
       "id": "stadium_spotlight_maryland",
       "kind": "stadiums",
       "priority": 82,
-      "text": "🏟️ Stadium Spotlight: SECU Stadium\n\n• Team: Maryland\n• Capacity: 51,802\n• Location: College Park, MD\n• Surface: Turf\n• Elevation: 33 ft\n\nHome of the Maryland\n\n#MarylandFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: SECU Stadium\n• Team: Maryland\n• Capacity: 51,802\n• Location: College Park, MD\n• Surface: Turf\n• Elevation: 33 ft\n\n#Maryland #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -536,7 +536,7 @@
       "id": "stadium_spotlight_utah",
       "kind": "stadiums",
       "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Rice-Eccles Stadium\n\n• Team: Utah\n• Capacity: 51,444\n• Location: Salt Lake City, UT\n• Surface: Turf\n• Elevation: 1412 ft\n\nHome of the Utah\n\n#UtahFootball #PAC12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Rice-Eccles Stadium\n• Team: Utah\n• Capacity: 51,444\n• Location: Salt Lake City, UT\n• Surface: Turf\n• Elevation: 1412 ft\n\n#Utah #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -545,7 +545,7 @@
       "id": "stadium_spotlight_minnesota",
       "kind": "stadiums",
       "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Huntington Bank Stadium\n\n• Team: Minnesota\n• Capacity: 50,850\n• Location: Minneapolis, MN\n• Surface: Turf\n• Elevation: 254 ft\n\nHome of the Minnesota\n\n#MinnesotaFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Huntington Bank Stadium\n• Team: Minnesota\n• Capacity: 50,850\n• Location: Minneapolis, MN\n• Surface: Turf\n• Elevation: 254 ft\n\n#Minnesota #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -554,7 +554,7 @@
       "id": "stadium_spotlight_arizona",
       "kind": "stadiums",
       "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Arizona Stadium\n\n• Team: Arizona\n• Capacity: 50,782\n• Location: Tucson, AZ\n• Surface: Turf\n• Elevation: 742 ft\n\nHome of the Arizona\n\n#ArizonaFootball #PAC12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Arizona Stadium\n• Team: Arizona\n• Capacity: 50,782\n• Location: Tucson, AZ\n• Surface: Turf\n• Elevation: 742 ft\n\n#Arizona #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -563,7 +563,7 @@
       "id": "stadium_spotlight_north_carolina",
       "kind": "stadiums",
       "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Kenan Stadium\n\n• Team: North Carolina\n• Capacity: 50,500\n• Location: Chapel Hill, NC\n• Surface: Turf\n• Elevation: 128 ft\n\nHome of the North Carolina\n\n#NorthCarolinaFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Kenan Stadium\n• Team: North Carolina\n• Capacity: 50,500\n• Location: Chapel Hill, NC\n• Surface: Turf\n• Elevation: 128 ft\n\n#NorthCarolina #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -572,7 +572,7 @@
       "id": "stadium_spotlight_stanford",
       "kind": "stadiums",
       "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Stanford Stadium\n\n• Team: Stanford\n• Capacity: 50,424\n• Location: Stanford, CA\n• Surface: Grass\n• Elevation: 18 ft\n\nHome of the Stanford\n\n#StanfordFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Stanford Stadium\n• Team: Stanford\n• Capacity: 50,424\n• Location: Stanford, CA\n• Surface: Grass\n• Elevation: 18 ft\n\n#Stanford #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -581,7 +581,7 @@
       "id": "stadium_spotlight_colorado",
       "kind": "stadiums",
       "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Folsom Field\n\n• Team: Colorado\n• Capacity: 50,183\n• Location: Boulder, CO\n• Surface: Grass\n• Elevation: 1634 ft\n\nHome of the Colorado\n\n#ColoradoFootball #PAC12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Folsom Field\n• Team: Colorado\n• Capacity: 50,183\n• Location: Boulder, CO\n• Surface: Grass\n• Elevation: 1634 ft\n\n#Colorado #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -590,7 +590,7 @@
       "id": "stadium_spotlight_kansas_state",
       "kind": "stadiums",
       "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Bill Snyder Family Stadium\n\n• Team: Kansas State\n• Capacity: 50,000\n• Location: Manhattan, KS\n• Surface: Turf\n• Elevation: 328 ft\n\nHome of the Kansas State\n\n#KansasStateFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Bill Snyder Family Stadium\n• Team: Kansas State\n• Capacity: 50,000\n• Location: Manhattan, KS\n• Surface: Turf\n• Elevation: 328 ft\n\n#KansasState #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -599,7 +599,7 @@
       "id": "stadium_spotlight_syracuse",
       "kind": "stadiums",
       "priority": 81,
-      "text": "🏟️ Stadium Spotlight: JMA Wireless Dome\n\n• Team: Syracuse\n• Capacity: 49,057\n• Location: Syracuse, NY\n• Surface: Turf\n• Elevation: 163 ft\n\nHome of the Syracuse\n\n#SyracuseFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: JMA Wireless Dome\n• Team: Syracuse\n• Capacity: 49,057\n• Location: Syracuse, NY\n• Surface: Turf\n• Elevation: 163 ft\n\n#Syracuse #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -608,7 +608,7 @@
       "id": "stadium_spotlight_northwestern",
       "kind": "stadiums",
       "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Ryan Field\n\n• Team: Northwestern\n• Capacity: 47,130\n• Location: Evanston, IL\n• Surface: Grass\n• Elevation: 181 ft\n\nHome of the Northwestern\n\n#NorthwesternFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Ryan Field\n• Team: Northwestern\n• Capacity: 47,130\n• Location: Evanston, IL\n• Surface: Grass\n• Elevation: 181 ft\n\n#Northwestern #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -617,7 +617,7 @@
       "id": "stadium_spotlight_kansas",
       "kind": "stadiums",
       "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium\n\n• Team: Kansas\n• Capacity: 47,000\n• Location: Lawrence, KS\n• Surface: Turf\n• Elevation: 275 ft\n\nHome of the Kansas\n\n#KansasFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Memorial Stadium\n• Team: Kansas\n• Capacity: 47,000\n• Location: Lawrence, KS\n• Surface: Turf\n• Elevation: 275 ft\n\n#Kansas #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -626,7 +626,7 @@
       "id": "stadium_spotlight_tcu",
       "kind": "stadiums",
       "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Amon G. Carter Stadium\n\n• Team: TCU\n• Capacity: 46,000\n• Location: Fort Worth, TX\n• Surface: Grass\n• Elevation: 185 ft\n\nHome of the TCU\n\n#TCUFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Amon G. Carter Stadium\n• Team: TCU\n• Capacity: 46,000\n• Location: Fort Worth, TX\n• Surface: Grass\n• Elevation: 185 ft\n\n#TCU #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -635,7 +635,7 @@
       "id": "stadium_spotlight_baylor",
       "kind": "stadiums",
       "priority": 81,
-      "text": "🏟️ Stadium Spotlight: McLane Stadium\n\n• Team: Baylor\n• Capacity: 45,140\n• Location: Waco, TX\n• Surface: Turf\n• Elevation: 117 ft\n\nHome of the Baylor\n\n#BaylorFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: McLane Stadium\n• Team: Baylor\n• Capacity: 45,140\n• Location: Waco, TX\n• Surface: Turf\n• Elevation: 117 ft\n\n#Baylor #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -644,7 +644,7 @@
       "id": "stadium_spotlight_ucf",
       "kind": "stadiums",
       "priority": 80,
-      "text": "🏟️ Stadium Spotlight: FBC Mortgage Stadium\n\n• Team: UCF\n• Capacity: 44,206\n• Location: Orlando, FL\n• Surface: Grass\n• Elevation: 21 ft\n\nHome of the UCF\n\n#UCFFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: FBC Mortgage Stadium\n• Team: UCF\n• Capacity: 44,206\n• Location: Orlando, FL\n• Surface: Grass\n• Elevation: 21 ft\n\n#UCF #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -653,7 +653,7 @@
       "id": "stadium_spotlight_oregon_state",
       "kind": "stadiums",
       "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Reser Stadium\n\n• Team: Oregon State\n• Capacity: 43,363\n• Location: Corvallis, OR\n• Surface: Turf\n• Elevation: 67 ft\n\nHome of the Oregon State\n\n#OregonStateFootball #PAC12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Reser Stadium\n• Team: Oregon State\n• Capacity: 43,363\n• Location: Corvallis, OR\n• Surface: Turf\n• Elevation: 67 ft\n\n#OregonState #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -662,7 +662,7 @@
       "id": "stadium_spotlight_duke",
       "kind": "stadiums",
       "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Wallace Wade Stadium\n\n• Team: Duke\n• Capacity: 40,004\n• Location: Durham, NC\n• Surface: Grass\n• Elevation: 103 ft\n\nHome of the Duke\n\n#DukeFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Wallace Wade Stadium\n• Team: Duke\n• Capacity: 40,004\n• Location: Durham, NC\n• Surface: Grass\n• Elevation: 103 ft\n\n#Duke #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -671,7 +671,7 @@
       "id": "stadium_spotlight_cincinnati",
       "kind": "stadiums",
       "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Nippert Stadium\n\n• Team: Cincinnati\n• Capacity: 40,000\n• Location: Cincinnati, OH\n• Surface: Turf\n• Elevation: 230 ft\n\nHome of the Cincinnati\n\n#CincinnatiFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Nippert Stadium\n• Team: Cincinnati\n• Capacity: 40,000\n• Location: Cincinnati, OH\n• Surface: Turf\n• Elevation: 230 ft\n\n#Cincinnati #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -680,7 +680,7 @@
       "id": "stadium_spotlight_houston",
       "kind": "stadiums",
       "priority": 80,
-      "text": "🏟️ Stadium Spotlight: TDECU Stadium\n\n• Team: Houston\n• Capacity: 40,000\n• Location: Houston, TX\n• Surface: Turf\n• Elevation: 10 ft\n\nHome of the Houston\n\n#HoustonFootball #BIG12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: TDECU Stadium\n• Team: Houston\n• Capacity: 40,000\n• Location: Houston, TX\n• Surface: Turf\n• Elevation: 10 ft\n\n#Houston #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -689,7 +689,7 @@
       "id": "stadium_spotlight_wake_forest",
       "kind": "stadiums",
       "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Allegacy Federal Credit Union Stadium\n\n• Team: Wake Forest\n• Capacity: 31,500\n• Location: Winston-Salem, NC\n• Surface: Turf\n• Elevation: 284 ft\n\nHome of the Wake Forest\n\n#WakeForestFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Allegacy Federal Credit Union Stadium\n• Team: Wake Forest\n• Capacity: 31,500\n• Location: Winston-Salem, NC\n• Surface: Turf\n• Elevation: 284 ft\n\n#WakeForest #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -698,7 +698,7 @@
       "id": "stadium_spotlight_missouri",
       "kind": "stadiums",
       "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n\n• Team: Missouri\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\nHome of the Missouri\n\n#MissouriFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n• Team: Missouri\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\n#Missouri #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -707,7 +707,7 @@
       "id": "stadium_spotlight_nebraska",
       "kind": "stadiums",
       "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n\n• Team: Nebraska\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\nHome of the Nebraska\n\n#NebraskaFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n• Team: Nebraska\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\n#Nebraska #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -716,7 +716,7 @@
       "id": "stadium_spotlight_indiana",
       "kind": "stadiums",
       "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n\n• Team: Indiana\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\nHome of the Indiana\n\n#IndianaFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n• Team: Indiana\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\n#Indiana #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -725,7 +725,7 @@
       "id": "stadium_spotlight_illinois",
       "kind": "stadiums",
       "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n\n• Team: Illinois\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\nHome of the Illinois\n\n#IllinoisFootball #BIG10 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n• Team: Illinois\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\n#Illinois #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -734,7 +734,7 @@
       "id": "stadium_spotlight_clemson",
       "kind": "stadiums",
       "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n\n• Team: Clemson\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\nHome of the Clemson\n\n#ClemsonFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n• Team: Clemson\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\n#Clemson #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -743,7 +743,7 @@
       "id": "stadium_spotlight_vanderbilt",
       "kind": "stadiums",
       "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Hale Stadium\n\n• Team: Vanderbilt\n• Capacity: 10,000\n• Location: Nashville, TN\n• Surface: Grass\n• Elevation: 138 ft\n\nHome of the Vanderbilt\n\n#VanderbiltFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Hale Stadium\n• Team: Vanderbilt\n• Capacity: 10,000\n• Location: Nashville, TN\n• Surface: Grass\n• Elevation: 138 ft\n\n#Vanderbilt #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -752,7 +752,7 @@
       "id": "stadium_spotlight_boston_college",
       "kind": "stadiums",
       "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Albert J. H. Sloan - Alumni Stadium\n\n• Team: Boston College\n• Capacity: 8,500\n• Location: Fairfield, AL\n• Surface: Turf\n• Elevation: Unknown\n\nHome of the Boston College\n\n#BostonCollegeFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Albert J. H. Sloan - Alumni Stadium\n• Team: Boston College\n• Capacity: 8,500\n• Location: Fairfield, AL\n• Surface: Turf\n• Elevation: Unknown\n\n#BostonCollege #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -761,7 +761,7 @@
       "id": "stadium_spotlight_lsu",
       "kind": "stadiums",
       "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Tiger Stadium (AL)\n\n• Team: LSU\n• Capacity: 7,000\n• Location: Livingston, AL\n• Surface: Turf\n• Elevation: Unknown\n\nHome of the LSU\n\n#LSUFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Tiger Stadium (AL)\n• Team: LSU\n• Capacity: 7,000\n• Location: Livingston, AL\n• Surface: Turf\n• Elevation: Unknown\n\n#LSU #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -770,7 +770,7 @@
       "id": "stadium_spotlight_washington_state",
       "kind": "stadiums",
       "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Eiler-Martin Stadium\n\n• Team: Washington State\n• Capacity: 6,000\n• Location: East Stroudsburg, PA\n• Surface: Turf\n• Elevation: Unknown\n\nHome of the Washington State\n\n#WashingtonStateFootball #PAC12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Eiler-Martin Stadium\n• Team: Washington State\n• Capacity: 6,000\n• Location: East Stroudsburg, PA\n• Surface: Turf\n• Elevation: Unknown\n\n#WashingtonState #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -779,7 +779,7 @@
       "id": "stadium_spotlight_virginia_tech",
       "kind": "stadiums",
       "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Barker-Lane Stadium\n\n• Team: Virginia Tech\n• Capacity: 5,500\n• Location: Buies Creek, NC\n• Surface: Turf\n• Elevation: 57 ft\n\nHome of the Virginia Tech\n\n#VirginiaTechFootball #ACC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Barker-Lane Stadium\n• Team: Virginia Tech\n• Capacity: 5,500\n• Location: Buies Creek, NC\n• Surface: Turf\n• Elevation: 57 ft\n\n#VirginiaTech #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -788,7 +788,7 @@
       "id": "stadium_spotlight_washington",
       "kind": "stadiums",
       "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Husky Stadium\n\n• Team: Washington\n• Capacity: 5,000\n• Location: Houston, TX\n• Surface: Turf\n• Elevation: 20 ft\n\nHome of the Washington\n\n#WashingtonFootball #PAC12 #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Husky Stadium\n• Team: Washington\n• Capacity: 5,000\n• Location: Houston, TX\n• Surface: Turf\n• Elevation: 20 ft\n\n#Washington #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
@@ -797,7 +797,7 @@
       "id": "stadium_spotlight_arkansas",
       "kind": "stadiums",
       "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Monarch Stadium\n\n• Team: Arkansas\n• Capacity: 800\n• Location: Fayetteville, NC\n• Surface: Turf\n• Elevation: Unknown\n\nHome of the Arkansas\n\n#ArkansasFootball #SEC #CFBStadiums #CFB",
+      "text": "🏟️ Stadium Spotlight: Monarch Stadium\n• Team: Arkansas\n• Capacity: 800\n• Location: Fayetteville, NC\n• Surface: Turf\n• Elevation: Unknown\n\n#Arkansas #CFB",
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
