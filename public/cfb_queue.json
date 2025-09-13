@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-13T02:26:43.130Z",
+  "generatedAt": "2025-09-13T05:33:31.938Z",
   "posts": [
     {
       "id": "final_401754531",
@@ -801,6 +801,51 @@
       "link": "",
       "expiresAt": "2025-10-13T02:26:43.128Z",
       "source": "venues"
+    },
+    {
+      "id": "final_401752836",
+      "kind": "final",
+      "priority": 70,
+      "text": "Indiana State Sycamores 0 @ #22 Indiana Hoosiers 73 — Final. #Blowout #Shutout #CFB\n(IU): Fernando Mendoza 19/20, 270 YDS, 5 TD\n\n#LEO",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752836",
+      "expiresAt": "2025-09-14T17:33:32.688Z",
+      "source": "espn"
+    },
+    {
+      "id": "final_401754532",
+      "kind": "final",
+      "priority": 70,
+      "text": "Colgate Raiders 24 @ Syracuse Orange 66 — Final. #Blowout #CFB\n(COLG): Cole Fulton 7 CAR, 72 YDS, 1 TD\n(SYR): Steve Angeli 24/32, 417 YDS, 5 TD\n\n#OrangeNation",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754532",
+      "expiresAt": "2025-09-14T17:33:32.688Z",
+      "source": "espn"
+    },
+    {
+      "id": "final_401756893",
+      "kind": "final",
+      "priority": 60,
+      "text": "Colorado Buffaloes 20 @ Houston Cougars 36 — Final. #CFB\n(HOU): Dean Connors 22 CAR, 89 YDS, 1 TD\n\n#GoCoogs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756893",
+      "expiresAt": "2025-09-14T17:33:32.688Z",
+      "source": "espn"
+    },
+    {
+      "id": "final_401756888",
+      "kind": "final",
+      "priority": 60,
+      "text": "Kansas State Wildcats 17 @ Arizona Wildcats 23 — Final. #CFB\n(KSU): Jayce Brown 6 REC, 68 YDS\n(ARIZ): Ismail Mahdi 22 CAR, 189 YDS\n\n#BearDown",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756888",
+      "expiresAt": "2025-09-14T17:33:32.688Z",
+      "source": "espn"
+    },
+    {
+      "id": "final_401752837",
+      "kind": "final",
+      "priority": 60,
+      "text": "New Mexico Lobos 35 @ UCLA Bruins 10 — Final. #CFB\n(UNM): Damon Bankston 15 CAR, 154 YDS, 1 TD\n(UCLA): Nico Iamaleava 22/34, 217 YDS, 1 TD, 1 INT\n\n#GoLobos",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752837",
+      "expiresAt": "2025-09-14T17:33:32.688Z",
+      "source": "espn"
     }
   ]
 }
