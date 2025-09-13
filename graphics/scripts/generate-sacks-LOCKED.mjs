@@ -53,7 +53,7 @@ function encodeImageToBase64(imagePath) {
   }
 }
 
-// Function to generate HTML content
+// Function to generate HTML content - LOCKED VERSION FOR SACKS LEADERS
 function generateHTML(data, teamIdMapping = null) {
   // Try to load and encode the logo
   const logoPath = path.join(__dirname, '..', 'assets', 'x_logo.png');
@@ -64,7 +64,7 @@ function generateHTML(data, teamIdMapping = null) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CFB Leaders</title>
+    <title>CFB Sack Leaders</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
@@ -158,7 +158,8 @@ function generateHTML(data, teamIdMapping = null) {
                   const colors = getTeamColors(team.name);
                   const logo = generateTeamLogo(team.name);
                   
-                  // ALL graphics now use the same format: team name + record on left, stat on far right
+                  // LOCKED FORMAT FOR SACKS - DO NOT MODIFY
+                  // Sack count on far right, record next to team name
                   return `<!-- Team ${team.rank} -->
                 <div class="team-bar rounded-lg flex items-center px-8 shadow-lg" style="background-color: ${colors.primary}">
                     <div class="rank-number text-white mr-8">${team.rank}</div>
@@ -205,33 +206,13 @@ async function generatePNG(data, outputPath, teamIdMapping = null) {
   await browser.close();
 }
 
-// Function to create different leader types
-function createLeadersData(type, teams) {
-  const templates = {
-    power_rankings: {
-      title: "CFB POWER RANKINGS",
-      subtitle: "VIA CFB DATA"
-    },
-    points_scorers: {
-      title: "TOP 5 POINTS SCORERS",
-      subtitle: "VIA CFB DATA"
-    },
-    offensive_yards: {
-      title: "TOP 5 OFFENSIVE YARDS",
-      subtitle: "VIA CFB DATA"
-    },
-    defensive_yards: {
-      title: "LEAST YARDS ALLOWED",
-      subtitle: "VIA CFB DATA"
-    }
-  };
-
-  const template = templates[type] || templates.power_rankings;
-  
+// Function to create sacks leaders data
+function createSacksLeadersData(teams) {
   return {
-    ...template,
+    title: "TEAM SACK LEADERS",
+    subtitle: "VIA CFB DATA",
     showRecords: true,
-    type: type,
+    type: 'sacks',
     teams: teams.map((team, index) => ({
       rank: index + 1,
       name: team.name,
@@ -245,23 +226,26 @@ function createLeadersData(type, teams) {
 // Main function
 async function main() {
   try {
-    console.log('🎨 Generating CFB Leaders graphic...');
+    console.log('🎨 Generating CFB Sack Leaders graphic (LOCKED VERSION)...');
     
     // Load template data
     const templatePath = path.join(__dirname, '..', 'data', 'leaders-template.json');
     const templateData = JSON.parse(fs.readFileSync(templatePath, 'utf8'));
     
+    // Create sacks-specific data
+    const sacksData = createSacksLeadersData(templateData.teams);
+    
     // Generate HTML file
-    const htmlContent = generateHTML(templateData);
-    const htmlOutputPath = path.join(__dirname, '..', 'output', 'leaders.html');
+    const htmlContent = generateHTML(sacksData);
+    const htmlOutputPath = path.join(__dirname, '..', 'output', 'sacks-LOCKED.html');
     fs.writeFileSync(htmlOutputPath, htmlContent);
     console.log('✅ HTML generated successfully!');
     console.log(`📁 HTML Output: ${htmlOutputPath}`);
     
     // Generate PNG file
     console.log('📸 Generating PNG...');
-    const pngOutputPath = path.join(__dirname, '..', 'output', 'leaders.png');
-    await generatePNG(templateData, pngOutputPath);
+    const pngOutputPath = path.join(__dirname, '..', 'output', 'sacks-LOCKED.png');
+    await generatePNG(sacksData, pngOutputPath);
     console.log('✅ PNG generated successfully!');
     console.log(`📁 PNG Output: ${pngOutputPath}`);
     
@@ -276,18 +260,18 @@ async function main() {
 
 // Run if called directly
 if (import.meta.url === `file://${process.argv[1]}`) {
-  console.log('🚀 Starting Leaders generation script...');
+  console.log('🚀 Starting Sack Leaders generation script (LOCKED VERSION)...');
   main().catch(error => {
     console.error('💥 Unhandled error:', error);
     process.exit(1);
   });
 } else {
   // Also run if this is the main module
-  console.log('🚀 Starting Leaders generation script (fallback)...');
+  console.log('🚀 Starting Sack Leaders generation script (LOCKED VERSION - fallback)...');
   main().catch(error => {
     console.error('💥 Unhandled error:', error);
     process.exit(1);
   });
 }
 
-export { generateHTML, generatePNG, getTeamColors, generateTeamLogo, createLeadersData };
+export { generateHTML, generatePNG, getTeamColors, generateTeamLogo, createSacksLeadersData };

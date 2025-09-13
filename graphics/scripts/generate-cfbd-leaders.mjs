@@ -10,15 +10,17 @@ const __dirname = path.dirname(__filename);
 const CFBD_BASE = 'https://api.collegefootballdata.com';
 const API_KEY = 'AYkI+Yu/PHFp5lbWxTjrAjN0q4DFidrdJgSoiGvPXve807qSdw0BJ6c08Vf0kFcN';
 
-// Stats we want to track
+// Stats we want to track (using correct CFBD API stat names)
 const DESIRED_STATS = [
-  'points',
   'rushingYards', 
-  'passingYards',
+  'netPassingYards',        // was 'passingYards'
   'totalYards',
-  'defensivePoints',
   'sacks',
-  'defensiveYards'
+  'totalYardsOpponent',     // was 'defensiveYards'
+  'possessionTime',         // possession time leaders
+  'thirdDownConversions',   // 3rd down conv. leaders
+  'penaltyYards',           // most team penalty yards
+  'turnoversOpponent'       // most turnovers forced
 ];
 
 // Function to make API request
@@ -90,23 +92,27 @@ function processTeamStats(statsData, recordsData) {
 // Function to create leaders data for a specific stat
 function createLeadersData(teams, statName, isDefensive = false) {
   const titles = {
-    'points': 'TOP 5 POINTS SCORERS',
     'rushingYards': 'TEAM RUSHING LEADERS',
-    'passingYards': 'TEAM PASSING LEADERS',
-    'totalYards': 'TOP 5 TOTAL OFFENSE',
-    'defensivePoints': 'LEAST POINTS ALLOWED',
-    'sacks': 'TOP 5 SACKS',
-    'defensiveYards': 'LEAST YARDS ALLOWED'
+    'netPassingYards': 'TEAM PASSING LEADERS',
+    'totalYards': 'TOP 6 TOTAL OFFENSE',
+    'sacks': 'TEAM SACK LEADERS',
+    'totalYardsOpponent': 'LEAST YARDS ALLOWED',
+    'possessionTime': 'POSSESSION TIME LEADERS',
+    'thirdDownConversions': '3RD DOWN CONV. LEADERS',
+    'penaltyYards': 'MOST TEAM PENALTY YDS',
+    'turnoversOpponent': 'MOST TURNOVERS FORCED'
   };
   
   const units = {
-    'points': 'PPG',
     'rushingYards': 'YDS',
-    'passingYards': 'YDS',
-    'totalYards': 'YPG', 
-    'defensivePoints': 'PPG',
+    'netPassingYards': 'YDS',
+    'totalYards': 'YDS', 
     'sacks': 'SACKS',
-    'defensiveYards': 'YPG'
+    'totalYardsOpponent': 'YPG',
+    'possessionTime': 'MINS',
+    'thirdDownConversions': 'CONV',
+    'penaltyYards': 'YDS',
+    'turnoversOpponent': 'TO'
   };
   
   // Filter teams that have this stat
@@ -119,15 +125,15 @@ function createLeadersData(teams, statName, isDefensive = false) {
     return isDefensive ? aValue - bValue : bValue - aValue;
   });
   
-  // Take top 5
-  const top5 = sortedTeams.slice(0, 5);
+  // Take top 6
+  const top6 = sortedTeams.slice(0, 6);
   
   return {
     title: titles[statName],
     subtitle: 'VIA CFB DATA',
     showRecords: true,
     type: statName,
-    teams: top5.map((team, index) => ({
+    teams: top6.map((team, index) => ({
       rank: index + 1,
       name: team.team,
       record: `${team.wins || 0}-${team.losses || 0}`,
@@ -140,13 +146,15 @@ function createLeadersData(teams, statName, isDefensive = false) {
 // Function to generate all leader graphics
 async function generateAllLeaders(teams, teamIdMapping) {
   const leaderTypes = [
-    { stat: 'points', defensive: false },
     { stat: 'rushingYards', defensive: false },
-    { stat: 'passingYards', defensive: false },
+    { stat: 'netPassingYards', defensive: false },
     { stat: 'totalYards', defensive: false },
-    { stat: 'defensivePoints', defensive: true },
     { stat: 'sacks', defensive: false },
-    { stat: 'defensiveYards', defensive: true }
+    { stat: 'totalYardsOpponent', defensive: true },
+    { stat: 'possessionTime', defensive: false },
+    { stat: 'thirdDownConversions', defensive: false },
+    { stat: 'penaltyYards', defensive: false },
+    { stat: 'turnoversOpponent', defensive: false }
   ];
   
   for (const { stat, defensive } of leaderTypes) {
