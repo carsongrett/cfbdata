@@ -53,10 +53,8 @@ function generateHTML(data) {
     <title>CFB Power Rankings</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
-        
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
         
         .team-bar {
@@ -161,11 +159,24 @@ function generateHTML(data) {
 
 // Function to generate PNG using Playwright
 async function generatePNG(data, outputPath) {
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   const page = await browser.newPage();
   
   // Set viewport to match our graphic dimensions
   await page.setViewportSize({ width: 1200, height: 900 });
+  
+  // Block external resources to prevent timeouts
+  await page.route('**/*', (route) => {
+    const url = route.request().url();
+    if (url.includes('cdn.tailwindcss.com') || url.includes('fonts.googleapis.com') || url.includes('fonts.gstatic.com')) {
+      route.abort();
+    } else {
+      route.continue();
+    }
+  });
   
   // Generate HTML content
   const htmlContent = generateHTML(data);
@@ -173,8 +184,11 @@ async function generatePNG(data, outputPath) {
   // Set the HTML content
   await page.setContent(htmlContent);
   
-  // Wait for fonts and images to load
-  await page.waitForLoadState('networkidle');
+  // Wait for DOM to be ready (shorter timeout)
+  await page.waitForLoadState('domcontentloaded');
+  
+  // Add a small delay to ensure rendering is complete
+  await page.waitForTimeout(2000);
   
   // Take screenshot
   await page.screenshot({
