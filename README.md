@@ -44,6 +44,7 @@ Currently supports:
 - **Poll Top 10** (`kind: "poll_top10"`) - Weekly AP Top 10, Coaches Poll Top 10, and SP+ Power Rankings
 - **Poll Movers** (`kind: "poll_movers"`) - Teams that moved 3+ spots in polls/rankings
 - **Betting Previews** (`kind: "betting_preview"`) - Upcoming game betting analysis with spreads, moneylines, and over/under
+- **On This Day** (`kind: "on_this_day"`) - Historical CFB highlights from the same date across multiple seasons
 
 Planned expansion:
 - **Halftime Updates** (`kind: "halftime"`) - Live game score updates
@@ -63,9 +64,11 @@ Planned expansion:
 ├── scripts/
 │   ├── generate_cfb_posts.mjs # Content generation script (final scores + polls)
 │   ├── generate_betting_previews.mjs # Betting preview generation script
-│   └── cache_betting_lines.mjs # Betting lines caching script
+│   ├── cache_betting_lines.mjs # Betting lines caching script
+│   └── generate_on_this_day.mjs # On This Day historical content generation script
 └── .github/workflows/
-    └── generate-cfb.yml      # Workflow to run all content generation
+    ├── generate-cfb.yml      # Workflow to run regular content generation
+    └── generate-on-this-day.yml # Monthly workflow for On This Day content
 ```
 
 ## Installation & Setup
@@ -98,10 +101,11 @@ node scripts/cache_betting_lines.mjs
 ```
 
 ### Automated Generation
-The GitHub Action workflow can be triggered manually from the Actions tab. It includes an optional input to reset `posted_ids.json` for re-testing the same games.
+- **Regular Content**: The main GitHub Action workflow can be triggered manually from the Actions tab. It includes an optional input to reset `posted_ids.json` for re-testing the same games.
+- **On This Day Content**: A separate monthly workflow runs on the 1st of each month to generate historical content for the upcoming month.
 
 ### Web Interface
-Open `index.html` in a browser to view, filter, and copy generated posts. The interface includes separate tabs for "Final Scores", "Polls", and "Betting Previews" content.
+Open `index.html` in a browser to view, filter, and copy generated posts. The interface includes separate tabs for "Final Scores", "Polls", "Betting Previews", and "On This Day" content.
 
 ## Betting Previews Feature
 
@@ -180,6 +184,41 @@ The bot generates two types of poll-related posts each week for multiple ranking
 - Fetches current week and previous week data for comparison
 - Handles different data structures for polls vs. ratings (SP+)
 
+## On This Day Feature
+
+The bot generates historical "On This Day in CFB" posts that highlight memorable games from the same date across multiple seasons.
+
+### On This Day Posts
+- **Format**: Historical highlights from the same MM/DD date across 2018-2024 seasons
+- **Data Source**: CollegeFootballData (CFBD) API `/games` endpoint only
+- **Selection Criteria**: Two highlights per day:
+  - **Closest Finish**: Smallest margin of victory (1-score classic)
+  - **Biggest Blowout**: Largest margin of victory
+- **Tie-breaking Logic**: 
+  - Closest finish: Latest date → Highest total points
+  - Biggest blowout: Earliest date → Highest total points
+
+### Content Generation
+- **Batch Generation**: Creates content for entire month (September 12-30)
+- **Caching**: Stores generated content in `public/on_this_day_cache.json`
+- **Integration**: Automatically merges into main `cfb_queue.json` for web interface
+- **Monthly Schedule**: Runs on 1st of each month via separate GitHub workflow
+
+### Post Format
+```
+On This Day in CFB (9/12)
+• 2023: Alabama 34-24 over Texas — 1-score classic
+• 2021: Georgia 10-3 over Clemson — biggest blowout
+
+#OnThisDay #CFBHistory
+```
+
+### API Efficiency
+- **Single Endpoint**: Uses only `/games` with `date` and `division=fbs` parameters
+- **Minimal Requests**: Exactly 7 requests per date (one per season 2018-2024)
+- **Error Handling**: Gracefully skips failed years without stopping execution
+- **Data Validation**: Only uses games with complete scoring data
+
 ## Adding New Post Types
 
 To add a new type of posts (e.g., halftime updates):
@@ -207,8 +246,9 @@ To add a new type of posts (e.g., halftime updates):
 - `LOOKBACK_DAYS`: How many days back to fetch games (default: 5)
 - `BASE`: ESPN API endpoint for scoreboard data
 - `CFBD_BASE`: CollegeFootballData API endpoint
-- Priority scoring: Betting Previews (90), Upsets (90), Blowouts (70), Regular games (60), Polls (80-85)
+- Priority scoring: Betting Previews (90), Upsets (90), Blowouts (70), Regular games (60), Polls (80-85), On This Day (75)
 - Betting previews: Conference games only, includes spreads, moneylines, and over/under
+- On This Day: Historical content from 2018-2024 seasons, batch generated monthly
 
 ## Available Polls/Rankings
 
