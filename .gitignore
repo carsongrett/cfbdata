@@ -74,10 +74,6 @@ jspm_packages/
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# Graphics output files
-graphics/output/*.html
-graphics/output/*.png
-
 # Keep the output directory but ignore the files
 !graphics/output/.gitkeep
 

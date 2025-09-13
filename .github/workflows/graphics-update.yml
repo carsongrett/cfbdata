@@ -73,7 +73,7 @@ jobs:
       id: changes
       run: |
         cd graphics
-        git add output/*.png
+        git add -f output/*.png
         if git diff --staged --quiet; then
           echo "changed=false" >> $GITHUB_OUTPUT
           echo "📝 No changes detected in graphics"
