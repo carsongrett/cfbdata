@@ -1,0 +1,39 @@
+{
+  "title": "TOP 5 POINTS SCORERS",
+  "subtitle": "VIA CFB DATA",
+  "showRecords": true,
+  "type": "points_scorers",
+  "teams": [
+    {
+      "rank": 1,
+      "name": "Oregon Ducks",
+      "value": "45.2 PPG",
+      "conference": "Big Ten"
+    },
+    {
+      "rank": 2,
+      "name": "Georgia Bulldogs",
+      "value": "42.8 PPG",
+      "conference": "SEC"
+    },
+    {
+      "rank": 3,
+      "name": "Ohio State Buckeyes",
+      "value": "41.5 PPG",
+      "conference": "Big Ten"
+    },
+    {
+      "rank": 4,
+      "name": "Alabama Crimson Tide",
+      "value": "39.2 PPG",
+      "conference": "SEC"
+    },
+    {
+      "rank": 5,
+      "name": "Texas Longhorns",
+      "value": "38.7 PPG",
+      "conference": "SEC"
+    }
+  ]
+}
+

@@ -1,0 +1,44 @@
+{
+  "title": "CFB LEADERS",
+  "subtitle": "VIA CFB DATA",
+  "showRecords": true,
+  "type": "power_rankings",
+  "teams": [
+    {
+      "rank": 1,
+      "name": "Georgia Bulldogs",
+      "record": "8-0",
+      "conference": "SEC",
+      "value": "8-0"
+    },
+    {
+      "rank": 2,
+      "name": "Alabama Crimson Tide", 
+      "record": "7-1",
+      "conference": "SEC",
+      "value": "7-1"
+    },
+    {
+      "rank": 3,
+      "name": "Ohio State Buckeyes",
+      "record": "8-0", 
+      "conference": "Big Ten",
+      "value": "8-0"
+    },
+    {
+      "rank": 4,
+      "name": "Michigan Wolverines",
+      "record": "8-0",
+      "conference": "Big Ten",
+      "value": "8-0"
+    },
+    {
+      "rank": 5,
+      "name": "Texas Longhorns",
+      "record": "7-1",
+      "conference": "SEC",
+      "value": "7-1"
+    }
+  ]
+}
+

@@ -1,0 +1,39 @@
+{
+  "title": "LEAST YARDS ALLOWED",
+  "subtitle": "VIA CFB DATA",
+  "showRecords": true,
+  "type": "defensive_yards",
+  "teams": [
+    {
+      "rank": 1,
+      "name": "Georgia Bulldogs",
+      "value": "245.3 YPG",
+      "conference": "SEC"
+    },
+    {
+      "rank": 2,
+      "name": "Alabama Crimson Tide",
+      "value": "267.8 YPG",
+      "conference": "SEC"
+    },
+    {
+      "rank": 3,
+      "name": "Michigan Wolverines",
+      "value": "289.2 YPG",
+      "conference": "Big Ten"
+    },
+    {
+      "rank": 4,
+      "name": "Ohio State Buckeyes",
+      "value": "298.5 YPG",
+      "conference": "Big Ten"
+    },
+    {
+      "rank": 5,
+      "name": "Penn State Nittany Lions",
+      "value": "312.1 YPG",
+      "conference": "Big Ten"
+    }
+  ]
+}
+

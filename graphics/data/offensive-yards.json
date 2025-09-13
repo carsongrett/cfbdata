@@ -1,0 +1,39 @@
+{
+  "title": "TOP 5 OFFENSIVE YARDS",
+  "subtitle": "VIA CFB DATA",
+  "showRecords": true,
+  "type": "offensive_yards",
+  "teams": [
+    {
+      "rank": 1,
+      "name": "Oregon Ducks",
+      "value": "542.3 YPG",
+      "conference": "Big Ten"
+    },
+    {
+      "rank": 2,
+      "name": "Washington Huskies",
+      "value": "521.8 YPG",
+      "conference": "Big Ten"
+    },
+    {
+      "rank": 3,
+      "name": "USC Trojans",
+      "value": "498.2 YPG",
+      "conference": "Big Ten"
+    },
+    {
+      "rank": 4,
+      "name": "Texas Longhorns",
+      "value": "485.7 YPG",
+      "conference": "SEC"
+    },
+    {
+      "rank": 5,
+      "name": "Georgia Bulldogs",
+      "value": "472.1 YPG",
+      "conference": "SEC"
+    }
+  ]
+}
+

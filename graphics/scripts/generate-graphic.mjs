@@ -46,7 +46,7 @@ function generateHTML(data) {
         }
         
         .team-bar {
-            height: 120px;
+            height: 100px;
         }
         
         .rank-number {
@@ -101,26 +101,26 @@ function generateHTML(data) {
     </style>
 </head>
 <body class="bg-gray-100 m-0 p-0">
-    <div class="w-[1600px] h-[900px] bg-gray-100 relative overflow-hidden">
+    <div class="w-[1200px] h-[900px] bg-gray-100 relative overflow-hidden">
         <!-- Main Content Container -->
         <div class="p-12 h-full flex flex-col">
             <!-- Header -->
-            <div class="mb-8">
-                <h1 class="text-6xl font-black text-gray-900 mb-2 tracking-tight">
+            <div class="mb-1 p-4 rounded-lg" style="background-color: #20A142;">
+                <h1 class="text-6xl font-black text-white mb-2 tracking-tight">
                     ${data.title}
                 </h1>
                 <div class="flex items-center gap-4">
-                    <p class="text-2xl font-semibold text-gray-700">
+                    <p class="text-2xl font-semibold text-white">
                         ${data.subtitle}
                     </p>
                     <div class="logo-container">
-                        <img src="assets/x_logo.png" alt="CFB Data Logo" class="logo-image" />
+                        <img src="../assets/x_logo.png" alt="" class="logo-image" />
                     </div>
                 </div>
             </div>
             
             <!-- Teams Container -->
-            <div class="flex-1 flex flex-col justify-center space-y-4">
+            <div class="flex-1 flex flex-col justify-center space-y-2">
                 ${data.teams.map(team => {
                   const colors = getTeamColors(team.name);
                   const logo = generateTeamLogo(team.name);
@@ -138,12 +138,6 @@ function generateHTML(data) {
             </div>
         </div>
         
-        <!-- CFB Data Logo (Bottom Right) -->
-        <div class="absolute bottom-6 right-6">
-            <div class="cfb-logo text-gray-800">
-                CFB DATA
-            </div>
-        </div>
     </div>
 </body>
 </html>`;
