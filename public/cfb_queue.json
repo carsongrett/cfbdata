@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-12T23:59:14.302Z",
+  "generatedAt": "2025-09-13T01:55:41.188Z",
   "posts": [
     {
       "id": "final_401754531",
@@ -189,6 +189,51 @@
       "link": "https://www.espn.com/college-football/game/_/gameId/401754533",
       "expiresAt": "2025-09-13T23:55:39.553Z",
       "source": "cfbd"
+    },
+    {
+      "id": "stadiums_top10_largest",
+      "kind": "stadiums",
+      "priority": 85,
+      "text": "🏟️ Top 10 Largest FBS Stadiums by Capacity:\n\n1. Bristol Motor Speedway - 162,000 seats\n2. Michigan Stadium - 107,601 seats\n3. Beaver Stadium - 106,572 seats\n4. Ohio Stadium - 102,780 seats\n5. Kyle Field - 102,733 seats\n6. Neyland Stadium - 102,455 seats\n7. Tiger Stadium (LA) - 102,321 seats\n8. Bryant-Denny Stadium - 101,821 seats\n9. DKR-Texas Memorial Stadium - 100,119 seats\n10. AT&T Stadium - 100,000 seats\n\n#CFBStadiums #CFB",
+      "link": "",
+      "expiresAt": "2025-10-13T01:55:41.168Z",
+      "source": "venues"
+    },
+    {
+      "id": "stadiums_highest_elevation",
+      "kind": "stadiums",
+      "priority": 80,
+      "text": "⛰️ Highest FBS Stadiums by Elevation:\n\n1. War Memorial Stadium - 2200 ft\n2. Walkup Skydome - 2098 ft\n3. Falcon Stadium - 2025 ft\n4. Eccles Coliseum - 1764 ft\n5. Folsom Field - 1634 ft\n\n#CFBStadiums #CFB",
+      "link": "",
+      "expiresAt": "2025-10-13T01:55:41.187Z",
+      "source": "venues"
+    },
+    {
+      "id": "stadiums_surface_breakdown",
+      "kind": "stadiums",
+      "priority": 75,
+      "text": "🌱 FBS Stadium Surface Breakdown:\n\n• Grass: 79 (9.5%)\n• Turf: 753 (90.5%)\n\nTotal: 832 FBS venues\n\n#CFBStadiums #CFB",
+      "link": "",
+      "expiresAt": "2025-10-13T01:55:41.187Z",
+      "source": "venues"
+    },
+    {
+      "id": "stadium_spotlight_michigan",
+      "kind": "stadiums",
+      "priority": 90,
+      "text": "🏟️ Stadium Spotlight: Michigan Stadium\n\n• Capacity: 107,601\n• Location: Ann Arbor, MI\n• Surface: Turf\n• Elevation: 256 ft\n\n\"The Big House\" - Home of Michigan Football\n\n#MichiganFootball #CFBStadiums #CFB",
+      "link": "",
+      "expiresAt": "2025-10-13T01:55:41.187Z",
+      "source": "venues"
+    },
+    {
+      "id": "stadium_spotlight_alabama",
+      "kind": "stadiums",
+      "priority": 90,
+      "text": "🏟️ Stadium Spotlight: Bryant-Denny Stadium\n\n• Capacity: 101,821\n• Location: Tuscaloosa, AL\n• Surface: Grass\n• Elevation: 70 ft\n\nHome of the Alabama Crimson Tide\n\n#AlabamaFootball #CFBStadiums #CFB",
+      "link": "",
+      "expiresAt": "2025-10-13T01:55:41.187Z",
+      "source": "venues"
     }
   ]
 }

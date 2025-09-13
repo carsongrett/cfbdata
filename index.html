@@ -31,6 +31,7 @@
   <button class="tab active" data-tab="final">Final Scores</button>
   <button class="tab" data-tab="polls">Polls</button>
   <button class="tab" data-tab="betting">Betting Previews</button>
+  <button class="tab" data-tab="stadiums">Stadiums</button>
 </div>
 <div id="final-tab" class="tab-content active">
   <div id="final-list">Loading…</div>
@@ -40,6 +41,9 @@
 </div>
 <div id="betting-tab" class="tab-content">
   <div id="betting-list">Loading…</div>
+</div>
+<div id="stadiums-tab" class="tab-content">
+  <div id="stadiums-list">Loading…</div>
 </div>
 
 <script>
@@ -79,9 +83,11 @@ async function load() {
   const finalList = document.getElementById("final-list");
   const pollsList = document.getElementById("polls-list");
   const bettingList = document.getElementById("betting-list");
+  const stadiumsList = document.getElementById("stadiums-list");
   finalList.textContent = "Loading…";
   pollsList.textContent = "Loading…";
   bettingList.textContent = "Loading…";
+  stadiumsList.textContent = "Loading…";
   
   try {
     const res = await fetch(URL + "?v=" + Date.now(), { cache: "no-store" });
@@ -95,6 +101,7 @@ async function load() {
     const finalPosts = data.posts?.filter(p => p.kind === "final") || [];
     const pollPosts = data.posts?.filter(p => p.kind === "poll_top10" || p.kind === "poll_movers") || [];
     const bettingPosts = data.posts?.filter(p => p.kind === "betting_preview") || [];
+    const stadiumPosts = data.posts?.filter(p => p.kind === "stadiums") || [];
 
     // Sort posts: unposted first, then posted (by priority desc, then by original order)
     const postedItems = getPostedItems();
@@ -140,10 +147,21 @@ async function load() {
       }
     }
 
+    // Render stadium posts
+    stadiumsList.innerHTML = "";
+    if (!stadiumPosts.length) {
+      stadiumsList.textContent = "No stadium posts in queue.";
+    } else {
+      for (const p of sortPosts(stadiumPosts)) {
+        stadiumsList.appendChild(createPostElement(p));
+      }
+    }
+
   } catch (err) {
     finalList.textContent = "Could not load queue: " + err.message;
     pollsList.textContent = "Could not load queue: " + err.message;
     bettingList.textContent = "Could not load queue: " + err.message;
+    stadiumsList.textContent = "Could not load queue: " + err.message;
   }
 }
 
