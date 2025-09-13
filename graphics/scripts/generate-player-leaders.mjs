@@ -276,26 +276,24 @@ async function generatePNG(data, outputPath) {
   // Set viewport size for 1600x900 graphic
   await page.setViewportSize({ width: 1600, height: 900 });
   
-  // Block external resources to prevent timeouts
-  await page.route('**/*', (route) => {
-    const url = route.request().url();
-    if (url.includes('cdn.tailwindcss.com') || url.includes('fonts.googleapis.com') || url.includes('fonts.gstatic.com')) {
-      route.abort();
-    } else {
-      route.continue();
-    }
-  });
+  // Allow all resources to load (including fonts and CDN)
+  // No route blocking to ensure fonts load properly
   
   const htmlContent = generatePlayerHTML(data);
   
   // Set the HTML content
   await page.setContent(htmlContent);
   
-  // Wait for DOM to be ready (shorter timeout)
+  // Wait for fonts to load specifically
   await page.waitForLoadState('domcontentloaded');
   
-  // Add a small delay to ensure rendering is complete
-  await page.waitForTimeout(2000);
+  // Wait for fonts to load by checking if Inter font is available
+  await page.evaluate(() => {
+    return document.fonts.ready;
+  });
+  
+  // Additional wait to ensure fonts are rendered
+  await page.waitForTimeout(3000);
   
   // Take screenshot
   await page.screenshot({

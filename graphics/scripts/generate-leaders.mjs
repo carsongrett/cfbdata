@@ -67,8 +67,10 @@ function generateHTML(data, teamIdMapping = null) {
     <title>CFB Leaders</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+        
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
         }
         
         .team-bar {
@@ -187,15 +189,8 @@ async function generatePNG(data, outputPath, teamIdMapping = null) {
   // Set viewport to match our graphic dimensions
   await page.setViewportSize({ width: 1200, height: 900 });
   
-  // Block external resources to prevent timeouts
-  await page.route('**/*', (route) => {
-    const url = route.request().url();
-    if (url.includes('cdn.tailwindcss.com') || url.includes('fonts.googleapis.com') || url.includes('fonts.gstatic.com')) {
-      route.abort();
-    } else {
-      route.continue();
-    }
-  });
+  // Allow all resources to load (including fonts and CDN)
+  // No route blocking to ensure fonts load properly
   
   // Generate HTML content
   const htmlContent = generateHTML(data, teamIdMapping);
@@ -203,11 +198,16 @@ async function generatePNG(data, outputPath, teamIdMapping = null) {
   // Set the HTML content
   await page.setContent(htmlContent);
   
-  // Wait for DOM to be ready (shorter timeout)
+  // Wait for fonts to load specifically
   await page.waitForLoadState('domcontentloaded');
   
-  // Add a small delay to ensure rendering is complete
-  await page.waitForTimeout(2000);
+  // Wait for fonts to load by checking if Inter font is available
+  await page.evaluate(() => {
+    return document.fonts.ready;
+  });
+  
+  // Additional wait to ensure fonts are rendered
+  await page.waitForTimeout(3000);
   
   // Take screenshot
   await page.screenshot({
