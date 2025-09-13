@@ -9,7 +9,7 @@ on:
       reset_cache:
         description: 'Reset the On This Day cache and regenerate all content'
         required: false
-        default: 'false'
+        default: false
         type: boolean
 
 jobs:
