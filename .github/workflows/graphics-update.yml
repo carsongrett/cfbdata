@@ -62,18 +62,23 @@ jobs:
         node scripts/generate-player-leaders.mjs
         echo "✅ Player graphics generated"
         
-    - name: List Generated Files
+    - name: Move PNG files to root
       run: |
         cd graphics
-        echo "📁 Generated files:"
-        ls -la output/*.png | head -20
-        echo "Total PNG files: $(ls output/*.png | wc -l)"
+        echo "📁 Moving PNG files to root level..."
+        mv output/*.png ../
+        echo "✅ PNG files moved to root level"
+        
+    - name: List Generated Files
+      run: |
+        echo "📁 Generated files in root:"
+        ls -la *.png | head -20
+        echo "Total PNG files: $(ls *.png | wc -l)"
         
     - name: Check for Changes
       id: changes
       run: |
-        cd graphics
-        git add -f output/*.png
+        git add -f *.png
         if git diff --staged --quiet; then
           echo "changed=false" >> $GITHUB_OUTPUT
           echo "📝 No changes detected in graphics"
