@@ -5,7 +5,14 @@
 <title>CFB Content Queue</title>
 <style>
   body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:800px;margin:32px auto;padding:0 16px}
-  header{display:flex;align-items:center;gap:8px;margin-bottom:16px}
+  header{display:flex;align-items:center;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+  @media (max-width: 600px) {
+    body{margin:16px auto;padding:0 8px}
+    header{gap:4px;margin-bottom:12px}
+    header h1{font-size:24px}
+    .meta{font-size:11px}
+    button{padding:4px 8px;font-size:12px}
+  }
   .tabs{display:flex;gap:4px;margin-bottom:16px;border-bottom:1px solid #e5e7eb}
   .tab{padding:8px 16px;border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;color:#6b7280}
   .tab.active{border-bottom-color:#3b82f6;color:#1f2937;font-weight:500}
@@ -24,8 +31,10 @@
 <header>
   <h1 style="margin:0">CFB Content Queue</h1>
   <small id="ts" class="meta"></small>
+  <div id="auto-refresh-status" class="meta" style="margin-left: 8px; padding: 2px 6px; border-radius: 4px; background: #f3f4f6; white-space: nowrap; font-size: 11px;"></div>
   <button id="refresh">Refresh</button>
   <button id="clearPosted">Clear Posted</button>
+  <button id="toggleAutoRefresh" style="margin-left: 4px;">Auto-Refresh: ON</button>
 </header>
 <div class="tabs">
   <button class="tab active" data-tab="final">Final Scores</button>
@@ -52,6 +61,219 @@
 
 <script>
 const URL = "public/cfb_queue.json";
+
+// Auto-refresh functionality
+let autoRefreshInterval = null;
+let autoRefreshEnabled = true;
+let nextRefreshTime = null;
+
+// Schedule configuration - specific times in CT (Central Time)
+const AUTO_REFRESH_SCHEDULE = {
+  thursday: [19, 22], // 7 PM, 10 PM CT
+  friday: [19, 20.5, 22], // 7 PM, 8:30 PM, 10 PM CT
+  saturday: {
+    startHour: 12, // Noon
+    endHour: 24,   // Midnight
+    interval: 30   // 30 minutes
+  }
+};
+
+// Get current day of week (0 = Sunday, 1 = Monday, etc.)
+function getCurrentDayOfWeek() {
+  return new Date().getDay();
+}
+
+// Convert CT to local time (approximate - assumes user is in CT or ET)
+function convertCTToLocal(ctHour) {
+  // Simple conversion - in production you might want to use a proper timezone library
+  // This assumes most users are in CT or ET (1 hour ahead)
+  const offset = new Date().getTimezoneOffset();
+  const isET = offset === 300; // Eastern Time is UTC-5 (300 minutes)
+  const isCT = offset === 360; // Central Time is UTC-6 (360 minutes)
+  
+  if (isCT) return ctHour;
+  if (isET) return ctHour + 1; // ET is 1 hour ahead of CT
+  
+  // Default to CT if timezone is unclear
+  return ctHour;
+}
+
+// Check if we're in the auto-refresh window
+function isInAutoRefreshWindow() {
+  const now = new Date();
+  const dayOfWeek = getCurrentDayOfWeek();
+  const currentHour = now.getHours() + (now.getMinutes() / 60); // Include minutes as decimal
+  
+  // Thursday = 4, Friday = 5, Saturday = 6
+  if (dayOfWeek === 4) { // Thursday
+    const scheduleTimes = AUTO_REFRESH_SCHEDULE.thursday.map(convertCTToLocal);
+    return scheduleTimes.some(time => {
+      const timeDiff = Math.abs(currentHour - time);
+      return timeDiff < 0.1; // Within 6 minutes of scheduled time
+    });
+  } else if (dayOfWeek === 5) { // Friday
+    const scheduleTimes = AUTO_REFRESH_SCHEDULE.friday.map(convertCTToLocal);
+    return scheduleTimes.some(time => {
+      const timeDiff = Math.abs(currentHour - time);
+      return timeDiff < 0.1; // Within 6 minutes of scheduled time
+    });
+  } else if (dayOfWeek === 6) { // Saturday
+    const startHour = convertCTToLocal(AUTO_REFRESH_SCHEDULE.saturday.startHour);
+    const endHour = convertCTToLocal(AUTO_REFRESH_SCHEDULE.saturday.endHour);
+    return currentHour >= startHour && currentHour < endHour;
+  }
+  return false;
+}
+
+// Get next refresh time in milliseconds
+function getNextRefreshTime() {
+  const now = new Date();
+  const dayOfWeek = getCurrentDayOfWeek();
+  const currentHour = now.getHours() + (now.getMinutes() / 60);
+  
+  let nextTimes = [];
+  
+  // Thursday = 4, Friday = 5, Saturday = 6
+  if (dayOfWeek === 4) { // Thursday
+    nextTimes = AUTO_REFRESH_SCHEDULE.thursday.map(convertCTToLocal);
+  } else if (dayOfWeek === 5) { // Friday
+    nextTimes = AUTO_REFRESH_SCHEDULE.friday.map(convertCTToLocal);
+  } else if (dayOfWeek === 6) { // Saturday
+    // For Saturday, calculate next 30-minute interval
+    const startHour = convertCTToLocal(AUTO_REFRESH_SCHEDULE.saturday.startHour);
+    const endHour = convertCTToLocal(AUTO_REFRESH_SCHEDULE.saturday.endHour);
+    if (currentHour >= startHour && currentHour < endHour) {
+      const nextInterval = Math.ceil(currentHour * 2) / 2; // Round up to next 30-minute mark
+      if (nextInterval < endHour) {
+        nextTimes = [nextInterval];
+      }
+    }
+  }
+  
+  // Find the next time that's in the future
+  const futureTimes = nextTimes.filter(time => time > currentHour);
+  if (futureTimes.length > 0) {
+    const nextTime = Math.min(...futureTimes);
+    const nextDate = new Date(now);
+    nextDate.setHours(Math.floor(nextTime), (nextTime % 1) * 60, 0, 0);
+    return nextDate.getTime() - now.getTime();
+  }
+  
+  return null; // No more times today
+}
+
+// Update auto-refresh status display
+function updateAutoRefreshStatus() {
+  const statusEl = document.getElementById('auto-refresh-status');
+  const toggleBtn = document.getElementById('toggleAutoRefresh');
+  
+  if (!autoRefreshEnabled) {
+    statusEl.textContent = 'Auto-refresh: OFF';
+    statusEl.style.background = '#fecaca';
+    statusEl.style.color = '#991b1b';
+    toggleBtn.textContent = 'Auto-Refresh: OFF';
+    return;
+  }
+  
+  const nextRefreshMs = getNextRefreshTime();
+  if (nextRefreshMs !== null) {
+    const nextRefresh = new Date(Date.now() + nextRefreshMs);
+    statusEl.textContent = `Next refresh: ${nextRefresh.toLocaleTimeString()}`;
+    statusEl.style.background = '#dcfce7';
+    statusEl.style.color = '#166534';
+    toggleBtn.textContent = 'Auto-Refresh: ON';
+    nextRefreshTime = nextRefresh;
+  } else {
+    statusEl.textContent = 'No more refreshes today';
+    statusEl.style.background = '#fef3c7';
+    statusEl.style.color = '#92400e';
+    toggleBtn.textContent = 'Auto-Refresh: ON';
+    nextRefreshTime = null;
+  }
+}
+
+// Start auto-refresh
+function startAutoRefresh() {
+  if (!autoRefreshEnabled) return;
+  
+  // Clear existing interval
+  if (autoRefreshInterval) {
+    clearInterval(autoRefreshInterval);
+  }
+  
+  // Check for immediate refresh (within 6 minutes of scheduled time)
+  if (isInAutoRefreshWindow()) {
+    const activeTab = document.querySelector('.tab.active');
+    if (activeTab && activeTab.dataset.tab === 'final') {
+      console.log('Auto-refreshing final scores (immediate)...');
+      load();
+    }
+  }
+  
+  // Set up next refresh
+  scheduleNextRefresh();
+  updateAutoRefreshStatus();
+}
+
+// Schedule the next refresh
+function scheduleNextRefresh() {
+  const nextRefreshMs = getNextRefreshTime();
+  if (nextRefreshMs === null) return;
+  
+  // Clear existing interval
+  if (autoRefreshInterval) {
+    clearInterval(autoRefreshInterval);
+  }
+  
+  autoRefreshInterval = setTimeout(() => {
+    if (autoRefreshEnabled) {
+      // Only refresh if we're on the final scores tab
+      const activeTab = document.querySelector('.tab.active');
+      if (activeTab && activeTab.dataset.tab === 'final') {
+        console.log('Auto-refreshing final scores...');
+        load();
+      }
+      
+      // Schedule the next refresh
+      scheduleNextRefresh();
+      updateAutoRefreshStatus();
+    }
+  }, nextRefreshMs);
+}
+
+// Stop auto-refresh
+function stopAutoRefresh() {
+  if (autoRefreshInterval) {
+    clearTimeout(autoRefreshInterval);
+    autoRefreshInterval = null;
+  }
+  updateAutoRefreshStatus();
+}
+
+// Toggle auto-refresh
+function toggleAutoRefresh() {
+  autoRefreshEnabled = !autoRefreshEnabled;
+  localStorage.setItem('autoRefreshEnabled', autoRefreshEnabled.toString());
+  if (autoRefreshEnabled) {
+    startAutoRefresh();
+  } else {
+    stopAutoRefresh();
+  }
+}
+
+// Initialize auto-refresh on page load
+function initializeAutoRefresh() {
+  // Check auto-refresh preference from localStorage
+  const saved = localStorage.getItem('autoRefreshEnabled');
+  if (saved !== null) {
+    autoRefreshEnabled = saved === 'true';
+  }
+  
+  startAutoRefresh();
+  
+  // Update status every minute to show countdown
+  setInterval(updateAutoRefreshStatus, 60000);
+}
 
 // Get posted items from localStorage
 function getPostedItems() {
@@ -268,6 +490,23 @@ function createGraphicCard(graphic) {
   `;
 }
 
+// Get relative time string (e.g., "2 hours ago", "30 minutes ago")
+function getTimeAgo(dateString) {
+  const now = new Date();
+  const past = new Date(dateString);
+  const diffMs = now - past;
+  const diffMins = Math.floor(diffMs / (1000 * 60));
+  const diffHours = Math.floor(diffMins / 60);
+  const diffDays = Math.floor(diffHours / 24);
+  
+  if (diffMins < 1) return 'just now';
+  if (diffMins < 60) return `${diffMins} min${diffMins === 1 ? '' : 's'} ago`;
+  if (diffHours < 24) return `${diffHours} hour${diffHours === 1 ? '' : 's'} ago`;
+  if (diffDays < 7) return `${diffDays} day${diffDays === 1 ? '' : 's'} ago`;
+  
+  return `${Math.floor(diffDays / 7)} week${Math.floor(diffDays / 7) === 1 ? '' : 's'} ago`;
+}
+
 // Copy image to clipboard
 async function copyImageToClipboard(filename) {
   try {
@@ -321,6 +560,10 @@ function createPostElement(p) {
   const postedItems = getPostedItems();
   const isPosted = postedItems.includes(p.id);
   
+  // Format generation time for display
+  const generatedTime = p.generatedAt ? new Date(p.generatedAt).toLocaleString() : 'Unknown';
+  const timeAgo = p.generatedAt ? getTimeAgo(p.generatedAt) : '';
+  
   el.className = `post${isPosted ? ' posted' : ''}`;
   el.innerHTML = `
     <div style="flex:1">
@@ -328,13 +571,13 @@ function createPostElement(p) {
       <div class="meta">${p.kind} • priority ${p.priority}${
         p.link ? ` • <a href="${p.link}" target="_blank">boxscore</a>` : ""
       }${isPosted ? ' • <strong>POSTED</strong>' : ''}</div>
+      <div class="meta" style="color: #9ca3af; font-size: 11px; margin-top: 4px;">
+        Generated: ${generatedTime}${timeAgo ? ` (${timeAgo})` : ''}
+      </div>
     </div>
     <div class="button-group">
       <button>Copy</button>
-      <button>X</button>
-      <button class="${isPosted ? 'posted' : ''}" ${isPosted ? 'disabled' : ''}>
-        ${isPosted ? 'Posted' : 'Mark as Posted'}
-      </button>
+      <button class="${isPosted ? 'posted' : ''}">X</button>
     </div>`;
   
   // Copy button functionality
@@ -344,17 +587,14 @@ function createPostElement(p) {
     setTimeout(()=>el.querySelector("button").textContent="Copy",900);
   };
   
-  // X button functionality
+  // X button functionality - opens Twitter AND marks as posted
   el.querySelectorAll("button")[1].onclick = () => {
     openTwitterPost(p.text);
-  };
-  
-  // Mark as posted button functionality
-  if (!isPosted) {
-    el.querySelectorAll("button")[2].onclick = () => {
+    // Automatically mark as posted when X button is clicked
+    if (!isPosted) {
       markAsPosted(p.id);
-    };
-  }
+    }
+  };
   
   return el;
 }
@@ -377,6 +617,10 @@ document.getElementById("clearPosted").onclick = () => {
   console.log('Cleared posted items from localStorage');
   load();
 };
+document.getElementById("toggleAutoRefresh").onclick = toggleAutoRefresh;
+
+// Initialize everything
+initializeAutoRefresh();
 load();
 </script>
 </html>
