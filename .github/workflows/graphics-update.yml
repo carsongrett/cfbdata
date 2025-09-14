@@ -71,6 +71,12 @@ jobs:
         mv output/*.png ../
         echo "✅ PNG files moved to root level"
         
+    - name: Create graphics metadata
+      run: |
+        echo "📝 Creating graphics metadata..."
+        node create-graphics-metadata.mjs
+        echo "✅ Graphics metadata created"
+        
     - name: List Generated Files
       run: |
         echo "📁 Generated files in root:"

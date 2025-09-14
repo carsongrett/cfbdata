@@ -425,8 +425,23 @@ async function loadGraphics() {
   const graphicsList = document.getElementById("graphics-list");
   graphicsList.innerHTML = "";
 
-  // Get file modification times
-  const fileTimes = await getFileModificationTimes([...teamGraphics, ...playerGraphics].map(g => g.file));
+  // Try to get graphics metadata first, fallback to file times
+  let fileTimes = {};
+  try {
+    const metadataResponse = await fetch('graphics-metadata.json');
+    if (metadataResponse.ok) {
+      const metadata = await metadataResponse.json();
+      fileTimes = metadata.graphics || {};
+      console.log('Using graphics metadata:', fileTimes);
+    }
+  } catch (error) {
+    console.log('No graphics metadata found, using file modification times');
+  }
+
+  // If no metadata, fallback to file modification times
+  if (Object.keys(fileTimes).length === 0) {
+    fileTimes = await getFileModificationTimes([...teamGraphics, ...playerGraphics].map(g => g.file));
+  }
 
   // Team Leaders Section
   const teamSection = document.createElement("div");
@@ -459,7 +474,7 @@ async function loadGraphics() {
   graphicsList.appendChild(playerSection);
 }
 
-// Get file modification times using HEAD requests
+// Get file modification times using multiple methods
 async function getFileModificationTimes(filenames) {
   const times = {};
   
@@ -472,22 +487,57 @@ async function getFileModificationTimes(filenames) {
   for (const chunk of chunks) {
     const promises = chunk.map(async (filename) => {
       try {
-        // Add cache-busting parameter to ensure fresh data
-        const response = await fetch(`${filename}?v=${Date.now()}`, { 
-          method: 'HEAD',
-          cache: 'no-cache'
-        });
-        const lastModified = response.headers.get('Last-Modified');
-        if (lastModified) {
-          const date = new Date(lastModified);
-          // Debug logging
-          console.log(`File: ${filename}, Last-Modified: ${lastModified}, Parsed: ${date.toISOString()}`);
-          times[filename] = date.toISOString();
-        } else {
-          console.warn(`No Last-Modified header for ${filename}`);
+        // Try multiple methods to get file timestamp
+        let fileTime = null;
+        
+        // Method 1: Try HEAD request with cache-busting
+        try {
+          const response = await fetch(`${filename}?v=${Date.now()}`, { 
+            method: 'HEAD',
+            cache: 'no-store'
+          });
+          const lastModified = response.headers.get('Last-Modified');
+          if (lastModified) {
+            fileTime = new Date(lastModified).toISOString();
+            console.log(`Method 1 - File: ${filename}, Last-Modified: ${lastModified}, Parsed: ${fileTime}`);
+          }
+        } catch (e) {
+          console.log(`Method 1 failed for ${filename}:`, e.message);
         }
+        
+        // Method 2: Try GET request with range to get headers without full download
+        if (!fileTime) {
+          try {
+            const response = await fetch(filename, {
+              method: 'GET',
+              headers: { 'Range': 'bytes=0-0' },
+              cache: 'no-store'
+            });
+            const lastModified = response.headers.get('Last-Modified');
+            if (lastModified) {
+              fileTime = new Date(lastModified).toISOString();
+              console.log(`Method 2 - File: ${filename}, Last-Modified: ${lastModified}, Parsed: ${fileTime}`);
+            }
+          } catch (e) {
+            console.log(`Method 2 failed for ${filename}:`, e.message);
+          }
+        }
+        
+        // Method 3: Fallback - use current time minus a reasonable estimate
+        if (!fileTime) {
+          // If we can't get the actual time, estimate based on file patterns
+          // Assume graphics are updated daily, so use yesterday as fallback
+          const estimatedTime = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
+          fileTime = estimatedTime;
+          console.log(`Method 3 - File: ${filename}, Using estimated time: ${fileTime}`);
+        }
+        
+        times[filename] = fileTime;
+        
       } catch (error) {
-        console.warn(`Could not get modification time for ${filename}:`, error);
+        console.warn(`All methods failed for ${filename}:`, error);
+        // Final fallback
+        times[filename] = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
       }
     });
     
