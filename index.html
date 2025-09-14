@@ -421,27 +421,9 @@ const playerGraphics = [
 ];
 
 // Load graphics
-async function loadGraphics() {
+function loadGraphics() {
   const graphicsList = document.getElementById("graphics-list");
   graphicsList.innerHTML = "";
-
-  // Try to get graphics metadata first, fallback to file times
-  let fileTimes = {};
-  try {
-    const metadataResponse = await fetch('graphics-metadata.json');
-    if (metadataResponse.ok) {
-      const metadata = await metadataResponse.json();
-      fileTimes = metadata.graphics || {};
-      console.log('Using graphics metadata:', fileTimes);
-    }
-  } catch (error) {
-    console.log('No graphics metadata found, using file modification times');
-  }
-
-  // If no metadata, fallback to file modification times
-  if (Object.keys(fileTimes).length === 0) {
-    fileTimes = await getFileModificationTimes([...teamGraphics, ...playerGraphics].map(g => g.file));
-  }
 
   // Team Leaders Section
   const teamSection = document.createElement("div");
@@ -452,7 +434,7 @@ async function loadGraphics() {
         Team Leaders
       </h3>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
-        ${teamGraphics.map(g => createGraphicCard(g, fileTimes[g.file])).join('')}
+        ${teamGraphics.map(g => createGraphicCard(g)).join('')}
       </div>
     </div>
   `;
@@ -467,88 +449,15 @@ async function loadGraphics() {
         Player Leaders
       </h3>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
-        ${playerGraphics.map(g => createGraphicCard(g, fileTimes[g.file])).join('')}
+        ${playerGraphics.map(g => createGraphicCard(g)).join('')}
       </div>
     </div>
   `;
   graphicsList.appendChild(playerSection);
 }
 
-// Get file modification times using multiple methods
-async function getFileModificationTimes(filenames) {
-  const times = {};
-  
-  // Process files in parallel but limit concurrent requests
-  const chunks = [];
-  for (let i = 0; i < filenames.length; i += 5) {
-    chunks.push(filenames.slice(i, i + 5));
-  }
-  
-  for (const chunk of chunks) {
-    const promises = chunk.map(async (filename) => {
-      try {
-        // Try multiple methods to get file timestamp
-        let fileTime = null;
-        
-        // Method 1: Try HEAD request with cache-busting
-        try {
-          const response = await fetch(`${filename}?v=${Date.now()}`, { 
-            method: 'HEAD',
-            cache: 'no-store'
-          });
-          const lastModified = response.headers.get('Last-Modified');
-          if (lastModified) {
-            fileTime = new Date(lastModified).toISOString();
-            console.log(`Method 1 - File: ${filename}, Last-Modified: ${lastModified}, Parsed: ${fileTime}`);
-          }
-        } catch (e) {
-          console.log(`Method 1 failed for ${filename}:`, e.message);
-        }
-        
-        // Method 2: Try GET request with range to get headers without full download
-        if (!fileTime) {
-          try {
-            const response = await fetch(filename, {
-              method: 'GET',
-              headers: { 'Range': 'bytes=0-0' },
-              cache: 'no-store'
-            });
-            const lastModified = response.headers.get('Last-Modified');
-            if (lastModified) {
-              fileTime = new Date(lastModified).toISOString();
-              console.log(`Method 2 - File: ${filename}, Last-Modified: ${lastModified}, Parsed: ${fileTime}`);
-            }
-          } catch (e) {
-            console.log(`Method 2 failed for ${filename}:`, e.message);
-          }
-        }
-        
-        // Method 3: Fallback - use current time minus a reasonable estimate
-        if (!fileTime) {
-          // If we can't get the actual time, estimate based on file patterns
-          // Assume graphics are updated daily, so use yesterday as fallback
-          const estimatedTime = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
-          fileTime = estimatedTime;
-          console.log(`Method 3 - File: ${filename}, Using estimated time: ${fileTime}`);
-        }
-        
-        times[filename] = fileTime;
-        
-      } catch (error) {
-        console.warn(`All methods failed for ${filename}:`, error);
-        // Final fallback
-        times[filename] = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
-      }
-    });
-    
-    await Promise.all(promises);
-  }
-  
-  return times;
-}
-
 // Create graphic card HTML
-function createGraphicCard(graphic, fileTimestamp) {
+function createGraphicCard(graphic) {
   const categoryColors = {
     'Offense': 'background: #dcfce7; color: #166534',
     'Defense': 'background: #fecaca; color: #991b1b',
@@ -558,14 +467,11 @@ function createGraphicCard(graphic, fileTimestamp) {
   const postedItems = getPostedItems();
   const isPosted = postedItems.includes(`graphic_${graphic.file}`);
   const cardStyle = isPosted ? 'opacity: 0.6; background: #f8f9fa;' : '';
-  
-  // Get timestamp display
-  const timeAgo = fileTimestamp ? getTimeAgo(fileTimestamp) : '';
 
   return `
     <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); ${cardStyle}">
       <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
-        <h4 style="margin: 0; font-size: 14px; font-weight: 600; color: #1f2937;">${graphic.title}${isPosted ? ' <strong style="color: #6b7280;">• POSTED</strong>' : ''}${timeAgo ? ` <span style="color: #9ca3af; font-weight: normal;">(${timeAgo})</span>` : ''}</h4>
+        <h4 style="margin: 0; font-size: 14px; font-weight: 600; color: #1f2937;">${graphic.title}${isPosted ? ' <strong style="color: #6b7280;">• POSTED</strong>' : ''}</h4>
         <span style="padding: 2px 6px; border-radius: 8px; font-size: 11px; font-weight: 500; ${categoryColors[graphic.category]}">
           ${graphic.category}
         </span>
@@ -608,8 +514,23 @@ function getTimeAgo(dateString) {
 // Copy image to clipboard
 async function copyImageToClipboard(filename) {
   try {
+    // Check if clipboard API is available
+    if (!navigator.clipboard || !window.ClipboardItem) {
+      throw new Error('Clipboard API not supported');
+    }
+
     const response = await fetch(filename);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch image: ${response.status}`);
+    }
+    
     const blob = await response.blob();
+    
+    // Check if the blob is a valid image
+    if (!blob.type.startsWith('image/')) {
+      throw new Error('File is not an image');
+    }
+    
     await navigator.clipboard.write([
       new ClipboardItem({
         [blob.type]: blob
@@ -631,8 +552,65 @@ async function copyImageToClipboard(filename) {
     
   } catch (error) {
     console.error('Failed to copy image:', error);
-    alert('Failed to copy image. Please try downloading instead.');
+    
+    // Show a more helpful error message
+    const btn = event.target;
+    const originalText = btn.textContent;
+    btn.textContent = '❌ Failed';
+    btn.style.background = '#ef4444';
+    btn.style.borderColor = '#ef4444';
+    
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.style.background = '#3b82f6';
+      btn.style.borderColor = '#3b82f6';
+    }, 2000);
+    
+    // Show a less intrusive notification instead of alert
+    showNotification('Image copy failed. Try downloading instead.');
   }
+}
+
+// Show notification message
+function showNotification(message) {
+  // Create notification element
+  const notification = document.createElement('div');
+  notification.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #1f2937;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    font-size: 14px;
+    max-width: 300px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  `;
+  notification.textContent = message;
+  
+  document.body.appendChild(notification);
+  
+  // Animate in
+  setTimeout(() => {
+    notification.style.opacity = '1';
+    notification.style.transform = 'translateX(0)';
+  }, 100);
+  
+  // Auto remove after 3 seconds
+  setTimeout(() => {
+    notification.style.opacity = '0';
+    notification.style.transform = 'translateX(100%)';
+    setTimeout(() => {
+      if (notification.parentNode) {
+        notification.parentNode.removeChild(notification);
+      }
+    }, 300);
+  }, 3000);
 }
 
 // Download image
