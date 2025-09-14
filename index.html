@@ -421,9 +421,12 @@ const playerGraphics = [
 ];
 
 // Load graphics
-function loadGraphics() {
+async function loadGraphics() {
   const graphicsList = document.getElementById("graphics-list");
   graphicsList.innerHTML = "";
+
+  // Get file modification times
+  const fileTimes = await getFileModificationTimes([...teamGraphics, ...playerGraphics].map(g => g.file));
 
   // Team Leaders Section
   const teamSection = document.createElement("div");
@@ -434,7 +437,7 @@ function loadGraphics() {
         Team Leaders
       </h3>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
-        ${teamGraphics.map(createGraphicCard).join('')}
+        ${teamGraphics.map(g => createGraphicCard(g, fileTimes[g.file])).join('')}
       </div>
     </div>
   `;
@@ -449,15 +452,44 @@ function loadGraphics() {
         Player Leaders
       </h3>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
-        ${playerGraphics.map(createGraphicCard).join('')}
+        ${playerGraphics.map(g => createGraphicCard(g, fileTimes[g.file])).join('')}
       </div>
     </div>
   `;
   graphicsList.appendChild(playerSection);
 }
 
+// Get file modification times using HEAD requests
+async function getFileModificationTimes(filenames) {
+  const times = {};
+  
+  // Process files in parallel but limit concurrent requests
+  const chunks = [];
+  for (let i = 0; i < filenames.length; i += 5) {
+    chunks.push(filenames.slice(i, i + 5));
+  }
+  
+  for (const chunk of chunks) {
+    const promises = chunk.map(async (filename) => {
+      try {
+        const response = await fetch(filename, { method: 'HEAD' });
+        const lastModified = response.headers.get('Last-Modified');
+        if (lastModified) {
+          times[filename] = new Date(lastModified).toISOString();
+        }
+      } catch (error) {
+        console.warn(`Could not get modification time for ${filename}:`, error);
+      }
+    });
+    
+    await Promise.all(promises);
+  }
+  
+  return times;
+}
+
 // Create graphic card HTML
-function createGraphicCard(graphic) {
+function createGraphicCard(graphic, fileTimestamp) {
   const categoryColors = {
     'Offense': 'background: #dcfce7; color: #166534',
     'Defense': 'background: #fecaca; color: #991b1b',
@@ -467,11 +499,14 @@ function createGraphicCard(graphic) {
   const postedItems = getPostedItems();
   const isPosted = postedItems.includes(`graphic_${graphic.file}`);
   const cardStyle = isPosted ? 'opacity: 0.6; background: #f8f9fa;' : '';
+  
+  // Get timestamp display
+  const timeAgo = fileTimestamp ? getTimeAgo(fileTimestamp) : '';
 
   return `
     <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); ${cardStyle}">
       <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
-        <h4 style="margin: 0; font-size: 14px; font-weight: 600; color: #1f2937;">${graphic.title}${isPosted ? ' <strong style="color: #6b7280;">• POSTED</strong>' : ''}</h4>
+        <h4 style="margin: 0; font-size: 14px; font-weight: 600; color: #1f2937;">${graphic.title}${isPosted ? ' <strong style="color: #6b7280;">• POSTED</strong>' : ''}${timeAgo ? ` <span style="color: #9ca3af; font-weight: normal;">(${timeAgo})</span>` : ''}</h4>
         <span style="padding: 2px 6px; border-radius: 8px; font-size: 11px; font-weight: 500; ${categoryColors[graphic.category]}">
           ${graphic.category}
         </span>
