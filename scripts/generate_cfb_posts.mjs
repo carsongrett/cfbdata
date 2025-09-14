@@ -505,9 +505,43 @@ async function getCurrentWeek(season) {
     const calendar = await response.json();
     console.log(`Calendar data:`, calendar);
     
-    // We are in Week 3 - use that directly
-    console.log(`Current week: 3`);
-    return 3;
+    // Find the current week based on today's date
+    const today = new Date();
+    const currentWeek = calendar.find(week => {
+      const startDate = new Date(week.startDate);
+      const endDate = new Date(week.endDate);
+      return today >= startDate && today <= endDate;
+    });
+    
+    if (currentWeek) {
+      console.log(`Current week: ${currentWeek.week}`);
+      return currentWeek.week;
+    } else {
+      // If we're between weeks, find the most recent completed week
+      const completedWeeks = calendar.filter(week => {
+        const endDate = new Date(week.endDate);
+        return today > endDate;
+      });
+      
+      if (completedWeeks.length > 0) {
+        const lastCompletedWeek = completedWeeks[completedWeeks.length - 1];
+        // For polls, we typically want the week AFTER the completed week
+        // since polls are released after games are done
+        const pollWeek = lastCompletedWeek.week + 1;
+        const pollWeekExists = calendar.find(week => week.week === pollWeek);
+        
+        if (pollWeekExists) {
+          console.log(`No current week found, polls should be available for week: ${pollWeek}`);
+          return pollWeek;
+        } else {
+          console.log(`No current week found, using last completed week: ${lastCompletedWeek.week}`);
+          return lastCompletedWeek.week;
+        }
+      }
+      
+      console.log("No current week or completed weeks found");
+      return null;
+    }
   } catch (error) {
     console.error("Error fetching current week:", error);
     return null;
