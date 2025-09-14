@@ -92,9 +92,8 @@ for (const e of finals) {
   if (isUpset) hashtagParts.push('#Upset');
   if (isBlowout) hashtagParts.push('#Blowout');
   if (isShutout) hashtagParts.push('#Shutout');
-  if (isNailbiter) hashtagParts.push('#Nailbiter');
   if (isShootout) hashtagParts.push('#Shootout');
-  if (isRankedMatchup) hashtagParts.push('#RankedMatchup');
+  // Removed #Nailbiter and #RankedMatchup as requested
   hashtagParts.push('#CFB');
 
   // --- TOP PERFORMERS (from scoreboard leaders) ---
@@ -144,24 +143,32 @@ for (const e of finals) {
   const awayTop = getTopPerformer(away);
   const homeTop = getTopPerformer(home);
 
-  // --- POST TEXT ---
-  const statusText = 'Final';
-  const scoreLine = `${awayName} ${awayScore} @ ${homeName} ${homeScore}`;
-  let base = `${scoreLine} — ${statusText}. ${hashtagParts.join(' ')}`;
+  // --- POST TEXT (NEW FORMAT) ---
+  // Determine winner and loser
+  const winner = awayWon ? { name: awayName, score: awayScore } : { name: homeName, score: homeScore };
+  const loser = awayWon ? { name: homeName, score: homeScore } : { name: awayName, score: awayScore };
+  
+  // Build new format: FINAL: score, team names with scores, stats, hashtags
+  let base = `FINAL: ${winner.score}-${loser.score}\n`;
+  base += `${winner.name} - **${winner.score}**\n`;
+  base += `${loser.name} - **${loser.score}**\n`;
   
   // Add top performers if available
   if (awayTop || homeTop) {
     const performers = [awayTop, homeTop].filter(Boolean);
-    base += `\n${performers.join('\n')}`;
+    base += `\n${performers.join('\n')}\n`;
   }
 
+  // Add hashtags
+  base += `\n${hashtagParts.join(' ')}`;
+
   // Add winning team hashtag if available
-  const winnerTeamName = awayWon ? awayName : homeName;
+  const winnerTeamName = winner.name;
   // Strip ranking prefix (e.g., "#21 Alabama Crimson Tide" -> "Alabama Crimson Tide")
   const cleanTeamName = winnerTeamName.replace(/^#\d+\s+/, '');
   const winnerHashtag = teamHashtags.find(t => t.team === cleanTeamName)?.hashtag;
   if (winnerHashtag) {
-    base += `\n\n${winnerHashtag}`;
+    base += ` ${winnerHashtag}`;
   }
 
   // --- DEDUPE ---
