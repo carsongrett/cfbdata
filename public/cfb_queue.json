@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-14T18:31:37.118Z",
+  "generatedAt": "2025-09-14T18:43:36.518Z",
   "posts": [
     {
       "id": "final_401754531",
@@ -1422,6 +1422,51 @@
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760370",
       "expiresAt": "2025-09-16T06:31:37.524Z",
       "source": "espn"
+    },
+    {
+      "id": "ap_top10_week4",
+      "kind": "poll_top10",
+      "priority": 85,
+      "text": "AP Top 10 - Week 4\n1. Ohio State\n2. Penn State\n3. LSU\n4. Miami\n5. Georgia\n6. Oregon\n7. Florida State\n8. Texas\n9. Illinois\n10. Texas A&M\n\n#APTop25 #CFB",
+      "link": "",
+      "expiresAt": "2025-09-21T18:43:36.518Z",
+      "source": "cfbd"
+    },
+    {
+      "id": "ap_movers_week4",
+      "kind": "poll_movers",
+      "priority": 80,
+      "text": "AP Poll Movers - Week 4\n⬇️-16 Notre Dame (8→24)\n⬆️+6 Texas A&M (16→10)\n⬆️+5 Alabama (19→14)\n⬆️+4 Ole Miss (17→13)\n⬆️+4 Utah (20→16)\n⬆️+4 Texas Tech (21→17)\nNEW: #18 Georgia Tech\nNEW: #20 Vanderbilt\nNEW: #25 USC\n\n#APTop25 #CFB",
+      "link": "",
+      "expiresAt": "2025-09-21T18:43:36.518Z",
+      "source": "cfbd"
+    },
+    {
+      "id": "coaches_top10_week4",
+      "kind": "poll_top10",
+      "priority": 85,
+      "text": "Coaches Poll Top 10 - Week 4\n1. Ohio State\n2. Penn State\n3. Georgia\n4. LSU\n5. Oregon\n6. Texas\n7. Miami\n8. Clemson\n9. Notre Dame\n10. Arizona State\n\n#CoachesPoll #CFB",
+      "link": "",
+      "expiresAt": "2025-09-21T18:43:36.518Z",
+      "source": "cfbd"
+    },
+    {
+      "id": "coaches_movers_week4",
+      "kind": "poll_movers",
+      "priority": 80,
+      "text": "Coaches Poll Movers - Week 4\n⬇️-14 Arizona State (10→24)\n⬇️-9 Michigan (13→22)\n⬆️+8 Oklahoma (24→16)\n⬆️+7 Florida State (19→12)\n⬆️+5 Texas A&M (22→17)\n⬆️+4 Iowa State (18→14)\n⬆️+3 Illinois (12→9)\nNEW: #21 Utah\nNEW: #23 South Florida\n\n#CoachesPoll #CFB",
+      "link": "",
+      "expiresAt": "2025-09-21T18:43:36.518Z",
+      "source": "cfbd"
+    },
+    {
+      "id": "sp_top10_week4",
+      "kind": "poll_top10",
+      "priority": 85,
+      "text": "SP+ Power Rankings - Week 4\n1. Oregon (26.7)\n2. Ohio State (26.1)\n3. Alabama (25.4)\n4. Georgia (23.4)\n5. Ole Miss (23.1)\n6. Tennessee (22.2)\n7. Penn State (22.0)\n8. Oklahoma (19.7)\n9. Texas (19.7)\n10. USC (19.1)\n\n#SPPlus #CFB",
+      "link": "",
+      "expiresAt": "2025-09-21T18:43:36.518Z",
+      "source": "cfbd"
     }
   ]
 }
