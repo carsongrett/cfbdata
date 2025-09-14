@@ -472,10 +472,19 @@ async function getFileModificationTimes(filenames) {
   for (const chunk of chunks) {
     const promises = chunk.map(async (filename) => {
       try {
-        const response = await fetch(filename, { method: 'HEAD' });
+        // Add cache-busting parameter to ensure fresh data
+        const response = await fetch(`${filename}?v=${Date.now()}`, { 
+          method: 'HEAD',
+          cache: 'no-cache'
+        });
         const lastModified = response.headers.get('Last-Modified');
         if (lastModified) {
-          times[filename] = new Date(lastModified).toISOString();
+          const date = new Date(lastModified);
+          // Debug logging
+          console.log(`File: ${filename}, Last-Modified: ${lastModified}, Parsed: ${date.toISOString()}`);
+          times[filename] = date.toISOString();
+        } else {
+          console.warn(`No Last-Modified header for ${filename}`);
         }
       } catch (error) {
         console.warn(`Could not get modification time for ${filename}:`, error);

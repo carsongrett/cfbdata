@@ -1,9 +1,11 @@
 name: Update CFB Graphics
 
 on:
-  # Run daily at 6 AM UTC (adjust timezone as needed)
+  # Run Friday night (11 PM EST/EDT = 4 AM UTC Saturday), Saturday 4 PM (9 PM UTC), Saturday midnight (5 AM UTC Sunday)
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 4 * * 6'  # Friday 11 PM EST (4 AM UTC Saturday)
+    - cron: '0 21 * * 6' # Saturday 4 PM EST (9 PM UTC Saturday) 
+    - cron: '0 5 * * 0'  # Saturday midnight EST (5 AM UTC Sunday)
   # Allow manual trigger
   workflow_dispatch:
   # Run on push to main branch (for testing)
