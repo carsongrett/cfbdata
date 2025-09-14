@@ -175,7 +175,8 @@ for (const e of finals) {
     text: base.slice(0, 240),
     link: e.links?.find(l => Array.isArray(l.rel) && l.rel.includes("boxscore"))?.href || "",
     expiresAt: new Date(Date.now() + 36 * 3600e3).toISOString(),
-    source: "espn"
+    source: "espn",
+    generatedAt: new Date().toISOString()
   });
 }
 
@@ -653,7 +654,8 @@ function formatTop10Post(rankings, week) {
     text: text.slice(0, 240),
     link: "",
     expiresAt: new Date(Date.now() + 7 * 24 * 3600e3).toISOString(), // 7 days
-    source: "cfbd"
+    source: "cfbd",
+    generatedAt: new Date().toISOString()
   };
 }
 
@@ -676,7 +678,8 @@ function formatCoachesTop10Post(rankings, week) {
     text: text.slice(0, 240),
     link: "",
     expiresAt: new Date(Date.now() + 7 * 24 * 3600e3).toISOString(), // 7 days
-    source: "cfbd"
+    source: "cfbd",
+    generatedAt: new Date().toISOString()
   };
 }
 
@@ -745,7 +748,8 @@ function formatMoversPost(currentRankings, previousRankings, week) {
     text: text.slice(0, 240),
     link: "",
     expiresAt: new Date(Date.now() + 7 * 24 * 3600e3).toISOString(), // 7 days
-    source: "cfbd"
+    source: "cfbd",
+    generatedAt: new Date().toISOString()
   };
 }
 
@@ -814,7 +818,8 @@ function formatCoachesMoversPost(currentRankings, previousRankings, week) {
     text: text.slice(0, 240),
     link: "",
     expiresAt: new Date(Date.now() + 7 * 24 * 3600e3).toISOString(), // 7 days
-    source: "cfbd"
+    source: "cfbd",
+    generatedAt: new Date().toISOString()
   };
 }
 
@@ -837,7 +842,8 @@ function formatSPTop10Post(ratings, week) {
     text: text.slice(0, 240),
     link: "",
     expiresAt: new Date(Date.now() + 7 * 24 * 3600e3).toISOString(), // 7 days
-    source: "cfbd"
+    source: "cfbd",
+    generatedAt: new Date().toISOString()
   };
 }
 
@@ -908,7 +914,8 @@ function formatSPMoversPost(currentRatings, previousRatings, week) {
     text: text.slice(0, 240),
     link: "",
     expiresAt: new Date(Date.now() + 7 * 24 * 3600e3).toISOString(), // 7 days
-    source: "cfbd"
+    source: "cfbd",
+    generatedAt: new Date().toISOString()
   };
 }
 

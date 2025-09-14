@@ -127,7 +127,8 @@ function createBettingPreviewPost(game) {
     text: text.slice(0, 280),
     link: `https://www.espn.com/college-football/game/_/gameId/${game.id}`,
     expiresAt: new Date(Date.now() + 24 * 3600e3).toISOString(), // 24 hours
-    source: "cfbd"
+    source: "cfbd",
+    generatedAt: new Date().toISOString()
   };
 }
 
