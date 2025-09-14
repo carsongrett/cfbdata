@@ -144,14 +144,14 @@ for (const e of finals) {
   const homeTop = getTopPerformer(home);
 
   // --- POST TEXT (NEW FORMAT) ---
-  // Determine winner and loser
-  const winner = awayWon ? { name: awayName, score: awayScore } : { name: homeName, score: homeScore };
-  const loser = awayWon ? { name: homeName, score: homeScore } : { name: awayName, score: awayScore };
+  // Determine winner and loser for display
+  const winnerTeam = awayWon ? { name: awayName, score: awayScore } : { name: homeName, score: homeScore };
+  const loserTeam = awayWon ? { name: homeName, score: homeScore } : { name: awayName, score: awayScore };
   
   // Build new format: FINAL: score, team names with scores, stats, hashtags
-  let base = `FINAL: ${winner.score}-${loser.score}\n`;
-  base += `${winner.name} - **${winner.score}**\n`;
-  base += `${loser.name} - **${loser.score}**\n`;
+  let base = `FINAL: ${winnerTeam.score}-${loserTeam.score}\n`;
+  base += `${winnerTeam.name} - **${winnerTeam.score}**\n`;
+  base += `${loserTeam.name} - **${loserTeam.score}**\n`;
   
   // Add top performers if available
   if (awayTop || homeTop) {
@@ -163,7 +163,7 @@ for (const e of finals) {
   base += `\n${hashtagParts.join(' ')}`;
 
   // Add winning team hashtag if available
-  const winnerTeamName = winner.name;
+  const winnerTeamName = winnerTeam.name;
   // Strip ranking prefix (e.g., "#21 Alabama Crimson Tide" -> "Alabama Crimson Tide")
   const cleanTeamName = winnerTeamName.replace(/^#\d+\s+/, '');
   const winnerHashtag = teamHashtags.find(t => t.team === cleanTeamName)?.hashtag;
