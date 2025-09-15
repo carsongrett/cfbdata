@@ -1,0 +1,43 @@
+name: Generate Final Scores
+
+on:
+  workflow_dispatch:
+    inputs:
+      reset_posted_ids:
+        description: 'Reset posted_ids.json (for testing)'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  generate-final-scores:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Reset posted_ids.json (if requested)
+      if: ${{ inputs.reset_posted_ids == 'true' }}
+      run: |
+        echo '{"ids": []}' > posted_ids.json
+        
+    - name: Generate final scores posts
+      run: node scripts/generate_final_scores_only.mjs
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git diff --staged --quiet || git commit -m "Generate final scores: $(date -u +%Y-%m-%d_%H-%M-%S)"
+        git push

@@ -1,0 +1,35 @@
+name: Clear Old Content
+
+on:
+  schedule:
+    # Run at 2:00 PM UTC on Mondays (adjust timezone as needed)
+    - cron: '0 14 * * 1'
+  workflow_dispatch:
+
+jobs:
+  clear-content:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Clear old content
+      run: |
+        # Clear final scores, betting previews, and poll posts from cfb_queue.json
+        echo '{"generatedAt": "'$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)'", "posts": []}' > public/cfb_queue.json
+        
+        # Reset posted_ids.json to allow re-posting of content
+        echo '{"ids": []}' > posted_ids.json
+        
+        echo "Cleared old content from cfb_queue.json and reset posted_ids.json"
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git diff --staged --quiet || git commit -m "Clear old content: $(date -u +%Y-%m-%d_%H-%M-%S)"
+        git push

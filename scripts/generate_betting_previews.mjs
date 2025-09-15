@@ -107,11 +107,11 @@ function createBettingPreviewPost(game) {
     homeTeamText = `${homeInfo.name} (-${Math.abs(odds.spread)})`;
   }
   
-  // Get conference hashtag
-  const conferenceTag = getConferenceHashtag(game.homeConference);
+  // Get conference name (without hashtag)
+  const conferenceName = game.homeConference;
   
-  // Create post text
-  const text = `Week 3 ${conferenceTag} Preview\n${awayTeamText} @ ${homeTeamText}. O/U: ${odds.overUnder}\n#${awayInfo.hashtag.replace('#', '')} #${homeInfo.hashtag.replace('#', '')}`;
+  // Create post text in new format
+  const text = `Week 3 ${conferenceName} Betting Preview\n${awayTeamText} @ ${homeTeamText}\nO/U: ${odds.overUnder}\n\n#${awayInfo.hashtag.replace('#', '')} #${homeInfo.hashtag.replace('#', '')}`;
   
   // Check if already posted
   const id = `betting_preview_${game.id}`;
@@ -123,7 +123,6 @@ function createBettingPreviewPost(game) {
   return {
     id,
     kind: "betting_preview",
-    priority: 90,
     text: text.slice(0, 280),
     link: `https://www.espn.com/college-football/game/_/gameId/${game.id}`,
     expiresAt: new Date(Date.now() + 24 * 3600e3).toISOString(), // 24 hours
