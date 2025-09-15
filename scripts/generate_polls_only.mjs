@@ -57,32 +57,8 @@ async function processAPPoll() {
       return [];
     }
 
-    // Check if we already have this week's data
-    const weekKey = currentWeek.toString();
-    if (pollCache.lastWeek === currentWeek && pollCache.lastSeason === currentSeason && pollCache.apPolls[weekKey]) {
-      console.log(`AP poll for Week ${currentWeek} already cached, using cached data`);
-      // Generate posts from cached data
-      const posts = [];
-      
-      // Top 10 post from cache
-      const top10Post = formatTop10Post(pollCache.apPolls[weekKey], currentWeek);
-      if (top10Post) {
-        posts.push(top10Post);
-      }
-      
-    // Movers post from cache (compare with previous week)
-    const previousWeekKey = (currentWeek - 1).toString();
-    if (pollCache.apPolls[previousWeekKey] && pollCache.apPolls[previousWeekKey].length > 0) {
-      const moversPost = formatMoversPost(pollCache.apPolls[weekKey], pollCache.apPolls[previousWeekKey], currentWeek);
-      if (moversPost) {
-        posts.push(moversPost);
-      }
-    } else {
-      console.log(`No previous week data available for movers comparison`);
-    }
-      
-      return posts;
-    }
+    // Always fetch fresh data instead of using cache
+    console.log(`Fetching fresh AP poll data for Week ${currentWeek}`);
 
     // Fetch current AP poll
     const currentPoll = await fetchAPPoll(currentSeason, currentWeek);
@@ -152,32 +128,8 @@ async function processCoachesPoll() {
       return [];
     }
 
-    // Check if we already have this week's data
-    const weekKey = currentWeek.toString();
-    if (pollCache.lastWeek === currentWeek && pollCache.lastSeason === currentSeason && pollCache.coachesPolls[weekKey]) {
-      console.log(`Coaches poll for Week ${currentWeek} already cached, using cached data`);
-      // Generate posts from cached data
-      const posts = [];
-      
-      // Top 10 post from cache
-      const top10Post = formatCoachesTop10Post(pollCache.coachesPolls[weekKey], currentWeek);
-      if (top10Post) {
-        posts.push(top10Post);
-      }
-      
-    // Movers post from cache (compare with previous week)
-    const previousWeekKey = (currentWeek - 1).toString();
-    if (pollCache.coachesPolls[previousWeekKey] && pollCache.coachesPolls[previousWeekKey].length > 0) {
-      const moversPost = formatCoachesMoversPost(pollCache.coachesPolls[weekKey], pollCache.coachesPolls[previousWeekKey], currentWeek);
-      if (moversPost) {
-        posts.push(moversPost);
-      }
-    } else {
-      console.log(`No previous week data available for movers comparison`);
-    }
-      
-      return posts;
-    }
+    // Always fetch fresh data instead of using cache
+    console.log(`Fetching fresh Coaches poll data for Week ${currentWeek}`);
 
     // Fetch current Coaches poll
     const currentPoll = await fetchCoachesPoll(currentSeason, currentWeek);
@@ -247,32 +199,8 @@ async function processSPRatings() {
       return [];
     }
 
-    // Check if we already have this week's data
-    const weekKey = currentWeek.toString();
-    if (pollCache.lastWeek === currentWeek && pollCache.lastSeason === currentSeason && pollCache.spRatings && pollCache.spRatings[weekKey]) {
-      console.log(`SP+ ratings for Week ${currentWeek} already cached, using cached data`);
-      // Generate posts from cached data
-      const posts = [];
-      
-      // Top 10 post from cache
-      const top10Post = formatSPTop10Post(pollCache.spRatings[weekKey], currentWeek);
-      if (top10Post) {
-        posts.push(top10Post);
-      }
-      
-    // Movers post from cache (compare with previous week)
-    const previousWeekKey = (currentWeek - 1).toString();
-    if (pollCache.spRatings && pollCache.spRatings[previousWeekKey] && pollCache.spRatings[previousWeekKey].length > 0) {
-      const moversPost = formatSPMoversPost(pollCache.spRatings[weekKey], pollCache.spRatings[previousWeekKey], currentWeek);
-      if (moversPost) {
-        posts.push(moversPost);
-      }
-    } else {
-      console.log(`No previous week data available for movers comparison`);
-    }
-      
-      return posts;
-    }
+    // Always fetch fresh data instead of using cache
+    console.log(`Fetching fresh SP+ ratings data for Week ${currentWeek}`);
 
     // Fetch current SP+ ratings
     const currentRatings = await fetchSPRatings(currentSeason, currentWeek);
