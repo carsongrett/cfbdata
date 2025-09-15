@@ -1,0 +1,22 @@
+name: Debug API Response
+
+on:
+  workflow_dispatch:
+
+jobs:
+  debug-api:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Debug API responses
+      run: node scripts/debug_api_response.mjs
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
