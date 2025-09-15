@@ -24,13 +24,28 @@ console.log("✅ Cleared betting lines cache");
 writeJson("posted_ids.json", { ids: [] });
 console.log("✅ Reset posted IDs");
 
-// Clear the queue to force fresh content
-writeJson("public/cfb_queue.json", { generatedAt: new Date().toISOString(), posts: [] });
-console.log("✅ Cleared content queue");
+// Clear only dynamic content from the queue (preserve static content like stadiums)
+const existingQueue = readJson("public/cfb_queue.json", { posts: [] });
+const staticPosts = existingQueue.posts.filter(post => 
+  post.kind === "stadiums" || 
+  post.kind === "graphics" ||
+  post.source === "venues" ||
+  post.source === "static"
+);
+const clearedQueue = {
+  generatedAt: new Date().toISOString(),
+  posts: staticPosts
+};
+writeJson("public/cfb_queue.json", clearedQueue);
+console.log(`✅ Cleared dynamic content, preserved ${staticPosts.length} static posts`);
 
 console.log("🎉 All caches cleared! Next API calls will be fresh.");
 
 // --- HELPERS ---
+function readJson(p, fallback) {
+  try { return JSON.parse(fs.readFileSync(p, "utf8")); }
+  catch { return fallback; }
+}
 function writeJson(p, obj) {
   fs.mkdirSync(p.split("/").slice(0, -1).join("/") || ".", { recursive: true });
   fs.writeFileSync(p, JSON.stringify(obj, null, 2));
