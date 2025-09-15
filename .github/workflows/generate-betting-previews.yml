@@ -29,13 +29,8 @@ jobs:
       run: |
         echo '{"ids": []}' > posted_ids.json
         
-    - name: Cache betting lines
-      run: node scripts/cache_betting_lines.mjs
-      env:
-        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
-        
     - name: Generate betting previews
-      run: node scripts/generate_betting_previews.mjs
+      run: node scripts/generate_betting_previews_only.mjs
       env:
         CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         
