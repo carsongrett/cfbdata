@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-15T03:09:30.401Z",
+  "generatedAt": "2025-09-15T03:04:42.089Z",
   "posts": [
     {
       "id": "final_401754531",
@@ -632,373 +632,175 @@
       "generatedAt": "2025-09-15T02:36:05.784Z"
     },
     {
-      "id": "betting_preview_401762521",
+      "id": "betting_preview_week4_401752846",
       "kind": "betting_preview",
-      "text": "Week 3 American Athletic Betting Preview\nArmy Black Knights (+125) @ Navy Midshipmen (-3.5)\nO/U: 39.5\n\n#GoArmy #GoNavy",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762521",
-      "expiresAt": "2025-09-16T02:40:45.452Z",
+      "text": "Week 4 Big Ten Betting Preview\nMichigan Wolverines (-1.5) @ Nebraska Cornhuskers (+102)\nO/U: 44.5\n\n#GoBlue #GBR",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752846",
+      "expiresAt": "2025-09-16T03:04:42.543Z",
       "source": "cfbd",
-      "generatedAt": "2025-09-15T02:40:45.452Z"
+      "generatedAt": "2025-09-15T03:04:42.543Z"
     },
     {
-      "id": "stadium_4617",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Bristol Motor Speedway\n• Team: Various\n• Capacity: 162,000\n• Location: Bristol, TN\n• Surface: Grass\n• Elevation: 457 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.475Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.475Z"
+      "id": "betting_preview_week4_401752843",
+      "kind": "betting_preview",
+      "text": "Week 4 Big Ten Betting Preview\nIllinois Fighting Illini (+164) @ Indiana Hoosiers (-4.5)\nO/U: 52.5\n\n#Illini #LEO",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752843",
+      "expiresAt": "2025-09-16T03:04:42.543Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.543Z"
     },
     {
-      "id": "stadium_3558",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Michigan Stadium\n• Team: Various\n• Capacity: 107,601\n• Location: Ann Arbor, MI\n• Surface: Turf\n• Elevation: 256 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.475Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.475Z"
+      "id": "betting_preview_week4_401756901",
+      "kind": "betting_preview",
+      "text": "Week 4 Big 12 Betting Preview\nTexas Tech Red Raiders (+145) @ Utah Utes (-3.5)\nO/U: 56.5\n\n#WreckEm #GoUtes",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756901",
+      "expiresAt": "2025-09-16T03:04:42.543Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.543Z"
     },
     {
-      "id": "stadium_3632",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Beaver Stadium\n• Team: Various\n• Capacity: 106,572\n• Location: University Park, PA\n• Surface: Grass\n• Elevation: 354 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.475Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.475Z"
+      "id": "betting_preview_week4_401752844",
+      "kind": "betting_preview",
+      "text": "Week 4 Big Ten Betting Preview\nIowa Hawkeyes (-2.5) @ Rutgers Scarlet Knights (+110)\nO/U: 44.5\n\n#Hawkeyes #CHOP",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752844",
+      "expiresAt": "2025-09-16T03:04:42.543Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.543Z"
     },
     {
-      "id": "stadium_3861",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Ohio Stadium\n• Team: Various\n• Capacity: 102,780\n• Location: Columbus, OH\n• Surface: Turf\n• Elevation: 217 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.475Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.475Z"
+      "id": "betting_preview_week4_401756896",
+      "kind": "betting_preview",
+      "text": "Week 4 Big 12 Betting Preview\nArizona State Sun Devils (+110) @ Baylor Bears (-2.5)\nO/U: 59.5\n\n#ForksUp #SicEm",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756896",
+      "expiresAt": "2025-09-16T03:04:42.543Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.543Z"
     },
     {
-      "id": "stadium_3795",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Kyle Field\n• Team: Various\n• Capacity: 102,733\n• Location: College Station, TX\n• Surface: Grass\n• Elevation: 109 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.475Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.475Z"
+      "id": "betting_preview_week4_401752847",
+      "kind": "betting_preview",
+      "text": "Week 4 Big Ten Betting Preview\nMichigan State Spartans (+500) @ USC Trojans (-15.5)\nO/U: 56.5\n\n#GoGreen #FightOn",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752847",
+      "expiresAt": "2025-09-16T03:04:42.543Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.543Z"
     },
     {
-      "id": "stadium_3853",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Neyland Stadium\n• Team: Various\n• Capacity: 102,455\n• Location: Knoxville, TN\n• Surface: Grass\n• Elevation: 272 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.475Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.475Z"
+      "id": "betting_preview_week4_401752845",
+      "kind": "betting_preview",
+      "text": "Week 4 Big Ten Betting Preview\nMaryland Terrapins (+230) @ Wisconsin Badgers (-7.5)\nO/U: 43.5\n\n#GoTerps #OnWisconsin",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752845",
+      "expiresAt": "2025-09-16T03:04:42.543Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.543Z"
     },
     {
-      "id": "stadium_3958",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Tiger Stadium (LA)\n• Team: Various\n• Capacity: 102,321\n• Location: Baton Rouge, LA\n• Surface: Grass\n• Elevation: 8 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.475Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.475Z"
+      "id": "betting_preview_week4_401752714",
+      "kind": "betting_preview",
+      "text": "Week 4 SEC Betting Preview\nAuburn Tigers (+185) @ Oklahoma Sooners (-7)\nO/U: 48.5\n\n#WarEagle #BoomerSooner",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752714",
+      "expiresAt": "2025-09-16T03:04:42.544Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.544Z"
     },
     {
-      "id": "stadium_3657",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Bryant-Denny Stadium\n• Team: Various\n• Capacity: 101,821\n• Location: Tuscaloosa, AL\n• Surface: Grass\n• Elevation: 70 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.475Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.475Z"
+      "id": "betting_preview_week4_401752713",
+      "kind": "betting_preview",
+      "text": "Week 4 SEC Betting Preview\nSouth Carolina Gamecocks (+400) @ Missouri Tigers (-13.5)\nO/U: 46.5\n\n#SpursUp #MIZ",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752713",
+      "expiresAt": "2025-09-16T03:04:42.544Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.544Z"
     },
     {
-      "id": "stadium_3910",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: DKR-Texas Memorial Stadium\n• Team: Various\n• Capacity: 100,119\n• Location: Austin, TX\n• Surface: Turf\n• Elevation: 160 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
+      "id": "betting_preview_week4_401762468",
+      "kind": "betting_preview",
+      "text": "Week 4 American Athletic Betting Preview\nRice Owls (-3.5) @ Charlotte 49ers (+145)\nO/U: 42.5\n\n#GoOwls #GoldStandard",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762468",
+      "expiresAt": "2025-09-16T03:04:42.544Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.544Z"
     },
     {
-      "id": "stadium_3687",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: AT&T Stadium\n• Team: Various\n• Capacity: 100,000\n• Location: Arlington, TX\n• Surface: Turf\n• Elevation: 173 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
+      "id": "betting_preview_week4_401762469",
+      "kind": "betting_preview",
+      "text": "Week 4 American Athletic Betting Preview\nNorth Texas Mean Green (+-108) @ Army Black Knights (-0.5)\nO/U: 52.5\n\n#GMG #GoArmy",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762469",
+      "expiresAt": "2025-09-16T03:04:42.544Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.544Z"
     },
     {
-      "id": "stadium_3752",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Acrisure Stadium\n• Team: Various\n• Capacity: 68,400\n• Location: Pittsburgh, PA\n• Surface: Grass\n• Elevation: 221 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
+      "id": "betting_preview_week4_401754537",
+      "kind": "betting_preview",
+      "text": "Week 4 ACC Betting Preview\nSyracuse Orange (+525) @ Clemson Tigers (-17.5)\nO/U: 55.5\n\n#OrangeNation #ALLIN",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754537",
+      "expiresAt": "2025-09-16T03:04:42.544Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.544Z"
     },
     {
-      "id": "stadium_3738",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Gillette Stadium\n• Team: Various\n• Capacity: 68,756\n• Location: Foxborough, MA\n• Surface: Turf\n• Elevation: 78 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
+      "id": "betting_preview_week4_401762820",
+      "kind": "betting_preview",
+      "text": "Week 4 Mid-American Betting Preview\nToledo Rockets (-14.5) @ Western Michigan Broncos (+440)\nO/U: 50.5\n\n#GoRockets #RowTheBoat",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762820",
+      "expiresAt": "2025-09-16T03:04:42.544Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.544Z"
     },
     {
-      "id": "stadium_3835",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Norman, OK)\n• Team: Various\n• Capacity: 86,112\n• Location: Norman, OK\n• Surface: Grass\n• Elevation: 355 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
+      "id": "betting_preview_week4_401754538",
+      "kind": "betting_preview",
+      "text": "Week 4 ACC Betting Preview\nNC State Wolfpack (+114) @ Duke Blue Devils (-2.5)\nO/U: 59.5\n\n#GoPack #GoDuke",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754538",
+      "expiresAt": "2025-09-16T03:04:42.544Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.544Z"
     },
     {
-      "id": "stadium_3798",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Lambeau Field\n• Team: Various\n• Capacity: 80,735\n• Location: Greenbay, WI\n• Surface: Grass\n• Elevation: 192 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
+      "id": "betting_preview_week4_401761611",
+      "kind": "betting_preview",
+      "text": "Week 4 Sun Belt Betting Preview\nCoastal Carolina Chanticleers (+470) @ South Alabama Jaguars (-14.5)\nO/U: 51.5\n\n#TealNation #GoJags",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401761611",
+      "expiresAt": "2025-09-16T03:04:42.544Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.544Z"
     },
     {
-      "id": "stadium_3887",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Razorback Stadium\n• Team: Various\n• Capacity: 80,000\n• Location: Fayetteville, AR\n• Surface: Turf\n• Elevation: 404 ft\n\n#CFB #CFB",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
+      "id": "betting_preview_week4_401756899",
+      "kind": "betting_preview",
+      "text": "Week 4 Big 12 Betting Preview\nWest Virginia Mountaineers (+320) @ Kansas Jayhawks (-11.5)\nO/U: 55.5\n\n#HailWV #RockChalk",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756899",
+      "expiresAt": "2025-09-16T03:04:42.544Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.544Z"
     },
     {
-      "id": "stadium_1001",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Bryant-Denny Stadium\n• Team: Alabama Crimson Tide\n• Capacity: 100,077\n• Location: Tuscaloosa, AL\n• Surface: Grass\n• Elevation: 200 ft\n\n#CFB #RollTide #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
+      "id": "betting_preview_week4_401754539",
+      "kind": "betting_preview",
+      "text": "Week 4 ACC Betting Preview\nStanford Cardinal (+525) @ Virginia Cavaliers (-15.5)\nO/U: 48.5\n\n#GoStanford #GoHoos",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754539",
+      "expiresAt": "2025-09-16T03:04:42.544Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.544Z"
     },
     {
-      "id": "stadium_1002",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Jordan-Hare Stadium\n• Team: Auburn Tigers\n• Capacity: 87,451\n• Location: Auburn, AL\n• Surface: Grass\n• Elevation: 700 ft\n\n#CFB #WarEagle #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
+      "id": "betting_preview_week4_401760374",
+      "kind": "betting_preview",
+      "text": "Week 4 Mountain West Betting Preview\nFresno State Bulldogs (-3.5) @ Hawai'i Rainbow Warriors (+136)\nO/U: 47.5\n\n#GoDogs #GoBows",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760374",
+      "expiresAt": "2025-09-16T03:04:42.544Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.544Z"
     },
     {
-      "id": "stadium_1003",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Ben Hill Griffin Stadium\n• Team: Florida Gators\n• Capacity: 88,548\n• Location: Gainesville, FL\n• Surface: Grass\n• Elevation: 150 ft\n\n#CFB #GoGators #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1004",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Sanford Stadium\n• Team: Georgia Bulldogs\n• Capacity: 92,746\n• Location: Athens, GA\n• Surface: Grass\n• Elevation: 186 ft\n\n#CFB #GoDawgs #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1005",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Kroger Field\n• Team: Kentucky Wildcats\n• Capacity: 61,000\n• Location: Lexington, KY\n• Surface: Grass\n• Elevation: 950 ft\n\n#CFB #BBN #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1006",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Tiger Stadium\n• Team: LSU Tigers\n• Capacity: 102,321\n• Location: Baton Rouge, LA\n• Surface: Grass\n• Elevation: 50 ft\n\n#CFB #GeauxTigers #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1007",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Davis Wade Stadium\n• Team: Mississippi State Bulldogs\n• Capacity: 61,337\n• Location: Starkville, MS\n• Surface: Grass\n• Elevation: 350 ft\n\n#CFB #HailState #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1008",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Faurot Field\n• Team: Missouri Tigers\n• Capacity: 62,621\n• Location: Columbia, MO\n• Surface: Grass\n• Elevation: 700 ft\n\n#CFB #MIZ #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1009",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Vaught-Hemingway Stadium\n• Team: Ole Miss Rebels\n• Capacity: 64,038\n• Location: Oxford, MS\n• Surface: Grass\n• Elevation: 500 ft\n\n#CFB #HottyToddy #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1010",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Williams-Brice Stadium\n• Team: South Carolina Gamecocks\n• Capacity: 80,250\n• Location: Columbia, SC\n• Surface: Grass\n• Elevation: 200 ft\n\n#CFB #SpursUp #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1011",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Neyland Stadium\n• Team: Tennessee Volunteers\n• Capacity: 102,455\n• Location: Knoxville, TN\n• Surface: Grass\n• Elevation: 272 ft\n\n#CFB #GBO #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1012",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Kyle Field\n• Team: Texas A&M Aggies\n• Capacity: 102,733\n• Location: College Station, TX\n• Surface: Grass\n• Elevation: 109 ft\n\n#CFB #GigEm #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1013",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Vanderbilt Stadium\n• Team: Vanderbilt Commodores\n• Capacity: 40,350\n• Location: Nashville, TN\n• Surface: Grass\n• Elevation: 500 ft\n\n#CFB #AnchorDown #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1014",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Razorback Stadium\n• Team: Arkansas Razorbacks\n• Capacity: 76,000\n• Location: Fayetteville, AR\n• Surface: Grass\n• Elevation: 1,400 ft\n\n#CFB #WPS #SEC",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1015",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Arizona Stadium\n• Team: Arizona Wildcats\n• Capacity: 50,782\n• Location: Tucson, AZ\n• Surface: Turf\n• Elevation: 742 ft\n\n#CFB #BearDown #PAC12",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1016",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Sun Devil Stadium\n• Team: Arizona State Sun Devils\n• Capacity: 53,599\n• Location: Tempe, AZ\n• Surface: Grass\n• Elevation: 1,200 ft\n\n#CFB #ForksUp #PAC12",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1017",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium\n• Team: California Golden Bears\n• Capacity: 62,467\n• Location: Berkeley, CA\n• Surface: Grass\n• Elevation: 200 ft\n\n#CFB #GoBears #PAC12",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1018",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Folsom Field\n• Team: Colorado Buffaloes\n• Capacity: 50,183\n• Location: Boulder, CO\n• Surface: Grass\n• Elevation: 1,634 ft\n\n#CFB #SkoBuffs #PAC12",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1019",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Autzen Stadium\n• Team: Oregon Ducks\n• Capacity: 54,000\n• Location: Eugene, OR\n• Surface: Turf\n• Elevation: 127 ft\n\n#CFB #GoDucks #PAC12",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1020",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Reser Stadium\n• Team: Oregon State Beavers\n• Capacity: 43,363\n• Location: Corvallis, OR\n• Surface: Turf\n• Elevation: 67 ft\n\n#CFB #GoBeavs #PAC12",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1021",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Stanford Stadium\n• Team: Stanford Cardinal\n• Capacity: 50,424\n• Location: Stanford, CA\n• Surface: Grass\n• Elevation: 18 ft\n\n#CFB #GoStanford #PAC12",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1022",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Rose Bowl\n• Team: UCLA Bruins\n• Capacity: 88,565\n• Location: Pasadena, CA\n• Surface: Grass\n• Elevation: 245 ft\n\n#CFB #GoBruins #PAC12",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1023",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Los Angeles Memorial Coliseum\n• Team: USC Trojans\n• Capacity: 77,500\n• Location: Los Angeles, CA\n• Surface: Grass\n• Elevation: 43 ft\n\n#CFB #FightOn #PAC12",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1024",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Rice-Eccles Stadium\n• Team: Utah Utes\n• Capacity: 51,444\n• Location: Salt Lake City, UT\n• Surface: Grass\n• Elevation: 4,600 ft\n\n#CFB #GoUtes #PAC12",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
-    },
-    {
-      "id": "stadium_1025",
-      "kind": "stadiums",
-      "text": "🏟️ Stadium Spotlight: Husky Stadium\n• Team: Washington Huskies\n• Capacity: 70,083\n• Location: Seattle, WA\n• Surface: Turf\n• Elevation: 200 ft\n\n#CFB #PurpleReign #PAC12",
-      "link": "",
-      "expiresAt": "2025-09-22T03:09:30.476Z",
-      "source": "venues",
-      "generatedAt": "2025-09-15T03:09:30.476Z"
+      "id": "betting_preview_week4_401760372",
+      "kind": "betting_preview",
+      "text": "Week 4 Mountain West Betting Preview\nBoise State Broncos (-8.5) @ Air Force Falcons (+280)\nO/U: 51.5\n\n#BleedBlue #LetsFly",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760372",
+      "expiresAt": "2025-09-16T03:04:42.544Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T03:04:42.544Z"
     }
   ]
 }
