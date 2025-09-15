@@ -24,9 +24,9 @@ console.log("✅ Cleared betting lines cache");
 writeJson("posted_ids.json", { ids: [] });
 console.log("✅ Reset posted IDs");
 
-// Clear the queue (optional - uncomment if you want to clear all posts)
-// writeJson("public/cfb_queue.json", { generatedAt: new Date().toISOString(), posts: [] });
-// console.log("✅ Cleared content queue");
+// Clear the queue to force fresh content
+writeJson("public/cfb_queue.json", { generatedAt: new Date().toISOString(), posts: [] });
+console.log("✅ Cleared content queue");
 
 console.log("🎉 All caches cleared! Next API calls will be fresh.");
 
