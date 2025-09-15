@@ -331,7 +331,7 @@ async function load() {
     const bettingPosts = data.posts?.filter(p => p.kind === "betting_preview") || [];
     const stadiumPosts = data.posts?.filter(p => p.kind === "stadiums") || [];
 
-    // Sort posts: unposted first, then posted (by priority desc, then by original order)
+    // Sort posts: unposted first, then posted (by original order)
     const postedItems = getPostedItems();
     const sortPosts = (posts) => {
       return posts.sort((a, b) => {
@@ -340,8 +340,7 @@ async function load() {
         
         if (aPosted && !bPosted) return 1;  // a goes after b
         if (!aPosted && bPosted) return -1; // a goes before b
-        if (aPosted && bPosted) return 0;   // maintain order for posted items
-        return b.priority - a.priority;     // sort by priority for unposted
+        return 0; // maintain original order
       });
     };
 
@@ -655,7 +654,7 @@ function createPostElement(p, queueGeneratedAt) {
   el.innerHTML = `
     <div style="flex:1">
       <div>${(p.text||"").replace(/</g,"&lt;")}</div>
-      <div class="meta">${p.kind} • priority ${p.priority}${
+      <div class="meta">${p.kind}${
         p.link ? ` • <a href="${p.link}" target="_blank">boxscore</a>` : ""
       }${isPosted ? ' • <strong>POSTED</strong>' : ''} • <span style="color: #9ca3af;">(${timeAgo})</span></div>
     </div>

@@ -1,5 +1,6 @@
 // scripts/generate_cfb_posts.mjs
 import fs from "node:fs";
+import { getCurrentWeekFromDate } from "./week-utils.mjs";
 
 // --- CONFIG ---
 const BASE = "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?groups=80";

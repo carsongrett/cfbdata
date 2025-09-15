@@ -1,5 +1,6 @@
 // scripts/generate_betting_previews_only.mjs
 import fs from "node:fs";
+import { getCurrentWeekFromDate } from "./week-utils.mjs";
 
 // --- CONFIG ---
 const CFBD_API_KEY = "AYkI+Yu/PHFp5lbWxTjrAjN0q4DFidrdJgSoiGvPXve807qSdw0BJ6c08Vf0kFcN";
@@ -38,13 +39,9 @@ async function processBettingPreviews() {
   try {
     // Get current season and week
     const currentSeason = new Date().getFullYear(); // 2025
-    const currentWeek = await getCurrentWeek(currentSeason);
+    const currentWeek = getCurrentWeekFromDate();
     
-    if (!currentWeek) {
-      console.log("No current week found, skipping betting previews");
-      return [];
-    }
-
+    console.log(`Using Week ${currentWeek} for betting previews (date-based calculation)`);
     console.log(`Fetching betting lines for Week ${currentWeek}`);
 
     // Fetch betting lines for current week
@@ -81,62 +78,6 @@ async function processBettingPreviews() {
   }
 }
 
-async function getCurrentWeek(season) {
-  try {
-    console.log(`Finding most recent week with betting data for season ${season}...`);
-    
-    // Get all available weeks from calendar
-    const response = await fetch(`${CFBD_BASE}/calendar?year=${season}`, {
-      headers: { "Authorization": `Bearer ${CFBD_API_KEY}` }
-    });
-    
-    console.log(`Calendar response status: ${response.status}`);
-    if (!response.ok) {
-      console.error(`Calendar API error: ${response.status} ${response.statusText}`);
-      return null;
-    }
-    
-    const calendar = await response.json();
-    console.log(`Calendar data:`, calendar);
-    
-    // Get all available week numbers and sort them in descending order
-    const availableWeeks = calendar
-      .filter(week => week.week && typeof week.week === 'number')
-      .map(week => week.week)
-      .sort((a, b) => b - a); // Sort descending (highest first)
-    
-    console.log(`Available weeks: ${availableWeeks.join(', ')}`);
-    
-    // Try each week in descending order until we find one with betting data
-    for (const week of availableWeeks) {
-      console.log(`Testing week ${week} for betting data...`);
-      
-      try {
-        const bettingResponse = await fetch(`${CFBD_BASE}/lines?year=${season}&week=${week}`, {
-          headers: { "Authorization": `Bearer ${CFBD_API_KEY}` }
-        });
-        
-        if (bettingResponse.ok) {
-          const bettingData = await bettingResponse.json();
-          if (bettingData && bettingData.length > 0) {
-            console.log(`Found betting data for week ${week}: ${bettingData.length} games`);
-            console.log(`Using week ${week} for betting previews (most recent with data)`);
-            return week;
-          }
-        }
-        console.log(`Week ${week} has no betting data`);
-      } catch (error) {
-        console.log(`Error testing week ${week}:`, error.message);
-      }
-    }
-    
-    console.log("No weeks found with betting data");
-    return null;
-  } catch (error) {
-    console.error("Error finding current week:", error);
-    return null;
-  }
-}
 
 async function fetchBettingLines(season, week) {
   try {
@@ -215,7 +156,6 @@ function createBettingPreviewPost(game, week) {
     expiresAt: new Date(Date.now() + 24 * 3600e3).toISOString(), // 24 hours
     source: "cfbd",
     generatedAt: new Date().toISOString(),
-    priority: 5 // Medium priority
   };
 }
 

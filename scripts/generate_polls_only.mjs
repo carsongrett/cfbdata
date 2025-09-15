@@ -1,5 +1,6 @@
 // scripts/generate_polls_only.mjs
 import fs from "node:fs";
+import { getCurrentWeekFromDate } from "./week-utils.mjs";
 
 // --- CONFIG ---
 const CFBD_API_KEY = "AYkI+Yu/PHFp5lbWxTjrAjN0q4DFidrdJgSoiGvPXve807qSdw0BJ6c08Vf0kFcN";
@@ -62,12 +63,9 @@ async function processAPPoll() {
   try {
     // Get current season and week
     const currentSeason = new Date().getFullYear(); // 2025
-    const currentWeek = await getCurrentWeek(currentSeason);
+    const currentWeek = getCurrentWeekFromDate();
     
-    if (!currentWeek) {
-      console.log("No current week found, skipping AP poll");
-      return [];
-    }
+    console.log(`Using Week ${currentWeek} for polls (date-based calculation)`);
 
     // Always fetch fresh data instead of using cache
     console.log(`Fetching fresh AP poll data for Week ${currentWeek}`);
@@ -134,12 +132,9 @@ async function processCoachesPoll() {
   try {
     // Get current season and week
     const currentSeason = new Date().getFullYear(); // 2025
-    const currentWeek = await getCurrentWeek(currentSeason);
+    const currentWeek = getCurrentWeekFromDate();
     
-    if (!currentWeek) {
-      console.log("No current week found, skipping Coaches poll");
-      return [];
-    }
+    console.log(`Using Week ${currentWeek} for polls (date-based calculation)`);
 
     // Always fetch fresh data instead of using cache
     console.log(`Fetching fresh Coaches poll data for Week ${currentWeek}`);
@@ -206,12 +201,9 @@ async function processSPRatings() {
   try {
     // Get current season and week
     const currentSeason = new Date().getFullYear(); // 2025
-    const currentWeek = await getCurrentWeek(currentSeason);
+    const currentWeek = getCurrentWeekFromDate();
     
-    if (!currentWeek) {
-      console.log("No current week found, skipping SP+ ratings");
-      return [];
-    }
+    console.log(`Using Week ${currentWeek} for polls (date-based calculation)`);
 
     // Always fetch fresh data instead of using cache
     console.log(`Fetching fresh SP+ ratings data for Week ${currentWeek}`);
@@ -275,65 +267,6 @@ async function processSPRatings() {
   }
 }
 
-async function getCurrentWeek(season) {
-  try {
-    console.log(`Finding most recent week with poll data for season ${season}...`);
-    
-    // Get all available weeks from calendar
-    const response = await fetch(`${CFBD_BASE}/calendar?year=${season}`, {
-      headers: { "Authorization": `Bearer ${CFBD_API_KEY}` }
-    });
-    
-    console.log(`Calendar response status: ${response.status}`);
-    if (!response.ok) {
-      console.error(`Calendar API error: ${response.status} ${response.statusText}`);
-      return null;
-    }
-    
-    const calendar = await response.json();
-    console.log(`Calendar data:`, calendar);
-    
-    // Get all available week numbers and sort them in descending order
-    const availableWeeks = calendar
-      .filter(week => week.week && typeof week.week === 'number')
-      .map(week => week.week)
-      .sort((a, b) => b - a); // Sort descending (highest first)
-    
-    console.log(`Available weeks: ${availableWeeks.join(', ')}`);
-    
-    // Try each week in descending order until we find one with poll data
-    for (const week of availableWeeks) {
-      console.log(`Testing week ${week} for poll data...`);
-      
-      try {
-        const pollResponse = await fetch(`${CFBD_BASE}/rankings?year=${season}&week=${week}&seasonType=regular`, {
-          headers: { "Authorization": `Bearer ${CFBD_API_KEY}` }
-        });
-        
-        if (pollResponse.ok) {
-          const pollData = await pollResponse.json();
-          if (pollData && pollData.length > 0) {
-            const polls = pollData[0]?.polls || [];
-            if (polls.length > 0) {
-              console.log(`Found poll data for week ${week}:`, polls.map(p => p.poll));
-              console.log(`Using week ${week} for polls (most recent with data)`);
-              return week;
-            }
-          }
-        }
-        console.log(`Week ${week} has no poll data`);
-      } catch (error) {
-        console.log(`Error testing week ${week}:`, error.message);
-      }
-    }
-    
-    console.log("No weeks found with poll data");
-    return null;
-  } catch (error) {
-    console.error("Error finding current week:", error);
-    return null;
-  }
-}
 
 async function fetchAPPoll(season, week) {
   try {
