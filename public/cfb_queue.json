@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-15T00:49:35.182Z",
+  "generatedAt": "2025-09-15T01:03:19.893Z",
   "posts": [
     {
       "id": "final_401754531",
@@ -630,6 +630,51 @@
       "expiresAt": "2025-09-16T12:49:35.596Z",
       "source": "espn",
       "generatedAt": "2025-09-15T00:49:35.596Z"
+    },
+    {
+      "id": "ap_top10_week3",
+      "kind": "poll_top10",
+      "text": "AP Top 10 - Week 3\n1. Ohio State\n2. Penn State\n3. LSU\n4. Oregon\n5. Miami\n6. Georgia\n7. Texas\n8. Notre Dame\n9. Illinois\n10. Florida State\n\n#APTop25 #CFB",
+      "link": "",
+      "expiresAt": "2025-09-22T01:03:21.277Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T01:03:21.277Z"
+    },
+    {
+      "id": "ap_movers_week3",
+      "kind": "poll_movers",
+      "text": "AP Poll Movers - Week 3\n⬇️-8 Michigan (15→23)\n⬆️+7 Tennessee (22→15)\n⬆️+5 Oklahoma (18→13)\n⬆️+5 Utah (25→20)\n⬆️+4 Florida State (14→10)\n⬇️-4 Clemson (8→12)\nNEW: #18 South Florida\nNEW: #24 Auburn\nNEW: #25 Missouri\n\n#APTop25 #CFB",
+      "link": "",
+      "expiresAt": "2025-09-22T01:03:21.278Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T01:03:21.278Z"
+    },
+    {
+      "id": "coaches_top10_week3",
+      "kind": "poll_top10",
+      "text": "Coaches Poll Top 10 - Week 3\n1. Ohio State\n2. Penn State\n3. Georgia\n4. LSU\n5. Oregon\n6. Miami\n7. Texas\n8. Notre Dame\n9. Illinois\n10. South Carolina\n\n#CoachesPoll #CFB",
+      "link": "",
+      "expiresAt": "2025-09-22T01:03:24.164Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T01:03:24.164Z"
+    },
+    {
+      "id": "coaches_movers_week3",
+      "kind": "poll_movers",
+      "text": "Coaches Poll Movers - Week 3\n⬇️-14 Arizona State (10→24)\n⬇️-9 Michigan (13→22)\n⬆️+8 Oklahoma (24→16)\n⬆️+7 Florida State (19→12)\n⬆️+5 Texas A&M (22→17)\n⬆️+4 Iowa State (18→14)\n⬆️+3 Illinois (12→9)\nNEW: #21 Utah\nNEW: #23 South Florida\n\n#Coach",
+      "link": "",
+      "expiresAt": "2025-09-22T01:03:24.164Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T01:03:24.164Z"
+    },
+    {
+      "id": "sp_top10_week3",
+      "kind": "poll_top10",
+      "text": "SP+ Power Rankings - Week 3\n1. Penn State (28.3)\n2. Oregon (27.1)\n3. Ohio State (26.5)\n4. Alabama (26.4)\n5. Ole Miss (22.6)\n6. Oklahoma (21.8)\n7. Tennessee (21.8)\n8. Georgia (21.4)\n9. USC (19.8)\n10. Miami (19.7)\n\n#SPPlus #CFB",
+      "link": "",
+      "expiresAt": "2025-09-22T01:03:27.086Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-15T01:03:27.086Z"
     }
   ]
 }
