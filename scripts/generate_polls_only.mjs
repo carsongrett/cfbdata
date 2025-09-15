@@ -355,40 +355,28 @@ async function getCurrentWeek(season) {
     // For polls, we want the week that should have polls available
     let targetWeek = null;
     
-    if (dayOfWeek === 0) { // Sunday
-      // On Sunday, polls should be available for the current week
-      // (polls are released after Saturday's games)
-      const currentWeek = calendar.find(week => {
-        const startDate = new Date(week.startDate);
-        const endDate = new Date(week.endDate);
-        return today >= startDate && today <= endDate;
-      });
+    // Find the most recent completed week (week that has ended)
+    const completedWeeks = calendar.filter(week => {
+      const endDate = new Date(week.endDate);
+      return today > endDate;
+    });
+    
+    if (completedWeeks.length > 0) {
+      const lastCompletedWeek = completedWeeks[completedWeeks.length - 1];
+      const pollWeek = lastCompletedWeek.week + 1;
+      const pollWeekExists = calendar.find(week => week.week === pollWeek);
       
-      if (currentWeek) {
-        targetWeek = currentWeek.week;
-        console.log(`Sunday: Using current week ${targetWeek} for polls`);
+      if (pollWeekExists) {
+        targetWeek = pollWeek;
+        console.log(`Using week ${targetWeek} for polls (after completed week ${lastCompletedWeek.week})`);
+      } else {
+        targetWeek = lastCompletedWeek.week;
+        console.log(`Using last completed week ${targetWeek} for polls`);
       }
     } else {
-      // Monday-Saturday: Find the most recent completed week
-      // Polls should be available for the week after the completed week
-      const completedWeeks = calendar.filter(week => {
-        const endDate = new Date(week.endDate);
-        return today > endDate;
-      });
-      
-      if (completedWeeks.length > 0) {
-        const lastCompletedWeek = completedWeeks[completedWeeks.length - 1];
-        const pollWeek = lastCompletedWeek.week + 1;
-        const pollWeekExists = calendar.find(week => week.week === pollWeek);
-        
-        if (pollWeekExists) {
-          targetWeek = pollWeek;
-          console.log(`Weekday: Using week ${targetWeek} for polls (after completed week ${lastCompletedWeek.week})`);
-        } else {
-          targetWeek = lastCompletedWeek.week;
-          console.log(`Weekday: Using last completed week ${targetWeek} for polls`);
-        }
-      }
+      // If no weeks are completed yet, use week 1
+      targetWeek = 1;
+      console.log(`No completed weeks found, using week 1 for polls`);
     }
     
     if (targetWeek) {
