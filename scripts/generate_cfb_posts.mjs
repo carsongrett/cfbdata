@@ -524,29 +524,44 @@ async function getCurrentWeek(season) {
       console.log(`Current week: ${currentWeek.week}`);
       return currentWeek.week;
     } else {
-      // If we're between weeks, find the most recent completed week
-      const completedWeeks = calendar.filter(week => {
-        const endDate = new Date(week.endDate);
-        return today > endDate;
-      });
+      // If we're between weeks, find the most recent week with poll data
+      console.log("No current week found, searching for most recent week with poll data...");
       
-      if (completedWeeks.length > 0) {
-        const lastCompletedWeek = completedWeeks[completedWeeks.length - 1];
-        // For polls, we typically want the week AFTER the completed week
-        // since polls are released after games are done
-        const pollWeek = lastCompletedWeek.week + 1;
-        const pollWeekExists = calendar.find(week => week.week === pollWeek);
+      // Get all available week numbers and sort them in descending order
+      const availableWeeks = calendar
+        .filter(week => week.week && typeof week.week === 'number')
+        .map(week => week.week)
+        .sort((a, b) => b - a); // Sort descending (highest first)
+      
+      console.log(`Available weeks: ${availableWeeks.join(', ')}`);
+      
+      // Try each week in descending order until we find one with poll data
+      for (const week of availableWeeks) {
+        console.log(`Testing week ${week} for poll data...`);
         
-        if (pollWeekExists) {
-          console.log(`No current week found, polls should be available for week: ${pollWeek}`);
-          return pollWeek;
-        } else {
-          console.log(`No current week found, using last completed week: ${lastCompletedWeek.week}`);
-          return lastCompletedWeek.week;
+        try {
+          const pollResponse = await fetch(`${CFBD_BASE}/rankings?year=${season}&week=${week}&seasonType=regular`, {
+            headers: { "Authorization": `Bearer ${CFBD_API_KEY}` }
+          });
+          
+          if (pollResponse.ok) {
+            const pollData = await pollResponse.json();
+            if (pollData && pollData.length > 0) {
+              const polls = pollData[0]?.polls || [];
+              if (polls.length > 0) {
+                console.log(`Found poll data for week ${week}:`, polls.map(p => p.poll));
+                console.log(`Using week ${week} for polls (most recent with data)`);
+                return week;
+              }
+            }
+          }
+          console.log(`Week ${week} has no poll data`);
+        } catch (error) {
+          console.log(`Error testing week ${week}:`, error.message);
         }
       }
       
-      console.log("No current week or completed weeks found");
+      console.log("No weeks found with poll data");
       return null;
     }
   } catch (error) {

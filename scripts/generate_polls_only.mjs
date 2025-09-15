@@ -107,6 +107,7 @@ async function processAPPoll() {
     pollCache.lastFetch = new Date().toISOString();
     pollCache.lastWeek = currentWeek;
     pollCache.lastSeason = currentSeason;
+    const weekKey = currentWeek.toString();
     pollCache.apPolls[weekKey] = currentPoll;
     
     // Also fetch and cache previous week if we don't have it
@@ -178,6 +179,7 @@ async function processCoachesPoll() {
     pollCache.lastFetch = new Date().toISOString();
     pollCache.lastWeek = currentWeek;
     pollCache.lastSeason = currentSeason;
+    const weekKey = currentWeek.toString();
     pollCache.coachesPolls[weekKey] = currentPoll;
     
     // Also fetch and cache previous week if we don't have it
@@ -250,6 +252,7 @@ async function processSPRatings() {
     pollCache.lastWeek = currentWeek;
     pollCache.lastSeason = currentSeason;
     if (!pollCache.spRatings) pollCache.spRatings = {};
+    const weekKey = currentWeek.toString();
     pollCache.spRatings[weekKey] = currentRatings;
     
     // Also fetch and cache previous week if we don't have it
@@ -274,7 +277,9 @@ async function processSPRatings() {
 
 async function getCurrentWeek(season) {
   try {
-    console.log(`Fetching calendar for season ${season}...`);
+    console.log(`Finding most recent week with poll data for season ${season}...`);
+    
+    // Get all available weeks from calendar
     const response = await fetch(`${CFBD_BASE}/calendar?year=${season}`, {
       headers: { "Authorization": `Bearer ${CFBD_API_KEY}` }
     });
@@ -288,46 +293,44 @@ async function getCurrentWeek(season) {
     const calendar = await response.json();
     console.log(`Calendar data:`, calendar);
     
-    const today = new Date();
-    const dayOfWeek = today.getDay(); // 0 = Sunday, 1 = Monday, etc.
+    // Get all available week numbers and sort them in descending order
+    const availableWeeks = calendar
+      .filter(week => week.week && typeof week.week === 'number')
+      .map(week => week.week)
+      .sort((a, b) => b - a); // Sort descending (highest first)
     
-    // For polls: New week starts on Sunday (after Saturday's games)
-    // For polls, we want the week that should have polls available
-    let targetWeek = null;
+    console.log(`Available weeks: ${availableWeeks.join(', ')}`);
     
-    // Find the most recent completed week (week that has ended)
-    const completedWeeks = calendar.filter(week => {
-      const endDate = new Date(week.endDate);
-      return today > endDate;
-    });
-    
-    if (completedWeeks.length > 0) {
-      const lastCompletedWeek = completedWeeks[completedWeeks.length - 1];
-      const pollWeek = lastCompletedWeek.week + 1;
-      const pollWeekExists = calendar.find(week => week.week === pollWeek);
+    // Try each week in descending order until we find one with poll data
+    for (const week of availableWeeks) {
+      console.log(`Testing week ${week} for poll data...`);
       
-      if (pollWeekExists) {
-        targetWeek = pollWeek;
-        console.log(`Using week ${targetWeek} for polls (after completed week ${lastCompletedWeek.week})`);
-      } else {
-        targetWeek = lastCompletedWeek.week;
-        console.log(`Using last completed week ${targetWeek} for polls`);
+      try {
+        const pollResponse = await fetch(`${CFBD_BASE}/rankings?year=${season}&week=${week}&seasonType=regular`, {
+          headers: { "Authorization": `Bearer ${CFBD_API_KEY}` }
+        });
+        
+        if (pollResponse.ok) {
+          const pollData = await pollResponse.json();
+          if (pollData && pollData.length > 0) {
+            const polls = pollData[0]?.polls || [];
+            if (polls.length > 0) {
+              console.log(`Found poll data for week ${week}:`, polls.map(p => p.poll));
+              console.log(`Using week ${week} for polls (most recent with data)`);
+              return week;
+            }
+          }
+        }
+        console.log(`Week ${week} has no poll data`);
+      } catch (error) {
+        console.log(`Error testing week ${week}:`, error.message);
       }
-    } else {
-      // If no weeks are completed yet, use week 1
-      targetWeek = 1;
-      console.log(`No completed weeks found, using week 1 for polls`);
     }
     
-    if (targetWeek) {
-      console.log(`Poll week determined: ${targetWeek}`);
-      return targetWeek;
-    } else {
-      console.log("No appropriate week found for polls");
-      return null;
-    }
+    console.log("No weeks found with poll data");
+    return null;
   } catch (error) {
-    console.error("Error fetching current week:", error);
+    console.error("Error finding current week:", error);
     return null;
   }
 }
