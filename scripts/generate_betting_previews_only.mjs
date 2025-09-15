@@ -1,74 +1,85 @@
-// scripts/generate_betting_previews.mjs
+// scripts/generate_betting_previews_only.mjs
 import fs from "node:fs";
 
 // --- CONFIG ---
 const CFBD_API_KEY = "AYkI+Yu/PHFp5lbWxTjrAjN0q4DFidrdJgSoiGvPXve807qSdw0BJ6c08Vf0kFcN";
 const CFBD_BASE = "https://api.collegefootballdata.com";
-const TEAM_HASHTAGS_FILE = "public/team_hashtags.json";
-const QUEUE_FILE = "public/cfb_queue.json";
-const POSTED_IDS_FILE = "posted_ids.json";
 
-// --- LOAD DATA ---
-const teamHashtags = loadJson(TEAM_HASHTAGS_FILE, []);
-const posted = loadJson(POSTED_IDS_FILE, { ids: [] });
+// --- LOAD PREVIOUSLY POSTED ---
+const nowIso = new Date().toISOString();
+const posted = readJson("posted_ids.json", { ids: [] });
 
-console.log("Generating betting previews...");
+// --- LOAD TEAM HASHTAGS ---
+const teamHashtags = readJson("public/team_hashtags.json", []);
 
-// --- PROCESS GAMES ---
-async function getBettingGames() {
-  const currentSeason = new Date().getFullYear();
-  const currentWeek = await getCurrentWeek(currentSeason);
-  
-  if (!currentWeek) {
-    console.log("No current week found, skipping betting previews");
-    return [];
-  }
-  
-  console.log(`Fetching betting lines for Week ${currentWeek}...`);
-  return await fetchBettingLines(currentSeason, currentWeek);
-}
-
-const games = await getBettingGames();
-const conferenceGames = games.filter(game => 
-  game.homeConference && 
-  game.awayConference && 
-  game.homeConference === game.awayConference &&
-  game.homeClassification === "fbs" &&
-  game.awayClassification === "fbs"
-);
-
-console.log(`Found ${conferenceGames.length} conference games`);
-
-const posts = [];
-for (const game of conferenceGames) {
-  const post = createBettingPreviewPost(game);
-  if (post) {
-    posts.push(post);
-  }
-}
-
-console.log(`Generated ${posts.length} betting preview posts`);
+// --- PROCESS BETTING PREVIEWS ---
+console.log("Processing betting previews...");
+const bettingPosts = await processBettingPreviews();
+console.log(`Betting preview posts generated: ${bettingPosts.length}`);
 
 // --- WRITE OUTPUT ---
-if (posts.length > 0) {
-  const existingQueue = loadJson(QUEUE_FILE, { posts: [] });
-  const updatedQueue = {
-    ...existingQueue,
-    generatedAt: new Date().toISOString(),
-    posts: [...existingQueue.posts, ...posts]
-  };
-  
-  writeJson(QUEUE_FILE, updatedQueue);
-  
-  const newPostedIds = posts.map(p => p.id);
-  writeJson(POSTED_IDS_FILE, { ids: [...posted.ids, ...newPostedIds] });
-  
-  console.log(`Added ${posts.length} posts to queue`);
-} else {
-  console.log("No betting preview posts generated");
-}
+// Read existing queue to preserve other posts
+const existingQueue = readJson("public/cfb_queue.json", { posts: [] });
+const existingPosts = existingQueue.posts || [];
 
-// --- FUNCTIONS ---
+// For betting previews, we want to replace old week previews with new week previews
+// Filter out old betting preview posts and add new ones
+const nonBettingPosts = existingPosts.filter(post => 
+  !post.kind.includes('betting_preview')
+);
+
+const allPosts = [...nonBettingPosts, ...bettingPosts];
+
+writeJson("public/cfb_queue.json", { generatedAt: nowIso, posts: allPosts });
+writeJson("posted_ids.json", { ids: [...posted.ids, ...bettingPosts.map(d => d.id)] });
+
+// --- BETTING PREVIEW PROCESSING FUNCTIONS ---
+async function processBettingPreviews() {
+  try {
+    // Get current season and week
+    const currentSeason = new Date().getFullYear(); // 2025
+    const currentWeek = await getCurrentWeek(currentSeason);
+    
+    if (!currentWeek) {
+      console.log("No current week found, skipping betting previews");
+      return [];
+    }
+
+    console.log(`Fetching betting lines for Week ${currentWeek}`);
+
+    // Fetch betting lines for current week
+    const bettingLines = await fetchBettingLines(currentSeason, currentWeek);
+    if (!bettingLines || !bettingLines.length) {
+      console.log("No betting lines data found for current week");
+      return [];
+    }
+
+    // Filter for conference games (FBS vs FBS, same conference)
+    const conferenceGames = bettingLines.filter(game => 
+      game.homeConference && 
+      game.awayConference && 
+      game.homeConference === game.awayConference &&
+      game.homeClassification === "fbs" &&
+      game.awayClassification === "fbs"
+    );
+
+    console.log(`Found ${conferenceGames.length} conference games with betting lines`);
+
+    // Generate posts
+    const posts = [];
+    for (const game of conferenceGames) {
+      const post = createBettingPreviewPost(game, currentWeek);
+      if (post) {
+        posts.push(post);
+      }
+    }
+
+    return posts;
+  } catch (error) {
+    console.error("Error processing betting previews:", error);
+    return [];
+  }
+}
 
 async function getCurrentWeek(season) {
   try {
@@ -86,6 +97,7 @@ async function getCurrentWeek(season) {
     }
     
     const calendar = await response.json();
+    console.log(`Calendar data:`, calendar);
     
     // Get all available week numbers and sort them in descending order
     const availableWeeks = calendar
@@ -148,23 +160,7 @@ async function fetchBettingLines(season, week) {
   }
 }
 
-function getConferenceHashtag(conference) {
-  const conferenceMap = {
-    "SEC": "#SEC",
-    "Big Ten": "#BIG10", 
-    "Big 12": "#BIG12",
-    "ACC": "#ACC",
-    "Pac-12": "#PAC12",
-    "American Athletic": "#AAC",
-    "Mountain West": "#MWC",
-    "Sun Belt": "#SUNBELT",
-    "Conference USA": "#CUSA",
-    "Mid-American": "#MAC"
-  };
-  return conferenceMap[conference] || `#${conference.replace(/\s+/g, '')}`;
-}
-
-function createBettingPreviewPost(game) {
+function createBettingPreviewPost(game, week) {
   // Get odds from DraftKings or ESPN Bet
   const odds = getOdds(game);
   if (!odds) {
@@ -201,11 +197,11 @@ function createBettingPreviewPost(game) {
   // Get conference name (without hashtag)
   const conferenceName = game.homeConference;
   
-  // Create post text in new format
-  const text = `Week 3 ${conferenceName} Betting Preview\n${awayTeamText} @ ${homeTeamText}\nO/U: ${odds.overUnder}\n\n#${awayInfo.hashtag.replace('#', '')} #${homeInfo.hashtag.replace('#', '')}`;
+  // Create post text
+  const text = `Week ${week} ${conferenceName} Betting Preview\n${awayTeamText} @ ${homeTeamText}\nO/U: ${odds.overUnder}\n\n#${awayInfo.hashtag.replace('#', '')} #${homeInfo.hashtag.replace('#', '')}`;
   
   // Check if already posted
-  const id = `betting_preview_${game.id}`;
+  const id = `betting_preview_week${week}_${game.id}`;
   if (posted.ids.includes(id)) {
     console.log(`Betting preview for game ${game.id} already posted`);
     return null;
@@ -218,7 +214,8 @@ function createBettingPreviewPost(game) {
     link: `https://www.espn.com/college-football/game/_/gameId/${game.id}`,
     expiresAt: new Date(Date.now() + 24 * 3600e3).toISOString(), // 24 hours
     source: "cfbd",
-    generatedAt: new Date().toISOString()
+    generatedAt: new Date().toISOString(),
+    priority: 5 // Medium priority
   };
 }
 
@@ -276,16 +273,12 @@ function getTeamInfo(teamName) {
   };
 }
 
-
-function loadJson(file, fallback) {
-  try {
-    return JSON.parse(fs.readFileSync(file, "utf8"));
-  } catch {
-    return fallback;
-  }
+// --- HELPERS ---
+function readJson(p, fallback) {
+  try { return JSON.parse(fs.readFileSync(p, "utf8")); }
+  catch { return fallback; }
 }
-
-function writeJson(file, obj) {
-  fs.mkdirSync(file.split("/").slice(0, -1).join("/") || ".", { recursive: true });
-  fs.writeFileSync(file, JSON.stringify(obj, null, 2));
+function writeJson(p, obj) {
+  fs.mkdirSync(p.split("/").slice(0, -1).join("/") || ".", { recursive: true });
+  fs.writeFileSync(p, JSON.stringify(obj, null, 2));
 }

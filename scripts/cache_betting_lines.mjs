@@ -53,32 +53,94 @@ async function fetchBettingLines(year, week) {
 async function cacheBettingLines() {
   const cache = loadCache();
   const currentYear = 2025;
-  const currentWeek = 3;
+  const currentWeek = await getCurrentWeek(currentYear);
   
-  console.log("Checking betting lines cache...");
-  
-  // Check if we already have Week 3 data
-  if (cache.week3 && cache.week3.length > 0) {
-    console.log(`Week 3 data already cached (${cache.week3.length} games)`);
-    console.log("Using cached data - no API calls needed");
-    return cache.week3;
+  if (!currentWeek) {
+    console.log("No current week found, skipping betting lines cache");
+    return null;
   }
   
-  console.log("Week 3 data not found in cache, fetching from API...");
+  console.log(`Checking betting lines cache for Week ${currentWeek}...`);
   
-  // Fetch Week 3 data
-  const week3Data = await fetchBettingLines(currentYear, currentWeek);
+  // Check if we already have data for this week
+  const weekKey = `week${currentWeek}`;
+  if (cache[weekKey] && cache[weekKey].length > 0) {
+    console.log(`Week ${currentWeek} data already cached (${cache[weekKey].length} games)`);
+    console.log("Using cached data - no API calls needed");
+    return cache[weekKey];
+  }
   
-  if (week3Data && week3Data.length > 0) {
+  console.log(`Week ${currentWeek} data not found in cache, fetching from API...`);
+  
+  // Fetch data for current week
+  const weekData = await fetchBettingLines(currentYear, currentWeek);
+  
+  if (weekData && weekData.length > 0) {
     // Update cache
-    cache.week3 = week3Data;
+    cache[weekKey] = weekData;
     cache.lastFetch = new Date().toISOString();
     saveCache(cache);
     
-    console.log(`Cached ${week3Data.length} games for Week 3`);
-    return week3Data;
+    console.log(`Cached ${weekData.length} games for Week ${currentWeek}`);
+    return weekData;
   } else {
-    console.log("No data found for Week 3");
+    console.log(`No data found for Week ${currentWeek}`);
+    return null;
+  }
+}
+
+async function getCurrentWeek(season) {
+  try {
+    console.log(`Finding most recent week with betting data for season ${season}...`);
+    
+    // Get all available weeks from calendar
+    const response = await fetch(`${CFBD_BASE}/calendar?year=${season}`, {
+      headers: { "Authorization": `Bearer ${CFBD_API_KEY}` }
+    });
+    
+    console.log(`Calendar response status: ${response.status}`);
+    if (!response.ok) {
+      console.error(`Calendar API error: ${response.status} ${response.statusText}`);
+      return null;
+    }
+    
+    const calendar = await response.json();
+    
+    // Get all available week numbers and sort them in descending order
+    const availableWeeks = calendar
+      .filter(week => week.week && typeof week.week === 'number')
+      .map(week => week.week)
+      .sort((a, b) => b - a); // Sort descending (highest first)
+    
+    console.log(`Available weeks: ${availableWeeks.join(', ')}`);
+    
+    // Try each week in descending order until we find one with betting data
+    for (const week of availableWeeks) {
+      console.log(`Testing week ${week} for betting data...`);
+      
+      try {
+        const bettingResponse = await fetch(`${CFBD_BASE}/lines?year=${season}&week=${week}`, {
+          headers: { "Authorization": `Bearer ${CFBD_API_KEY}` }
+        });
+        
+        if (bettingResponse.ok) {
+          const bettingData = await bettingResponse.json();
+          if (bettingData && bettingData.length > 0) {
+            console.log(`Found betting data for week ${week}: ${bettingData.length} games`);
+            console.log(`Using week ${week} for betting lines cache (most recent with data)`);
+            return week;
+          }
+        }
+        console.log(`Week ${week} has no betting data`);
+      } catch (error) {
+        console.log(`Error testing week ${week}:`, error.message);
+      }
+    }
+    
+    console.log("No weeks found with betting data");
+    return null;
+  } catch (error) {
+    console.error("Error finding current week:", error);
     return null;
   }
 }
