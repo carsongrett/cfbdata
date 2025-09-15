@@ -20,9 +20,21 @@ const pollCache = readJson("public/poll_cache.json", {
 });
 
 // --- PROCESS POLLS ---
+console.log("Processing polls sequentially to avoid API rate limits...");
 const apPollPosts = await processAPPoll();
+console.log(`AP Poll posts generated: ${apPollPosts.length}`);
+
+// Small delay to avoid rate limits
+await new Promise(resolve => setTimeout(resolve, 1000));
+
 const coachesPollPosts = await processCoachesPoll();
+console.log(`Coaches Poll posts generated: ${coachesPollPosts.length}`);
+
+// Small delay to avoid rate limits
+await new Promise(resolve => setTimeout(resolve, 1000));
+
 const spRatingsPosts = await processSPRatings();
+console.log(`SP+ Ratings posts generated: ${spRatingsPosts.length}`);
 
 // --- BUILD POSTS ARRAY ---
 const drafts = [...apPollPosts, ...coachesPollPosts, ...spRatingsPosts];
