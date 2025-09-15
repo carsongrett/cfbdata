@@ -1,0 +1,30 @@
+name: Clear Cache and Reset
+
+on:
+  workflow_dispatch:
+
+jobs:
+  clear-cache:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Clear all caches and reset posted IDs
+      run: node scripts/clear_cache_and_reset.mjs
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git diff --staged --quiet || git commit -m "Clear cache and reset: $(date -u +%Y-%m-%d_%H-%M-%S)"
+        git push
