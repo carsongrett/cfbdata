@@ -1,1472 +1,635 @@
 {
-  "generatedAt": "2025-09-15T00:24:27.683Z",
+  "generatedAt": "2025-09-15T00:49:35.182Z",
   "posts": [
     {
       "id": "final_401754531",
       "kind": "final",
-      "priority": 60,
-      "text": "NC State Wolfpack 34 @ Wake Forest Demon Deacons 24 — Final. #CFB\n(NCSU): Hollywood Smothers 24 CAR, 164 YDS\n(WAKE): Robby Ashford 21/35, 252 YDS, 2 INT\n\n#GoPack",
+      "text": "FINAL: 34-24\nNC State Wolfpack - 34\nWake Forest Demon Deacons - 24\n\n(NCSU): Hollywood Smothers 24 CAR, 164 YDS\n(WAKE): Robby Ashford 21/35, 252 YDS, 2 INT\n\n#CFB #GoPack",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754531",
-      "expiresAt": "2025-09-14T11:14:37.412Z",
-      "source": "espn"
-    },
-    {
-      "id": "ap_top10_week3",
-      "kind": "poll_top10",
-      "priority": 85,
-      "text": "AP Top 10 - Week 3\n1. Ohio State\n2. Penn State\n3. LSU\n4. Oregon\n5. Miami\n6. Georgia\n7. Texas\n8. Notre Dame\n9. Illinois\n10. Florida State\n\n#APTop25 #CFB",
-      "link": "",
-      "expiresAt": "2025-09-19T23:14:37.583Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "ap_movers_week3",
-      "kind": "poll_movers",
-      "priority": 80,
-      "text": "AP Poll Movers - Week 3\n⬇️-8 Michigan (15→23)\n⬆️+7 Tennessee (22→15)\n⬆️+5 Oklahoma (18→13)\n⬆️+5 Utah (25→20)\n⬆️+4 Florida State (14→10)\n⬇️-4 Clemson (8→12)\nNEW: #18 South Florida\nNEW: #24 Auburn\nNEW: #25 Missouri\n\n#APTop25 #CFB",
-      "link": "",
-      "expiresAt": "2025-09-19T23:14:37.584Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "coaches_top10_week3",
-      "kind": "poll_top10",
-      "priority": 85,
-      "text": "Coaches Poll Top 10 - Week 3\n1. Ohio State\n2. Penn State\n3. Georgia\n4. LSU\n5. Oregon\n6. Miami\n7. Texas\n8. Notre Dame\n9. Illinois\n10. South Carolina\n\n#CoachesPoll #CFB",
-      "link": "",
-      "expiresAt": "2025-09-19T23:14:37.670Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "coaches_movers_week3",
-      "kind": "poll_movers",
-      "priority": 80,
-      "text": "Coaches Poll Movers - Week 3\n⬇️-14 Arizona State (10→24)\n⬇️-9 Michigan (13→22)\n⬆️+8 Oklahoma (24→16)\n⬆️+7 Florida State (19→12)\n⬆️+5 Texas A&M (22→17)\n⬆️+4 Iowa State (18→14)\n⬆️+3 Illinois (12→9)\nNEW: #21 Utah\nNEW: #23 South Florida\n\n#Coach",
-      "link": "",
-      "expiresAt": "2025-09-19T23:14:37.671Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "sp_top10_week3",
-      "kind": "poll_top10",
-      "priority": 85,
-      "text": "SP+ Power Rankings - Week 3\n1. Oregon (26.7)\n2. Ohio State (26.1)\n3. Alabama (25.4)\n4. Georgia (23.4)\n5. Ole Miss (23.1)\n6. Tennessee (22.2)\n7. Penn State (22)\n8. Oklahoma (19.7)\n9. Texas (19.7)\n10. USC (19.1)\n\n#SPPlus #CFB",
-      "link": "",
-      "expiresAt": "2025-09-19T23:14:37.757Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401752699",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #SEC Preview\nFlorida Gators (+225) @ LSU Tigers (-7). O/U: 46.5\n#GoGators #GeauxTigers",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752699",
-      "expiresAt": "2025-09-13T23:55:39.548Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401754623",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #ACC Preview\nClemson Tigers (-3) @ Georgia Tech Yellow Jackets (+136). O/U: 52.5\n#ALLIN #GoJackets",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401754623",
-      "expiresAt": "2025-09-13T23:55:39.550Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401752705",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #SEC Preview\nGeorgia Bulldogs (-4) @ Tennessee Volunteers (+160). O/U: 50.5\n#GoDawgs #GBO",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752705",
-      "expiresAt": "2025-09-13T23:55:39.550Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401756893",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #BIG12 Preview\nColorado Buffaloes (+160) @ Houston Cougars (-4). O/U: 44.5\n#SkoBuffs #GoCoogs",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401756893",
-      "expiresAt": "2025-09-13T23:55:39.550Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401754531",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #ACC Preview\nNC State Wolfpack (-7.5) @ Wake Forest Demon Deacons (+240). O/U: 52.5\n#GoPack #GoDeacs",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401754531",
-      "expiresAt": "2025-09-13T23:55:39.550Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401756888",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #BIG12 Preview\nKansas State Wildcats (-1.5) @ Arizona Wildcats (+-105). O/U: 54.5\n#EMAW #BearDown",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401756888",
-      "expiresAt": "2025-09-13T23:55:39.550Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401752831",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #BIG10 Preview\nOregon Ducks (-27.5) @ Northwestern Wildcats (+2000). O/U: 48.5\n#GoDucks #GoCats",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752831",
-      "expiresAt": "2025-09-13T23:55:39.551Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401762817",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #MAC Preview\nBuffalo Bulls (-21.5) @ Kent State Golden Flashes (+1000). O/U: 48.5\n#UBhornsUP #FlashFAST",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762817",
-      "expiresAt": "2025-09-13T23:55:39.551Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401752704",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #SEC Preview\nVanderbilt Commodores (+140) @ South Carolina Gamecocks (-3.5). O/U: 48.5\n#AnchorDown #SpursUp",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752704",
-      "expiresAt": "2025-09-13T23:55:39.551Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401752832",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #BIG10 Preview\nUSC Trojans (-20.5) @ Purdue Boilermakers (+800). O/U: 59.5\n#FightOn #BoilerUp",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752832",
-      "expiresAt": "2025-09-13T23:55:39.551Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401762465",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #AAC Preview\nNavy Midshipmen (-14) @ Tulsa Golden Hurricane (+455). O/U: 51.5\n#GoNavy #ReignCane",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762465",
-      "expiresAt": "2025-09-13T23:55:39.551Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401752700",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #SEC Preview\nArkansas Razorbacks (+200) @ Ole Miss Rebels (-6.5). O/U: 62.5\n#WPS #HottyToddy",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752700",
-      "expiresAt": "2025-09-13T23:55:39.552Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401757257",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #CUSA Preview\nNew Mexico State Aggies (+300) @ Louisiana Tech Bulldogs (-10). O/U: 43.5\n#AggieUp #EverLoyalBe",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401757257",
-      "expiresAt": "2025-09-13T23:55:39.553Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401760368",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #MWC Preview\nAir Force Falcons (-4.5) @ Utah State Aggies (+164). O/U: 51.5\n#LetsFly #AggiesAllTheWay",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401760368",
-      "expiresAt": "2025-09-13T23:55:39.553Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "betting_preview_401754533",
-      "kind": "betting_preview",
-      "priority": 90,
-      "text": "Week 3 #ACC Preview\nBoston College Eagles (-13.5) @ Stanford Cardinal (+390). O/U: 44.5\n#WeAreBC #GoStanford",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401754533",
-      "expiresAt": "2025-09-13T23:55:39.553Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "stadium_spotlight_michigan",
-      "kind": "stadiums",
-      "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Michigan Stadium\n• Team: Michigan\n• Capacity: 107,601\n• Location: Ann Arbor, MI\n• Surface: Turf\n• Elevation: 256 ft\n\n#Michigan #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.119Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_penn_state",
-      "kind": "stadiums",
-      "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Beaver Stadium\n• Team: Penn State\n• Capacity: 106,572\n• Location: University Park, PA\n• Surface: Grass\n• Elevation: 354 ft\n\n#PennState #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_ohio_state",
-      "kind": "stadiums",
-      "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Ohio Stadium\n• Team: Ohio State\n• Capacity: 102,780\n• Location: Columbus, OH\n• Surface: Turf\n• Elevation: 217 ft\n\n#OhioState #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_texas_a&m",
-      "kind": "stadiums",
-      "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Kyle Field\n• Team: Texas A&M\n• Capacity: 102,733\n• Location: College Station, TX\n• Surface: Grass\n• Elevation: 109 ft\n\n#TexasA&M #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_tennessee",
-      "kind": "stadiums",
-      "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Neyland Stadium\n• Team: Tennessee\n• Capacity: 102,455\n• Location: Knoxville, TN\n• Surface: Grass\n• Elevation: 272 ft\n\n#Tennessee #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_alabama",
-      "kind": "stadiums",
-      "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Bryant-Denny Stadium\n• Team: Alabama\n• Capacity: 101,821\n• Location: Tuscaloosa, AL\n• Surface: Grass\n• Elevation: 70 ft\n\n#Alabama #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_texas",
-      "kind": "stadiums",
-      "priority": 85,
-      "text": "🏟️ Stadium Spotlight: DKR-Texas Memorial Stadium\n• Team: Texas\n• Capacity: 100,119\n• Location: Austin, TX\n• Surface: Turf\n• Elevation: 160 ft\n\n#Texas #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_georgia",
-      "kind": "stadiums",
-      "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Sanford Stadium\n• Team: Georgia\n• Capacity: 92,746\n• Location: Athens, GA\n• Surface: Grass\n• Elevation: 186 ft\n\n#Georgia #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_ucla",
-      "kind": "stadiums",
-      "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Rose Bowl\n• Team: UCLA\n• Capacity: 88,565\n• Location: Pasadena, CA\n• Surface: Grass\n• Elevation: 245 ft\n\n#UCLA #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_florida",
-      "kind": "stadiums",
-      "priority": 85,
-      "text": "🏟️ Stadium Spotlight: Ben Hill Griffin Stadium\n• Team: Florida\n• Capacity: 88,548\n• Location: Gainesville, FL\n• Surface: Grass\n• Elevation: 45 ft\n\n#Florida #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_auburn",
-      "kind": "stadiums",
-      "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Jordan-Hare Stadium\n• Team: Auburn\n• Capacity: 87,451\n• Location: Auburn, AL\n• Surface: Grass\n• Elevation: 201 ft\n\n#Auburn #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_oklahoma",
-      "kind": "stadiums",
-      "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Norman, OK)\n• Team: Oklahoma\n• Capacity: 86,112\n• Location: Norman, OK\n• Surface: Grass\n• Elevation: 355 ft\n\n#Oklahoma #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_wisconsin",
-      "kind": "stadiums",
-      "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Camp Randall Stadium\n• Team: Wisconsin\n• Capacity: 80,321\n• Location: Madison, WI\n• Surface: Turf\n• Elevation: 264 ft\n\n#Wisconsin #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_south_carolina",
-      "kind": "stadiums",
-      "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Williams-Brice Stadium\n• Team: South Carolina\n• Capacity: 80,250\n• Location: Columbia, SC\n• Surface: Grass\n• Elevation: 61 ft\n\n#SouthCarolina #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_usc",
-      "kind": "stadiums",
-      "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Los Angeles Memorial Coliseum\n• Team: USC\n• Capacity: 77,500\n• Location: Los Angeles, CA\n• Surface: Grass\n• Elevation: 43 ft\n\n#USC #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_michigan_state",
-      "kind": "stadiums",
-      "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Spartan Stadium\n• Team: Michigan State\n• Capacity: 75,005\n• Location: East Lansing, MI\n• Surface: Grass\n• Elevation: 255 ft\n\n#MichiganState #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_iowa",
-      "kind": "stadiums",
-      "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Kinnick Stadium\n• Team: Iowa\n• Capacity: 69,250\n• Location: Iowa City, IA\n• Surface: Turf\n• Elevation: 221 ft\n\n#Iowa #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_pittsburgh",
-      "kind": "stadiums",
-      "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Acrisure Stadium\n• Team: Pittsburgh\n• Capacity: 68,400\n• Location: Pittsburgh, PA\n• Surface: Grass\n• Elevation: 221 ft\n\n#Pittsburgh #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_florida_state",
-      "kind": "stadiums",
-      "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Doak Campbell Stadium\n• Team: Florida State\n• Capacity: 67,277\n• Location: Tallahassee, FL\n• Surface: Grass\n• Elevation: 20 ft\n\n#FloridaState #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_arizona_state",
-      "kind": "stadiums",
-      "priority": 84,
-      "text": "🏟️ Stadium Spotlight: Mountain America Stadium\n• Team: Arizona State\n• Capacity: 65,870\n• Location: Tempe, AZ\n• Surface: Grass\n• Elevation: 360 ft\n\n#ArizonaState #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_miami",
-      "kind": "stadiums",
-      "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Hard Rock Stadium\n• Team: Miami\n• Capacity: 64,767\n• Location: Miami Gardens, FL\n• Surface: Turf\n• Elevation: 3 ft\n\n#Miami #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_ole_miss",
-      "kind": "stadiums",
-      "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Vaught-Hemingway Stadium\n• Team: Ole Miss\n• Capacity: 64,038\n• Location: Oxford, MS\n• Surface: Grass\n• Elevation: 147 ft\n\n#OleMiss #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_byu",
-      "kind": "stadiums",
-      "priority": 83,
-      "text": "🏟️ Stadium Spotlight: LaVell Edwards Stadium\n• Team: BYU\n• Capacity: 63,470\n• Location: Provo, UT\n• Surface: Grass\n• Elevation: 1412 ft\n\n#BYU #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_cal",
-      "kind": "stadiums",
-      "priority": 83,
-      "text": "🏟️ Stadium Spotlight: California Memorial Stadium\n• Team: Cal\n• Capacity: 62,467\n• Location: Berkeley, CA\n• Surface: Turf\n• Elevation: 125 ft\n\n#Cal #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_iowa_state",
-      "kind": "stadiums",
-      "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Jack Trice Stadium\n• Team: Iowa State\n• Capacity: 61,500\n• Location: Ames, IA\n• Surface: Grass\n• Elevation: 275 ft\n\n#IowaState #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_virginia",
-      "kind": "stadiums",
-      "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Scott Stadium\n• Team: Virginia\n• Capacity: 61,500\n• Location: Charlottesville, VA\n• Surface: Grass\n• Elevation: 170 ft\n\n#Virginia #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_mississippi_state",
-      "kind": "stadiums",
-      "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Davis Wade Stadium\n• Team: Mississippi State\n• Capacity: 61,337\n• Location: Starkville, MS\n• Surface: Grass\n• Elevation: 110 ft\n\n#MississippiState #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_kentucky",
-      "kind": "stadiums",
-      "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Kroger Field\n• Team: Kentucky\n• Capacity: 61,000\n• Location: Lexington, KY\n• Surface: Turf\n• Elevation: 307 ft\n\n#Kentucky #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_texas_tech",
-      "kind": "stadiums",
-      "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Jones AT&T Stadium\n• Team: Texas Tech\n• Capacity: 60,454\n• Location: Lubbock, TX\n• Surface: Turf\n• Elevation: 981 ft\n\n#TexasTech #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_west_virginia",
-      "kind": "stadiums",
-      "priority": 83,
-      "text": "🏟️ Stadium Spotlight: Milan Puskar Stadium\n• Team: West Virginia\n• Capacity: 60,000\n• Location: Morgantown, WV\n• Surface: Turf\n• Elevation: 327 ft\n\n#WestVirginia #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_louisville",
-      "kind": "stadiums",
-      "priority": 82,
-      "text": "🏟️ Stadium Spotlight: L&N Federal Credit Union Stadium\n• Team: Louisville\n• Capacity: 60,000\n• Location: Louisville, KY\n• Surface: Turf\n• Elevation: 139 ft\n\n#Louisville #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_nc_state",
-      "kind": "stadiums",
-      "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Carter-Finley Stadium\n• Team: NC State\n• Capacity: 58,000\n• Location: Raleigh, NC\n• Surface: Grass\n• Elevation: 117 ft\n\n#NCState #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_purdue",
-      "kind": "stadiums",
-      "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Ross-Ade Stadium\n• Team: Purdue\n• Capacity: 57,282\n• Location: West Lafayette, IN\n• Surface: Grass\n• Elevation: 198 ft\n\n#Purdue #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_oklahoma_state",
-      "kind": "stadiums",
-      "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Boone Pickens Stadium\n• Team: Oklahoma State\n• Capacity: 55,509\n• Location: Stillwater, OK\n• Surface: Turf\n• Elevation: 276 ft\n\n#OklahomaState #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_georgia_tech",
-      "kind": "stadiums",
-      "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Bobby Dodd Stadium\n• Team: Georgia Tech\n• Capacity: 55,000\n• Location: Atlanta, GA\n• Surface: Turf\n• Elevation: 279 ft\n\n#GeorgiaTech #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_oregon",
-      "kind": "stadiums",
-      "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Autzen Stadium\n• Team: Oregon\n• Capacity: 54,000\n• Location: Eugene, OR\n• Surface: Turf\n• Elevation: 127 ft\n\n#Oregon #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_rutgers",
-      "kind": "stadiums",
-      "priority": 82,
-      "text": "🏟️ Stadium Spotlight: SHI Stadium\n• Team: Rutgers\n• Capacity: 52,454\n• Location: Piscataway, NJ\n• Surface: Turf\n• Elevation: Unknown\n\n#Rutgers #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_maryland",
-      "kind": "stadiums",
-      "priority": 82,
-      "text": "🏟️ Stadium Spotlight: SECU Stadium\n• Team: Maryland\n• Capacity: 51,802\n• Location: College Park, MD\n• Surface: Turf\n• Elevation: 33 ft\n\n#Maryland #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_utah",
-      "kind": "stadiums",
-      "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Rice-Eccles Stadium\n• Team: Utah\n• Capacity: 51,444\n• Location: Salt Lake City, UT\n• Surface: Turf\n• Elevation: 1412 ft\n\n#Utah #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_minnesota",
-      "kind": "stadiums",
-      "priority": 82,
-      "text": "🏟️ Stadium Spotlight: Huntington Bank Stadium\n• Team: Minnesota\n• Capacity: 50,850\n• Location: Minneapolis, MN\n• Surface: Turf\n• Elevation: 254 ft\n\n#Minnesota #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_arizona",
-      "kind": "stadiums",
-      "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Arizona Stadium\n• Team: Arizona\n• Capacity: 50,782\n• Location: Tucson, AZ\n• Surface: Turf\n• Elevation: 742 ft\n\n#Arizona #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_north_carolina",
-      "kind": "stadiums",
-      "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Kenan Stadium\n• Team: North Carolina\n• Capacity: 50,500\n• Location: Chapel Hill, NC\n• Surface: Turf\n• Elevation: 128 ft\n\n#NorthCarolina #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_stanford",
-      "kind": "stadiums",
-      "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Stanford Stadium\n• Team: Stanford\n• Capacity: 50,424\n• Location: Stanford, CA\n• Surface: Grass\n• Elevation: 18 ft\n\n#Stanford #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_colorado",
-      "kind": "stadiums",
-      "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Folsom Field\n• Team: Colorado\n• Capacity: 50,183\n• Location: Boulder, CO\n• Surface: Grass\n• Elevation: 1634 ft\n\n#Colorado #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_kansas_state",
-      "kind": "stadiums",
-      "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Bill Snyder Family Stadium\n• Team: Kansas State\n• Capacity: 50,000\n• Location: Manhattan, KS\n• Surface: Turf\n• Elevation: 328 ft\n\n#KansasState #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_syracuse",
-      "kind": "stadiums",
-      "priority": 81,
-      "text": "🏟️ Stadium Spotlight: JMA Wireless Dome\n• Team: Syracuse\n• Capacity: 49,057\n• Location: Syracuse, NY\n• Surface: Turf\n• Elevation: 163 ft\n\n#Syracuse #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_northwestern",
-      "kind": "stadiums",
-      "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Ryan Field\n• Team: Northwestern\n• Capacity: 47,130\n• Location: Evanston, IL\n• Surface: Grass\n• Elevation: 181 ft\n\n#Northwestern #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_kansas",
-      "kind": "stadiums",
-      "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium\n• Team: Kansas\n• Capacity: 47,000\n• Location: Lawrence, KS\n• Surface: Turf\n• Elevation: 275 ft\n\n#Kansas #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_tcu",
-      "kind": "stadiums",
-      "priority": 81,
-      "text": "🏟️ Stadium Spotlight: Amon G. Carter Stadium\n• Team: TCU\n• Capacity: 46,000\n• Location: Fort Worth, TX\n• Surface: Grass\n• Elevation: 185 ft\n\n#TCU #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_baylor",
-      "kind": "stadiums",
-      "priority": 81,
-      "text": "🏟️ Stadium Spotlight: McLane Stadium\n• Team: Baylor\n• Capacity: 45,140\n• Location: Waco, TX\n• Surface: Turf\n• Elevation: 117 ft\n\n#Baylor #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_ucf",
-      "kind": "stadiums",
-      "priority": 80,
-      "text": "🏟️ Stadium Spotlight: FBC Mortgage Stadium\n• Team: UCF\n• Capacity: 44,206\n• Location: Orlando, FL\n• Surface: Grass\n• Elevation: 21 ft\n\n#UCF #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_oregon_state",
-      "kind": "stadiums",
-      "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Reser Stadium\n• Team: Oregon State\n• Capacity: 43,363\n• Location: Corvallis, OR\n• Surface: Turf\n• Elevation: 67 ft\n\n#OregonState #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_duke",
-      "kind": "stadiums",
-      "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Wallace Wade Stadium\n• Team: Duke\n• Capacity: 40,004\n• Location: Durham, NC\n• Surface: Grass\n• Elevation: 103 ft\n\n#Duke #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_cincinnati",
-      "kind": "stadiums",
-      "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Nippert Stadium\n• Team: Cincinnati\n• Capacity: 40,000\n• Location: Cincinnati, OH\n• Surface: Turf\n• Elevation: 230 ft\n\n#Cincinnati #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_houston",
-      "kind": "stadiums",
-      "priority": 80,
-      "text": "🏟️ Stadium Spotlight: TDECU Stadium\n• Team: Houston\n• Capacity: 40,000\n• Location: Houston, TX\n• Surface: Turf\n• Elevation: 10 ft\n\n#Houston #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_wake_forest",
-      "kind": "stadiums",
-      "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Allegacy Federal Credit Union Stadium\n• Team: Wake Forest\n• Capacity: 31,500\n• Location: Winston-Salem, NC\n• Surface: Turf\n• Elevation: 284 ft\n\n#WakeForest #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_missouri",
-      "kind": "stadiums",
-      "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n• Team: Missouri\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\n#Missouri #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_nebraska",
-      "kind": "stadiums",
-      "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n• Team: Nebraska\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\n#Nebraska #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_indiana",
-      "kind": "stadiums",
-      "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n• Team: Indiana\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\n#Indiana #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_illinois",
-      "kind": "stadiums",
-      "priority": 80,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n• Team: Illinois\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\n#Illinois #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_clemson",
-      "kind": "stadiums",
-      "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Memorial Stadium (Stephenville, TX)\n• Team: Clemson\n• Capacity: 12,000\n• Location: Stephenville, TX\n• Surface: Turf\n• Elevation: Unknown\n\n#Clemson #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_vanderbilt",
-      "kind": "stadiums",
-      "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Hale Stadium\n• Team: Vanderbilt\n• Capacity: 10,000\n• Location: Nashville, TN\n• Surface: Grass\n• Elevation: 138 ft\n\n#Vanderbilt #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_boston_college",
-      "kind": "stadiums",
-      "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Albert J. H. Sloan - Alumni Stadium\n• Team: Boston College\n• Capacity: 8,500\n• Location: Fairfield, AL\n• Surface: Turf\n• Elevation: Unknown\n\n#BostonCollege #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_lsu",
-      "kind": "stadiums",
-      "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Tiger Stadium (AL)\n• Team: LSU\n• Capacity: 7,000\n• Location: Livingston, AL\n• Surface: Turf\n• Elevation: Unknown\n\n#LSU #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_washington_state",
-      "kind": "stadiums",
-      "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Eiler-Martin Stadium\n• Team: Washington State\n• Capacity: 6,000\n• Location: East Stroudsburg, PA\n• Surface: Turf\n• Elevation: Unknown\n\n#WashingtonState #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_virginia_tech",
-      "kind": "stadiums",
-      "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Barker-Lane Stadium\n• Team: Virginia Tech\n• Capacity: 5,500\n• Location: Buies Creek, NC\n• Surface: Turf\n• Elevation: 57 ft\n\n#VirginiaTech #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_washington",
-      "kind": "stadiums",
-      "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Husky Stadium\n• Team: Washington\n• Capacity: 5,000\n• Location: Houston, TX\n• Surface: Turf\n• Elevation: 20 ft\n\n#Washington #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
-    },
-    {
-      "id": "stadium_spotlight_arkansas",
-      "kind": "stadiums",
-      "priority": 79,
-      "text": "🏟️ Stadium Spotlight: Monarch Stadium\n• Team: Arkansas\n• Capacity: 800\n• Location: Fayetteville, NC\n• Surface: Turf\n• Elevation: Unknown\n\n#Arkansas #CFB",
-      "link": "",
-      "expiresAt": "2025-10-13T02:26:43.128Z",
-      "source": "venues"
+      "expiresAt": "2025-09-16T12:49:35.594Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.594Z"
     },
     {
       "id": "final_401752836",
       "kind": "final",
-      "priority": 70,
-      "text": "Indiana State Sycamores 0 @ #22 Indiana Hoosiers 73 — Final. #Blowout #Shutout #CFB\n(IU): Fernando Mendoza 19/20, 270 YDS, 5 TD\n\n#LEO",
+      "text": "FINAL: 73-0\n#22 Indiana Hoosiers - 73\nIndiana State Sycamores - 0\n\n(IU): Fernando Mendoza 19/20, 270 YDS, 5 TD\n\n#Blowout #Shutout #CFB #LEO",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752836",
-      "expiresAt": "2025-09-14T17:33:32.688Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.594Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.594Z"
     },
     {
       "id": "final_401754532",
       "kind": "final",
-      "priority": 70,
-      "text": "Colgate Raiders 24 @ Syracuse Orange 66 — Final. #Blowout #CFB\n(COLG): Cole Fulton 7 CAR, 72 YDS, 1 TD\n(SYR): Steve Angeli 24/32, 417 YDS, 5 TD\n\n#OrangeNation",
+      "text": "FINAL: 66-24\nSyracuse Orange - 66\nColgate Raiders - 24\n\n(COLG): Cole Fulton 7 CAR, 72 YDS, 1 TD\n(SYR): Steve Angeli 23/31, 382 YDS, 5 TD\n\n#Blowout #CFB #OrangeNation",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754532",
-      "expiresAt": "2025-09-14T17:33:32.688Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.594Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.594Z"
     },
     {
       "id": "final_401756893",
       "kind": "final",
-      "priority": 60,
-      "text": "Colorado Buffaloes 20 @ Houston Cougars 36 — Final. #CFB\n(HOU): Dean Connors 22 CAR, 89 YDS, 1 TD\n\n#GoCoogs",
+      "text": "FINAL: 36-20\nHouston Cougars - 36\nColorado Buffaloes - 20\n\n(HOU): Dean Connors 22 CAR, 89 YDS, 1 TD\n\n#CFB #GoCoogs",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756893",
-      "expiresAt": "2025-09-14T17:33:32.688Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401756888",
       "kind": "final",
-      "priority": 60,
-      "text": "Kansas State Wildcats 17 @ Arizona Wildcats 23 — Final. #CFB\n(KSU): Jayce Brown 6 REC, 68 YDS\n(ARIZ): Ismail Mahdi 22 CAR, 189 YDS\n\n#BearDown",
+      "text": "FINAL: 23-17\nArizona Wildcats - 23\nKansas State Wildcats - 17\n\n(KSU): Jayce Brown 6 REC, 68 YDS\n(ARIZ): Ismail Mahdi 22 CAR, 189 YDS\n\n#CFB #BearDown",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756888",
-      "expiresAt": "2025-09-14T17:33:32.688Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752837",
       "kind": "final",
-      "priority": 60,
-      "text": "New Mexico Lobos 35 @ UCLA Bruins 10 — Final. #CFB\n(UNM): Damon Bankston 15 CAR, 154 YDS, 1 TD\n(UCLA): Nico Iamaleava 22/34, 217 YDS, 1 TD, 1 INT\n\n#GoLobos",
+      "text": "FINAL: 35-10\nNew Mexico Lobos - 35\nUCLA Bruins - 10\n\n(UNM): Damon Bankston 15 CAR, 154 YDS, 1 TD\n(UCLA): Nico Iamaleava 22/34, 217 YDS, 1 TD, 1 INT\n\n#CFB #GoLobos",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752837",
-      "expiresAt": "2025-09-14T17:33:32.688Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752827",
       "kind": "final",
-      "priority": 60,
-      "text": "Ohio Bobcats 9 @ #1 Ohio State Buckeyes 37 — Final. #CFB\n(OSU): Julian Sayin 25/32, 347 YDS, 3 TD, 2 INT\n\n#GoBucks",
+      "text": "FINAL: 37-9\n#1 Ohio State Buckeyes - 37\nOhio Bobcats - 9\n\n(OSU): Julian Sayin 25/32, 347 YDS, 3 TD, 2 INT\n\n#CFB #GoBucks",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752827",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752835",
       "kind": "final",
-      "priority": 70,
-      "text": "Villanova Wildcats 6 @ #2 Penn State Nittany Lions 52 — Final. #Blowout #CFB\n(PSU): Drew Allar 16/29, 209 YDS, 1 TD, 1 INT\n\n#WeAre",
+      "text": "FINAL: 52-6\n#2 Penn State Nittany Lions - 52\nVillanova Wildcats - 6\n\n(PSU): Drew Allar 16/29, 209 YDS, 1 TD, 1 INT\n\n#Blowout #CFB #WeAre",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752835",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752699",
       "kind": "final",
-      "priority": 60,
-      "text": "Florida Gators 10 @ #3 LSU Tigers 20 — Final. #CFB\n(FLA): DJ Lagway 33/49, 287 YDS, 1 TD, 5 INT\n(LSU): Caden Durham 15 CAR, 93 YDS\n\n#GeauxTigers",
+      "text": "FINAL: 20-10\n#3 LSU Tigers - 20\nFlorida Gators - 10\n\n(FLA): DJ Lagway 33/49, 287 YDS, 1 TD, 5 INT\n(LSU): Caden Durham 15 CAR, 93 YDS\n\n#CFB #GeauxTigers",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752699",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752831",
       "kind": "final",
-      "priority": 60,
-      "text": "#4 Oregon Ducks 34 @ Northwestern Wildcats 14 — Final. #CFB\n(ORE): Dante Moore 16/20, 178 YDS, 1 TD, 1 INT\n\n#GoDucks",
+      "text": "FINAL: 34-14\n#4 Oregon Ducks - 34\nNorthwestern Wildcats - 14\n\n(ORE): Dante Moore 16/20, 178 YDS, 1 TD, 1 INT\n\n#CFB #GoDucks",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752831",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401754535",
       "kind": "final",
-      "priority": 70,
-      "text": "#18 South Florida Bulls 12 @ #5 Miami Hurricanes 49 — Final. #Blowout #RankedMatchup #CFB\n(USF): Chas Nimrod 4 REC, 128 YDS\n(MIA): Carson Beck 23/28, 340 YDS, 3 TD, 2 INT\n\n#GoCanes",
+      "text": "FINAL: 49-12\n#5 Miami Hurricanes - 49\n#18 South Florida Bulls - 12\n\n(USF): Chas Nimrod 4 REC, 128 YDS\n(MIA): Carson Beck 23/28, 340 YDS, 3 TD, 2 INT\n\n#Blowout #CFB #GoCanes",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754535",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752705",
       "kind": "final",
-      "priority": 60,
-      "text": "#6 Georgia Bulldogs 44 @ #15 Tennessee Volunteers 41 — Final. #Nailbiter #Shootout #RankedMatchup #CFB\n(UGA): Nate Frazier 14 CAR, 73 YDS\n(TENN): Joey Aguilar 24/36, 371 YDS, 4 TD, 2 INT\n\n#GoDawgs",
+      "text": "FINAL: 44-41\n#6 Georgia Bulldogs - 44\n#15 Tennessee Volunteers - 41\n\n(UGA): Nate Frazier 14 CAR, 73 YDS\n(TENN): Joey Aguilar 24/36, 371 YDS, 4 TD, 2 INT\n\n#Shootout #CFB #GoDawgs",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752705",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752706",
       "kind": "final",
-      "priority": 60,
-      "text": "UTEP Miners 10 @ #7 Texas Longhorns 27 — Final. #CFB\n(UTEP): Malachi Nelson 24/36, 209 YDS, 2 INT\n(TEX): James Simon 17 CAR, 67 YDS\n\n#HookEm",
+      "text": "FINAL: 27-10\n#7 Texas Longhorns - 27\nUTEP Miners - 10\n\n(UTEP): Malachi Nelson 24/36, 209 YDS, 2 INT\n(TEX): James Simon 17 CAR, 67 YDS\n\n#CFB #HookEm",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752706",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752707",
       "kind": "final",
-      "priority": 90,
-      "text": "#16 Texas A&M Aggies 41 @ #8 Notre Dame Fighting Irish 40 — Final. #Upset #Nailbiter #Shootout #RankedMatchup #CFB\n(TA&M): Marcel Reed 17/37, 360 YDS, 2 TD, 1 INT\n(ND): Jeremiyah Love 23 CAR, 94 YDS, 1 TD\n\n#GigEm",
+      "text": "FINAL: 41-40\n#16 Texas A&M Aggies - 41\n#8 Notre Dame Fighting Irish - 40\n\n(TA&M): Marcel Reed 17/37, 360 YDS, 2 TD, 1 INT\n(ND): Jeremiyah Love 23 CAR, 94 YDS, 1 TD\n\n#Upset #Shootout #CFB #GigEm",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752707",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752829",
       "kind": "final",
-      "priority": 70,
-      "text": "Western Michigan Broncos 0 @ #9 Illinois Fighting Illini 38 — Final. #Blowout #Shutout #CFB\n(ILL): Luke Altmyer 17/26, 196 YDS, 2 TD\n\n#Illini",
+      "text": "FINAL: 38-0\n#9 Illinois Fighting Illini - 38\nWestern Michigan Broncos - 0\n\n(ILL): Luke Altmyer 17/26, 196 YDS, 2 TD\n\n#Blowout #Shutout #CFB #Illini",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752829",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752704",
       "kind": "final",
-      "priority": 90,
-      "text": "FINAL: 31-7\nVanderbilt Commodores - 31\n#11 South Carolina Gamecocks - 7\n(VAN): Diego Pavia 18/25, 177 YDS, 2 TD, 1 INT\n(SC): Rahsul Faison 15 CAR, 74 YDS, 1 TD\n\n#Upset #CFB #AnchorDown",
+      "text": "FINAL: 31-7\nVanderbilt Commodores - 31\n#11 South Carolina Gamecocks - 7\n\n(VAN): Diego Pavia 18/25, 177 YDS, 2 TD, 1 INT\n(SC): Rahsul Faison 15 CAR, 74 YDS, 1 TD\n\n#Upset #CFB #AnchorDown",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752704",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401754623",
       "kind": "final",
-      "priority": 90,
-      "text": "#12 Clemson Tigers 21 @ Georgia Tech Yellow Jackets 24 — Final. #Upset #Nailbiter #CFB\n(CLEM): Bryant Wesco Jr. 7 REC, 126 YDS, 1 TD\n(GT): Haynes King 25 CAR, 103 YDS, 1 TD\n\n#GoJackets",
+      "text": "FINAL: 24-21\nGeorgia Tech Yellow Jackets - 24\n#12 Clemson Tigers - 21\n\n(CLEM): Bryant Wesco Jr. 7 REC, 126 YDS, 1 TD\n(GT): Haynes King 25 CAR, 103 YDS, 1 TD\n\n#Upset #CFB #GoJackets",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754623",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752703",
       "kind": "final",
-      "priority": 70,
-      "text": "#13 Oklahoma Sooners 42 @ Temple Owls 3 — Final. #Blowout #CFB\n(OU): Tory Blaylock 14 CAR, 100 YDS, 2 TD\n\n#BoomerSooner",
+      "text": "FINAL: 42-3\n#13 Oklahoma Sooners - 42\nTemple Owls - 3\n\n(OU): Tory Blaylock 14 CAR, 100 YDS, 2 TD\n\n#Blowout #CFB #BoomerSooner",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752703",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401756890",
       "kind": "final",
-      "priority": 60,
-      "text": "#14 Iowa State Cyclones 24 @ Arkansas State Red Wolves 16 — Final. #CFB\n(ISU): Rocco Becht 14/25, 265 YDS, 1 TD, 1 INT\n\n#CyclONEnation",
+      "text": "FINAL: 24-16\n#14 Iowa State Cyclones - 24\nArkansas State Red Wolves - 16\n\n(ISU): Rocco Becht 14/25, 265 YDS, 1 TD, 1 INT\n\n#CFB #CyclONEnation",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756890",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752700",
       "kind": "final",
-      "priority": 60,
-      "text": "Arkansas Razorbacks 35 @ #17 Ole Miss Rebels 41 — Final. #Shootout #CFB\n(ARK): Taylen Green 14 CAR, 115 YDS, 1 TD\n(MISS): Trinidad Chambliss 21/29, 353 YDS, 1 TD\n\n#HottyToddy",
+      "text": "FINAL: 41-35\n#17 Ole Miss Rebels - 41\nArkansas Razorbacks - 35\n\n(ARK): Taylen Green 14 CAR, 115 YDS, 1 TD\n(MISS): Trinidad Chambliss 21/29, 353 YDS, 1 TD\n\n#Shootout #CFB #HottyToddy",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752700",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752696",
       "kind": "final",
-      "priority": 60,
-      "text": "Wisconsin Badgers 14 @ #19 Alabama Crimson Tide 38 — Final. #CFB\n(WIS): Darrion Dupree 7 CAR, 26 YDS\n(ALA): Ty Simpson 24/29, 382 YDS, 4 TD\n\n#RollTide",
+      "text": "FINAL: 38-14\n#19 Alabama Crimson Tide - 38\nWisconsin Badgers - 14\n\n(WIS): Darrion Dupree 7 CAR, 26 YDS\n(ALA): Ty Simpson 24/29, 382 YDS, 4 TD\n\n#CFB #RollTide",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752696",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401756895",
       "kind": "final",
-      "priority": 60,
-      "text": "#20 Utah Utes 31 @ Wyoming Cowboys 6 — Final. #CFB\n(UTAH): Devon Dampier 27/41, 230 YDS, 2 TD\n\n#GoUtes",
+      "text": "FINAL: 31-6\n#20 Utah Utes - 31\nWyoming Cowboys - 6\n\n(UTAH): Devon Dampier 27/41, 230 YDS, 2 TD\n\n#CFB #GoUtes",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756895",
-      "expiresAt": "2025-09-16T06:31:37.523Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752938",
       "kind": "final",
-      "priority": 70,
-      "text": "Oregon State Beavers 14 @ #21 Texas Tech Red Raiders 45 — Final. #Blowout #CFB\n(TTU): Behren Morton 23/35, 464 YDS, 4 TD, 1 INT\n\n#WreckEm",
+      "text": "FINAL: 45-14\n#21 Texas Tech Red Raiders - 45\nOregon State Beavers - 14\n\n(TTU): Behren Morton 23/35, 464 YDS, 4 TD, 1 INT\n\n#Blowout #CFB #WreckEm",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752938",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752839",
       "kind": "final",
-      "priority": 70,
-      "text": "Central Michigan Chippewas 3 @ #23 Michigan Wolverines 63 — Final. #Blowout #CFB\n(MICH): Bryce Underwood 9 CAR, 114 YDS, 2 TD\n\n#GoBlue",
+      "text": "FINAL: 63-3\n#23 Michigan Wolverines - 63\nCentral Michigan Chippewas - 3\n\n(MICH): Bryce Underwood 9 CAR, 114 YDS, 2 TD\n\n#Blowout #CFB #GoBlue",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752839",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752697",
       "kind": "final",
-      "priority": 60,
-      "text": "South Alabama Jaguars 15 @ #24 Auburn Tigers 31 — Final. #CFB\n(USA): Bishop Davenport 18/26, 170 YDS, 2 TD, 1 INT\n(AUB): Jeremiah Cobb 19 CAR, 119 YDS, 1 TD\n\n#WarEagle",
+      "text": "FINAL: 31-15\n#24 Auburn Tigers - 31\nSouth Alabama Jaguars - 15\n\n(USA): Bishop Davenport 18/26, 170 YDS, 2 TD, 1 INT\n(AUB): Jeremiah Cobb 19 CAR, 119 YDS, 1 TD\n\n#CFB #WarEagle",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752697",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752702",
       "kind": "final",
-      "priority": 70,
-      "text": "Louisiana Ragin' Cajuns 10 @ #25 Missouri Tigers 52 — Final. #Blowout #CFB\n(MIZ): Ahmad Hardy 22 CAR, 250 YDS, 3 TD\n\n#MIZ",
+      "text": "FINAL: 52-10\n#25 Missouri Tigers - 52\nLouisiana Ragin' Cajuns - 10\n\n(MIZ): Ahmad Hardy 22 CAR, 250 YDS, 3 TD\n\n#Blowout #CFB #MIZ",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752702",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752828",
       "kind": "final",
-      "priority": 70,
-      "text": "Houston Christian Huskies 7 @ Nebraska Cornhuskers 59 — Final. #Blowout #CFB\n(NEB): Dylan Raiola 15/21, 222 YDS, 2 TD\n\n#GBR",
+      "text": "FINAL: 59-7\nNebraska Cornhuskers - 59\nHouston Christian Huskies - 7\n\n(NEB): Dylan Raiola 15/21, 222 YDS, 2 TD\n\n#Blowout #CFB #GBR",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752828",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752838",
       "kind": "final",
-      "priority": 60,
-      "text": "Towson Tigers 17 @ Maryland Terrapins 44 — Final. #CFB\n(MD): Malik Washington 16/22, 261 YDS, 1 TD, 1 INT\n\n#GoTerps",
+      "text": "FINAL: 44-17\nMaryland Terrapins - 44\nTowson Tigers - 17\n\n(MD): Malik Washington 16/22, 261 YDS, 1 TD, 1 INT\n\n#CFB #GoTerps",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752838",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401754619",
       "kind": "final",
-      "priority": 70,
-      "text": "William & Mary Tribe 16 @ Virginia Cavaliers 55 — Final. #Blowout #CFB\n(W&M): Deven Thompson 5 REC, 108 YDS, 1 TD\n(UVA): Harrison Waylee 10 CAR, 151 YDS, 3 TD\n\n#GoHoos",
+      "text": "FINAL: 55-16\nVirginia Cavaliers - 55\nWilliam & Mary Tribe - 16\n\n(W&M): Deven Thompson 5 REC, 108 YDS, 1 TD\n(UVA): Harrison Waylee 10 CAR, 151 YDS, 3 TD\n\n#Blowout #CFB #GoHoos",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754619",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401756891",
       "kind": "final",
-      "priority": 70,
-      "text": "Samford Bulldogs 7 @ Baylor Bears 42 — Final. #Blowout #CFB\n(SAM): Torrey Ward 5 REC, 62 YDS, 1 TD\n(BAY): Sawyer Robertson 23/37, 211 YDS, 3 TD, 2 INT\n\n#SicEm",
+      "text": "FINAL: 42-7\nBaylor Bears - 42\nSamford Bulldogs - 7\n\n(SAM): Torrey Ward 5 REC, 62 YDS, 1 TD\n(BAY): Sawyer Robertson 23/37, 211 YDS, 3 TD, 2 INT\n\n#Blowout #CFB #SicEm",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756891",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401761608",
       "kind": "final",
-      "priority": 60,
-      "text": "Memphis Tigers 28 @ Troy Trojans 7 — Final. #CFB\n(MEM): Sutton Smith 18 CAR, 113 YDS, 2 TD\n\n#GoTigersGo",
+      "text": "FINAL: 28-7\nMemphis Tigers - 28\nTroy Trojans - 7\n\n(MEM): Sutton Smith 18 CAR, 113 YDS, 2 TD\n\n#CFB #GoTigersGo",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761608",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401762817",
       "kind": "final",
-      "priority": 60,
-      "text": "Buffalo Bulls 31 @ Kent State Golden Flashes 28 — Final. #Nailbiter #CFB\n(BUFF): Ta'Quan Roberson 28/40, 318 YDS, 3 TD, 1 INT\n\n#UBhornsUP",
+      "text": "FINAL: 31-28\nBuffalo Bulls - 31\nKent State Golden Flashes - 28\n\n(BUFF): Ta'Quan Roberson 28/40, 318 YDS, 3 TD, 1 INT\n\n#CFB #UBhornsUP",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762817",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401762818",
       "kind": "final",
-      "priority": 60,
-      "text": "New Hampshire Wildcats 29 @ Ball State Cardinals 34 — Final. #CFB\n(UNH): Matt Vezza 25/44, 259 YDS, 1 TD\n(BALL): Qua Ashley 12 CAR, 154 YDS, 2 TD\n\n#ChirpChirp",
+      "text": "FINAL: 34-29\nBall State Cardinals - 34\nNew Hampshire Wildcats - 29\n\n(UNH): Matt Vezza 25/44, 259 YDS, 1 TD\n(BALL): Qua Ashley 12 CAR, 154 YDS, 2 TD\n\n#CFB #ChirpChirp",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762818",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401757168",
       "kind": "final",
-      "priority": 60,
-      "text": "UConn Huskies 41 @ Delaware Blue Hens 44 — Final. #Nailbiter #Shootout #CFB\n(CONN): Joe Fagnano 28/38, 346 YDS, 2 TD\n(DEL): Jo Silver 15 CAR, 179 YDS, 2 TD",
+      "text": "FINAL: 44-41\nDelaware Blue Hens - 44\nUConn Huskies - 41\n\n(CONN): Joe Fagnano 28/38, 346 YDS, 2 TD\n(DEL): Jo Silver 15 CAR, 179 YDS, 2 TD\n\n#Shootout #CFB",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757168",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752833",
       "kind": "final",
-      "priority": 70,
-      "text": "Norfolk State Spartans 10 @ Rutgers Scarlet Knights 60 — Final. #Blowout #CFB\n(RUTG): Antwan Raymond 16 CAR, 79 YDS, 2 TD\n\n#CHOP",
+      "text": "FINAL: 60-10\nRutgers Scarlet Knights - 60\nNorfolk State Spartans - 10\n\n(RUTG): Antwan Raymond 16 CAR, 79 YDS, 2 TD\n\n#Blowout #CFB #CHOP",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752833",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752834",
       "kind": "final",
-      "priority": 60,
-      "text": "Youngstown State Penguins 24 @ Michigan State Spartans 41 — Final. #CFB\n(MSU): Aidan Chiles 22/29, 270 YDS, 1 TD, 1 INT\n\n#GoGreen",
+      "text": "FINAL: 41-24\nMichigan State Spartans - 41\nYoungstown State Penguins - 24\n\n(MSU): Aidan Chiles 22/29, 270 YDS, 1 TD, 1 INT\n\n#CFB #GoGreen",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752834",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752949",
       "kind": "final",
-      "priority": 70,
-      "text": "Washington State Cougars 10 @ North Texas Mean Green 59 — Final. #Blowout #CFB\n(WSU): Carter Pabst 3 REC, 65 YDS\n(UNT): Drew Mestemaker 24/29, 211 YDS, 4 TD\n\n#GMG",
+      "text": "FINAL: 59-10\nNorth Texas Mean Green - 59\nWashington State Cougars - 10\n\n(WSU): Carter Pabst 3 REC, 65 YDS\n(UNT): Drew Mestemaker 24/29, 211 YDS, 4 TD\n\n#Blowout #CFB #GMG",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752949",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401754615",
       "kind": "final",
-      "priority": 60,
-      "text": "SMU Mustangs 28 @ Missouri State Bears 10 — Final. #CFB\n(SMU): T.J. Harden 15 CAR, 96 YDS, 2 TD\n(MOST): Dash Luke 5 REC, 80 YDS, 1 TD\n\n#PonyUpDallas",
+      "text": "FINAL: 28-10\nSMU Mustangs - 28\nMissouri State Bears - 10\n\n(SMU): T.J. Harden 15 CAR, 96 YDS, 2 TD\n(MOST): Dash Luke 5 REC, 80 YDS, 1 TD\n\n#CFB #PonyUpDallas",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754615",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401754638",
       "kind": "final",
-      "priority": 60,
-      "text": "Pittsburgh Panthers 24 @ West Virginia Mountaineers 31 — Final. #CFB\n(PITT): Eli Holstein 22/37, 303 YDS, 1 TD, 1 INT\n(WVU): Tye Edwards 25 CAR, 141 YDS, 3 TD\n\n#HailWV",
+      "text": "FINAL: 31-24\nWest Virginia Mountaineers - 31\nPittsburgh Panthers - 24\n\n(PITT): Eli Holstein 22/37, 303 YDS, 1 TD, 1 INT\n(WVU): Tye Edwards 25 CAR, 141 YDS, 3 TD\n\n#CFB #HailWV",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754638",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401754639",
       "kind": "final",
-      "priority": 70,
-      "text": "Richmond Spiders 6 @ North Carolina Tar Heels 41 — Final. #Blowout #CFB\n(UNC): Gio Lopez 10/18, 119 YDS, 2 TD\n\n#GoHeels",
+      "text": "FINAL: 41-6\nNorth Carolina Tar Heels - 41\nRichmond Spiders - 6\n\n(UNC): Gio Lopez 10/18, 119 YDS, 2 TD\n\n#Blowout #CFB #GoHeels",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754639",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401756892",
       "kind": "final",
-      "priority": 70,
-      "text": "Northwestern State Demons 0 @ Cincinnati Bearcats 70 — Final. #Blowout #Shutout #CFB\n(CIN): Brendan Sorsby 15/15, 253 YDS, 5 TD\n\n#Bearcats",
+      "text": "FINAL: 70-0\nCincinnati Bearcats - 70\nNorthwestern State Demons - 0\n\n(CIN): Brendan Sorsby 15/15, 253 YDS, 5 TD\n\n#Blowout #Shutout #CFB #Bearcats",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756892",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401762467",
       "kind": "final",
-      "priority": 60,
-      "text": "Incarnate Word Cardinals 20 @ UTSA Roadrunners 48 — Final. #CFB\n(UIW): Chedon James 8 REC, 134 YDS, 3 TD\n(UTSA): Owen McCown 29/35, 238 YDS, 4 TD\n\n#BirdsUp",
+      "text": "FINAL: 48-20\nUTSA Roadrunners - 48\nIncarnate Word Cardinals - 20\n\n(UIW): Chedon James 8 REC, 134 YDS, 3 TD\n(UTSA): Owen McCown 29/35, 238 YDS, 4 TD\n\n#CFB #BirdsUp",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762467",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401762819",
       "kind": "final",
-      "priority": 70,
-      "text": "Morgan State Bears 0 @ Toledo Rockets 60 — Final. #Blowout #Shutout #CFB\n(TOL): Tucker Gleason 13/17, 174 YDS, 1 TD\n\n#GoRockets",
+      "text": "FINAL: 60-0\nToledo Rockets - 60\nMorgan State Bears - 0\n\n(TOL): Tucker Gleason 13/17, 174 YDS, 1 TD\n\n#Blowout #Shutout #CFB #GoRockets",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762819",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401757256",
       "kind": "final",
-      "priority": 60,
-      "text": "Liberty Flames 13 @ Bowling Green Falcons 23 — Final. #CFB\n(LIB): Ethan Vasko 13/24, 194 YDS, 1 TD, 2 INT\n\n#AyZiggy",
+      "text": "FINAL: 23-13\nBowling Green Falcons - 23\nLiberty Flames - 13\n\n(LIB): Ethan Vasko 13/24, 194 YDS, 1 TD, 2 INT\n\n#CFB #AyZiggy",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757256",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401757258",
       "kind": "final",
-      "priority": 60,
-      "text": "Middle Tennessee Blue Raiders 14 @ Nevada Wolf Pack 13 — Final. #Nailbiter #CFB\n(MTSU): Nicholas Vattiato 27/44, 247 YDS, 1 TD, 1 INT\n(NEV): Herschel Turner 12 CAR, 90 YDS\n\n#BlueRaiders",
+      "text": "FINAL: 14-13\nMiddle Tennessee Blue Raiders - 14\nNevada Wolf Pack - 13\n\n(MTSU): Nicholas Vattiato 27/44, 247 YDS, 1 TD, 1 INT\n(NEV): Herschel Turner 12 CAR, 90 YDS\n\n#CFB #BlueRaiders",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757258",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752701",
       "kind": "final",
-      "priority": 70,
-      "text": "Alcorn State Braves 0 @ Mississippi State Bulldogs 63 — Final. #Blowout #Shutout #CFB\n(MSST): Blake Shapen 10/14, 173 YDS, 2 TD, 1 INT\n\n#HailState",
+      "text": "FINAL: 63-0\nMississippi State Bulldogs - 63\nAlcorn State Braves - 0\n\n(MSST): Blake Shapen 10/14, 173 YDS, 2 TD, 1 INT\n\n#Blowout #Shutout #CFB #HailState",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752701",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401757235",
       "kind": "final",
-      "priority": 60,
-      "text": "Merrimack Warriors 13 @ Kennesaw State Owls 27 — Final. #CFB\n(MRMK): Ayden Pereira 23 CAR, 62 YDS, 1 TD",
+      "text": "FINAL: 27-13\nKennesaw State Owls - 27\nMerrimack Warriors - 13\n\n(MRMK): Ayden Pereira 23 CAR, 62 YDS, 1 TD\n\n#CFB",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757235",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401761606",
       "kind": "final",
-      "priority": 70,
-      "text": "Eastern Kentucky Colonels 7 @ Marshall Thundering Herd 38 — Final. #Blowout #CFB\n(MRSH): Carlos Del Rio-Wilson 7/9, 108 YDS, 2 TD\n\n#WeAreMarshall",
+      "text": "FINAL: 38-7\nMarshall Thundering Herd - 38\nEastern Kentucky Colonels - 7\n\n(MRSH): Carlos Del Rio-Wilson 7/9, 108 YDS, 2 TD\n\n#Blowout #CFB #WeAreMarshall",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761606",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401762464",
       "kind": "final",
-      "priority": 60,
-      "text": "Monmouth Hawks 35 @ Charlotte 49ers 42 — Final. #Shootout #CFB\n(MONM): Derek Robertson 36/49, 410 YDS, 4 TD\n(CLT): E. Jai Mason 10 REC, 228 YDS, 2 TD\n\n#GoldStandard",
+      "text": "FINAL: 42-35\nCharlotte 49ers - 42\nMonmouth Hawks - 35\n\n(MONM): Derek Robertson 36/49, 410 YDS, 4 TD\n(CLT): E. Jai Mason 10 REC, 228 YDS, 2 TD\n\n#Shootout #CFB #GoldStandard",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762464",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401752832",
       "kind": "final",
-      "priority": 60,
-      "text": "USC Trojans 33 @ Purdue Boilermakers 17 — Final. #CFB\n(USC): Waymond Jordan 18 CAR, 77 YDS, 1 TD\n(PUR): Ryan Browne 24/39, 305 YDS, 1 TD, 3 INT\n\n#FightOn",
+      "text": "FINAL: 33-17\nUSC Trojans - 33\nPurdue Boilermakers - 17\n\n(USC): Waymond Jordan 18 CAR, 77 YDS, 1 TD\n(PUR): Ryan Browne 24/39, 305 YDS, 1 TD, 3 INT\n\n#CFB #FightOn",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752832",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401754536",
       "kind": "final",
-      "priority": 60,
-      "text": "Old Dominion Monarchs 45 @ Virginia Tech Hokies 26 — Final. #CFB\n(ODU): Colton Joseph 16/22, 276 YDS, 2 TD\n\n#ReignOn",
+      "text": "FINAL: 45-26\nOld Dominion Monarchs - 45\nVirginia Tech Hokies - 26\n\n(ODU): Colton Joseph 16/22, 276 YDS, 2 TD\n\n#CFB #ReignOn",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754536",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401757234",
       "kind": "final",
-      "priority": 60,
-      "text": "Jacksonville State Gamecocks 34 @ Georgia Southern Eagles 41 — Final. #CFB\n(GASO): OJ Arnold 16 CAR, 128 YDS, 2 TD\n\n#HailSouthern",
+      "text": "FINAL: 41-34\nGeorgia Southern Eagles - 41\nJacksonville State Gamecocks - 34\n\n(GASO): OJ Arnold 16 CAR, 128 YDS, 2 TD\n\n#CFB #HailSouthern",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757234",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.595Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.595Z"
     },
     {
       "id": "final_401761605",
       "kind": "final",
-      "priority": 60,
-      "text": "Murray State Racers 21 @ Georgia State Panthers 37 — Final. #CFB\n(GAST): Ted Hurst 10 REC, 172 YDS, 2 TD\n\n#StateNotSouthern",
+      "text": "FINAL: 37-21\nGeorgia State Panthers - 37\nMurray State Racers - 21\n\n(GAST): Ted Hurst 10 REC, 172 YDS, 2 TD\n\n#CFB #StateNotSouthern",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761605",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401761607",
       "kind": "final",
-      "priority": 60,
-      "text": "App State Mountaineers 22 @ Southern Miss Golden Eagles 38 — Final. #CFB\n(APP): Jaden Barnes 10 REC, 132 YDS, 1 TD\n(USM): Braylon Braxton 22/30, 279 YDS, 2 TD, 1 INT\n\n#ToTheTop",
+      "text": "FINAL: 38-22\nSouthern Miss Golden Eagles - 38\nApp State Mountaineers - 22\n\n(APP): Jaden Barnes 10 REC, 132 YDS, 1 TD\n(USM): Braylon Braxton 22/30, 279 YDS, 2 TD, 1 INT\n\n#CFB #ToTheTop",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761607",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401762466",
       "kind": "final",
-      "priority": 60,
-      "text": "Prairie View A&M Panthers 17 @ Rice Owls 38 — Final. #CFB\n(PV): Tevin Carter 12/27, 131 YDS, 1 TD\n(RICE): Chase Jenkins 21 CAR, 124 YDS, 1 TD\n\n#GoOwls",
+      "text": "FINAL: 38-17\nRice Owls - 38\nPrairie View A&M Panthers - 17\n\n(PV): Tevin Carter 12/27, 131 YDS, 1 TD\n(RICE): Chase Jenkins 21 CAR, 124 YDS, 1 TD\n\n#CFB #GoOwls",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762466",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401752698",
       "kind": "final",
-      "priority": 60,
-      "text": "Eastern Michigan Eagles 23 @ Kentucky Wildcats 48 — Final. #CFB\n(EMU): Noah Kim 25/42, 330 YDS, 1 TD, 1 INT\n(UK): Seth McGowan 18 CAR, 104 YDS, 3 TD\n\n#BBN",
+      "text": "FINAL: 48-23\nKentucky Wildcats - 48\nEastern Michigan Eagles - 23\n\n(EMU): Noah Kim 25/42, 330 YDS, 1 TD, 1 INT\n(UK): Seth McGowan 18 CAR, 104 YDS, 3 TD\n\n#CFB #BBN",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752698",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401752830",
       "kind": "final",
-      "priority": 70,
-      "text": "Massachusetts Minutemen 7 @ Iowa Hawkeyes 47 — Final. #Blowout #CFB\n(IOWA): Mark Gronowski 16/24, 179 YDS, 2 TD\n\n#Hawkeyes",
+      "text": "FINAL: 47-7\nIowa Hawkeyes - 47\nMassachusetts Minutemen - 7\n\n(IOWA): Mark Gronowski 16/24, 179 YDS, 2 TD\n\n#Blowout #CFB #Hawkeyes",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752830",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401757257",
       "kind": "final",
-      "priority": 70,
-      "text": "New Mexico State Aggies 14 @ Louisiana Tech Bulldogs 49 — Final. #Blowout #CFB\n(NMSU): Logan Fife 17/33, 281 YDS, 2 TD, 2 INT\n(LT): Blake Baker 15 CAR, 103 YDS, 1 TD\n\n#EverLoyalBe",
+      "text": "FINAL: 49-14\nLouisiana Tech Bulldogs - 49\nNew Mexico State Aggies - 14\n\n(NMSU): Logan Fife 17/33, 281 YDS, 2 TD, 2 INT\n(LT): Blake Baker 15 CAR, 103 YDS, 1 TD\n\n#Blowout #CFB #EverLoyalBe",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757257",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401761604",
       "kind": "final",
-      "priority": 70,
-      "text": "East Carolina Pirates 38 @ Coastal Carolina Chanticleers 0 — Final. #Blowout #Shutout #CFB\n(ECU): Katin Houser 28/37, 293 YDS, 2 TD, 1 INT\n\n#GoPirates",
+      "text": "FINAL: 38-0\nEast Carolina Pirates - 38\nCoastal Carolina Chanticleers - 0\n\n(ECU): Katin Houser 28/37, 293 YDS, 2 TD, 1 INT\n\n#Blowout #Shutout #CFB #GoPirates",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761604",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401754534",
       "kind": "final",
-      "priority": 60,
-      "text": "Duke Blue Devils 27 @ Tulane Green Wave 34 — Final. #CFB\n(DUKE): Darian Mensah 30/51, 313 YDS, 3 TD, 1 INT\n(TULN): Jake Retzlaff 17 CAR, 111 YDS, 4 TD\n\n#RollWave",
+      "text": "FINAL: 34-27\nTulane Green Wave - 34\nDuke Blue Devils - 27\n\n(DUKE): Darian Mensah 30/51, 313 YDS, 3 TD, 1 INT\n(TULN): Jake Retzlaff 17 CAR, 111 YDS, 4 TD\n\n#CFB #RollWave",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754534",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401756894",
       "kind": "final",
-      "priority": 60,
-      "text": "Abilene Christian Wildcats 21 @ TCU Horned Frogs 42 — Final. #CFB\n(ACU): Rovaughn Banks Jr. 19 CAR, 105 YDS, 1 TD\n(TCU): Josh Hoover 21/27, 337 YDS, 4 TD\n\n#GoFrogs",
+      "text": "FINAL: 42-21\nTCU Horned Frogs - 42\nAbilene Christian Wildcats - 21\n\n(ACU): Rovaughn Banks Jr. 19 CAR, 105 YDS, 1 TD\n(TCU): Josh Hoover 21/27, 337 YDS, 4 TD\n\n#CFB #GoFrogs",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756894",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401762465",
       "kind": "final",
-      "priority": 60,
-      "text": "Navy Midshipmen 42 @ Tulsa Golden Hurricane 23 — Final. #CFB\n(NAVY): Blake Horvath 21 CAR, 159 YDS, 1 TD\n(TLSA): Baylor Hayes 22/37, 189 YDS, 1 TD, 1 INT\n\n#GoNavy",
+      "text": "FINAL: 42-23\nNavy Midshipmen - 42\nTulsa Golden Hurricane - 23\n\n(NAVY): Blake Horvath 21 CAR, 159 YDS, 1 TD\n(TLSA): Baylor Hayes 22/37, 189 YDS, 1 TD, 1 INT\n\n#CFB #GoNavy",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762465",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401757233",
       "kind": "final",
-      "priority": 60,
-      "text": "Florida Atlantic Owls 28 @ Florida International Panthers 38 — Final. #CFB\n(FAU): Caden Veltkamp 33/50, 343 YDS, 2 TD, 3 INT\n(FIU): Kejon Owens 19 CAR, 173 YDS, 2 TD\n\n#PawsUp",
+      "text": "FINAL: 38-28\nFlorida International Panthers - 38\nFlorida Atlantic Owls - 28\n\n(FAU): Caden Veltkamp 33/50, 343 YDS, 2 TD, 3 INT\n(FIU): Kejon Owens 19 CAR, 173 YDS, 2 TD\n\n#CFB #PawsUp",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757233",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401762463",
       "kind": "final",
-      "priority": 60,
-      "text": "Akron Zips 28 @ UAB Blazers 31 — Final. #Nailbiter #CFB\n(AKR): Israel Polk 4 REC, 99 YDS, 2 TD\n(UAB): Jalen Kitna 30/45, 341 YDS, 2 TD, 1 INT\n\n#WinAsOne",
+      "text": "FINAL: 31-28\nUAB Blazers - 31\nAkron Zips - 28\n\n(AKR): Israel Polk 4 REC, 99 YDS, 2 TD\n(UAB): Jalen Kitna 30/45, 341 YDS, 2 TD, 1 INT\n\n#CFB #WinAsOne",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762463",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401760368",
       "kind": "final",
-      "priority": 60,
-      "text": "Air Force Falcons 30 @ Utah State Aggies 49 — Final. #CFB\n(AFA): Cade Harris 8 CAR, 72 YDS\n(USU): Bryson Barnes 17/22, 287 YDS, 2 TD\n\n#AggiesAllTheWay",
+      "text": "FINAL: 49-30\nUtah State Aggies - 49\nAir Force Falcons - 30\n\n(AFA): Cade Harris 8 CAR, 72 YDS\n(USU): Bryson Barnes 17/22, 287 YDS, 2 TD\n\n#CFB #AggiesAllTheWay",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760368",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401760369",
       "kind": "final",
-      "priority": 70,
-      "text": "Southern Jaguars 7 @ Fresno State Bulldogs 56 — Final. #Blowout #CFB\n(FRES): E.J. Warner 20/24, 240 YDS, 4 TD\n\n#GoDogs",
+      "text": "FINAL: 56-7\nFresno State Bulldogs - 56\nSouthern Jaguars - 7\n\n(FRES): E.J. Warner 20/24, 240 YDS, 4 TD\n\n#Blowout #CFB #GoDogs",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760369",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401752840",
       "kind": "final",
-      "priority": 60,
-      "text": "Minnesota Golden Gophers 14 @ California Golden Bears 27 — Final. #CFB\n(MINN): Le'Meke Brockington 8 REC, 106 YDS\n(CAL): Jaron-Keawe Sagapolutele 24/38, 279 YDS, 3 TD\n\n#GoBears",
+      "text": "FINAL: 27-14\nCalifornia Golden Bears - 27\nMinnesota Golden Gophers - 14\n\n(MINN): Le'Meke Brockington 8 REC, 106 YDS\n(CAL): Jaron-Keawe Sagapolutele 24/38, 279 YDS, 3 TD\n\n#CFB #GoBears",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752840",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401754533",
       "kind": "final",
-      "priority": 60,
-      "text": "Boston College Eagles 20 @ Stanford Cardinal 30 — Final. #CFB\n(BC): Dylan Lonergan 30/44, 333 YDS, 1 TD, 1 INT\n(STAN): Micah Ford 17 CAR, 157 YDS, 1 TD\n\n#GoStanford",
+      "text": "FINAL: 30-20\nStanford Cardinal - 30\nBoston College Eagles - 20\n\n(BC): Dylan Lonergan 30/44, 333 YDS, 1 TD, 1 INT\n(STAN): Micah Ford 17 CAR, 157 YDS, 1 TD\n\n#CFB #GoStanford",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754533",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401756889",
       "kind": "final",
-      "priority": 60,
-      "text": "Texas State Bobcats 15 @ Arizona State Sun Devils 34 — Final. #CFB\n(ASU): Sam Leavitt 15/25, 188 YDS, 2 TD\n\n#ForksUp",
+      "text": "FINAL: 34-15\nArizona State Sun Devils - 34\nTexas State Bobcats - 15\n\n(ASU): Sam Leavitt 15/25, 188 YDS, 2 TD\n\n#CFB #ForksUp",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756889",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     },
     {
       "id": "final_401760370",
       "kind": "final",
-      "priority": 60,
-      "text": "Portland State Vikings 3 @ Hawai'i Rainbow Warriors 23 — Final. #CFB\n(PRST): Zachary Dodson-Greene 9 REC, 78 YDS\n(HAW): Luke Weaver 26/42, 240 YDS, 2 TD\n\n#GoBows",
+      "text": "FINAL: 23-3\nHawai'i Rainbow Warriors - 23\nPortland State Vikings - 3\n\n(PRST): Zachary Dodson-Greene 9 REC, 78 YDS\n(HAW): Luke Weaver 26/42, 240 YDS, 2 TD\n\n#CFB #GoBows",
       "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760370",
-      "expiresAt": "2025-09-16T06:31:37.524Z",
-      "source": "espn"
-    },
-    {
-      "id": "ap_top10_week4",
-      "kind": "poll_top10",
-      "priority": 85,
-      "text": "AP Top 10 - Week 4\n1. Ohio State\n2. Penn State\n3. LSU\n4. Miami\n5. Georgia\n6. Oregon\n7. Florida State\n8. Texas\n9. Illinois\n10. Texas A&M\n\n#APTop25 #CFB",
-      "link": "",
-      "expiresAt": "2025-09-21T18:43:36.518Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "ap_movers_week4",
-      "kind": "poll_movers",
-      "priority": 80,
-      "text": "AP Poll Movers - Week 4\n⬇️-16 Notre Dame (8→24)\n⬆️+6 Texas A&M (16→10)\n⬆️+5 Alabama (19→14)\n⬆️+4 Ole Miss (17→13)\n⬆️+4 Utah (20→16)\n⬆️+4 Texas Tech (21→17)\nNEW: #18 Georgia Tech\nNEW: #20 Vanderbilt\nNEW: #25 USC\n\n#APTop25 #CFB",
-      "link": "",
-      "expiresAt": "2025-09-21T18:43:36.518Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "coaches_top10_week4",
-      "kind": "poll_top10",
-      "priority": 85,
-      "text": "Coaches Poll Top 10 - Week 4\n1. Ohio State\n2. Penn State\n3. Georgia\n4. LSU\n5. Oregon\n6. Texas\n7. Miami\n8. Clemson\n9. Notre Dame\n10. Arizona State\n\n#CoachesPoll #CFB",
-      "link": "",
-      "expiresAt": "2025-09-21T18:43:36.518Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "coaches_movers_week4",
-      "kind": "poll_movers",
-      "priority": 80,
-      "text": "Coaches Poll Movers - Week 4\n⬇️-14 Arizona State (10→24)\n⬇️-9 Michigan (13→22)\n⬆️+8 Oklahoma (24→16)\n⬆️+7 Florida State (19→12)\n⬆️+5 Texas A&M (22→17)\n⬆️+4 Iowa State (18→14)\n⬆️+3 Illinois (12→9)\nNEW: #21 Utah\nNEW: #23 South Florida\n\n#CoachesPoll #CFB",
-      "link": "",
-      "expiresAt": "2025-09-21T18:43:36.518Z",
-      "source": "cfbd"
-    },
-    {
-      "id": "sp_top10_week4",
-      "kind": "poll_top10",
-      "priority": 85,
-      "text": "SP+ Power Rankings - Week 4\n1. Oregon (26.7)\n2. Ohio State (26.1)\n3. Alabama (25.4)\n4. Georgia (23.4)\n5. Ole Miss (23.1)\n6. Tennessee (22.2)\n7. Penn State (22.0)\n8. Oklahoma (19.7)\n9. Texas (19.7)\n10. USC (19.1)\n\n#SPPlus #CFB",
-      "link": "",
-      "expiresAt": "2025-09-21T18:43:36.518Z",
-      "source": "cfbd"
+      "expiresAt": "2025-09-16T12:49:35.596Z",
+      "source": "espn",
+      "generatedAt": "2025-09-15T00:49:35.596Z"
     }
   ]
 }
