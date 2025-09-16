@@ -1,5 +1,145 @@
 [
   {
+    "name": "Boston College",
+    "primary": "#98002E",
+    "secondary": "#BC9B6A"
+  },
+  {
+    "name": "Boston College Eagles",
+    "primary": "#98002E",
+    "secondary": "#BC9B6A"
+  },
+  {
+    "name": "Clemson",
+    "primary": "#F56600",
+    "secondary": "#522D80"
+  },
+  {
+    "name": "Clemson Tigers",
+    "primary": "#F56600",
+    "secondary": "#522D80"
+  },
+  {
+    "name": "Duke",
+    "primary": "#003087",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Duke Blue Devils",
+    "primary": "#003087",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Florida State",
+    "primary": "#782F40",
+    "secondary": "#CEB888"
+  },
+  {
+    "name": "Florida State Seminoles",
+    "primary": "#782F40",
+    "secondary": "#CEB888"
+  },
+  {
+    "name": "Georgia Tech",
+    "primary": "#B3A369",
+    "secondary": "#003057"
+  },
+  {
+    "name": "Georgia Tech Yellow Jackets",
+    "primary": "#B3A369",
+    "secondary": "#003057"
+  },
+  {
+    "name": "Louisville",
+    "primary": "#AD0000",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Louisville Cardinals",
+    "primary": "#AD0000",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Miami",
+    "primary": "#005030",
+    "secondary": "#F47321"
+  },
+  {
+    "name": "Miami Hurricanes",
+    "primary": "#005030",
+    "secondary": "#F47321"
+  },
+  {
+    "name": "NC State",
+    "primary": "#CC0000",
+    "secondary": "#000000"
+  },
+  {
+    "name": "NC State Wolfpack",
+    "primary": "#CC0000",
+    "secondary": "#000000"
+  },
+  {
+    "name": "North Carolina",
+    "primary": "#7BAFD4",
+    "secondary": "#13294B"
+  },
+  {
+    "name": "North Carolina Tar Heels",
+    "primary": "#7BAFD4",
+    "secondary": "#13294B"
+  },
+  {
+    "name": "Pittsburgh",
+    "primary": "#003594",
+    "secondary": "#FFB81C"
+  },
+  {
+    "name": "Pittsburgh Panthers",
+    "primary": "#003594",
+    "secondary": "#FFB81C"
+  },
+  {
+    "name": "Syracuse",
+    "primary": "#D44500",
+    "secondary": "#000E54"
+  },
+  {
+    "name": "Syracuse Orange",
+    "primary": "#D44500",
+    "secondary": "#000E54"
+  },
+  {
+    "name": "Virginia",
+    "primary": "#232D4B",
+    "secondary": "#F84C1E"
+  },
+  {
+    "name": "Virginia Cavaliers",
+    "primary": "#232D4B",
+    "secondary": "#F84C1E"
+  },
+  {
+    "name": "Virginia Tech",
+    "primary": "#630031",
+    "secondary": "#CF4420"
+  },
+  {
+    "name": "Virginia Tech Hokies",
+    "primary": "#630031",
+    "secondary": "#CF4420"
+  },
+  {
+    "name": "Wake Forest",
+    "primary": "#9E7E38",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Wake Forest Demon Deacons",
+    "primary": "#9E7E38",
+    "secondary": "#000000"
+  },
+  {
     "name": "Alabama",
     "primary": "#9E1B32",
     "secondary": "#000000"
@@ -8,6 +148,36 @@
     "name": "Alabama Crimson Tide",
     "primary": "#9E1B32",
     "secondary": "#000000"
+  },
+  {
+    "name": "Arkansas",
+    "primary": "#9D2235",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Arkansas Razorbacks",
+    "primary": "#9D2235",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Auburn",
+    "primary": "#0C2340",
+    "secondary": "#E87722"
+  },
+  {
+    "name": "Auburn Tigers",
+    "primary": "#0C2340",
+    "secondary": "#E87722"
+  },
+  {
+    "name": "Florida",
+    "primary": "#0021A5",
+    "secondary": "#FA4616"
+  },
+  {
+    "name": "Florida Gators",
+    "primary": "#0021A5",
+    "secondary": "#FA4616"
   },
   {
     "name": "Georgia",
@@ -20,24 +190,344 @@
     "secondary": "#000000"
   },
   {
-    "name": "Boise State",
+    "name": "Kentucky",
     "primary": "#0033A0",
-    "secondary": "#D64309"
+    "secondary": "#FFFFFF"
   },
   {
-    "name": "Boise State Broncos",
+    "name": "Kentucky Wildcats",
     "primary": "#0033A0",
-    "secondary": "#D64309"
+    "secondary": "#FFFFFF"
   },
   {
-    "name": "UCF",
-    "primary": "#000000",
-    "secondary": "#BA9B37"
+    "name": "LSU",
+    "primary": "#461D7C",
+    "secondary": "#FDD023"
   },
   {
-    "name": "UCF Knights",
+    "name": "LSU Tigers",
+    "primary": "#461D7C",
+    "secondary": "#FDD023"
+  },
+  {
+    "name": "Mississippi State",
+    "primary": "#660000",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Mississippi State Bulldogs",
+    "primary": "#660000",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Missouri",
     "primary": "#000000",
-    "secondary": "#BA9B37"
+    "secondary": "#F1B82D"
+  },
+  {
+    "name": "Missouri Tigers",
+    "primary": "#000000",
+    "secondary": "#F1B82D"
+  },
+  {
+    "name": "Ole Miss",
+    "primary": "#CE1126",
+    "secondary": "#14213D"
+  },
+  {
+    "name": "Ole Miss Rebels",
+    "primary": "#CE1126",
+    "secondary": "#14213D"
+  },
+  {
+    "name": "South Carolina",
+    "primary": "#73000A",
+    "secondary": "#000000"
+  },
+  {
+    "name": "South Carolina Gamecocks",
+    "primary": "#73000A",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Tennessee",
+    "primary": "#FF8200",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Tennessee Volunteers",
+    "primary": "#FF8200",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Texas A&M",
+    "primary": "#500000",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Texas A&M Aggies",
+    "primary": "#500000",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Vanderbilt",
+    "primary": "#000000",
+    "secondary": "#B9975B"
+  },
+  {
+    "name": "Vanderbilt Commodores",
+    "primary": "#000000",
+    "secondary": "#B9975B"
+  },
+  {
+    "name": "Illinois",
+    "primary": "#E84A27",
+    "secondary": "#13294B"
+  },
+  {
+    "name": "Illinois Fighting Illini",
+    "primary": "#E84A27",
+    "secondary": "#13294B"
+  },
+  {
+    "name": "Indiana",
+    "primary": "#990000",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Indiana Hoosiers",
+    "primary": "#990000",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Iowa",
+    "primary": "#000000",
+    "secondary": "#FFCD00"
+  },
+  {
+    "name": "Iowa Hawkeyes",
+    "primary": "#000000",
+    "secondary": "#FFCD00"
+  },
+  {
+    "name": "Maryland",
+    "primary": "#E03A3E",
+    "secondary": "#FFD520"
+  },
+  {
+    "name": "Maryland Terrapins",
+    "primary": "#E03A3E",
+    "secondary": "#FFD520"
+  },
+  {
+    "name": "Michigan",
+    "primary": "#00274C",
+    "secondary": "#FFCB05"
+  },
+  {
+    "name": "Michigan Wolverines",
+    "primary": "#00274C",
+    "secondary": "#FFCB05"
+  },
+  {
+    "name": "Michigan State",
+    "primary": "#18453B",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Michigan State Spartans",
+    "primary": "#18453B",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Minnesota",
+    "primary": "#7A0019",
+    "secondary": "#FFCC33"
+  },
+  {
+    "name": "Minnesota Golden Gophers",
+    "primary": "#7A0019",
+    "secondary": "#FFCC33"
+  },
+  {
+    "name": "Nebraska",
+    "primary": "#E41C38",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Nebraska Cornhuskers",
+    "primary": "#E41C38",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Northwestern",
+    "primary": "#4E2A84",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Northwestern Wildcats",
+    "primary": "#4E2A84",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Ohio State",
+    "primary": "#BB0000",
+    "secondary": "#666666"
+  },
+  {
+    "name": "Ohio State Buckeyes",
+    "primary": "#BB0000",
+    "secondary": "#666666"
+  },
+  {
+    "name": "Penn State",
+    "primary": "#041E42",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Penn State Nittany Lions",
+    "primary": "#041E42",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Purdue",
+    "primary": "#CEB888",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Purdue Boilermakers",
+    "primary": "#CEB888",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Rutgers",
+    "primary": "#CC0033",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Rutgers Scarlet Knights",
+    "primary": "#CC0033",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Wisconsin",
+    "primary": "#C5050C",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Wisconsin Badgers",
+    "primary": "#C5050C",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Baylor",
+    "primary": "#154734",
+    "secondary": "#FFC72C"
+  },
+  {
+    "name": "Baylor Bears",
+    "primary": "#154734",
+    "secondary": "#FFC72C"
+  },
+  {
+    "name": "Iowa State",
+    "primary": "#C8102E",
+    "secondary": "#F1BE48"
+  },
+  {
+    "name": "Iowa State Cyclones",
+    "primary": "#C8102E",
+    "secondary": "#F1BE48"
+  },
+  {
+    "name": "Kansas",
+    "primary": "#0051BA",
+    "secondary": "#E8000D"
+  },
+  {
+    "name": "Kansas Jayhawks",
+    "primary": "#0051BA",
+    "secondary": "#E8000D"
+  },
+  {
+    "name": "Kansas State",
+    "primary": "#512888",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Kansas State Wildcats",
+    "primary": "#512888",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Oklahoma",
+    "primary": "#841617",
+    "secondary": "#FDF9D8"
+  },
+  {
+    "name": "Oklahoma Sooners",
+    "primary": "#841617",
+    "secondary": "#FDF9D8"
+  },
+  {
+    "name": "Oklahoma State",
+    "primary": "#FF7300",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Oklahoma State Cowboys",
+    "primary": "#FF7300",
+    "secondary": "#000000"
+  },
+  {
+    "name": "TCU",
+    "primary": "#4D1979",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "TCU Horned Frogs",
+    "primary": "#4D1979",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Texas",
+    "primary": "#BF5700",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Texas Longhorns",
+    "primary": "#BF5700",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Texas Tech",
+    "primary": "#CC0000",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Texas Tech Red Raiders",
+    "primary": "#CC0000",
+    "secondary": "#000000"
+  },
+  {
+    "name": "West Virginia",
+    "primary": "#002855",
+    "secondary": "#EAAA00"
+  },
+  {
+    "name": "West Virginia Mountaineers",
+    "primary": "#002855",
+    "secondary": "#EAAA00"
+  },
+  {
+    "name": "BYU",
+    "primary": "#001A5B",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "BYU Cougars",
+    "primary": "#001A5B",
+    "secondary": "#FFFFFF"
   },
   {
     "name": "Cincinnati",
@@ -50,26 +540,6 @@
     "secondary": "#000000"
   },
   {
-    "name": "Memphis",
-    "primary": "#0D3B66",
-    "secondary": "#0076C6"
-  },
-  {
-    "name": "Memphis Tigers",
-    "primary": "#0D3B66",
-    "secondary": "#0076C6"
-  },
-  {
-    "name": "SMU",
-    "primary": "#003DA5",
-    "secondary": "#E41C38"
-  },
-  {
-    "name": "SMU Mustangs",
-    "primary": "#003DA5",
-    "secondary": "#E41C38"
-  },
-  {
     "name": "Houston",
     "primary": "#C8102E",
     "secondary": "#000000"
@@ -80,64 +550,174 @@
     "secondary": "#000000"
   },
   {
-    "name": "Tulane",
-    "primary": "#006747",
-    "secondary": "#A4D65E"
-  },
-  {
-    "name": "Tulane Green Wave",
-    "primary": "#006747",
-    "secondary": "#A4D65E"
-  },
-  {
-    "name": "UTSA",
-    "primary": "#0C2340",
-    "secondary": "#F15A22"
-  },
-  {
-    "name": "UTSA Roadrunners",
-    "primary": "#0C2340",
-    "secondary": "#F15A22"
-  },
-  {
-    "name": "Appalachian State",
+    "name": "UCF",
     "primary": "#000000",
-    "secondary": "#FFCC00"
+    "secondary": "#BA9B37"
   },
   {
-    "name": "Appalachian State Mountaineers",
+    "name": "UCF Knights",
     "primary": "#000000",
-    "secondary": "#FFCC00"
+    "secondary": "#BA9B37"
   },
   {
-    "name": "Coastal Carolina",
-    "primary": "#006A71",
-    "secondary": "#862633"
+    "name": "Arizona",
+    "primary": "#0C234B",
+    "secondary": "#AB0520"
   },
   {
-    "name": "Coastal Carolina Chanticleers",
-    "primary": "#006A71",
-    "secondary": "#862633"
+    "name": "Arizona Wildcats",
+    "primary": "#0C234B",
+    "secondary": "#AB0520"
   },
   {
-    "name": "Liberty",
-    "primary": "#002D62",
-    "secondary": "#A6192E"
+    "name": "Arizona State",
+    "primary": "#8C1D40",
+    "secondary": "#FFC627"
   },
   {
-    "name": "Liberty Flames",
-    "primary": "#002D62",
-    "secondary": "#A6192E"
+    "name": "Arizona State Sun Devils",
+    "primary": "#8C1D40",
+    "secondary": "#FFC627"
   },
   {
-    "name": "Army",
-    "primary": "#232D4B",
-    "secondary": "#D4BF91"
+    "name": "California",
+    "primary": "#003262",
+    "secondary": "#FDB515"
   },
   {
-    "name": "Army Black Knights",
-    "primary": "#232D4B",
-    "secondary": "#D4BF91"
+    "name": "California Golden Bears",
+    "primary": "#003262",
+    "secondary": "#FDB515"
+  },
+  {
+    "name": "Colorado",
+    "primary": "#CFB87C",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Colorado Buffaloes",
+    "primary": "#CFB87C",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Oregon",
+    "primary": "#154733",
+    "secondary": "#FEE123"
+  },
+  {
+    "name": "Oregon Ducks",
+    "primary": "#154733",
+    "secondary": "#FEE123"
+  },
+  {
+    "name": "Oregon State",
+    "primary": "#DC4405",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Oregon State Beavers",
+    "primary": "#DC4405",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Stanford",
+    "primary": "#8C1515",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Stanford Cardinal",
+    "primary": "#8C1515",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "UCLA",
+    "primary": "#2774AE",
+    "secondary": "#FFD100"
+  },
+  {
+    "name": "UCLA Bruins",
+    "primary": "#2774AE",
+    "secondary": "#FFD100"
+  },
+  {
+    "name": "USC",
+    "primary": "#990000",
+    "secondary": "#FFC72C"
+  },
+  {
+    "name": "USC Trojans",
+    "primary": "#990000",
+    "secondary": "#FFC72C"
+  },
+  {
+    "name": "Utah",
+    "primary": "#CC0000",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Utah Utes",
+    "primary": "#CC0000",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Washington",
+    "primary": "#4B2E83",
+    "secondary": "#B7A57A"
+  },
+  {
+    "name": "Washington Huskies",
+    "primary": "#4B2E83",
+    "secondary": "#B7A57A"
+  },
+  {
+    "name": "Washington State",
+    "primary": "#981E32",
+    "secondary": "#A5ACAF"
+  },
+  {
+    "name": "Washington State Cougars",
+    "primary": "#981E32",
+    "secondary": "#A5ACAF"
+  },
+  {
+    "name": "Charlotte",
+    "primary": "#046A38",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Charlotte 49ers",
+    "primary": "#046A38",
+    "secondary": "#000000"
+  },
+  {
+    "name": "East Carolina",
+    "primary": "#592A8A",
+    "secondary": "#FDC82F"
+  },
+  {
+    "name": "East Carolina Pirates",
+    "primary": "#592A8A",
+    "secondary": "#FDC82F"
+  },
+  {
+    "name": "Florida Atlantic",
+    "primary": "#003A70",
+    "secondary": "#CC0000"
+  },
+  {
+    "name": "Florida Atlantic Owls",
+    "primary": "#003A70",
+    "secondary": "#CC0000"
+  },
+  {
+    "name": "Memphis",
+    "primary": "#0D3B66",
+    "secondary": "#0076C6"
+  },
+  {
+    "name": "Memphis Tigers",
+    "primary": "#0D3B66",
+    "secondary": "#0076C6"
   },
   {
     "name": "Navy",
@@ -150,6 +730,96 @@
     "secondary": "#C5B783"
   },
   {
+    "name": "North Texas",
+    "primary": "#00853E",
+    "secondary": "#000000"
+  },
+  {
+    "name": "North Texas Mean Green",
+    "primary": "#00853E",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Rice",
+    "primary": "#00205B",
+    "secondary": "#A7A8AA"
+  },
+  {
+    "name": "Rice Owls",
+    "primary": "#00205B",
+    "secondary": "#A7A8AA"
+  },
+  {
+    "name": "SMU",
+    "primary": "#003DA5",
+    "secondary": "#E41C38"
+  },
+  {
+    "name": "SMU Mustangs",
+    "primary": "#003DA5",
+    "secondary": "#E41C38"
+  },
+  {
+    "name": "South Florida",
+    "primary": "#006747",
+    "secondary": "#B9975B"
+  },
+  {
+    "name": "South Florida Bulls",
+    "primary": "#006747",
+    "secondary": "#B9975B"
+  },
+  {
+    "name": "Temple",
+    "primary": "#990000",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Temple Owls",
+    "primary": "#990000",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Tulane",
+    "primary": "#006747",
+    "secondary": "#A4D65E"
+  },
+  {
+    "name": "Tulane Green Wave",
+    "primary": "#006747",
+    "secondary": "#A4D65E"
+  },
+  {
+    "name": "Tulsa",
+    "primary": "#004C97",
+    "secondary": "#C69214"
+  },
+  {
+    "name": "Tulsa Golden Hurricane",
+    "primary": "#004C97",
+    "secondary": "#C69214"
+  },
+  {
+    "name": "UAB",
+    "primary": "#1E5336",
+    "secondary": "#B9975B"
+  },
+  {
+    "name": "UAB Blazers",
+    "primary": "#1E5336",
+    "secondary": "#B9975B"
+  },
+  {
+    "name": "UTSA",
+    "primary": "#0C2340",
+    "secondary": "#F15A22"
+  },
+  {
+    "name": "UTSA Roadrunners",
+    "primary": "#0C2340",
+    "secondary": "#F15A22"
+  },
+  {
     "name": "Air Force",
     "primary": "#00308F",
     "secondary": "#AFAFAF"
@@ -160,34 +830,14 @@
     "secondary": "#AFAFAF"
   },
   {
-    "name": "Fresno State",
-    "primary": "#D50032",
-    "secondary": "#003DA5"
+    "name": "Boise State",
+    "primary": "#0033A0",
+    "secondary": "#D64309"
   },
   {
-    "name": "Fresno State Bulldogs",
-    "primary": "#D50032",
-    "secondary": "#003DA5"
-  },
-  {
-    "name": "San Diego State",
-    "primary": "#A6192E",
-    "secondary": "#000000"
-  },
-  {
-    "name": "San Diego State Aztecs",
-    "primary": "#A6192E",
-    "secondary": "#000000"
-  },
-  {
-    "name": "Hawai'i",
-    "primary": "#024731",
-    "secondary": "#000000"
-  },
-  {
-    "name": "Hawai'i Rainbow Warriors",
-    "primary": "#024731",
-    "secondary": "#000000"
+    "name": "Boise State Broncos",
+    "primary": "#0033A0",
+    "secondary": "#D64309"
   },
   {
     "name": "Colorado State",
@@ -200,6 +850,56 @@
     "secondary": "#C8C372"
   },
   {
+    "name": "Fresno State",
+    "primary": "#D50032",
+    "secondary": "#003DA5"
+  },
+  {
+    "name": "Fresno State Bulldogs",
+    "primary": "#D50032",
+    "secondary": "#003DA5"
+  },
+  {
+    "name": "Hawai'i",
+    "primary": "#024731",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Hawai'i Rainbow Warriors",
+    "primary": "#024731",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Nevada",
+    "primary": "#003366",
+    "secondary": "#807F83"
+  },
+  {
+    "name": "Nevada Wolf Pack",
+    "primary": "#003366",
+    "secondary": "#807F83"
+  },
+  {
+    "name": "New Mexico",
+    "primary": "#BA0C2F",
+    "secondary": "#A7A8AA"
+  },
+  {
+    "name": "New Mexico Lobos",
+    "primary": "#BA0C2F",
+    "secondary": "#A7A8AA"
+  },
+  {
+    "name": "San Diego State",
+    "primary": "#A6192E",
+    "secondary": "#000000"
+  },
+  {
+    "name": "San Diego State Aztecs",
+    "primary": "#A6192E",
+    "secondary": "#000000"
+  },
+  {
     "name": "San Jos\u00e9 State",
     "primary": "#0055A2",
     "secondary": "#E6A700"
@@ -208,5 +908,425 @@
     "name": "San Jos\u00e9 State Spartans",
     "primary": "#0055A2",
     "secondary": "#E6A700"
+  },
+  {
+    "name": "UNLV",
+    "primary": "#C10202",
+    "secondary": "#000000"
+  },
+  {
+    "name": "UNLV Rebels",
+    "primary": "#C10202",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Utah State",
+    "primary": "#0F2439",
+    "secondary": "#94A3B8"
+  },
+  {
+    "name": "Utah State Aggies",
+    "primary": "#0F2439",
+    "secondary": "#94A3B8"
+  },
+  {
+    "name": "Wyoming",
+    "primary": "#492F24",
+    "secondary": "#FFCB00"
+  },
+  {
+    "name": "Wyoming Cowboys",
+    "primary": "#492F24",
+    "secondary": "#FFCB00"
+  },
+  {
+    "name": "Akron",
+    "primary": "#041E42",
+    "secondary": "#8A8D8F"
+  },
+  {
+    "name": "Akron Zips",
+    "primary": "#041E42",
+    "secondary": "#8A8D8F"
+  },
+  {
+    "name": "Ball State",
+    "primary": "#C41230",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Ball State Cardinals",
+    "primary": "#C41230",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Bowling Green",
+    "primary": "#3E2A47",
+    "secondary": "#EE7624"
+  },
+  {
+    "name": "Bowling Green Falcons",
+    "primary": "#3E2A47",
+    "secondary": "#EE7624"
+  },
+  {
+    "name": "Buffalo",
+    "primary": "#005BBB",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Buffalo Bulls",
+    "primary": "#005BBB",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Central Michigan",
+    "primary": "#6A0032",
+    "secondary": "#FFB500"
+  },
+  {
+    "name": "Central Michigan Chippewas",
+    "primary": "#6A0032",
+    "secondary": "#FFB500"
+  },
+  {
+    "name": "Eastern Michigan",
+    "primary": "#006633",
+    "secondary": "#A2AAAD"
+  },
+  {
+    "name": "Eastern Michigan Eagles",
+    "primary": "#006633",
+    "secondary": "#A2AAAD"
+  },
+  {
+    "name": "Kent State",
+    "primary": "#002664",
+    "secondary": "#FCD116"
+  },
+  {
+    "name": "Kent State Golden Flashes",
+    "primary": "#002664",
+    "secondary": "#FCD116"
+  },
+  {
+    "name": "Miami (OH)",
+    "primary": "#C41E3A",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Miami (OH) RedHawks",
+    "primary": "#C41E3A",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Northern Illinois",
+    "primary": "#CC0000",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Northern Illinois Huskies",
+    "primary": "#CC0000",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Ohio",
+    "primary": "#00694E",
+    "secondary": "#A2AAAD"
+  },
+  {
+    "name": "Ohio Bobcats",
+    "primary": "#00694E",
+    "secondary": "#A2AAAD"
+  },
+  {
+    "name": "Toledo",
+    "primary": "#002D72",
+    "secondary": "#F6BE00"
+  },
+  {
+    "name": "Toledo Rockets",
+    "primary": "#002D72",
+    "secondary": "#F6BE00"
+  },
+  {
+    "name": "Western Michigan",
+    "primary": "#6D4C41",
+    "secondary": "#C3922E"
+  },
+  {
+    "name": "Western Michigan Broncos",
+    "primary": "#6D4C41",
+    "secondary": "#C3922E"
+  },
+  {
+    "name": "Appalachian State",
+    "primary": "#000000",
+    "secondary": "#FFCC00"
+  },
+  {
+    "name": "Appalachian State Mountaineers",
+    "primary": "#000000",
+    "secondary": "#FFCC00"
+  },
+  {
+    "name": "Arkansas State",
+    "primary": "#CC0000",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Arkansas State Red Wolves",
+    "primary": "#CC0000",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Coastal Carolina",
+    "primary": "#006A71",
+    "secondary": "#862633"
+  },
+  {
+    "name": "Coastal Carolina Chanticleers",
+    "primary": "#006A71",
+    "secondary": "#862633"
+  },
+  {
+    "name": "Georgia Southern",
+    "primary": "#011E41",
+    "secondary": "#A99260"
+  },
+  {
+    "name": "Georgia Southern Eagles",
+    "primary": "#011E41",
+    "secondary": "#A99260"
+  },
+  {
+    "name": "Georgia State",
+    "primary": "#0039A6",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Georgia State Panthers",
+    "primary": "#0039A6",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "James Madison",
+    "primary": "#450084",
+    "secondary": "#CBB677"
+  },
+  {
+    "name": "James Madison Dukes",
+    "primary": "#450084",
+    "secondary": "#CBB677"
+  },
+  {
+    "name": "Louisiana",
+    "primary": "#CE181E",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Louisiana Ragin' Cajuns",
+    "primary": "#CE181E",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Louisiana-Monroe",
+    "primary": "#7A0019",
+    "secondary": "#B3A369"
+  },
+  {
+    "name": "Louisiana-Monroe Warhawks",
+    "primary": "#7A0019",
+    "secondary": "#B3A369"
+  },
+  {
+    "name": "Marshall",
+    "primary": "#00A34F",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Marshall Thundering Herd",
+    "primary": "#00A34F",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Old Dominion",
+    "primary": "#003057",
+    "secondary": "#82A6C2"
+  },
+  {
+    "name": "Old Dominion Monarchs",
+    "primary": "#003057",
+    "secondary": "#82A6C2"
+  },
+  {
+    "name": "South Alabama",
+    "primary": "#00205B",
+    "secondary": "#C8102E"
+  },
+  {
+    "name": "South Alabama Jaguars",
+    "primary": "#00205B",
+    "secondary": "#C8102E"
+  },
+  {
+    "name": "Southern Miss",
+    "primary": "#000000",
+    "secondary": "#FFC72C"
+  },
+  {
+    "name": "Southern Miss Golden Eagles",
+    "primary": "#000000",
+    "secondary": "#FFC72C"
+  },
+  {
+    "name": "Texas State",
+    "primary": "#501214",
+    "secondary": "#C5960C"
+  },
+  {
+    "name": "Texas State Bobcats",
+    "primary": "#501214",
+    "secondary": "#C5960C"
+  },
+  {
+    "name": "Troy",
+    "primary": "#8A8D8F",
+    "secondary": "#841617"
+  },
+  {
+    "name": "Troy Trojans",
+    "primary": "#8A8D8F",
+    "secondary": "#841617"
+  },
+  {
+    "name": "FIU",
+    "primary": "#081E3F",
+    "secondary": "#B6862C"
+  },
+  {
+    "name": "FIU Panthers",
+    "primary": "#081E3F",
+    "secondary": "#B6862C"
+  },
+  {
+    "name": "Jacksonville State",
+    "primary": "#C8102E",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Jacksonville State Gamecocks",
+    "primary": "#C8102E",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Liberty",
+    "primary": "#002D62",
+    "secondary": "#A6192E"
+  },
+  {
+    "name": "Liberty Flames",
+    "primary": "#002D62",
+    "secondary": "#A6192E"
+  },
+  {
+    "name": "Louisiana Tech",
+    "primary": "#0047BB",
+    "secondary": "#CC0000"
+  },
+  {
+    "name": "Louisiana Tech Bulldogs",
+    "primary": "#0047BB",
+    "secondary": "#CC0000"
+  },
+  {
+    "name": "Middle Tennessee",
+    "primary": "#00539B",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "Middle Tennessee Blue Raiders",
+    "primary": "#00539B",
+    "secondary": "#FFFFFF"
+  },
+  {
+    "name": "New Mexico State",
+    "primary": "#891216",
+    "secondary": "#000000"
+  },
+  {
+    "name": "New Mexico State Aggies",
+    "primary": "#891216",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Sam Houston",
+    "primary": "#F58025",
+    "secondary": "#0C2340"
+  },
+  {
+    "name": "Sam Houston Bearkats",
+    "primary": "#F58025",
+    "secondary": "#0C2340"
+  },
+  {
+    "name": "UTEP",
+    "primary": "#041E42",
+    "secondary": "#FF8200"
+  },
+  {
+    "name": "UTEP Miners",
+    "primary": "#041E42",
+    "secondary": "#FF8200"
+  },
+  {
+    "name": "Western Kentucky",
+    "primary": "#C60C30",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Western Kentucky Hilltoppers",
+    "primary": "#C60C30",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Army",
+    "primary": "#232D4B",
+    "secondary": "#D4BF91"
+  },
+  {
+    "name": "Army Black Knights",
+    "primary": "#232D4B",
+    "secondary": "#D4BF91"
+  },
+  {
+    "name": "Notre Dame",
+    "primary": "#0C2340",
+    "secondary": "#C99700"
+  },
+  {
+    "name": "Notre Dame Fighting Irish",
+    "primary": "#0C2340",
+    "secondary": "#C99700"
+  },
+  {
+    "name": "UConn",
+    "primary": "#0C2340",
+    "secondary": "#C5B783"
+  },
+  {
+    "name": "UConn Huskies",
+    "primary": "#0C2340",
+    "secondary": "#C5B783"
+  },
+  {
+    "name": "UMass",
+    "primary": "#971B2F",
+    "secondary": "#000000"
+  },
+  {
+    "name": "UMass Minutemen",
+    "primary": "#971B2F",
+    "secondary": "#000000"
   }
 ]
