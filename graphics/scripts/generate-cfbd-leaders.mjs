@@ -20,7 +20,8 @@ const DESIRED_STATS = [
   'possessionTime',         // possession time leaders
   'thirdDownConversions',   // 3rd down conv. leaders
   'penaltyYards',           // most team penalty yards
-  'turnoversOpponent'       // most turnovers forced
+  'turnoversOpponent',      // most turnovers forced
+  'games'                   // games played for YPG calculations
 ];
 
 // Function to make API request
@@ -104,7 +105,7 @@ function createLeadersData(teams, statName, isDefensive = false) {
   };
   
   const units = {
-    'rushingYards': 'YDS',
+    'rushingYards': 'YPG',  // Changed to YPG for yards per game
     'netPassingYards': 'YDS',
     'totalYards': 'YDS', 
     'sacks': 'SACKS',
@@ -118,10 +119,30 @@ function createLeadersData(teams, statName, isDefensive = false) {
   // Filter teams that have this stat
   const teamsWithStat = teams.filter(team => team.stats[statName] !== undefined);
   
+  // Calculate YPG for rushing yards if we have games data
+  if (statName === 'rushingYards') {
+    teamsWithStat.forEach(team => {
+      if (team.stats.games && team.stats.games > 0) {
+        team.stats.rushingYPG = team.stats.rushingYards / team.stats.games;
+      } else {
+        team.stats.rushingYPG = 0;
+      }
+    });
+  }
+  
   // Sort by stat value (ascending for defensive stats, descending for offensive)
   const sortedTeams = teamsWithStat.sort((a, b) => {
-    const aValue = a.stats[statName] || 0;
-    const bValue = b.stats[statName] || 0;
+    let aValue, bValue;
+    
+    if (statName === 'rushingYards') {
+      // Use YPG for rushing yards
+      aValue = a.stats.rushingYPG || 0;
+      bValue = b.stats.rushingYPG || 0;
+    } else {
+      aValue = a.stats[statName] || 0;
+      bValue = b.stats[statName] || 0;
+    }
+    
     return isDefensive ? aValue - bValue : bValue - aValue;
   });
   
@@ -133,13 +154,24 @@ function createLeadersData(teams, statName, isDefensive = false) {
     subtitle: 'VIA CFB DATA',
     showRecords: true,
     type: statName,
-    teams: top6.map((team, index) => ({
-      rank: index + 1,
-      name: team.team,
-      record: `${team.wins || 0}-${team.losses || 0}`,
-      conference: team.conference || 'Unknown',
-      value: `${Math.round(team.stats[statName])} ${units[statName]}`
-    }))
+    teams: top6.map((team, index) => {
+      let displayValue;
+      
+      if (statName === 'rushingYards') {
+        // Display YPG for rushing yards
+        displayValue = `${Math.round(team.stats.rushingYPG || 0)} ${units[statName]}`;
+      } else {
+        displayValue = `${Math.round(team.stats[statName])} ${units[statName]}`;
+      }
+      
+      return {
+        rank: index + 1,
+        name: team.team,
+        record: `${team.wins || 0}-${team.losses || 0}`,
+        conference: team.conference || 'Unknown',
+        value: displayValue
+      };
+    })
   };
 }
 
