@@ -1,6 +1,11 @@
 name: Generate Betting Previews
 
 on:
+  schedule:
+    # Generate betting previews at 12:00 PM CT (5:00 PM UTC CDT / 6:00 PM UTC CST)
+    # Monday and Thursday
+    - cron: '0 17 * * 1,4'  # Monday/Thursday 12pm CT (CDT)
+    - cron: '0 18 * * 1,4'  # Monday/Thursday 12pm CT (CST) - fallback for standard time
   workflow_dispatch:
     inputs:
       reset_posted_ids:
@@ -14,6 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    concurrency:
+      group: generate-betting-previews-${{ github.ref }}
+      cancel-in-progress: false
     
     steps:
     - name: Checkout repository
@@ -28,6 +36,32 @@ jobs:
       if: ${{ inputs.reset_posted_ids == 'true' }}
       run: |
         echo '{"ids": []}' > posted_ids.json
+        
+    - name: Clear existing betting preview posts
+      run: |
+        echo "🧹 Clearing existing betting preview posts..."
+        
+        # Create backup of current queue
+        cp public/cfb_queue.json public/cfb_queue_backup.json
+        
+        # Clear only betting preview posts (kind: "betting_preview")
+        node -e "
+        const fs = require('fs');
+        try {
+          const data = JSON.parse(fs.readFileSync('public/cfb_queue.json', 'utf8'));
+          const originalCount = data.posts ? data.posts.length : 0;
+          data.posts = data.posts ? data.posts.filter(post => post.kind !== 'betting_preview') : [];
+          const clearedCount = originalCount - data.posts.length;
+          fs.writeFileSync('public/cfb_queue.json', JSON.stringify(data, null, 2));
+          console.log(\`✅ Cleared \${clearedCount} betting preview posts\`);
+        } catch (error) {
+          console.error('❌ Error clearing betting previews:', error.message);
+          process.exit(1);
+        }
+        "
+        
+        # Remove backup file
+        rm public/cfb_queue_backup.json
         
     - name: Generate betting previews
       run: node scripts/generate_betting_previews_only.mjs

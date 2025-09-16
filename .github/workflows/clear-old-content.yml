@@ -1,9 +1,6 @@
 name: Clear Old Content
 
 on:
-  schedule:
-    # Run at 2:00 PM UTC on Mondays (adjust timezone as needed)
-    - cron: '0 14 * * 1'
   workflow_dispatch:
 
 jobs:

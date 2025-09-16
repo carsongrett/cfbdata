@@ -1,0 +1,61 @@
+name: Clear Final Scores
+
+on:
+  schedule:
+    # Clear final scores at 11:00 AM CT (4:00 PM UTC CDT / 5:00 PM UTC CST)
+    # Friday, Saturday, Sunday
+    - cron: '0 16 * * 5,6,0'  # Friday 11am CT (CDT)
+    - cron: '0 17 * * 5,6,0'  # Friday 11am CT (CST) - fallback for standard time
+  workflow_dispatch:
+
+jobs:
+  clear-final-scores:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: clear-final-scores-${{ github.ref }}
+      cancel-in-progress: false
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Clear final scores posts only
+      run: |
+        echo "🧹 Clearing final scores posts from cfb_queue.json..."
+        
+        # Create backup of current queue
+        cp public/cfb_queue.json public/cfb_queue_backup.json
+        
+        # Clear only final scores posts (kind: "final")
+        node -e "
+        const fs = require('fs');
+        try {
+          const data = JSON.parse(fs.readFileSync('public/cfb_queue.json', 'utf8'));
+          const originalCount = data.posts ? data.posts.length : 0;
+          data.posts = data.posts ? data.posts.filter(post => post.kind !== 'final') : [];
+          const clearedCount = originalCount - data.posts.length;
+          fs.writeFileSync('public/cfb_queue.json', JSON.stringify(data, null, 2));
+          console.log(\`✅ Cleared \${clearedCount} final scores posts\`);
+        } catch (error) {
+          console.error('❌ Error clearing final scores:', error.message);
+          process.exit(1);
+        }
+        "
+        
+        # Remove backup file
+        rm public/cfb_queue_backup.json
+        
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add public/cfb_queue.json
+        if git diff --staged --quiet; then
+          echo "📝 No final scores posts to clear"
+        else
+          git commit -m "🧹 Clear final scores posts: $(date -u +%Y-%m-%d_%H-%M-%S)"
+          git push
+          echo "✅ Final scores posts cleared successfully"
+        fi

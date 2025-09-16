@@ -1,6 +1,19 @@
 name: Generate Polls
 
 on:
+  schedule:
+    # Generate polls at various times CT (converted to UTC)
+    # Sunday 12:15 PM CT = 5:15 PM UTC (CDT) / 6:15 PM UTC (CST) - with buffer after clear
+    - cron: '15 17 * * 0'  # Sunday 12:15pm CT (CDT)
+    - cron: '15 18 * * 0'  # Sunday 12:15pm CT (CST) - fallback
+    
+    # Sunday 2:30 PM CT = 7:30 PM UTC (CDT) / 8:30 PM UTC (CST)
+    - cron: '30 19 * * 0'  # Sunday 2:30pm CT (CDT)
+    - cron: '30 20 * * 0'  # Sunday 2:30pm CT (CST) - fallback
+    
+    # Sunday 5:00 PM CT = 10:00 PM UTC (CDT) / 11:00 PM UTC (CST)
+    - cron: '0 22 * * 0'  # Sunday 5pm CT (CDT)
+    - cron: '0 23 * * 0'  # Sunday 5pm CT (CST) - fallback
   workflow_dispatch:
     inputs:
       reset_posted_ids:
@@ -14,6 +27,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    concurrency:
+      group: generate-polls-${{ github.ref }}
+      cancel-in-progress: false
     
     steps:
     - name: Checkout repository
@@ -28,6 +44,41 @@ jobs:
       if: ${{ inputs.reset_posted_ids == 'true' }}
       run: |
         echo '{"ids": []}' > posted_ids.json
+        
+    - name: Clear existing poll posts (only on first run of day)
+      run: |
+        # Only clear on the first run (12:15pm CT) to avoid clearing between runs
+        current_hour=$(date -u +%H)
+        current_minute=$(date -u +%M)
+        
+        # Check if this is the first run (17:15 UTC = 12:15pm CT CDT, or 18:15 UTC = 12:15pm CT CST)
+        if [[ "$current_hour" == "17" && "$current_minute" == "15" ]] || [[ "$current_hour" == "18" && "$current_minute" == "15" ]]; then
+          echo "🧹 Clearing existing poll posts (first run of day)..."
+          
+          # Create backup of current queue
+          cp public/cfb_queue.json public/cfb_queue_backup.json
+          
+          # Clear only poll posts (kind: "poll_top10", "poll_movers")
+          node -e "
+          const fs = require('fs');
+          try {
+            const data = JSON.parse(fs.readFileSync('public/cfb_queue.json', 'utf8'));
+            const originalCount = data.posts ? data.posts.length : 0;
+            data.posts = data.posts ? data.posts.filter(post => !['poll_top10', 'poll_movers'].includes(post.kind)) : [];
+            const clearedCount = originalCount - data.posts.length;
+            fs.writeFileSync('public/cfb_queue.json', JSON.stringify(data, null, 2));
+            console.log(\`✅ Cleared \${clearedCount} poll posts\`);
+          } catch (error) {
+            console.error('❌ Error clearing poll posts:', error.message);
+            process.exit(1);
+          }
+          "
+          
+          # Remove backup file
+          rm public/cfb_queue_backup.json
+        else
+          echo "⏭️ Skipping poll clearing (not first run of day)"
+        fi
         
     - name: Generate polls posts
       run: node scripts/generate_polls_only.mjs
