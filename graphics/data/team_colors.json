@@ -1,1 +1,212 @@
-grat
+[
+  {
+    "name": "Alabama",
+    "primary": "#9E1B32",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Alabama Crimson Tide",
+    "primary": "#9E1B32",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Georgia",
+    "primary": "#BA0C2F",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Georgia Bulldogs",
+    "primary": "#BA0C2F",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Boise State",
+    "primary": "#0033A0",
+    "secondary": "#D64309"
+  },
+  {
+    "name": "Boise State Broncos",
+    "primary": "#0033A0",
+    "secondary": "#D64309"
+  },
+  {
+    "name": "UCF",
+    "primary": "#000000",
+    "secondary": "#BA9B37"
+  },
+  {
+    "name": "UCF Knights",
+    "primary": "#000000",
+    "secondary": "#BA9B37"
+  },
+  {
+    "name": "Cincinnati",
+    "primary": "#E00122",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Cincinnati Bearcats",
+    "primary": "#E00122",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Memphis",
+    "primary": "#0D3B66",
+    "secondary": "#0076C6"
+  },
+  {
+    "name": "Memphis Tigers",
+    "primary": "#0D3B66",
+    "secondary": "#0076C6"
+  },
+  {
+    "name": "SMU",
+    "primary": "#003DA5",
+    "secondary": "#E41C38"
+  },
+  {
+    "name": "SMU Mustangs",
+    "primary": "#003DA5",
+    "secondary": "#E41C38"
+  },
+  {
+    "name": "Houston",
+    "primary": "#C8102E",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Houston Cougars",
+    "primary": "#C8102E",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Tulane",
+    "primary": "#006747",
+    "secondary": "#A4D65E"
+  },
+  {
+    "name": "Tulane Green Wave",
+    "primary": "#006747",
+    "secondary": "#A4D65E"
+  },
+  {
+    "name": "UTSA",
+    "primary": "#0C2340",
+    "secondary": "#F15A22"
+  },
+  {
+    "name": "UTSA Roadrunners",
+    "primary": "#0C2340",
+    "secondary": "#F15A22"
+  },
+  {
+    "name": "Appalachian State",
+    "primary": "#000000",
+    "secondary": "#FFCC00"
+  },
+  {
+    "name": "Appalachian State Mountaineers",
+    "primary": "#000000",
+    "secondary": "#FFCC00"
+  },
+  {
+    "name": "Coastal Carolina",
+    "primary": "#006A71",
+    "secondary": "#862633"
+  },
+  {
+    "name": "Coastal Carolina Chanticleers",
+    "primary": "#006A71",
+    "secondary": "#862633"
+  },
+  {
+    "name": "Liberty",
+    "primary": "#002D62",
+    "secondary": "#A6192E"
+  },
+  {
+    "name": "Liberty Flames",
+    "primary": "#002D62",
+    "secondary": "#A6192E"
+  },
+  {
+    "name": "Army",
+    "primary": "#232D4B",
+    "secondary": "#D4BF91"
+  },
+  {
+    "name": "Army Black Knights",
+    "primary": "#232D4B",
+    "secondary": "#D4BF91"
+  },
+  {
+    "name": "Navy",
+    "primary": "#00205B",
+    "secondary": "#C5B783"
+  },
+  {
+    "name": "Navy Midshipmen",
+    "primary": "#00205B",
+    "secondary": "#C5B783"
+  },
+  {
+    "name": "Air Force",
+    "primary": "#00308F",
+    "secondary": "#AFAFAF"
+  },
+  {
+    "name": "Air Force Falcons",
+    "primary": "#00308F",
+    "secondary": "#AFAFAF"
+  },
+  {
+    "name": "Fresno State",
+    "primary": "#D50032",
+    "secondary": "#003DA5"
+  },
+  {
+    "name": "Fresno State Bulldogs",
+    "primary": "#D50032",
+    "secondary": "#003DA5"
+  },
+  {
+    "name": "San Diego State",
+    "primary": "#A6192E",
+    "secondary": "#000000"
+  },
+  {
+    "name": "San Diego State Aztecs",
+    "primary": "#A6192E",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Hawai'i",
+    "primary": "#024731",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Hawai'i Rainbow Warriors",
+    "primary": "#024731",
+    "secondary": "#000000"
+  },
+  {
+    "name": "Colorado State",
+    "primary": "#1E4D2B",
+    "secondary": "#C8C372"
+  },
+  {
+    "name": "Colorado State Rams",
+    "primary": "#1E4D2B",
+    "secondary": "#C8C372"
+  },
+  {
+    "name": "San Jos\u00e9 State",
+    "primary": "#0055A2",
+    "secondary": "#E6A700"
+  },
+  {
+    "name": "San Jos\u00e9 State Spartans",
+    "primary": "#0055A2",
+    "secondary": "#E6A700"
+  }
+]

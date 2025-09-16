@@ -130,6 +130,17 @@ function createLeadersData(teams, statName, isDefensive = false) {
     });
   }
   
+  // Calculate YPG for total yards allowed (defensive) if we have games data
+  if (statName === 'totalYardsOpponent') {
+    teamsWithStat.forEach(team => {
+      if (team.stats.games && team.stats.games > 0) {
+        team.stats.defensiveYPG = team.stats.totalYardsOpponent / team.stats.games;
+      } else {
+        team.stats.defensiveYPG = 0;
+      }
+    });
+  }
+  
   // Sort by stat value (ascending for defensive stats, descending for offensive)
   const sortedTeams = teamsWithStat.sort((a, b) => {
     let aValue, bValue;
@@ -138,6 +149,10 @@ function createLeadersData(teams, statName, isDefensive = false) {
       // Use YPG for rushing yards
       aValue = a.stats.rushingYPG || 0;
       bValue = b.stats.rushingYPG || 0;
+    } else if (statName === 'totalYardsOpponent') {
+      // Use YPG for total yards allowed (defensive)
+      aValue = a.stats.defensiveYPG || 0;
+      bValue = b.stats.defensiveYPG || 0;
     } else {
       aValue = a.stats[statName] || 0;
       bValue = b.stats[statName] || 0;
@@ -160,6 +175,9 @@ function createLeadersData(teams, statName, isDefensive = false) {
       if (statName === 'rushingYards') {
         // Display YPG for rushing yards
         displayValue = `${Math.round(team.stats.rushingYPG || 0)} ${units[statName]}`;
+      } else if (statName === 'totalYardsOpponent') {
+        // Display YPG for total yards allowed (defensive)
+        displayValue = `${Math.round(team.stats.defensiveYPG || 0)} ${units[statName]}`;
       } else {
         displayValue = `${Math.round(team.stats[statName])} ${units[statName]}`;
       }
