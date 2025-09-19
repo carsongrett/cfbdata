@@ -1,13 +1,18 @@
 {
   "ids": [
+    "ap_top10_week4",
+    "ap_movers_week4",
+    "coaches_top10_week4",
+    "coaches_movers_week4",
+    "sp_top10_week4",
     "betting_preview_week4_401752846",
     "betting_preview_week4_401752843",
     "betting_preview_week4_401756901",
     "betting_preview_week4_401752844",
     "betting_preview_week4_401756896",
     "betting_preview_week4_401752847",
-    "betting_preview_week4_401752845",
     "betting_preview_week4_401752714",
+    "betting_preview_week4_401752845",
     "betting_preview_week4_401752713",
     "betting_preview_week4_401762468",
     "betting_preview_week4_401762469",
@@ -18,11 +23,6 @@
     "betting_preview_week4_401756899",
     "betting_preview_week4_401754539",
     "betting_preview_week4_401760374",
-    "betting_preview_week4_401760372",
-    "ap_top10_week4",
-    "ap_movers_week4",
-    "coaches_top10_week4",
-    "coaches_movers_week4",
-    "sp_top10_week4"
+    "betting_preview_week4_401760372"
   ]
 }
