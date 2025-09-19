@@ -13,6 +13,11 @@ on:
         required: false
         default: false
         type: boolean
+      reset_betting_ids:
+        description: 'Reset only betting preview IDs (keeps other posts)'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   generate-betting-previews:
@@ -36,6 +41,26 @@ jobs:
       if: ${{ inputs.reset_posted_ids == 'true' }}
       run: |
         echo '{"ids": []}' > posted_ids.json
+        
+    - name: Reset betting preview IDs only (if requested)
+      if: ${{ inputs.reset_betting_ids == 'true' }}
+      run: |
+        echo "🧹 Resetting betting preview IDs only..."
+        node -e "
+        const fs = require('fs');
+        try {
+          const data = JSON.parse(fs.readFileSync('posted_ids.json', 'utf8'));
+          const originalCount = data.ids ? data.ids.length : 0;
+          data.ids = data.ids ? data.ids.filter(id => !id.startsWith('betting_preview_')) : [];
+          const removedCount = originalCount - data.ids.length;
+          fs.writeFileSync('posted_ids.json', JSON.stringify(data, null, 2));
+          console.log(\`✅ Removed \${removedCount} betting preview IDs\`);
+          console.log(\`✅ Kept \${data.ids.length} other IDs\`);
+        } catch (error) {
+          console.error('❌ Error resetting betting IDs:', error.message);
+          process.exit(1);
+        }
+        "
         
     - name: Clear existing betting preview posts
       run: |
