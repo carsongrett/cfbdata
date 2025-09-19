@@ -80,7 +80,8 @@ function processPlayerStats(players) {
         playerId,
         name: playerName,
         team,
-        stats: {}
+        stats: {},
+        games: player.games || 3  // Default to 3 games if not available
       };
     }
     
@@ -113,13 +114,13 @@ function processPlayerStats(players) {
 // Create player leaders data structure
 function createPlayerLeadersData(stat, players) {
   const statConfig = {
-    rushingYards: { title: 'RUSHING YD LEADERS', unit: 'YDS' },
-    rushingTDs: { title: 'RUSHING TD LEADERS', unit: 'TD' },
-    passingYards: { title: 'PASSING YD LEADERS', unit: 'YDS' },
-    passingTDs: { title: 'PASSING TD LEADERS', unit: 'TD' },
-    receivingYards: { title: 'RECEIVING YD LEADERS', unit: 'YDS' },
-    receivingTDs: { title: 'RECEIVING TD LEADERS', unit: 'TD' },
-    sacks: { title: 'SACK LEADERS', unit: 'SACKS' }
+    rushingYards: { title: 'RUSHING YD LEADERS', totalUnit: 'YDS', perGameUnit: 'YPG', showBoth: true },
+    rushingTDs: { title: 'RUSHING TD LEADERS', totalUnit: 'TD', perGameUnit: null, showBoth: false },
+    passingYards: { title: 'PASSING YD LEADERS', totalUnit: 'YDS', perGameUnit: 'YPG', showBoth: true },
+    passingTDs: { title: 'PASSING TD LEADERS', totalUnit: 'TD', perGameUnit: null, showBoth: false },
+    receivingYards: { title: 'RECEIVING YD LEADERS', totalUnit: 'YDS', perGameUnit: 'YPG', showBoth: true },
+    receivingTDs: { title: 'RECEIVING TD LEADERS', totalUnit: 'TD', perGameUnit: null, showBoth: false },
+    sacks: { title: 'SACK LEADERS', totalUnit: 'SACKS', perGameUnit: null, showBoth: false }
   };
   
   const config = statConfig[stat];
@@ -133,12 +134,26 @@ function createPlayerLeadersData(stat, players) {
     .sort((a, b) => b.stats[stat] - a.stats[stat])
     .slice(0, 6); // Top 6 players
   
-  const teams = playersWithStat.map((player, index) => ({
-    rank: index + 1,
-    name: player.name,
-    team: player.team,
-    value: `${Math.round(player.stats[stat])} ${config.unit}`
-  }));
+  const teams = playersWithStat.map((player, index) => {
+    let value;
+    
+    if (config.showBoth) {
+      // Display both total and per-game
+      const totalValue = Math.round(player.stats[stat]);
+      const perGameValue = player.games > 0 ? (player.stats[stat] / player.games).toFixed(1) : '0.0';
+      value = `${totalValue.toLocaleString()} ${config.totalUnit} <span style='font-style: italic; font-size: 0.6em; color: rgba(255,255,255,0.8);'>${perGameValue}/G</span>`;
+    } else {
+      // Display total only
+      value = `${Math.round(player.stats[stat])} ${config.totalUnit}`;
+    }
+    
+    return {
+      rank: index + 1,
+      name: player.name,
+      team: player.team,
+      value: value
+    };
+  });
   
   return {
     type: stat,
@@ -331,6 +346,10 @@ async function main() {
       console.log(`\n📡 Fetching ${stat} players from ${category} category...`);
       const players = await fetchCFBDData(`/stats/player/season?year=2025&category=${category}`);
       allPlayers.push(...players);
+      
+      // Add delay between API calls to avoid 502 errors
+      console.log('⏳ Waiting 2 seconds before next request...');
+      await new Promise(resolve => setTimeout(resolve, 2000));
     }
     
     // Process data

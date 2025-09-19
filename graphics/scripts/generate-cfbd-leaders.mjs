@@ -105,41 +105,36 @@ function createLeadersData(teams, statName, isDefensive = false) {
   };
   
   const units = {
-    'rushingYards': 'YPG',  // Changed to YPG for yards per game
-    'netPassingYards': 'YDS',
-    'totalYards': 'YDS', 
-    'sacks': 'SACKS',
-    'totalYardsOpponent': 'YPG',
-    'possessionTime': 'MINS',
-    'thirdDownConversions': 'CONV',
-    'penaltyYards': 'YDS',
-    'turnoversOpponent': 'TO'
+    'rushingYards': { total: 'YDS', perGame: 'YPG', showBoth: true },
+    'netPassingYards': { total: 'YDS', perGame: 'YPG', showBoth: true },
+    'totalYards': { total: 'YDS', perGame: 'YPG', showBoth: true },
+    'sacks': { total: 'SACKS', perGame: null, showBoth: false },
+    'totalYardsOpponent': { total: 'YDS', perGame: 'YPG', showBoth: true },
+    'possessionTime': { total: null, perGame: 'MINS', showBoth: false },
+    'thirdDownConversions': { total: 'CONV', perGame: null, showBoth: false },
+    'penaltyYards': { total: 'YDS', perGame: null, showBoth: false },
+    'turnoversOpponent': { total: 'TO', perGame: null, showBoth: false }
   };
   
   // Filter teams that have this stat
   const teamsWithStat = teams.filter(team => team.stats[statName] !== undefined);
   
-  // Calculate YPG for rushing yards if we have games data
-  if (statName === 'rushingYards') {
-    teamsWithStat.forEach(team => {
-      if (team.stats.games && team.stats.games > 0) {
-        team.stats.rushingYPG = team.stats.rushingYards / team.stats.games;
-      } else {
-        team.stats.rushingYPG = 0;
-      }
-    });
-  }
+  // Calculate YPG for stats that need per-game calculations
+  const statsNeedingYPG = ['rushingYards', 'netPassingYards', 'totalYards', 'totalYardsOpponent'];
   
-  // Calculate YPG for total yards allowed (defensive) if we have games data
-  if (statName === 'totalYardsOpponent') {
-    teamsWithStat.forEach(team => {
-      if (team.stats.games && team.stats.games > 0) {
-        team.stats.defensiveYPG = team.stats.totalYardsOpponent / team.stats.games;
-      } else {
-        team.stats.defensiveYPG = 0;
-      }
-    });
-  }
+  statsNeedingYPG.forEach(stat => {
+    if (statName === stat) {
+      teamsWithStat.forEach(team => {
+        if (team.stats.games && team.stats.games > 0) {
+          const ypgKey = stat === 'totalYardsOpponent' ? 'defensiveYPG' : `${stat}YPG`;
+          team.stats[ypgKey] = team.stats[stat] / team.stats.games;
+        } else {
+          const ypgKey = stat === 'totalYardsOpponent' ? 'defensiveYPG' : `${stat}YPG`;
+          team.stats[ypgKey] = 0;
+        }
+      });
+    }
+  });
   
   // Sort by stat value (ascending for defensive stats, descending for offensive)
   const sortedTeams = teamsWithStat.sort((a, b) => {
@@ -149,6 +144,14 @@ function createLeadersData(teams, statName, isDefensive = false) {
       // Use YPG for rushing yards
       aValue = a.stats.rushingYPG || 0;
       bValue = b.stats.rushingYPG || 0;
+    } else if (statName === 'netPassingYards') {
+      // Use YPG for net passing yards
+      aValue = a.stats.netPassingYardsYPG || 0;
+      bValue = b.stats.netPassingYardsYPG || 0;
+    } else if (statName === 'totalYards') {
+      // Use YPG for total yards
+      aValue = a.stats.totalYardsYPG || 0;
+      bValue = b.stats.totalYardsYPG || 0;
     } else if (statName === 'totalYardsOpponent') {
       // Use YPG for total yards allowed (defensive)
       aValue = a.stats.defensiveYPG || 0;
@@ -171,15 +174,36 @@ function createLeadersData(teams, statName, isDefensive = false) {
     type: statName,
     teams: top6.map((team, index) => {
       let displayValue;
+      const unitConfig = units[statName];
       
-      if (statName === 'rushingYards') {
-        // Display YPG for rushing yards
-        displayValue = `${Math.round(team.stats.rushingYPG || 0)} ${units[statName]}`;
-      } else if (statName === 'totalYardsOpponent') {
-        // Display YPG for total yards allowed (defensive)
-        displayValue = `${Math.round(team.stats.defensiveYPG || 0)} ${units[statName]}`;
+      if (unitConfig.showBoth) {
+        // Display both total and per-game
+        const totalValue = Math.round(team.stats[statName]);
+        let perGameValue;
+        
+        if (statName === 'rushingYards') {
+          perGameValue = (team.stats.rushingYPG || 0).toFixed(1);
+        } else if (statName === 'netPassingYards') {
+          perGameValue = (team.stats.netPassingYardsYPG || 0).toFixed(1);
+        } else if (statName === 'totalYards') {
+          perGameValue = (team.stats.totalYardsYPG || 0).toFixed(1);
+        } else if (statName === 'totalYardsOpponent') {
+          perGameValue = (team.stats.defensiveYPG || 0).toFixed(1);
+        }
+        
+        displayValue = `${totalValue.toLocaleString()} ${unitConfig.total} <span style='font-style: italic; font-size: 0.6em; color: rgba(255,255,255,0.8);'>${perGameValue}/G</span>`;
+      } else if (unitConfig.perGame) {
+        // Display per-game only
+        let perGameValue;
+        if (statName === 'possessionTime') {
+          perGameValue = Math.round(team.stats[statName]);
+        } else {
+          perGameValue = (team.stats[statName] || 0).toFixed(1);
+        }
+        displayValue = `${perGameValue} ${unitConfig.perGame}`;
       } else {
-        displayValue = `${Math.round(team.stats[statName])} ${units[statName]}`;
+        // Display total only
+        displayValue = `${Math.round(team.stats[statName])} ${unitConfig.total}`;
       }
       
       return {
