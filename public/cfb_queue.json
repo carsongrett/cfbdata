@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-19T03:30:15.820Z",
+  "generatedAt": "2025-09-20T02:10:42.167Z",
   "posts": [
     {
       "id": "ap_top10_week4",
@@ -216,6 +216,15 @@
       "expiresAt": "2025-09-20T02:46:30.797Z",
       "source": "cfbd",
       "generatedAt": "2025-09-19T02:46:30.797Z"
+    },
+    {
+      "id": "final_401762468",
+      "kind": "final",
+      "text": "FINAL: 28-17\nRice Owls - 28\nCharlotte 49ers - 17\n\n(RICE): Quinton Jackson 12 CAR, 80 YDS\n(CLT): Grayson Loftis 15/31, 186 YDS, 1 TD\n\n#CFB #GoOwls",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762468",
+      "expiresAt": "2025-09-21T14:10:42.630Z",
+      "source": "espn",
+      "generatedAt": "2025-09-20T02:10:42.630Z"
     }
   ]
 }
