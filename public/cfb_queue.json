@@ -216,33 +216,6 @@
       "expiresAt": "2025-09-20T02:46:30.797Z",
       "source": "cfbd",
       "generatedAt": "2025-09-19T02:46:30.797Z"
-    },
-    {
-      "id": "final_401762468",
-      "kind": "final",
-      "text": "FINAL: 28-17\nRice Owls - 28\nCharlotte 49ers - 17\n\n(RICE): Quinton Jackson 12 CAR, 80 YDS\n(CLT): Grayson Loftis 15/31, 186 YDS, 1 TD\n\n#CFB #GoOwls",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762468",
-      "expiresAt": "2025-09-21T14:10:42.630Z",
-      "source": "espn",
-      "generatedAt": "2025-09-20T02:10:42.630Z"
-    },
-    {
-      "id": "final_401756900",
-      "kind": "final",
-      "text": "FINAL: 19-12\nTulsa Golden Hurricane - 19\nOklahoma State Cowboys - 12\n\n(TLSA): Baylor Hayes 23/36, 219 YDS, 1 TD\n\n#CFB #ReignCane",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756900",
-      "expiresAt": "2025-09-21T16:40:41.709Z",
-      "source": "espn",
-      "generatedAt": "2025-09-20T04:40:41.709Z"
-    },
-    {
-      "id": "final_401752844",
-      "kind": "final",
-      "text": "FINAL: 38-28\nIowa Hawkeyes - 38\nRutgers Scarlet Knights - 28\n\n(IOWA): Kamari Moulton 14 CAR, 68 YDS, 1 TD\n(RUTG): Athan Kaliakmanis 24/40, 330 YDS, 1 INT\n\n#CFB #Hawkeyes",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752844",
-      "expiresAt": "2025-09-21T16:40:41.709Z",
-      "source": "espn",
-      "generatedAt": "2025-09-20T04:40:41.709Z"
     }
   ]
 }
