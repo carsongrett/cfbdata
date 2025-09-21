@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-21T03:48:30.413Z",
+  "generatedAt": "2025-09-21T04:39:54.394Z",
   "posts": [
     {
       "id": "ap_top10_week4",
@@ -675,6 +675,15 @@
       "expiresAt": "2025-09-22T15:48:30.826Z",
       "source": "espn",
       "generatedAt": "2025-09-21T03:48:30.826Z"
+    },
+    {
+      "id": "final_401752716",
+      "kind": "final",
+      "text": "FINAL: 70-21\n#20 Vanderbilt Commodores - 70\nGeorgia State Panthers - 21\n\n(VAN): Diego Pavia 18/24, 245 YDS, 1 TD\n\n#Blowout #CFB #AnchorDown",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752716",
+      "expiresAt": "2025-09-22T16:39:54.900Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T04:39:54.900Z"
     }
   ]
 }
