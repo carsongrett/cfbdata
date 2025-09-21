@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-21T02:47:57.965Z",
+  "generatedAt": "2025-09-21T03:26:33.084Z",
   "posts": [
     {
       "id": "ap_top10_week4",
@@ -513,6 +513,78 @@
       "expiresAt": "2025-09-22T14:47:58.443Z",
       "source": "espn",
       "generatedAt": "2025-09-21T02:47:58.443Z"
+    },
+    {
+      "id": "final_401752713",
+      "kind": "final",
+      "text": "FINAL: 29-20\n#23 Missouri Tigers - 29\nSouth Carolina Gamecocks - 20\n\n(SC): LaNorris Sellers 18/28, 302 YDS, 2 TD\n(MIZ): Ahmad Hardy 23 CAR, 138 YDS, 1 TD\n\n#CFB #MIZ",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752713",
+      "expiresAt": "2025-09-22T15:26:33.671Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:26:33.671Z"
+    },
+    {
+      "id": "final_401757260",
+      "kind": "final",
+      "text": "FINAL: 45-10\nJacksonville State Gamecocks - 45\nMurray State Racers - 10\n\n(JVST): Cam Cook 22 CAR, 147 YDS, 2 TD\n\n#Blowout #CFB #GoGamecocks",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757260",
+      "expiresAt": "2025-09-22T15:26:33.671Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:26:33.671Z"
+    },
+    {
+      "id": "final_401757265",
+      "kind": "final",
+      "text": "FINAL: 42-10\nMissouri State Bears - 42\nUT Martin Skyhawks - 10\n\n(MOST): Jacob Clark 20/28, 271 YDS, 3 TD\n\n#Blowout #CFB",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757265",
+      "expiresAt": "2025-09-22T15:26:33.671Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:26:33.671Z"
+    },
+    {
+      "id": "final_401757268",
+      "kind": "final",
+      "text": "FINAL: 31-16\nWestern Kentucky Hilltoppers - 31\nNevada Wolf Pack - 16\n\n(NEV): Caleb Ramseur 9 CAR, 66 YDS\n(WKU): Maverick McIvor 22/33, 216 YDS, 1 INT\n\n#CFB #GoTops",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757268",
+      "expiresAt": "2025-09-22T15:26:33.671Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:26:33.671Z"
+    },
+    {
+      "id": "final_401760372",
+      "kind": "final",
+      "text": "FINAL: 49-37\nBoise State Broncos - 49\nAir Force Falcons - 37\n\n(BOIS): Dylan Riley 19 CAR, 171 YDS, 4 TD\n(AFA): Cade Harris 8 REC, 177 YDS\n\n#Shootout #CFB #BleedBlue",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760372",
+      "expiresAt": "2025-09-22T15:26:33.672Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:26:33.672Z"
+    },
+    {
+      "id": "final_401761609",
+      "kind": "final",
+      "text": "FINAL: 45-17\nGeorgia Southern Eagles - 45\nMaine Black Bears - 17\n\n(GASO): JC French IV 19/31, 253 YDS, 1 TD, 1 INT\n\n#CFB #HailSouthern",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761609",
+      "expiresAt": "2025-09-22T15:26:33.673Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:26:33.673Z"
+    },
+    {
+      "id": "final_401761611",
+      "kind": "final",
+      "text": "FINAL: 38-20\nCoastal Carolina Chanticleers - 38\nSouth Alabama Jaguars - 20\n\n(USA): Bishop Davenport 22/36, 197 YDS, 2 INT\n\n#CFB #TealNation",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761611",
+      "expiresAt": "2025-09-22T15:26:33.673Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:26:33.673Z"
+    },
+    {
+      "id": "final_401754539",
+      "kind": "final",
+      "text": "FINAL: 48-20\nVirginia Cavaliers - 48\nStanford Cardinal - 20\n\n(UVA): Chandler Morris 23/31, 380 YDS, 4 TD\n\n#CFB #GoHoos",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754539",
+      "expiresAt": "2025-09-22T15:26:33.673Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:26:33.673Z"
     }
   ]
 }
