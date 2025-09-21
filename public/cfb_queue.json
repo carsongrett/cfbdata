@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-21T03:26:33.084Z",
+  "generatedAt": "2025-09-21T03:48:30.413Z",
   "posts": [
     {
       "id": "ap_top10_week4",
@@ -585,6 +585,96 @@
       "expiresAt": "2025-09-22T15:26:33.673Z",
       "source": "espn",
       "generatedAt": "2025-09-21T03:26:33.673Z"
+    },
+    {
+      "id": "final_401752709",
+      "kind": "final",
+      "text": "FINAL: 26-7\n#4 Miami Hurricanes - 26\nFlorida Gators - 7\n\n(MIA): Mark Fletcher Jr. 24 CAR, 116 YDS, 1 TD\n\n#CFB #GoCanes",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752709",
+      "expiresAt": "2025-09-22T15:48:30.826Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:48:30.826Z"
+    },
+    {
+      "id": "final_401752843",
+      "kind": "final",
+      "text": "FINAL: 63-10\n#19 Indiana Hoosiers - 63\n#9 Illinois Fighting Illini - 10\n\n(IU): Fernando Mendoza 21/23, 267 YDS, 5 TD\n\n#Upset #Blowout #CFB #LEO",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752843",
+      "expiresAt": "2025-09-22T15:48:30.826Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:48:30.826Z"
+    },
+    {
+      "id": "final_401752842",
+      "kind": "final",
+      "text": "FINAL: 59-24\nWashington Huskies - 59\nWashington State Cougars - 24\n\n(WASH): Demond Williams Jr. 16/19, 298 YDS, 4 TD\n\n#Blowout #CFB #PurpleReign",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752842",
+      "expiresAt": "2025-09-22T15:48:30.826Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:48:30.826Z"
+    },
+    {
+      "id": "final_401756896",
+      "kind": "final",
+      "text": "FINAL: 27-24\nArizona State Sun Devils - 27\nBaylor Bears - 24\n\n(ASU): Derek Eusebio 2 REC, 78 YDS\n(BAY): Sawyer Robertson 25/39, 250 YDS, 3 TD, 1 INT\n\n#CFB #ForksUp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756896",
+      "expiresAt": "2025-09-22T15:48:30.826Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:48:30.826Z"
+    },
+    {
+      "id": "final_401756898",
+      "kind": "final",
+      "text": "FINAL: 34-13\nBYU Cougars - 34\nEast Carolina Pirates - 13\n\n(BYU): LJ Martin 14 CAR, 101 YDS, 1 TD\n(ECU): Katin Houser 25/42, 285 YDS, 2 INT\n\n#CFB #GoCougs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756898",
+      "expiresAt": "2025-09-22T15:48:30.826Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:48:30.826Z"
+    },
+    {
+      "id": "final_401757263",
+      "kind": "final",
+      "text": "FINAL: 30-20\nLouisiana Tech Bulldogs - 30\nSouthern Miss Golden Eagles - 20\n\n(USM): Braylon Braxton 28/47, 392 YDS, 2 TD, 1 INT\n(LT): Omiri Wiggins 12 CAR, 49 YDS, 1 TD\n\n#CFB #EverLoyalBe",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757263",
+      "expiresAt": "2025-09-22T15:48:30.826Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:48:30.826Z"
+    },
+    {
+      "id": "final_401752710",
+      "kind": "final",
+      "text": "FINAL: 56-10\n#3 LSU Tigers - 56\nSE Louisiana Lions - 10\n\n(LSU): Garrett Nussmeier 25/31, 273 YDS, 3 TD\n\n#Blowout #CFB #GeauxTigers",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752710",
+      "expiresAt": "2025-09-22T15:48:30.826Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:48:30.826Z"
+    },
+    {
+      "id": "final_401752723",
+      "kind": "final",
+      "text": "FINAL: 55-0\n#8 Texas Longhorns - 55\nSam Houston Bearkats - 0\n\n(TEX): Arch Manning 18/21, 309 YDS, 3 TD\n\n#Blowout #Shutout #CFB #HookEm",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752723",
+      "expiresAt": "2025-09-22T15:48:30.826Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:48:30.826Z"
+    },
+    {
+      "id": "final_401760377",
+      "kind": "final",
+      "text": "FINAL: 48-7\nUtah State Aggies - 48\nMcNeese Cowboys - 7\n\n(USU): Bryson Barnes 19/27, 293 YDS, 3 TD, 1 INT\n\n#Blowout #CFB #AggiesAllTheWay",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760377",
+      "expiresAt": "2025-09-22T15:48:30.826Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:48:30.826Z"
+    },
+    {
+      "id": "final_401761612",
+      "kind": "final",
+      "text": "FINAL: 35-3\nTexas State Bobcats - 35\nNicholls Colonels - 3\n\n(TXST): Lincoln Pare 15 CAR, 64 YDS, 1 TD\n\n#Blowout #CFB #EatEmUp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761612",
+      "expiresAt": "2025-09-22T15:48:30.826Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T03:48:30.826Z"
     }
   ]
 }
