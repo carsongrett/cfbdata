@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-21T02:18:17.303Z",
+  "generatedAt": "2025-09-21T02:47:57.965Z",
   "posts": [
     {
       "id": "ap_top10_week4",
@@ -477,6 +477,42 @@
       "expiresAt": "2025-09-22T12:58:25.393Z",
       "source": "espn",
       "generatedAt": "2025-09-21T00:58:25.393Z"
+    },
+    {
+      "id": "final_401756899",
+      "kind": "final",
+      "text": "FINAL: 41-10\nKansas Jayhawks - 41\nWest Virginia Mountaineers - 10\n\n(KU): Jalon Daniels 12/24, 138 YDS, 3 TD\n\n#Blowout #CFB #RockChalk",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756899",
+      "expiresAt": "2025-09-22T14:47:58.441Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T02:47:58.441Z"
+    },
+    {
+      "id": "final_401757259",
+      "kind": "final",
+      "text": "FINAL: 38-16\nDelaware Blue Hens - 38\nFlorida International Panthers - 16\n\n(DEL): Nick Minicucci 23/35, 218 YDS, 3 TD, 1 INT\n(FIU): Alex Perry 5 REC, 84 YDS, 1 TD\n\n#CFB",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757259",
+      "expiresAt": "2025-09-22T14:47:58.442Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T02:47:58.442Z"
+    },
+    {
+      "id": "final_401757261",
+      "kind": "final",
+      "text": "FINAL: 28-21\nKennesaw State Owls - 28\nArkansas State Red Wolves - 21\n\n(KENN): Amari Odom 25/34, 308 YDS, 1 TD\n\n#CFB",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757261",
+      "expiresAt": "2025-09-22T14:47:58.442Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T02:47:58.442Z"
+    },
+    {
+      "id": "final_401762821",
+      "kind": "final",
+      "text": "FINAL: 51-7\nAkron Zips - 51\nDuquesne Dukes - 7\n\n(AKR): Jordan Gant 13 CAR, 161 YDS, 3 TD\n\n#Blowout #CFB #GoZips",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762821",
+      "expiresAt": "2025-09-22T14:47:58.443Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T02:47:58.443Z"
     }
   ]
 }
