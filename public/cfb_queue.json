@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-21T04:39:54.394Z",
+  "generatedAt": "2025-09-21T05:37:12.934Z",
   "posts": [
     {
       "id": "ap_top10_week4",
@@ -684,6 +684,24 @@
       "expiresAt": "2025-09-22T16:39:54.900Z",
       "source": "espn",
       "generatedAt": "2025-09-21T04:39:54.900Z"
+    },
+    {
+      "id": "final_401757264",
+      "kind": "final",
+      "text": "FINAL: 42-28\nMarshall Thundering Herd - 42\nMiddle Tennessee Blue Raiders - 28\n\n(MRSH): Demarcus Lacey 5 REC, 116 YDS, 1 TD\n(MTSU): Nicholas Vattiato 19/32, 299 YDS, 2 TD, 1 INT\n\n#CFB #WeAreMarshall",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757264",
+      "expiresAt": "2025-09-22T17:37:13.408Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T05:37:13.409Z"
+    },
+    {
+      "id": "final_401757267",
+      "kind": "final",
+      "text": "FINAL: 31-25\nUL Monroe Warhawks - 31\nUTEP Miners - 25\n\n(ULM): Braylon McReynolds 18 CAR, 107 YDS, 1 TD\n(UTEP): Malachi Nelson 22/46, 404 YDS, 3 TD, 2 INT\n\n#CFB",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757267",
+      "expiresAt": "2025-09-22T17:37:13.409Z",
+      "source": "espn",
+      "generatedAt": "2025-09-21T05:37:13.409Z"
     }
   ]
 }
