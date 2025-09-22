@@ -1,177 +1,6 @@
 {
-  "generatedAt": "2025-09-21T23:14:37.917Z",
+  "generatedAt": "2025-09-22T17:17:45.322Z",
   "posts": [
-    {
-      "id": "betting_preview_week4_401752846",
-      "kind": "betting_preview",
-      "text": "Week 4 Big Ten Betting Preview\nMichigan Wolverines (-2.5) @ Nebraska Cornhuskers (+105)\nO/U: 47.5\n\n#GoBlue #GBR",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752846",
-      "expiresAt": "2025-09-20T02:46:30.795Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.795Z"
-    },
-    {
-      "id": "betting_preview_week4_401752843",
-      "kind": "betting_preview",
-      "text": "Week 4 Big Ten Betting Preview\nIllinois Fighting Illini (+205) @ Indiana Hoosiers (-6.5)\nO/U: 52.5\n\n#Illini #LEO",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752843",
-      "expiresAt": "2025-09-20T02:46:30.795Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.795Z"
-    },
-    {
-      "id": "betting_preview_week4_401756901",
-      "kind": "betting_preview",
-      "text": "Week 4 Big 12 Betting Preview\nTexas Tech Red Raiders (+142) @ Utah Utes (-3)\nO/U: 56.5\n\n#WreckEm #GoUtes",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401756901",
-      "expiresAt": "2025-09-20T02:46:30.795Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.795Z"
-    },
-    {
-      "id": "betting_preview_week4_401752844",
-      "kind": "betting_preview",
-      "text": "Week 4 Big Ten Betting Preview\nIowa Hawkeyes (-2.5) @ Rutgers Scarlet Knights (+105)\nO/U: 45.5\n\n#Hawkeyes #CHOP",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752844",
-      "expiresAt": "2025-09-20T02:46:30.795Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.795Z"
-    },
-    {
-      "id": "betting_preview_week4_401756896",
-      "kind": "betting_preview",
-      "text": "Week 4 Big 12 Betting Preview\nArizona State Sun Devils (+110) @ Baylor Bears (-2.5)\nO/U: 60.5\n\n#ForksUp #SicEm",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401756896",
-      "expiresAt": "2025-09-20T02:46:30.795Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.795Z"
-    },
-    {
-      "id": "betting_preview_week4_401752847",
-      "kind": "betting_preview",
-      "text": "Week 4 Big Ten Betting Preview\nMichigan State Spartans (+625) @ USC Trojans (-18.5)\nO/U: 55.5\n\n#GoGreen #FightOn",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752847",
-      "expiresAt": "2025-09-20T02:46:30.795Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.795Z"
-    },
-    {
-      "id": "betting_preview_week4_401752714",
-      "kind": "betting_preview",
-      "text": "Week 4 SEC Betting Preview\nAuburn Tigers (+215) @ Oklahoma Sooners (-7)\nO/U: 46.5\n\n#WarEagle #BoomerSooner",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752714",
-      "expiresAt": "2025-09-20T02:46:30.795Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.795Z"
-    },
-    {
-      "id": "betting_preview_week4_401752845",
-      "kind": "betting_preview",
-      "text": "Week 4 Big Ten Betting Preview\nMaryland Terrapins (+270) @ Wisconsin Badgers (-9.5)\nO/U: 44.5\n\n#GoTerps #OnWisconsin",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752845",
-      "expiresAt": "2025-09-20T02:46:30.795Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.795Z"
-    },
-    {
-      "id": "betting_preview_week4_401752713",
-      "kind": "betting_preview",
-      "text": "Week 4 SEC Betting Preview\nSouth Carolina Gamecocks (+260) @ Missouri Tigers (-9.5)\nO/U: 48.5\n\n#SpursUp #MIZ",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752713",
-      "expiresAt": "2025-09-20T02:46:30.795Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.795Z"
-    },
-    {
-      "id": "betting_preview_week4_401762468",
-      "kind": "betting_preview",
-      "text": "Week 4 American Athletic Betting Preview\nRice Owls (-1.5) @ Charlotte 49ers (+102)\nO/U: 42.5\n\n#GoOwls #GoldStandard",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762468",
-      "expiresAt": "2025-09-20T02:46:30.796Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.796Z"
-    },
-    {
-      "id": "betting_preview_week4_401762469",
-      "kind": "betting_preview",
-      "text": "Week 4 American Athletic Betting Preview\nNorth Texas Mean Green (-1.5) @ Army Black Knights (+100)\nO/U: 50.5\n\n#GMG #GoArmy",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762469",
-      "expiresAt": "2025-09-20T02:46:30.796Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.796Z"
-    },
-    {
-      "id": "betting_preview_week4_401754537",
-      "kind": "betting_preview",
-      "text": "Week 4 ACC Betting Preview\nSyracuse Orange (+550) @ Clemson Tigers (-16.5)\nO/U: 54.5\n\n#OrangeNation #ALLIN",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401754537",
-      "expiresAt": "2025-09-20T02:46:30.796Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.796Z"
-    },
-    {
-      "id": "betting_preview_week4_401762820",
-      "kind": "betting_preview",
-      "text": "Week 4 Mid-American Betting Preview\nToledo Rockets (-14.5) @ Western Michigan Broncos (+490)\nO/U: 50.5\n\n#GoRockets #RowTheBoat",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762820",
-      "expiresAt": "2025-09-20T02:46:30.796Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.796Z"
-    },
-    {
-      "id": "betting_preview_week4_401754538",
-      "kind": "betting_preview",
-      "text": "Week 4 ACC Betting Preview\nNC State Wolfpack (+120) @ Duke Blue Devils (-2.5)\nO/U: 56.5\n\n#GoPack #GoDuke",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401754538",
-      "expiresAt": "2025-09-20T02:46:30.796Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.796Z"
-    },
-    {
-      "id": "betting_preview_week4_401761611",
-      "kind": "betting_preview",
-      "text": "Week 4 Sun Belt Betting Preview\nCoastal Carolina Chanticleers (+490) @ South Alabama Jaguars (-14.5)\nO/U: 51.5\n\n#TealNation #GoJags",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401761611",
-      "expiresAt": "2025-09-20T02:46:30.796Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.796Z"
-    },
-    {
-      "id": "betting_preview_week4_401756899",
-      "kind": "betting_preview",
-      "text": "Week 4 Big 12 Betting Preview\nWest Virginia Mountaineers (+360) @ Kansas Jayhawks (-12.5)\nO/U: 54.5\n\n#HailWV #RockChalk",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401756899",
-      "expiresAt": "2025-09-20T02:46:30.796Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.796Z"
-    },
-    {
-      "id": "betting_preview_week4_401754539",
-      "kind": "betting_preview",
-      "text": "Week 4 ACC Betting Preview\nStanford Cardinal (+525) @ Virginia Cavaliers (-15.5)\nO/U: 48.5\n\n#GoStanford #GoHoos",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401754539",
-      "expiresAt": "2025-09-20T02:46:30.796Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.796Z"
-    },
-    {
-      "id": "betting_preview_week4_401760374",
-      "kind": "betting_preview",
-      "text": "Week 4 Mountain West Betting Preview\nFresno State Bulldogs (-3) @ Hawai'i Rainbow Warriors (+124)\nO/U: 47.5\n\n#GoDogs #GoBows",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401760374",
-      "expiresAt": "2025-09-20T02:46:30.796Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.796Z"
-    },
-    {
-      "id": "betting_preview_week4_401760372",
-      "kind": "betting_preview",
-      "text": "Week 4 Mountain West Betting Preview\nBoise State Broncos (-11.5) @ Air Force Falcons (+330)\nO/U: 51.5\n\n#BleedBlue #LetsFly",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401760372",
-      "expiresAt": "2025-09-20T02:46:30.797Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-19T02:46:30.797Z"
-    },
     {
       "id": "ap_top10_week4",
       "kind": "poll_top10",
@@ -216,6 +45,321 @@
       "expiresAt": "2025-09-28T23:14:40.896Z",
       "source": "cfbd",
       "generatedAt": "2025-09-21T23:14:40.896Z"
+    },
+    {
+      "id": "betting_preview_week5_401752852",
+      "kind": "betting_preview",
+      "text": "Week 5 Big Ten Betting Preview\nOhio State Buckeyes (-8.5) @ Washington Huskies (+260)\nO/U: 52.5\n\n#GoBucks #PurpleReign",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752852",
+      "expiresAt": "2025-09-23T17:17:45.807Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.807Z"
+    },
+    {
+      "id": "betting_preview_week5_401752719",
+      "kind": "betting_preview",
+      "text": "Week 5 SEC Betting Preview\nLSU Tigers (+114) @ Ole Miss Rebels (-2.5)\nO/U: 55.5\n\n#GeauxTigers #HottyToddy",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752719",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401752718",
+      "kind": "betting_preview",
+      "text": "Week 5 SEC Betting Preview\nAlabama Crimson Tide (+130) @ Georgia Bulldogs (-3)\nO/U: 53.5\n\n#RollTide #GoDawgs",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752718",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401752854",
+      "kind": "betting_preview",
+      "text": "Week 5 Big Ten Betting Preview\nOregon Ducks (+140) @ Penn State Nittany Lions (-3.5)\nO/U: 52.5\n\n#GoDucks #WeAre",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752854",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401756902",
+      "kind": "betting_preview",
+      "text": "Week 5 Big 12 Betting Preview\nTCU Horned Frogs (+114) @ Arizona State Sun Devils (-2.5)\nO/U: 54.5\n\n#GoFrogs #ForksUp",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756902",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401754543",
+      "kind": "betting_preview",
+      "text": "Week 5 ACC Betting Preview\nFlorida State Seminoles (-7.5) @ Virginia Cavaliers (+235)\nO/U: 57.5\n\n#Noles #GoHoos",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754543",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401756906",
+      "kind": "betting_preview",
+      "text": "Week 5 Big 12 Betting Preview\nUCF Knights (+170) @ Kansas State Wildcats (-6)\nO/U: 49.5\n\n#ChargeOn #EMAW",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756906",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401762471",
+      "kind": "betting_preview",
+      "text": "Week 5 American Athletic Betting Preview\nArmy Black Knights (+180) @ East Carolina Pirates (-5.5)\nO/U: 52.5\n\n#GoArmy #GoPirates",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762471",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401756904",
+      "kind": "betting_preview",
+      "text": "Week 5 Big 12 Betting Preview\nArizona Wildcats (+205) @ Iowa State Cyclones (-6.5)\nO/U: 49.5\n\n#BearDown #CyclONEnation",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756904",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401761614",
+      "kind": "betting_preview",
+      "text": "Week 5 Sun Belt Betting Preview\nGeorgia Southern Eagles (+550) @ James Madison Dukes (-16.5)\nO/U: 54.5\n\n#HailSouthern #GoDukes",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401761614",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401752720",
+      "kind": "betting_preview",
+      "text": "Week 5 SEC Betting Preview\nTennessee Volunteers (-7.5) @ Mississippi State Bulldogs (+245)\nO/U: 61.5\n\n#GBO #HailState",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752720",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401752853",
+      "kind": "betting_preview",
+      "text": "Week 5 Big Ten Betting Preview\nIndiana Hoosiers (-7.5) @ Iowa Hawkeyes (+240)\nO/U: 48.5\n\n#LEO #Hawkeyes",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752853",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401756908",
+      "kind": "betting_preview",
+      "text": "Week 5 Big 12 Betting Preview\nUtah Utes (-10) @ West Virginia Mountaineers (+300)\nO/U: 49.5\n\n#GoUtes #HailWV",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756908",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401762825",
+      "kind": "betting_preview",
+      "text": "Week 5 Mid-American Betting Preview\nBowling Green Falcons (+330) @ Ohio Bobcats (-10.5)\nO/U: 50.5\n\n#AyZiggy #BleedGreen",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762825",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401752850",
+      "kind": "betting_preview",
+      "text": "Week 5 Big Ten Betting Preview\nUSC Trojans (-7) @ Illinois Fighting Illini (+230)\nO/U: 59.5\n\n#FightOn #Illini",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752850",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401752724",
+      "kind": "betting_preview",
+      "text": "Week 5 SEC Betting Preview\nAuburn Tigers (+195) @ Texas A&M Aggies (-6)\nO/U: 52.5\n\n#WarEagle #GigEm",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752724",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401762824",
+      "kind": "betting_preview",
+      "text": "Week 5 Mid-American Betting Preview\nAkron Zips (+900) @ Toledo Rockets (-20.5)\nO/U: 48.5\n\n#GoZips #GoRockets",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762824",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401762472",
+      "kind": "betting_preview",
+      "text": "Week 5 American Athletic Betting Preview\nMemphis Tigers (-13.5) @ Florida Atlantic Owls (+370)\nO/U: 61.5\n\n#GoTigersGo #GoOwls",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762472",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401754544",
+      "kind": "betting_preview",
+      "text": "Week 5 ACC Betting Preview\nCalifornia Golden Bears (+180) @ Boston College Eagles (-6.5)\nO/U: 51.5\n\n#GoBears #WeAreBC",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754544",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401752849",
+      "kind": "betting_preview",
+      "text": "Week 5 Big Ten Betting Preview\nRutgers Scarlet Knights (+164) @ Minnesota Golden Gophers (-5.5)\nO/U: 50.5\n\n#CHOP #SkiUMah",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752849",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401754546",
+      "kind": "betting_preview",
+      "text": "Week 5 ACC Betting Preview\nGeorgia Tech Yellow Jackets (-14.5) @ Wake Forest Demon Deacons (+470)\nO/U: 52.5\n\n#GoJackets #GoDeacs",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754546",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401754545",
+      "kind": "betting_preview",
+      "text": "Week 5 ACC Betting Preview\nDuke Blue Devils (-4.5) @ Syracuse Orange (+164)\nO/U: 60.5\n\n#GoDuke #OrangeNation",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754545",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401754547",
+      "kind": "betting_preview",
+      "text": "Week 5 ACC Betting Preview\nLouisville Cardinals (-3) @ Pittsburgh Panthers (+140)\nO/U: 56.5\n\n#GoCards #H2P",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754547",
+      "expiresAt": "2025-09-23T17:17:45.808Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.808Z"
+    },
+    {
+      "id": "betting_preview_week5_401754548",
+      "kind": "betting_preview",
+      "text": "Week 5 ACC Betting Preview\nVirginia Tech Hokies (+320) @ NC State Wolfpack (-10.5)\nO/U: 57.5\n\n#Hokies #GoPack",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754548",
+      "expiresAt": "2025-09-23T17:17:45.809Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.809Z"
+    },
+    {
+      "id": "betting_preview_week5_401760378",
+      "kind": "betting_preview",
+      "text": "Week 5 Mountain West Betting Preview\nHawai'i Rainbow Warriors (+190) @ Air Force Falcons (-6)\nO/U: 53.5\n\n#GoBows #LetsFly",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760378",
+      "expiresAt": "2025-09-23T17:17:45.809Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.809Z"
+    },
+    {
+      "id": "betting_preview_week5_401762826",
+      "kind": "betting_preview",
+      "text": "Week 5 Mid-American Betting Preview\nEastern Michigan Eagles (+185) @ Central Michigan Chippewas (-5.5)\nO/U: 53.5\n\n#EMUEagles #FireUpChips",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762826",
+      "expiresAt": "2025-09-23T17:17:45.809Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.809Z"
+    },
+    {
+      "id": "betting_preview_week5_401752851",
+      "kind": "betting_preview",
+      "text": "Week 5 Big Ten Betting Preview\nUCLA Bruins (+190) @ Northwestern Wildcats (-7)\nO/U: 44.5\n\n#GoBruins #GoCats",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752851",
+      "expiresAt": "2025-09-23T17:17:45.809Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.809Z"
+    },
+    {
+      "id": "betting_preview_week5_401756905",
+      "kind": "betting_preview",
+      "text": "Week 5 Big 12 Betting Preview\nCincinnati Bearcats (+190) @ Kansas Jayhawks (-6.5)\nO/U: 55.5\n\n#Bearcats #RockChalk",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756905",
+      "expiresAt": "2025-09-23T17:17:45.809Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.809Z"
+    },
+    {
+      "id": "betting_preview_week5_401762473",
+      "kind": "betting_preview",
+      "text": "Week 5 American Athletic Betting Preview\nRice Owls (+490) @ Navy Midshipmen (-14.5)\nO/U: 45.5\n\n#GoOwls #GoNavy",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762473",
+      "expiresAt": "2025-09-23T17:17:45.809Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.809Z"
+    },
+    {
+      "id": "betting_preview_week5_401762474",
+      "kind": "betting_preview",
+      "text": "Week 5 American Athletic Betting Preview\nTulane Green Wave (-14) @ Tulsa Golden Hurricane (+425)\nO/U: 53.5\n\n#RollWave #ReignCane",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762474",
+      "expiresAt": "2025-09-23T17:17:45.809Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.809Z"
+    },
+    {
+      "id": "betting_preview_week5_401752722",
+      "kind": "betting_preview",
+      "text": "Week 5 SEC Betting Preview\nKentucky Wildcats (+205) @ South Carolina Gamecocks (-6.5)\nO/U: 46.5\n\n#BBN #SpursUp",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752722",
+      "expiresAt": "2025-09-23T17:17:45.809Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.809Z"
+    },
+    {
+      "id": "betting_preview_week5_401756907",
+      "kind": "betting_preview",
+      "text": "Week 5 Big 12 Betting Preview\nBaylor Bears (-20.5) @ Oklahoma State Cowboys (+750)\nO/U: 59.5\n\n#SicEm #GoPokes",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756907",
+      "expiresAt": "2025-09-23T17:17:45.809Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.809Z"
+    },
+    {
+      "id": "betting_preview_week5_401761615",
+      "kind": "betting_preview",
+      "text": "Week 5 Sun Belt Betting Preview\nMarshall Thundering Herd (+102) @ Louisiana Ragin' Cajuns (-1.5)\nO/U: 46.5\n\n#WeAreMarshall #GeauxCajuns",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401761615",
+      "expiresAt": "2025-09-23T17:17:45.809Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.809Z"
+    },
+    {
+      "id": "betting_preview_week5_401757272",
+      "kind": "betting_preview",
+      "text": "Week 5 Conference USA Betting Preview\nLouisiana Tech Bulldogs (-4) @ UTEP Miners (+160)\nO/U: 48.5\n\n#EverLoyalBe #PicksUp",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401757272",
+      "expiresAt": "2025-09-23T17:17:45.809Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.809Z"
+    },
+    {
+      "id": "betting_preview_week5_401756903",
+      "kind": "betting_preview",
+      "text": "Week 5 Big 12 Betting Preview\nBYU Cougars (-6.5) @ Colorado Buffaloes (+190)\nO/U: 47.5\n\n#GoCougs #SkoBuffs",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756903",
+      "expiresAt": "2025-09-23T17:17:45.810Z",
+      "source": "cfbd",
+      "generatedAt": "2025-09-22T17:17:45.810Z"
     }
   ]
 }
