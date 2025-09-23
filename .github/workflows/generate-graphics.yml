@@ -1,0 +1,63 @@
+name: Generate Graphics
+
+on:
+  schedule:
+    - cron: '0 17 * * 0'  # Sunday 11am CT (5pm UTC)
+    - cron: '0 23 * * 0'  # Sunday 5pm CT (11pm UTC)
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  generate-graphics:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        cache-dependency-path: graphics/package-lock.json
+    
+    - name: Install dependencies
+      working-directory: graphics
+      run: npm install
+    
+    - name: Generate Undefeated/Winless Graphics
+      working-directory: graphics
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+      run: node scripts/generate-undefeated-winless-real.mjs
+    
+    - name: Generate Ranked Matchups Graphics
+      working-directory: graphics
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+      run: node scripts/generate-ranked-matchups-real.mjs
+    
+    - name: Move graphics to root
+      run: |
+        # Move undefeated/winless graphics
+        cp graphics/output/undefeated-teams-real.png .
+        cp graphics/output/winless-teams-real.png .
+        
+        # Move ranked matchups graphics
+        cp graphics/output/ranked-matchups-real.png .
+        
+        # Rename with timestamp for versioning
+        timestamp=$(date -u +%Y%m%d_%H%M)
+        cp undefeated-teams-real.png "undefeated-teams-${timestamp}.png"
+        cp winless-teams-real.png "winless-teams-${timestamp}.png"
+        cp ranked-matchups-real.png "ranked-matchups-${timestamp}.png"
+    
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git diff --staged --quiet || git commit -m "Auto-generate graphics: $(date -u +%Y-%m-%d_%H-%M-%S)"
+        git push
