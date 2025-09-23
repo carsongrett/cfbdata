@@ -1,50 +1,50 @@
 {
-  "generatedAt": "2025-09-22T18:21:49.259Z",
+  "generatedAt": "2025-09-23T01:56:18.005Z",
   "posts": [
     {
-      "id": "ap_top10_week4",
+      "id": "ap_top10_week5",
       "kind": "poll_top10",
-      "text": "AP Top 10 - Week 4\n1. Ohio State\n2. Penn State\n3. LSU\n4. Miami\n5. Georgia\n6. Oregon\n7. Florida State\n8. Texas\n9. Illinois\n10. Texas A&M\n\n#APTop25 #CFB",
+      "text": "AP Top 10 - Week 5\n1. Ohio State\n2. Miami\n3. Penn State\n4. LSU\n5. Georgia\n6. Oregon\n7. Oklahoma\n8. Florida State\n9. Texas A&M\n10. Texas\n\n#APTop25 #CFB",
       "link": "",
-      "expiresAt": "2025-09-28T23:14:38.437Z",
+      "expiresAt": "2025-09-30T01:56:19.003Z",
       "source": "cfbd",
-      "generatedAt": "2025-09-21T23:14:38.437Z"
+      "generatedAt": "2025-09-23T01:56:19.003Z"
     },
     {
-      "id": "ap_movers_week4",
+      "id": "ap_movers_week5",
       "kind": "poll_movers",
-      "text": "AP Poll Movers - Week 4\n⬇️-16 Notre Dame (8→24)\n⬆️+6 Texas A&M (16→10)\n⬆️+5 Alabama (19→14)\n⬆️+4 Ole Miss (17→13)\n⬆️+4 Utah (20→16)\n⬆️+4 Texas Tech (21→17)\nNEW: #18 Georgia Tech\nNEW: #20 Vanderbilt\nNEW: #25 USC\n\n#APTop25 #CFB",
+      "text": "AP Poll Movers - Week 5\n⬇️-14 Illinois (9→23)\n⬆️+8 Indiana (19→11)\n⬆️+5 Texas Tech (17→12)\n⬆️+4 Oklahoma (11→7)\n⬆️+4 USC (25→21)\n⬇️-3 Alabama (14→17)\n⬆️+3 Missouri (23→20)\nNEW: #24 TCU\nNEW: #25 BYU\n\n#APTop25 #CFB",
       "link": "",
-      "expiresAt": "2025-09-28T23:14:38.438Z",
+      "expiresAt": "2025-09-30T01:56:19.004Z",
       "source": "cfbd",
-      "generatedAt": "2025-09-21T23:14:38.438Z"
+      "generatedAt": "2025-09-23T01:56:19.004Z"
     },
     {
-      "id": "coaches_top10_week4",
+      "id": "coaches_top10_week5",
       "kind": "poll_top10",
-      "text": "Coaches Poll Top 10 - Week 4\n1. Ohio State\n2. Penn State\n3. Georgia\n4. LSU\n5. Oregon\n6. Miami\n7. Texas\n8. Illinois\n9. Florida State\n10. Texas A&M\n\n#CoachesPoll #CFB",
+      "text": "Coaches Poll Top 10 - Week 5\n1. Ohio State\n2. Penn State\n3. Georgia\n4. LSU\n5. Oregon\n6. Miami\n7. Texas\n8. Florida State\n9. Texas A&M\n10. Oklahoma\n\n#CoachesPoll #CFB",
       "link": "",
-      "expiresAt": "2025-09-28T23:14:39.674Z",
+      "expiresAt": "2025-09-30T01:56:20.371Z",
       "source": "cfbd",
-      "generatedAt": "2025-09-21T23:14:39.674Z"
+      "generatedAt": "2025-09-23T01:56:20.371Z"
     },
     {
-      "id": "coaches_movers_week4",
+      "id": "coaches_movers_week5",
       "kind": "poll_movers",
-      "text": "Coaches Poll Movers - Week 4\n⬇️-14 South Carolina (10→24)\n⬇️-13 Notre Dame (8→21)\n⬆️+7 Texas A&M (17→10)\n⬆️+4 Oklahoma (16→12)\n⬆️+4 Alabama (18→14)\nNEW: #19 Georgia Tech\nNEW: #22 Missouri\nNEW: #23 Vanderbilt\nNEW: #25 Auburn\n\n#CoachesPoll #C",
+      "text": "Coaches Poll Movers - Week 5\n⬇️-15 Illinois (8→23)\n⬆️+5 Indiana (17→12)\n⬆️+3 Missouri (22→19)\n⬆️+3 Vanderbilt (23→20)\nNEW: #22 USC\nNEW: #24 BYU\nNEW: #25 TCU\n\n#CoachesPoll #CFB",
       "link": "",
-      "expiresAt": "2025-09-28T23:14:39.675Z",
+      "expiresAt": "2025-09-30T01:56:20.372Z",
       "source": "cfbd",
-      "generatedAt": "2025-09-21T23:14:39.675Z"
+      "generatedAt": "2025-09-23T01:56:20.372Z"
     },
     {
-      "id": "sp_top10_week4",
+      "id": "sp_top10_week5",
       "kind": "poll_top10",
-      "text": "SP+ Power Rankings - Week 4\n1. Penn State (28.3)\n2. Oregon (27.1)\n3. Ohio State (26.5)\n4. Alabama (26.4)\n5. Ole Miss (22.6)\n6. Oklahoma (21.8)\n7. Tennessee (21.8)\n8. Georgia (21.4)\n9. USC (19.8)\n10. Miami (19.7)\n\n#SPPlus #CFB",
+      "text": "SP+ Power Rankings - Week 5\n1. Penn State (28.3)\n2. Oregon (27.1)\n3. Ohio State (26.5)\n4. Alabama (26.4)\n5. Ole Miss (22.6)\n6. Oklahoma (21.8)\n7. Tennessee (21.8)\n8. Georgia (21.4)\n9. USC (19.8)\n10. Miami (19.7)\n\n#SPPlus #CFB",
       "link": "",
-      "expiresAt": "2025-09-28T23:14:40.896Z",
+      "expiresAt": "2025-09-30T01:56:21.681Z",
       "source": "cfbd",
-      "generatedAt": "2025-09-21T23:14:40.896Z"
+      "generatedAt": "2025-09-23T01:56:21.681Z"
     }
   ]
 }
