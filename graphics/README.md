@@ -58,16 +58,46 @@ The generator expects JSON data in this format:
 }
 ```
 
+## Graphics Types
+
+### 1. Team Leaders Graphics (`generate-cfbd-leaders.mjs`)
+- **Purpose**: Shows top performing teams in various statistical categories
+- **Features**: 
+  - Team stats with per-game calculations (YPG)
+  - Official team colors and rankings
+  - Multiple stat categories (rushing, passing, defense, etc.)
+- **Output**: `cfbd-{statName}-2025.png` files
+
+### 2. Player Leaders Graphics (`generate-player-leaders.mjs`)
+- **Purpose**: Shows top performing individual players
+- **Features**:
+  - Player stats with rankings
+  - Team names and conference info
+  - Multiple player categories (rushing, passing, receiving, etc.)
+- **Output**: `player-{statName}-2025.png` files
+
+### 3. Undefeated/Winless Teams Graphics (`generate-undefeated-winless-real.mjs`)
+- **Purpose**: Shows Power 5 teams that are undefeated or winless
+- **Features**:
+  - Real team logos from assets folder
+  - Dynamic grid layout based on team count
+  - Smart logo sizing (250px for 2 teams, smaller for more)
+  - Power 5 only filtering
+  - Live data from CFBD API records endpoint
+- **Output**: `undefeated-teams-real.png`, `winless-teams-real.png`
+
 ## Features
 
 - **Team Colors**: Automatically matches team names to official colors
 - **Configurable Records**: Toggle record display on/off per graphic
-- **Text Logos**: Generates team logos from team name initials
-- **Responsive Design**: Clean layout optimized for 1600x900
+- **Real Team Logos**: Uses actual team logo images from assets folder
+- **Dynamic Layouts**: Automatically adjusts grid and logo sizes based on content
+- **Live Data Integration**: Pulls real-time data from CFBD API
+- **Responsive Design**: Clean layouts optimized for social media
 - **Professional Typography**: Inter font family with proper weights
 
-## Next Steps
+## Data Sources
 
-- Phase 2: Add Playwright for PNG generation
-- Phase 3: Integrate with existing CFB data pipeline
-- Future: Add real team logo images
+- **CFBD API**: Real-time team records, stats, and game data
+- **Team Assets**: Logo images stored in `assets/team icons/` folder
+- **Color Mappings**: Team colors defined in `data/team_colors.json`

@@ -50,6 +50,30 @@ Planned expansion:
 - **Recruiting News** (`kind: "recruiting"`) - Recruiting updates
 - **Transfer Portal** (`kind: "transfers"`) - Transfer news
 
+## Graphics Generation
+
+The project includes a comprehensive graphics system that generates social media-ready images:
+
+### Graphics Types
+- **Team Leaders Graphics** - Top performing teams in statistical categories (rushing, passing, defense, etc.)
+- **Player Leaders Graphics** - Top performing individual players across various stats
+- **Undefeated/Winless Teams Graphics** - Power 5 teams that are undefeated or winless with team logos
+
+### Graphics Features
+- **Real Team Logos** - Uses actual team logo images from assets folder
+- **Dynamic Layouts** - Automatically adjusts grid and logo sizes based on content count
+- **Live Data Integration** - Pulls real-time data from CFBD API
+- **Power 5 Filtering** - Undefeated/winless graphics focus on major conferences only
+- **Social Media Optimized** - 960x960 square format perfect for X/Twitter
+
+### Graphics Workflow
+- **Automated Generation** - Runs via GitHub Actions on scheduled basis
+- **Manual Generation** - Can be run locally via `graphics/scripts/` directory
+- **Output Files** - Generates PNG files ready for social media posting
+- **Asset Management** - Team logos and colors stored in `graphics/assets/` directory
+
+See `graphics/README.md` for detailed graphics documentation and usage instructions.
+
 ## File Structure
 
 ```
@@ -220,5 +244,6 @@ The bot currently supports:
 Future additions could include:
 - **FPI Rankings** - ESPN's Football Power Index
 - **CFP Rankings** - College Football Playoff committee rankings
-- **Other advanced metrics** - Various analytical ranking systems#   U p d a t e d   0 9 / 1 4 / 2 0 2 5   2 1 : 5 8 : 2 8  
+- **Other advanced metrics** - Various analytical ranking systems#   U p d a t e d   0 9 / 1 4 / 2 0 2 5   2 1 : 5 8 : 2 8 
+ 
  
