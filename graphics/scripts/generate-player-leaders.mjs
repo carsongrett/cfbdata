@@ -236,7 +236,7 @@ function processPlayerStats(players) {
 }
 
 // Create player leaders data structure
-function createPlayerLeadersData(stat, players) {
+async function createPlayerLeadersData(stat, players, teamRecordMap) {
   const statConfig = {
     rushingYards: { title: 'RUSHING YD LEADERS', totalUnit: 'YDS', perGameUnit: 'YPG', showBoth: true },
     rushingTDs: { title: 'RUSHING TD LEADERS', totalUnit: 'TD', perGameUnit: null, showBoth: false },
@@ -258,6 +258,8 @@ function createPlayerLeadersData(stat, players) {
     .sort((a, b) => b.stats[stat] - a.stats[stat])
     .slice(0, 6); // Top 6 players
   
+  // Use the provided team record map
+  
   const teams = playersWithStat.map((player, index) => {
     let value;
     
@@ -275,6 +277,7 @@ function createPlayerLeadersData(stat, players) {
       rank: index + 1,
       name: player.name,
       team: player.team,
+      record: teamRecordMap[player.team] || '0-0',
       value: value
     };
   });
@@ -364,6 +367,14 @@ function generatePlayerHTML(data) {
             object-fit: contain;
             filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
         }
+        
+        .team-record {
+            font-size: 1.5rem;
+            font-weight: 600;
+            opacity: 0.9;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            margin-left: 8px;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-white min-h-screen">
@@ -394,12 +405,18 @@ function generatePlayerHTML(data) {
                     logoHtml = `<img src="${logoDataUrl}" alt="${player.team} Logo" class="team-logo">`;
                   }
                   
+                  // Get team record
+                  const teamRecord = player.record || '0-0';
+                  
                   return `<!-- Player ${player.rank} -->
                 <div class="player-bar rounded-lg flex items-center px-8 shadow-lg" style="background-color: ${backgroundColor}">
                     <div class="rank-number text-white mr-8">${player.rank}</div>
                     <div class="flex-1 flex items-center justify-between">
                         <div class="player-name text-white">${player.name.toUpperCase()}</div>
-                        ${logoHtml}
+                        <div class="flex items-center">
+                            ${logoHtml}
+                            <div class="team-record text-white">${teamRecord}</div>
+                        </div>
                     </div>
                     <div class="text-white stat-value ml-8">${player.value}</div>
                 </div>`;
@@ -501,9 +518,9 @@ async function main() {
       const players = await fetchCFBDData(`/stats/player/season?year=2025&category=${category}`);
       allPlayers.push(...players);
       
-      // Add delay between API calls to avoid 502 errors
-      console.log('⏳ Waiting 2 seconds before next request...');
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Add delay between API calls to avoid rate limiting
+      console.log('⏳ Waiting 3 seconds before next request...');
+      await new Promise(resolve => setTimeout(resolve, 3000));
     }
     
     // Filter for Power 5 teams only
@@ -513,11 +530,22 @@ async function main() {
     const processedPlayers = processPlayerStats(power5Players);
     console.log(`✅ Processed ${processedPlayers.length} Power 5 players`);
     
+    // Fetch team records once for all stats
+    console.log('📊 Fetching team records...');
+    console.log('⏳ Waiting 3 seconds before fetching records...');
+    await new Promise(resolve => setTimeout(resolve, 3000));
+    const records = await fetchCFBDData('/records?year=2025');
+    const teamRecordMap = {};
+    records.forEach(team => {
+      teamRecordMap[team.team] = `${team.wins}-${team.losses}`;
+    });
+    console.log(`✅ Loaded records for ${Object.keys(teamRecordMap).length} teams`);
+    
     // Generate graphics for each stat
     for (const stat of PLAYER_STATS) {
       console.log(`\n🎨 Generating ${stat} player leaders...`);
       
-      const leadersData = createPlayerLeadersData(stat, processedPlayers);
+      const leadersData = await createPlayerLeadersData(stat, processedPlayers, teamRecordMap);
       
       // Generate HTML
       const htmlContent = generatePlayerHTML(leadersData);
