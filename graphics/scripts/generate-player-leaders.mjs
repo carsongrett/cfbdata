@@ -25,6 +25,9 @@ const PLAYER_STATS = [
 const teamMappingPath = path.join(__dirname, '..', 'data', 'team_mapping.json');
 const teamMapping = JSON.parse(fs.readFileSync(teamMappingPath, 'utf8'));
 
+// Define Power 5 conferences
+const POWER5_CONFERENCES = ['SEC', 'Big Ten', 'ACC', 'Big 12', 'Pac-12'];
+
 // Function to get team info (abbreviation + colors) by API team name
 function getTeamInfo(teamName) {
   // Direct match first
@@ -59,6 +62,127 @@ async function fetchCFBDData(endpoint) {
   }
   
   return await response.json();
+}
+
+// Function to filter players for Power 5 teams only
+async function filterPower5Players(players) {
+  console.log('🏈 Filtering for Power 5 teams only...');
+  
+  // Fetch team records to get conference information
+  const records = await fetchCFBDData('/records?year=2025');
+  
+  // Create a map of team names to conferences
+  const teamConferenceMap = {};
+  records.forEach(team => {
+    teamConferenceMap[team.team] = team.conference;
+  });
+  
+  // Filter players for Power 5 teams only
+  const power5Players = players.filter(player => {
+    const conference = teamConferenceMap[player.team];
+    return POWER5_CONFERENCES.includes(conference);
+  });
+  
+  console.log(`📊 Total players: ${players.length}`);
+  console.log(`🏆 Power 5 players: ${power5Players.length}`);
+  
+  return power5Players;
+}
+
+// Function to encode image to base64
+function encodeImageToBase64(imagePath) {
+  try {
+    const imageBuffer = fs.readFileSync(imagePath);
+    const base64 = imageBuffer.toString('base64');
+    const ext = path.extname(imagePath).toLowerCase();
+    const mimeType = ext === '.png' ? 'image/png' : 'image/jpeg';
+    return `data:${mimeType};base64,${base64}`;
+  } catch (error) {
+    console.warn(`⚠️ Could not load image ${imagePath}:`, error.message);
+    return null;
+  }
+}
+
+// Function to get team logo path
+function getTeamLogoPath(teamName) {
+  // Team name mappings to actual logo file names
+  const logoMappings = {
+    'Alabama': 'Alabama_Crimson_Tide_logo-300x300.png',
+    'Auburn': 'Auburn_Tigers_logo-300x300.png',
+    'Florida': 'Florida_Gators_logo-300x300.png',
+    'Georgia': 'Georgia_Bulldogs_logo-300x300.png',
+    'Kentucky': 'Kentucky_Wildcats_logo-300x300.png',
+    'LSU': 'LSU_Tigers-300x300.png',
+    'Mississippi State': 'Mississippi_State_Bulldogs_logo-300x300.png',
+    'Missouri': 'Missouri_Tigers_logo-300x300.png',
+    'Ole Miss': 'Ole_Miss_Rebels_logo-300x300.png',
+    'South Carolina': 'South_Carolina_Gamecocks_logo-300x300.png',
+    'Tennessee': 'Tennessee_Volunteers_logo-300x300.png',
+    'Texas': 'Texas_Longhorns_logo-300x300.png',
+    'Texas A&M': 'Texas_AM_University_logo-300x300.png',
+    'Vanderbilt': 'Vanderbilt_Commodores_logo-300x300.png',
+    'Oklahoma': 'Oklahoma_Sooners_logo-300x300.png',
+    'Arkansas': 'Arkansas_Razorbacks_logo-300x300.png',
+    
+    'Illinois': 'Illinois_Fighting_Illini_logo-300x300.png',
+    'Indiana': 'Indiana_Hoosiers_logo-300x300.png',
+    'Iowa': 'Iowa_Hawkeyes_logo-300x300.png',
+    'Maryland': 'Maryland_Terrapins_logo-300x300.png',
+    'Michigan': 'Michigan_Wolverines_logo-300x300.png',
+    'Michigan State': 'Michigan_State_Spartans_logo-300x300.png',
+    'Minnesota': 'Minnesota_Golden_Gophers_logo-300x300.png',
+    'Nebraska': 'Nebraska_Cornhuskers_logo-300x300.png',
+    'Northwestern': 'Northwestern_Wildcats_logo-300x300.png',
+    'Ohio State': 'Ohio_State_Buckeyes_logo-300x300.png',
+    'Penn State': 'Penn_State_Nittany_Lions_logo-300x300.png',
+    'Purdue': 'Purdue_Boilermakers_logo-300x300.png',
+    'Rutgers': 'Rutgers_Scarlet_Knights_logo-300x300.png',
+    'Wisconsin': 'Wisconsin_Badgers_logo-300x300.png',
+    'USC': 'USC_Trojans_logo-300x300.png',
+    'UCLA': 'UCLA_Bruins-300x300.png',
+    'Oregon': 'Oregon_Ducks_logo-300x300.png',
+    'Washington': 'Washington_Huskies_logo-300x300.png',
+    
+    'Arizona': 'Arizona_Wildcats_logo-300x300.png',
+    'Arizona State': 'Arizona_State_Sun_Devils_logo-300x300.png',
+    'Baylor': 'Baylor_Bears_logo-300x300.png',
+    'BYU': 'BYU_Cougars_logo-300x300.png',
+    'Cincinnati': 'Cincinnati_Bearcats_logo-300x300.png',
+    'Colorado': 'Colorado_Buffaloes_logo-300x300.png',
+    'Houston': 'Houston_Cougars_logo-300x300.png',
+    'Iowa State': 'Iowa_State_Cyclones_logo-300x300.png',
+    'Kansas': 'Kansas_Jayhawks_logo-300x300.png',
+    'Kansas State': 'Kansas_State_Wildcats_logo-300x300.png',
+    'Oklahoma State': 'Oklahoma_State_Cowboys_logo-300x300.png',
+    'TCU': 'TCU_Horned_Frogs_logo-300x300.png',
+    'Texas Tech': 'Texas_Tech_Red_Raiders_logo-300x300.png',
+    'UCF': 'UCF_Knights_logo-300x300.png',
+    'Utah': 'Utah_Utes_logo-300x300.png',
+    'West Virginia': 'West_Virginia_Mountaineers_logo-300x300.png',
+    
+    'Boston College': 'Boston_College_Eagles_logo-300x300.png',
+    'Clemson': 'Clemson_Tigers_logo-300x300.png',
+    'Duke': 'Duke_Blue_Devils_logo-300x300.png',
+    'Florida State': 'Florida_State_Seminoles_logo-300x300.png',
+    'Georgia Tech': 'Georgia_Tech_Yellow_Jackets_logo-300x300.png',
+    'Louisville': 'Louisville_Cardinals_logo-300x300.png',
+    'Miami': 'Miami_Hurricanes_logo-300x300.png',
+    'North Carolina': 'North_Carolina_Tar_Heels_logo-300x300.png',
+    'NC State': 'North_Carolina_State_Wolfpack_logo-300x300.png',
+    'Pittsburgh': 'Pitt_Panthers_logo-300x300.png',
+    'Syracuse': 'Syracuse_Orange_logo-300x300.png',
+    'Virginia': 'Virginia_Cavaliers_logo-300x300.png',
+    'Virginia Tech': 'Virginia_Tech_Hokies_logo-300x300.png',
+    'Wake Forest': 'Wake_Forest_Demon_Deacons_logo-300x300.png',
+    'California': 'California_Golden_Bears_logo-300x300.png',
+    'Stanford': 'Stanford_Cardinal_logo-300x300.png',
+    'SMU': 'SMU_Mustang_logo-300x300.png',
+    
+    'Oregon State': 'Oregon_State_Beavers_logo-300x300.png',
+    'Washington State': 'Washington_State_Cougars_logo-300x300.png'
+  };
+  
+  return logoMappings[teamName] || null;
 }
 
 // Process player stats from API response
@@ -165,7 +289,7 @@ function createPlayerLeadersData(stat, players) {
 
 // Generate HTML for player leaders
 function generatePlayerHTML(data) {
-  // Try to load and encode the logo
+  // Try to load and encode the CFB Data logo
   const logoPath = path.join(__dirname, '..', 'assets', 'x_logo.png');
   let logoDataUrl = null;
   try {
@@ -189,42 +313,56 @@ function generatePlayerHTML(data) {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
         
-        .team-bar {
-            height: 90px;
+        .player-bar {
+            height: 120px;
         }
         
         .rank-number {
-            font-size: 4rem;
+            font-size: 5rem;
             font-weight: 900;
             line-height: 1;
         }
         
-        .team-name {
-            font-size: 3.5rem;
+        .player-name {
+            font-size: 4.5rem;
             font-weight: 800;
             line-height: 1;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
         
-        .team-subtext {
-            font-size: 1.25rem;
-            font-weight: 600;
-            opacity: 0.9;
+        .stat-value {
+            font-size: 3.5rem;
+            font-weight: 700;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         }
         
         .title-text {
-            font-size: 5rem;
+            font-size: 7rem;
             font-weight: 900;
             line-height: 0.9;
             text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         
-        .subtitle-text {
-            font-size: 2rem;
-            font-weight: 700;
-            opacity: 0.9;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        .footnote-text {
+            font-size: 1rem;
+            font-weight: 400;
+            font-style: italic;
+            opacity: 0.7;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .bottom-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+        }
+        
+        .team-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
         }
     </style>
 </head>
@@ -232,44 +370,51 @@ function generatePlayerHTML(data) {
     <div class="container mx-auto px-8 py-12 h-screen flex flex-col">
         
         <!-- Header -->
-        <div class="flex items-center justify-between mb-8">
-            <div class="flex items-center space-x-6">
-                ${logoDataUrl ? `<img src="${logoDataUrl}" alt="X Logo" class="h-16 w-16">` : ''}
-                <div>
-                    <h1 class="title-text">${data.title}</h1>
-                    <p class="subtitle-text">2025 SEASON</p>
-                </div>
+        <div class="flex flex-col items-center justify-center mb-8">
+            <div class="text-center">
+                <h1 class="title-text">${data.title}</h1>
             </div>
         </div>
         
         <!-- Main Content -->
         <div class="flex-1 flex flex-col">
-            <!-- Stats Header -->
-            <div class="mb-6">
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-gray-300 mb-2">TOP 6 PLAYERS</div>
-                </div>
-            </div>
-            
             <!-- Players Container -->
-            <div class="flex-1 flex flex-col justify-center space-y-3">
+            <div class="flex-1 flex flex-col justify-center space-y-4 mb-6">
                 ${data.teams.map(player => {
-                  // Player format: PLAYER NAME + TEAM ABBREV on left, stat on far right
                   const teamInfo = getTeamInfo(player.team);
-                  const displayName = teamInfo ? 
-                    `${player.name.toUpperCase()} <span class="italic">${teamInfo.abbr}</span>` : 
-                    player.name.toUpperCase();
                   const backgroundColor = teamInfo ? teamInfo.primary : '#666666';
                   
+                  // Get team logo
+                  const logoFileName = getTeamLogoPath(player.team);
+                  const logoPath = logoFileName ? path.join(__dirname, '..', 'assets', 'team icons', logoFileName) : null;
+                  const logoDataUrl = logoPath && fs.existsSync(logoPath) ? encodeImageToBase64(logoPath) : null;
+                  
+                  let logoHtml = '';
+                  if (logoDataUrl) {
+                    logoHtml = `<img src="${logoDataUrl}" alt="${player.team} Logo" class="team-logo">`;
+                  }
+                  
                   return `<!-- Player ${player.rank} -->
-                <div class="team-bar rounded-lg flex items-center px-8 shadow-lg" style="background-color: ${backgroundColor}">
+                <div class="player-bar rounded-lg flex items-center px-8 shadow-lg" style="background-color: ${backgroundColor}">
                     <div class="rank-number text-white mr-8">${player.rank}</div>
-                    <div class="flex-1">
-                        <div class="team-name text-white">${displayName}</div>
+                    <div class="flex-1 flex items-center justify-between">
+                        <div class="player-name text-white">${player.name.toUpperCase()}</div>
+                        ${logoHtml}
                     </div>
-                    <div class="text-white text-5xl font-bold">${player.value}</div>
+                    <div class="text-white stat-value ml-8">${player.value}</div>
                 </div>`;
                 }).join('\n')}
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="flex items-center justify-between w-full">
+            <div class="flex-1"></div>
+            <div class="flex-1 flex justify-center">
+                ${logoDataUrl ? `<img src="${logoDataUrl}" alt="CFB Data" class="bottom-logo">` : ''}
+            </div>
+            <div class="flex-1 flex justify-end">
+                <p class="footnote-text">power 5</p>
             </div>
         </div>
         
@@ -288,16 +433,18 @@ async function generatePNG(data, outputPath) {
   });
   const page = await browser.newPage();
   
-  // Set viewport size for 1600x900 graphic
-  await page.setViewportSize({ width: 1600, height: 900 });
+  // Set viewport size for taller graphic to fit all 6 players
+  await page.setViewportSize({ width: 1600, height: 1200 });
   
-  // Allow all resources to load (including fonts and CDN)
-  // No route blocking to ensure fonts load properly
-  
+  // Generate HTML content
   const htmlContent = generatePlayerHTML(data);
   
-  // Set the HTML content
-  await page.setContent(htmlContent);
+  // Write HTML to temporary file for proper logo loading
+  const tempHtmlPath = path.join(__dirname, '..', 'output', 'temp-player-graphic.html');
+  fs.writeFileSync(tempHtmlPath, htmlContent);
+  
+  // Load the HTML file directly from its path for proper logo loading
+  await page.goto('file://' + tempHtmlPath);
   
   // Wait for fonts to load specifically
   await page.waitForLoadState('domcontentloaded');
@@ -316,6 +463,13 @@ async function generatePNG(data, outputPath) {
     type: 'png',
     fullPage: false
   });
+  
+  // Clean up temporary file
+  try {
+    fs.unlinkSync(tempHtmlPath);
+  } catch (error) {
+    console.warn('⚠️ Could not delete temporary HTML file:', error.message);
+  }
   
   await browser.close();
 }
@@ -352,9 +506,12 @@ async function main() {
       await new Promise(resolve => setTimeout(resolve, 2000));
     }
     
+    // Filter for Power 5 teams only
+    const power5Players = await filterPower5Players(allPlayers);
+    
     // Process data
-    const processedPlayers = processPlayerStats(allPlayers);
-    console.log(`✅ Processed ${processedPlayers.length} players`);
+    const processedPlayers = processPlayerStats(power5Players);
+    console.log(`✅ Processed ${processedPlayers.length} Power 5 players`);
     
     // Generate graphics for each stat
     for (const stat of PLAYER_STATS) {

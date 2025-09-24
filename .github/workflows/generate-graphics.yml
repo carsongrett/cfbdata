@@ -39,6 +39,12 @@ jobs:
         CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
       run: node scripts/generate-ranked-matchups-real.mjs
     
+    - name: Generate Player Leaders Graphics
+      working-directory: graphics
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+      run: node scripts/generate-player-leaders.mjs
+    
     - name: Move graphics to root
       run: |
         # Move undefeated/winless graphics
@@ -48,11 +54,21 @@ jobs:
         # Move ranked matchups graphics
         cp graphics/output/ranked-matchups-real.png .
         
+        # Move player leaders graphics
+        cp graphics/output/player-*.png .
+        
         # Rename with timestamp for versioning
         timestamp=$(date -u +%Y%m%d_%H%M)
         cp undefeated-teams-real.png "undefeated-teams-${timestamp}.png"
         cp winless-teams-real.png "winless-teams-${timestamp}.png"
         cp ranked-matchups-real.png "ranked-matchups-${timestamp}.png"
+        
+        # Rename player graphics with timestamp
+        for file in player-*.png; do
+          if [ -f "$file" ]; then
+            cp "$file" "${file%.png}-${timestamp}.png"
+          fi
+        done
     
     - name: Commit and push changes
       run: |
