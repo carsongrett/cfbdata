@@ -1,51 +1,6 @@
 {
-  "generatedAt": "2025-09-23T02:34:40.908Z",
+  "generatedAt": "2025-09-25T01:01:35.610Z",
   "posts": [
-    {
-      "id": "ap_top10_week5",
-      "kind": "poll_top10",
-      "text": "AP Top 10 - Week 5\n1. Ohio State\n2. Miami\n3. Penn State\n4. LSU\n5. Georgia\n6. Oregon\n7. Oklahoma\n8. Florida State\n9. Texas A&M\n10. Texas\n\n#APTop25 #CFB",
-      "link": "",
-      "expiresAt": "2025-09-30T01:56:19.003Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-23T01:56:19.003Z"
-    },
-    {
-      "id": "ap_movers_week5",
-      "kind": "poll_movers",
-      "text": "AP Poll Movers - Week 5\n⬇️-14 Illinois (9→23)\n⬆️+8 Indiana (19→11)\n⬆️+5 Texas Tech (17→12)\n⬆️+4 Oklahoma (11→7)\n⬆️+4 USC (25→21)\n⬇️-3 Alabama (14→17)\n⬆️+3 Missouri (23→20)\nNEW: #24 TCU\nNEW: #25 BYU\n\n#APTop25 #CFB",
-      "link": "",
-      "expiresAt": "2025-09-30T01:56:19.004Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-23T01:56:19.004Z"
-    },
-    {
-      "id": "coaches_top10_week5",
-      "kind": "poll_top10",
-      "text": "Coaches Poll Top 10 - Week 5\n1. Ohio State\n2. Penn State\n3. Georgia\n4. LSU\n5. Oregon\n6. Miami\n7. Texas\n8. Florida State\n9. Texas A&M\n10. Oklahoma\n\n#CoachesPoll #CFB",
-      "link": "",
-      "expiresAt": "2025-09-30T01:56:20.371Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-23T01:56:20.371Z"
-    },
-    {
-      "id": "coaches_movers_week5",
-      "kind": "poll_movers",
-      "text": "Coaches Poll Movers - Week 5\n⬇️-15 Illinois (8→23)\n⬆️+5 Indiana (17→12)\n⬆️+3 Missouri (22→19)\n⬆️+3 Vanderbilt (23→20)\nNEW: #22 USC\nNEW: #24 BYU\nNEW: #25 TCU\n\n#CoachesPoll #CFB",
-      "link": "",
-      "expiresAt": "2025-09-30T01:56:20.372Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-23T01:56:20.372Z"
-    },
-    {
-      "id": "sp_top10_week5",
-      "kind": "poll_top10",
-      "text": "SP+ Power Rankings - Week 5\n1. Penn State (28.3)\n2. Oregon (27.1)\n3. Ohio State (26.5)\n4. Alabama (26.4)\n5. Ole Miss (22.6)\n6. Oklahoma (21.8)\n7. Tennessee (21.8)\n8. Georgia (21.4)\n9. USC (19.8)\n10. Miami (19.7)\n\n#SPPlus #CFB",
-      "link": "",
-      "expiresAt": "2025-09-30T01:56:21.681Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-23T01:56:21.681Z"
-    },
     {
       "id": "betting_preview_week5_401752719",
       "kind": "betting_preview",
