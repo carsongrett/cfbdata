@@ -547,9 +547,9 @@ async function main() {
     
     const teamRecordMap = {};
     records.forEach(team => {
-      // Try different possible field names for wins/losses
-      const wins = team.wins || team.totalWins || team.w || team.win || 0;
-      const losses = team.losses || team.totalLosses || team.l || team.loss || 0;
+      // The wins/losses are nested in team.total object
+      const wins = team.total?.wins || 0;
+      const losses = team.total?.losses || 0;
       
       teamRecordMap[team.team] = `${wins}-${losses}`;
       
