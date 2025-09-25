@@ -1,0 +1,221 @@
+name: Debug CFBD API
+
+on:
+  workflow_dispatch: # Manual trigger only
+  push:
+    paths:
+      - '.github/workflows/debug-cfbd-api.yml'
+
+jobs:
+  debug-api:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    
+    - name: Debug API Key
+      run: |
+        echo "🔑 API Key Debug:"
+        if [ -n "${{ secrets.CFBD_API_KEY }}" ]; then
+          echo "✅ CFBD_API_KEY secret is set"
+          echo "Key length: ${#CFBD_API_KEY}"
+          echo "Key starts with: ${CFBD_API_KEY:0:10}..."
+        else
+          echo "❌ CFBD_API_KEY secret is NOT set"
+        fi
+    
+    - name: Test Basic API Connection
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+      run: |
+        echo "🌐 Testing basic API connection..."
+        
+        # Test 1: Simple health check
+        echo "📡 Test 1: Basic API health check"
+        response=$(curl -s -w "HTTPSTATUS:%{http_code}" \
+          -H "Authorization: Bearer $CFBD_API_KEY" \
+          -H "Accept: application/json" \
+          "https://api.collegefootballdata.com/teams?year=2025")
+        
+        http_code=$(echo $response | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+        body=$(echo $response | sed -e 's/HTTPSTATUS:.*//g')
+        
+        echo "HTTP Status: $http_code"
+        if [ "$http_code" -eq 200 ]; then
+          echo "✅ Basic API connection successful"
+          echo "Response length: ${#body} characters"
+        else
+          echo "❌ Basic API connection failed"
+          echo "Response: $body"
+        fi
+    
+    - name: Test Rate Limiting
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+      run: |
+        echo "⏱️ Testing rate limiting behavior..."
+        
+        # Test 2: Multiple rapid requests
+        echo "📡 Test 2: Making 3 rapid requests to test rate limits"
+        
+        for i in {1..3}; do
+          echo "Request $i:"
+          response=$(curl -s -w "HTTPSTATUS:%{http_code}" \
+            -H "Authorization: Bearer $CFBD_API_KEY" \
+            -H "Accept: application/json" \
+            "https://api.collegefootballdata.com/teams?year=2025")
+          
+          http_code=$(echo $response | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+          echo "  HTTP Status: $http_code"
+          
+          if [ "$http_code" -eq 429 ]; then
+            echo "  ⚠️ Rate limited on request $i"
+            break
+          elif [ "$http_code" -eq 200 ]; then
+            echo "  ✅ Request $i successful"
+          else
+            echo "  ❌ Request $i failed with status $http_code"
+          fi
+          
+          # Small delay between requests
+          sleep 1
+        done
+    
+    - name: Test Specific Endpoints
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+      run: |
+        echo "🎯 Testing specific endpoints that are failing..."
+        
+        endpoints=(
+          "/stats/season?year=2025"
+          "/records?year=2025"
+          "/teams?year=2025"
+        )
+        
+        for endpoint in "${endpoints[@]}"; do
+          echo "📡 Testing: $endpoint"
+          
+          response=$(curl -s -w "HTTPSTATUS:%{http_code}" \
+            -H "Authorization: Bearer $CFBD_API_KEY" \
+            -H "Accept: application/json" \
+            "https://api.collegefootballdata.com$endpoint")
+          
+          http_code=$(echo $response | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+          body=$(echo $response | sed -e 's/HTTPSTATUS:.*//g')
+          
+          echo "  HTTP Status: $http_code"
+          
+          if [ "$http_code" -eq 200 ]; then
+            echo "  ✅ Success - Response length: ${#body} characters"
+            # Show first 200 characters of response
+            echo "  Preview: ${body:0:200}..."
+          elif [ "$http_code" -eq 429 ]; then
+            echo "  ⚠️ Rate limited"
+          elif [ "$http_code" -eq 401 ]; then
+            echo "  ❌ Unauthorized - API key issue"
+          elif [ "$http_code" -eq 403 ]; then
+            echo "  ❌ Forbidden - API key permissions issue"
+          else
+            echo "  ❌ Failed with status $http_code"
+            echo "  Response: $body"
+          fi
+          
+          echo ""
+          sleep 2
+        done
+    
+    - name: Test With Delays
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+      run: |
+        echo "⏳ Testing with delays between requests..."
+        
+        endpoints=(
+          "/stats/season?year=2025"
+          "/records?year=2025"
+          "/teams?year=2025"
+        )
+        
+        for endpoint in "${endpoints[@]}"; do
+          echo "📡 Testing: $endpoint (with delay)"
+          
+          response=$(curl -s -w "HTTPSTATUS:%{http_code}" \
+            -H "Authorization: Bearer $CFBD_API_KEY" \
+            -H "Accept: application/json" \
+            "https://api.collegefootballdata.com$endpoint")
+          
+          http_code=$(echo $response | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+          
+          echo "  HTTP Status: $http_code"
+          
+          if [ "$http_code" -eq 200 ]; then
+            echo "  ✅ Success with delay"
+          elif [ "$http_code" -eq 429 ]; then
+            echo "  ⚠️ Still rate limited even with delay"
+          else
+            echo "  ❌ Failed with status $http_code"
+          fi
+          
+          echo "  ⏳ Waiting 5 seconds before next request..."
+          sleep 5
+        done
+    
+    - name: Check API Quota/Usage
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+      run: |
+        echo "📊 Checking API quota and usage..."
+        
+        # Try to get rate limit headers
+        response=$(curl -s -I \
+          -H "Authorization: Bearer $CFBD_API_KEY" \
+          -H "Accept: application/json" \
+          "https://api.collegefootballdata.com/teams?year=2025")
+        
+        echo "Response headers:"
+        echo "$response" | grep -i "rate\|limit\|quota\|x-" || echo "No rate limit headers found"
+        
+        # Check if we can get any data about our API usage
+        echo ""
+        echo "🔍 Attempting to get API usage info..."
+        
+        usage_response=$(curl -s -w "HTTPSTATUS:%{http_code}" \
+          -H "Authorization: Bearer $CFBD_API_KEY" \
+          -H "Accept: application/json" \
+          "https://api.collegefootballdata.com/")
+        
+        usage_http_code=$(echo $usage_response | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+        usage_body=$(echo $usage_response | sed -e 's/HTTPSTATUS:.*//g')
+        
+        echo "API root response status: $usage_http_code"
+        if [ "$usage_http_code" -eq 200 ]; then
+          echo "API root response: $usage_body"
+        fi
+    
+    - name: Generate Debug Report
+      run: |
+        echo "📋 Debug Report Summary:"
+        echo "========================"
+        echo "Timestamp: $(date -u)"
+        echo "GitHub Actions Run ID: ${{ github.run_id }}"
+        echo "Repository: ${{ github.repository }}"
+        echo "Branch: ${{ github.ref_name }}"
+        echo "Commit: ${{ github.sha }}"
+        echo ""
+        echo "Next Steps:"
+        echo "1. Check the output above for any 429 errors"
+        echo "2. If 429 errors persist, the API key may have hit its quota"
+        echo "3. If 401/403 errors, check API key permissions"
+        echo "4. If all tests pass, the issue might be in the graphics scripts"
+        echo ""
+        echo "🔗 Useful Links:"
+        echo "- CFBD API Documentation: https://collegefootballdata.com/api"
+        echo "- GitHub Status: https://www.githubstatus.com"
+        echo "- This workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
