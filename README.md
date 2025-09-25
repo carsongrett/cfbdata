@@ -244,6 +244,4 @@ The bot currently supports:
 Future additions could include:
 - **FPI Rankings** - ESPN's Football Power Index
 - **CFP Rankings** - College Football Playoff committee rankings
-- **Other advanced metrics** - Various analytical ranking systems#   U p d a t e d   0 9 / 1 4 / 2 0 2 5   2 1 : 5 8 : 2 8 
- 
- 
+- **Other advanced metrics** - Various analytical ranking systems

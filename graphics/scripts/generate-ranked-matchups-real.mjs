@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 
 // API Configuration
 const CFBD_BASE = 'https://api.collegefootballdata.com';
-const API_KEY = 'AYkI+Yu/PHFp5lbWxTjrAjN0q4DFidrdJgSoiGvPXve807qSdw0BJ6c08Vf0kFcN';
+const API_KEY = process.env.CFBD_API_KEY || 'vWJ5SPrCVwGbFMQEb+qepkkcU+GVRy+cQLg6QqN2v0+1DHxVEPDUR01WWulIfji2';
 
 // Function to make API request
 async function fetchCFBDData(endpoint) {
