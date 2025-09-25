@@ -130,8 +130,8 @@ function generateHTML(data, teamIdMapping = null) {
         }
     </style>
 </head>
-<body class="bg-gray-100 m-0 p-0">
-    <div class="w-[1200px] h-[800px] bg-gray-100 relative overflow-hidden">
+<body class="m-0 p-0" style="background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);">
+    <div class="w-[1200px] h-[800px] relative overflow-hidden" style="background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);">
         <!-- Main Content Container -->
         <div class="p-8 h-full flex flex-col">
             <!-- Header -->
