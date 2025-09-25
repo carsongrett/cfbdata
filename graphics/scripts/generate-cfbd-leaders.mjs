@@ -259,8 +259,14 @@ async function main() {
     console.log('\n📡 Fetching season stats...');
     const statsData = await fetchCFBDData('/stats/season?year=2025');
     
+    console.log('⏳ Waiting 3 seconds before next request...');
+    await new Promise(resolve => setTimeout(resolve, 3000));
+    
     console.log('📡 Fetching team records...');
     const recordsData = await fetchCFBDData('/records?year=2025');
+    
+    console.log('⏳ Waiting 3 seconds before next request...');
+    await new Promise(resolve => setTimeout(resolve, 3000));
     
     console.log('📡 Fetching team data...');
     const teamsData = await fetchCFBDData('/teams?year=2025');

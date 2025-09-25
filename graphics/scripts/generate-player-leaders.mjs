@@ -377,7 +377,7 @@ function generatePlayerHTML(data) {
         }
     </style>
 </head>
-<body class="bg-gray-900 text-white min-h-screen">
+<body class="text-white min-h-screen" style="background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);">
     <div class="container mx-auto px-8 py-12 h-screen flex flex-col">
         
         <!-- Header -->
