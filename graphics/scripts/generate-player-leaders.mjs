@@ -236,7 +236,7 @@ function processPlayerStats(players) {
 }
 
 // Create player leaders data structure
-async function createPlayerLeadersData(stat, players, teamRecordMap) {
+async function createPlayerLeadersData(stat, players, getTeamRecord) {
   const statConfig = {
     rushingYards: { title: 'RUSHING YD LEADERS', totalUnit: 'YDS', perGameUnit: 'YPG', showBoth: true },
     rushingTDs: { title: 'RUSHING TD LEADERS', totalUnit: 'TD', perGameUnit: null, showBoth: false },
@@ -277,7 +277,7 @@ async function createPlayerLeadersData(stat, players, teamRecordMap) {
       rank: index + 1,
       name: player.name,
       team: player.team,
-      record: teamRecordMap[player.team] || '0-0',
+      record: getTeamRecord(player.team),
       value: value
     };
   });
@@ -541,11 +541,51 @@ async function main() {
     });
     console.log(`✅ Loaded records for ${Object.keys(teamRecordMap).length} teams`);
     
+    // Debug: Show some sample team names from records
+    console.log('📋 Sample team names from records:');
+    Object.keys(teamRecordMap).slice(0, 5).forEach(teamName => {
+      console.log(`  "${teamName}" -> ${teamRecordMap[teamName]}`);
+    });
+    
+    // Debug: Show some sample team names from players
+    console.log('📋 Sample team names from players:');
+    const uniquePlayerTeams = [...new Set(processedPlayers.map(p => p.team))].slice(0, 5);
+    uniquePlayerTeams.forEach(teamName => {
+      console.log(`  "${teamName}" -> ${teamRecordMap[teamName] || 'NOT FOUND'}`);
+    });
+    
+    // Create a more robust team record lookup function
+    function getTeamRecord(teamName) {
+      // Try exact match first
+      if (teamRecordMap[teamName]) {
+        return teamRecordMap[teamName];
+      }
+      
+      // Try case-insensitive match
+      const lowerTeamName = teamName.toLowerCase();
+      for (const [recordTeam, record] of Object.entries(teamRecordMap)) {
+        if (recordTeam.toLowerCase() === lowerTeamName) {
+          return record;
+        }
+      }
+      
+      // Try partial match (e.g., "Texas" matches "Texas Longhorns")
+      for (const [recordTeam, record] of Object.entries(teamRecordMap)) {
+        if (recordTeam.toLowerCase().includes(lowerTeamName) || lowerTeamName.includes(recordTeam.toLowerCase())) {
+          console.log(`🔍 Partial match: "${teamName}" -> "${recordTeam}" -> ${record}`);
+          return record;
+        }
+      }
+      
+      console.log(`⚠️ No record found for team: "${teamName}"`);
+      return '0-0';
+    }
+    
     // Generate graphics for each stat
     for (const stat of PLAYER_STATS) {
       console.log(`\n🎨 Generating ${stat} player leaders...`);
       
-      const leadersData = await createPlayerLeadersData(stat, processedPlayers, teamRecordMap);
+      const leadersData = await createPlayerLeadersData(stat, processedPlayers, getTeamRecord);
       
       // Generate HTML
       const htmlContent = generatePlayerHTML(leadersData);
