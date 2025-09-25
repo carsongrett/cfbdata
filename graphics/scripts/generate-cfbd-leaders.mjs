@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 // CFBD API configuration
 const CFBD_BASE = 'https://api.collegefootballdata.com';
-const API_KEY = 'AYkI+Yu/PHFp5lbWxTjrAjN0q4DFidrdJgSoiGvPXve807qSdw0BJ6c08Vf0kFcN';
+const API_KEY = process.env.CFBD_API_KEY || 'AYkI+Yu/PHFp5lbWxTjrAjN0q4DFidrdJgSoiGvPXve807qSdw0BJ6c08Vf0kFcN';
 
 // Stats we want to track (using correct CFBD API stat names)
 const DESIRED_STATS = [
@@ -254,6 +254,10 @@ async function main() {
   try {
     console.log('🎨 Generating CFB Leaders from CFBD API...');
     console.log(`📊 Stats: ${DESIRED_STATS.join(', ')}`);
+    
+    // Add initial delay to stagger requests from other scripts
+    console.log('⏳ Waiting 5 seconds to stagger API requests...');
+    await new Promise(resolve => setTimeout(resolve, 5000));
     
     // Fetch data (3 API calls total)
     console.log('\n📡 Fetching season stats...');
