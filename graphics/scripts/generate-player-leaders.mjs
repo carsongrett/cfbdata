@@ -408,6 +408,9 @@ function generatePlayerHTML(data) {
                   // Get team record
                   const teamRecord = player.record || '0-0';
                   
+                  // Debug: Log what we're actually using
+                  console.log(`🔍 Player: ${player.name}, Team: "${player.team}", Record: "${teamRecord}"`);
+                  
                   return `<!-- Player ${player.rank} -->
                 <div class="player-bar rounded-lg flex items-center px-8 shadow-lg" style="background-color: ${backgroundColor}">
                     <div class="rank-number text-white mr-8">${player.rank}</div>
@@ -549,9 +552,22 @@ async function main() {
     
     // Debug: Show some sample team names from players
     console.log('📋 Sample team names from players:');
-    const uniquePlayerTeams = [...new Set(processedPlayers.map(p => p.team))].slice(0, 5);
+    const uniquePlayerTeams = [...new Set(processedPlayers.map(p => p.team))].slice(0, 10);
     uniquePlayerTeams.forEach(teamName => {
       console.log(`  "${teamName}" -> ${teamRecordMap[teamName] || 'NOT FOUND'}`);
+    });
+    
+    // Debug: Show ALL team names from records (first 10)
+    console.log('📋 ALL team names from records (first 10):');
+    Object.keys(teamRecordMap).slice(0, 10).forEach(teamName => {
+      console.log(`  "${teamName}"`);
+    });
+    
+    // Debug: Show ALL unique player team names
+    console.log('📋 ALL unique player team names:');
+    const allUniquePlayerTeams = [...new Set(processedPlayers.map(p => p.team))];
+    allUniquePlayerTeams.forEach(teamName => {
+      console.log(`  "${teamName}"`);
     });
     
     // Create a more robust team record lookup function
