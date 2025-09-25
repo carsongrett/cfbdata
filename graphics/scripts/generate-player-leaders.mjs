@@ -419,16 +419,16 @@ function generatePlayerHTML(data) {
                   
                   
                   return `<!-- Player ${player.rank} -->
-                <div class="player-bar rounded-lg flex items-center px-8 shadow-lg" style="background-color: ${backgroundColor}">
-                    <div class="rank-number text-white mr-8">${player.rank}</div>
+                <div class="player-bar rounded-lg flex items-center px-6 shadow-lg" style="background-color: ${backgroundColor}">
+                    <div class="rank-number text-white mr-6">${player.rank}</div>
                     <div class="flex-1 flex items-center justify-between">
                         <div class="player-name text-white whitespace-nowrap">${displayName}</div>
-                        <div class="flex items-center">
+                        <div class="flex items-center gap-3">
                             ${logoHtml}
                             <div class="team-record text-white whitespace-nowrap">${teamRecord}</div>
                         </div>
                     </div>
-                    <div class="text-white stat-value ml-8">${player.value}</div>
+                    <div class="text-white stat-value ml-6">${player.value}</div>
                 </div>`;
                 }).join('\n')}
             </div>
