@@ -553,9 +553,10 @@ async function main() {
       
       teamRecordMap[team.team] = `${wins}-${losses}`;
       
-      // Debug: Log a few examples
-      if (Object.keys(teamRecordMap).length <= 3) {
-        console.log(`🔍 Team: "${team.team}", wins: ${wins}, losses: ${losses}, record: ${teamRecordMap[team.team]}`);
+      // Debug: Log Power 5 teams specifically
+      const power5Teams = ['Arizona', 'Arkansas', 'Utah', 'Mississippi State', 'Syracuse', 'Pittsburgh', 'Indiana', 'Clemson', 'Kentucky', 'Virginia', 'Alabama', 'Georgia', 'Texas', 'Ohio State', 'Michigan'];
+      if (power5Teams.includes(team.team)) {
+        console.log(`🔍 Power 5 Team: "${team.team}", wins: ${wins}, losses: ${losses}, record: ${teamRecordMap[team.team]}`);
       }
     });
     console.log(`✅ Loaded records for ${Object.keys(teamRecordMap).length} teams`);
@@ -606,11 +607,20 @@ async function main() {
       console.log(`  "${teamName}"`);
     });
     
-    // Create a more robust team record lookup function
+    // Create a more robust team record lookup function using the same mapping as team info
     function getTeamRecord(teamName) {
       // Try exact match first
       if (teamRecordMap[teamName]) {
         return teamRecordMap[teamName];
+      }
+      
+      // Use the same team mapping logic as getTeamInfo
+      const teamInfo = getTeamInfo(teamName);
+      if (teamInfo && teamInfo.name) {
+        // Try with the mapped team name
+        if (teamRecordMap[teamInfo.name]) {
+          return teamRecordMap[teamInfo.name];
+        }
       }
       
       // Try case-insensitive match
