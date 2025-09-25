@@ -408,17 +408,24 @@ function generatePlayerHTML(data) {
                   // Get team record
                   const teamRecord = player.record || '0-0';
                   
-                  // Debug: Log what we're actually using
-                  console.log(`🔍 Player: ${player.name}, Team: "${player.team}", Record: "${teamRecord}"`);
+                  // Format player name - use first initial + last name if too long
+                  let displayName = player.name.toUpperCase();
+                  if (displayName.length > 12) {
+                    const nameParts = player.name.split(' ');
+                    if (nameParts.length >= 2) {
+                      displayName = `${nameParts[0].charAt(0)}. ${nameParts[nameParts.length - 1]}`.toUpperCase();
+                    }
+                  }
+                  
                   
                   return `<!-- Player ${player.rank} -->
                 <div class="player-bar rounded-lg flex items-center px-8 shadow-lg" style="background-color: ${backgroundColor}">
                     <div class="rank-number text-white mr-8">${player.rank}</div>
                     <div class="flex-1 flex items-center justify-between">
-                        <div class="player-name text-white">${player.name.toUpperCase()}</div>
+                        <div class="player-name text-white whitespace-nowrap">${displayName}</div>
                         <div class="flex items-center">
                             ${logoHtml}
-                            <div class="team-record text-white">${teamRecord}</div>
+                            <div class="team-record text-white whitespace-nowrap">${teamRecord}</div>
                         </div>
                     </div>
                     <div class="text-white stat-value ml-8">${player.value}</div>
@@ -539,11 +546,6 @@ async function main() {
     await new Promise(resolve => setTimeout(resolve, 3000));
     const records = await fetchCFBDData('/records?year=2025');
     
-    // Debug: Check the structure of the records response
-    console.log('🔍 Sample record structure:');
-    if (records.length > 0) {
-      console.log('First record:', JSON.stringify(records[0], null, 2));
-    }
     
     const teamRecordMap = {};
     records.forEach(team => {
@@ -553,59 +555,9 @@ async function main() {
       
       teamRecordMap[team.team] = `${wins}-${losses}`;
       
-      // Debug: Log Power 5 teams specifically
-      const power5Teams = ['Arizona', 'Arkansas', 'Utah', 'Mississippi State', 'Syracuse', 'Pittsburgh', 'Indiana', 'Clemson', 'Kentucky', 'Virginia', 'Alabama', 'Georgia', 'Texas', 'Ohio State', 'Michigan'];
-      if (power5Teams.includes(team.team)) {
-        console.log(`🔍 Power 5 Team: "${team.team}", wins: ${wins}, losses: ${losses}, record: ${teamRecordMap[team.team]}`);
-      }
     });
     console.log(`✅ Loaded records for ${Object.keys(teamRecordMap).length} teams`);
     
-    // Debug: Show some sample team names from records
-    console.log('📋 Sample team names from records:');
-    Object.keys(teamRecordMap).slice(0, 5).forEach(teamName => {
-      console.log(`  "${teamName}" -> ${teamRecordMap[teamName]}`);
-    });
-    
-    // Debug: Show some sample team names from players
-    console.log('📋 Sample team names from players:');
-    const uniquePlayerTeams = [...new Set(processedPlayers.map(p => p.team))].slice(0, 10);
-    uniquePlayerTeams.forEach(teamName => {
-      console.log(`  "${teamName}" -> ${teamRecordMap[teamName] || 'NOT FOUND'}`);
-    });
-    
-    // Debug: Show Power 5 team names from records
-    console.log('📋 Power 5 team names from records:');
-    const power5Teams = ['Arizona', 'Arkansas', 'Utah', 'Mississippi State', 'Syracuse', 'Pittsburgh', 'Indiana', 'Clemson', 'Kentucky', 'Virginia', 'Alabama', 'Georgia', 'Texas', 'Ohio State', 'Michigan'];
-    power5Teams.forEach(teamName => {
-      const found = Object.keys(teamRecordMap).find(recordTeam => 
-        recordTeam.toLowerCase().includes(teamName.toLowerCase()) || 
-        teamName.toLowerCase().includes(recordTeam.toLowerCase())
-      );
-      if (found) {
-        console.log(`  "${teamName}" -> Found as "${found}" -> ${teamRecordMap[found]}`);
-      } else {
-        console.log(`  "${teamName}" -> NOT FOUND`);
-      }
-    });
-    
-    // Debug: Show ALL records that contain common Power 5 team names
-    console.log('📋 All records containing Power 5 team names:');
-    const allRecordTeams = Object.keys(teamRecordMap);
-    const power5Keywords = ['Arizona', 'Arkansas', 'Utah', 'Mississippi', 'Syracuse', 'Pittsburgh', 'Indiana', 'Clemson', 'Kentucky', 'Virginia', 'Alabama', 'Georgia', 'Texas', 'Ohio', 'Michigan'];
-    power5Keywords.forEach(keyword => {
-      const matches = allRecordTeams.filter(team => team.toLowerCase().includes(keyword.toLowerCase()));
-      if (matches.length > 0) {
-        console.log(`  "${keyword}" matches: ${matches.join(', ')}`);
-      }
-    });
-    
-    // Debug: Show ALL unique player team names
-    console.log('📋 ALL unique player team names:');
-    const allUniquePlayerTeams = [...new Set(processedPlayers.map(p => p.team))];
-    allUniquePlayerTeams.forEach(teamName => {
-      console.log(`  "${teamName}"`);
-    });
     
     // Create a more robust team record lookup function using the same mapping as team info
     function getTeamRecord(teamName) {
@@ -634,12 +586,10 @@ async function main() {
       // Try partial match (e.g., "Texas" matches "Texas Longhorns")
       for (const [recordTeam, record] of Object.entries(teamRecordMap)) {
         if (recordTeam.toLowerCase().includes(lowerTeamName) || lowerTeamName.includes(recordTeam.toLowerCase())) {
-          console.log(`🔍 Partial match: "${teamName}" -> "${recordTeam}" -> ${record}`);
           return record;
         }
       }
       
-      console.log(`⚠️ No record found for team: "${teamName}"`);
       return '0-0';
     }
     
