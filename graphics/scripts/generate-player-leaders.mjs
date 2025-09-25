@@ -405,9 +405,6 @@ function generatePlayerHTML(data) {
                     logoHtml = `<img src="${logoDataUrl}" alt="${player.team} Logo" class="team-logo">`;
                   }
                   
-                  // Get team record
-                  const teamRecord = player.record || '0-0';
-                  
                   // Format player name - use first initial + last name if too long
                   let displayName = player.name.toUpperCase();
                   if (displayName.length > 12) {
@@ -417,15 +414,13 @@ function generatePlayerHTML(data) {
                     }
                   }
                   
-                  
                   return `<!-- Player ${player.rank} -->
                 <div class="player-bar rounded-lg flex items-center px-6 shadow-lg" style="background-color: ${backgroundColor}">
                     <div class="rank-number text-white mr-6">${player.rank}</div>
                     <div class="flex-1 flex items-center justify-between">
                         <div class="player-name text-white whitespace-nowrap">${displayName}</div>
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center">
                             ${logoHtml}
-                            <div class="team-record text-white whitespace-nowrap">${teamRecord}</div>
                         </div>
                     </div>
                     <div class="text-white stat-value ml-6">${player.value}</div>
