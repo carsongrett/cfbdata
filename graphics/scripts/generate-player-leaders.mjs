@@ -538,9 +538,25 @@ async function main() {
     console.log('⏳ Waiting 3 seconds before fetching records...');
     await new Promise(resolve => setTimeout(resolve, 3000));
     const records = await fetchCFBDData('/records?year=2025');
+    
+    // Debug: Check the structure of the records response
+    console.log('🔍 Sample record structure:');
+    if (records.length > 0) {
+      console.log('First record:', JSON.stringify(records[0], null, 2));
+    }
+    
     const teamRecordMap = {};
     records.forEach(team => {
-      teamRecordMap[team.team] = `${team.wins}-${team.losses}`;
+      // Try different possible field names for wins/losses
+      const wins = team.wins || team.totalWins || team.w || team.win || 0;
+      const losses = team.losses || team.totalLosses || team.l || team.loss || 0;
+      
+      teamRecordMap[team.team] = `${wins}-${losses}`;
+      
+      // Debug: Log a few examples
+      if (Object.keys(teamRecordMap).length <= 3) {
+        console.log(`🔍 Team: "${team.team}", wins: ${wins}, losses: ${losses}, record: ${teamRecordMap[team.team]}`);
+      }
     });
     console.log(`✅ Loaded records for ${Object.keys(teamRecordMap).length} teams`);
     
