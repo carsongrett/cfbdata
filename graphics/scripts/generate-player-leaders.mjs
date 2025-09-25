@@ -339,6 +339,17 @@ function generatePlayerHTML(data) {
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         }
         
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 800;
+        }
+        
+        .stat-unit {
+            font-size: 2rem;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+        
         .title-text {
             font-size: 7rem;
             font-weight: 900;
@@ -405,14 +416,8 @@ function generatePlayerHTML(data) {
                     logoHtml = `<img src="${logoDataUrl}" alt="${player.team} Logo" class="team-logo">`;
                   }
                   
-                  // Format player name - use first initial + last name if too long
-                  let displayName = player.name.toUpperCase();
-                  if (displayName.length > 12) {
-                    const nameParts = player.name.split(' ');
-                    if (nameParts.length >= 2) {
-                      displayName = `${nameParts[0].charAt(0)}. ${nameParts[nameParts.length - 1]}`.toUpperCase();
-                    }
-                  }
+                  // Use full player name
+                  const displayName = player.name.toUpperCase();
                   
                   return `<!-- Player ${player.rank} -->
                 <div class="player-bar rounded-lg flex items-center px-6 shadow-lg" style="background-color: ${backgroundColor}">
@@ -423,7 +428,7 @@ function generatePlayerHTML(data) {
                             ${logoHtml}
                         </div>
                     </div>
-                    <div class="text-white stat-value ml-6">${player.value}</div>
+                    <div class="text-white stat-value ml-6"><span class="stat-number">${player.value.split(' ')[0]}</span> <span class="stat-unit">${player.value.split(' ').slice(1).join(' ')}</span></div>
                 </div>`;
                 }).join('\n')}
             </div>
