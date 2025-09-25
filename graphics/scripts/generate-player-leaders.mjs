@@ -573,10 +573,30 @@ async function main() {
       console.log(`  "${teamName}" -> ${teamRecordMap[teamName] || 'NOT FOUND'}`);
     });
     
-    // Debug: Show ALL team names from records (first 10)
-    console.log('📋 ALL team names from records (first 10):');
-    Object.keys(teamRecordMap).slice(0, 10).forEach(teamName => {
-      console.log(`  "${teamName}"`);
+    // Debug: Show Power 5 team names from records
+    console.log('📋 Power 5 team names from records:');
+    const power5Teams = ['Arizona', 'Arkansas', 'Utah', 'Mississippi State', 'Syracuse', 'Pittsburgh', 'Indiana', 'Clemson', 'Kentucky', 'Virginia', 'Alabama', 'Georgia', 'Texas', 'Ohio State', 'Michigan'];
+    power5Teams.forEach(teamName => {
+      const found = Object.keys(teamRecordMap).find(recordTeam => 
+        recordTeam.toLowerCase().includes(teamName.toLowerCase()) || 
+        teamName.toLowerCase().includes(recordTeam.toLowerCase())
+      );
+      if (found) {
+        console.log(`  "${teamName}" -> Found as "${found}" -> ${teamRecordMap[found]}`);
+      } else {
+        console.log(`  "${teamName}" -> NOT FOUND`);
+      }
+    });
+    
+    // Debug: Show ALL records that contain common Power 5 team names
+    console.log('📋 All records containing Power 5 team names:');
+    const allRecordTeams = Object.keys(teamRecordMap);
+    const power5Keywords = ['Arizona', 'Arkansas', 'Utah', 'Mississippi', 'Syracuse', 'Pittsburgh', 'Indiana', 'Clemson', 'Kentucky', 'Virginia', 'Alabama', 'Georgia', 'Texas', 'Ohio', 'Michigan'];
+    power5Keywords.forEach(keyword => {
+      const matches = allRecordTeams.filter(team => team.toLowerCase().includes(keyword.toLowerCase()));
+      if (matches.length > 0) {
+        console.log(`  "${keyword}" matches: ${matches.join(', ')}`);
+      }
     });
     
     // Debug: Show ALL unique player team names
