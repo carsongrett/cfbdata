@@ -1,4 +1,23 @@
 {
-  "generatedAt": "2025-09-27T04:40:22.297Z",
-  "posts": []
+  "generatedAt": "2025-09-27T19:07:15.520Z",
+  "posts": [
+    {
+      "id": "final_401756902",
+      "kind": "final",
+      "text": "FINAL: 27-24\nArizona State Sun Devils - 27\n#24 TCU Horned Frogs - 24\n\n(ASU): Sam Leavitt 27/39, 291 YDS, 2 TD\n\n#Upset #CFB #ForksUp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756902",
+      "expiresAt": "2025-09-29T07:07:15.876Z",
+      "source": "espn",
+      "generatedAt": "2025-09-27T19:07:15.876Z"
+    },
+    {
+      "id": "final_401752939",
+      "kind": "final",
+      "text": "FINAL: 27-24\nHouston Cougars - 27\nOregon State Beavers - 24\n\n(HOU): Conner Weigman 20/36, 270 YDS, 2 TD, 1 INT\n(ORST): Cornell Hatcher Jr. 17 CAR, 93 YDS, 1 TD\n\n#CFB #GoCoogs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752939",
+      "expiresAt": "2025-09-29T07:07:15.876Z",
+      "source": "espn",
+      "generatedAt": "2025-09-27T19:07:15.876Z"
+    }
+  ]
 }
