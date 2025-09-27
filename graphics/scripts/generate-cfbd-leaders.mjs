@@ -134,23 +134,12 @@ function createLeadersData(teams, statName, isDefensive = false) {
   const sortedTeams = teamsWithStat.sort((a, b) => {
     let aValue, bValue;
     
-    if (statName === 'rushingYards') {
-      // Use YPG for rushing yards
-      aValue = a.stats.rushingYPG || 0;
-      bValue = b.stats.rushingYPG || 0;
-    } else if (statName === 'netPassingYards') {
-      // Use YPG for net passing yards
-      aValue = a.stats.netPassingYardsYPG || 0;
-      bValue = b.stats.netPassingYardsYPG || 0;
-    } else if (statName === 'totalYards') {
-      // Use YPG for total yards
-      aValue = a.stats.totalYardsYPG || 0;
-      bValue = b.stats.totalYardsYPG || 0;
-    } else if (statName === 'totalYardsOpponent') {
-      // Use YPG for total yards allowed (defensive)
+    if (statName === 'totalYardsOpponent') {
+      // Use YPG for total yards allowed (defensive) - lower is better
       aValue = a.stats.defensiveYPG || 0;
       bValue = b.stats.defensiveYPG || 0;
     } else {
+      // Use total stats for all other categories - higher is better
       aValue = a.stats[statName] || 0;
       bValue = b.stats[statName] || 0;
     }
@@ -176,16 +165,16 @@ function createLeadersData(teams, statName, isDefensive = false) {
         let perGameValue;
         
         if (statName === 'rushingYards') {
-          perGameValue = (team.stats.rushingYPG || 0).toFixed(1);
+          perGameValue = Math.ceil(team.stats.rushingYPG || 0);
         } else if (statName === 'netPassingYards') {
-          perGameValue = (team.stats.netPassingYardsYPG || 0).toFixed(1);
+          perGameValue = Math.ceil(team.stats.netPassingYardsYPG || 0);
         } else if (statName === 'totalYards') {
-          perGameValue = (team.stats.totalYardsYPG || 0).toFixed(1);
+          perGameValue = Math.ceil(team.stats.totalYardsYPG || 0);
         } else if (statName === 'totalYardsOpponent') {
-          perGameValue = (team.stats.defensiveYPG || 0).toFixed(1);
+          perGameValue = Math.ceil(team.stats.defensiveYPG || 0);
         }
         
-        displayValue = `${totalValue.toLocaleString()} ${unitConfig.total} <span style='font-style: italic; font-size: 0.6em; color: rgba(255,255,255,0.8);'>${perGameValue}/G</span>`;
+        displayValue = `${totalValue.toLocaleString()} ${unitConfig.total} <span style='font-style: italic; font-size: 0.8em; color: rgba(255,255,255,0.9);'>${perGameValue}/G</span>`;
       } else if (unitConfig.perGame) {
         // Display per-game only
         let perGameValue;
@@ -247,25 +236,16 @@ async function main() {
     console.log('🎨 Generating CFB Leaders from CFBD API...');
     console.log(`📊 Stats: ${DESIRED_STATS.join(', ')}`);
     
-    // Add initial delay to stagger requests from other scripts
-    console.log('⏳ Waiting 5 seconds to stagger API requests...');
-    await new Promise(resolve => setTimeout(resolve, 5000));
+    // Fetch data in parallel (3 API calls simultaneously)
+    console.log('\n📡 Fetching all data in parallel...');
     
-    // Fetch data (3 API calls total)
-    console.log('\n📡 Fetching season stats...');
-    const statsData = await fetchCFBDData('/stats/season?year=2025');
+    const [statsData, recordsData, teamsData] = await Promise.all([
+      fetchCFBDData('/stats/season?year=2025'),
+      fetchCFBDData('/records?year=2025'),
+      fetchCFBDData('/teams?year=2025')
+    ]);
     
-    console.log('⏳ Waiting 3 seconds before next request...');
-    await new Promise(resolve => setTimeout(resolve, 3000));
-    
-    console.log('📡 Fetching team records...');
-    const recordsData = await fetchCFBDData('/records?year=2025');
-    
-    console.log('⏳ Waiting 3 seconds before next request...');
-    await new Promise(resolve => setTimeout(resolve, 3000));
-    
-    console.log('📡 Fetching team data...');
-    const teamsData = await fetchCFBDData('/teams?year=2025');
+    console.log('✅ All API calls completed');
     
     // Process data
     const teams = processTeamStats(statsData, recordsData);
