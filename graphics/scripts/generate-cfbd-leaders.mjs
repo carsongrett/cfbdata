@@ -17,8 +17,6 @@ const DESIRED_STATS = [
   'totalYards',
   'sacks',
   'totalYardsOpponent',     // was 'defensiveYards'
-  'possessionTime',         // possession time leaders
-  'thirdDownConversions',   // 3rd down conv. leaders
   'penaltyYards',           // most team penalty yards
   'turnoversOpponent',      // most turnovers forced
   'games'                   // games played for YPG calculations
@@ -98,8 +96,6 @@ function createLeadersData(teams, statName, isDefensive = false) {
     'totalYards': 'TOP 6 TOTAL OFFENSE',
     'sacks': 'TEAM SACK LEADERS',
     'totalYardsOpponent': 'LEAST YARDS ALLOWED',
-    'possessionTime': 'POSSESSION TIME LEADERS',
-    'thirdDownConversions': '3RD DOWN CONV. LEADERS',
     'penaltyYards': 'MOST TEAM PENALTY YDS',
     'turnoversOpponent': 'MOST TURNOVERS FORCED'
   };
@@ -110,8 +106,6 @@ function createLeadersData(teams, statName, isDefensive = false) {
     'totalYards': { total: 'YDS', perGame: 'YPG', showBoth: true },
     'sacks': { total: 'SACKS', perGame: null, showBoth: false },
     'totalYardsOpponent': { total: 'YDS', perGame: 'YPG', showBoth: true },
-    'possessionTime': { total: null, perGame: 'MINS', showBoth: false },
-    'thirdDownConversions': { total: 'CONV', perGame: null, showBoth: false },
     'penaltyYards': { total: 'YDS', perGame: null, showBoth: false },
     'turnoversOpponent': { total: 'TO', perGame: null, showBoth: false }
   };
@@ -225,8 +219,6 @@ async function generateAllLeaders(teams, teamIdMapping) {
     { stat: 'totalYards', defensive: false },
     { stat: 'sacks', defensive: false },
     { stat: 'totalYardsOpponent', defensive: true },
-    { stat: 'possessionTime', defensive: false },
-    { stat: 'thirdDownConversions', defensive: false },
     { stat: 'penaltyYards', defensive: false },
     { stat: 'turnoversOpponent', defensive: false }
   ];

@@ -40,6 +40,88 @@ function generateTeamLogo(teamName) {
   return words.map(word => word.charAt(0)).join('');
 }
 
+// Function to get team logo path
+function getTeamLogoPath(teamName) {
+  // Team name mappings to actual logo file names
+  const logoMappings = {
+    'Alabama': 'Alabama_Crimson_Tide_logo-300x300.png',
+    'Auburn': 'Auburn_Tigers_logo-300x300.png',
+    'Florida': 'Florida_Gators_logo-300x300.png',
+    'Georgia': 'Georgia_Bulldogs_logo-300x300.png',
+    'Kentucky': 'Kentucky_Wildcats_logo-300x300.png',
+    'LSU': 'LSU_Tigers-300x300.png',
+    'Mississippi State': 'Mississippi_State_Bulldogs_logo-300x300.png',
+    'Missouri': 'Missouri_Tigers_logo-300x300.png',
+    'Ole Miss': 'Ole_Miss_Rebels_logo-300x300.png',
+    'South Carolina': 'South_Carolina_Gamecocks_logo-300x300.png',
+    'Tennessee': 'Tennessee_Volunteers_logo-300x300.png',
+    'Texas': 'Texas_Longhorns_logo-300x300.png',
+    'Texas A&M': 'Texas_AM_University_logo-300x300.png',
+    'Vanderbilt': 'Vanderbilt_Commodores_logo-300x300.png',
+    'Oklahoma': 'Oklahoma_Sooners_logo-300x300.png',
+    'Arkansas': 'Arkansas_Razorbacks_logo-300x300.png',
+    
+    'Illinois': 'Illinois_Fighting_Illini_logo-300x300.png',
+    'Indiana': 'Indiana_Hoosiers_logo-300x300.png',
+    'Iowa': 'Iowa_Hawkeyes_logo-300x300.png',
+    'Maryland': 'Maryland_Terrapins_logo-300x300.png',
+    'Michigan': 'Michigan_Wolverines_logo-300x300.png',
+    'Michigan State': 'Michigan_State_Spartans_logo-300x300.png',
+    'Minnesota': 'Minnesota_Golden_Gophers_logo-300x300.png',
+    'Nebraska': 'Nebraska_Cornhuskers_logo-300x300.png',
+    'Northwestern': 'Northwestern_Wildcats_logo-300x300.png',
+    'Ohio State': 'Ohio_State_Buckeyes_logo-300x300.png',
+    'Penn State': 'Penn_State_Nittany_Lions_logo-300x300.png',
+    'Purdue': 'Purdue_Boilermakers_logo-300x300.png',
+    'Rutgers': 'Rutgers_Scarlet_Knights_logo-300x300.png',
+    'Wisconsin': 'Wisconsin_Badgers_logo-300x300.png',
+    'USC': 'USC_Trojans_logo-300x300.png',
+    'UCLA': 'UCLA_Bruins-300x300.png',
+    'Oregon': 'Oregon_Ducks_logo-300x300.png',
+    'Washington': 'Washington_Huskies_logo-300x300.png',
+    
+    'Arizona': 'Arizona_Wildcats_logo-300x300.png',
+    'Arizona State': 'Arizona_State_Sun_Devils_logo-300x300.png',
+    'Baylor': 'Baylor_Bears_logo-300x300.png',
+    'BYU': 'BYU_Cougars_logo-300x300.png',
+    'Cincinnati': 'Cincinnati_Bearcats_logo-300x300.png',
+    'Colorado': 'Colorado_Buffaloes_logo-300x300.png',
+    'Houston': 'Houston_Cougars_logo-300x300.png',
+    'Iowa State': 'Iowa_State_Cyclones_logo-300x300.png',
+    'Kansas': 'Kansas_Jayhawks_logo-300x300.png',
+    'Kansas State': 'Kansas_State_Wildcats_logo-300x300.png',
+    'Oklahoma State': 'Oklahoma_State_Cowboys_logo-300x300.png',
+    'TCU': 'TCU_Horned_Frogs_logo-300x300.png',
+    'Texas Tech': 'Texas_Tech_Red_Raiders_logo-300x300.png',
+    'UCF': 'UCF_Knights_logo-300x300.png',
+    'Utah': 'Utah_Utes_logo-300x300.png',
+    'West Virginia': 'West_Virginia_Mountaineers_logo-300x300.png',
+    
+    'Boston College': 'Boston_College_Eagles_logo-300x300.png',
+    'Clemson': 'Clemson_Tigers_logo-300x300.png',
+    'Duke': 'Duke_Blue_Devils_logo-300x300.png',
+    'Florida State': 'Florida_State_Seminoles_logo-300x300.png',
+    'Georgia Tech': 'Georgia_Tech_Yellow_Jackets_logo-300x300.png',
+    'Louisville': 'Louisville_Cardinals_logo-300x300.png',
+    'Miami': 'Miami_Hurricanes_logo-300x300.png',
+    'North Carolina': 'North_Carolina_Tar_Heels_logo-300x300.png',
+    'NC State': 'North_Carolina_State_Wolfpack_logo-300x300.png',
+    'Pittsburgh': 'Pitt_Panthers_logo-300x300.png',
+    'Syracuse': 'Syracuse_Orange_logo-300x300.png',
+    'Virginia': 'Virginia_Cavaliers_logo-300x300.png',
+    'Virginia Tech': 'Virginia_Tech_Hokies_logo-300x300.png',
+    'Wake Forest': 'Wake_Forest_Demon_Deacons_logo-300x300.png',
+    'California': 'California_Golden_Bears_logo-300x300.png',
+    'Stanford': 'Stanford_Cardinal_logo-300x300.png',
+    'SMU': 'SMU_Mustang_logo-300x300.png',
+    
+    'Oregon State': 'Oregon_State_Beavers_logo-300x300.png',
+    'Washington State': 'Washington_State_Cougars_logo-300x300.png'
+  };
+  
+  return logoMappings[teamName] || null;
+}
+
 // Function to encode image to base64
 function encodeImageToBase64(imagePath) {
   try {
@@ -158,12 +240,25 @@ function generateHTML(data, teamIdMapping = null) {
                   const colors = getTeamColors(team.name);
                   const logo = generateTeamLogo(team.name);
                   
-                  // ALL graphics now use the same format: team name + record on left, stat on far right
+                  // Get team logo
+                  const logoFileName = getTeamLogoPath(team.name);
+                  const logoPath = logoFileName ? path.join(__dirname, '..', 'assets', 'team icons', logoFileName) : null;
+                  const logoDataUrl = logoPath && fs.existsSync(logoPath) ? encodeImageToBase64(logoPath) : null;
+                  
+                  let logoHtml = '';
+                  if (logoDataUrl) {
+                    logoHtml = `<img src="${logoDataUrl}" alt="${team.name} Logo" class="w-16 h-16 mr-4 object-contain" style="filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));">`;
+                  }
+                  
+                  // ALL graphics now use the same format: logo + team name + record on left, stat on far right
                   return `<!-- Team ${team.rank} -->
                 <div class="team-bar rounded-lg flex items-center px-8 shadow-lg" style="background-color: ${colors.primary}">
                     <div class="rank-number text-white mr-8">${team.rank}</div>
-                    <div class="flex-1">
-                        <div class="team-name text-white">${team.name.toUpperCase()} ${data.showRecords ? `<span class="text-3xl font-bold">${team.record}</span>` : ''}</div>
+                    <div class="flex-1 flex items-center">
+                        ${logoHtml}
+                        <div>
+                            <div class="team-name text-white">${team.name.toUpperCase()} ${data.showRecords ? `<span class="text-3xl font-bold">${team.record}</span>` : ''}</div>
+                        </div>
                     </div>
                     <div class="text-white text-5xl font-bold">${team.value || team.record}</div>
                 </div>`;
