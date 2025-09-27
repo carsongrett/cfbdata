@@ -93,7 +93,7 @@ function createLeadersData(teams, statName, isDefensive = false) {
   const titles = {
     'rushingYards': 'TEAM RUSHING LEADERS',
     'netPassingYards': 'TEAM PASSING LEADERS',
-    'totalYards': 'TOP 6 TOTAL OFFENSE',
+    'totalYards': 'TOP 10 TOTAL OFFENSE',
     'sacks': 'TEAM SACK LEADERS',
     'totalYardsOpponent': 'LEAST YARDS ALLOWED',
     'penaltyYards': 'MOST TEAM PENALTY YDS',

@@ -509,7 +509,7 @@ async function main() {
     console.log(`📊 Player Stats: ${PLAYER_STATS.join(', ')}`);
     
     // Fetch player data for each category (2025 data is available!)
-    const allPlayers = [];
+    let allPlayers = [];
     
     // Map our stat names to API categories
     const categoryMap = {
