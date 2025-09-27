@@ -158,15 +158,15 @@ function createLeadersData(teams, statName, isDefensive = false) {
     return isDefensive ? aValue - bValue : bValue - aValue;
   });
   
-  // Take top 6
-  const top6 = sortedTeams.slice(0, 6);
+  // Take top 10
+  const top10 = sortedTeams.slice(0, 10);
   
   return {
     title: titles[statName],
     subtitle: 'VIA CFB DATA',
     showRecords: true,
     type: statName,
-    teams: top6.map((team, index) => {
+    teams: top10.map((team, index) => {
       let displayValue;
       const unitConfig = units[statName];
       
