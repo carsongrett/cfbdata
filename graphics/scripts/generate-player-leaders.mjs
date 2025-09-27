@@ -256,7 +256,7 @@ async function createPlayerLeadersData(stat, players, getTeamRecord) {
   const playersWithStat = players
     .filter(player => player.stats[stat] !== undefined)
     .sort((a, b) => b.stats[stat] - a.stats[stat])
-    .slice(0, 6); // Top 6 players
+    .slice(0, 10); // Top 10 players
   
   // Use the provided team record map
   
@@ -264,13 +264,18 @@ async function createPlayerLeadersData(stat, players, getTeamRecord) {
     let value;
     
     if (config.showBoth) {
-      // Display both total and per-game
+      // Display both total and per-game - total prominent for players
       const totalValue = Math.round(player.stats[stat]);
-      const perGameValue = player.games > 0 ? (player.stats[stat] / player.games).toFixed(1) : '0.0';
-      value = `${totalValue.toLocaleString()} ${config.totalUnit} <span style='font-style: italic; font-size: 0.6em; color: rgba(255,255,255,0.8);'>${perGameValue}/G</span>`;
+      const perGameValue = player.games > 0 ? Math.ceil(player.stats[stat] / player.games) : 0;
+      value = `${totalValue.toLocaleString()} ${config.totalUnit} <span style='font-style: italic; font-size: 0.8em; color: rgba(255,255,255,0.9);'>${perGameValue}/G</span>`;
     } else {
       // Display total only
-      value = `${Math.round(player.stats[stat])} ${config.totalUnit}`;
+      if (stat === 'sacks') {
+        // For sacks, show just the number without "SACKS" text
+        value = `${Math.round(player.stats[stat])}`;
+      } else {
+        value = `${Math.round(player.stats[stat])} ${config.totalUnit}`;
+      }
     }
     
     return {
