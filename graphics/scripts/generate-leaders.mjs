@@ -149,24 +149,25 @@ function generateHTML(data, teamIdMapping = null) {
     <title>CFB Leaders</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
         
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Oswald', sans-serif;
         }
         
         .team-bar {
-            height: 90px;
+            height: 70px;
+            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%) !important;
         }
         
         .rank-number {
-            font-size: 4rem;
+            font-size: 3.5rem;
             font-weight: 900;
             line-height: 1;
         }
         
         .team-name {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 800;
             line-height: 1;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -212,17 +213,17 @@ function generateHTML(data, teamIdMapping = null) {
         }
     </style>
 </head>
-<body class="m-0 p-0" style="background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);">
-    <div class="w-[1200px] h-[800px] relative overflow-hidden" style="background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);">
+<body class="m-0 p-0" style="background: #1a1a1a;">
+    <div class="w-[1000px] h-[1000px] relative overflow-hidden" style="background: #1a1a1a;">
         <!-- Main Content Container -->
         <div class="p-8 h-full flex flex-col">
             <!-- Header -->
-            <div class="mb-1 p-4 rounded-lg relative" style="background-color: #20A142;">
-                <h1 class="text-7xl font-black text-white mb-2 tracking-tight">
+            <div class="mb-6 p-4 rounded-lg relative" style="background-color: #ffffff;">
+                <h1 class="text-7xl font-black text-gray-900 mb-2 tracking-tight">
                     ${data.title}
                 </h1>
                 <div class="flex items-center gap-4">
-                    <p class="text-2xl font-semibold text-white">
+                    <p class="text-2xl font-semibold text-gray-900">
                         ${data.subtitle}
                     </p>
                 </div>
@@ -235,7 +236,7 @@ function generateHTML(data, teamIdMapping = null) {
             </div>
             
             <!-- Teams Container -->
-            <div class="flex-1 flex flex-col justify-center space-y-3">
+            <div class="flex-1 flex flex-col justify-start space-y-2">
                 ${data.teams.map(team => {
                   const colors = getTeamColors(team.name);
                   const logo = generateTeamLogo(team.name);
@@ -247,20 +248,20 @@ function generateHTML(data, teamIdMapping = null) {
                   
                   let logoHtml = '';
                   if (logoDataUrl) {
-                    logoHtml = `<img src="${logoDataUrl}" alt="${team.name} Logo" class="w-16 h-16 mr-4 object-contain" style="filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));">`;
+                    logoHtml = `<img src="${logoDataUrl}" alt="${team.name} Logo" class="w-12 h-12 mr-3 object-contain" style="filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));">`;
                   }
                   
                   // ALL graphics now use the same format: logo + team name + record on left, stat on far right
                   return `<!-- Team ${team.rank} -->
-                <div class="team-bar rounded-lg flex items-center px-8 shadow-lg" style="background-color: ${colors.primary}">
+                <div class="team-bar rounded-lg flex items-center px-4 shadow-lg" style="border: 3px solid ${colors.primary};">
                     <div class="rank-number text-white mr-8">${team.rank}</div>
                     <div class="flex-1 flex items-center">
                         ${logoHtml}
                         <div>
-                            <div class="team-name text-white">${team.name.toUpperCase()} ${data.showRecords ? `<span class="text-3xl font-bold">${team.record}</span>` : ''}</div>
+                            <div class="team-name text-white">${team.name.toUpperCase()} ${data.showRecords ? `<span class="text-4xl font-bold">${team.record}</span>` : ''}</div>
                         </div>
                     </div>
-                    <div class="text-white text-5xl font-bold">${team.value || team.record}</div>
+                    <div class="text-white text-4xl font-bold">${team.value || team.record}</div>
                 </div>`;
                 }).join('\n')}
             </div>
@@ -282,7 +283,7 @@ async function generatePNG(data, outputPath, teamIdMapping = null) {
   const page = await browser.newPage();
   
   // Set viewport to match our graphic dimensions
-  await page.setViewportSize({ width: 1200, height: 900 });
+  await page.setViewportSize({ width: 1000, height: 1000 });
   
   // Allow all resources to load (including fonts and CDN)
   // No route blocking to ensure fonts load properly
