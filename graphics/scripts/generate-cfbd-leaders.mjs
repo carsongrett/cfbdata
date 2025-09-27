@@ -134,12 +134,20 @@ function createLeadersData(teams, statName, isDefensive = false) {
   const sortedTeams = teamsWithStat.sort((a, b) => {
     let aValue, bValue;
     
-    if (statName === 'totalYardsOpponent') {
-      // Use YPG for total yards allowed (defensive) - lower is better
-      aValue = a.stats.defensiveYPG || 0;
-      bValue = b.stats.defensiveYPG || 0;
+    // Calculate games played for YPG sorting
+    const aGames = a.stats.games || 8;
+    const bGames = b.stats.games || 8;
+    
+    if (statName === 'totalYards') {
+      // Sort by YPG for total yards
+      aValue = (a.stats[statName] || 0) / aGames;
+      bValue = (b.stats[statName] || 0) / bGames;
+    } else if (statName === 'totalYardsOpponent') {
+      // Sort by YPG for yards allowed (defensive) - lower is better
+      aValue = (a.stats[statName] || 0) / aGames;
+      bValue = (b.stats[statName] || 0) / bGames;
     } else {
-      // Use total stats for all other categories - higher is better
+      // Sort by total stats for rushing, passing, sacks - higher is better
       aValue = a.stats[statName] || 0;
       bValue = b.stats[statName] || 0;
     }
@@ -160,21 +168,30 @@ function createLeadersData(teams, statName, isDefensive = false) {
       const unitConfig = units[statName];
       
       if (unitConfig.showBoth) {
-        // Display both total and per-game
-        const totalValue = Math.round(team.stats[statName]);
-        let perGameValue;
+        // Display both total and per-game - primary metric gets large text
+        const gamesPlayed = team.stats.games || 8;
         
         if (statName === 'rushingYards') {
-          perGameValue = Math.ceil(team.stats.rushingYPG || 0);
+          // Sort by total, display total prominent
+          const totalValue = Math.round(team.stats[statName]);
+          const perGameValue = Math.ceil((team.stats[statName] || 0) / gamesPlayed);
+          displayValue = `${totalValue.toLocaleString()} ${unitConfig.total} <span style='font-style: italic; font-size: 0.8em; color: rgba(255,255,255,0.9);'>${perGameValue}/G</span>`;
         } else if (statName === 'netPassingYards') {
-          perGameValue = Math.ceil(team.stats.netPassingYardsYPG || 0);
+          // Sort by total, display total prominent
+          const totalValue = Math.round(team.stats[statName]);
+          const perGameValue = Math.ceil((team.stats[statName] || 0) / gamesPlayed);
+          displayValue = `${totalValue.toLocaleString()} ${unitConfig.total} <span style='font-style: italic; font-size: 0.8em; color: rgba(255,255,255,0.9);'>${perGameValue}/G</span>`;
         } else if (statName === 'totalYards') {
-          perGameValue = Math.ceil(team.stats.totalYardsYPG || 0);
+          // Sort by YPG, display YPG prominent
+          const perGameValue = Math.ceil((team.stats[statName] || 0) / gamesPlayed);
+          const totalValue = Math.round(team.stats[statName]);
+          displayValue = `${perGameValue} YPG <span style='font-style: italic; font-size: 0.8em; color: rgba(255,255,255,0.9);'>${totalValue.toLocaleString()} YDS</span>`;
         } else if (statName === 'totalYardsOpponent') {
-          perGameValue = Math.ceil(team.stats.defensiveYPG || 0);
+          // Sort by YPG, display YPG prominent
+          const perGameValue = Math.ceil((team.stats[statName] || 0) / gamesPlayed);
+          const totalValue = Math.round(team.stats[statName]);
+          displayValue = `${perGameValue} YPG <span style='font-style: italic; font-size: 0.8em; color: rgba(255,255,255,0.9);'>${totalValue.toLocaleString()} YDS</span>`;
         }
-        
-        displayValue = `${totalValue.toLocaleString()} ${unitConfig.total} <span style='font-style: italic; font-size: 0.8em; color: rgba(255,255,255,0.9);'>${perGameValue}/G</span>`;
       } else if (unitConfig.perGame) {
         // Display per-game only
         let perGameValue;
@@ -186,7 +203,12 @@ function createLeadersData(teams, statName, isDefensive = false) {
         displayValue = `${perGameValue} ${unitConfig.perGame}`;
       } else {
         // Display total only
-        displayValue = `${Math.round(team.stats[statName])} ${unitConfig.total}`;
+        if (statName === 'sacks') {
+          // For sacks, show just the number without "SACKS" text
+          displayValue = `${Math.round(team.stats[statName])}`;
+        } else {
+          displayValue = `${Math.round(team.stats[statName])} ${unitConfig.total}`;
+        }
       }
       
       return {

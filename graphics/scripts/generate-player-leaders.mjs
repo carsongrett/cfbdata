@@ -522,16 +522,21 @@ async function main() {
       'sacks': 'defensive'
     };
     
-    for (const stat of PLAYER_STATS) {
+    // Fetch all player data in parallel
+    console.log('\n📡 Fetching all player data in parallel...');
+    
+    const playerDataPromises = PLAYER_STATS.map(async (stat) => {
       const category = categoryMap[stat];
-      console.log(`\n📡 Fetching ${stat} players from ${category} category...`);
-      const players = await fetchCFBDData(`/stats/player/season?year=2025&category=${category}`);
-      allPlayers.push(...players);
-      
-      // Add delay between API calls to avoid rate limiting
-      console.log('⏳ Waiting 3 seconds before next request...');
-      await new Promise(resolve => setTimeout(resolve, 3000));
-    }
+      console.log(`📡 Fetching ${stat} players from ${category} category...`);
+      return await fetchCFBDData(`/stats/player/season?year=2025&category=${category}`);
+    });
+    
+    const playerDataArrays = await Promise.all(playerDataPromises);
+    
+    // Flatten all player data into single array
+    allPlayers = playerDataArrays.flat();
+    
+    console.log('✅ All player API calls completed');
     
     // Filter for Power 5 teams only
     const power5Players = await filterPower5Players(allPlayers);
@@ -542,8 +547,6 @@ async function main() {
     
     // Fetch team records once for all stats
     console.log('📊 Fetching team records...');
-    console.log('⏳ Waiting 3 seconds before fetching records...');
-    await new Promise(resolve => setTimeout(resolve, 3000));
     const records = await fetchCFBDData('/records?year=2025');
     
     
