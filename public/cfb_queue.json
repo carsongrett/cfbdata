@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-28T02:48:34.413Z",
+  "generatedAt": "2025-09-28T03:26:51.767Z",
   "posts": [
     {
       "id": "final_401756902",
@@ -324,6 +324,60 @@
       "expiresAt": "2025-09-29T14:19:10.449Z",
       "source": "espn",
       "generatedAt": "2025-09-28T02:19:10.449Z"
+    },
+    {
+      "id": "final_401756904",
+      "kind": "final",
+      "text": "FINAL: 39-14\n#14 Iowa State Cyclones - 39\nArizona Wildcats - 14\n\n(ARIZ): Noah Fifita 32/48, 253 YDS, 2 TD, 2 INT\n(ISU): Chase Sowell 4 REC, 146 YDS\n\n#CFB #CyclONEnation",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756904",
+      "expiresAt": "2025-09-29T15:26:52.153Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T03:26:52.153Z"
+    },
+    {
+      "id": "final_401754548",
+      "kind": "final",
+      "text": "FINAL: 23-21\nVirginia Tech Hokies - 23\nNC State Wolfpack - 21\n\n(VT): Terion Stewart 15 CAR, 174 YDS\n(NCSU): CJ Bailey 26/34, 240 YDS, 2 TD\n\n#CFB #Hokies",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754548",
+      "expiresAt": "2025-09-29T15:26:52.153Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T03:26:52.153Z"
+    },
+    {
+      "id": "final_401757269",
+      "kind": "final",
+      "text": "FINAL: 42-25\nSouthern Miss Golden Eagles - 42\nJacksonville State Gamecocks - 25\n\n(JVST): Caden Creel 23 CAR, 161 YDS, 1 TD\n(USM): Braylon Braxton 13/22, 152 YDS, 2 TD\n\n#CFB #ToTheTop",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757269",
+      "expiresAt": "2025-09-29T15:26:52.154Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T03:26:52.154Z"
+    },
+    {
+      "id": "final_401757273",
+      "kind": "final",
+      "text": "FINAL: 27-22\nWestern Kentucky Hilltoppers - 27\nMissouri State Bears - 22\n\n(WKU): La'Vell Wright 10 CAR, 91 YDS, 2 TD\n\n#CFB #GoTops",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757273",
+      "expiresAt": "2025-09-29T15:26:52.154Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T03:26:52.154Z"
+    },
+    {
+      "id": "final_401762472",
+      "kind": "final",
+      "text": "FINAL: 55-26\nMemphis Tigers - 55\nFlorida Atlantic Owls - 26\n\n(MEM): Greg Desrosiers Jr. 19 CAR, 204 YDS, 3 TD\n(FAU): Caden Veltkamp 31/50, 318 YDS\n\n#CFB #GoTigersGo",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762472",
+      "expiresAt": "2025-09-29T15:26:52.154Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T03:26:52.154Z"
+    },
+    {
+      "id": "final_401752721",
+      "kind": "final",
+      "text": "FINAL: 42-6\n#20 Missouri Tigers - 42\nMassachusetts Minutemen - 6\n\n(MIZ): Ahmad Hardy 24 CAR, 130 YDS, 3 TD\n\n#Blowout #CFB #MIZ",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752721",
+      "expiresAt": "2025-09-29T15:26:52.154Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T03:26:52.154Z"
     }
   ]
 }
