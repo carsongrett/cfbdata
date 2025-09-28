@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-28T04:39:24.487Z",
+  "generatedAt": "2025-09-28T05:36:47.767Z",
   "posts": [
     {
       "id": "final_401756902",
@@ -441,6 +441,15 @@
       "expiresAt": "2025-09-29T16:39:24.827Z",
       "source": "espn",
       "generatedAt": "2025-09-28T04:39:24.827Z"
+    },
+    {
+      "id": "final_401757272",
+      "kind": "final",
+      "text": "FINAL: 30-11\nLouisiana Tech Bulldogs - 30\nUTEP Miners - 11\n\n(LT): Blake Baker 18/26, 137 YDS, 1 TD, 1 INT\n(UTEP): Wondame Davis Jr. 2 REC, 58 YDS, 1 TD\n\n#CFB #EverLoyalBe",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757272",
+      "expiresAt": "2025-09-29T17:36:48.202Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T05:36:48.202Z"
     }
   ]
 }
