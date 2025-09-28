@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-28T03:48:31.363Z",
+  "generatedAt": "2025-09-28T04:39:24.487Z",
   "posts": [
     {
       "id": "final_401756902",
@@ -432,6 +432,15 @@
       "expiresAt": "2025-09-29T15:48:31.810Z",
       "source": "espn",
       "generatedAt": "2025-09-28T03:48:31.810Z"
+    },
+    {
+      "id": "final_401761615",
+      "kind": "final",
+      "text": "FINAL: 54-51\nLouisiana Ragin' Cajuns - 54\nMarshall Thundering Herd - 51\n\n(MRSH): Carlos Del Rio-Wilson 24/31, 258 YDS, 3 TD\n\n#Shootout #CFB #GeauxCajuns",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761615",
+      "expiresAt": "2025-09-29T16:39:24.827Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T04:39:24.827Z"
     }
   ]
 }
