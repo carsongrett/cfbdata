@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-28T03:26:51.767Z",
+  "generatedAt": "2025-09-28T03:48:31.363Z",
   "posts": [
     {
       "id": "final_401756902",
@@ -378,6 +378,60 @@
       "expiresAt": "2025-09-29T15:26:52.154Z",
       "source": "espn",
       "generatedAt": "2025-09-28T03:26:52.154Z"
+    },
+    {
+      "id": "final_401752854",
+      "kind": "final",
+      "text": "FINAL: 30-24\n#6 Oregon Ducks - 30\n#3 Penn State Nittany Lions - 24\n\n(ORE): Dante Moore 29/39, 248 YDS, 3 TD\n\n#CFB #GoDucks",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752854",
+      "expiresAt": "2025-09-29T15:48:31.810Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T03:48:31.810Z"
+    },
+    {
+      "id": "final_401752718",
+      "kind": "final",
+      "text": "FINAL: 24-21\n#17 Alabama Crimson Tide - 24\n#5 Georgia Bulldogs - 21\n\n(ALA): Ty Simpson 24/38, 276 YDS, 2 TD\n(UGA): Chauncey Bowens 12 CAR, 119 YDS, 1 TD\n\n#Upset #CFB #RollTide",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752718",
+      "expiresAt": "2025-09-29T15:48:31.810Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T03:48:31.810Z"
+    },
+    {
+      "id": "final_401752950",
+      "kind": "final",
+      "text": "FINAL: 20-3\nWashington State Cougars - 20\nColorado State Rams - 3\n\n(WSU): Zevi Eckhaus 16/28, 189 YDS, 1 TD\n(CSU): Jalen Dupree 13 CAR, 68 YDS\n\n#CFB #GoCougs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752950",
+      "expiresAt": "2025-09-29T15:48:31.810Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T03:48:31.810Z"
+    },
+    {
+      "id": "final_401754549",
+      "kind": "final",
+      "text": "FINAL: 30-29\nStanford Cardinal - 30\nSan José State Spartans - 29\n\n(SJSU): Walker Eget 36/58, 473 YDS, 3 TD\n(STAN): Cole Tabb 12 CAR, 48 YDS, 1 TD\n\n#CFB #GoStanford",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754549",
+      "expiresAt": "2025-09-29T15:48:31.810Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T03:48:31.810Z"
+    },
+    {
+      "id": "final_401760379",
+      "kind": "final",
+      "text": "FINAL: 47-14\nBoise State Broncos - 47\nApp State Mountaineers - 14\n\n(APP): Rashod Dubinion 17 CAR, 113 YDS\n(BOIS): Maddux Madsen 25/37, 321 YDS, 4 TD\n\n#Blowout #CFB #BleedBlue",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760379",
+      "expiresAt": "2025-09-29T15:48:31.810Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T03:48:31.810Z"
+    },
+    {
+      "id": "final_401752722",
+      "kind": "final",
+      "text": "FINAL: 35-13\nSouth Carolina Gamecocks - 35\nKentucky Wildcats - 13\n\n(UK): Seth McGowan 17 CAR, 112 YDS, 1 TD\n(SC): LaNorris Sellers 11/14, 153 YDS\n\n#CFB #SpursUp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752722",
+      "expiresAt": "2025-09-29T15:48:31.810Z",
+      "source": "espn",
+      "generatedAt": "2025-09-28T03:48:31.810Z"
     }
   ]
 }
