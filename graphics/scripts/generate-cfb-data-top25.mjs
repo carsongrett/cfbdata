@@ -269,6 +269,7 @@ function generateHTMLTemplate(teams, week) {
             position: relative;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 8px;
         }
         
         .rank-badge {
@@ -293,8 +294,8 @@ function generateHTMLTemplate(teams, week) {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             background: white;
             border-radius: 8px;
             display: flex;
@@ -314,7 +315,7 @@ function generateHTMLTemplate(teams, week) {
         
         .team-info {
             position: absolute;
-            bottom: 8px;
+            bottom: 4px;
             left: 0;
             right: 0;
             text-align: center;
@@ -376,7 +377,9 @@ function generateHTMLTemplate(teams, week) {
             <p class="text-4xl font-bold text-yellow-400 text-left px-6" style="font-size: 2.5rem;">
                 WEEK ${week}
             </p>
-            <div class="my-logo">LOGO</div>
+            <div class="my-logo">
+                ${yourLogoDataUrl ? `<img src="${yourLogoDataUrl}" alt="CFB Data" style="width: 100%; height: 100%; object-fit: contain;" />` : 'LOGO'}
+            </div>
         </div>
         
         <!-- Top 25 Grid -->
@@ -461,8 +464,8 @@ async function generateCFBDataTop25() {
     console.log(`\n🎨 Generating CFB Data Top 25 graphic for Week ${pollData.week}...`);
     const htmlContent = generateHTMLTemplate(cfbDataRankings, pollData.week);
     
-    const htmlPath = path.join(__dirname, '..', 'output', 'cfb-data-top25-real.html');
-    const pngPath = path.join(__dirname, '..', 'output', 'cfb-data-top25-real.png');
+    const htmlPath = path.join(__dirname, '..', '..', 'cfb-data-top25-real.html');
+    const pngPath = path.join(__dirname, '..', '..', 'cfb-data-top25-real.png');
     
     fs.writeFileSync(htmlPath, htmlContent);
     console.log(`✅ HTML: ${htmlPath}`);

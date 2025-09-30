@@ -34,7 +34,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add graphics/output/cfb-data-top25-real.png graphics/output/cfb-data-top25-real.html
+        git add cfb-data-top25-real.png cfb-data-top25-real.html
         git status
         git diff --staged --quiet || git commit -m "Generate CFB Data Top 25 graphic for Week $(date +%U)"
         git add -A
