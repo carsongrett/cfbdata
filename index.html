@@ -417,6 +417,10 @@ const playerGraphics = [
   { file: 'player-sacks-2025.png', title: 'Sack Leaders', category: 'Defense' }
 ];
 
+const rankedMatchupsGraphics = [
+  { file: 'ranked-matchups-real.png', title: 'Ranked Matchups', category: 'Matchups' }
+];
+
 // Load graphics
 function loadGraphics() {
   const graphicsList = document.getElementById("graphics-list");
@@ -451,6 +455,21 @@ function loadGraphics() {
     </div>
   `;
   graphicsList.appendChild(playerSection);
+
+  // Ranked Matchups Section
+  const rankedMatchupsSection = document.createElement("div");
+  rankedMatchupsSection.innerHTML = `
+    <div style="margin-bottom: 24px;">
+      <h3 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #1f2937;">
+        <span style="background: #fbbf24; color: #92400e; padding: 4px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; margin-right: 8px;">MATCHUPS</span>
+        Ranked Matchups
+      </h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+        ${rankedMatchupsGraphics.map(g => createGraphicCard(g)).join('')}
+      </div>
+    </div>
+  `;
+  graphicsList.appendChild(rankedMatchupsSection);
 }
 
 // Create graphic card HTML
@@ -458,7 +477,8 @@ function createGraphicCard(graphic) {
   const categoryColors = {
     'Offense': 'background: #dcfce7; color: #166534',
     'Defense': 'background: #fecaca; color: #991b1b',
-    'Special': 'background: #fef3c7; color: #92400e'
+    'Special': 'background: #fef3c7; color: #92400e',
+    'Matchups': 'background: #fbbf24; color: #92400e'
   };
 
   const postedItems = getPostedItems();
