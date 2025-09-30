@@ -3,7 +3,7 @@ import fs from "node:fs";
 import { getCurrentWeekFromDate } from "./week-utils.mjs";
 
 // --- CONFIG ---
-const CFBD_API_KEY = "AYkI+Yu/PHFp5lbWxTjrAjN0q4DFidrdJgSoiGvPXve807qSdw0BJ6c08Vf0kFcN";
+const CFBD_API_KEY = process.env.CFBD_API_KEY;
 const CFBD_BASE = "https://api.collegefootballdata.com";
 
 // --- LOAD PREVIOUSLY POSTED ---
