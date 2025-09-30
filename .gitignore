@@ -76,6 +76,9 @@ jspm_packages/
 
 # Keep the output directory but ignore the files
 !graphics/output/.gitkeep
+# Allow specific graphic files
+!graphics/output/*-real.png
+!graphics/output/*-real.html
 
 # OS generated files
 .DS_Store
