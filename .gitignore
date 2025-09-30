@@ -75,6 +75,7 @@ jspm_packages/
 .vscode-test
 
 # Keep the output directory but ignore the files
+graphics/output/*
 !graphics/output/.gitkeep
 # Allow specific graphic files
 !graphics/output/*-real.png
