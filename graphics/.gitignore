@@ -80,3 +80,6 @@ output/*.png
 
 # Keep the output directory but ignore the files
 !output/.gitkeep
+# Allow specific real graphic files
+!output/*-real.html
+!output/*-real.png
