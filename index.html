@@ -421,6 +421,10 @@ const rankedMatchupsGraphics = [
   { file: 'ranked-matchups-real.png', title: 'Ranked Matchups', category: 'Matchups' }
 ];
 
+const cfbDataTop25Graphics = [
+  { file: 'cfb-data-top25-real.png', title: 'CFB Data\'s Top 25', category: 'Rankings' }
+];
+
 // Load graphics
 function loadGraphics() {
   const graphicsList = document.getElementById("graphics-list");
@@ -470,6 +474,21 @@ function loadGraphics() {
     </div>
   `;
   graphicsList.appendChild(rankedMatchupsSection);
+
+  // CFB Data Top 25 Section
+  const cfbDataTop25Section = document.createElement("div");
+  cfbDataTop25Section.innerHTML = `
+    <div style="margin-bottom: 24px;">
+      <h3 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #1f2937;">
+        <span style="background: #8b5cf6; color: #ffffff; padding: 4px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; margin-right: 8px;">RANKINGS</span>
+        CFB Data's Top 25
+      </h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+        ${cfbDataTop25Graphics.map(g => createGraphicCard(g)).join('')}
+      </div>
+    </div>
+  `;
+  graphicsList.appendChild(cfbDataTop25Section);
 }
 
 // Create graphic card HTML
@@ -478,7 +497,8 @@ function createGraphicCard(graphic) {
     'Offense': 'background: #dcfce7; color: #166534',
     'Defense': 'background: #fecaca; color: #991b1b',
     'Special': 'background: #fef3c7; color: #92400e',
-    'Matchups': 'background: #fbbf24; color: #92400e'
+    'Matchups': 'background: #fbbf24; color: #92400e',
+    'Rankings': 'background: #8b5cf6; color: #ffffff'
   };
 
   const postedItems = getPostedItems();
