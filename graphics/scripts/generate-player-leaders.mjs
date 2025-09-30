@@ -253,10 +253,16 @@ async function createPlayerLeadersData(stat, players, getTeamRecord) {
   }
   
   // Filter players who have this stat and sort by value
+  console.log(`📊 Total players available: ${players.length}`);
   const playersWithStat = players
     .filter(player => player.stats[stat] !== undefined)
     .sort((a, b) => b.stats[stat] - a.stats[stat])
     .slice(0, 10); // Top 10 players
+  
+  console.log(`📊 Players with ${stat}: ${playersWithStat.length}`);
+  if (playersWithStat.length > 0) {
+    console.log(`📊 Top player: ${playersWithStat[0].name} with ${playersWithStat[0].stats[stat]} ${stat}`);
+  }
   
   // Use the provided team record map
   

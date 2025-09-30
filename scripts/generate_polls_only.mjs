@@ -3,7 +3,7 @@ import fs from "node:fs";
 import { getCurrentWeekFromDate } from "./week-utils.mjs";
 
 // --- CONFIG ---
-const CFBD_API_KEY = "AYkI+Yu/PHFp5lbWxTjrAjN0q4DFidrdJgSoiGvPXve807qSdw0BJ6c08Vf0kFcN";
+const CFBD_API_KEY = process.env.CFBD_API_KEY;
 const CFBD_BASE = "https://api.collegefootballdata.com";
 
 // --- LOAD PREVIOUSLY POSTED ---
@@ -81,6 +81,8 @@ async function processAPPoll() {
     const previousWeek = currentWeek > 1 ? currentWeek - 1 : null;
     let previousPoll = null;
     if (previousWeek) {
+      // Add delay before previous week call
+      await new Promise(resolve => setTimeout(resolve, 1000));
       previousPoll = await fetchAPPoll(currentSeason, previousWeek);
     }
 
@@ -112,6 +114,8 @@ async function processAPPoll() {
     const previousWeekKey = (currentWeek - 1).toString();
     if (!pollCache.apPolls[previousWeekKey] && currentWeek > 1) {
       console.log(`Fetching previous week ${currentWeek - 1} for movers comparison...`);
+      // Add delay before previous week call
+      await new Promise(resolve => setTimeout(resolve, 1000));
       const previousPoll = await fetchAPPoll(currentSeason, currentWeek - 1);
       if (previousPoll && previousPoll.length) {
         pollCache.apPolls[previousWeekKey] = previousPoll;
@@ -150,6 +154,8 @@ async function processCoachesPoll() {
     const previousWeek = currentWeek > 1 ? currentWeek - 1 : null;
     let previousPoll = null;
     if (previousWeek) {
+      // Add delay before previous week call
+      await new Promise(resolve => setTimeout(resolve, 1000));
       previousPoll = await fetchCoachesPoll(currentSeason, previousWeek);
     }
 
@@ -181,6 +187,8 @@ async function processCoachesPoll() {
     const previousWeekKey = (currentWeek - 1).toString();
     if (!pollCache.coachesPolls[previousWeekKey] && currentWeek > 1) {
       console.log(`Fetching previous week ${currentWeek - 1} for movers comparison...`);
+      // Add delay before previous week call
+      await new Promise(resolve => setTimeout(resolve, 1000));
       const previousPoll = await fetchCoachesPoll(currentSeason, currentWeek - 1);
       if (previousPoll && previousPoll.length) {
         pollCache.coachesPolls[previousWeekKey] = previousPoll;
@@ -219,6 +227,8 @@ async function processSPRatings() {
     const previousWeek = currentWeek > 1 ? currentWeek - 1 : null;
     let previousRatings = null;
     if (previousWeek) {
+      // Add delay before previous week call
+      await new Promise(resolve => setTimeout(resolve, 1000));
       previousRatings = await fetchSPRatings(currentSeason, previousWeek);
     }
 
@@ -251,6 +261,8 @@ async function processSPRatings() {
     const previousWeekKey = (currentWeek - 1).toString();
     if (!pollCache.spRatings[previousWeekKey] && currentWeek > 1) {
       console.log(`Fetching previous week ${currentWeek - 1} for movers comparison...`);
+      // Add delay before previous week call
+      await new Promise(resolve => setTimeout(resolve, 1000));
       const previousRatings = await fetchSPRatings(currentSeason, currentWeek - 1);
       if (previousRatings && previousRatings.length) {
         pollCache.spRatings[previousWeekKey] = previousRatings;
