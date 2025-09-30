@@ -341,13 +341,12 @@ function generateHTMLTemplate(matchups, week) {
             <div class="text-center mb-8">
                 <div class="flex items-center justify-center mb-2">
                     <div class="h-px bg-white flex-1"></div>
-                    <span class="text-white font-bold text-2xl px-4">WEEK ${week}</span>
+                    <span class="text-white font-bold text-4xl px-4">WEEK ${week}</span>
                     <div class="h-px bg-white flex-1"></div>
                 </div>
-                <h1 class="text-7xl font-black text-yellow-400 mb-2 tracking-tight">
+                <h1 class="text-8xl font-black text-yellow-400 mb-2 tracking-tight">
                     RANKED MATCHUPS
                 </h1>
-                <p class="text-2xl font-medium text-gray-400">Power 5 Only</p>
             </div>
             
             <!-- Matchups List -->
