@@ -56,6 +56,8 @@ jobs:
         echo "🎨 Generating ranked matchups graphic..."
         node scripts/generate-ranked-matchups-real.mjs
         echo "✅ Ranked matchups graphic generated"
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         
     - name: Move PNG files to root
       run: |
