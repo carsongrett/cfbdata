@@ -252,165 +252,147 @@ function generateHTMLTemplate(teams, week) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=960, height=1200, initial-scale=1.0">
+    <meta name="viewport" content="width=1000, height=1000, initial-scale=1.0">
     <title>CFB Data's Top 25 - Week ${week}</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
-        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700;800;900&display=swap');
         
-        .team-card {
-            background: var(--team-color);
-            border: 2px solid var(--team-color-dark);
-            border-radius: 12px;
-            height: 120px;
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .background-pattern {
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.1) 0%, transparent 50%),
+                linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+        }
+        
+        .team-item {
             display: flex;
+            flex-direction: column;
             align-items: center;
             position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            padding: 8px;
+        }
+        
+        .team-image {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .team-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
         }
         
         .rank-badge {
             position: absolute;
             top: 8px;
             left: 8px;
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 100%);
+            color: white;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 900;
-            font-size: 1.2rem;
-            z-index: 10;
-        }
-        
-        .logo-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 70px;
-            height: 70px;
-            background: white;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-            z-index: 5;
-        }
-        
-        .team-logo-text {
-            color: #000;
             font-weight: 800;
-            font-size: 1.5rem;
-            text-align: center;
-            line-height: 1;
-        }
-        
-        .team-info {
-            position: absolute;
-            bottom: 4px;
-            left: 0;
-            right: 0;
-            text-align: center;
+            font-size: 14px;
             z-index: 10;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
         }
         
         .team-name {
+            font-family: 'Oswald', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 8px;
             color: white;
-            font-weight: 800;
-            font-size: 0.9rem;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
-            line-height: 1;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
         
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 12px;
-            padding: 0 20px;
-        }
-        
-        .my-logo {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 60px;
-            height: 60px;
-            background: #1DA1F2;
-            border-radius: 8px;
+        .logo-container {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-weight: 900;
-            font-size: 1.2rem;
-            color: #92400e;
-            z-index: 20;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         
-        .header-section {
-            height: 100px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-            padding-right: 80px; /* Space for logo */
-            margin-bottom: 10px; /* Minimal spacing to first row */
+        .logo-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
         }
     </style>
 </head>
-<body class="bg-black text-white m-0 p-0">
-    <div class="w-[960px] h-[1200px] bg-black relative overflow-hidden">
+<body class="m-0 p-0 background-pattern">
+    <div class="w-[1000px] h-[1000px] relative overflow-hidden background-pattern">
+        <!-- Main Content Container -->
+        <div class="p-8 h-full flex flex-col">
+        
         <!-- Header -->
-        <div class="header-section">
-            <h1 class="text-6xl font-black text-white mb-1 tracking-tight text-left px-6">
+        <div class="mb-6 p-4 rounded-lg relative" style="background-color: #ffffff;">
+            <h1 class="text-7xl font-black text-gray-900 mb-2 tracking-tight">
                 CFB DATA'S TOP 25
             </h1>
-            <p class="text-4xl font-bold text-yellow-400 text-left px-6" style="font-size: 2.5rem;">
-                WEEK ${week}
-            </p>
-            <div class="my-logo">
-                ${yourLogoDataUrl ? `<img src="${yourLogoDataUrl}" alt="CFB Data" style="width: 100%; height: 100%; object-fit: contain;" />` : 'LOGO'}
+            <div class="flex items-center gap-4">
+                <p class="text-2xl font-semibold text-gray-900">
+                    WEEK ${week}
+                </p>
+            </div>
+            <!-- Logo in top right corner -->
+            <div class="absolute top-4 right-4">
+                <div class="logo-container">
+                    ${yourLogoDataUrl ? `<img src="${yourLogoDataUrl}" alt="" class="logo-image" />` : '<div class="logo-image" style="background: #ccc; display: flex; align-items: center; justify-content: center; color: #666; font-weight: bold;">LOGO</div>'}
+                </div>
             </div>
         </div>
         
-        <!-- Top 25 Grid -->
-        <div class="grid-container">
+        <!-- Teams Grid -->
+        <div class="flex-1 grid grid-cols-5 gap-6">
             ${teams.map(team => {
               const teamColor = getTeamColor(team.school);
-              const teamColorDark = teamColor + 'CC'; // Add transparency for darker shade
               
               // Get team logo
               const logoFileName = getTeamLogoPath(team.school);
               const logoPath = logoFileName ? path.join(__dirname, '..', 'assets', 'team icons', logoFileName) : null;
               const logoDataUrl = logoPath && fs.existsSync(logoPath) ? encodeImageToBase64(logoPath) : null;
               
-              let logoHtml = '';
-              if (logoDataUrl) {
-                logoHtml = `<img src="${logoDataUrl}" alt="${team.school} Logo" style="max-width: 90%; max-height: 90%; object-fit: contain;" />`;
-              } else {
-                logoHtml = `<div class="team-logo-text">${team.school.substring(0, 3).toUpperCase()}</div>`;
-              }
+              // Create team abbreviation for fallback
+              const teamAbbr = team.school.split(' ').map(word => word[0]).join('').substring(0, 3).toUpperCase();
               
               return `
-            <div class="team-card" style="--team-color: ${teamColor}; --team-color-dark: ${teamColorDark};">
+            <!-- Team ${team.rank} - ${team.school} -->
+            <div class="team-item">
                 <div class="rank-badge">${team.rank}</div>
-                <div class="logo-container">
-                    ${logoHtml}
+                <div class="team-image" style="background: linear-gradient(135deg, ${teamColor} 0%, ${teamColor}CC 100%); display: flex; align-items: center; justify-content: center;">
+                    ${logoDataUrl ? 
+                      `<img src="${logoDataUrl}" alt="${team.school} Logo" style="width: 85%; height: 85%; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));" />` :
+                      `<div class="text-6xl font-black text-white" style="font-family: 'Oswald', sans-serif;">${teamAbbr}</div>`
+                    }
                 </div>
-                <div class="team-info">
-                    <div class="team-name">${team.school.toUpperCase()}</div>
-                </div>
+                <div class="team-name">${team.school.toUpperCase()}</div>
             </div>`;
             }).join('\n')}
+        </div>
+        
         </div>
         
     </div>
@@ -429,7 +411,7 @@ async function generatePNG(htmlContent, outputPath) {
   const page = await browser.newPage();
   
   // Set viewport to match our graphic dimensions
-  await page.setViewportSize({ width: 960, height: 1200 });
+  await page.setViewportSize({ width: 1000, height: 1000 });
   
   // Set the HTML content
   await page.setContent(htmlContent);
