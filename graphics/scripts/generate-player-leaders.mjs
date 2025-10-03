@@ -328,24 +328,25 @@ function generatePlayerHTML(data) {
         }
         
         .player-bar {
-            height: 120px;
+            height: 70px;
+            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%) !important;
         }
         
         .rank-number {
-            font-size: 5rem;
+            font-size: 4rem;
             font-weight: 900;
             line-height: 1;
         }
         
         .player-name {
-            font-size: 4.5rem;
+            font-size: 3.5rem;
             font-weight: 800;
             line-height: 1;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
         
         .stat-value {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 700;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         }
@@ -384,8 +385,8 @@ function generatePlayerHTML(data) {
         }
         
         .team-logo {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             object-fit: contain;
             filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
         }
@@ -397,22 +398,53 @@ function generatePlayerHTML(data) {
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
             margin-left: 8px;
         }
+        
+        .logo-container {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
     </style>
 </head>
-<body class="text-white min-h-screen" style="background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);">
-    <div class="container mx-auto px-8 py-12 h-screen flex flex-col">
+<body class="m-0 p-0" style="background: #1a1a1a;">
+    <div class="w-[1000px] h-[1000px] relative overflow-hidden" style="background: #1a1a1a;">
+        <!-- Main Content Container -->
+        <div class="p-8 h-full flex flex-col">
         
         <!-- Header -->
-        <div class="flex flex-col items-center justify-center mb-8">
-            <div class="text-center">
-                <h1 class="title-text">${data.title}</h1>
+        <div class="mb-6 p-4 rounded-lg relative" style="background-color: #ffffff;">
+            <h1 class="text-7xl font-black text-gray-900 mb-2 tracking-tight">
+                ${data.title}
+            </h1>
+            <div class="flex items-center gap-4">
+                <p class="text-2xl font-semibold text-gray-900">
+                    VIA CFB DATA
+                </p>
+            </div>
+            <!-- Logo in top right corner -->
+            <div class="absolute top-4 right-4">
+                <div class="logo-container">
+                    ${logoDataUrl ? `<img src="${logoDataUrl}" alt="" class="logo-image" />` : '<div class="logo-image" style="background: #ccc; display: flex; align-items: center; justify-content: center; color: #666; font-weight: bold;">LOGO</div>'}
+                </div>
             </div>
         </div>
         
-        <!-- Main Content -->
-        <div class="flex-1 flex flex-col">
-            <!-- Players Container -->
-            <div class="flex-1 flex flex-col justify-center space-y-4 mb-6">
+        <!-- Players Container -->
+        <div class="flex-1 flex flex-col justify-start space-y-2">
                 ${data.teams.map(player => {
                   const teamInfo = getTeamInfo(player.team);
                   const backgroundColor = teamInfo ? teamInfo.primary : '#666666';
@@ -424,36 +456,24 @@ function generatePlayerHTML(data) {
                   
                   let logoHtml = '';
                   if (logoDataUrl) {
-                    logoHtml = `<img src="${logoDataUrl}" alt="${player.team} Logo" class="team-logo">`;
+                    logoHtml = `<img src="${logoDataUrl}" alt="${player.team} Logo" class="w-12 h-12 mr-3 object-contain" style="filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));">`;
                   }
                   
                   // Use full player name
                   const displayName = player.name.toUpperCase();
                   
                   return `<!-- Player ${player.rank} -->
-                <div class="player-bar rounded-lg flex items-center px-6 shadow-lg" style="background-color: ${backgroundColor}">
-                    <div class="rank-number text-white mr-6">${player.rank}</div>
-                    <div class="flex-1 flex items-center justify-between">
-                        <div class="player-name text-white whitespace-nowrap">${displayName}</div>
-                        <div class="flex items-center">
-                            ${logoHtml}
-                        </div>
+                <div class="player-bar rounded-lg flex items-center px-4 shadow-lg" style="border: 3px solid ${backgroundColor};">
+                    <div class="rank-number text-white mr-8">${player.rank}</div>
+                    <div class="mr-6">${logoHtml}</div>
+                    <div class="flex-1">
+                        <div class="player-name text-white">${displayName}</div>
                     </div>
-                    <div class="text-white stat-value ml-6"><span class="stat-number">${player.value.split(' ')[0]}</span> <span class="stat-unit">${player.value.split(' ').slice(1).join(' ')}</span></div>
+                    <div class="text-white text-5xl font-bold">${player.value}</div>
                 </div>`;
                 }).join('\n')}
-            </div>
         </div>
         
-        <!-- Footer -->
-        <div class="flex items-center justify-between w-full">
-            <div class="flex-1"></div>
-            <div class="flex-1 flex justify-center">
-                ${logoDataUrl ? `<img src="${logoDataUrl}" alt="CFB Data" class="bottom-logo">` : ''}
-            </div>
-            <div class="flex-1 flex justify-end">
-                <p class="footnote-text">power 5</p>
-            </div>
         </div>
         
     </div>
@@ -471,8 +491,8 @@ async function generatePNG(data, outputPath) {
   });
   const page = await browser.newPage();
   
-  // Set viewport size for taller graphic to fit all 6 players
-  await page.setViewportSize({ width: 1600, height: 1200 });
+  // Set viewport to match our graphic dimensions
+  await page.setViewportSize({ width: 1000, height: 1000 });
   
   // Generate HTML content
   const htmlContent = generatePlayerHTML(data);
