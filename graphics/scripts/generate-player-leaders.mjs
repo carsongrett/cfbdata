@@ -242,8 +242,8 @@ async function createPlayerLeadersData(stat, players, getTeamRecord) {
     rushingTDs: { title: 'RUSHING TD LEADERS', totalUnit: 'TD', perGameUnit: null, showBoth: false },
     passingYards: { title: 'PASSING YD LEADERS', totalUnit: 'YDS', perGameUnit: 'YPG', showBoth: true },
     passingTDs: { title: 'PASSING TD LEADERS', totalUnit: 'TD', perGameUnit: null, showBoth: false },
-    receivingYards: { title: 'RECEIVING YD LEADERS', totalUnit: 'YDS', perGameUnit: 'YPG', showBoth: true },
-    receivingTDs: { title: 'RECEIVING TD LEADERS', totalUnit: 'TD', perGameUnit: null, showBoth: false },
+    receivingYards: { title: 'REC. YD LEADERS', totalUnit: 'YDS', perGameUnit: 'YPG', showBoth: true },
+    receivingTDs: { title: 'REC. TD LEADERS', totalUnit: 'TD', perGameUnit: null, showBoth: false },
     sacks: { title: 'SACK LEADERS', totalUnit: 'SACKS', perGameUnit: null, showBoth: false }
   };
   
