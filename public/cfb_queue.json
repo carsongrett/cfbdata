@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-04T02:53:46.158Z",
+  "generatedAt": "2025-10-04T03:42:01.544Z",
   "posts": [
     {
       "id": "ap_top10_week6",
@@ -423,6 +423,15 @@
       "expiresAt": "2025-10-05T14:08:23.180Z",
       "source": "espn",
       "generatedAt": "2025-10-04T02:08:23.180Z"
+    },
+    {
+      "id": "final_401757276",
+      "kind": "final",
+      "text": "FINAL: 27-24\nWestern Kentucky Hilltoppers - 27\nDelaware Blue Hens - 24\n\n(WKU): Matthew Henry 4 REC, 99 YDS\n(DEL): Nick Minicucci 12 CAR, 55 YDS, 3 TD\n\n#CFB #GoTops",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757276",
+      "expiresAt": "2025-10-05T15:42:01.828Z",
+      "source": "espn",
+      "generatedAt": "2025-10-04T03:42:01.828Z"
     }
   ]
 }
