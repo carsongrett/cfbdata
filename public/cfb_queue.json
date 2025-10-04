@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-03T12:35:49.621Z",
+  "generatedAt": "2025-10-04T02:08:22.258Z",
   "posts": [
     {
       "id": "ap_top10_week6",
@@ -414,6 +414,15 @@
       "expiresAt": "2025-10-04T12:35:50.322Z",
       "source": "cfbd",
       "generatedAt": "2025-10-03T12:35:50.322Z"
+    },
+    {
+      "id": "final_401757275",
+      "kind": "final",
+      "text": "FINAL: 37-10\nNew Mexico State Aggies - 37\nSam Houston Bearkats - 10\n\n(NMSU): Logan Fife 19/26, 255 YDS, 1 TD\n\n#CFB #AggieUp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757275",
+      "expiresAt": "2025-10-05T14:08:23.180Z",
+      "source": "espn",
+      "generatedAt": "2025-10-04T02:08:23.180Z"
     }
   ]
 }
