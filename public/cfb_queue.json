@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-04T04:39:22.997Z",
+  "generatedAt": "2025-10-04T19:07:17.764Z",
   "posts": [
     {
       "id": "ap_top10_week6",
@@ -414,6 +414,33 @@
       "expiresAt": "2025-10-04T12:35:50.322Z",
       "source": "cfbd",
       "generatedAt": "2025-10-03T12:35:50.322Z"
+    },
+    {
+      "id": "final_401756909",
+      "kind": "final",
+      "text": "FINAL: 38-24\n#23 BYU Cougars - 38\nWest Virginia Mountaineers - 24\n\n(BYU): LJ Martin 21 CAR, 90 YDS, 2 TD\n\n#CFB #GoCougs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756909",
+      "expiresAt": "2025-10-06T07:07:18.401Z",
+      "source": "espn",
+      "generatedAt": "2025-10-04T19:07:18.401Z"
+    },
+    {
+      "id": "final_401760384",
+      "kind": "final",
+      "text": "FINAL: 35-28\nSan José State Spartans - 35\nNew Mexico Lobos - 28\n\n(UNM): Jack Layne 28/40, 344 YDS, 3 INT\n(SJSU): Steve Chavez-Soto 14 CAR, 71 YDS, 2 TD\n\n#CFB #SpartanUp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760384",
+      "expiresAt": "2025-10-06T07:07:18.402Z",
+      "source": "espn",
+      "generatedAt": "2025-10-04T19:07:18.402Z"
+    },
+    {
+      "id": "final_401760382",
+      "kind": "final",
+      "text": "FINAL: 45-24\nSan Diego State Aztecs - 45\nColorado State Rams - 24\n\n(SDSU): Jayden Denegal 13/16, 256 YDS, 2 TD\n\n#CFB #GoAztecs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760382",
+      "expiresAt": "2025-10-06T07:07:18.402Z",
+      "source": "espn",
+      "generatedAt": "2025-10-04T19:07:18.402Z"
     }
   ]
 }
