@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-04T03:42:01.544Z",
+  "generatedAt": "2025-10-04T04:39:22.997Z",
   "posts": [
     {
       "id": "ap_top10_week6",
@@ -432,6 +432,15 @@
       "expiresAt": "2025-10-05T15:42:01.828Z",
       "source": "espn",
       "generatedAt": "2025-10-04T03:42:01.828Z"
+    },
+    {
+      "id": "final_401762475",
+      "kind": "final",
+      "text": "FINAL: 54-26\nSouth Florida Bulls - 54\nCharlotte 49ers - 26\n\n(USF): Byrum Brown 19/34, 211 YDS, 4 TD, 2 INT\n\n#CFB",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762475",
+      "expiresAt": "2025-10-05T16:39:23.600Z",
+      "source": "espn",
+      "generatedAt": "2025-10-04T04:39:23.600Z"
     }
   ]
 }
