@@ -1,51 +1,6 @@
 {
-  "generatedAt": "2025-10-05T05:35:56.640Z",
+  "generatedAt": "2025-10-05T17:27:30.064Z",
   "posts": [
-    {
-      "id": "ap_top10_week6",
-      "kind": "poll_top10",
-      "text": "AP Top 10 - Week 6\n1. Ohio State\n2. Oregon\n3. Miami\n4. Ole Miss\n5. Oklahoma\n6. Texas A&M\n7. Penn State\n8. Indiana\n9. Texas\n10. Alabama\n\n#APTop25 #CFB",
-      "link": "",
-      "expiresAt": "2025-10-07T01:07:23.482Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-30T01:07:23.482Z"
-    },
-    {
-      "id": "ap_movers_week6",
-      "kind": "poll_movers",
-      "text": "AP Poll Movers - Week 6\n⬇️-10 Florida State (8→18)\n⬆️+9 Ole Miss (13→4)\n⬇️-9 LSU (4→13)\n⬆️+7 Alabama (17→10)\n⬇️-7 Georgia (5→12)\n⬆️+4 Oregon (6→2)\n⬇️-4 Penn State (3→7)\nNEW: #24 Virginia\nNEW: #25 Arizona State\n\n#APTop25 #CFB",
-      "link": "",
-      "expiresAt": "2025-10-07T01:07:23.482Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-30T01:07:23.482Z"
-    },
-    {
-      "id": "coaches_top10_week6",
-      "kind": "poll_top10",
-      "text": "Coaches Poll Top 10 - Week 6\n1. Ohio State\n2. Oregon\n3. Miami\n4. Ole Miss\n5. Texas A&M\n6. Penn State\n7. Texas\n8. Oklahoma\n9. Indiana\n10. Georgia\n\n#CoachesPoll #CFB",
-      "link": "",
-      "expiresAt": "2025-10-07T01:07:25.722Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-30T01:07:25.722Z"
-    },
-    {
-      "id": "coaches_movers_week6",
-      "kind": "poll_movers",
-      "text": "Coaches Poll Movers - Week 6\n⬇️-11 Florida State (8→19)\n⬇️-9 LSU (4→13)\n⬆️+7 Ole Miss (11→4)\n⬇️-7 Georgia (3→10)\n⬆️+5 Alabama (16→11)\n⬆️+4 Texas A&M (9→5)\n⬇️-4 Penn State (2→6)\nNEW: #24 Arizona State\nNEW: #25 Utah\n\n#CoachesPoll #CFB",
-      "link": "",
-      "expiresAt": "2025-10-07T01:07:25.722Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-30T01:07:25.722Z"
-    },
-    {
-      "id": "sp_top10_week6",
-      "kind": "poll_top10",
-      "text": "SP+ Power Rankings - Week 6\n1. Oregon (29.4)\n2. Ohio State (26.8)\n3. Indiana (25.5)\n4. Penn State (25.4)\n5. Texas Tech (23.8)\n6. Tennessee (23.2)\n7. Missouri (23.2)\n8. Ole Miss (22.7)\n9. Oklahoma (21.5)\n10. Alabama (21.1)\n\n#SPPlus #CFB",
-      "link": "",
-      "expiresAt": "2025-10-07T01:07:28.006Z",
-      "source": "cfbd",
-      "generatedAt": "2025-09-30T01:07:28.006Z"
-    },
     {
       "id": "betting_preview_week6_401752727",
       "kind": "betting_preview",
@@ -414,6 +369,51 @@
       "expiresAt": "2025-10-04T12:35:50.322Z",
       "source": "cfbd",
       "generatedAt": "2025-10-03T12:35:50.322Z"
+    },
+    {
+      "id": "ap_top10_week6",
+      "kind": "poll_top10",
+      "text": "AP Top 10 - Week 6\n1. Ohio State\n2. Oregon\n3. Miami\n4. Ole Miss\n5. Oklahoma\n6. Texas A&M\n7. Penn State\n8. Indiana\n9. Texas\n10. Alabama\n\n#APTop25 #CFB",
+      "link": "",
+      "expiresAt": "2025-10-12T17:27:32.139Z",
+      "source": "cfbd",
+      "generatedAt": "2025-10-05T17:27:32.139Z"
+    },
+    {
+      "id": "ap_movers_week6",
+      "kind": "poll_movers",
+      "text": "AP Poll Movers - Week 6\n⬇️-10 Florida State (8→18)\n⬆️+9 Ole Miss (13→4)\n⬇️-9 LSU (4→13)\n⬆️+7 Alabama (17→10)\n⬇️-7 Georgia (5→12)\n⬆️+4 Oregon (6→2)\n⬇️-4 Penn State (3→7)\nNEW: #24 Virginia\nNEW: #25 Arizona State\n\n#APTop25 #CFB",
+      "link": "",
+      "expiresAt": "2025-10-12T17:27:32.140Z",
+      "source": "cfbd",
+      "generatedAt": "2025-10-05T17:27:32.140Z"
+    },
+    {
+      "id": "coaches_top10_week6",
+      "kind": "poll_top10",
+      "text": "Coaches Poll Top 10 - Week 6\n1. Ohio State\n2. Oregon\n3. Miami\n4. Ole Miss\n5. Texas A&M\n6. Penn State\n7. Texas\n8. Oklahoma\n9. Indiana\n10. Georgia\n\n#CoachesPoll #CFB",
+      "link": "",
+      "expiresAt": "2025-10-12T17:27:34.321Z",
+      "source": "cfbd",
+      "generatedAt": "2025-10-05T17:27:34.321Z"
+    },
+    {
+      "id": "coaches_movers_week6",
+      "kind": "poll_movers",
+      "text": "Coaches Poll Movers - Week 6\n⬇️-11 Florida State (8→19)\n⬇️-9 LSU (4→13)\n⬆️+7 Ole Miss (11→4)\n⬇️-7 Georgia (3→10)\n⬆️+5 Alabama (16→11)\n⬆️+4 Texas A&M (9→5)\n⬇️-4 Penn State (2→6)\nNEW: #24 Arizona State\nNEW: #25 Utah\n\n#CoachesPoll #CFB",
+      "link": "",
+      "expiresAt": "2025-10-12T17:27:34.321Z",
+      "source": "cfbd",
+      "generatedAt": "2025-10-05T17:27:34.322Z"
+    },
+    {
+      "id": "sp_top10_week6",
+      "kind": "poll_top10",
+      "text": "SP+ Power Rankings - Week 6\n1. Oregon (29.4)\n2. Ohio State (26.8)\n3. Indiana (25.5)\n4. Penn State (25.4)\n5. Texas Tech (23.8)\n6. Tennessee (23.2)\n7. Missouri (23.2)\n8. Ole Miss (22.7)\n9. Oklahoma (21.5)\n10. Alabama (21.1)\n\n#SPPlus #CFB",
+      "link": "",
+      "expiresAt": "2025-10-12T17:27:36.484Z",
+      "source": "cfbd",
+      "generatedAt": "2025-10-05T17:27:36.484Z"
     }
   ]
 }
