@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-05T02:47:44.927Z",
+  "generatedAt": "2025-10-05T03:24:50.179Z",
   "posts": [
     {
       "id": "ap_top10_week6",
@@ -747,6 +747,33 @@
       "expiresAt": "2025-10-06T14:47:45.402Z",
       "source": "espn",
       "generatedAt": "2025-10-05T02:47:45.402Z"
+    },
+    {
+      "id": "final_401756913",
+      "kind": "final",
+      "text": "FINAL: 35-11\n#11 Texas Tech Red Raiders - 35\nHouston Cougars - 11\n\n(TTU): J'Koby Williams 19 CAR, 107 YDS, 2 TD\n\n#CFB #WreckEm",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756913",
+      "expiresAt": "2025-10-06T15:24:50.614Z",
+      "source": "espn",
+      "generatedAt": "2025-10-05T03:24:50.614Z"
+    },
+    {
+      "id": "final_401760385",
+      "kind": "final",
+      "text": "FINAL: 31-17\nUNLV Rebels - 31\nWyoming Cowboys - 17\n\n(UNLV): Jai'Den Thomas 16 CAR, 94 YDS\n(WYO): Kaden Anderson 25/46, 254 YDS, 1 TD, 1 INT\n\n#CFB #GoRebels",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760385",
+      "expiresAt": "2025-10-06T15:24:50.614Z",
+      "source": "espn",
+      "generatedAt": "2025-10-05T03:24:50.614Z"
+    },
+    {
+      "id": "final_401761621",
+      "kind": "final",
+      "text": "FINAL: 31-24\nTroy Trojans - 31\nSouth Alabama Jaguars - 24\n\n(TROY): Tucker Kilcrease 13/21, 203 YDS, 2 TD, 1 INT\n\n#CFB #OneTROY",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761621",
+      "expiresAt": "2025-10-06T15:24:50.614Z",
+      "source": "espn",
+      "generatedAt": "2025-10-05T03:24:50.614Z"
     }
   ]
 }
