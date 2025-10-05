@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-05T03:24:50.179Z",
+  "generatedAt": "2025-10-05T03:45:24.694Z",
   "posts": [
     {
       "id": "ap_top10_week6",
@@ -774,6 +774,60 @@
       "expiresAt": "2025-10-06T15:24:50.614Z",
       "source": "espn",
       "generatedAt": "2025-10-05T03:24:50.614Z"
+    },
+    {
+      "id": "final_401752859",
+      "kind": "final",
+      "text": "FINAL: 42-3\n#1 Ohio State Buckeyes - 42\nMinnesota Golden Gophers - 3\n\n(OSU): Julian Sayin 23/27, 326 YDS, 3 TD\n\n#Blowout #CFB #GoBucks",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752859",
+      "expiresAt": "2025-10-06T15:45:25.335Z",
+      "source": "espn",
+      "generatedAt": "2025-10-05T03:45:25.335Z"
+    },
+    {
+      "id": "final_401754553",
+      "kind": "final",
+      "text": "FINAL: 28-22\n#3 Miami Hurricanes - 28\n#18 Florida State Seminoles - 22\n\n(MIA): Malachi Toney 7 REC, 107 YDS, 2 TD\n(FSU): Tommy Castellanos 25/45, 272 YDS, 2 TD, 2 INT\n\n#CFB #GoCanes",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754553",
+      "expiresAt": "2025-10-06T15:45:25.335Z",
+      "source": "espn",
+      "generatedAt": "2025-10-05T03:45:25.335Z"
+    },
+    {
+      "id": "final_401752730",
+      "kind": "final",
+      "text": "FINAL: 31-9\n#6 Texas A&M Aggies - 31\nMississippi State Bulldogs - 9\n\n(TA&M): Marcel Reed 13/23, 180 YDS, 2 TD, 1 INT\n\n#CFB #GigEm",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752730",
+      "expiresAt": "2025-10-06T15:45:25.336Z",
+      "source": "espn",
+      "generatedAt": "2025-10-05T03:45:25.336Z"
+    },
+    {
+      "id": "final_401756914",
+      "kind": "final",
+      "text": "FINAL: 35-21\nTCU Horned Frogs - 35\nColorado Buffaloes - 21\n\n(COLO): Omarion Miller 6 REC, 89 YDS, 2 TD\n(TCU): Josh Hoover 23/33, 275 YDS, 4 TD\n\n#CFB #GoFrogs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756914",
+      "expiresAt": "2025-10-06T15:45:25.336Z",
+      "source": "espn",
+      "generatedAt": "2025-10-05T03:45:25.336Z"
+    },
+    {
+      "id": "final_401756915",
+      "kind": "final",
+      "text": "FINAL: 27-20\nKansas Jayhawks - 27\nUCF Knights - 20\n\n(KU): Jalon Daniels 18/26, 235 YDS\n(UCF): Myles Montgomery 22 CAR, 110 YDS, 2 TD\n\n#CFB #RockChalk",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756915",
+      "expiresAt": "2025-10-06T15:45:25.336Z",
+      "source": "espn",
+      "generatedAt": "2025-10-05T03:45:25.336Z"
+    },
+    {
+      "id": "final_401762478",
+      "kind": "final",
+      "text": "FINAL: 45-7\nMemphis Tigers - 45\nTulsa Golden Hurricane - 7\n\n(MEM): Brendon Lewis 22/30, 266 YDS, 3 TD, 2 INT\n\n#Blowout #CFB #GoTigersGo",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762478",
+      "expiresAt": "2025-10-06T15:45:25.336Z",
+      "source": "espn",
+      "generatedAt": "2025-10-05T03:45:25.336Z"
     }
   ]
 }
