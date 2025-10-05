@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-05T02:18:37.519Z",
+  "generatedAt": "2025-10-05T02:47:44.927Z",
   "posts": [
     {
       "id": "ap_top10_week6",
@@ -729,6 +729,24 @@
       "expiresAt": "2025-10-06T12:19:04.936Z",
       "source": "espn",
       "generatedAt": "2025-10-05T00:19:04.936Z"
+    },
+    {
+      "id": "final_401761619",
+      "kind": "final",
+      "text": "FINAL: 47-7\nOld Dominion Monarchs - 47\nCoastal Carolina Chanticleers - 7\n\n(ODU): Colton Joseph 17/30, 315 YDS, 4 TD\n\n#Blowout #CFB #ReignOn",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761619",
+      "expiresAt": "2025-10-06T14:47:45.402Z",
+      "source": "espn",
+      "generatedAt": "2025-10-05T02:47:45.402Z"
+    },
+    {
+      "id": "final_401762477",
+      "kind": "final",
+      "text": "FINAL: 27-21\nFlorida Atlantic Owls - 27\nRice Owls - 21\n\n(FAU): Caden Veltkamp 23/33, 290 YDS, 3 TD, 1 INT\n(RICE): Quinton Jackson 19 CAR, 128 YDS, 1 TD\n\n#CFB #GoOwls",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762477",
+      "expiresAt": "2025-10-06T14:47:45.402Z",
+      "source": "espn",
+      "generatedAt": "2025-10-05T02:47:45.402Z"
     }
   ]
 }
