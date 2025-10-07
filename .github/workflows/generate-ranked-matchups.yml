@@ -99,6 +99,7 @@ jobs:
     - name: Push Changes
       if: steps.changes.outputs.changed == 'true'
       run: |
-        git pull --rebase
-        git push
+        git add -A
+        git pull --rebase origin main
+        git push origin main
         echo "✅ Changes pushed to repository"

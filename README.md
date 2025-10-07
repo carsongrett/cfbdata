@@ -198,6 +198,12 @@ The bot generates two types of poll-related posts each week for multiple ranking
 - Automatically detects when new poll data is available
 - Falls back to cached data if API calls fail
 
+### Week Calculation
+- Uses Sunday-based week calculation aligned with CFB poll release schedule
+- Polls release every Sunday, so week numbers are calculated based on the current week's Sunday
+- Week 7 this week, Week 8 next Sunday, etc.
+- Ensures consistent week numbers throughout the week until next poll release
+
 ### API Configuration
 - Uses CollegeFootballData (CFBD) API for all poll/ranking data
 - Requires API key set as `CFBD_API_KEY` environment variable

@@ -39,5 +39,5 @@ jobs:
         git diff --staged --quiet || git commit -m "Generate CFB Data Top 25 graphic for Week $(date +%U)"
         git add -A
         git diff --staged --quiet || git commit -m "Update generated files for Week $(date +%U)"
-        git pull --rebase
-        git push
+        git pull --rebase origin main
+        git push origin main
