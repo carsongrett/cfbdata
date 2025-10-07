@@ -274,11 +274,12 @@ function generateHTMLTemplate(teams, week) {
             flex-direction: column;
             align-items: center;
             position: relative;
+            min-height: 180px;
         }
         
         .team-image {
             width: 100%;
-            aspect-ratio: 1;
+            height: 140px;
             border-radius: 12px;
             object-fit: cover;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -311,15 +312,16 @@ function generateHTMLTemplate(teams, week) {
         
         .team-name {
             font-family: 'Oswald', sans-serif;
-            font-size: 11px;
+            font-size: 14px;
             font-weight: 700;
             text-align: center;
-            margin-top: 16px;
+            margin-top: 20px;
             color: white;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+            letter-spacing: 0.8px;
             text-transform: uppercase;
-            line-height: 1.2;
+            line-height: 1.3;
+            min-height: 20px;
         }
         
         .logo-container {
