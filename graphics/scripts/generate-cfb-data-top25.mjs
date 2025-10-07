@@ -252,7 +252,7 @@ function generateHTMLTemplate(teams, week) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1000, height=1000, initial-scale=1.0">
+    <meta name="viewport" content="width=1000, height=1200, initial-scale=1.0">
     <title>CFB Data's Top 25 - Week ${week}</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -274,12 +274,12 @@ function generateHTMLTemplate(teams, week) {
             flex-direction: column;
             align-items: center;
             position: relative;
-            min-height: 180px;
+            min-height: 160px;
         }
         
         .team-image {
             width: 100%;
-            height: 140px;
+            height: 120px;
             border-radius: 12px;
             object-fit: cover;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -312,16 +312,16 @@ function generateHTMLTemplate(teams, week) {
         
         .team-name {
             font-family: 'Oswald', sans-serif;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 700;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 12px;
             color: white;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
             letter-spacing: 0.8px;
             text-transform: uppercase;
-            line-height: 1.3;
-            min-height: 20px;
+            line-height: 1.2;
+            min-height: 18px;
         }
         
         .logo-container {
@@ -346,12 +346,12 @@ function generateHTMLTemplate(teams, week) {
     </style>
 </head>
 <body class="m-0 p-0 background-pattern">
-    <div class="w-[1000px] h-[1000px] relative overflow-hidden background-pattern">
+    <div class="w-[1000px] h-[1200px] relative overflow-hidden background-pattern">
         <!-- Main Content Container -->
-        <div class="p-8 h-full flex flex-col">
+        <div class="p-6 h-full flex flex-col">
         
         <!-- Header -->
-        <div class="mb-6 p-4 rounded-lg relative" style="background-color: #ffffff;">
+        <div class="mb-4 p-3 rounded-lg relative" style="background-color: #ffffff;">
             <h1 class="text-7xl font-black text-gray-900 mb-2 tracking-tight">
                 CFB DATA'S TOP 25
             </h1>
@@ -369,7 +369,7 @@ function generateHTMLTemplate(teams, week) {
         </div>
         
         <!-- Teams Grid -->
-        <div class="flex-1 grid grid-cols-5 gap-6">
+        <div class="flex-1 grid grid-cols-5 gap-4">
             ${teams.map(team => {
               const teamColor = getTeamColor(team.school);
               
@@ -414,7 +414,7 @@ async function generatePNG(htmlContent, outputPath) {
   const page = await browser.newPage();
   
   // Set viewport to match our graphic dimensions
-  await page.setViewportSize({ width: 1000, height: 1000 });
+  await page.setViewportSize({ width: 1000, height: 1200 });
   
   // Set the HTML content
   await page.setContent(htmlContent);
