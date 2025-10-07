@@ -314,11 +314,12 @@ function generateHTMLTemplate(teams, week) {
             font-size: 11px;
             font-weight: 700;
             text-align: center;
-            margin-top: 8px;
+            margin-top: 16px;
             color: white;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
             letter-spacing: 0.5px;
             text-transform: uppercase;
+            line-height: 1.2;
         }
         
         .logo-container {
