@@ -5,8 +5,15 @@ export function getCurrentWeekFromDate() {
   const seasonStart = new Date('2025-08-25'); // Week 1 start (Sunday)
   const now = new Date();
   
-  // Calculate weeks since season start (Sunday to Sunday)
-  const weeksSinceStart = Math.floor((now - seasonStart) / (7 * 24 * 60 * 60 * 1000)) + 1;
+  // Find the current week's Sunday (poll release day)
+  // If today is Sunday, use today; otherwise find the next Sunday
+  const daysUntilSunday = now.getDay() === 0 ? 0 : (7 - now.getDay());
+  const currentWeekSunday = new Date(now);
+  currentWeekSunday.setDate(now.getDate() + daysUntilSunday);
+  currentWeekSunday.setHours(0, 0, 0, 0);
+  
+  // Calculate weeks since season start based on Sundays
+  const weeksSinceStart = Math.floor((currentWeekSunday - seasonStart) / (7 * 24 * 60 * 60 * 1000)) + 1;
   
   // Cap at reasonable maximum (Week 15 for regular season)
   return Math.min(Math.max(weeksSinceStart, 1), 15);
