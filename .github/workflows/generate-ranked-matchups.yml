@@ -88,18 +88,23 @@ jobs:
           git diff --staged --name-only
         fi
         
-    - name: Commit Ranked Matchups Updates
+    - name: Pull latest changes
       if: steps.changes.outputs.changed == 'true'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git pull origin main
+        echo "✅ Latest changes pulled successfully"
+        
+    - name: Commit Ranked Matchups Updates
+      if: steps.changes.outputs.changed == 'true'
+      run: |
+        git add -A
         git commit -m "🤖 Auto-update ranked matchups - $(date '+%Y-%m-%d %H:%M')"
         echo "✅ Ranked matchups committed successfully"
         
     - name: Push Changes
       if: steps.changes.outputs.changed == 'true'
       run: |
-        git add -A
-        git pull --rebase origin main
         git push origin main
         echo "✅ Changes pushed to repository"

@@ -30,14 +30,23 @@ jobs:
         cd graphics
         node scripts/generate-cfb-data-top25.mjs
         
-    - name: Commit and push changes
+    - name: Pull latest changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git pull origin main
+        echo "✅ Latest changes pulled successfully"
+        
+    - name: Commit changes
+      run: |
         git add cfb-data-top25-real.png cfb-data-top25-real.html
         git status
         git diff --staged --quiet || git commit -m "Generate CFB Data Top 25 graphic for Week $(date +%U)"
         git add -A
         git diff --staged --quiet || git commit -m "Update generated files for Week $(date +%U)"
-        git pull --rebase origin main
+        echo "✅ Changes committed successfully"
+        
+    - name: Push changes
+      run: |
         git push origin main
+        echo "✅ Changes pushed to repository"
