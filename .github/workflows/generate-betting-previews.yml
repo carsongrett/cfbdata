@@ -89,6 +89,27 @@ jobs:
         # Remove backup file
         rm public/cfb_queue_backup.json
         
+    - name: Clear betting preview IDs from tracking
+      run: |
+        echo "🧹 Clearing betting preview IDs from posted_ids.json..."
+        
+        # Clear betting preview IDs from tracking file
+        node -e "
+        const fs = require('fs');
+        try {
+          const data = JSON.parse(fs.readFileSync('posted_ids.json', 'utf8'));
+          const originalCount = data.ids ? data.ids.length : 0;
+          data.ids = data.ids ? data.ids.filter(id => !id.startsWith('betting_preview_')) : [];
+          const clearedCount = originalCount - data.ids.length;
+          fs.writeFileSync('posted_ids.json', JSON.stringify(data, null, 2));
+          console.log(\`✅ Cleared \${clearedCount} betting preview IDs from tracking\`);
+          console.log(\`✅ Kept \${data.ids.length} other IDs\`);
+        } catch (error) {
+          console.error('❌ Error clearing betting preview IDs:', error.message);
+          process.exit(1);
+        }
+        "
+        
     - name: Commit reset changes (if any)
       run: |
         git config --local user.email "action@github.com"
