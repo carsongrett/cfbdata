@@ -1,4 +1,5 @@
 name: Generate Betting Previews
+# Fixed workflow to clear tracking IDs before generation - prevents "already posted" messages
 
 on:
   schedule:
