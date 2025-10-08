@@ -58,6 +58,8 @@ The project includes a comprehensive graphics system that generates social media
 - **Team Leaders Graphics** - Top performing teams in statistical categories (rushing, passing, defense, etc.)
 - **Player Leaders Graphics** - Top performing individual players across various stats
 - **Undefeated/Winless Teams Graphics** - Power 5 teams that are undefeated or winless with team logos
+- **CFB Data Top 25** - Weekly ranking graphic showing all 25 teams with logos and team names
+- **Ranked Matchups** - Weekly graphic highlighting ranked vs ranked matchups
 
 ### Graphics Features
 - **Real Team Logos** - Uses actual team logo images from assets folder
@@ -72,6 +74,12 @@ The project includes a comprehensive graphics system that generates social media
 - **Output Files** - Generates PNG files ready for social media posting
 - **Asset Management** - Team logos and colors stored in `graphics/assets/` directory
 
+### Graphics Scheduling
+- **CFB Data Top 25** - Sundays at 8:00 PM CST (after poll data updates)
+- **Ranked Matchups** - Sundays at 7:00 PM CST (after poll data updates)
+- **Team/Player Leaders** - Fridays at 11:00 PM EST, Saturdays at 4:00 PM EST and 12:00 AM EST
+- **All graphics** - Integrate with poll cache for consistent week numbering
+
 See `graphics/README.md` for detailed graphics documentation and usage instructions.
 
 ## File Structure
@@ -79,6 +87,8 @@ See `graphics/README.md` for detailed graphics documentation and usage instructi
 ```
 ├── index.html                 # Web interface with tabs for different post types
 ├── posted_ids.json           # Tracks posted content to prevent duplicates
+├── cfb-data-top25-real.png   # Generated CFB Data Top 25 graphic
+├── ranked-matchups-real.png  # Generated ranked matchups graphic
 ├── public/
 │   ├── cfb_queue.json        # Generated posts queue (all types)
 │   ├── poll_cache.json       # Cached poll data for week-over-week comparisons
@@ -88,8 +98,13 @@ See `graphics/README.md` for detailed graphics documentation and usage instructi
 │   ├── generate_cfb_posts.mjs # Content generation script (final scores + polls)
 │   ├── generate_betting_previews.mjs # Betting preview generation script
 │   └── cache_betting_lines.mjs # Betting lines caching script
+├── graphics/
+│   ├── scripts/              # Graphics generation scripts
+│   └── assets/               # Team logos and graphics assets
 └── .github/workflows/
-    └── generate-cfb.yml      # Workflow to run all content generation
+    ├── generate-cfb.yml      # Workflow to run all content generation
+    ├── generate-cfb-data-top25.yml # CFB Data Top 25 graphic workflow
+    └── generate-ranked-matchups.yml # Ranked matchups graphic workflow
 ```
 
 ## Installation & Setup
