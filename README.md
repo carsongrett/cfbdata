@@ -74,6 +74,13 @@ The project includes a comprehensive graphics system that generates social media
 - **Output Files** - Generates PNG files ready for social media posting
 - **Asset Management** - Team logos and colors stored in `graphics/assets/` directory
 
+### Graphics Output Policy
+**IMPORTANT**: When editing any graphics and generating output or mock files:
+- **Primary Location**: All graphics outputs MUST be saved to `graphics/output/` folder
+- **Secondary Location**: If files need to be elsewhere for repo functionality, that's acceptable
+- **Requirement**: Always maintain a copy in `graphics/output/` folder for consistency
+- **Examples**: PNG files, HTML files, and any other graphics outputs should follow this pattern
+
 ### Graphics Scheduling
 - **CFB Data Top 25** - Sundays at 8:00 PM CST (after poll data updates)
 - **Ranked Matchups** - Sundays at 7:00 PM CST (after poll data updates)
