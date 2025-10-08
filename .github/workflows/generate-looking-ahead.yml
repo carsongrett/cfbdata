@@ -1,0 +1,116 @@
+name: Generate Looking Ahead Graphics
+
+on:
+  schedule:
+    # Generate looking ahead graphics on Tuesdays
+    # Tuesday 8:00 AM CST (2:00 PM UTC CDT / 3:00 PM UTC CST)
+    - cron: '0 14 * * 2'  # Tuesday 8am CT (CDT) - Tuesday 2pm UTC
+    - cron: '0 15 * * 2'  # Tuesday 8am CT (CST) - Tuesday 3pm UTC
+  workflow_dispatch:
+    inputs:
+      reset_posted_ids:
+        description: 'Reset posted_ids.json (for testing)'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  generate-looking-ahead:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: generate-looking-ahead-${{ github.ref }}
+      cancel-in-progress: false
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        cache-dependency-path: 'graphics/package-lock.json'
+        
+    - name: Install dependencies
+      run: |
+        cd graphics
+        npm install
+        
+    - name: Install Playwright browsers
+      run: |
+        cd graphics
+        npx playwright install chromium
+        
+    - name: Reset posted_ids.json (if requested)
+      if: ${{ inputs.reset_posted_ids == 'true' }}
+      run: |
+        echo '{"ids": []}' > posted_ids.json
+        echo "✅ Reset posted_ids.json"
+        
+    - name: Generate looking ahead graphics
+      run: |
+        cd graphics
+        echo "🎨 Generating looking ahead graphics..."
+        node scripts/generate-looking-ahead-real.mjs
+        echo "✅ Looking ahead graphics generated"
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        
+    - name: Move PNG files to root
+      run: |
+        cd graphics
+        echo "📁 Moving PNG files to root level..."
+        if [ -f "output/looking-ahead-sec.png" ]; then
+          cp output/looking-ahead-sec.png ../
+          echo "✅ Looking ahead SEC PNG moved to root level"
+        fi
+        if [ -f "output/looking-ahead-big-ten.png" ]; then
+          cp output/looking-ahead-big-ten.png ../
+          echo "✅ Looking ahead Big Ten PNG moved to root level"
+        fi
+        if [ -f "output/looking-ahead-big-12.png" ]; then
+          cp output/looking-ahead-big-12.png ../
+          echo "✅ Looking ahead Big 12 PNG moved to root level"
+        fi
+        
+    - name: List Generated Files
+      run: |
+        echo "📁 Generated files in root:"
+        ls -la looking-ahead*.png || echo "No looking ahead files found"
+        
+    - name: Check for Changes
+      id: changes
+      run: |
+        git add -f looking-ahead*.png
+        if git diff --staged --quiet; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "📝 No changes detected in looking ahead graphics"
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "📝 Changes detected in looking ahead graphics"
+          git diff --staged --name-only
+        fi
+        
+    - name: Pull latest changes
+      if: steps.changes.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git pull origin main
+        echo "✅ Latest changes pulled successfully"
+        
+    - name: Commit Looking Ahead Updates
+      if: steps.changes.outputs.changed == 'true'
+      run: |
+        git add -A
+        git commit -m "🤖 Auto-update looking ahead graphics - $(date '+%Y-%m-%d %H:%M')"
+        echo "✅ Looking ahead graphics committed successfully"
+        
+    - name: Push Changes
+      if: steps.changes.outputs.changed == 'true'
+      run: |
+        git push origin main
+        echo "✅ Changes pushed to repository"
