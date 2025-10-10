@@ -332,15 +332,16 @@ function generateHTML(gamesData, conferenceName) {
             grid-template-columns: 1fr auto 1fr;
             align-items: center;
             justify-items: stretch;
-            gap: 40px;
+            gap: 24px;
         }
         
         .team-section {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            gap: 8px;
+            justify-content: flex-end;
+            gap: 6px;
+            height: 100%;
         }
         
         .team-section.right {
@@ -348,7 +349,7 @@ function generateHTML(gamesData, conferenceName) {
         }
         
         .team-name {
-            font-size: 1rem;
+            font-size: 1.25rem;
             font-weight: 700;
             line-height: 1;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -356,8 +357,8 @@ function generateHTML(gamesData, conferenceName) {
         }
         
         .team-logo {
-            width: 160px;
-            height: 160px;
+            width: 150px;
+            height: 150px;
             object-fit: contain;
             flex-shrink: 0;
         }
@@ -368,7 +369,8 @@ function generateHTML(gamesData, conferenceName) {
             align-items: center;
             justify-content: center;
             text-align: center;
-            min-width: 140px;
+            min-width: 120px;
+            gap: 8px;
         }
         
         .team-record {
@@ -390,10 +392,10 @@ function generateHTML(gamesData, conferenceName) {
         }
         
         .rank-badge {
-            font-size: 1.1rem;
+            font-size: 1.25rem;
             font-weight: 800;
-            padding: 4px 12px;
-            border-radius: 12px;
+            padding: 6px 14px;
+            border-radius: 14px;
             background: rgba(255, 255, 255, 0.2);
         }
         
@@ -437,7 +439,7 @@ function generateHTML(gamesData, conferenceName) {
             </div>
             
             <!-- Games Grid -->
-            <div class="flex-1 grid grid-cols-1 gap-3">
+            <div class="flex-1 grid grid-cols-1 gap-0">
                 ${gamesHTML}
             </div>
         </div>
