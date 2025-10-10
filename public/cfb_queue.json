@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-09T18:22:03.839Z",
+  "generatedAt": "2025-10-10T02:55:52.153Z",
   "posts": [
     {
       "id": "ap_top10_week7",
@@ -468,6 +468,33 @@
       "expiresAt": "2025-10-10T18:22:04.314Z",
       "source": "cfbd",
       "generatedAt": "2025-10-09T18:22:04.314Z"
+    },
+    {
+      "id": "final_401757280",
+      "kind": "final",
+      "text": "FINAL: 35-7\nKennesaw State Owls - 35\nLouisiana Tech Bulldogs - 7\n\n(KENN): Dexter Williams II 27/36, 290 YDS, 4 TD\n\n#CFB",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757280",
+      "expiresAt": "2025-10-11T14:55:52.645Z",
+      "source": "espn",
+      "generatedAt": "2025-10-10T02:55:52.645Z"
+    },
+    {
+      "id": "final_401757278",
+      "kind": "final",
+      "text": "FINAL: 22-20\nMissouri State Bears - 22\nMiddle Tennessee Blue Raiders - 20\n\n(MOST): Deuce Bailey 16/31, 278 YDS, 1 TD\n(MTSU): Cam'ron Lacy 6 REC, 114 YDS, 2 TD\n\n#CFB",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757278",
+      "expiresAt": "2025-10-11T14:55:52.645Z",
+      "source": "espn",
+      "generatedAt": "2025-10-10T02:55:52.645Z"
+    },
+    {
+      "id": "final_401757277",
+      "kind": "final",
+      "text": "FINAL: 19-8\nLiberty Flames - 19\nUTEP Miners - 8\n\n(LIB): Ethan Vasko 19/33, 243 YDS\n\n#CFB #RiseWithUs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757277",
+      "expiresAt": "2025-10-11T14:55:52.645Z",
+      "source": "espn",
+      "generatedAt": "2025-10-10T02:55:52.645Z"
     }
   ]
 }
