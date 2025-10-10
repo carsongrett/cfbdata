@@ -438,26 +438,46 @@ function generateHTML(gamesData, conferenceName) {
     const spread = lines?.spread || 0;
     const overUnder = lines?.overUnder || 0;
     
-    // Use home team color with darker shade
-    const homeColor = homeTeamData?.primary || '#666666';
-    const darkerColor = darkenColor(homeColor, 0.3);
+    // Use conference-specific colors for professional look
+    const getConferenceColor = (conference) => {
+      const colors = {
+        'SEC': '#1E3A8A',           // SEC navy blue
+        'Big Ten': '#1E40AF',       // Big Ten dark blue  
+        'Big 12': '#B91C1C',        // Big 12 dark red
+        'ACC': '#166534',           // ACC dark green
+        'Pac-12': '#7C2D12',        // Pac-12 dark brown
+        'American Athletic': '#581C87', // American purple
+        'Mountain West': '#92400E', // Mountain West brown
+        'MAC': '#374151',           // MAC gray
+        'Sun Belt': '#059669',      // Sun Belt green
+        'C-USA': '#DC2626'          // C-USA red
+      };
+      return colors[conference] || '#1F2937'; // Default dark gray
+    };
+    
+    const conferenceColor = getConferenceColor(gameData.conference);
+    const darkerColor = darkenColor(conferenceColor, 0.2);
     
     return `<!-- Game ${index + 1}: ${awayTeam} @ ${homeTeam} -->
                 <div class="game-card rounded-lg px-8 shadow-lg" style="background: ${darkerColor};">
                     <div class="team-section">
-                        ${awayRank && awayRank !== 'NR' ? `<div class="rank-badge text-white mb-2">#${awayRank}</div>` : ''}
+                        ${awayRank && awayRank !== 'NR' ? `<div class="rank-badge text-white mb-2">#${awayRank}</div>` : '<div class="mb-2"></div>'}
                         <img src="${awayLogoUrl}" alt="${awayTeam}" class="team-logo">
                         <div class="team-name text-white mt-1">${awayTeam.toUpperCase()}</div>
                     </div>
                     <div class="center-section">
                         <div class="text-white text-5xl font-bold mb-3">@</div>
-                        <div class="spread text-white mb-1">${spread > 0 ? '+' : ''}${spread}</div>
-                        <div class="over-under text-white">O/U ${overUnder}</div>
+                        <div class="over-under text-white text-5xl font-bold">O/U ${overUnder}</div>
                     </div>
                     <div class="team-section right">
-                        ${homeRank && homeRank !== 'NR' ? `<div class="rank-badge text-white mb-2">#${homeRank}</div>` : ''}
-                        <img src="${homeLogoUrl}" alt="${homeTeam}" class="team-logo">
-                        <div class="team-name text-white mt-1">${homeTeam.toUpperCase()}</div>
+                        ${homeRank && homeRank !== 'NR' ? `<div class="rank-badge text-white mb-2">#${homeRank}</div>` : '<div class="mb-2"></div>'}
+                        <div class="flex items-center justify-center gap-4 mb-1">
+                            <div class="flex flex-col items-center">
+                                <img src="${homeLogoUrl}" alt="${homeTeam}" class="team-logo">
+                                <div class="team-name text-white mt-1">${homeTeam.toUpperCase()}</div>
+                            </div>
+                            <div class="spread text-white text-5xl font-bold">${spread > 0 ? '+' : ''}${spread}</div>
+                        </div>
                     </div>
                 </div>`;
   }).join('\n');
