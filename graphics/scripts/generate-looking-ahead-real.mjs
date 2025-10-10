@@ -306,6 +306,25 @@ function getTeamLogoPath(teamName) {
   return logoMappings[teamName] || null;
 }
 
+// Function to convert logo file to base64 data URL
+function getLogoAsDataUrl(logoPath) {
+  try {
+    const fullPath = path.join(__dirname, '..', 'assets', 'team icons', logoPath);
+    if (fs.existsSync(fullPath)) {
+      const logoBuffer = fs.readFileSync(fullPath);
+      const base64 = logoBuffer.toString('base64');
+      const extension = path.extname(logoPath).toLowerCase();
+      const mimeType = extension === '.png' ? 'image/png' : 
+                      extension === '.jpg' || extension === '.jpeg' ? 'image/jpeg' : 
+                      extension === '.gif' ? 'image/gif' : 'image/png';
+      return `data:${mimeType};base64,${base64}`;
+    }
+  } catch (error) {
+    console.log(`Error reading logo file ${logoPath}:`, error.message);
+  }
+  return null;
+}
+
 function generateTeamLetters(teamName, teamData) {
   // Extract initials from team name
   const words = teamName.split(' ');
@@ -426,9 +445,9 @@ function generateHTML(gamesData, conferenceName) {
     const homeLogoPath = getTeamLogoPath(homeTeam);
     const awayLogoPath = getTeamLogoPath(awayTeam);
     
-    // Generate team letter logos if no logo file exists
-    const homeLogoUrl = homeLogoPath ? `../assets/team icons/${homeLogoPath}` : generateTeamLetters(homeTeam, homeTeamData);
-    const awayLogoUrl = awayLogoPath ? `../assets/team icons/${awayLogoPath}` : generateTeamLetters(awayTeam, awayTeamData);
+    // Generate team logos as data URLs or fallback to team letters
+    const homeLogoUrl = homeLogoPath ? getLogoAsDataUrl(homeLogoPath) : generateTeamLetters(homeTeam, homeTeamData);
+    const awayLogoUrl = awayLogoPath ? getLogoAsDataUrl(awayLogoPath) : generateTeamLetters(awayTeam, awayTeamData);
     
     // Get rankings
     const homeRank = gameData.homeRank;
