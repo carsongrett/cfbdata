@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-11T04:39:55.406Z",
+  "generatedAt": "2025-10-11T19:07:34.214Z",
   "posts": [
     {
       "id": "ap_top10_week7",
@@ -468,6 +468,24 @@
       "expiresAt": "2025-10-10T18:22:04.314Z",
       "source": "cfbd",
       "generatedAt": "2025-10-09T18:22:04.314Z"
+    },
+    {
+      "id": "final_401752862",
+      "kind": "final",
+      "text": "FINAL: 38-19\nWashington Huskies - 38\nRutgers Scarlet Knights - 19\n\n(RUTG): Ian Strong 7 REC, 124 YDS\n(WASH): Demond Williams Jr. 21/27, 402 YDS, 2 TD\n\n#CFB #PurpleReign",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752862",
+      "expiresAt": "2025-10-13T07:07:34.941Z",
+      "source": "espn",
+      "generatedAt": "2025-10-11T19:07:34.941Z"
+    },
+    {
+      "id": "final_401760388",
+      "kind": "final",
+      "text": "FINAL: 49-21\nColorado State Rams - 49\nFresno State Bulldogs - 21\n\n(FRES): E.J. Warner 28/49, 350 YDS, 3 TD, 3 INT\n(CSU): Justin Marshall 7 CAR, 93 YDS, 1 TD\n\n#CFB #Stalwart",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760388",
+      "expiresAt": "2025-10-13T07:07:34.941Z",
+      "source": "espn",
+      "generatedAt": "2025-10-11T19:07:34.941Z"
     }
   ]
 }
