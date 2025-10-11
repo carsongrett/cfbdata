@@ -468,42 +468,6 @@
       "expiresAt": "2025-10-10T18:22:04.314Z",
       "source": "cfbd",
       "generatedAt": "2025-10-09T18:22:04.314Z"
-    },
-    {
-      "id": "final_401762480",
-      "kind": "final",
-      "text": "FINAL: 26-19\nTulane Green Wave - 26\nEast Carolina Pirates - 19\n\n(ECU): Marlon Gunn Jr. 10 CAR, 52 YDS\n(TULN): Jake Retzlaff 26/36, 347 YDS, 2 TD\n\n#CFB #RollWave",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762480",
-      "expiresAt": "2025-10-12T14:10:52.748Z",
-      "source": "espn",
-      "generatedAt": "2025-10-11T02:10:52.748Z"
-    },
-    {
-      "id": "final_401757279",
-      "kind": "final",
-      "text": "FINAL: 29-27\nJacksonville State Gamecocks - 29\nSam Houston Bearkats - 27\n\n(JVST): Cam Cook 31 CAR, 218 YDS, 2 TD\n(SHSU): Hunter Watson 12/19, 136 YDS, 3 TD\n\n#CFB #GoGamecocks",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757279",
-      "expiresAt": "2025-10-12T14:10:52.748Z",
-      "source": "espn",
-      "generatedAt": "2025-10-11T02:10:52.748Z"
-    },
-    {
-      "id": "final_401761622",
-      "kind": "final",
-      "text": "FINAL: 38-35\nSouthern Miss Golden Eagles - 38\nGeorgia Southern Eagles - 35\n\n(USM): Jeffery Pittman 31 CAR, 140 YDS, 2 TD\n(GASO): JC French IV 24/43, 313 YDS, 2 TD, 3 INT\n\n#Shootout #CFB #ToTheTop",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761622",
-      "expiresAt": "2025-10-12T14:10:52.748Z",
-      "source": "espn",
-      "generatedAt": "2025-10-11T02:10:52.748Z"
-    },
-    {
-      "id": "final_401762481",
-      "kind": "final",
-      "text": "FINAL: 63-36\n#24 South Florida Bulls - 63\nNorth Texas Mean Green - 36\n\n(USF): Byrum Brown 21 CAR, 82 YDS, 2 TD\n(UNT): Drew Mestemaker 30/48, 326 YDS, 2 TD, 3 INT\n\n#Shootout #CFB",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762481",
-      "expiresAt": "2025-10-12T16:39:55.820Z",
-      "source": "espn",
-      "generatedAt": "2025-10-11T04:39:55.820Z"
     }
   ]
 }
