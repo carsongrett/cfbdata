@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-12T20:37:47.118Z",
+  "generatedAt": "2025-10-12T22:19:00.246Z",
   "posts": [
     {
       "id": "betting_preview_week7_401752736",
@@ -429,45 +429,45 @@
       "kind": "poll_top10",
       "text": "AP Top 10 - Week 7\n1. Ohio State\n2. Miami\n3. Oregon\n4. Ole Miss\n5. Texas A&M\n6. Oklahoma\n7. Indiana\n8. Alabama\n9. Texas Tech\n10. Georgia\n\n#APTop25 #CFB",
       "link": "",
-      "expiresAt": "2025-10-19T20:37:49.683Z",
+      "expiresAt": "2025-10-19T22:19:01.722Z",
       "source": "cfbd",
-      "generatedAt": "2025-10-12T20:37:49.683Z"
+      "generatedAt": "2025-10-12T22:19:01.722Z"
     },
     {
       "id": "ap_movers_week7",
       "kind": "poll_movers",
       "text": "AP Poll Movers - Week 7\n⬇️-8 Iowa State (14→22)\n⬇️-7 Florida State (18→25)\n⬆️+5 Missouri (19→14)\n⬆️+5 Michigan (20→15)\n⬆️+5 Notre Dame (21→16)\n⬆️+5 Illinois (22→17)\n⬆️+5 BYU (23→18)\nNEW: #23 Memphis\nNEW: #24 South Florida\n\n#APTop25 #CFB",
       "link": "",
-      "expiresAt": "2025-10-19T20:37:49.684Z",
+      "expiresAt": "2025-10-19T22:19:01.723Z",
       "source": "cfbd",
-      "generatedAt": "2025-10-12T20:37:49.684Z"
+      "generatedAt": "2025-10-12T22:19:01.723Z"
     },
     {
       "id": "coaches_top10_week7",
       "kind": "poll_top10",
       "text": "Coaches Poll Top 10 - Week 7\n1. Ohio State\n2. Oregon\n3. Miami\n4. Ole Miss\n5. Texas A&M\n6. Oklahoma\n7. Indiana\n8. Alabama\n9. Georgia\n10. Texas Tech\n\n#CoachesPoll #CFB",
       "link": "",
-      "expiresAt": "2025-10-19T20:37:51.880Z",
+      "expiresAt": "2025-10-19T22:19:04.030Z",
       "source": "cfbd",
-      "generatedAt": "2025-10-12T20:37:51.880Z"
+      "generatedAt": "2025-10-12T22:19:04.030Z"
     },
     {
       "id": "coaches_movers_week7",
       "kind": "poll_movers",
       "text": "Coaches Poll Movers - Week 7\n⬇️-16 Penn State (6→22)\n⬇️-12 Texas (7→19)\n⬇️-9 Iowa State (12→21)\n⬆️+5 Michigan (20→15)\n⬆️+5 Notre Dame (21→16)\n⬆️+5 Illinois (22→17)\n⬆️+5 BYU (23→18)\nNEW: #24 Virginia\nNEW: #25 Memphis\n\n#CoachesPoll #CFB",
       "link": "",
-      "expiresAt": "2025-10-19T20:37:51.880Z",
+      "expiresAt": "2025-10-19T22:19:04.030Z",
       "source": "cfbd",
-      "generatedAt": "2025-10-12T20:37:51.880Z"
+      "generatedAt": "2025-10-12T22:19:04.030Z"
     },
     {
       "id": "sp_top10_week7",
       "kind": "poll_top10",
       "text": "SP+ Power Rankings - Week 7\n1. Ohio State (27.6)\n2. Oregon (25.1)\n3. Indiana (24.6)\n4. Texas Tech (24.6)\n5. Texas A&M (22.2)\n6. Ole Miss (21.5)\n7. Oklahoma (21.5)\n8. Missouri (21.5)\n9. Notre Dame (21.3)\n10. Texas (21.1)\n\n#SPPlus #CFB",
       "link": "",
-      "expiresAt": "2025-10-19T20:37:54.833Z",
+      "expiresAt": "2025-10-19T22:19:06.305Z",
       "source": "cfbd",
-      "generatedAt": "2025-10-12T20:37:54.833Z"
+      "generatedAt": "2025-10-12T22:19:06.305Z"
     }
   ]
 }
