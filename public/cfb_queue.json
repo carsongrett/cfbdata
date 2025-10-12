@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-12T03:45:15.279Z",
+  "generatedAt": "2025-10-12T04:39:03.422Z",
   "posts": [
     {
       "id": "ap_top10_week7",
@@ -837,6 +837,33 @@
       "expiresAt": "2025-10-13T15:45:15.658Z",
       "source": "espn",
       "generatedAt": "2025-10-12T03:45:15.658Z"
+    },
+    {
+      "id": "final_401752731",
+      "kind": "final",
+      "text": "FINAL: 20-10\n#10 Georgia Bulldogs - 20\nAuburn Tigers - 10\n\n(UGA): Gunner Stockton 24/37, 217 YDS\n(AUB): Jackson Arnold 13 CAR, 55 YDS, 1 TD\n\n#CFB #GoDawgs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752731",
+      "expiresAt": "2025-10-13T16:39:04.011Z",
+      "source": "espn",
+      "generatedAt": "2025-10-12T04:39:04.011Z"
+    },
+    {
+      "id": "final_401752732",
+      "kind": "final",
+      "text": "FINAL: 20-10\n#11 LSU Tigers - 20\nSouth Carolina Gamecocks - 10\n\n(SC): Matt Fuller 7 CAR, 83 YDS, 1 TD\n(LSU): Garrett Nussmeier 20/33, 254 YDS, 2 TD, 2 INT\n\n#CFB #GeauxTigers",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752732",
+      "expiresAt": "2025-10-13T16:39:04.011Z",
+      "source": "espn",
+      "generatedAt": "2025-10-12T04:39:04.011Z"
+    },
+    {
+      "id": "final_401761627",
+      "kind": "final",
+      "text": "FINAL: 48-41\nTroy Trojans - 48\nTexas State Bobcats - 41\n\n(TROY): Tucker Kilcrease 30/39, 415 YDS, 5 TD\n(TXST): Greg Burrell 13 CAR, 136 YDS, 1 TD\n\n#Shootout #CFB #OneTROY",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761627",
+      "expiresAt": "2025-10-13T16:39:04.011Z",
+      "source": "espn",
+      "generatedAt": "2025-10-12T04:39:04.011Z"
     }
   ]
 }
