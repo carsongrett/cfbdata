@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-12T02:43:05.357Z",
+  "generatedAt": "2025-10-12T03:22:12.098Z",
   "posts": [
     {
       "id": "ap_top10_week7",
@@ -765,6 +765,15 @@
       "expiresAt": "2025-10-13T14:13:23.985Z",
       "source": "espn",
       "generatedAt": "2025-10-12T02:13:23.985Z"
+    },
+    {
+      "id": "final_401761623",
+      "kind": "final",
+      "text": "FINAL: 23-8\nCoastal Carolina Chanticleers - 23\nUL Monroe Warhawks - 8\n\n(ULM): Aidan Armenta 14/28, 176 YDS, 1 TD, 1 INT\n(CCU): Samari Collier 11 CAR, 86 YDS, 1 TD\n\n#CFB #TealNation",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761623",
+      "expiresAt": "2025-10-13T15:22:12.709Z",
+      "source": "espn",
+      "generatedAt": "2025-10-12T03:22:12.709Z"
     }
   ]
 }
