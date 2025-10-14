@@ -1,6 +1,6 @@
 // scripts/generate_polls_only.mjs
 import fs from "node:fs";
-import { getCurrentWeekFromDate } from "./week-utils.mjs";
+import { getCurrentWeek } from "./week-utils.mjs";
 
 // --- CONFIG ---
 const CFBD_API_KEY = process.env.CFBD_API_KEY;
@@ -63,9 +63,14 @@ async function processAPPoll() {
   try {
     // Get current season and week
     const currentSeason = new Date().getFullYear(); // 2025
-    const currentWeek = getCurrentWeekFromDate();
+    const currentWeek = await getCurrentWeek(currentSeason);
     
-    console.log(`Using Week ${currentWeek} for polls (date-based calculation)`);
+    if (!currentWeek) {
+      console.log("No current week found, skipping AP poll");
+      return [];
+    }
+    
+    console.log(`Using Week ${currentWeek} for polls (API-based - most recent with data)`);
 
     // Always fetch fresh data instead of using cache
     console.log(`Fetching fresh AP poll data for Week ${currentWeek}`);
@@ -136,9 +141,14 @@ async function processCoachesPoll() {
   try {
     // Get current season and week
     const currentSeason = new Date().getFullYear(); // 2025
-    const currentWeek = getCurrentWeekFromDate();
+    const currentWeek = await getCurrentWeek(currentSeason);
     
-    console.log(`Using Week ${currentWeek} for polls (date-based calculation)`);
+    if (!currentWeek) {
+      console.log("No current week found, skipping Coaches poll");
+      return [];
+    }
+    
+    console.log(`Using Week ${currentWeek} for polls (API-based - most recent with data)`);
 
     // Always fetch fresh data instead of using cache
     console.log(`Fetching fresh Coaches poll data for Week ${currentWeek}`);
@@ -209,9 +219,14 @@ async function processSPRatings() {
   try {
     // Get current season and week
     const currentSeason = new Date().getFullYear(); // 2025
-    const currentWeek = getCurrentWeekFromDate();
+    const currentWeek = await getCurrentWeek(currentSeason);
     
-    console.log(`Using Week ${currentWeek} for polls (date-based calculation)`);
+    if (!currentWeek) {
+      console.log("No current week found, skipping SP+ ratings");
+      return [];
+    }
+    
+    console.log(`Using Week ${currentWeek} for polls (API-based - most recent with data)`);
 
     // Always fetch fresh data instead of using cache
     console.log(`Fetching fresh SP+ ratings data for Week ${currentWeek}`);
