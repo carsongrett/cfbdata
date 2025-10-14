@@ -45,9 +45,13 @@ function getTeamLogoPath(teamName) {
   // Team name mappings to actual logo file names
   const logoMappings = {
     'Alabama': 'Alabama_Crimson_Tide_logo-300x300.png',
+    'Alabama Crimson Tide': 'Alabama_Crimson_Tide_logo-300x300.png',
     'Auburn': 'Auburn_Tigers_logo-300x300.png',
+    'Auburn Tigers': 'Auburn_Tigers_logo-300x300.png',
     'Florida': 'Florida_Gators_logo-300x300.png',
+    'Florida Gators': 'Florida_Gators_logo-300x300.png',
     'Georgia': 'Georgia_Bulldogs_logo-300x300.png',
+    'Georgia Bulldogs': 'Georgia_Bulldogs_logo-300x300.png',
     'Kentucky': 'Kentucky_Wildcats_logo-300x300.png',
     'LSU': 'LSU_Tigers-300x300.png',
     'Mississippi State': 'Mississippi_State_Bulldogs_logo-300x300.png',
@@ -56,7 +60,9 @@ function getTeamLogoPath(teamName) {
     'South Carolina': 'South_Carolina_Gamecocks_logo-300x300.png',
     'Tennessee': 'Tennessee_Volunteers_logo-300x300.png',
     'Texas': 'Texas_Longhorns_logo-300x300.png',
+    'Texas Longhorns': 'Texas_Longhorns_logo-300x300.png',
     'Texas A&M': 'Texas_AM_University_logo-300x300.png',
+    'Texas A&M Aggies': 'Texas_AM_University_logo-300x300.png',
     'Vanderbilt': 'Vanderbilt_Commodores_logo-300x300.png',
     'Oklahoma': 'Oklahoma_Sooners_logo-300x300.png',
     'Arkansas': 'Arkansas_Razorbacks_logo-300x300.png',
@@ -66,12 +72,16 @@ function getTeamLogoPath(teamName) {
     'Iowa': 'Iowa_Hawkeyes_logo-300x300.png',
     'Maryland': 'Maryland_Terrapins_logo-300x300.png',
     'Michigan': 'Michigan_Wolverines_logo-300x300.png',
+    'Michigan Wolverines': 'Michigan_Wolverines_logo-300x300.png',
     'Michigan State': 'Michigan_State_Spartans_logo-300x300.png',
+    'Michigan State Spartans': 'Michigan_State_Spartans_logo-300x300.png',
     'Minnesota': 'Minnesota_Golden_Gophers_logo-300x300.png',
     'Nebraska': 'Nebraska_Cornhuskers_logo-300x300.png',
     'Northwestern': 'Northwestern_Wildcats_logo-300x300.png',
     'Ohio State': 'Ohio_State_Buckeyes_logo-300x300.png',
+    'Ohio State Buckeyes': 'Ohio_State_Buckeyes_logo-300x300.png',
     'Penn State': 'Penn_State_Nittany_Lions_logo-300x300.png',
+    'Penn State Nittany Lions': 'Penn_State_Nittany_Lions_logo-300x300.png',
     'Purdue': 'Purdue_Boilermakers_logo-300x300.png',
     'Rutgers': 'Rutgers_Scarlet_Knights_logo-300x300.png',
     'Wisconsin': 'Wisconsin_Badgers_logo-300x300.png',
@@ -120,8 +130,10 @@ function getTeamLogoPath(teamName) {
     
     // Group of 5 teams
     'Memphis': 'Memphis_Tigers_logo-300x300.png',
+    'Memphis Tigers': 'Memphis_Tigers_logo-300x300.png',
     'USF': 'South_Florida_Bulls_logo-300x300.png',
-    'South Florida': 'South_Florida_Bulls_logo-300x300.png'
+    'South Florida': 'South_Florida_Bulls_logo-300x300.png',
+    'South Florida Bulls': 'South_Florida_Bulls_logo-300x300.png'
   };
   
   return logoMappings[teamName] || null;
@@ -162,7 +174,7 @@ function generateHTML(data, teamIdMapping = null) {
         
         .team-bar {
             height: 70px;
-            background: linear-gradient(135deg, #e0e0e0 0%, #d3d3d3 100%) !important;
+            background: linear-gradient(135deg, #8a9ba8 0%, #708090 100%) !important;
         }
         
         .rank-number {
@@ -218,8 +230,8 @@ function generateHTML(data, teamIdMapping = null) {
         }
     </style>
 </head>
-<body class="m-0 p-0" style="background: #d3d3d3;">
-    <div class="w-[1000px] h-[1000px] relative overflow-hidden" style="background: #d3d3d3;">
+<body class="m-0 p-0" style="background: #708090;">
+    <div class="w-[1000px] h-[1000px] relative overflow-hidden" style="background: #708090;">
         <!-- Main Content Container -->
         <div class="p-8 h-full flex flex-col">
             <!-- Header -->

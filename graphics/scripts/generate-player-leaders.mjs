@@ -387,7 +387,7 @@ function generatePlayerHTML(data) {
         
         .player-bar {
             height: 70px;
-            background: linear-gradient(135deg, #e0e0e0 0%, #d3d3d3 100%) !important;
+            background: linear-gradient(135deg, #8a9ba8 0%, #708090 100%) !important;
         }
         
         .rank-number {
