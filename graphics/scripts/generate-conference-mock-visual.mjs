@@ -74,7 +74,12 @@ function getTeamLogoPath(teamName) {
     'Washington State': 'Washington_State_Cougars_logo-300x300.png',
     'Colorado': 'Colorado_Buffaloes_logo-300x300.png',
     'California': 'California_Golden_Bears_logo-300x300.png',
-    'Utah': 'Utah_Utes_logo-300x300.png'
+    'Utah': 'Utah_Utes_logo-300x300.png',
+    
+    // Group of 5 teams
+    'Memphis': 'Memphis_Tigers_logo-300x300.png',
+    'USF': 'South_Florida_Bulls_logo-300x300.png',
+    'South Florida': 'South_Florida_Bulls_logo-300x300.png'
   };
   
   return logoMappings[teamName] || null;
@@ -151,7 +156,7 @@ function generateHTML(conference, teams) {
         
         .team-bar {
             height: ${layout.teamBarHeight};
-            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%) !important;
+            background: linear-gradient(135deg, #e0e0e0 0%, #d3d3d3 100%) !important;
         }
         
         .rank-number {
@@ -228,8 +233,8 @@ function generateHTML(conference, teams) {
         }
     </style>
 </head>
-<body class="m-0 p-0" style="background: #1a1a1a;">
-    <div class="w-[1000px] h-[1000px] relative overflow-hidden" style="background: #1a1a1a;">
+<body class="m-0 p-0" style="background: #d3d3d3;">
+    <div class="w-[1000px] h-[1000px] relative overflow-hidden" style="background: #d3d3d3;">
         <div class="p-8 h-full flex flex-col">
             <!-- Header -->
             <div class="mb-6 p-4 rounded-lg relative" style="background-color: #ffffff;">

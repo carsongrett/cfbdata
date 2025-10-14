@@ -300,7 +300,12 @@ function getTeamLogoPath(teamName) {
     'New Mexico State': 'New_Mexico_State_Aggies_logo-300x300.png',
     'UMass': 'UMass_Minutemen_logo-300x300.png',
     'Connecticut': 'Connecticut_Huskies_logo-300x300.png',
-    'James Madison': 'James_Madison_Dukes_logo-300x300.png'
+    'James Madison': 'James_Madison_Dukes_logo-300x300.png',
+    
+    // Group of 5 teams
+    'Memphis': 'Memphis_Tigers_logo-300x300.png',
+    'USF': 'South_Florida_Bulls_logo-300x300.png',
+    'South Florida': 'South_Florida_Bulls_logo-300x300.png'
   };
   
   return logoMappings[teamName] || null;

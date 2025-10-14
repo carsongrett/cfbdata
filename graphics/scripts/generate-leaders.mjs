@@ -116,7 +116,12 @@ function getTeamLogoPath(teamName) {
     'SMU': 'SMU_Mustang_logo-300x300.png',
     
     'Oregon State': 'Oregon_State_Beavers_logo-300x300.png',
-    'Washington State': 'Washington_State_Cougars_logo-300x300.png'
+    'Washington State': 'Washington_State_Cougars_logo-300x300.png',
+    
+    // Group of 5 teams
+    'Memphis': 'Memphis_Tigers_logo-300x300.png',
+    'USF': 'South_Florida_Bulls_logo-300x300.png',
+    'South Florida': 'South_Florida_Bulls_logo-300x300.png'
   };
   
   return logoMappings[teamName] || null;
@@ -157,7 +162,7 @@ function generateHTML(data, teamIdMapping = null) {
         
         .team-bar {
             height: 70px;
-            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%) !important;
+            background: linear-gradient(135deg, #e0e0e0 0%, #d3d3d3 100%) !important;
         }
         
         .rank-number {
@@ -213,8 +218,8 @@ function generateHTML(data, teamIdMapping = null) {
         }
     </style>
 </head>
-<body class="m-0 p-0" style="background: #1a1a1a;">
-    <div class="w-[1000px] h-[1000px] relative overflow-hidden" style="background: #1a1a1a;">
+<body class="m-0 p-0" style="background: #d3d3d3;">
+    <div class="w-[1000px] h-[1000px] relative overflow-hidden" style="background: #d3d3d3;">
         <!-- Main Content Container -->
         <div class="p-8 h-full flex flex-col">
             <!-- Header -->
