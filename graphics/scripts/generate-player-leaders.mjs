@@ -8,7 +8,14 @@ const __dirname = path.dirname(__filename);
 
 // CFBD API configuration
 const CFBD_BASE = 'https://api.collegefootballdata.com';
-const API_KEY = process.env.CFBD_API_KEY || 'vWJ5SPrCVwGbFMQEb+qepkkcU+GVRy+cQLg6QqN2v0+1DHxVEPDUR01WWulIfji2';
+const API_KEY = process.env.CFBD_API_KEY;
+
+// Validate API key is set
+if (!API_KEY) {
+  console.error('❌ ERROR: CFBD_API_KEY environment variable is not set');
+  console.error('Please set your API key: export CFBD_API_KEY=your_key_here');
+  process.exit(1);
+}
 
 // Player stats we want to track (using correct CFBD API stat types)
 const PLAYER_STATS = [
@@ -89,15 +96,29 @@ async function filterPower5Players(players) {
   return power5Players;
 }
 
+// Track missing team logos for reporting
+const missingLogos = new Set();
+
 // Function to encode image to base64
-function encodeImageToBase64(imagePath) {
+function encodeImageToBase64(imagePath, teamName = null) {
   try {
+    if (!fs.existsSync(imagePath)) {
+      if (teamName) {
+        missingLogos.add(teamName);
+        console.warn(`⚠️ Logo file not found for ${teamName}: ${imagePath}`);
+      }
+      return null;
+    }
+    
     const imageBuffer = fs.readFileSync(imagePath);
     const base64 = imageBuffer.toString('base64');
     const ext = path.extname(imagePath).toLowerCase();
     const mimeType = ext === '.png' ? 'image/png' : 'image/jpeg';
     return `data:${mimeType};base64,${base64}`;
   } catch (error) {
+    if (teamName) {
+      missingLogos.add(teamName);
+    }
     console.warn(`⚠️ Could not load image ${imagePath}:`, error.message);
     return null;
   }
@@ -182,7 +203,32 @@ function getTeamLogoPath(teamName) {
     'Washington State': 'Washington_State_Cougars_logo-300x300.png'
   };
   
-  return logoMappings[teamName] || null;
+  const logoFileName = logoMappings[teamName];
+  if (!logoFileName) {
+    console.warn(`⚠️ No logo mapping found for team: ${teamName}`);
+    return null;
+  }
+  
+  return logoFileName;
+}
+
+// Function to create a fallback logo placeholder SVG
+function createFallbackLogo(teamName, backgroundColor) {
+  const initials = teamName
+    .split(' ')
+    .map(word => word[0])
+    .join('')
+    .toUpperCase()
+    .slice(0, 2);
+  
+  const svg = `<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+    <rect width="60" height="60" fill="${backgroundColor}" opacity="0.2"/>
+    <text x="30" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+          fill="${backgroundColor}" text-anchor="middle">${initials}</text>
+  </svg>`;
+  
+  const base64 = Buffer.from(svg).toString('base64');
+  return `data:image/svg+xml;base64,${base64}`;
 }
 
 // Process player stats from API response
@@ -303,6 +349,19 @@ async function createPlayerLeadersData(stat, players, getTeamRecord) {
 
 // Generate HTML for player leaders
 function generatePlayerHTML(data) {
+  // Determine if this stat shows both total and per-game values
+  const statConfig = {
+    rushingYards: { showBoth: true },
+    rushingTDs: { showBoth: false },
+    passingYards: { showBoth: true },
+    passingTDs: { showBoth: false },
+    receivingYards: { showBoth: true },
+    receivingTDs: { showBoth: false },
+    sacks: { showBoth: false }
+  };
+  
+  const config = statConfig[data.type];
+  const useCompactFont = config && config.showBoth;
   // Try to load and encode the CFB Data logo
   const logoPath = path.join(__dirname, '..', 'assets', 'x_logo.png');
   let logoDataUrl = null;
@@ -323,6 +382,7 @@ function generatePlayerHTML(data) {
     <title>CFB Player Leaders</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
@@ -340,6 +400,13 @@ function generatePlayerHTML(data) {
         
         .player-name {
             font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .player-name-compact {
+            font-size: 2.8rem;
             font-weight: 800;
             line-height: 1;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -420,8 +487,8 @@ function generatePlayerHTML(data) {
         }
     </style>
 </head>
-<body class="m-0 p-0" style="background: #1a1a1a;">
-    <div class="w-[1000px] h-[1000px] relative overflow-hidden" style="background: #1a1a1a;">
+<body class="m-0 p-0" style="background: #3a3a3a;">
+    <div class="w-[1200px] h-[1000px] relative overflow-hidden" style="background: #3a3a3a;">
         <!-- Main Content Container -->
         <div class="p-8 h-full flex flex-col">
         
@@ -449,27 +516,34 @@ function generatePlayerHTML(data) {
                   const teamInfo = getTeamInfo(player.team);
                   const backgroundColor = teamInfo ? teamInfo.primary : '#666666';
                   
-                  // Get team logo
+                  // Get team logo with better error handling
                   const logoFileName = getTeamLogoPath(player.team);
-                  const logoPath = logoFileName ? path.join(__dirname, '..', 'assets', 'team icons', logoFileName) : null;
-                  const logoDataUrl = logoPath && fs.existsSync(logoPath) ? encodeImageToBase64(logoPath) : null;
+                  let logoDataUrl = null;
                   
-                  let logoHtml = '';
-                  if (logoDataUrl) {
-                    logoHtml = `<img src="${logoDataUrl}" alt="${player.team} Logo" class="w-12 h-12 mr-3 object-contain" style="filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));">`;
+                  if (logoFileName) {
+                    const logoPath = path.join(__dirname, '..', 'assets', 'team icons', logoFileName);
+                    logoDataUrl = encodeImageToBase64(logoPath, player.team);
                   }
                   
-                  // Use full player name
+                  // Use fallback logo if real logo not available
+                  if (!logoDataUrl) {
+                    logoDataUrl = createFallbackLogo(player.team, backgroundColor);
+                  }
+                  
+                  const logoHtml = `<img src="${logoDataUrl}" alt="${player.team} Logo" class="w-12 h-12 mr-3 object-contain" style="filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));">`;
+                  
+                  // Use full player name with conditional font size
                   const displayName = player.name.toUpperCase();
+                  const playerNameClass = useCompactFont ? 'player-name-compact' : 'player-name';
                   
                   return `<!-- Player ${player.rank} -->
-                <div class="player-bar rounded-lg flex items-center px-4 shadow-lg" style="border: 3px solid ${backgroundColor};">
+                <div class="player-bar rounded-lg flex items-center px-6 shadow-lg" style="border: 3px solid ${backgroundColor};">
                     <div class="rank-number text-white mr-8">${player.rank}</div>
                     <div class="mr-6">${logoHtml}</div>
                     <div class="flex-1">
-                        <div class="player-name text-white">${displayName}</div>
+                        <div class="${playerNameClass} text-white">${displayName}</div>
                     </div>
-                    <div class="text-white text-5xl font-bold">${player.value}</div>
+                    <div class="text-white text-5xl font-bold ml-4">${player.value}</div>
                 </div>`;
                 }).join('\n')}
         </div>
@@ -492,7 +566,7 @@ async function generatePNG(data, outputPath) {
   const page = await browser.newPage();
   
   // Set viewport to match our graphic dimensions
-  await page.setViewportSize({ width: 1000, height: 1000 });
+  await page.setViewportSize({ width: 1200, height: 1000 });
   
   // Generate HTML content
   const htmlContent = generatePlayerHTML(data);
@@ -647,6 +721,18 @@ async function main() {
     
     console.log('\n🎉 All player graphics generated successfully!');
     console.log('📁 Check the output folder for HTML and PNG files');
+    
+    // Report missing logos
+    if (missingLogos.size > 0) {
+      console.log('\n⚠️  MISSING LOGOS REPORT:');
+      console.log(`Found ${missingLogos.size} team(s) with missing logo files:`);
+      missingLogos.forEach(team => {
+        console.log(`   - ${team}`);
+      });
+      console.log('Note: Fallback logos (team initials) were used for these teams.');
+    } else {
+      console.log('\n✅ All team logos loaded successfully!');
+    }
     
   } catch (error) {
     console.error('💥 Error generating player graphics:', error);

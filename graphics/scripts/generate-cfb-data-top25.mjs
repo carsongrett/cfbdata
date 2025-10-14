@@ -256,7 +256,7 @@ function generateHTMLTemplate(teams, week) {
     <title>CFB Data's Top 25 - Week ${week}</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
         
         body {
             font-family: 'Inter', sans-serif;
@@ -311,7 +311,7 @@ function generateHTMLTemplate(teams, week) {
         }
         
         .team-name {
-            font-family: 'Oswald', sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 16px;
             font-weight: 700;
             text-align: center;
@@ -388,7 +388,7 @@ function generateHTMLTemplate(teams, week) {
                 <div class="team-image" style="background: linear-gradient(135deg, ${teamColor} 0%, ${teamColor}CC 100%); display: flex; align-items: center; justify-content: center;">
                     ${logoDataUrl ? 
                       `<img src="${logoDataUrl}" alt="${team.school} Logo" style="width: 85%; height: 85%; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));" />` :
-                      `<div class="text-6xl font-black text-white" style="font-family: 'Oswald', sans-serif;">${teamAbbr}</div>`
+                      `<div class="text-6xl font-black text-white" style="font-family: 'Inter', sans-serif;">${teamAbbr}</div>`
                     }
                 </div>
                 <div class="team-name">${team.school.toUpperCase()}</div>

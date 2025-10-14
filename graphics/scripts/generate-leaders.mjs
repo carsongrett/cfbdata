@@ -149,10 +149,10 @@ function generateHTML(data, teamIdMapping = null) {
     <title>CFB Leaders</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
         
         body {
-            font-family: 'Oswald', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
         
         .team-bar {
