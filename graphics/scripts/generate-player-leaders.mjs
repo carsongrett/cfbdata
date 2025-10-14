@@ -8,14 +8,7 @@ const __dirname = path.dirname(__filename);
 
 // CFBD API configuration
 const CFBD_BASE = 'https://api.collegefootballdata.com';
-const API_KEY = process.env.CFBD_API_KEY;
-
-// Validate API key is set
-if (!API_KEY) {
-  console.error('❌ ERROR: CFBD_API_KEY environment variable is not set');
-  console.error('Please set your API key: export CFBD_API_KEY=your_key_here');
-  process.exit(1);
-}
+const API_KEY = process.env.CFBD_API_KEY || 'vWJ5SPrCVwGbFMQEb+qepkkcU+GVRy+cQLg6QqN2v0+1DHxVEPDUR01WWulIfji2';
 
 // Player stats we want to track (using correct CFBD API stat types)
 const PLAYER_STATS = [
