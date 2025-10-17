@@ -504,51 +504,6 @@
       "expiresAt": "2025-10-17T18:22:43.473Z",
       "source": "cfbd",
       "generatedAt": "2025-10-16T18:22:43.473Z"
-    },
-    {
-      "id": "final_401757282",
-      "kind": "final",
-      "text": "FINAL: 30-27\nLiberty Flames - 30\nNew Mexico State Aggies - 27\n\n(NMSU): Logan Fife 20/37, 242 YDS, 2 TD\n\n#CFB #RiseWithUs",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757282",
-      "expiresAt": "2025-10-18T14:56:50.843Z",
-      "source": "espn",
-      "generatedAt": "2025-10-17T02:56:50.843Z"
-    },
-    {
-      "id": "final_401761628",
-      "kind": "final",
-      "text": "FINAL: 15-14\nArkansas State Red Wolves - 15\nSouth Alabama Jaguars - 14\n\n(ARST): Jaylen Raynor 29/45, 209 YDS, 1 TD, 1 INT\n\n#CFB #WolvesUp",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761628",
-      "expiresAt": "2025-10-18T14:56:50.843Z",
-      "source": "espn",
-      "generatedAt": "2025-10-17T02:56:50.843Z"
-    },
-    {
-      "id": "final_401757281",
-      "kind": "final",
-      "text": "FINAL: 25-6\nFlorida International Panthers - 25\nWestern Kentucky Hilltoppers - 6\n\n(FIU): Kejon Owens 22 CAR, 195 YDS, 1 TD\n\n#CFB #PawsUp",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757281",
-      "expiresAt": "2025-10-18T14:56:50.843Z",
-      "source": "espn",
-      "generatedAt": "2025-10-17T02:56:50.843Z"
-    },
-    {
-      "id": "final_401757283",
-      "kind": "final",
-      "text": "FINAL: 38-25\nJacksonville State Gamecocks - 38\nDelaware Blue Hens - 25\n\n(DEL): Nick Minicucci 32/50, 422 YDS, 1 TD\n(JVST): Cam Cook 18 CAR, 117 YDS, 3 TD\n\n#CFB #GoGamecocks",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757283",
-      "expiresAt": "2025-10-18T14:56:50.843Z",
-      "source": "espn",
-      "generatedAt": "2025-10-17T02:56:50.843Z"
-    },
-    {
-      "id": "final_401757284",
-      "kind": "final",
-      "text": "FINAL: 35-17\nUTEP Miners - 35\nSam Houston Bearkats - 17\n\n(UTEP): Skyler Locklear 21/26, 236 YDS, 2 TD, 1 INT\n(SHSU): Landan Brown 13 CAR, 110 YDS\n\n#CFB #PicksUp",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757284",
-      "expiresAt": "2025-10-18T14:56:50.843Z",
-      "source": "espn",
-      "generatedAt": "2025-10-17T02:56:50.844Z"
     }
   ]
 }
