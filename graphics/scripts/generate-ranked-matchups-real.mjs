@@ -9,7 +9,13 @@ const __dirname = path.dirname(__filename);
 
 // API Configuration
 const CFBD_BASE = 'https://api.collegefootballdata.com';
-const API_KEY = process.env.CFBD_API_KEY || 'vWJ5SPrCVwGbFMQEb+qepkkcU+GVRy+cQLg6QqN2v0+1DHxVEPDUR01WWulIfji2';
+const API_KEY = process.env.CFBD_API_KEY;
+
+if (!API_KEY) {
+  console.error('❌ Error: CFBD_API_KEY environment variable is required');
+  console.error('Please set your API key: export CFBD_API_KEY=your_key_here');
+  process.exit(1);
+}
 
 // Function to make API request
 async function fetchCFBDData(endpoint) {

@@ -171,9 +171,6 @@ function main() {
 // Run if called directly
 if (import.meta.url === `file://${process.argv[1]}`) {
   main();
-} else {
-  // Also run if this is the main module
-  main();
 }
 
 export { generateHTML, getTeamColors, generateTeamLogo };

@@ -84,12 +84,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.error('💥 Unhandled error:', error);
     process.exit(1);
   });
-} else {
-  // Also run if this is the main module
-  console.log('🚀 Starting Leaders generation script (fallback)...');
-  main().catch(error => {
-    console.error('💥 Unhandled error:', error);
-    process.exit(1);
-  });
 }
 

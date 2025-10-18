@@ -449,8 +449,8 @@ async function generateCFBDataTop25() {
     console.log(`\n🎨 Generating CFB Data Top 25 graphic for Week ${pollData.week}...`);
     const htmlContent = generateHTMLTemplate(cfbDataRankings, pollData.week);
     
-    const htmlPath = path.join(__dirname, '..', '..', 'cfb-data-top25-real.html');
-    const pngPath = path.join(__dirname, '..', '..', 'cfb-data-top25-real.png');
+    const htmlPath = path.join(__dirname, '..', 'output', 'cfb-data-top25-real.html');
+    const pngPath = path.join(__dirname, '..', 'output', 'cfb-data-top25-real.png');
     
     fs.writeFileSync(htmlPath, htmlContent);
     console.log(`✅ HTML: ${htmlPath}`);
