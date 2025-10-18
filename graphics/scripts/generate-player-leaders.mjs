@@ -71,15 +71,12 @@ async function fetchCFBDData(endpoint) {
 }
 
 // Function to filter players for Power 5 teams only
-async function filterPower5Players(players) {
+function filterPower5Players(players, teamRecords) {
   console.log('🏈 Filtering for Power 5 teams only...');
-  
-  // Fetch team records to get conference information
-  const records = await fetchCFBDData('/records?year=2025');
   
   // Create a map of team names to conferences
   const teamConferenceMap = {};
-  records.forEach(team => {
+  teamRecords.forEach(team => {
     teamConferenceMap[team.team] = team.conference;
   });
   
@@ -235,9 +232,34 @@ function createFallbackLogo(teamName, backgroundColor) {
   return `data:image/svg+xml;base64,${base64}`;
 }
 
-// Process player stats from API response
-function processPlayerStats(players) {
+/**
+ * Process player stats from API response and determine games played
+ * 
+ * Games played methodology (in order of preference):
+ * 1. API-provided games field (if exists and valid)
+ * 2. Team's total games (wins + losses from team records)
+ * 3. null if neither available (display will show only totals, not per-game)
+ * 
+ * Using team games is reasonable because:
+ * - Most players participate in all or most team games
+ * - It's official data from team records (reliable)
+ * - Avoids arbitrary defaults (e.g., hardcoded 3 games)
+ * - Already fetched for conference filtering (no extra API call)
+ * 
+ * Note: Individual player may have played fewer games than team total
+ * (injuries, redshirt, etc.), but this is still better than an arbitrary default.
+ */
+function processPlayerStats(players, teamRecords) {
   console.log('📊 Processing player stats...');
+  
+  // Create team games lookup map from team records
+  const teamGamesMap = {};
+  teamRecords.forEach(team => {
+    const totalGames = (team.total?.wins || 0) + (team.total?.losses || 0);
+    teamGamesMap[team.team] = totalGames;
+  });
+  
+  console.log(`📊 Built games map for ${Object.keys(teamGamesMap).length} teams`);
   
   const playerStats = {};
   
@@ -250,12 +272,24 @@ function processPlayerStats(players) {
     const statValue = parseFloat(player.stat);
     
     if (!playerStats[playerId]) {
+      // Try these in order of preference:
+      // 1. API-provided games (if exists and valid)
+      // 2. Team's total games (wins + losses)
+      // 3. null (will handle gracefully in display)
+      let gamesPlayed = null;
+      
+      if (player.games && player.games > 0) {
+        gamesPlayed = player.games;
+      } else if (teamGamesMap[team] && teamGamesMap[team] > 0) {
+        gamesPlayed = teamGamesMap[team];
+      }
+      
       playerStats[playerId] = {
         playerId,
         name: playerName,
         team,
         stats: {},
-        games: player.games || 3  // Default to 3 games if not available
+        games: gamesPlayed
       };
     }
     
@@ -322,8 +356,15 @@ async function createPlayerLeadersData(stat, players, getTeamRecord) {
     if (config.showBoth) {
       // Display both total and per-game - total prominent for players
       const totalValue = Math.round(player.stats[stat]);
-      const perGameValue = player.games > 0 ? Math.ceil(player.stats[stat] / player.games) : 0;
-      value = `${totalValue.toLocaleString()} <span style='font-size: 0.6em; color: rgba(255,255,255,0.8);'>${config.totalUnit}</span> <span style='font-style: italic; font-size: 0.6em; color: rgba(255,255,255,0.8);'>${perGameValue}/G</span>`;
+      
+      // Only show per-game if we have a reliable games count
+      if (player.games && player.games > 0) {
+        const perGameValue = Math.round(player.stats[stat] / player.games);
+        value = `${totalValue.toLocaleString()} <span style='font-size: 0.6em; color: rgba(255,255,255,0.8);'>${config.totalUnit}</span> <span style='font-style: italic; font-size: 0.6em; color: rgba(255,255,255,0.8);'>${perGameValue}/G</span>`;
+      } else {
+        // Just show total if games count is unavailable
+        value = `${totalValue.toLocaleString()} <span style='font-size: 0.6em; color: rgba(255,255,255,0.8);'>${config.totalUnit}</span>`;
+      }
     } else {
       // Display total only
       if (stat === 'sacks') {
@@ -647,16 +688,16 @@ async function main() {
     
     console.log('✅ All player API calls completed');
     
-    // Filter for Power 5 teams only
-    const power5Players = await filterPower5Players(allPlayers);
-    
-    // Process data
-    const processedPlayers = processPlayerStats(power5Players);
-    console.log(`✅ Processed ${processedPlayers.length} Power 5 players`);
-    
-    // Fetch team records once for all stats
+    // Fetch team records early - needed for both filtering AND games count
     console.log('📊 Fetching team records...');
     const records = await fetchCFBDData('/records?year=2025');
+    
+    // Filter for Power 5 teams only (pass records to avoid duplicate API call)
+    const power5Players = filterPower5Players(allPlayers, records);
+    
+    // Process data - pass team records for accurate games count
+    const processedPlayers = processPlayerStats(power5Players, records);
+    console.log(`✅ Processed ${processedPlayers.length} Power 5 players`);
     
     
     const teamRecordMap = {};
