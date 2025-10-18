@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-18T04:40:24.954Z",
+  "generatedAt": "2025-10-18T19:07:51.346Z",
   "posts": [
     {
       "id": "ap_top10_week8",
@@ -504,6 +504,24 @@
       "expiresAt": "2025-10-17T18:22:43.473Z",
       "source": "cfbd",
       "generatedAt": "2025-10-16T18:22:43.473Z"
+    },
+    {
+      "id": "final_401760396",
+      "kind": "final",
+      "text": "FINAL: 30-25\nUtah State Aggies - 30\nSan José State Spartans - 25\n\n(SJSU): Walker Eget 27/49, 340 YDS, 2 TD\n(USU): Anthony Garcia 3 REC, 121 YDS, 1 TD\n\n#CFB #AggiesAllTheWay",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760396",
+      "expiresAt": "2025-10-20T07:07:51.804Z",
+      "source": "espn",
+      "generatedAt": "2025-10-18T19:07:51.804Z"
+    },
+    {
+      "id": "final_401754371",
+      "kind": "final",
+      "text": "FINAL: 21-18\nCalifornia Golden Bears - 21\nNorth Carolina Tar Heels - 18\n\n(CAL): Jaron-Keawe Sagapolutele 21/39, 209 YDS, 1 TD\n\n#CFB #GoBears",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754371",
+      "expiresAt": "2025-10-20T07:07:51.804Z",
+      "source": "espn",
+      "generatedAt": "2025-10-18T19:07:51.804Z"
     }
   ]
 }
