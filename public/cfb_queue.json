@@ -504,33 +504,6 @@
       "expiresAt": "2025-10-17T18:22:43.473Z",
       "source": "cfbd",
       "generatedAt": "2025-10-16T18:22:43.473Z"
-    },
-    {
-      "id": "final_401762486",
-      "kind": "final",
-      "text": "FINAL: 41-27\nEast Carolina Pirates - 41\nTulsa Golden Hurricane - 27\n\n(ECU): Katin Houser 21/38, 300 YDS, 2 TD\n\n#CFB #GoPirates",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762486",
-      "expiresAt": "2025-10-19T14:11:20.233Z",
-      "source": "espn",
-      "generatedAt": "2025-10-18T02:11:20.233Z"
-    },
-    {
-      "id": "final_401754564",
-      "kind": "final",
-      "text": "FINAL: 24-21\nLouisville Cardinals - 24\n#2 Miami Hurricanes - 21\n\n(LOU): Chris Bell 9 REC, 136 YDS, 2 TD\n(MIA): Carson Beck 25/35, 271 YDS, 4 INT\n\n#Upset #CFB #GoCards",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754564",
-      "expiresAt": "2025-10-19T14:57:52.124Z",
-      "source": "espn",
-      "generatedAt": "2025-10-18T02:57:52.124Z"
-    },
-    {
-      "id": "final_401752872",
-      "kind": "final",
-      "text": "FINAL: 24-6\nMinnesota Golden Gophers - 24\n#25 Nebraska Cornhuskers - 6\n\n(NEB): Dylan Raiola 17/25, 177 YDS\n(MINN): Darius Taylor 24 CAR, 148 YDS, 1 TD\n\n#Upset #CFB #SkiUMah",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752872",
-      "expiresAt": "2025-10-19T16:40:25.473Z",
-      "source": "espn",
-      "generatedAt": "2025-10-18T04:40:25.473Z"
     }
   ]
 }
