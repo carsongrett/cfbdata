@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-17T03:31:07.779Z",
+  "generatedAt": "2025-10-18T02:11:19.817Z",
   "posts": [
     {
       "id": "ap_top10_week8",
@@ -504,6 +504,15 @@
       "expiresAt": "2025-10-17T18:22:43.473Z",
       "source": "cfbd",
       "generatedAt": "2025-10-16T18:22:43.473Z"
+    },
+    {
+      "id": "final_401762486",
+      "kind": "final",
+      "text": "FINAL: 41-27\nEast Carolina Pirates - 41\nTulsa Golden Hurricane - 27\n\n(ECU): Katin Houser 21/38, 300 YDS, 2 TD\n\n#CFB #GoPirates",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762486",
+      "expiresAt": "2025-10-19T14:11:20.233Z",
+      "source": "espn",
+      "generatedAt": "2025-10-18T02:11:20.233Z"
     }
   ]
 }
