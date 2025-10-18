@@ -47,6 +47,8 @@ jobs:
         echo "✅ Basic setup complete"
         
     - name: Generate Team Graphics
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
       run: |
         cd graphics
         echo "🎨 Generating team graphics..."
@@ -54,6 +56,8 @@ jobs:
         echo "✅ Team graphics generated"
         
     - name: Generate Player Graphics
+      env:
+        CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
       run: |
         cd graphics
         echo "🎨 Generating player graphics..."
