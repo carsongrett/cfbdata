@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-18T03:45:00.807Z",
+  "generatedAt": "2025-10-18T04:40:24.954Z",
   "posts": [
     {
       "id": "ap_top10_week8",
@@ -522,6 +522,15 @@
       "expiresAt": "2025-10-19T14:57:52.124Z",
       "source": "espn",
       "generatedAt": "2025-10-18T02:57:52.124Z"
+    },
+    {
+      "id": "final_401752872",
+      "kind": "final",
+      "text": "FINAL: 24-6\nMinnesota Golden Gophers - 24\n#25 Nebraska Cornhuskers - 6\n\n(NEB): Dylan Raiola 17/25, 177 YDS\n(MINN): Darius Taylor 24 CAR, 148 YDS, 1 TD\n\n#Upset #CFB #SkiUMah",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752872",
+      "expiresAt": "2025-10-19T16:40:25.473Z",
+      "source": "espn",
+      "generatedAt": "2025-10-18T04:40:25.473Z"
     }
   ]
 }
