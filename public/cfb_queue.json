@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-19T03:55:17.076Z",
+  "generatedAt": "2025-10-19T04:41:29.628Z",
   "posts": [
     {
       "id": "ap_top10_week8",
@@ -927,6 +927,24 @@
       "expiresAt": "2025-10-20T15:55:18.124Z",
       "source": "espn",
       "generatedAt": "2025-10-19T03:55:18.124Z"
+    },
+    {
+      "id": "final_401752740",
+      "kind": "final",
+      "text": "FINAL: 23-17\n#16 Missouri Tigers - 23\nAuburn Tigers - 17\n\n(MIZ): Beau Pribula 23/40, 252 YDS, 2 INT\n(AUB): Jeremiah Cobb 19 CAR, 111 YDS\n\n#CFB #MIZ",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752740",
+      "expiresAt": "2025-10-20T16:41:29.911Z",
+      "source": "espn",
+      "generatedAt": "2025-10-19T04:41:29.911Z"
+    },
+    {
+      "id": "final_401756924",
+      "kind": "final",
+      "text": "FINAL: 24-21\n#15 BYU Cougars - 24\n#23 Utah Utes - 21\n\n(UTAH): Devon Dampier 20/36, 244 YDS, 2 TD, 1 INT\n(BYU): LJ Martin 26 CAR, 122 YDS\n\n#CFB #GoCougs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756924",
+      "expiresAt": "2025-10-20T16:41:29.911Z",
+      "source": "espn",
+      "generatedAt": "2025-10-19T04:41:29.911Z"
     }
   ]
 }
