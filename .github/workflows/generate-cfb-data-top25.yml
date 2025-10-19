@@ -39,7 +39,7 @@ jobs:
         
     - name: Commit changes
       run: |
-        git add cfb-data-top25-real.png cfb-data-top25-real.html
+        git add graphics/output/cfb-data-top25-real.png graphics/output/cfb-data-top25-real.html
         git status
         if ! git diff --staged --quiet; then
           git commit -m "Generate CFB Data Top 25 graphic for Week $(date +%U)"
