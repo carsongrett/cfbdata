@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-19T02:55:00.921Z",
+  "generatedAt": "2025-10-19T03:32:30.282Z",
   "posts": [
     {
       "id": "ap_top10_week8",
@@ -855,6 +855,24 @@
       "expiresAt": "2025-10-20T14:24:29.798Z",
       "source": "espn",
       "generatedAt": "2025-10-19T02:24:29.798Z"
+    },
+    {
+      "id": "final_401752743",
+      "kind": "final",
+      "text": "FINAL: 16-13\n#21 Texas Longhorns - 16\nKentucky Wildcats - 13\n\n(UK): Cutter Boley 14 CAR, 45 YDS, 1 TD\n\n#CFB #HookEm",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752743",
+      "expiresAt": "2025-10-20T15:32:30.743Z",
+      "source": "espn",
+      "generatedAt": "2025-10-19T03:32:30.743Z"
+    },
+    {
+      "id": "final_401761630",
+      "kind": "final",
+      "text": "FINAL: 41-24\nGeorgia Southern Eagles - 41\nGeorgia State Panthers - 24\n\n(GAST): Cameran Brown 29/38, 280 YDS, 1 TD\n(GASO): OJ Arnold 4 REC, 85 YDS\n\n#CFB #HailSouthern",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761630",
+      "expiresAt": "2025-10-20T15:32:30.743Z",
+      "source": "espn",
+      "generatedAt": "2025-10-19T03:32:30.743Z"
     }
   ]
 }
