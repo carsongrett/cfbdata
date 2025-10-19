@@ -1,0 +1,796 @@
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { chromium } from 'playwright';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// CFBD API configuration
+const CFBD_BASE = 'https://api.collegefootballdata.com';
+const API_KEY = process.env.CFBD_API_KEY;
+
+if (!API_KEY) {
+  console.error('❌ Error: CFBD_API_KEY environment variable is required');
+  console.error('Please set your API key: export CFBD_API_KEY=your_key_here');
+  process.exit(1);
+}
+
+// Player stats we want to track (using correct CFBD API stat types)
+const PLAYER_STATS = [
+  'rushingYards',    // YDS from rushing category
+  'rushingTDs',      // TD from rushing category  
+  'passingYards',    // YDS from passing category
+  'passingTDs',      // TD from passing category
+  'receivingYards',  // YDS from receiving category
+  'receivingTDs',    // TD from receiving category
+  'sacks'            // SACKS from defensive category
+];
+
+// Load team mapping (abbreviations + colors)
+const teamMappingPath = path.join(__dirname, '..', 'data', 'team_mapping.json');
+const teamMapping = JSON.parse(fs.readFileSync(teamMappingPath, 'utf8'));
+
+// Define Power 5 conferences
+const POWER5_CONFERENCES = ['SEC', 'Big Ten', 'ACC', 'Big 12', 'Pac-12'];
+
+// Function to get team info (abbreviation + colors) by API team name
+function getTeamInfo(teamName) {
+  // Direct match first
+  if (teamMapping[teamName]) {
+    return teamMapping[teamName];
+  }
+  
+  // Try partial matching for cases like "Miami (OH)" -> "Miami"
+  const baseName = teamName.split(' (')[0];
+  if (teamMapping[baseName]) {
+    return teamMapping[baseName];
+  }
+  
+  // No mapping found - return null to indicate no team display
+  return null;
+}
+
+// Function to make API request
+async function fetchCFBDData(endpoint) {
+  const url = `${CFBD_BASE}${endpoint}`;
+  console.log(`📡 Fetching: ${url}`);
+  
+  const response = await fetch(url, {
+    headers: {
+      'Authorization': `Bearer ${API_KEY}`,
+      'Accept': 'application/json'
+    }
+  });
+  
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+  }
+  
+  return await response.json();
+}
+
+// Function to filter players for Power 5 teams only
+function filterPower5Players(players, teamRecords) {
+  console.log('🏈 Filtering for Power 5 teams only...');
+  
+  // Create a map of team names to conferences
+  const teamConferenceMap = {};
+  teamRecords.forEach(team => {
+    teamConferenceMap[team.team] = team.conference;
+  });
+  
+  // Filter players for Power 5 teams only
+  const power5Players = players.filter(player => {
+    const conference = teamConferenceMap[player.team];
+    return POWER5_CONFERENCES.includes(conference);
+  });
+  
+  console.log(`📊 Total players: ${players.length}`);
+  console.log(`🏆 Power 5 players: ${power5Players.length}`);
+  
+  return power5Players;
+}
+
+// Track missing team logos for reporting
+const missingLogos = new Set();
+
+// Function to encode image to base64
+function encodeImageToBase64(imagePath, teamName = null) {
+  try {
+    if (!fs.existsSync(imagePath)) {
+      if (teamName) {
+        missingLogos.add(teamName);
+        console.warn(`⚠️ Logo file not found for ${teamName}: ${imagePath}`);
+      }
+      return null;
+    }
+    
+    const imageBuffer = fs.readFileSync(imagePath);
+    const base64 = imageBuffer.toString('base64');
+    const ext = path.extname(imagePath).toLowerCase();
+    const mimeType = ext === '.png' ? 'image/png' : 'image/jpeg';
+    return `data:${mimeType};base64,${base64}`;
+  } catch (error) {
+    if (teamName) {
+      missingLogos.add(teamName);
+    }
+    console.warn(`⚠️ Could not load image ${imagePath}:`, error.message);
+    return null;
+  }
+}
+
+// Function to get team logo path
+function getTeamLogoPath(teamName) {
+  // Team name mappings to actual logo file names
+  const logoMappings = {
+    'Alabama': 'Alabama_Crimson_Tide_logo-300x300.png',
+    'Auburn': 'Auburn_Tigers_logo-300x300.png',
+    'Florida': 'Florida_Gators_logo-300x300.png',
+    'Georgia': 'Georgia_Bulldogs_logo-300x300.png',
+    'Kentucky': 'Kentucky_Wildcats_logo-300x300.png',
+    'LSU': 'LSU_Tigers-300x300.png',
+    'Mississippi State': 'Mississippi_State_Bulldogs_logo-300x300.png',
+    'Missouri': 'Missouri_Tigers_logo-300x300.png',
+    'Ole Miss': 'Ole_Miss_Rebels_logo-300x300.png',
+    'South Carolina': 'South_Carolina_Gamecocks_logo-300x300.png',
+    'Tennessee': 'Tennessee_Volunteers_logo-300x300.png',
+    'Texas': 'Texas_Longhorns_logo-300x300.png',
+    'Texas A&M': 'Texas_AM_University_logo-300x300.png',
+    'Vanderbilt': 'Vanderbilt_Commodores_logo-300x300.png',
+    'Oklahoma': 'Oklahoma_Sooners_logo-300x300.png',
+    'Arkansas': 'Arkansas_Razorbacks_logo-300x300.png',
+    
+    'Illinois': 'Illinois_Fighting_Illini_logo-300x300.png',
+    'Indiana': 'Indiana_Hoosiers_logo-300x300.png',
+    'Iowa': 'Iowa_Hawkeyes_logo-300x300.png',
+    'Maryland': 'Maryland_Terrapins_logo-300x300.png',
+    'Michigan': 'Michigan_Wolverines_logo-300x300.png',
+    'Michigan State': 'Michigan_State_Spartans_logo-300x300.png',
+    'Minnesota': 'Minnesota_Golden_Gophers_logo-300x300.png',
+    'Nebraska': 'Nebraska_Cornhuskers_logo-300x300.png',
+    'Northwestern': 'Northwestern_Wildcats_logo-300x300.png',
+    'Ohio State': 'Ohio_State_Buckeyes_logo-300x300.png',
+    'Penn State': 'Penn_State_Nittany_Lions_logo-300x300.png',
+    'Purdue': 'Purdue_Boilermakers_logo-300x300.png',
+    'Rutgers': 'Rutgers_Scarlet_Knights_logo-300x300.png',
+    'Wisconsin': 'Wisconsin_Badgers_logo-300x300.png',
+    'USC': 'USC_Trojans_logo-300x300.png',
+    'UCLA': 'UCLA_Bruins-300x300.png',
+    'Oregon': 'Oregon_Ducks_logo-300x300.png',
+    'Washington': 'Washington_Huskies_logo-300x300.png',
+    
+    'Arizona': 'Arizona_Wildcats_logo-300x300.png',
+    'Arizona State': 'Arizona_State_Sun_Devils_logo-300x300.png',
+    'Baylor': 'Baylor_Bears_logo-300x300.png',
+    'BYU': 'BYU_Cougars_logo-300x300.png',
+    'Cincinnati': 'Cincinnati_Bearcats_logo-300x300.png',
+    'Colorado': 'Colorado_Buffaloes_logo-300x300.png',
+    'Houston': 'Houston_Cougars_logo-300x300.png',
+    'Iowa State': 'Iowa_State_Cyclones_logo-300x300.png',
+    'Kansas': 'Kansas_Jayhawks_logo-300x300.png',
+    'Kansas State': 'Kansas_State_Wildcats_logo-300x300.png',
+    'Oklahoma State': 'Oklahoma_State_Cowboys_logo-300x300.png',
+    'TCU': 'TCU_Horned_Frogs_logo-300x300.png',
+    'Texas Tech': 'Texas_Tech_Red_Raiders_logo-300x300.png',
+    'UCF': 'UCF_Knights_logo-300x300.png',
+    'Utah': 'Utah_Utes_logo-300x300.png',
+    'West Virginia': 'West_Virginia_Mountaineers_logo-300x300.png',
+    
+    'Boston College': 'Boston_College_Eagles_logo-300x300.png',
+    'Clemson': 'Clemson_Tigers_logo-300x300.png',
+    'Duke': 'Duke_Blue_Devils_logo-300x300.png',
+    'Florida State': 'Florida_State_Seminoles_logo-300x300.png',
+    'Georgia Tech': 'Georgia_Tech_Yellow_Jackets_logo-300x300.png',
+    'Louisville': 'Louisville_Cardinals_logo-300x300.png',
+    'Miami': 'Miami_Hurricanes_logo-300x300.png',
+    'North Carolina': 'North_Carolina_Tar_Heels_logo-300x300.png',
+    'NC State': 'North_Carolina_State_Wolfpack_logo-300x300.png',
+    'Pittsburgh': 'Pitt_Panthers_logo-300x300.png',
+    'Syracuse': 'Syracuse_Orange_logo-300x300.png',
+    'Virginia': 'Virginia_Cavaliers_logo-300x300.png',
+    'Virginia Tech': 'Virginia_Tech_Hokies_logo-300x300.png',
+    'Wake Forest': 'Wake_Forest_Demon_Deacons_logo-300x300.png',
+    'California': 'California_Golden_Bears_logo-300x300.png',
+    'Stanford': 'Stanford_Cardinal_logo-300x300.png',
+    'SMU': 'SMU_Mustang_logo-300x300.png',
+    
+    'Oregon State': 'Oregon_State_Beavers_logo-300x300.png',
+    'Washington State': 'Washington_State_Cougars_logo-300x300.png',
+    
+    // Group of 5 teams
+    'Memphis': 'Memphis_Tigers_logo-300x300.png',
+    'USF': 'South_Florida_Bulls_logo-300x300.png',
+    'South Florida': 'South_Florida_Bulls_logo-300x300.png'
+  };
+  
+  const logoFileName = logoMappings[teamName];
+  if (!logoFileName) {
+    console.warn(`⚠️ No logo mapping found for team: ${teamName}`);
+    return null;
+  }
+  
+  return logoFileName;
+}
+
+// Function to create a fallback logo placeholder SVG
+function createFallbackLogo(teamName, backgroundColor) {
+  const initials = teamName
+    .split(' ')
+    .map(word => word[0])
+    .join('')
+    .toUpperCase()
+    .slice(0, 2);
+  
+  const svg = `<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+    <rect width="60" height="60" fill="${backgroundColor}" opacity="0.2"/>
+    <text x="30" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+          fill="${backgroundColor}" text-anchor="middle">${initials}</text>
+  </svg>`;
+  
+  const base64 = Buffer.from(svg).toString('base64');
+  return `data:image/svg+xml;base64,${base64}`;
+}
+
+/**
+ * Process player stats from API response and determine games played
+ * 
+ * Games played methodology (in order of preference):
+ * 1. API-provided games field (if exists and valid)
+ * 2. Team's total games (wins + losses from team records)
+ * 3. null if neither available (display will show only totals, not per-game)
+ * 
+ * Using team games is reasonable because:
+ * - Most players participate in all or most team games
+ * - It's official data from team records (reliable)
+ * - Avoids arbitrary defaults (e.g., hardcoded 3 games)
+ * - Already fetched for conference filtering (no extra API call)
+ * 
+ * Note: Individual player may have played fewer games than team total
+ * (injuries, redshirt, etc.), but this is still better than an arbitrary default.
+ */
+function processPlayerStats(players, teamRecords) {
+  console.log('📊 Processing player stats...');
+  
+  // Create team games lookup map from team records
+  const teamGamesMap = {};
+  teamRecords.forEach(team => {
+    const totalGames = (team.total?.wins || 0) + (team.total?.losses || 0);
+    teamGamesMap[team.team] = totalGames;
+  });
+  
+  console.log(`📊 Built games map for ${Object.keys(teamGamesMap).length} teams`);
+  
+  const playerStats = {};
+  
+  players.forEach(player => {
+    const playerId = player.playerId;
+    const playerName = player.player;
+    const team = player.team;
+    const category = player.category;
+    const statType = player.statType;
+    const statValue = parseFloat(player.stat);
+    
+    if (!playerStats[playerId]) {
+      // Try these in order of preference:
+      // 1. API-provided games (if exists and valid)
+      // 2. Team's total games (wins + losses)
+      // 3. null (will handle gracefully in display)
+      let gamesPlayed = null;
+      
+      if (player.games && player.games > 0) {
+        gamesPlayed = player.games;
+      } else if (teamGamesMap[team] && teamGamesMap[team] > 0) {
+        gamesPlayed = teamGamesMap[team];
+      }
+      
+      playerStats[playerId] = {
+        playerId,
+        name: playerName,
+        team,
+        stats: {},
+        games: gamesPlayed
+      };
+    }
+    
+    // Map API stat types to our internal stat names
+    let statName = null;
+    if (category === 'rushing' && statType === 'YDS') {
+      statName = 'rushingYards';
+    } else if (category === 'rushing' && statType === 'TD') {
+      statName = 'rushingTDs';
+    } else if (category === 'passing' && statType === 'YDS') {
+      statName = 'passingYards';
+    } else if (category === 'passing' && statType === 'TD') {
+      statName = 'passingTDs';
+    } else if (category === 'receiving' && statType === 'YDS') {
+      statName = 'receivingYards';
+    } else if (category === 'receiving' && statType === 'TD') {
+      statName = 'receivingTDs';
+    } else if (category === 'defensive' && statType === 'SACKS') {
+      statName = 'sacks';
+    }
+    
+    if (statName) {
+      playerStats[playerId].stats[statName] = statValue;
+    }
+  });
+  
+  return Object.values(playerStats);
+}
+
+// Create player leaders data structure
+async function createPlayerLeadersData(stat, players, getTeamRecord) {
+  const statConfig = {
+    rushingYards: { title: 'RUSHING YD LEADERS', totalUnit: 'YDS', perGameUnit: 'YPG', showBoth: true },
+    rushingTDs: { title: 'RUSHING TD LEADERS', totalUnit: 'TD', perGameUnit: null, showBoth: false },
+    passingYards: { title: 'PASSING YD LEADERS', totalUnit: 'YDS', perGameUnit: 'YPG', showBoth: true },
+    passingTDs: { title: 'PASSING TD LEADERS', totalUnit: 'TD', perGameUnit: null, showBoth: false },
+    receivingYards: { title: 'REC. YD LEADERS', totalUnit: 'YDS', perGameUnit: 'YPG', showBoth: true },
+    receivingTDs: { title: 'REC. TD LEADERS', totalUnit: 'TD', perGameUnit: null, showBoth: false },
+    sacks: { title: 'SACK LEADERS', totalUnit: 'SACKS', perGameUnit: null, showBoth: false }
+  };
+  
+  const config = statConfig[stat];
+  if (!config) {
+    throw new Error(`Unknown stat: ${stat}`);
+  }
+  
+  // Filter players who have this stat and sort by value
+  console.log(`📊 Total players available: ${players.length}`);
+  const playersWithStat = players
+    .filter(player => player.stats[stat] !== undefined)
+    .sort((a, b) => b.stats[stat] - a.stats[stat])
+    .slice(0, 10); // Top 10 players
+  
+  console.log(`📊 Players with ${stat}: ${playersWithStat.length}`);
+  if (playersWithStat.length > 0) {
+    console.log(`📊 Top player: ${playersWithStat[0].name} with ${playersWithStat[0].stats[stat]} ${stat}`);
+  }
+  
+  // Use the provided team record map
+  
+  const teams = playersWithStat.map((player, index) => {
+    let value;
+    
+    if (config.showBoth) {
+      // Display both total and per-game - total prominent for players
+      const totalValue = Math.round(player.stats[stat]);
+      
+      // Only show per-game if we have a reliable games count
+      if (player.games && player.games > 0) {
+        const perGameValue = Math.round(player.stats[stat] / player.games);
+        value = `${totalValue.toLocaleString()} <span style='font-size: 0.6em; color: rgba(255,255,255,0.8);'>${config.totalUnit}</span> <span style='font-style: italic; font-size: 0.6em; color: rgba(255,255,255,0.8);'>${perGameValue}/G</span>`;
+      } else {
+        // Just show total if games count is unavailable
+        value = `${totalValue.toLocaleString()} <span style='font-size: 0.6em; color: rgba(255,255,255,0.8);'>${config.totalUnit}</span>`;
+      }
+    } else {
+      // Display total only
+      if (stat === 'sacks') {
+        // For sacks, show just the number without "SACKS" text
+        value = `${Math.round(player.stats[stat])}`;
+      } else {
+        value = `${Math.round(player.stats[stat])} <span style='font-size: 0.6em; color: rgba(255,255,255,0.8);'>${config.totalUnit}</span>`;
+      }
+    }
+    
+    return {
+      rank: index + 1,
+      name: player.name,
+      team: player.team,
+      record: getTeamRecord(player.team),
+      value: value
+    };
+  });
+  
+  return {
+    type: stat,
+    title: config.title,
+    unit: config.unit,
+    teams
+  };
+}
+
+// Generate HTML for player leaders
+function generatePlayerHTML(data) {
+  // Determine if this stat shows both total and per-game values
+  const statConfig = {
+    rushingYards: { showBoth: true },
+    rushingTDs: { showBoth: false },
+    passingYards: { showBoth: true },
+    passingTDs: { showBoth: false },
+    receivingYards: { showBoth: true },
+    receivingTDs: { showBoth: false },
+    sacks: { showBoth: false }
+  };
+  
+  const config = statConfig[data.type];
+  const useCompactFont = config && config.showBoth;
+  // Try to load and encode the CFB Data logo
+  const logoPath = path.join(__dirname, '..', 'assets', 'x_logo.png');
+  let logoDataUrl = null;
+  try {
+    const imageBuffer = fs.readFileSync(logoPath);
+    const base64 = imageBuffer.toString('base64');
+    const ext = path.extname(logoPath).slice(1);
+    logoDataUrl = `data:image/${ext};base64,${base64}`;
+  } catch (error) {
+    console.warn('⚠️ Could not load logo image:', error.message);
+  }
+  
+  const template = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFB Player Leaders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        .player-bar {
+            height: 70px;
+            background: linear-gradient(135deg, #8a9ba8 0%, #708090 100%) !important;
+        }
+        
+        .rank-number {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+        
+        .player-name {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .player-name-compact {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 800;
+        }
+        
+        .stat-unit {
+            font-size: 2rem;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+        
+        .title-text {
+            font-size: 7rem;
+            font-weight: 900;
+            line-height: 0.9;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .footnote-text {
+            font-size: 1rem;
+            font-weight: 400;
+            font-style: italic;
+            opacity: 0.7;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .bottom-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+        }
+        
+        .team-logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+        }
+        
+        .team-record {
+            font-size: 1.5rem;
+            font-weight: 600;
+            opacity: 0.9;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            margin-left: 8px;
+        }
+        
+        .logo-container {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+    </style>
+</head>
+<body class="m-0 p-0" style="background: #3a3a3a;">
+    <div class="w-[1200px] h-[1000px] relative overflow-hidden" style="background: #3a3a3a;">
+        <!-- Main Content Container -->
+        <div class="p-8 h-full flex flex-col">
+        
+        <!-- Header -->
+        <div class="mb-6 p-4 rounded-lg relative" style="background-color: #ffffff;">
+            <h1 class="text-7xl font-black text-gray-900 mb-2 tracking-tight">
+                ${data.title}
+            </h1>
+            <div class="flex items-center gap-4">
+                <p class="text-2xl font-semibold text-gray-900">
+                    VIA CFB DATA
+                </p>
+            </div>
+            <!-- Logo in top right corner -->
+            <div class="absolute top-4 right-4">
+                <div class="logo-container">
+                    ${logoDataUrl ? `<img src="${logoDataUrl}" alt="" class="logo-image" />` : '<div class="logo-image" style="background: #ccc; display: flex; align-items: center; justify-content: center; color: #666; font-weight: bold;">LOGO</div>'}
+                </div>
+            </div>
+        </div>
+        
+        <!-- Players Container -->
+        <div class="flex-1 flex flex-col justify-start space-y-2">
+                ${data.teams.map(player => {
+                  const teamInfo = getTeamInfo(player.team);
+                  const backgroundColor = teamInfo ? teamInfo.primary : '#666666';
+                  
+                  // Get team logo with better error handling
+                  const logoFileName = getTeamLogoPath(player.team);
+                  let logoDataUrl = null;
+                  
+                  if (logoFileName) {
+                    const logoPath = path.join(__dirname, '..', 'assets', 'team icons', logoFileName);
+                    logoDataUrl = encodeImageToBase64(logoPath, player.team);
+                  }
+                  
+                  // Use fallback logo if real logo not available
+                  if (!logoDataUrl) {
+                    logoDataUrl = createFallbackLogo(player.team, backgroundColor);
+                  }
+                  
+                  const logoHtml = `<img src="${logoDataUrl}" alt="${player.team} Logo" class="w-12 h-12 mr-3 object-contain" style="filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));">`;
+                  
+                  // Use full player name with conditional font size
+                  const displayName = player.name.toUpperCase();
+                  const playerNameClass = useCompactFont ? 'player-name-compact' : 'player-name';
+                  
+                  return `<!-- Player ${player.rank} -->
+                <div class="player-bar rounded-lg flex items-center px-6 shadow-lg" style="border: 3px solid ${backgroundColor};">
+                    <div class="rank-number text-white mr-8">${player.rank}</div>
+                    <div class="mr-6">${logoHtml}</div>
+                    <div class="flex-1">
+                        <div class="${playerNameClass} text-white">${displayName}</div>
+                    </div>
+                    <div class="text-white text-5xl font-bold ml-4">${player.value}</div>
+                </div>`;
+                }).join('\n')}
+        </div>
+        
+        </div>
+        
+    </div>
+</body>
+</html>`;
+
+  return template;
+}
+
+// Generate PNG from HTML
+async function generatePNG(data, outputPath) {
+  const browser = await chromium.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
+  const page = await browser.newPage();
+  
+  // Set viewport to match our graphic dimensions
+  await page.setViewportSize({ width: 1200, height: 1000 });
+  
+  // Generate HTML content
+  const htmlContent = generatePlayerHTML(data);
+  
+  // Write HTML to temporary file for proper logo loading
+  const tempHtmlPath = path.join(__dirname, '..', 'output', 'temp-player-graphic.html');
+  fs.writeFileSync(tempHtmlPath, htmlContent);
+  
+  // Load the HTML file directly from its path for proper logo loading
+  await page.goto('file://' + tempHtmlPath);
+  
+  // Wait for fonts to load specifically
+  await page.waitForLoadState('domcontentloaded');
+  
+  // Wait for fonts to load by checking if Inter font is available
+  await page.evaluate(() => {
+    return document.fonts.ready;
+  });
+  
+  // Additional wait to ensure fonts are rendered
+  await page.waitForTimeout(3000);
+  
+  // Take screenshot
+  await page.screenshot({
+    path: outputPath,
+    type: 'png',
+    fullPage: false
+  });
+  
+  // Clean up temporary file
+  try {
+    fs.unlinkSync(tempHtmlPath);
+  } catch (error) {
+    console.warn('⚠️ Could not delete temporary HTML file:', error.message);
+  }
+  
+  await browser.close();
+}
+
+// Main function
+async function main() {
+  try {
+    console.log('🚀 Starting Player Leaders generation...');
+    console.log('🎨 Generating CFB Player Leaders from CFBD API...');
+    console.log(`📊 Player Stats: ${PLAYER_STATS.join(', ')}`);
+    
+    // Fetch player data for each category (2025 data is available!)
+    let allPlayers = [];
+    
+    // Map our stat names to API categories
+    const categoryMap = {
+      'rushingYards': 'rushing',
+      'rushingTDs': 'rushing', 
+      'passingYards': 'passing',
+      'passingTDs': 'passing',
+      'receivingYards': 'receiving',
+      'receivingTDs': 'receiving',
+      'sacks': 'defensive'
+    };
+    
+    // Fetch all player data in parallel
+    console.log('\n📡 Fetching all player data in parallel...');
+    
+    const playerDataPromises = PLAYER_STATS.map(async (stat) => {
+      const category = categoryMap[stat];
+      console.log(`📡 Fetching ${stat} players from ${category} category...`);
+      return await fetchCFBDData(`/stats/player/season?year=2025&category=${category}`);
+    });
+    
+    const playerDataArrays = await Promise.all(playerDataPromises);
+    
+    // Flatten all player data into single array
+    allPlayers = playerDataArrays.flat();
+    
+    console.log('✅ All player API calls completed');
+    
+    // Fetch team records early - needed for both filtering AND games count
+    console.log('📊 Fetching team records...');
+    const records = await fetchCFBDData('/records?year=2025');
+    
+    // Filter for Power 5 teams only (pass records to avoid duplicate API call)
+    const power5Players = filterPower5Players(allPlayers, records);
+    
+    // Process data - pass team records for accurate games count
+    const processedPlayers = processPlayerStats(power5Players, records);
+    console.log(`✅ Processed ${processedPlayers.length} Power 5 players`);
+    
+    
+    const teamRecordMap = {};
+    records.forEach(team => {
+      // The wins/losses are nested in team.total object
+      const wins = team.total?.wins || 0;
+      const losses = team.total?.losses || 0;
+      
+      teamRecordMap[team.team] = `${wins}-${losses}`;
+      
+    });
+    console.log(`✅ Loaded records for ${Object.keys(teamRecordMap).length} teams`);
+    
+    
+    // Create a more robust team record lookup function using the same mapping as team info
+    function getTeamRecord(teamName) {
+      // Try exact match first
+      if (teamRecordMap[teamName]) {
+        return teamRecordMap[teamName];
+      }
+      
+      // Use the same team mapping logic as getTeamInfo
+      const teamInfo = getTeamInfo(teamName);
+      if (teamInfo && teamInfo.name) {
+        // Try with the mapped team name
+        if (teamRecordMap[teamInfo.name]) {
+          return teamRecordMap[teamInfo.name];
+        }
+      }
+      
+      // Try case-insensitive match
+      const lowerTeamName = teamName.toLowerCase();
+      for (const [recordTeam, record] of Object.entries(teamRecordMap)) {
+        if (recordTeam.toLowerCase() === lowerTeamName) {
+          return record;
+        }
+      }
+      
+      // Try partial match (e.g., "Texas" matches "Texas Longhorns")
+      for (const [recordTeam, record] of Object.entries(teamRecordMap)) {
+        if (recordTeam.toLowerCase().includes(lowerTeamName) || lowerTeamName.includes(recordTeam.toLowerCase())) {
+          return record;
+        }
+      }
+      
+      return '0-0';
+    }
+    
+    // Generate graphics for each stat
+    for (const stat of PLAYER_STATS) {
+      console.log(`\n🎨 Generating ${stat} player leaders...`);
+      
+      const leadersData = await createPlayerLeadersData(stat, processedPlayers, getTeamRecord);
+      
+      // Generate HTML
+      const htmlContent = generatePlayerHTML(leadersData);
+      const htmlPath = path.join(__dirname, '..', 'output', `player-${stat}-2025.html`);
+      fs.writeFileSync(htmlPath, htmlContent);
+      console.log(`✅ HTML: ${htmlPath}`);
+      
+      // Generate PNG
+      const pngPath = path.join(__dirname, '..', 'output', `player-${stat}-2025.png`);
+      await generatePNG(leadersData, pngPath);
+      console.log(`✅ PNG: ${pngPath}`);
+    }
+    
+    console.log('\n🎉 All player graphics generated successfully!');
+    console.log('📁 Check the output folder for HTML and PNG files');
+    
+    // Report missing logos
+    if (missingLogos.size > 0) {
+      console.log('\n⚠️  MISSING LOGOS REPORT:');
+      console.log(`Found ${missingLogos.size} team(s) with missing logo files:`);
+      missingLogos.forEach(team => {
+        console.log(`   - ${team}`);
+      });
+      console.log('Note: Fallback logos (team initials) were used for these teams.');
+    } else {
+      console.log('\n✅ All team logos loaded successfully!');
+    }
+    
+  } catch (error) {
+    console.error('💥 Error generating player graphics:', error);
+    process.exit(1);
+  }
+}
+
+// Run if called directly
+if (import.meta.url === `file://${process.argv[1]}`) {
+  main().catch(error => {
+    console.error('💥 Unhandled error:', error);
+    process.exit(1);
+  });
+}
+
+export { generatePlayerHTML, generatePNG, getTeamInfo, createPlayerLeadersData, processPlayerStats, main };

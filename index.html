@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CFB Content Queue</title>
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:800px;margin:32px auto;padding:0 16px}
+  header{display:flex;align-items:center;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+  @media (max-width: 600px) {
+    body{margin:16px auto;padding:0 8px}
+    header{gap:4px;margin-bottom:12px}
+    header h1{font-size:24px}
+    .meta{font-size:11px}
+    button{padding:4px 8px;font-size:12px}
+  }
+  .tabs{display:flex;gap:4px;margin-bottom:16px;border-bottom:1px solid #e5e7eb}
+  .tab{padding:8px 16px;border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;color:#6b7280}
+  .tab.active{border-bottom-color:#3b82f6;color:#1f2937;font-weight:500}
+  .tab:hover{color:#374151}
+  .post{border:1px solid #e5e7eb;border-radius:12px;padding:12px 14px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+  .post.posted{opacity:0.6;background:#f8f9fa;border-color:#d1d5db}
+  .meta{font-size:12px;color:#6b7280}
+  button{padding:6px 10px;border-radius:8px;border:1px solid #d1d5db;background:#fff;cursor:pointer;margin-left:4px}
+  button:hover{background:#f9fafb}
+  button.posted{background:#e5e7eb;color:#6b7280;cursor:default}
+  button.posted:hover{background:#e5e7eb}
+  .tab-content{display:none}
+  .tab-content.active{display:block}
+  .button-group{display:flex;gap:4px}
+</style>
+<header>
+  <h1 style="margin:0">CFB Content Queue</h1>
+  <small id="ts" class="meta"></small>
+  <div id="auto-refresh-status" class="meta" style="margin-left: 8px; padding: 2px 6px; border-radius: 4px; background: #f3f4f6; white-space: nowrap; font-size: 11px;"></div>
+  <button id="refresh">Refresh</button>
+  <button id="clearPosted">Clear Posted</button>
+  <button id="toggleAutoRefresh" style="margin-left: 4px;">Auto-Refresh: ON</button>
+</header>
+<div class="tabs">
+  <button class="tab active" data-tab="final">Final Scores</button>
+  <button class="tab" data-tab="polls">Polls</button>
+  <button class="tab" data-tab="betting">Betting Previews</button>
+  <button class="tab" data-tab="stadiums">Stadiums</button>
+  <button class="tab" data-tab="graphics">Graphics</button>
+</div>
+<div id="final-tab" class="tab-content active">
+  <div id="final-list">Loading…</div>
+</div>
+<div id="polls-tab" class="tab-content">
+  <div id="polls-list">Loading…</div>
+</div>
+<div id="betting-tab" class="tab-content">
+  <div id="betting-list">Loading…</div>
+</div>
+<div id="stadiums-tab" class="tab-content">
+  <div id="stadiums-list">Loading…</div>
+</div>
+<div id="graphics-tab" class="tab-content">
+  <div id="graphics-list">Loading…</div>
+</div>
+
+<script>
+const URL = "public/cfb_queue.json";
+
+// Auto-refresh functionality
+let autoRefreshInterval = null;
+let autoRefreshEnabled = true;
+let nextRefreshTime = null;
+
+// Schedule configuration - specific times in CT (Central Time)
+const AUTO_REFRESH_SCHEDULE = {
+  thursday: [19, 22], // 7 PM, 10 PM CT
+  friday: [19, 20.5, 22], // 7 PM, 8:30 PM, 10 PM CT
+  saturday: {
+    startHour: 12, // Noon
+    endHour: 24,   // Midnight
+    interval: 30   // 30 minutes
+  }
+};
+
+// Get current day of week (0 = Sunday, 1 = Monday, etc.)
+function getCurrentDayOfWeek() {
+  return new Date().getDay();
+}
+
+// Convert CT to local time (approximate - assumes user is in CT or ET)
+function convertCTToLocal(ctHour) {
+  // Simple conversion - in production you might want to use a proper timezone library
+  // This assumes most users are in CT or ET (1 hour ahead)
+  const offset = new Date().getTimezoneOffset();
+  const isET = offset === 300; // Eastern Time is UTC-5 (300 minutes)
+  const isCT = offset === 360; // Central Time is UTC-6 (360 minutes)
+  
+  if (isCT) return ctHour;
+  if (isET) return ctHour + 1; // ET is 1 hour ahead of CT
+  
+  // Default to CT if timezone is unclear
+  return ctHour;
+}
+
+// Check if we're in the auto-refresh window
+function isInAutoRefreshWindow() {
+  const now = new Date();
+  const dayOfWeek = getCurrentDayOfWeek();
+  const currentHour = now.getHours() + (now.getMinutes() / 60); // Include minutes as decimal
+  
+  // Thursday = 4, Friday = 5, Saturday = 6
+  if (dayOfWeek === 4) { // Thursday
+    const scheduleTimes = AUTO_REFRESH_SCHEDULE.thursday.map(convertCTToLocal);
+    return scheduleTimes.some(time => {
+      const timeDiff = Math.abs(currentHour - time);
+      return timeDiff < 0.1; // Within 6 minutes of scheduled time
+    });
+  } else if (dayOfWeek === 5) { // Friday
+    const scheduleTimes = AUTO_REFRESH_SCHEDULE.friday.map(convertCTToLocal);
+    return scheduleTimes.some(time => {
+      const timeDiff = Math.abs(currentHour - time);
+      return timeDiff < 0.1; // Within 6 minutes of scheduled time
+    });
+  } else if (dayOfWeek === 6) { // Saturday
+    const startHour = convertCTToLocal(AUTO_REFRESH_SCHEDULE.saturday.startHour);
+    const endHour = convertCTToLocal(AUTO_REFRESH_SCHEDULE.saturday.endHour);
+    return currentHour >= startHour && currentHour < endHour;
+  }
+  return false;
+}
+
+// Get next refresh time in milliseconds
+function getNextRefreshTime() {
+  const now = new Date();
+  const dayOfWeek = getCurrentDayOfWeek();
+  const currentHour = now.getHours() + (now.getMinutes() / 60);
+  
+  let nextTimes = [];
+  
+  // Thursday = 4, Friday = 5, Saturday = 6
+  if (dayOfWeek === 4) { // Thursday
+    nextTimes = AUTO_REFRESH_SCHEDULE.thursday.map(convertCTToLocal);
+  } else if (dayOfWeek === 5) { // Friday
+    nextTimes = AUTO_REFRESH_SCHEDULE.friday.map(convertCTToLocal);
+  } else if (dayOfWeek === 6) { // Saturday
+    // For Saturday, calculate next 30-minute interval
+    const startHour = convertCTToLocal(AUTO_REFRESH_SCHEDULE.saturday.startHour);
+    const endHour = convertCTToLocal(AUTO_REFRESH_SCHEDULE.saturday.endHour);
+    if (currentHour >= startHour && currentHour < endHour) {
+      const nextInterval = Math.ceil(currentHour * 2) / 2; // Round up to next 30-minute mark
+      if (nextInterval < endHour) {
+        nextTimes = [nextInterval];
+      }
+    }
+  }
+  
+  // Find the next time that's in the future
+  const futureTimes = nextTimes.filter(time => time > currentHour);
+  if (futureTimes.length > 0) {
+    const nextTime = Math.min(...futureTimes);
+    const nextDate = new Date(now);
+    nextDate.setHours(Math.floor(nextTime), (nextTime % 1) * 60, 0, 0);
+    return nextDate.getTime() - now.getTime();
+  }
+  
+  return null; // No more times today
+}
+
+// Update auto-refresh status display
+function updateAutoRefreshStatus() {
+  const statusEl = document.getElementById('auto-refresh-status');
+  const toggleBtn = document.getElementById('toggleAutoRefresh');
+  
+  if (!autoRefreshEnabled) {
+    statusEl.textContent = 'Auto-refresh: OFF';
+    statusEl.style.background = '#fecaca';
+    statusEl.style.color = '#991b1b';
+    toggleBtn.textContent = 'Auto-Refresh: OFF';
+    return;
+  }
+  
+  const nextRefreshMs = getNextRefreshTime();
+  if (nextRefreshMs !== null) {
+    const nextRefresh = new Date(Date.now() + nextRefreshMs);
+    statusEl.textContent = `Next refresh: ${nextRefresh.toLocaleTimeString()}`;
+    statusEl.style.background = '#dcfce7';
+    statusEl.style.color = '#166534';
+    toggleBtn.textContent = 'Auto-Refresh: ON';
+    nextRefreshTime = nextRefresh;
+  } else {
+    statusEl.textContent = 'No more refreshes today';
+    statusEl.style.background = '#fef3c7';
+    statusEl.style.color = '#92400e';
+    toggleBtn.textContent = 'Auto-Refresh: ON';
+    nextRefreshTime = null;
+  }
+}
+
+// Start auto-refresh
+function startAutoRefresh() {
+  if (!autoRefreshEnabled) return;
+  
+  // Clear existing interval
+  if (autoRefreshInterval) {
+    clearInterval(autoRefreshInterval);
+  }
+  
+  // Check for immediate refresh (within 6 minutes of scheduled time)
+  if (isInAutoRefreshWindow()) {
+    const activeTab = document.querySelector('.tab.active');
+    if (activeTab && activeTab.dataset.tab === 'final') {
+      console.log('Auto-refreshing final scores (immediate)...');
+      load();
+    }
+  }
+  
+  // Set up next refresh
+  scheduleNextRefresh();
+  updateAutoRefreshStatus();
+}
+
+// Schedule the next refresh
+function scheduleNextRefresh() {
+  const nextRefreshMs = getNextRefreshTime();
+  if (nextRefreshMs === null) return;
+  
+  // Clear existing interval
+  if (autoRefreshInterval) {
+    clearInterval(autoRefreshInterval);
+  }
+  
+  autoRefreshInterval = setTimeout(() => {
+    if (autoRefreshEnabled) {
+      // Only refresh if we're on the final scores tab
+      const activeTab = document.querySelector('.tab.active');
+      if (activeTab && activeTab.dataset.tab === 'final') {
+        console.log('Auto-refreshing final scores...');
+        load();
+      }
+      
+      // Schedule the next refresh
+      scheduleNextRefresh();
+      updateAutoRefreshStatus();
+    }
+  }, nextRefreshMs);
+}
+
+// Stop auto-refresh
+function stopAutoRefresh() {
+  if (autoRefreshInterval) {
+    clearTimeout(autoRefreshInterval);
+    autoRefreshInterval = null;
+  }
+  updateAutoRefreshStatus();
+}
+
+// Toggle auto-refresh
+function toggleAutoRefresh() {
+  autoRefreshEnabled = !autoRefreshEnabled;
+  localStorage.setItem('autoRefreshEnabled', autoRefreshEnabled.toString());
+  if (autoRefreshEnabled) {
+    startAutoRefresh();
+  } else {
+    stopAutoRefresh();
+  }
+}
+
+// Initialize auto-refresh on page load
+function initializeAutoRefresh() {
+  // Check auto-refresh preference from localStorage
+  const saved = localStorage.getItem('autoRefreshEnabled');
+  if (saved !== null) {
+    autoRefreshEnabled = saved === 'true';
+  }
+  
+  startAutoRefresh();
+  
+  // Update status every minute to show countdown
+  setInterval(updateAutoRefreshStatus, 60000);
+}
+
+// Get posted items from localStorage
+function getPostedItems() {
+  try {
+    return JSON.parse(localStorage.getItem('postedItems') || '[]');
+  } catch {
+    return [];
+  }
+}
+
+// Save posted items to localStorage
+function savePostedItems(items) {
+  localStorage.setItem('postedItems', JSON.stringify(items));
+}
+
+// Mark an item as posted
+function markAsPosted(postId) {
+  const postedItems = getPostedItems();
+  if (!postedItems.includes(postId)) {
+    postedItems.push(postId);
+    savePostedItems(postedItems);
+    load(); // Reload to re-sort
+  }
+}
+
+// Open Twitter with post content
+function openTwitterPost(text) {
+  const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text);
+  window.open(url, '_blank');
+}
+
+async function load() {
+  const finalList = document.getElementById("final-list");
+  const pollsList = document.getElementById("polls-list");
+  const bettingList = document.getElementById("betting-list");
+  const stadiumsList = document.getElementById("stadiums-list");
+  const graphicsList = document.getElementById("graphics-list");
+  finalList.textContent = "Loading…";
+  pollsList.textContent = "Loading…";
+  bettingList.textContent = "Loading…";
+  stadiumsList.textContent = "Loading…";
+  graphicsList.textContent = "Loading…";
+  
+  try {
+    const res = await fetch(URL + "?v=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) throw new Error(res.status + " " + res.statusText);
+    const data = await res.json();
+
+    document.getElementById("ts").textContent =
+      `generated ${new Date(data.generatedAt).toLocaleString()}`;
+
+    // Separate posts by type
+    const finalPosts = data.posts?.filter(p => p.kind === "final") || [];
+    const pollPosts = data.posts?.filter(p => p.kind === "poll_top10" || p.kind === "poll_movers") || [];
+    const bettingPosts = data.posts?.filter(p => p.kind === "betting_preview") || [];
+    const stadiumPosts = data.posts?.filter(p => p.kind === "stadiums") || [];
+
+    // Sort posts: unposted first, then posted (by original order)
+    const postedItems = getPostedItems();
+    const sortPosts = (posts) => {
+      return posts.sort((a, b) => {
+        const aPosted = postedItems.includes(a.id);
+        const bPosted = postedItems.includes(b.id);
+        
+        if (aPosted && !bPosted) return 1;  // a goes after b
+        if (!aPosted && bPosted) return -1; // a goes before b
+        return 0; // maintain original order
+      });
+    };
+
+    // Render final scores
+    finalList.innerHTML = "";
+    if (!finalPosts.length) {
+      finalList.textContent = "No final score posts in queue.";
+    } else {
+      for (const p of sortPosts(finalPosts)) {
+        finalList.appendChild(createPostElement(p, data.generatedAt));
+      }
+    }
+
+    // Render poll posts
+    pollsList.innerHTML = "";
+    if (!pollPosts.length) {
+      pollsList.textContent = "No poll posts in queue.";
+    } else {
+      for (const p of sortPosts(pollPosts)) {
+        pollsList.appendChild(createPostElement(p, data.generatedAt));
+      }
+    }
+
+    // Render betting preview posts
+    bettingList.innerHTML = "";
+    if (!bettingPosts.length) {
+      bettingList.textContent = "No betting preview posts in queue.";
+    } else {
+      for (const p of sortPosts(bettingPosts)) {
+        bettingList.appendChild(createPostElement(p, data.generatedAt));
+      }
+    }
+
+    // Render stadium posts
+    stadiumsList.innerHTML = "";
+    if (!stadiumPosts.length) {
+      stadiumsList.textContent = "No stadium posts in queue.";
+    } else {
+      for (const p of sortPosts(stadiumPosts)) {
+        stadiumsList.appendChild(createPostElement(p, data.generatedAt));
+      }
+    }
+
+    // Load graphics
+    loadGraphics();
+
+  } catch (err) {
+    finalList.textContent = "Could not load queue: " + err.message;
+    pollsList.textContent = "Could not load queue: " + err.message;
+    bettingList.textContent = "Could not load queue: " + err.message;
+    stadiumsList.textContent = "Could not load queue: " + err.message;
+    graphicsList.textContent = "Could not load graphics: " + err.message;
+  }
+}
+
+// Graphics configuration
+const teamGraphics = [
+  { file: 'cfbd-rushingYards-2025.png', title: 'Rushing Leaders', category: 'Offense' },
+  { file: 'cfbd-netPassingYards-2025.png', title: 'Passing Leaders', category: 'Offense' },
+  { file: 'cfbd-totalYards-2025.png', title: 'Top Offenses', category: 'Offense' },
+  { file: 'cfbd-sacks-2025.png', title: 'Sack Leaders', category: 'Defense' },
+  { file: 'cfbd-totalYardsOpponent-2025.png', title: 'Least Yards Allowed', category: 'Defense' },
+  { file: 'cfbd-penaltyYards-2025.png', title: 'Most Team Penalty Yds', category: 'Special' },
+  { file: 'cfbd-turnoversOpponent-2025.png', title: 'Takeaways', category: 'Defense' }
+];
+
+const playerGraphics = [
+  { file: 'player-rushingYards-2025.png', title: 'Rushing Yards Leaders', category: 'Offense' },
+  { file: 'player-rushingTDs-2025.png', title: 'Rushing TD Leaders', category: 'Offense' },
+  { file: 'player-passingYards-2025.png', title: 'Passing Yards Leaders', category: 'Offense' },
+  { file: 'player-passingTDs-2025.png', title: 'Passing TD Leaders', category: 'Offense' },
+  { file: 'player-receivingYards-2025.png', title: 'Receiving Yards Leaders', category: 'Offense' },
+  { file: 'player-receivingTDs-2025.png', title: 'Receiving TD Leaders', category: 'Offense' },
+  { file: 'player-sacks-2025.png', title: 'Sack Leaders', category: 'Defense' }
+];
+
+const rankedMatchupsGraphics = [
+  { file: 'ranked-matchups-real.png', title: 'Ranked Matchups', category: 'Matchups' }
+];
+
+const cfbDataTop25Graphics = [
+  { file: 'cfb-data-top25-real.png', title: 'CFB Data\'s Top 25', category: 'Rankings' }
+];
+
+const lookingAheadGraphics = [
+  { file: 'looking-ahead-sec.png', title: 'Looking Ahead: SEC Matchups', category: 'Betting' },
+  { file: 'looking-ahead-big-ten.png', title: 'Looking Ahead: Big Ten Matchups', category: 'Betting' },
+  { file: 'looking-ahead-big-12.png', title: 'Looking Ahead: Big 12 Matchups', category: 'Betting' }
+];
+
+// Load graphics
+function loadGraphics() {
+  const graphicsList = document.getElementById("graphics-list");
+  graphicsList.innerHTML = "";
+
+  // Team Leaders Section
+  const teamSection = document.createElement("div");
+  teamSection.innerHTML = `
+    <div style="margin-bottom: 24px;">
+      <h3 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #1f2937;">
+        <span style="background: #dbeafe; color: #1e40af; padding: 4px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; margin-right: 8px;">TEAM</span>
+        Team Leaders
+      </h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+        ${teamGraphics.map(g => createGraphicCard(g)).join('')}
+      </div>
+    </div>
+  `;
+  graphicsList.appendChild(teamSection);
+
+  // Player Leaders Section
+  const playerSection = document.createElement("div");
+  playerSection.innerHTML = `
+    <div style="margin-bottom: 24px;">
+      <h3 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #1f2937;">
+        <span style="background: #e9d5ff; color: #7c3aed; padding: 4px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; margin-right: 8px;">PLAYER</span>
+        Player Leaders
+      </h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+        ${playerGraphics.map(g => createGraphicCard(g)).join('')}
+      </div>
+    </div>
+  `;
+  graphicsList.appendChild(playerSection);
+
+  // Ranked Matchups Section
+  const rankedMatchupsSection = document.createElement("div");
+  rankedMatchupsSection.innerHTML = `
+    <div style="margin-bottom: 24px;">
+      <h3 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #1f2937;">
+        <span style="background: #fbbf24; color: #92400e; padding: 4px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; margin-right: 8px;">MATCHUPS</span>
+        Ranked Matchups
+      </h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+        ${rankedMatchupsGraphics.map(g => createGraphicCard(g)).join('')}
+      </div>
+    </div>
+  `;
+  graphicsList.appendChild(rankedMatchupsSection);
+
+  // CFB Data Top 25 Section
+  const cfbDataTop25Section = document.createElement("div");
+  cfbDataTop25Section.innerHTML = `
+    <div style="margin-bottom: 24px;">
+      <h3 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #1f2937;">
+        <span style="background: #8b5cf6; color: #ffffff; padding: 4px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; margin-right: 8px;">RANKINGS</span>
+        CFB Data's Top 25
+      </h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+        ${cfbDataTop25Graphics.map(g => createGraphicCard(g)).join('')}
+      </div>
+    </div>
+  `;
+  graphicsList.appendChild(cfbDataTop25Section);
+
+  // Looking Ahead Section
+  const lookingAheadSection = document.createElement("div");
+  lookingAheadSection.innerHTML = `
+    <div style="margin-bottom: 24px;">
+      <h3 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #1f2937;">
+        <span style="background: #34d399; color: #064e3b; padding: 4px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; margin-right: 8px;">BETTING</span>
+        Looking Ahead: Conference Matchups
+      </h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+        ${lookingAheadGraphics.map(g => createGraphicCard(g)).join('')}
+      </div>
+    </div>
+  `;
+  graphicsList.appendChild(lookingAheadSection);
+}
+
+// Create graphic card HTML
+function createGraphicCard(graphic) {
+  const categoryColors = {
+    'Offense': 'background: #dcfce7; color: #166534',
+    'Defense': 'background: #fecaca; color: #991b1b',
+    'Special': 'background: #fef3c7; color: #92400e',
+    'Matchups': 'background: #fbbf24; color: #92400e',
+    'Rankings': 'background: #8b5cf6; color: #ffffff',
+    'Betting': 'background: #34d399; color: #064e3b'
+  };
+
+  const postedItems = getPostedItems();
+  const isPosted = postedItems.includes(`graphic_${graphic.file}`);
+  const cardStyle = isPosted ? 'opacity: 0.6; background: #f8f9fa;' : '';
+
+  return `
+    <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); ${cardStyle}">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+        <h4 style="margin: 0; font-size: 14px; font-weight: 600; color: #1f2937;">${graphic.title}${isPosted ? ' <strong style="color: #6b7280;">• POSTED</strong>' : ''}</h4>
+        <span style="padding: 2px 6px; border-radius: 8px; font-size: 11px; font-weight: 500; ${categoryColors[graphic.category]}">
+          ${graphic.category}
+        </span>
+      </div>
+      <div style="position: relative; margin-bottom: 12px;">
+        <img src="${graphic.file}" alt="${graphic.title}" style="width: 100%; height: auto; border-radius: 8px;" loading="lazy">
+      </div>
+      <div style="display: flex; justify-content: flex-end; gap: 8px;">
+        <button onclick="shareToTwitterAndMark('${graphic.title}', '${graphic.file}')" style="padding: 8px 12px; border: 1px solid #1da1f2; background: ${isPosted ? '#e5e7eb' : '#1da1f2'}; color: ${isPosted ? '#6b7280' : 'white'}; border-color: ${isPosted ? '#d1d5db' : '#1da1f2'}; border-radius: 8px; font-size: 12px; font-weight: 500; cursor: ${isPosted ? 'default' : 'pointer'};" ${isPosted ? 'disabled' : ''}>
+          🐦 X
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+// Get relative time string (e.g., "2h ago", "30m ago", "1d ago")
+function getTimeAgo(dateString) {
+  const now = new Date();
+  const past = new Date(dateString);
+  const diffMs = now - past;
+  const diffMins = Math.floor(diffMs / (1000 * 60));
+  const diffHours = Math.floor(diffMins / 60);
+  const diffDays = Math.floor(diffHours / 24);
+  
+  if (diffMins < 1) return 'just now';
+  if (diffMins < 60) return `${diffMins}m ago`;
+  if (diffHours < 24) return `${diffHours}h ago`;
+  if (diffDays < 7) return `${diffDays}d ago`;
+  
+  return `${Math.floor(diffDays / 7)}w ago`;
+}
+
+
+// Show notification message
+function showNotification(message) {
+  // Create notification element
+  const notification = document.createElement('div');
+  notification.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #1f2937;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    font-size: 14px;
+    max-width: 300px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  `;
+  notification.textContent = message;
+  
+  document.body.appendChild(notification);
+  
+  // Animate in
+  setTimeout(() => {
+    notification.style.opacity = '1';
+    notification.style.transform = 'translateX(0)';
+  }, 100);
+  
+  // Auto remove after 3 seconds
+  setTimeout(() => {
+    notification.style.opacity = '0';
+    notification.style.transform = 'translateX(100%)';
+    setTimeout(() => {
+      if (notification.parentNode) {
+        notification.parentNode.removeChild(notification);
+      }
+    }, 300);
+  }, 3000);
+}
+
+
+// Share to Twitter/X and mark as posted
+function shareToTwitterAndMark(graphicTitle, filename) {
+  // Create a tweet with the graphic title and relevant hashtags
+  const tweetText = `${graphicTitle} #CFB #CollegeFootball`;
+  const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweetText);
+  window.open(url, '_blank');
+  
+  // Mark as posted
+  markAsPosted(`graphic_${filename}`);
+}
+
+// Share to Twitter/X (legacy function for backward compatibility)
+function shareToTwitter(graphicTitle) {
+  // Create a tweet with the graphic title and relevant hashtags
+  const tweetText = `${graphicTitle} #CFB #CollegeFootball`;
+  const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweetText);
+  window.open(url, '_blank');
+}
+
+function createPostElement(p, queueGeneratedAt) {
+  const el = document.createElement("div");
+  const postedItems = getPostedItems();
+  const isPosted = postedItems.includes(p.id);
+  
+  // Format generation time for display - use post's own generatedAt if available
+  const generatedAt = p.generatedAt || queueGeneratedAt;
+  const timeAgo = generatedAt ? getTimeAgo(generatedAt) : 'Unknown';
+  
+  el.className = `post${isPosted ? ' posted' : ''}`;
+  el.innerHTML = `
+    <div style="flex:1">
+      <div>${(p.text||"").replace(/</g,"&lt;")}</div>
+      <div class="meta">${p.kind}${
+        p.link ? ` • <a href="${p.link}" target="_blank">boxscore</a>` : ""
+      }${isPosted ? ' • <strong>POSTED</strong>' : ''} • <span style="color: #9ca3af;">(${timeAgo})</span></div>
+    </div>
+    <div class="button-group">
+      <button>Copy</button>
+      <button class="${isPosted ? 'posted' : ''}">X</button>
+    </div>`;
+  
+  // Copy button functionality
+  el.querySelector("button").onclick = async () => {
+    await navigator.clipboard.writeText(p.text);
+    el.querySelector("button").textContent = "Copied";
+    setTimeout(()=>el.querySelector("button").textContent="Copy",900);
+  };
+  
+  // X button functionality - opens Twitter AND marks as posted
+  el.querySelectorAll("button")[1].onclick = () => {
+    openTwitterPost(p.text);
+    // Automatically mark as posted when X button is clicked
+    if (!isPosted) {
+      markAsPosted(p.id);
+    }
+  };
+  
+  return el;
+}
+// Tab switching functionality
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Remove active class from all tabs and content
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    
+    // Add active class to clicked tab and corresponding content
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.tab + '-tab').classList.add('active');
+  });
+});
+
+document.getElementById("refresh").onclick = load;
+document.getElementById("clearPosted").onclick = () => {
+  localStorage.removeItem('postedItems');
+  console.log('Cleared posted items from localStorage');
+  load();
+};
+document.getElementById("toggleAutoRefresh").onclick = toggleAutoRefresh;
+
+// Initialize everything
+initializeAutoRefresh();
+load();
+</script>
+</html>

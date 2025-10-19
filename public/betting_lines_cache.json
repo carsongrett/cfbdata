@@ -1,0 +1,32 @@
+{
+  "week16": [
+    {
+      "id": 401762521,
+      "season": 2025,
+      "seasonType": "regular",
+      "week": 16,
+      "startDate": "2025-12-13T20:00:00.000Z",
+      "homeTeam": "Navy",
+      "homeConference": "American Athletic",
+      "homeClassification": "fbs",
+      "homeScore": null,
+      "awayTeam": "Army",
+      "awayConference": "American Athletic",
+      "awayClassification": "fbs",
+      "awayScore": null,
+      "lines": [
+        {
+          "provider": "ESPN Bet",
+          "spread": -3.5,
+          "formattedSpread": "Navy -3.5",
+          "spreadOpen": -3.5,
+          "overUnder": 39.5,
+          "overUnderOpen": 39.5,
+          "homeMoneyline": -145,
+          "awayMoneyline": 125
+        }
+      ]
+    }
+  ],
+  "lastFetch": "2025-09-15T02:40:44.986Z"
+}

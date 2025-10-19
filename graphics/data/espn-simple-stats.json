@@ -1,0 +1,77 @@
+[
+  {
+    "team": "Complete Leaders",
+    "stats": {
+      "value1": 5,
+      "value2": 2,
+      "value3": 2024
+    }
+  },
+  {
+    "team": "Total Yards",
+    "stats": {
+      "value1": 2024
+    }
+  },
+  {
+    "team": "Passing",
+    "stats": {
+      "value1": 2,
+      "value2": 2024
+    }
+  },
+  {
+    "team": "Rushing",
+    "stats": {
+      "value1": 3,
+      "value2": 2024
+    }
+  },
+  {
+    "team": "Receiving",
+    "stats": {
+      "value1": 3,
+      "value2": 2024
+    }
+  },
+  {
+    "team": "Downs",
+    "stats": {
+      "value1": 4,
+      "value2": 2024
+    }
+  },
+  {
+    "team": "Points Allowed",
+    "stats": {
+      "value1": 2024
+    }
+  },
+  {
+    "team": "Yards Allowed",
+    "stats": {
+      "value1": 1,
+      "value2": 2024
+    }
+  },
+  {
+    "team": "Returning",
+    "stats": {
+      "value1": 2024
+    }
+  },
+  {
+    "team": "Kicking",
+    "stats": {
+      "value1": 1,
+      "value2": 2024
+    }
+  },
+  {
+    "team": "Punting",
+    "stats": {
+      "value1": 2,
+      "value2": 2024
+    }
+  }
+]
