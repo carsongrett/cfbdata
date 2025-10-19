@@ -71,84 +71,7 @@ function applyCFBDataSwaps(teams) {
   return swappedTeams;
 }
 
-// Function to get team primary color
-function getTeamColor(teamName) {
-  const teamColors = {
-    'Georgia': '#BA0C2F',
-    'Ohio State': '#1F4E79',
-    'Michigan': '#00274C',
-    'Texas': '#BF5700',
-    'Alabama': '#9E1B32',
-    'Penn State': '#002147',
-    'LSU': '#461D7C',
-    'Oregon': '#154733',
-    'Notre Dame': '#0C2340',
-    'Florida State': '#782F40',
-    'Auburn': '#0C2340',
-    'Oklahoma': '#841617',
-    'Washington': '#4B2E83',
-    'USC': '#990000',
-    'Tennessee': '#FF8200',
-    'Miami': '#F47321',
-    'Illinois': '#E84A27',
-    'Texas A&M': '#500000',
-    'Ole Miss': '#002147',
-    'Utah': '#CC0000',
-    'Texas Tech': '#CC0000',
-    'Georgia Tech': '#B3A369',
-    'Vanderbilt': '#866D4B',
-    'South Carolina': '#73000A',
-    'Missouri': '#F1B82D',
-    'Clemson': '#F66733',
-    'North Carolina': '#7BAFD4',
-    'Iowa': '#000000',
-    'Oklahoma State': '#FF7300',
-    'Kansas State': '#512888',
-    'Arizona': '#003366',
-    'Louisville': '#AD0000',
-    'Iowa State': '#F1C232',
-    'West Virginia': '#FFC72C',
-    'Kansas': '#0051BA',
-    'SMU': '#C8102E',
-    'California': '#FDB515',
-    'Stanford': '#8C1515',
-    'UCLA': '#2774AE',
-    'Arizona State': '#8C1515',
-    'Colorado': '#CFB87C',
-    'Oregon State': '#D73F09',
-    'Washington State': '#981E32',
-    'BYU': '#002255',
-    'Cincinnati': '#E00122',
-    'Houston': '#C8102E',
-    'UCF': '#FFC904',
-    'TCU': '#4D1979',
-    'Baylor': '#003015',
-    'Texas Tech': '#CC0000',
-    'Virginia Tech': '#630031',
-    'Duke': '#001A57',
-    'North Carolina State': '#CC0000',
-    'Pittsburgh': '#003594',
-    'Syracuse': '#F76900',
-    'Virginia': '#232D4B',
-    'Wake Forest': '#9E1B32',
-    'Boston College': '#891B2E',
-    'Florida': '#FA4616',
-    'Kentucky': '#0033A0',
-    'Arkansas': '#9D2235',
-    'Mississippi State': '#660000',
-    'Nebraska': '#F20000',
-    'Minnesota': '#7A0019',
-    'Northwestern': '#4E2A84',
-    'Purdue': '#CEB888',
-    'Rutgers': '#CC0033',
-    'Wisconsin': '#C8102E',
-    'Indiana': '#990000',
-    'Maryland': '#E03A3E',
-    'Michigan State': '#18453B'
-  };
-  
-  return teamColors[teamName] || '#666666';
-}
+// Function removed - no longer using team-specific colors
 
 // Function to get team logo path
 function getTeamLogoPath(teamName) {
@@ -252,152 +175,211 @@ function generateHTMLTemplate(teams, week) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1000, height=1200, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CFB Data's Top 25 - Week ${week}</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
-        }
-        
-        .background-pattern {
-            background: 
-                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.1) 0%, transparent 50%),
-                linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
-        }
-        
-        .team-item {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: white;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: relative;
-            min-height: 160px;
+            padding: 20px;
         }
-        
-        .team-image {
+
+        .container {
+            max-width: 1200px;
             width: 100%;
-            height: 120px;
-            border-radius: 12px;
-            object-fit: cover;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            border: 2px solid #333;
         }
-        
-        .team-image:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-        }
-        
-        .rank-badge {
-            position: absolute;
-            top: 8px;
-            left: 8px;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 100%);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 800;
-            font-size: 14px;
-            z-index: 10;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-        }
-        
-        .team-name {
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            font-weight: 700;
+
+        .header {
             text-align: center;
-            margin-top: 12px;
-            color: white;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-            letter-spacing: 0.8px;
-            text-transform: uppercase;
-            line-height: 1.2;
-            min-height: 18px;
+            margin-bottom: 40px;
+            position: relative;
         }
-        
-        .logo-container {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            overflow: hidden;
+
+        .main-title {
+            font-size: 48px;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .week-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #000;
+            padding: 8px 24px;
+            border-radius: 25px;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: none;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .action-buttons {
+            position: absolute;
+            top: 0;
+            right: 0;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            background: white;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            gap: 10px;
         }
-        
-        .logo-image {
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-logo {
+            background: transparent;
+            border: none;
+            padding: 0;
+            width: 60px;
+            height: 30px;
+        }
+
+        .btn-logo img {
             width: 100%;
             height: 100%;
             object-fit: contain;
-            image-rendering: -webkit-optimize-contrast;
-            image-rendering: crisp-edges;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .team-card {
+            background: #e5e7eb;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            border: 2px solid transparent;
+            min-height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rank-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #374151;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            border: 2px solid #6b7280;
+        }
+
+        .team-logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin: 10px 0;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+            
+            .main-title {
+                font-size: 36px;
+            }
+            
+            .week-badge {
+                font-size: 20px;
+                padding: 6px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .main-title {
+                font-size: 28px;
+            }
         }
     </style>
 </head>
-<body class="m-0 p-0 background-pattern">
-    <div class="w-[1000px] h-[1200px] relative overflow-hidden background-pattern">
-        <!-- Main Content Container -->
-        <div class="p-6 h-full flex flex-col">
-        
-        <!-- Header -->
-        <div class="mb-4 p-3 rounded-lg relative" style="background-color: #ffffff;">
-            <h1 class="text-7xl font-black text-gray-900 mb-2 tracking-tight">
-                CFB DATA'S TOP 25
-            </h1>
-            <div class="flex items-center gap-4">
-                <p class="text-2xl font-semibold text-gray-900">
-                    WEEK ${week}
-                </p>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="action-buttons">
+                <button class="btn btn-logo">
+                    ${yourLogoDataUrl ? `<img src="${yourLogoDataUrl}" alt="CFB Data Logo">` : '<div style="background: #ccc; color: #666; font-weight: bold;">LOGO</div>'}
+                </button>
             </div>
-            <!-- Logo in top right corner -->
-            <div class="absolute top-4 right-4">
-                <div class="logo-container">
-                    ${yourLogoDataUrl ? `<img src="${yourLogoDataUrl}" alt="" class="logo-image" />` : '<div class="logo-image" style="background: #ccc; display: flex; align-items: center; justify-content: center; color: #666; font-weight: bold;">LOGO</div>'}
-                </div>
-            </div>
+            
+            <h1 class="main-title">CFB DATA'S TOP 25</h1>
+            <div class="week-badge">WEEK ${week}</div>
         </div>
-        
-        <!-- Teams Grid -->
-        <div class="flex-1 grid grid-cols-5 gap-4">
+
+        <div class="grid">
             ${teams.map(team => {
-              const teamColor = getTeamColor(team.school);
-              
               // Get team logo
               const logoFileName = getTeamLogoPath(team.school);
               const logoPath = logoFileName ? path.join(__dirname, '..', 'assets', 'team icons', logoFileName) : null;
               const logoDataUrl = logoPath && fs.existsSync(logoPath) ? encodeImageToBase64(logoPath) : null;
               
-              // Create team abbreviation for fallback
-              const teamAbbr = team.school.split(' ').map(word => word[0]).join('').substring(0, 3).toUpperCase();
-              
               return `
-            <!-- Team ${team.rank} - ${team.school} -->
-            <div class="team-item">
+            <div class="team-card">
                 <div class="rank-badge">${team.rank}</div>
-                <div class="team-image" style="background: linear-gradient(135deg, ${teamColor} 0%, ${teamColor}CC 100%); display: flex; align-items: center; justify-content: center;">
-                    ${logoDataUrl ? 
-                      `<img src="${logoDataUrl}" alt="${team.school} Logo" style="width: 85%; height: 85%; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));" />` :
-                      `<div class="text-6xl font-black text-white" style="font-family: 'Inter', sans-serif;">${teamAbbr}</div>`
-                    }
-                </div>
-                <div class="team-name">${team.school.toUpperCase()}</div>
+                ${logoDataUrl ? 
+                  `<img src="${logoDataUrl}" alt="${team.school}" class="team-logo">` :
+                  `<div class="team-logo" style="display: flex; align-items: center; justify-content: center; background: #ccc; color: #666; font-weight: bold; font-size: 12px;">${team.school.substring(0, 3).toUpperCase()}</div>`
+                }
             </div>`;
             }).join('\n')}
         </div>
-        
+
+        <div class="footer">
+            Generated by CFB Data • Week ${week} Rankings
         </div>
-        
     </div>
 </body>
 </html>`;
