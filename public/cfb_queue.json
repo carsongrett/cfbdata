@@ -1,51 +1,6 @@
 {
-  "generatedAt": "2025-10-19T05:38:19.246Z",
+  "generatedAt": "2025-10-19T16:44:56.548Z",
   "posts": [
-    {
-      "id": "ap_top10_week8",
-      "kind": "poll_top10",
-      "text": "AP Top 10 - Week 8\n1. Ohio State\n2. Miami\n3. Indiana\n4. Texas A&M\n5. Ole Miss\n6. Alabama\n7. Texas Tech\n8. Oregon\n9. Georgia\n10. LSU\n\n#APTop25 #CFB",
-      "link": "",
-      "expiresAt": "2025-10-21T01:52:00.626Z",
-      "source": "cfbd",
-      "generatedAt": "2025-10-14T01:52:00.626Z"
-    },
-    {
-      "id": "ap_movers_week8",
-      "kind": "poll_movers",
-      "text": "AP Poll Movers - Week 8\n⬇️-8 Oklahoma (6→14)\n⬇️-5 Oregon (3→8)\n⬆️+5 South Florida (24→19)\n⬆️+4 Indiana (7→3)\nNEW: #20 USC\nNEW: #21 Texas\nNEW: #23 Utah\nNEW: #24 Cincinnati\nNEW: #25 Nebraska\n\n#APTop25 #CFB",
-      "link": "",
-      "expiresAt": "2025-10-21T01:52:00.627Z",
-      "source": "cfbd",
-      "generatedAt": "2025-10-14T01:52:00.627Z"
-    },
-    {
-      "id": "coaches_top10_week8",
-      "kind": "poll_top10",
-      "text": "Coaches Poll Top 10 - Week 8\n1. Ohio State\n2. Miami\n3. Indiana\n4. Texas A&M\n5. Ole Miss\n6. Alabama\n7. Georgia\n8. Texas Tech\n9. Oregon\n10. LSU\n\n#CoachesPoll #CFB",
-      "link": "",
-      "expiresAt": "2025-10-21T01:52:03.015Z",
-      "source": "cfbd",
-      "generatedAt": "2025-10-14T01:52:03.015Z"
-    },
-    {
-      "id": "coaches_movers_week8",
-      "kind": "poll_movers",
-      "text": "Coaches Poll Movers - Week 8\n⬇️-8 Illinois (17→25)\n⬇️-7 Oregon (2→9)\n⬇️-7 Oklahoma (6→13)\n⬆️+5 Virginia (24→19)\n⬆️+5 Memphis (25→20)\nNEW: #21 USC\nNEW: #22 Utah\nNEW: #23 South Florida\nNEW: #24 Cincinnati\n\n#CoachesPoll #CFB",
-      "link": "",
-      "expiresAt": "2025-10-21T01:52:03.016Z",
-      "source": "cfbd",
-      "generatedAt": "2025-10-14T01:52:03.016Z"
-    },
-    {
-      "id": "sp_top10_week8",
-      "kind": "poll_top10",
-      "text": "SP+ Power Rankings - Week 8\n1. Ohio State (27.6)\n2. Oregon (25.1)\n3. Indiana (24.6)\n4. Texas Tech (24.6)\n5. Texas A&M (22.2)\n6. Ole Miss (21.5)\n7. Oklahoma (21.5)\n8. Missouri (21.5)\n9. Notre Dame (21.3)\n10. Texas (21.1)\n\n#SPPlus #CFB",
-      "link": "",
-      "expiresAt": "2025-10-21T01:52:05.444Z",
-      "source": "cfbd",
-      "generatedAt": "2025-10-14T01:52:05.444Z"
-    },
     {
       "id": "betting_preview_week8_401752742",
       "kind": "betting_preview",
@@ -504,6 +459,51 @@
       "expiresAt": "2025-10-17T18:22:43.473Z",
       "source": "cfbd",
       "generatedAt": "2025-10-16T18:22:43.473Z"
+    },
+    {
+      "id": "ap_top10_week8",
+      "kind": "poll_top10",
+      "text": "AP Top 10 - Week 8\n1. Ohio State\n2. Miami\n3. Indiana\n4. Texas A&M\n5. Ole Miss\n6. Alabama\n7. Texas Tech\n8. Oregon\n9. Georgia\n10. LSU\n\n#APTop25 #CFB",
+      "link": "",
+      "expiresAt": "2025-10-26T16:44:58.312Z",
+      "source": "cfbd",
+      "generatedAt": "2025-10-19T16:44:58.312Z"
+    },
+    {
+      "id": "ap_movers_week8",
+      "kind": "poll_movers",
+      "text": "AP Poll Movers - Week 8\n⬇️-8 Oklahoma (6→14)\n⬇️-5 Oregon (3→8)\n⬆️+5 South Florida (24→19)\n⬆️+4 Indiana (7→3)\nNEW: #20 USC\nNEW: #21 Texas\nNEW: #23 Utah\nNEW: #24 Cincinnati\nNEW: #25 Nebraska\n\n#APTop25 #CFB",
+      "link": "",
+      "expiresAt": "2025-10-26T16:44:58.312Z",
+      "source": "cfbd",
+      "generatedAt": "2025-10-19T16:44:58.312Z"
+    },
+    {
+      "id": "coaches_top10_week8",
+      "kind": "poll_top10",
+      "text": "Coaches Poll Top 10 - Week 8\n1. Ohio State\n2. Miami\n3. Indiana\n4. Texas A&M\n5. Ole Miss\n6. Alabama\n7. Georgia\n8. Texas Tech\n9. Oregon\n10. LSU\n\n#CoachesPoll #CFB",
+      "link": "",
+      "expiresAt": "2025-10-26T16:45:00.793Z",
+      "source": "cfbd",
+      "generatedAt": "2025-10-19T16:45:00.793Z"
+    },
+    {
+      "id": "coaches_movers_week8",
+      "kind": "poll_movers",
+      "text": "Coaches Poll Movers - Week 8\n⬇️-8 Illinois (17→25)\n⬇️-7 Oregon (2→9)\n⬇️-7 Oklahoma (6→13)\n⬆️+5 Virginia (24→19)\n⬆️+5 Memphis (25→20)\nNEW: #21 USC\nNEW: #22 Utah\nNEW: #23 South Florida\nNEW: #24 Cincinnati\n\n#CoachesPoll #CFB",
+      "link": "",
+      "expiresAt": "2025-10-26T16:45:00.794Z",
+      "source": "cfbd",
+      "generatedAt": "2025-10-19T16:45:00.794Z"
+    },
+    {
+      "id": "sp_top10_week8",
+      "kind": "poll_top10",
+      "text": "SP+ Power Rankings - Week 8\n1. Ohio State (27.8)\n2. Oregon (26)\n3. Indiana (25.4)\n4. Texas Tech (22.4)\n5. Oklahoma (21.6)\n6. Notre Dame (20.6)\n7. Texas A&M (20.2)\n8. Missouri (20.1)\n9. Alabama (19.8)\n10. Texas (19.4)\n\n#SPPlus #CFB",
+      "link": "",
+      "expiresAt": "2025-10-26T16:45:07.994Z",
+      "source": "cfbd",
+      "generatedAt": "2025-10-19T16:45:07.994Z"
     }
   ]
 }
