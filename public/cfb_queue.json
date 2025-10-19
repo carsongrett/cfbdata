@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-19T03:32:30.282Z",
+  "generatedAt": "2025-10-19T03:55:17.076Z",
   "posts": [
     {
       "id": "ap_top10_week8",
@@ -873,6 +873,60 @@
       "expiresAt": "2025-10-20T15:32:30.743Z",
       "source": "espn",
       "generatedAt": "2025-10-19T03:32:30.743Z"
+    },
+    {
+      "id": "final_401752879",
+      "kind": "final",
+      "text": "FINAL: 20-17\nUCLA Bruins - 20\nMaryland Terrapins - 17\n\n(UCLA): Nico Iamaleava 21/35, 221 YDS, 1 TD, 2 INT\n\n#CFB #GoBruins",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752879",
+      "expiresAt": "2025-10-20T15:55:18.122Z",
+      "source": "espn",
+      "generatedAt": "2025-10-19T03:55:18.122Z"
+    },
+    {
+      "id": "final_401752738",
+      "kind": "final",
+      "text": "FINAL: 37-20\n#6 Alabama Crimson Tide - 37\n#11 Tennessee Volunteers - 20\n\n(TENN): DeSean Bishop 14 CAR, 123 YDS, 2 TD\n\n#CFB #RollTide",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752738",
+      "expiresAt": "2025-10-20T15:55:18.122Z",
+      "source": "espn",
+      "generatedAt": "2025-10-19T03:55:18.122Z"
+    },
+    {
+      "id": "final_401752871",
+      "kind": "final",
+      "text": "FINAL: 34-24\n#13 Notre Dame Fighting Irish - 34\n#20 USC Trojans - 24\n\n(USC): Jayden Maiava 22/42, 328 YDS, 2 TD, 2 INT\n(ND): Jeremiyah Love 24 CAR, 228 YDS, 1 TD\n\n#CFB #GoIrish",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752871",
+      "expiresAt": "2025-10-20T15:55:18.122Z",
+      "source": "espn",
+      "generatedAt": "2025-10-19T03:55:18.122Z"
+    },
+    {
+      "id": "final_401762490",
+      "kind": "final",
+      "text": "FINAL: 48-13\n#19 South Florida Bulls - 48\nFlorida Atlantic Owls - 13\n\n(USF): Byrum Brown 14/24, 256 YDS, 3 TD\n\n#Blowout #CFB",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762490",
+      "expiresAt": "2025-10-20T15:55:18.122Z",
+      "source": "espn",
+      "generatedAt": "2025-10-19T03:55:18.122Z"
+    },
+    {
+      "id": "final_401754568",
+      "kind": "final",
+      "text": "FINAL: 30-13\nPittsburgh Panthers - 30\nSyracuse Orange - 13\n\n(PITT): Mason Heintschel 13/24, 143 YDS, 1 INT\n(SYR): Johntay Cook 7 REC, 66 YDS\n\n#CFB #H2P",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754568",
+      "expiresAt": "2025-10-20T15:55:18.123Z",
+      "source": "espn",
+      "generatedAt": "2025-10-19T03:55:18.124Z"
+    },
+    {
+      "id": "final_401756926",
+      "kind": "final",
+      "text": "FINAL: 49-17\n#24 Cincinnati Bearcats - 49\nOklahoma State Cowboys - 17\n\n(CIN): Brendan Sorsby 20/29, 270 YDS, 3 TD\n(OKST): Rodney Fields Jr. 21 CAR, 163 YDS, 1 TD\n\n#Blowout #CFB #Bearcats",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756926",
+      "expiresAt": "2025-10-20T15:55:18.124Z",
+      "source": "espn",
+      "generatedAt": "2025-10-19T03:55:18.124Z"
     }
   ]
 }
