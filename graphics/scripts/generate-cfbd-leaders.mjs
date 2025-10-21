@@ -97,13 +97,13 @@ function processTeamStats(statsData, recordsData) {
 // Function to create leaders data for a specific stat
 function createLeadersData(teams, statName, isDefensive = false) {
   const titles = {
-    'rushingYards': 'TEAM RUSHING LEADERS',
-    'netPassingYards': 'TEAM PASSING LEADERS',
-    'totalYards': 'TOP 10 TOTAL OFFENSE',
-    'sacks': 'TEAM SACK LEADERS',
-    'totalYardsOpponent': 'LEAST YARDS ALLOWED',
-    'penaltyYards': 'MOST TEAM PENALTY YDS',
-    'turnoversOpponent': 'MOST TURNOVERS FORCED'
+    'rushingYards': 'Rushing Leaders',
+    'netPassingYards': 'Passing Leaders',
+    'totalYards': 'Top Offenses',
+    'sacks': 'Sack Leaders',
+    'totalYardsOpponent': 'Top Defenses',
+    'penaltyYards': 'Most Penalized',
+    'turnoversOpponent': 'Forced TOs'
   };
   
   const units = {
