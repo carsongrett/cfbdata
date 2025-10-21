@@ -2,23 +2,27 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { chromium } from 'playwright';
+import { getCurrentWeek } from '../../scripts/week-utils.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // --- CONFIG ---
-const CFBD_API_KEY = "AYkI+Yu/PHFp5lbWxTjrAjN0q4DFidrdJgSoiGvPXve807qSdw0BJ6c08Vf0kFcN";
+const CFBD_API_KEY = process.env.CFBD_API_KEY;
 const CFBD_BASE = "https://api.collegefootballdata.com";
 const SEASON = 2025;
-const TARGET_WEEK = 7; // Current week
+
+if (!CFBD_API_KEY) {
+  console.error('❌ Error: CFBD_API_KEY environment variable is required');
+  console.error('Please set your API key: export CFBD_API_KEY=your_key_here');
+  process.exit(1);
+}
 
 // --- LOAD EXISTING DATA ---
 const teamColorsPath = path.join(__dirname, '..', 'data', 'team_colors.json');
 const teamMappingPath = path.join(__dirname, '..', 'data', 'team_mapping.json');
 const teamColors = JSON.parse(fs.readFileSync(teamColorsPath, 'utf8'));
 const teamMapping = JSON.parse(fs.readFileSync(teamMappingPath, 'utf8'));
-
-console.log('🎨 Generating Looking Ahead graphics for 2025 Season...');
 
 // --- UTILITY FUNCTIONS ---
 
@@ -433,7 +437,7 @@ function selectConferenceMatchups(rankings, bettingLines) {
 
 // --- HTML GENERATION ---
 
-function generateHTML(gamesData, conferenceName) {
+function generateHTML(gamesData, conferenceName, targetWeek) {
   const logoPath = path.join(__dirname, '..', 'assets', 'x_logo.png');
   const logoDataUrl = encodeImageToBase64(logoPath);
   
@@ -511,7 +515,7 @@ function generateHTML(gamesData, conferenceName) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Looking Ahead - Week ${TARGET_WEEK}</title>
+    <title>Looking Ahead - Week ${targetWeek}</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
@@ -623,7 +627,7 @@ function generateHTML(gamesData, conferenceName) {
                     LOOKING AHEAD
                 </h1>
                 <p class="text-3xl font-semibold text-gray-700">
-                    WEEK ${TARGET_WEEK} PREVIEW • ${conferenceName.toUpperCase()} MATCHUPS
+                    WEEK ${targetWeek} PREVIEW • ${conferenceName.toUpperCase()} MATCHUPS
                 </p>
                 <!-- CFB DATA Logo in top right corner -->
                 <div class="absolute top-0 right-0">
@@ -700,6 +704,20 @@ async function generatePNG(htmlContent, outputPath) {
 
 async function main() {
   try {
+    console.log('🎨 Generating Looking Ahead graphics for 2025 Season...');
+    
+    // Get current week dynamically from API
+    console.log('📅 Fetching current week from API...');
+    const TARGET_WEEK = await getCurrentWeek(SEASON);
+    
+    if (!TARGET_WEEK) {
+      console.error('❌ Could not determine current week from API');
+      console.error('🛑 Exiting - cannot proceed without week information');
+      process.exit(1);
+    }
+    
+    console.log(`✅ Current week: ${TARGET_WEEK}`);
+    
     // Fetch all required data
     const [teams, rankings, bettingLines] = await Promise.all([
       fetchTeams(),
@@ -765,7 +783,7 @@ async function main() {
       });
       
       // Generate HTML
-      const htmlContent = generateHTML(gamesWithRankings, conferenceName);
+      const htmlContent = generateHTML(gamesWithRankings, conferenceName, TARGET_WEEK);
       const htmlPath = path.join(outputDir, `looking-ahead-${conferenceName.toLowerCase().replace(' ', '-')}.html`);
       fs.writeFileSync(htmlPath, htmlContent);
       
