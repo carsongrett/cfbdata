@@ -441,51 +441,6 @@
       "expiresAt": "2025-10-24T18:23:16.141Z",
       "source": "cfbd",
       "generatedAt": "2025-10-23T18:23:16.141Z"
-    },
-    {
-      "id": "final_401761634",
-      "kind": "final",
-      "text": "FINAL: 38-31\nSouth Alabama Jaguars - 38\nGeorgia State Panthers - 31\n\n(USA): Bishop Davenport 16/22, 280 YDS, 2 TD\n\n#CFB #GoJags",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761634",
-      "expiresAt": "2025-10-25T15:05:31.099Z",
-      "source": "espn",
-      "generatedAt": "2025-10-24T03:05:31.099Z"
-    },
-    {
-      "id": "final_401757285",
-      "kind": "final",
-      "text": "FINAL: 45-26\nKennesaw State Owls - 45\nFlorida International Panthers - 26\n\n(KENN): Gabriel Benyard 5 REC, 97 YDS\n(FIU): Keyone Jenkins 22/36, 296 YDS, 1 TD\n\n#CFB",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757285",
-      "expiresAt": "2025-10-25T15:05:31.099Z",
-      "source": "espn",
-      "generatedAt": "2025-10-24T03:05:31.099Z"
-    },
-    {
-      "id": "final_401757286",
-      "kind": "final",
-      "text": "FINAL: 28-27\nWestern Kentucky Hilltoppers - 28\nLouisiana Tech Bulldogs - 27\n\n(WKU): Rodney Tisdale Jr. 12 CAR, 73 YDS\n(LT): Blake Baker 31/45, 340 YDS, 1 TD, 1 INT\n\n#CFB #GoTops",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757286",
-      "expiresAt": "2025-10-25T15:05:31.099Z",
-      "source": "espn",
-      "generatedAt": "2025-10-24T03:05:31.099Z"
-    },
-    {
-      "id": "final_401757287",
-      "kind": "final",
-      "text": "FINAL: 31-28\nDelaware Blue Hens - 31\nMiddle Tennessee Blue Raiders - 28\n\n(MTSU): Nicholas Vattiato 31/48, 281 YDS, 3 TD, 1 INT\n(DEL): Kyre Duplessis 7 REC, 65 YDS, 2 TD\n\n#CFB",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757287",
-      "expiresAt": "2025-10-25T15:05:31.099Z",
-      "source": "espn",
-      "generatedAt": "2025-10-24T03:05:31.099Z"
-    },
-    {
-      "id": "final_401757288",
-      "kind": "final",
-      "text": "FINAL: 24-17\nMissouri State Bears - 24\nNew Mexico State Aggies - 17\n\n(MOST): Jacob Clark 28/44, 283 YDS, 3 TD, 2 INT\n\n#CFB",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757288",
-      "expiresAt": "2025-10-25T15:05:31.099Z",
-      "source": "espn",
-      "generatedAt": "2025-10-24T03:05:31.099Z"
     }
   ]
 }
