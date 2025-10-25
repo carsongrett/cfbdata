@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T04:40:32.514Z",
+  "generatedAt": "2025-10-25T19:08:10.050Z",
   "posts": [
     {
       "id": "ap_top10_week9",
@@ -441,6 +441,15 @@
       "expiresAt": "2025-10-24T18:23:16.141Z",
       "source": "cfbd",
       "generatedAt": "2025-10-23T18:23:16.141Z"
+    },
+    {
+      "id": "final_401760397",
+      "kind": "final",
+      "text": "FINAL: 24-3\nBoise State Broncos - 24\nNevada Wolf Pack - 3\n\n(BOIS): Maddux Madsen 15/28, 174 YDS, 1 INT\n(NEV): Herschel Turner 7 CAR, 77 YDS\n\n#CFB #BleedBlue",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760397",
+      "expiresAt": "2025-10-27T07:08:10.471Z",
+      "source": "espn",
+      "generatedAt": "2025-10-25T19:08:10.471Z"
     }
   ]
 }
