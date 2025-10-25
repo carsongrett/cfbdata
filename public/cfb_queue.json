@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T03:49:22.769Z",
+  "generatedAt": "2025-10-25T04:40:32.514Z",
   "posts": [
     {
       "id": "ap_top10_week9",
@@ -450,6 +450,15 @@
       "expiresAt": "2025-10-26T15:49:23.290Z",
       "source": "espn",
       "generatedAt": "2025-10-25T03:49:23.290Z"
+    },
+    {
+      "id": "final_401754372",
+      "kind": "final",
+      "text": "FINAL: 42-34\nVirginia Tech Hokies - 42\nCalifornia Golden Bears - 34\n\n(CAL): Jaron-Keawe Sagapolutele 24/39, 286 YDS, 1 TD\n(VT): Marcellous Hawkins 21 CAR, 167 YDS\n\n#CFB #Hokies",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754372",
+      "expiresAt": "2025-10-26T16:40:32.794Z",
+      "source": "espn",
+      "generatedAt": "2025-10-25T04:40:32.794Z"
     }
   ]
 }
