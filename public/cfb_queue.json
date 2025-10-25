@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T03:05:51.036Z",
+  "generatedAt": "2025-10-25T03:49:22.769Z",
   "posts": [
     {
       "id": "ap_top10_week9",
@@ -441,6 +441,15 @@
       "expiresAt": "2025-10-24T18:23:16.141Z",
       "source": "cfbd",
       "generatedAt": "2025-10-23T18:23:16.141Z"
+    },
+    {
+      "id": "final_401762492",
+      "kind": "final",
+      "text": "FINAL: 54-20\nNorth Texas Mean Green - 54\nCharlotte 49ers - 20\n\n(UNT): Drew Mestemaker 37/49, 608 YDS, 4 TD, 1 INT\n\n#Blowout #CFB #GMG",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762492",
+      "expiresAt": "2025-10-26T15:49:23.290Z",
+      "source": "espn",
+      "generatedAt": "2025-10-25T03:49:23.290Z"
     }
   ]
 }
