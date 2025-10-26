@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T23:18:42.901Z",
+  "generatedAt": "2025-10-26T02:19:56.900Z",
   "posts": [
     {
       "id": "ap_top10_week9",
@@ -450,6 +450,330 @@
       "expiresAt": "2025-10-27T07:08:10.471Z",
       "source": "espn",
       "generatedAt": "2025-10-25T19:08:10.471Z"
+    },
+    {
+      "id": "final_401752885",
+      "kind": "final",
+      "text": "FINAL: 56-6\n#2 Indiana Hoosiers - 56\nUCLA Bruins - 6\n\n(IU): Fernando Mendoza 15/22, 168 YDS, 3 TD, 1 INT\n\n#Blowout #CFB #LEO",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752885",
+      "expiresAt": "2025-10-27T14:19:57.525Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.525Z"
+    },
+    {
+      "id": "final_401752751",
+      "kind": "final",
+      "text": "FINAL: 29-22\n#4 Alabama Crimson Tide - 29\nSouth Carolina Gamecocks - 22\n\n(ALA): Ty Simpson 24/43, 253 YDS, 2 TD\n(SC): LaNorris Sellers 18 CAR, 67 YDS, 1 TD\n\n#CFB #RollTide",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752751",
+      "expiresAt": "2025-10-27T14:19:57.525Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.525Z"
+    },
+    {
+      "id": "final_401754571",
+      "kind": "final",
+      "text": "FINAL: 41-16\n#7 Georgia Tech Yellow Jackets - 41\nSyracuse Orange - 16\n\n(SYR): Darrell Gill Jr. 5 REC, 79 YDS, 1 TD\n(GT): Haynes King 25/31, 304 YDS, 3 TD\n\n#CFB #GoJackets",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754571",
+      "expiresAt": "2025-10-27T14:19:57.525Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.525Z"
+    },
+    {
+      "id": "final_401752750",
+      "kind": "final",
+      "text": "FINAL: 34-26\n#8 Ole Miss Rebels - 34\n#13 Oklahoma Sooners - 26\n\n(MISS): Trinidad Chambliss 24/44, 315 YDS, 1 TD\n(OU): Xavier Robinson 9 CAR, 109 YDS, 2 TD\n\n#CFB #HottyToddy",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752750",
+      "expiresAt": "2025-10-27T14:19:57.525Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.525Z"
+    },
+    {
+      "id": "final_401754572",
+      "kind": "final",
+      "text": "FINAL: 42-7\n#9 Miami Hurricanes - 42\nStanford Cardinal - 7\n\n(MIA): Mark Fletcher Jr. 23 CAR, 106 YDS, 3 TD\n\n#Blowout #CFB #GoCanes",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754572",
+      "expiresAt": "2025-10-27T14:19:57.525Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.525Z"
+    },
+    {
+      "id": "final_401752752",
+      "kind": "final",
+      "text": "FINAL: 17-10\n#10 Vanderbilt Commodores - 17\n#15 Missouri Tigers - 10\n\n(MIZ): Matt Zollers 14/23, 138 YDS, 1 TD\n\n#CFB #AnchorDown",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752752",
+      "expiresAt": "2025-10-27T14:19:57.525Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.525Z"
+    },
+    {
+      "id": "final_401756931",
+      "kind": "final",
+      "text": "FINAL: 41-27\n#11 BYU Cougars - 41\nIowa State Cyclones - 27\n\n(BYU): Parker Kingston 7 REC, 133 YDS, 2 TD\n(ISU): Carson Hansen 16 CAR, 152 YDS, 2 TD\n\n#CFB #GoCougs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756931",
+      "expiresAt": "2025-10-27T14:19:57.525Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.525Z"
+    },
+    {
+      "id": "final_401756933",
+      "kind": "final",
+      "text": "FINAL: 42-0\n#14 Texas Tech Red Raiders - 42\nOklahoma State Cowboys - 0\n\n(OKST): Trent Howland 13 CAR, 58 YDS\n(TTU): Mitch Griffis 9/13, 172 YDS, 1 TD\n\n#Blowout #Shutout #CFB #WreckEm",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756933",
+      "expiresAt": "2025-10-27T14:19:57.525Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.525Z"
+    },
+    {
+      "id": "final_401754573",
+      "kind": "final",
+      "text": "FINAL: 17-16\n#16 Virginia Cavaliers - 17\nNorth Carolina Tar Heels - 16\n\n(UVA): J'Mari Taylor 21 CAR, 69 YDS, 1 TD\n(UNC): Gio Lopez 23/36, 208 YDS, 1 TD, 2 INT\n\n#CFB #GoHoos",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754573",
+      "expiresAt": "2025-10-27T14:19:57.525Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.525Z"
+    },
+    {
+      "id": "final_401762494",
+      "kind": "final",
+      "text": "FINAL: 34-31\nMemphis Tigers - 34\n#18 South Florida Bulls - 31\n\n(USF): Byrum Brown 21 CAR, 121 YDS, 2 TD\n(MEM): Brendon Lewis 27/44, 307 YDS, 2 TD\n\n#Upset #CFB #GoTigersGo",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762494",
+      "expiresAt": "2025-10-27T14:19:57.525Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.525Z"
+    },
+    {
+      "id": "final_401756930",
+      "kind": "final",
+      "text": "FINAL: 41-20\n#21 Cincinnati Bearcats - 41\nBaylor Bears - 20\n\n(BAY): Sawyer Robertson 18/26, 137 YDS, 2 TD\n(CIN): Cyrus Allen 3 REC, 36 YDS, 1 TD\n\n#CFB #Bearcats",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756930",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401752749",
+      "kind": "final",
+      "text": "FINAL: 45-38\n#22 Texas Longhorns - 45\nMississippi State Bulldogs - 38\n\n(TEX): Ryan Wingo 5 REC, 184 YDS\n(MSST): Blake Shapen 26/42, 381 YDS, 4 TD\n\n#Shootout #CFB #HookEm",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752749",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401752880",
+      "kind": "final",
+      "text": "FINAL: 42-25\nWashington Huskies - 42\n#23 Illinois Fighting Illini - 25\n\n(WASH): Demond Williams Jr. 26/33, 280 YDS, 4 TD\n\n#Upset #CFB #PurpleReign",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752880",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401752883",
+      "kind": "final",
+      "text": "FINAL: 28-21\nNebraska Cornhuskers - 28\nNorthwestern Wildcats - 21\n\n(NU): Caleb Komolafe 17 CAR, 125 YDS, 2 TD\n(NEB): Nyziah Hunter 6 REC, 70 YDS, 1 TD\n\n#CFB #GBR",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752883",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401752884",
+      "kind": "final",
+      "text": "FINAL: 27-24\nRutgers Scarlet Knights - 27\nPurdue Boilermakers - 24\n\n(RUTG): Athan Kaliakmanis 19/27, 359 YDS, 1 TD\n\n#CFB #CHOP",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752884",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401752942",
+      "kind": "final",
+      "text": "FINAL: 13-12\nWake Forest Demon Deacons - 13\nSMU Mustangs - 12\n\n(WAKE): Deshawn Purdie 14/26, 183 YDS, 2 INT\n\n#CFB #GoDeacs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752942",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401756932",
+      "kind": "final",
+      "text": "FINAL: 42-17\nKansas State Wildcats - 42\nKansas Jayhawks - 17\n\n(KSU): Avery Johnson 11/17, 231 YDS, 2 TD\n\n#CFB #EMAW",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756932",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401761635",
+      "kind": "final",
+      "text": "FINAL: 24-21\nOld Dominion Monarchs - 24\nApp State Mountaineers - 21\n\n(ODU): Colton Joseph 21/33, 305 YDS, 3 TD, 1 INT\n\n#CFB #ReignOn",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761635",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401762846",
+      "kind": "final",
+      "text": "FINAL: 24-21\nKent State Golden Flashes - 24\nBowling Green Falcons - 21\n\n(BGSU): Austyn Dendy 20 CAR, 93 YDS, 1 TD\n(KENT): Dru DeShields 13/22, 160 YDS, 1 TD\n\n#CFB #FlashFAST",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762846",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401762848",
+      "kind": "final",
+      "text": "FINAL: 28-21\nOhio Bobcats - 28\nEastern Michigan Eagles - 21\n\n(OHIO): Parker Navarro 23/28, 315 YDS, 2 TD, 2 INT\n(EMU): Nick Devereaux 5 REC, 121 YDS, 2 TD\n\n#CFB #BleedGreen",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762848",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401752746",
+      "kind": "final",
+      "text": "FINAL: 33-24\nAuburn Tigers - 33\nArkansas Razorbacks - 24\n\n(AUB): Jeremiah Cobb 28 CAR, 153 YDS\n(ARK): Taylen Green 14/22, 268 YDS, 1 TD, 3 INT\n\n#CFB #WarEagle",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752746",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401762844",
+      "kind": "final",
+      "text": "FINAL: 24-16\nAkron Zips - 24\nBuffalo Bulls - 16\n\n(AKR): Jordan Gant 25 CAR, 92 YDS\n(BUFF): Ta'Quan Roberson 23/36, 266 YDS, 1 TD, 4 INT\n\n#CFB #GoZips",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762844",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401757172",
+      "kind": "final",
+      "text": "FINAL: 37-34\nRice Owls - 37\nUConn Huskies - 34\n\n(CONN): Joe Fagnano 32/48, 344 YDS, 3 TD\n(RICE): Quinton Jackson 21 CAR, 168 YDS, 3 TD\n\n#CFB #GoOwls",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757172",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401760400",
+      "kind": "final",
+      "text": "FINAL: 33-14\nNew Mexico Lobos - 33\nUtah State Aggies - 14\n\n(USU): Miles Davis 10 CAR, 110 YDS, 1 TD\n(UNM): Jack Layne 17/22, 183 YDS, 1 TD\n\n#CFB #GoLobos",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760400",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401752882",
+      "kind": "final",
+      "text": "FINAL: 41-3\nIowa Hawkeyes - 41\nMinnesota Golden Gophers - 3\n\n(MINN): Le'Meke Brockington 6 REC, 54 YDS\n(IOWA): Mark Gronowski 12/19, 135 YDS, 1 TD\n\n#Blowout #CFB #Hawkeyes",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752882",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401752952",
+      "kind": "final",
+      "text": "FINAL: 28-7\nWashington State Cougars - 28\nToledo Rockets - 7\n\n(TOL): Tucker Gleason 26/41, 238 YDS, 1 TD, 1 INT\n(WSU): Zevi Eckhaus 15 CAR, 74 YDS, 1 TD\n\n#CFB #GoCougs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752952",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401754574",
+      "kind": "final",
+      "text": "FINAL: 53-34\nPittsburgh Panthers - 53\nNC State Wolfpack - 34\n\n(NCSU): Hollywood Smothers 8 CAR, 86 YDS, 1 TD\n(PITT): Mason Heintschel 28/48, 423 YDS, 3 TD\n\n#CFB #H2P",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754574",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401760399",
+      "kind": "final",
+      "text": "FINAL: 23-0\nSan Diego State Aztecs - 23\nFresno State Bulldogs - 0\n\n(SDSU): Lucky Sutton 21 CAR, 131 YDS, 1 TD\n(FRES): Carson Conklin 20/42, 182 YDS, 2 INT\n\n#Shutout #CFB #GoAztecs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760399",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401761637",
+      "kind": "final",
+      "text": "FINAL: 49-21\nSouthern Miss Golden Eagles - 49\nUL Monroe Warhawks - 21\n\n(ULM): Zach Palmer-Smith 11 CAR, 111 YDS, 1 TD\n(USM): Braylon Braxton 18/23, 248 YDS, 4 TD\n\n#CFB #ToTheTop",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761637",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401762493",
+      "kind": "final",
+      "text": "FINAL: 42-32\nNavy Midshipmen - 42\nFlorida Atlantic Owls - 32\n\n(FAU): Caden Veltkamp 25/41, 299 YDS, 2 TD, 1 INT\n(NAVY): Blake Horvath 21 CAR, 174 YDS, 4 TD\n\n#CFB #GoNavy",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762493",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401762495",
+      "kind": "final",
+      "text": "FINAL: 38-37\nTemple Owls - 38\nTulsa Golden Hurricane - 37\n\n(TEM): Hunter Smith 10 CAR, 92 YDS\n(TLSA): Baylor Hayes 19/31, 296 YDS, 3 TD\n\n#Shootout #CFB #TempleTUFF",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762495",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401762845",
+      "kind": "final",
+      "text": "FINAL: 21-7\nNorthern Illinois Huskies - 21\nBall State Cardinals - 7\n\n(BALL): Kiael Kelly 10/23, 136 YDS, 1 TD, 2 INT\n(NIU): DeAree Rogers 3 REC, 43 YDS, 1 TD\n\n#CFB #TheHardWay",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762845",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401762847",
+      "kind": "final",
+      "text": "FINAL: 38-13\nCentral Michigan Chippewas - 38\nMassachusetts Minutemen - 13\n\n(MASS): AJ Hairston 21/51, 176 YDS, 1 INT\n(CMU): Brock Townsend 2 REC, 78 YDS, 1 TD\n\n#CFB #FireUpChips",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762847",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401762874",
+      "kind": "final",
+      "text": "FINAL: 26-17\nMiami (OH) RedHawks - 26\nWestern Michigan Broncos - 17\n\n(M-OH): Dequan Finn 18/30, 260 YDS, 1 TD\n\n#CFB #LoveAndHonor",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762874",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401756935",
+      "kind": "final",
+      "text": "FINAL: 23-17\nTCU Horned Frogs - 23\nWest Virginia Mountaineers - 17\n\n(TCU): Eric McAlister 9 REC, 124 YDS, 1 TD\n(WVU): Scotty Fox Jr. 28/41, 301 YDS, 2 TD\n\n#CFB #GoFrogs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756935",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401761638",
+      "kind": "final",
+      "text": "FINAL: 35-23\nTroy Trojans - 35\nLouisiana Ragin' Cajuns - 23\n\n(UL): Lunch Winfield 12/22, 187 YDS, 1 TD, 2 INT\n\n#CFB #OneTROY",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761638",
+      "expiresAt": "2025-10-27T14:19:57.526Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T02:19:57.526Z"
     }
   ]
 }
