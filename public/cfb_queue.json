@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-26T03:28:48.337Z",
+  "generatedAt": "2025-10-26T03:50:25.217Z",
   "posts": [
     {
       "id": "ap_top10_week9",
@@ -801,6 +801,42 @@
       "expiresAt": "2025-10-27T15:28:48.629Z",
       "source": "espn",
       "generatedAt": "2025-10-26T03:28:48.629Z"
+    },
+    {
+      "id": "final_401752748",
+      "kind": "final",
+      "text": "FINAL: 49-25\n#3 Texas A&M Aggies - 49\n#20 LSU Tigers - 25\n\n(TA&M): Marcel Reed 12/21, 202 YDS, 2 TD, 2 INT\n(LSU): Barion Brown 4 REC, 60 YDS\n\n#CFB #GigEm",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752748",
+      "expiresAt": "2025-10-27T15:50:25.869Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T03:50:25.869Z"
+    },
+    {
+      "id": "final_401754570",
+      "kind": "final",
+      "text": "FINAL: 38-24\n#19 Louisville Cardinals - 38\nBoston College Eagles - 24\n\n(BC): Grayson James 23/46, 244 YDS, 3 TD, 2 INT\n(LOU): Isaac Brown 14 CAR, 205 YDS, 1 TD\n\n#CFB #GoCards",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754570",
+      "expiresAt": "2025-10-27T15:50:25.869Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T03:50:25.869Z"
+    },
+    {
+      "id": "final_401752881",
+      "kind": "final",
+      "text": "FINAL: 31-20\n#25 Michigan Wolverines - 31\nMichigan State Spartans - 20\n\n(MICH): Justice Haynes 26 CAR, 152 YDS, 2 TD\n(MSU): Aidan Chiles 14/28, 130 YDS\n\n#CFB #GoBlue",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752881",
+      "expiresAt": "2025-10-27T15:50:25.869Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T03:50:25.869Z"
+    },
+    {
+      "id": "final_401752747",
+      "kind": "final",
+      "text": "FINAL: 56-34\n#17 Tennessee Volunteers - 56\nKentucky Wildcats - 34\n\n(TENN): Joey Aguilar 20/26, 396 YDS, 3 TD\n\n#CFB #GBO",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752747",
+      "expiresAt": "2025-10-27T15:50:25.870Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T03:50:25.870Z"
     }
   ]
 }
