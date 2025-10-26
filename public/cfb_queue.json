@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-26T02:49:57.220Z",
+  "generatedAt": "2025-10-26T03:28:48.337Z",
   "posts": [
     {
       "id": "ap_top10_week9",
@@ -774,6 +774,33 @@
       "expiresAt": "2025-10-27T14:19:57.526Z",
       "source": "espn",
       "generatedAt": "2025-10-26T02:19:57.526Z"
+    },
+    {
+      "id": "final_401752886",
+      "kind": "final",
+      "text": "FINAL: 21-7\n#6 Oregon Ducks - 21\nWisconsin Badgers - 7\n\n(WIS): Hunter Simmons 7/21, 86 YDS, 1 TD, 1 INT\n(ORE): Jordon Davison 16 CAR, 102 YDS, 2 TD\n\n#CFB #GoDucks",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752886",
+      "expiresAt": "2025-10-27T15:28:48.628Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T03:28:48.628Z"
+    },
+    {
+      "id": "final_401761636",
+      "kind": "final",
+      "text": "FINAL: 34-24\nArkansas State Red Wolves - 34\nGeorgia Southern Eagles - 24\n\n(ARST): Kenyon Clay 17 CAR, 124 YDS, 1 TD\n\n#CFB #WolvesUp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761636",
+      "expiresAt": "2025-10-27T15:28:48.628Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T03:28:48.628Z"
+    },
+    {
+      "id": "final_401760398",
+      "kind": "final",
+      "text": "FINAL: 28-0\nWyoming Cowboys - 28\nColorado State Rams - 0\n\n(WYO): Kaden Anderson 16/24, 154 YDS, 2 TD\n\n#Shutout #CFB #GoWyo",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760398",
+      "expiresAt": "2025-10-27T15:28:48.629Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T03:28:48.629Z"
     }
   ]
 }
