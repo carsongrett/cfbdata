@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-26T03:50:25.217Z",
+  "generatedAt": "2025-10-26T04:39:54.830Z",
   "posts": [
     {
       "id": "ap_top10_week9",
@@ -837,6 +837,15 @@
       "expiresAt": "2025-10-27T15:50:25.870Z",
       "source": "espn",
       "generatedAt": "2025-10-26T03:50:25.870Z"
+    },
+    {
+      "id": "final_401756929",
+      "kind": "final",
+      "text": "FINAL: 24-16\nHouston Cougars - 24\n#24 Arizona State Sun Devils - 16\n\n(HOU): Conner Weigman 21 CAR, 111 YDS, 2 TD\n(ASU): Sam Leavitt 18/35, 270 YDS, 1 TD\n\n#Upset #CFB #GoCoogs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756929",
+      "expiresAt": "2025-10-27T16:39:55.364Z",
+      "source": "espn",
+      "generatedAt": "2025-10-26T04:39:55.364Z"
     }
   ]
 }
