@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-30T18:23:22.322Z",
+  "generatedAt": "2025-10-31T03:04:55.761Z",
   "posts": [
     {
       "id": "ap_top10_week10",
@@ -450,6 +450,42 @@
       "expiresAt": "2025-10-31T18:23:22.861Z",
       "source": "cfbd",
       "generatedAt": "2025-10-30T18:23:22.861Z"
+    },
+    {
+      "id": "final_401757289",
+      "kind": "final",
+      "text": "FINAL: 33-20\nKennesaw State Owls - 33\nUTEP Miners - 20\n\n(UTEP): Skyler Locklear 14/29, 160 YDS, 2 TD\n(KENN): Chase Belcher 24 CAR, 113 YDS, 1 TD\n\n#CFB",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757289",
+      "expiresAt": "2025-11-01T15:04:56.346Z",
+      "source": "espn",
+      "generatedAt": "2025-10-31T03:04:56.346Z"
+    },
+    {
+      "id": "final_401761639",
+      "kind": "final",
+      "text": "FINAL: 52-20\nJames Madison Dukes - 52\nTexas State Bobcats - 20\n\n(JMU): Alonza Barnett III 12/18, 264 YDS, 4 TD, 1 INT\n\n#Blowout #CFB #GoDukes",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761639",
+      "expiresAt": "2025-11-01T15:04:56.346Z",
+      "source": "espn",
+      "generatedAt": "2025-10-31T03:04:56.346Z"
+    },
+    {
+      "id": "final_401757292",
+      "kind": "final",
+      "text": "FINAL: 24-21\nJacksonville State Gamecocks - 24\nMiddle Tennessee Blue Raiders - 21\n\n(JVST): Deondre Johnson 4 REC, 131 YDS, 2 TD\n(MTSU): Nicholas Vattiato 23/45, 235 YDS, 2 TD, 1 INT\n\n#CFB #GoGamecocks",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757292",
+      "expiresAt": "2025-11-01T15:04:56.346Z",
+      "source": "espn",
+      "generatedAt": "2025-10-31T03:04:56.346Z"
+    },
+    {
+      "id": "final_401757291",
+      "kind": "final",
+      "text": "FINAL: 28-21\nMissouri State Bears - 28\nFlorida International Panthers - 21\n\n(FIU): C'Quan Jnopierre 3 REC, 57 YDS\n(MOST): Jacob Clark 16/27, 163 YDS, 2 TD\n\n#CFB",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757291",
+      "expiresAt": "2025-11-01T15:04:56.346Z",
+      "source": "espn",
+      "generatedAt": "2025-10-31T03:04:56.346Z"
     }
   ]
 }
