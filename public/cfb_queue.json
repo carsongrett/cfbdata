@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-01T03:53:35.919Z",
+  "generatedAt": "2025-11-01T04:40:07.234Z",
   "posts": [
     {
       "id": "ap_top10_week10",
@@ -486,6 +486,15 @@
       "expiresAt": "2025-11-02T15:53:36.267Z",
       "source": "espn",
       "generatedAt": "2025-11-01T03:53:36.267Z"
+    },
+    {
+      "id": "final_401757290",
+      "kind": "final",
+      "text": "FINAL: 55-14\nLouisiana Tech Bulldogs - 55\nSam Houston Bearkats - 14\n\n(SHSU): Elijah Green 10 CAR, 191 YDS, 2 TD\n(LT): Blake Baker 17/21, 221 YDS, 1 TD, 1 INT\n\n#Blowout #CFB #EverLoyalBe",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757290",
+      "expiresAt": "2025-11-02T16:40:07.675Z",
+      "source": "espn",
+      "generatedAt": "2025-11-01T04:40:07.675Z"
     }
   ]
 }
