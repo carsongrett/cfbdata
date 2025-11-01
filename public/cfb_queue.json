@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-01T03:14:50.011Z",
+  "generatedAt": "2025-11-01T03:53:35.919Z",
   "posts": [
     {
       "id": "ap_top10_week10",
@@ -477,6 +477,15 @@
       "expiresAt": "2025-11-02T14:25:08.644Z",
       "source": "espn",
       "generatedAt": "2025-11-01T02:25:08.644Z"
+    },
+    {
+      "id": "final_401754575",
+      "kind": "final",
+      "text": "FINAL: 27-10\nNorth Carolina Tar Heels - 27\nSyracuse Orange - 10\n\n(UNC): Gio Lopez 15/19, 216 YDS, 2 TD\n\n#CFB #GoHeels",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754575",
+      "expiresAt": "2025-11-02T15:53:36.267Z",
+      "source": "espn",
+      "generatedAt": "2025-11-01T03:53:36.267Z"
     }
   ]
 }
