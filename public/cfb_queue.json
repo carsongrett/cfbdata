@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-31T03:41:23.501Z",
+  "generatedAt": "2025-11-01T02:25:08.025Z",
   "posts": [
     {
       "id": "ap_top10_week10",
@@ -450,6 +450,33 @@
       "expiresAt": "2025-10-31T18:23:22.861Z",
       "source": "cfbd",
       "generatedAt": "2025-10-30T18:23:22.861Z"
+    },
+    {
+      "id": "final_401762497",
+      "kind": "final",
+      "text": "FINAL: 38-14\n#25 Memphis Tigers - 38\nRice Owls - 14\n\n(MEM): Brendon Lewis 12 CAR, 87 YDS, 1 TD\n\n#CFB #GoTigersGo",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762497",
+      "expiresAt": "2025-11-02T14:25:08.644Z",
+      "source": "espn",
+      "generatedAt": "2025-11-01T02:25:08.644Z"
+    },
+    {
+      "id": "final_401761640",
+      "kind": "final",
+      "text": "FINAL: 44-27\nCoastal Carolina Chanticleers - 44\nMarshall Thundering Herd - 27\n\n(MRSH): Antwan Roberts 15 CAR, 134 YDS\n(CCU): Samari Collier 8/20, 196 YDS, 2 TD, 1 INT\n\n#CFB #TealNation",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761640",
+      "expiresAt": "2025-11-02T14:25:08.644Z",
+      "source": "espn",
+      "generatedAt": "2025-11-01T02:25:08.644Z"
+    },
+    {
+      "id": "final_401762443",
+      "kind": "final",
+      "text": "FINAL: 48-26\nUTSA Roadrunners - 48\nTulane Green Wave - 26\n\n(UTSA): Owen McCown 31/33, 370 YDS, 4 TD\n\n#CFB #BirdsUp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762443",
+      "expiresAt": "2025-11-02T14:25:08.644Z",
+      "source": "espn",
+      "generatedAt": "2025-11-01T02:25:08.644Z"
     }
   ]
 }
