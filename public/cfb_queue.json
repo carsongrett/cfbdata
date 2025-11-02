@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-02T03:32:55.840Z",
+  "generatedAt": "2025-11-02T03:54:58.624Z",
   "posts": [
     {
       "id": "ap_top10_week10",
@@ -774,6 +774,42 @@
       "expiresAt": "2025-11-03T15:32:56.238Z",
       "source": "espn",
       "generatedAt": "2025-11-02T03:32:56.238Z"
+    },
+    {
+      "id": "final_401754579",
+      "kind": "final",
+      "text": "FINAL: 48-36\nNC State Wolfpack - 48\n#8 Georgia Tech Yellow Jackets - 36\n\n(GT): Haynes King 25/35, 408 YDS, 2 TD, 1 INT\n(NCSU): Jayden Scott 24 CAR, 196 YDS, 1 TD\n\n#Upset #Shootout #CFB #GoPack",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754579",
+      "expiresAt": "2025-11-03T15:54:59.240Z",
+      "source": "espn",
+      "generatedAt": "2025-11-02T03:54:59.240Z"
+    },
+    {
+      "id": "final_401752892",
+      "kind": "final",
+      "text": "FINAL: 21-17\n#23 USC Trojans - 21\nNebraska Cornhuskers - 17\n\n(USC): Jayden Maiava 9/23, 135 YDS, 1 INT\n(NEB): Emmett Johnson 29 CAR, 165 YDS, 1 TD\n\n#CFB #FightOn",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752892",
+      "expiresAt": "2025-11-03T15:54:59.240Z",
+      "source": "espn",
+      "generatedAt": "2025-11-02T03:54:59.240Z"
+    },
+    {
+      "id": "final_401752943",
+      "kind": "final",
+      "text": "FINAL: 10-7\nOregon State Beavers - 10\nWashington State Cougars - 7\n\n(WSU): Zevi Eckhaus 13/24, 146 YDS, 2 INT\n(ORST): Anthony Hankerson 25 CAR, 134 YDS, 1 TD\n\n#CFB #GoBeavs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752943",
+      "expiresAt": "2025-11-03T15:54:59.240Z",
+      "source": "espn",
+      "generatedAt": "2025-11-02T03:54:59.240Z"
+    },
+    {
+      "id": "final_401761643",
+      "kind": "final",
+      "text": "FINAL: 23-10\nArkansas State Red Wolves - 23\nTroy Trojans - 10\n\n(ARST): Jaylen Raynor 21/29, 247 YDS, 2 TD\n(TROY): Tae Meadows 14 CAR, 48 YDS\n\n#CFB #WolvesUp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761643",
+      "expiresAt": "2025-11-03T15:54:59.240Z",
+      "source": "espn",
+      "generatedAt": "2025-11-02T03:54:59.240Z"
     }
   ]
 }
