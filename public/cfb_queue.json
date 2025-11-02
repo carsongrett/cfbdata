@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-02T02:54:22.695Z",
+  "generatedAt": "2025-11-02T03:32:55.840Z",
   "posts": [
     {
       "id": "ap_top10_week10",
@@ -729,6 +729,51 @@
       "expiresAt": "2025-11-03T14:23:08.160Z",
       "source": "espn",
       "generatedAt": "2025-11-02T02:23:08.160Z"
+    },
+    {
+      "id": "final_401752756",
+      "kind": "final",
+      "text": "FINAL: 30-14\n#7 Ole Miss Rebels - 30\nSouth Carolina Gamecocks - 14\n\n(SC): LaNorris Sellers 16/30, 180 YDS, 1 TD, 2 INT\n(MISS): Kewan Lacy 24 CAR, 167 YDS, 1 TD\n\n#CFB #HottyToddy",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752756",
+      "expiresAt": "2025-11-03T15:32:56.238Z",
+      "source": "espn",
+      "generatedAt": "2025-11-02T03:32:56.238Z"
+    },
+    {
+      "id": "final_401756937",
+      "kind": "final",
+      "text": "FINAL: 52-17\nArizona Wildcats - 52\nColorado Buffaloes - 17\n\n(ARIZ): Noah Fifita 11/19, 213 YDS, 4 TD\n(COLO): Omarion Miller 5 REC, 91 YDS, 2 TD\n\n#Blowout #CFB #BearDown",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756937",
+      "expiresAt": "2025-11-03T15:32:56.238Z",
+      "source": "espn",
+      "generatedAt": "2025-11-02T03:32:56.238Z"
+    },
+    {
+      "id": "final_401760405",
+      "kind": "final",
+      "text": "FINAL: 24-7\nSan Diego State Aztecs - 24\nWyoming Cowboys - 7\n\n(SDSU): Jayden Denegal 11/22, 194 YDS, 1 TD, 2 INT\n\n#CFB #GoAztecs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760405",
+      "expiresAt": "2025-11-03T15:32:56.238Z",
+      "source": "espn",
+      "generatedAt": "2025-11-02T03:32:56.238Z"
+    },
+    {
+      "id": "final_401752754",
+      "kind": "final",
+      "text": "FINAL: 10-3\nKentucky Wildcats - 10\nAuburn Tigers - 3\n\n(UK): Cutter Boley 18/29, 161 YDS, 1 TD, 2 INT\n(AUB): Jeremiah Cobb 20 CAR, 72 YDS\n\n#CFB #BBN",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752754",
+      "expiresAt": "2025-11-03T15:32:56.238Z",
+      "source": "espn",
+      "generatedAt": "2025-11-02T03:32:56.238Z"
+    },
+    {
+      "id": "final_401754578",
+      "kind": "final",
+      "text": "FINAL: 42-7\nFlorida State Seminoles - 42\nWake Forest Demon Deacons - 7\n\n(FSU): Tommy Castellanos 12/16, 271 YDS, 1 TD\n\n#Blowout #CFB #Noles",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754578",
+      "expiresAt": "2025-11-03T15:32:56.238Z",
+      "source": "espn",
+      "generatedAt": "2025-11-02T03:32:56.238Z"
     }
   ]
 }
