@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-02T03:54:58.624Z",
+  "generatedAt": "2025-11-02T04:41:42.642Z",
   "posts": [
     {
       "id": "ap_top10_week10",
@@ -810,6 +810,15 @@
       "expiresAt": "2025-11-03T15:54:59.240Z",
       "source": "espn",
       "generatedAt": "2025-11-02T03:54:59.240Z"
+    },
+    {
+      "id": "final_401752757",
+      "kind": "final",
+      "text": "FINAL: 33-27\n#18 Oklahoma Sooners - 33\n#14 Tennessee Volunteers - 27\n\n(OU): Xavier Robinson 16 CAR, 115 YDS, 1 TD\n(TENN): Joey Aguilar 29/45, 393 YDS, 3 TD, 2 INT\n\n#Upset #CFB #BoomerSooner",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752757",
+      "expiresAt": "2025-11-03T16:41:43.182Z",
+      "source": "espn",
+      "generatedAt": "2025-11-02T04:41:43.182Z"
     }
   ]
 }
