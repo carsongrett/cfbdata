@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-02T17:29:24.191Z",
+  "generatedAt": "2025-11-02T18:37:05.482Z",
   "posts": [
     {
       "id": "betting_preview_week10_401752889",
@@ -407,49 +407,31 @@
       "generatedAt": "2025-10-30T18:23:22.861Z"
     },
     {
-      "id": "ap_top10_week10",
+      "id": "coaches_top10_week11",
       "kind": "poll_top10",
-      "text": "AP Top 10 - Week 10\n1. Ohio State\n2. Indiana\n3. Texas A&M\n4. Alabama\n5. Georgia\n6. Oregon\n7. Ole Miss\n8. Georgia Tech\n9. Vanderbilt\n10. BYU\n\n#APTop25 #CFB",
+      "text": "Coaches Poll Top 10 - Week 11\n1. Ohio State\n2. Indiana\n3. Texas A&M\n4. Alabama\n5. Georgia\n6. Oregon\n7. Ole Miss\n8. BYU\n9. Texas Tech\n10. Notre Dame\n\n#CoachesPoll #CFB",
       "link": "",
-      "expiresAt": "2025-11-09T17:29:26.764Z",
+      "expiresAt": "2025-11-09T18:37:08.798Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-02T17:29:26.764Z"
+      "generatedAt": "2025-11-02T18:37:08.798Z"
     },
     {
-      "id": "ap_movers_week10",
+      "id": "coaches_movers_week11",
       "kind": "poll_movers",
-      "text": "AP Poll Movers - Week 10\n⬇️-5 Oklahoma (13→18)\n⬆️+4 Cincinnati (21→17)\n⬇️-4 Missouri (15→19)\n⬆️+4 Michigan (25→21)\n⬆️+3 Tennessee (17→14)\nNEW: #22 Houston\nNEW: #23 USC\nNEW: #24 Utah\nNEW: #25 Memphis\n\n#APTop25 #CFB",
+      "text": "Coaches Poll Movers - Week 11\n⬇️-9 Miami (9→18)\n⬇️-9 Cincinnati (16→25)\n⬇️-8 Tennessee (14→22)\n⬇️-7 Georgia Tech (7→14)\n⬆️+6 Oklahoma (18→12)\n⬆️+6 Texas (19→13)\n⬇️-5 Vanderbilt (11→16)\nNEW: #21 USC\nNEW: #24 Iowa\n\n#CoachesPoll #CFB",
       "link": "",
-      "expiresAt": "2025-11-09T17:29:26.764Z",
+      "expiresAt": "2025-11-09T18:37:08.799Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-02T17:29:26.764Z"
+      "generatedAt": "2025-11-02T18:37:08.799Z"
     },
     {
-      "id": "coaches_top10_week10",
+      "id": "sp_top10_week11",
       "kind": "poll_top10",
-      "text": "Coaches Poll Top 10 - Week 10\n1. Ohio State\n2. Indiana\n3. Texas A&M\n4. Alabama\n5. Georgia\n6. Oregon\n7. Georgia Tech\n8. Ole Miss\n9. Miami\n10. BYU\n\n#CoachesPoll #CFB",
+      "text": "SP+ Power Rankings - Week 11\n1. Ohio State (29.8)\n2. Indiana (29.5)\n3. Oregon (27.1)\n4. Texas Tech (24.3)\n5. Texas A&M (21.8)\n6. Utah (21.4)\n7. Notre Dame (21.4)\n8. Oklahoma (20.2)\n9. Ole Miss (19.7)\n10. Alabama (19.5)\n\n#SPPlus #CFB",
       "link": "",
-      "expiresAt": "2025-11-09T17:29:29.278Z",
+      "expiresAt": "2025-11-09T18:37:11.225Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-02T17:29:29.278Z"
-    },
-    {
-      "id": "coaches_movers_week10",
-      "kind": "poll_movers",
-      "text": "Coaches Poll Movers - Week 10\n⬇️-7 Oklahoma (11→18)\n⬇️-6 Missouri (14→20)\n⬆️+5 Cincinnati (21→16)\n⬆️+5 Louisville (22→17)\n⬆️+3 Tennessee (17→14)\nNEW: #22 Houston\nNEW: #23 Navy\nNEW: #24 Utah\nNEW: #25 Memphis\n\n#CoachesPoll #CFB",
-      "link": "",
-      "expiresAt": "2025-11-09T17:29:29.279Z",
-      "source": "cfbd",
-      "generatedAt": "2025-11-02T17:29:29.279Z"
-    },
-    {
-      "id": "sp_top10_week10",
-      "kind": "poll_top10",
-      "text": "SP+ Power Rankings - Week 10\n1. Ohio State (29.8)\n2. Indiana (29.5)\n3. Oregon (27.1)\n4. Texas Tech (24.3)\n5. Texas A&M (21.8)\n6. Utah (21.4)\n7. Notre Dame (21.4)\n8. Oklahoma (20.2)\n9. Ole Miss (19.7)\n10. Alabama (19.5)\n\n#SPPlus #CFB",
-      "link": "",
-      "expiresAt": "2025-11-09T17:29:31.713Z",
-      "source": "cfbd",
-      "generatedAt": "2025-11-02T17:29:31.713Z"
+      "generatedAt": "2025-11-02T18:37:11.225Z"
     }
   ]
 }
