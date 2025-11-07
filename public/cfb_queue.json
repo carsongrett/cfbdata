@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-06T18:24:25.852Z",
+  "generatedAt": "2025-11-07T03:05:04.903Z",
   "posts": [
     {
       "id": "ap_top10_week11",
@@ -423,6 +423,42 @@
       "expiresAt": "2025-11-07T18:24:26.416Z",
       "source": "cfbd",
       "generatedAt": "2025-11-06T18:24:26.416Z"
+    },
+    {
+      "id": "final_401762851",
+      "kind": "final",
+      "text": "FINAL: 44-10\nAkron Zips - 44\nMassachusetts Minutemen - 10\n\n(AKR): Ben Finley 12/20, 197 YDS, 2 TD\n\n#Blowout #CFB #GoZips",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762851",
+      "expiresAt": "2025-11-08T15:05:05.155Z",
+      "source": "espn",
+      "generatedAt": "2025-11-07T03:05:05.155Z"
+    },
+    {
+      "id": "final_401762852",
+      "kind": "final",
+      "text": "FINAL: 24-20\nOhio Bobcats - 24\nMiami (OH) RedHawks - 20\n\n(M-OH): Cole Weaver 6 REC, 94 YDS\n(OHIO): Parker Navarro 16/31, 201 YDS, 1 TD, 1 INT\n\n#CFB #BleedGreen",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762852",
+      "expiresAt": "2025-11-08T15:05:05.156Z",
+      "source": "espn",
+      "generatedAt": "2025-11-07T03:05:05.156Z"
+    },
+    {
+      "id": "final_401762853",
+      "kind": "final",
+      "text": "FINAL: 17-13\nBall State Cardinals - 17\nKent State Golden Flashes - 13\n\n(KENT): Dru DeShields 15/27, 212 YDS\n\n#CFB #ChirpChirp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762853",
+      "expiresAt": "2025-11-08T15:05:05.156Z",
+      "source": "espn",
+      "generatedAt": "2025-11-07T03:05:05.156Z"
+    },
+    {
+      "id": "final_401762854",
+      "kind": "final",
+      "text": "FINAL: 42-3\nToledo Rockets - 42\nNorthern Illinois Huskies - 3\n\n(TOL): Tucker Gleason 25/31, 309 YDS, 2 TD\n\n#Blowout #CFB #GoRockets",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762854",
+      "expiresAt": "2025-11-08T15:05:05.156Z",
+      "source": "espn",
+      "generatedAt": "2025-11-07T03:05:05.156Z"
     }
   ]
 }
