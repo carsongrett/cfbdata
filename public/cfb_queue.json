@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-09T03:53:27.257Z",
+  "generatedAt": "2025-11-09T04:40:59.528Z",
   "posts": [
     {
       "id": "ap_top10_week11",
@@ -756,6 +756,33 @@
       "expiresAt": "2025-11-10T15:53:27.781Z",
       "source": "espn",
       "generatedAt": "2025-11-09T03:53:27.781Z"
+    },
+    {
+      "id": "final_401754585",
+      "kind": "final",
+      "text": "FINAL: 29-26\nCalifornia Golden Bears - 29\n#15 Louisville Cardinals - 26\n\n(CAL): Jaron-Keawe Sagapolutele 30/47, 323 YDS, 2 TD\n(LOU): Keyjuan Brown 14 CAR, 136 YDS\n\n#Upset #CFB #GoBears",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754585",
+      "expiresAt": "2025-11-10T16:41:00.203Z",
+      "source": "espn",
+      "generatedAt": "2025-11-09T04:41:00.203Z"
+    },
+    {
+      "id": "final_401757166",
+      "kind": "final",
+      "text": "FINAL: 49-10\n#10 Notre Dame Fighting Irish - 49\nNavy Midshipmen - 10\n\n(NAVY): Braxton Woodson 23 CAR, 101 YDS, 1 TD\n(ND): CJ Carr 13/16, 218 YDS, 3 TD\n\n#Blowout #CFB #GoIrish",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757166",
+      "expiresAt": "2025-11-10T16:41:00.203Z",
+      "source": "espn",
+      "generatedAt": "2025-11-09T04:41:00.203Z"
+    },
+    {
+      "id": "final_401752760",
+      "kind": "final",
+      "text": "FINAL: 38-7\nKentucky Wildcats - 38\nFlorida Gators - 7\n\n(UK): Cutter Boley 18/23, 168 YDS, 2 TD, 1 INT\n\n#Blowout #CFB #BBN",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752760",
+      "expiresAt": "2025-11-10T16:41:00.203Z",
+      "source": "espn",
+      "generatedAt": "2025-11-09T04:41:00.203Z"
     }
   ]
 }
