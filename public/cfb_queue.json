@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-09T04:40:59.528Z",
+  "generatedAt": "2025-11-09T05:38:13.788Z",
   "posts": [
     {
       "id": "ap_top10_week11",
@@ -783,6 +783,24 @@
       "expiresAt": "2025-11-10T16:41:00.203Z",
       "source": "espn",
       "generatedAt": "2025-11-09T04:41:00.203Z"
+    },
+    {
+      "id": "final_401752759",
+      "kind": "final",
+      "text": "FINAL: 20-9\n#4 Alabama Crimson Tide - 20\nLSU Tigers - 9\n\n(LSU): Harlem Berry 12 CAR, 66 YDS\n(ALA): Ty Simpson 21/35, 277 YDS, 1 TD\n\n#CFB #RollTide",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752759",
+      "expiresAt": "2025-11-10T17:38:14.153Z",
+      "source": "espn",
+      "generatedAt": "2025-11-09T05:38:14.153Z"
+    },
+    {
+      "id": "final_401760409",
+      "kind": "final",
+      "text": "FINAL: 51-14\nUtah State Aggies - 51\nNevada Wolf Pack - 14\n\n(NEV): Chubba Purdy 10 CAR, 45 YDS\n(USU): Bryson Barnes 20/27, 288 YDS, 3 TD\n\n#Blowout #CFB #AggiesAllTheWay",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760409",
+      "expiresAt": "2025-11-10T17:38:14.153Z",
+      "source": "espn",
+      "generatedAt": "2025-11-09T05:38:14.153Z"
     }
   ]
 }
