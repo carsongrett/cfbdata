@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-09T03:31:21.184Z",
+  "generatedAt": "2025-11-09T03:53:27.257Z",
   "posts": [
     {
       "id": "ap_top10_week11",
@@ -738,6 +738,24 @@
       "expiresAt": "2025-11-10T14:21:42.353Z",
       "source": "espn",
       "generatedAt": "2025-11-09T02:21:42.353Z"
+    },
+    {
+      "id": "final_401754589",
+      "kind": "final",
+      "text": "FINAL: 16-9\nWake Forest Demon Deacons - 16\n#14 Virginia Cavaliers - 9\n\n(UVA): Daniel Kaelin 18/28, 145 YDS\n\n#Upset #CFB #GoDeacs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754589",
+      "expiresAt": "2025-11-10T15:53:27.781Z",
+      "source": "espn",
+      "generatedAt": "2025-11-09T03:53:27.781Z"
+    },
+    {
+      "id": "final_401754586",
+      "kind": "final",
+      "text": "FINAL: 24-10\nClemson Tigers - 24\nFlorida State Seminoles - 10\n\n(FSU): Tommy Castellanos 23/43, 250 YDS, 1 TD, 1 INT\n(CLEM): Adam Randall 15 CAR, 48 YDS\n\n#CFB #ALLIN",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754586",
+      "expiresAt": "2025-11-10T15:53:27.781Z",
+      "source": "espn",
+      "generatedAt": "2025-11-09T03:53:27.781Z"
     }
   ]
 }
