@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-13T17:24:04.586Z",
+  "generatedAt": "2025-11-13T18:23:45.781Z",
   "posts": [
     {
       "id": "ap_top10_week12",
@@ -45,6 +45,420 @@
       "expiresAt": "2025-11-16T23:15:15.155Z",
       "source": "cfbd",
       "generatedAt": "2025-11-09T23:15:15.155Z"
+    },
+    {
+      "id": "betting_preview_week12_401752765",
+      "kind": "betting_preview",
+      "text": "Week 12 SEC Betting Preview\nOklahoma Sooners (+185) @ Alabama Crimson Tide (-6)\nO/U: 45.5\n\n#BoomerSooner #RollTide",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752765",
+      "expiresAt": "2025-11-14T18:23:46.087Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.087Z"
+    },
+    {
+      "id": "betting_preview_week12_401754591",
+      "kind": "betting_preview",
+      "text": "Week 12 ACC Betting Preview\nClemson Tigers (+120) @ Louisville Cardinals (-3)\nO/U: 51.5\n\n#ALLIN #GoCards",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754591",
+      "expiresAt": "2025-11-14T18:23:46.087Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.087Z"
+    },
+    {
+      "id": "betting_preview_week12_401752766",
+      "kind": "betting_preview",
+      "text": "Week 12 SEC Betting Preview\nTexas Longhorns (+200) @ Georgia Bulldogs (-6.5)\nO/U: 49.5\n\n#HookEm #GoDawgs",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752766",
+      "expiresAt": "2025-11-14T18:23:46.087Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.087Z"
+    },
+    {
+      "id": "betting_preview_week12_401756949",
+      "kind": "betting_preview",
+      "text": "Week 12 Big 12 Betting Preview\nUtah Utes (-7.5) @ Baylor Bears (+235)\nO/U: 59.5\n\n#GoUtes #SicEm",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756949",
+      "expiresAt": "2025-11-14T18:23:46.087Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.087Z"
+    },
+    {
+      "id": "betting_preview_week12_401752904",
+      "kind": "betting_preview",
+      "text": "Week 12 Big Ten Betting Preview\nMinnesota Golden Gophers (+1300) @ Oregon Ducks (-25.5)\nO/U: 43.5\n\n#SkiUMah #GoDucks",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752904",
+      "expiresAt": "2025-11-14T18:23:46.087Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.087Z"
+    },
+    {
+      "id": "betting_preview_week12_401760414",
+      "kind": "betting_preview",
+      "text": "Week 12 Mountain West Betting Preview\nUtah State Aggies (+190) @ UNLV Rebels (-6)\nO/U: 69.5\n\n#AggiesAllTheWay #GoRebels",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760414",
+      "expiresAt": "2025-11-14T18:23:46.087Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.087Z"
+    },
+    {
+      "id": "betting_preview_week12_401754593",
+      "kind": "betting_preview",
+      "text": "Week 12 ACC Betting Preview\nVirginia Cavaliers (+150) @ Duke Blue Devils (-4)\nO/U: 59.5\n\n#GoHoos #GoDuke",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754593",
+      "expiresAt": "2025-11-14T18:23:46.087Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.087Z"
+    },
+    {
+      "id": "betting_preview_week12_401762860",
+      "kind": "betting_preview",
+      "text": "Week 12 Mid-American Betting Preview\nToledo Rockets (-5.5) @ Miami (OH) RedHawks (+190)\nO/U: 44.5\n\n#GoRockets #LoveAndHonor",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762860",
+      "expiresAt": "2025-11-14T18:23:46.087Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.087Z"
+    },
+    {
+      "id": "betting_preview_week12_401762858",
+      "kind": "betting_preview",
+      "text": "Week 12 Mid-American Betting Preview\nBuffalo Bulls (+114) @ Central Michigan Chippewas (-2.5)\nO/U: 44.5\n\n#UBhornsUP #FireUpChips",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762858",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401762857",
+      "kind": "betting_preview",
+      "text": "Week 12 Mid-American Betting Preview\nOhio Bobcats (+100) @ Western Michigan Broncos (-1.5)\nO/U: 47.5\n\n#BleedGreen #RowTheBoat",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762857",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401752769",
+      "kind": "betting_preview",
+      "text": "Week 12 SEC Betting Preview\nFlorida Gators (+425) @ Ole Miss Rebels (-14)\nO/U: 53.5\n\n#GoGators #HottyToddy",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752769",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401752901",
+      "kind": "betting_preview",
+      "text": "Week 12 Big Ten Betting Preview\nWisconsin Badgers (+1800) @ Indiana Hoosiers (-28.5)\nO/U: 44.5\n\n#OnWisconsin #LEO",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752901",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401761649",
+      "kind": "betting_preview",
+      "text": "Week 12 Sun Belt Betting Preview\nTroy Trojans (+295) @ Old Dominion Monarchs (-10.5)\nO/U: 52.5\n\n#OneTROY #ReignOn",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401761649",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401762856",
+      "kind": "betting_preview",
+      "text": "Week 12 Mid-American Betting Preview\nKent State Golden Flashes (+250) @ Akron Zips (-7.5)\nO/U: 49.5\n\n#FlashFAST #GoZips",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762856",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401752905",
+      "kind": "betting_preview",
+      "text": "Week 12 Big Ten Betting Preview\nMichigan Wolverines (-12.5) @ Northwestern Wildcats (+370)\nO/U: 40.5\n\n#GoBlue #GoCats",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752905",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401754595",
+      "kind": "betting_preview",
+      "text": "Week 12 ACC Betting Preview\nNC State Wolfpack (+490) @ Miami Hurricanes (-15.5)\nO/U: 55.5\n\n#GoPack #GoCanes",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754595",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401756952",
+      "kind": "betting_preview",
+      "text": "Week 12 Big 12 Betting Preview\nKansas State Wildcats (-18.5) @ Oklahoma State Cowboys (+750)\nO/U: 50.5\n\n#EMAW #GoPokes",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756952",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401756950",
+      "kind": "betting_preview",
+      "text": "Week 12 Big 12 Betting Preview\nTCU Horned Frogs (+142) @ BYU Cougars (-3.5)\nO/U: 50.5\n\n#GoFrogs #GoCougs",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756950",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401752772",
+      "kind": "betting_preview",
+      "text": "Week 12 SEC Betting Preview\nSouth Carolina Gamecocks (+750) @ Texas A&M Aggies (-19.5)\nO/U: 48.5\n\n#SpursUp #GigEm",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752772",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401752906",
+      "kind": "betting_preview",
+      "text": "Week 12 Big Ten Betting Preview\nMaryland Terrapins (+500) @ Illinois Fighting Illini (-15.5)\nO/U: 53.5\n\n#GoTerps #Illini",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752906",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401752907",
+      "kind": "betting_preview",
+      "text": "Week 12 Big Ten Betting Preview\nIowa Hawkeyes (+200) @ USC Trojans (-7)\nO/U: 48.5\n\n#Hawkeyes #FightOn",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752907",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401756953",
+      "kind": "betting_preview",
+      "text": "Week 12 Big 12 Betting Preview\nUCF Knights (+1300) @ Texas Tech Red Raiders (-23.5)\nO/U: 48.5\n\n#ChargeOn #WreckEm",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756953",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401756951",
+      "kind": "betting_preview",
+      "text": "Week 12 Big 12 Betting Preview\nArizona Wildcats (+190) @ Cincinnati Bearcats (-6)\nO/U: 56.5\n\n#BearDown #Bearcats",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756951",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401752900",
+      "kind": "betting_preview",
+      "text": "Week 12 Big Ten Betting Preview\nUCLA Bruins (+2200) @ Ohio State Buckeyes (-31.5)\nO/U: 47.5\n\n#GoBruins #GoBucks",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752900",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401752902",
+      "kind": "betting_preview",
+      "text": "Week 12 Big Ten Betting Preview\nPurdue Boilermakers (+600) @ Washington Huskies (-16.5)\nO/U: 51.5\n\n#BoilerUp #PurpleReign",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752902",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401754596",
+      "kind": "betting_preview",
+      "text": "Week 12 ACC Betting Preview\nNorth Carolina Tar Heels (+180) @ Wake Forest Demon Deacons (-6)\nO/U: 38.5\n\n#GoHeels #GoDeacs",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754596",
+      "expiresAt": "2025-11-14T18:23:46.088Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.088Z"
+    },
+    {
+      "id": "betting_preview_week12_401762506",
+      "kind": "betting_preview",
+      "text": "Week 12 American Athletic Betting Preview\nNorth Texas Mean Green (-17.5) @ UAB Blazers (+625)\nO/U: 68.5\n\n#GMG #WinAsOne",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762506",
+      "expiresAt": "2025-11-14T18:23:46.089Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.089Z"
+    },
+    {
+      "id": "betting_preview_week12_401754594",
+      "kind": "betting_preview",
+      "text": "Week 12 ACC Betting Preview\nVirginia Tech Hokies (+390) @ Florida State Seminoles (-14)\nO/U: 55.5\n\n#Hokies #Noles",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754594",
+      "expiresAt": "2025-11-14T18:23:46.089Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.089Z"
+    },
+    {
+      "id": "betting_preview_week12_401752770",
+      "kind": "betting_preview",
+      "text": "Week 12 SEC Betting Preview\nMississippi State Bulldogs (+220) @ Missouri Tigers (-7)\nO/U: 51.5\n\n#HailState #MIZ",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752770",
+      "expiresAt": "2025-11-14T18:23:46.089Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.089Z"
+    },
+    {
+      "id": "betting_preview_week12_401761650",
+      "kind": "betting_preview",
+      "text": "Week 12 Sun Belt Betting Preview\nCoastal Carolina Chanticleers (+120) @ Georgia Southern Eagles (-2.5)\nO/U: 59.5\n\n#TealNation #HailSouthern",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401761650",
+      "expiresAt": "2025-11-14T18:23:46.089Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.089Z"
+    },
+    {
+      "id": "betting_preview_week12_401762507",
+      "kind": "betting_preview",
+      "text": "Week 12 American Athletic Betting Preview\nUTSA Roadrunners (-18.5) @ Charlotte 49ers (+650)\nO/U: 59.5\n\n#BirdsUp #GoldStandard",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762507",
+      "expiresAt": "2025-11-14T18:23:46.089Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.089Z"
+    },
+    {
+      "id": "betting_preview_week12_401761651",
+      "kind": "betting_preview",
+      "text": "Week 12 Sun Belt Betting Preview\nMarshall Thundering Herd (-7.5) @ Georgia State Panthers (+245)\nO/U: 61.5\n\n#WeAreMarshall #StateNotSouthern",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401761651",
+      "expiresAt": "2025-11-14T18:23:46.089Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.089Z"
+    },
+    {
+      "id": "betting_preview_week12_401762508",
+      "kind": "betting_preview",
+      "text": "Week 12 American Athletic Betting Preview\nMemphis Tigers (+124) @ East Carolina Pirates (-3)\nO/U: 57.5\n\n#GoTigersGo #GoPirates",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762508",
+      "expiresAt": "2025-11-14T18:23:46.089Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.089Z"
+    },
+    {
+      "id": "betting_preview_week12_401762861",
+      "kind": "betting_preview",
+      "text": "Week 12 Mid-American Betting Preview\nEastern Michigan Eagles (-2.5) @ Ball State Cardinals (+110)\nO/U: 50.5\n\n#EMUEagles #ChirpChirp",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762861",
+      "expiresAt": "2025-11-14T18:23:46.089Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.089Z"
+    },
+    {
+      "id": "betting_preview_week12_401754592",
+      "kind": "betting_preview",
+      "text": "Week 12 ACC Betting Preview\nGeorgia Tech Yellow Jackets (-16.5) @ Boston College Eagles (+575)\nO/U: 59.5\n\n#GoJackets #WeAreBC",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754592",
+      "expiresAt": "2025-11-14T18:23:46.089Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.089Z"
+    },
+    {
+      "id": "betting_preview_week12_401752903",
+      "kind": "betting_preview",
+      "text": "Week 12 Big Ten Betting Preview\nPenn State Nittany Lions (-7) @ Michigan State Spartans (+230)\nO/U: 48.5\n\n#WeAre #GoGreen",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752903",
+      "expiresAt": "2025-11-14T18:23:46.089Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.089Z"
+    },
+    {
+      "id": "betting_preview_week12_401761654",
+      "kind": "betting_preview",
+      "text": "Week 12 Sun Belt Betting Preview\nTexas State Bobcats (+142) @ Southern Miss Golden Eagles (-3.5)\nO/U: 65.5\n\n#EatEmUp #ToTheTop",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401761654",
+      "expiresAt": "2025-11-14T18:23:46.089Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.089Z"
+    },
+    {
+      "id": "betting_preview_week12_401752768",
+      "kind": "betting_preview",
+      "text": "Week 12 SEC Betting Preview\nArkansas Razorbacks (+180) @ LSU Tigers (-6)\nO/U: 57.5\n\n#WPS #GeauxTigers",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752768",
+      "expiresAt": "2025-11-14T18:23:46.090Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.090Z"
+    },
+    {
+      "id": "betting_preview_week12_401762509",
+      "kind": "betting_preview",
+      "text": "Week 12 American Athletic Betting Preview\nFlorida Atlantic Owls (+600) @ Tulane Green Wave (-17.5)\nO/U: 63.5\n\n#GoOwls #RollWave",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762509",
+      "expiresAt": "2025-11-14T18:23:46.090Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.090Z"
+    },
+    {
+      "id": "betting_preview_week12_401756948",
+      "kind": "betting_preview",
+      "text": "Week 12 Big 12 Betting Preview\nWest Virginia Mountaineers (+330) @ Arizona State Sun Devils (-10.5)\nO/U: 47.5\n\n#HailWV #ForksUp",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756948",
+      "expiresAt": "2025-11-14T18:23:46.090Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.090Z"
+    },
+    {
+      "id": "betting_preview_week12_401760411",
+      "kind": "betting_preview",
+      "text": "Week 12 Mountain West Betting Preview\nColorado State Rams (+455) @ New Mexico Lobos (-14.5)\nO/U: 53.5\n\n#Stalwart #GoLobos",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760411",
+      "expiresAt": "2025-11-14T18:23:46.090Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.090Z"
+    },
+    {
+      "id": "betting_preview_week12_401760410",
+      "kind": "betting_preview",
+      "text": "Week 12 Mountain West Betting Preview\nBoise State Broncos (+124) @ San Diego State Aztecs (-3)\nO/U: 40.5\n\n#BleedBlue #GoAztecs",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760410",
+      "expiresAt": "2025-11-14T18:23:46.090Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.090Z"
+    },
+    {
+      "id": "betting_preview_week12_401760413",
+      "kind": "betting_preview",
+      "text": "Week 12 Mountain West Betting Preview\nSan José State Spartans (-9.5) @ Nevada Wolf Pack (+260)\nO/U: 49.5\n\n#SpartanUp #BattleBorn",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760413",
+      "expiresAt": "2025-11-14T18:23:46.090Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.090Z"
+    },
+    {
+      "id": "betting_preview_week12_401757303",
+      "kind": "betting_preview",
+      "text": "Week 12 Conference USA Betting Preview\nMiddle Tennessee Blue Raiders (+400) @ Western Kentucky Hilltoppers (-13.5)\nO/U: 55.5\n\n#BlueRaiders #GoTops",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401757303",
+      "expiresAt": "2025-11-14T18:23:46.090Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.090Z"
+    },
+    {
+      "id": "betting_preview_week12_401760412",
+      "kind": "betting_preview",
+      "text": "Week 12 Mountain West Betting Preview\nWyoming Cowboys (+145) @ Fresno State Bulldogs (-3.5)\nO/U: 40.5\n\n#GoWyo #GoDogs",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760412",
+      "expiresAt": "2025-11-14T18:23:46.090Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.091Z"
+    },
+    {
+      "id": "betting_preview_week12_401757301",
+      "kind": "betting_preview",
+      "text": "Week 12 Conference USA Betting Preview\nLiberty Flames (-3) @ Florida International Panthers (+124)\nO/U: 51.5\n\n#RiseWithUs #PawsUp",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401757301",
+      "expiresAt": "2025-11-14T18:23:46.091Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-13T18:23:46.091Z"
     }
   ]
 }
