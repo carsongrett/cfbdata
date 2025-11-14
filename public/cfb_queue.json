@@ -459,51 +459,6 @@
       "expiresAt": "2025-11-14T18:23:46.091Z",
       "source": "cfbd",
       "generatedAt": "2025-11-13T18:23:46.091Z"
-    },
-    {
-      "id": "final_401762856",
-      "kind": "final",
-      "text": "FINAL: 42-35\nKent State Golden Flashes - 42\nAkron Zips - 35\n\n(AKR): Ben Finley 32/59, 424 YDS, 3 TD, 1 INT\n\n#Shootout #CFB #FlashFAST",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762856",
-      "expiresAt": "2025-11-15T15:07:05.426Z",
-      "source": "espn",
-      "generatedAt": "2025-11-14T03:07:05.426Z"
-    },
-    {
-      "id": "final_401762857",
-      "kind": "final",
-      "text": "FINAL: 17-13\nWestern Michigan Broncos - 17\nOhio Bobcats - 13\n\n(OHIO): Parker Navarro 18 CAR, 105 YDS, 1 TD\n(WMU): Broc Lowry 9/14, 126 YDS\n\n#CFB #RowTheBoat",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762857",
-      "expiresAt": "2025-11-15T15:07:05.426Z",
-      "source": "espn",
-      "generatedAt": "2025-11-14T03:07:05.426Z"
-    },
-    {
-      "id": "final_401762858",
-      "kind": "final",
-      "text": "FINAL: 38-19\nCentral Michigan Chippewas - 38\nBuffalo Bulls - 19\n\n(BUFF): Nik McMillan 7 REC, 122 YDS, 2 TD\n(CMU): Joe Labas 18/24, 247 YDS, 2 TD, 2 INT\n\n#CFB #FireUpChips",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762858",
-      "expiresAt": "2025-11-15T15:07:05.426Z",
-      "source": "espn",
-      "generatedAt": "2025-11-14T03:07:05.426Z"
-    },
-    {
-      "id": "final_401762859",
-      "kind": "final",
-      "text": "FINAL: 45-3\nNorthern Illinois Huskies - 45\nMassachusetts Minutemen - 3\n\n(NIU): Jalen Macon 12 CAR, 98 YDS, 3 TD\n(MASS): Brandon Rose 11/20, 101 YDS\n\n#Blowout #CFB #TheHardWay",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762859",
-      "expiresAt": "2025-11-15T15:07:05.426Z",
-      "source": "espn",
-      "generatedAt": "2025-11-14T03:07:05.426Z"
-    },
-    {
-      "id": "final_401762860",
-      "kind": "final",
-      "text": "FINAL: 24-3\nToledo Rockets - 24\nMiami (OH) RedHawks - 3\n\n(TOL): Tucker Gleason 18/31, 169 YDS, 2 TD, 2 INT\n(M-OH): Kam Perry 4 REC, 69 YDS\n\n#CFB #GoRockets",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762860",
-      "expiresAt": "2025-11-15T15:07:05.426Z",
-      "source": "espn",
-      "generatedAt": "2025-11-14T03:07:05.426Z"
     }
   ]
 }
