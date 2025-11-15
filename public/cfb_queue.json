@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-14T03:42:59.919Z",
+  "generatedAt": "2025-11-15T02:20:47.155Z",
   "posts": [
     {
       "id": "ap_top10_week12",
@@ -459,6 +459,15 @@
       "expiresAt": "2025-11-14T18:23:46.091Z",
       "source": "cfbd",
       "generatedAt": "2025-11-13T18:23:46.091Z"
+    },
+    {
+      "id": "final_401761649",
+      "kind": "final",
+      "text": "FINAL: 33-0\nOld Dominion Monarchs - 33\nTroy Trojans - 0\n\n(ODU): Colton Joseph 10/20, 147 YDS, 1 TD\n\n#Blowout #Shutout #CFB #ReignOn",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761649",
+      "expiresAt": "2025-11-16T14:20:47.516Z",
+      "source": "espn",
+      "generatedAt": "2025-11-15T02:20:47.516Z"
     }
   ]
 }
