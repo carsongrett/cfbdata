@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-15T04:42:20.153Z",
+  "generatedAt": "2025-11-15T19:07:50.776Z",
   "posts": [
     {
       "id": "ap_top10_week12",
@@ -459,6 +459,24 @@
       "expiresAt": "2025-11-14T18:23:46.091Z",
       "source": "cfbd",
       "generatedAt": "2025-11-13T18:23:46.091Z"
+    },
+    {
+      "id": "final_401752904",
+      "kind": "final",
+      "text": "FINAL: 42-13\n#8 Oregon Ducks - 42\nMinnesota Golden Gophers - 13\n\n(ORE): Dante Moore 27/30, 306 YDS, 2 TD\n\n#CFB #GoDucks",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752904",
+      "expiresAt": "2025-11-17T07:07:51.337Z",
+      "source": "espn",
+      "generatedAt": "2025-11-15T19:07:51.337Z"
+    },
+    {
+      "id": "final_401754591",
+      "kind": "final",
+      "text": "FINAL: 20-19\nClemson Tigers - 20\n#20 Louisville Cardinals - 19\n\n(LOU): Miller Moss 19/27, 212 YDS\n\n#Upset #CFB #ALLIN",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754591",
+      "expiresAt": "2025-11-17T07:07:51.337Z",
+      "source": "espn",
+      "generatedAt": "2025-11-15T19:07:51.337Z"
     }
   ]
 }
