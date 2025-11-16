@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-16T04:44:05.269Z",
+  "generatedAt": "2025-11-16T05:38:58.513Z",
   "posts": [
     {
       "id": "ap_top10_week12",
@@ -873,6 +873,33 @@
       "expiresAt": "2025-11-17T16:44:06.030Z",
       "source": "espn",
       "generatedAt": "2025-11-16T04:44:06.030Z"
+    },
+    {
+      "id": "final_401752766",
+      "kind": "final",
+      "text": "FINAL: 35-10\n#5 Georgia Bulldogs - 35\n#10 Texas Longhorns - 10\n\n(TEX): Arch Manning 27/43, 251 YDS, 1 TD, 1 INT\n(UGA): Nate Frazier 16 CAR, 72 YDS\n\n#CFB #GoDawgs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752766",
+      "expiresAt": "2025-11-17T17:38:58.812Z",
+      "source": "espn",
+      "generatedAt": "2025-11-16T05:38:58.812Z"
+    },
+    {
+      "id": "final_401752770",
+      "kind": "final",
+      "text": "FINAL: 49-27\nMissouri Tigers - 49\nMississippi State Bulldogs - 27\n\n(MSST): Blake Shapen 19/33, 199 YDS, 2 INT\n(MIZ): Ahmad Hardy 25 CAR, 300 YDS, 3 TD\n\n#CFB #MIZ",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752770",
+      "expiresAt": "2025-11-17T17:38:58.812Z",
+      "source": "espn",
+      "generatedAt": "2025-11-16T05:38:58.812Z"
+    },
+    {
+      "id": "final_401757302",
+      "kind": "final",
+      "text": "FINAL: 35-26\nJacksonville State Gamecocks - 35\nKennesaw State Owls - 26\n\n(KENN): Amari Odom 19/31, 248 YDS, 3 INT\n(JVST): Cam Cook 27 CAR, 132 YDS, 1 TD\n\n#CFB #GoGamecocks",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757302",
+      "expiresAt": "2025-11-17T17:38:58.812Z",
+      "source": "espn",
+      "generatedAt": "2025-11-16T05:38:58.812Z"
     }
   ]
 }
