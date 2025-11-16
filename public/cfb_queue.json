@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-16T03:35:30.714Z",
+  "generatedAt": "2025-11-16T03:58:52.936Z",
   "posts": [
     {
       "id": "ap_top10_week12",
@@ -810,6 +810,24 @@
       "expiresAt": "2025-11-17T15:35:31.094Z",
       "source": "espn",
       "generatedAt": "2025-11-16T03:35:31.094Z"
+    },
+    {
+      "id": "final_401752769",
+      "kind": "final",
+      "text": "FINAL: 34-24\n#7 Ole Miss Rebels - 34\nFlorida Gators - 24\n\n(MISS): Kewan Lacy 31 CAR, 224 YDS, 3 TD\n\n#CFB #HottyToddy",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752769",
+      "expiresAt": "2025-11-17T15:58:53.401Z",
+      "source": "espn",
+      "generatedAt": "2025-11-16T03:58:53.401Z"
+    },
+    {
+      "id": "final_401757300",
+      "kind": "final",
+      "text": "FINAL: 26-23\nSam Houston Bearkats - 26\nDelaware Blue Hens - 23\n\n(DEL): Nick Minicucci 24/36, 338 YDS, 1 TD, 1 INT\n(SHSU): Landan Brown 10 CAR, 109 YDS, 2 TD\n\n#CFB #EatEmUpKats",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757300",
+      "expiresAt": "2025-11-17T15:58:53.401Z",
+      "source": "espn",
+      "generatedAt": "2025-11-16T03:58:53.401Z"
     }
   ]
 }
