@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-16T03:58:52.936Z",
+  "generatedAt": "2025-11-16T04:44:05.269Z",
   "posts": [
     {
       "id": "ap_top10_week12",
@@ -828,6 +828,51 @@
       "expiresAt": "2025-11-17T15:58:53.401Z",
       "source": "espn",
       "generatedAt": "2025-11-16T03:58:53.401Z"
+    },
+    {
+      "id": "final_401756949",
+      "kind": "final",
+      "text": "FINAL: 55-28\n#13 Utah Utes - 55\nBaylor Bears - 28\n\n(UTAH): Byrd Ficklin 6 CAR, 166 YDS, 2 TD\n(BAY): Sawyer Robertson 29/58, 430 YDS, 3 TD, 2 INT\n\n#CFB #GoUtes",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756949",
+      "expiresAt": "2025-11-17T16:44:06.026Z",
+      "source": "espn",
+      "generatedAt": "2025-11-16T04:44:06.026Z"
+    },
+    {
+      "id": "final_401752902",
+      "kind": "final",
+      "text": "FINAL: 49-13\nWashington Huskies - 49\nPurdue Boilermakers - 13\n\n(WASH): Demond Williams Jr. 16/19, 257 YDS, 2 TD\n\n#Blowout #CFB #PurpleReign",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752902",
+      "expiresAt": "2025-11-17T16:44:06.026Z",
+      "source": "espn",
+      "generatedAt": "2025-11-16T04:44:06.026Z"
+    },
+    {
+      "id": "final_401760414",
+      "kind": "final",
+      "text": "FINAL: 29-26\nUNLV Rebels - 29\nUtah State Aggies - 26\n\n(USU): Bryson Barnes 22 CAR, 124 YDS, 1 TD\n(UNLV): Anthony Colandrea 24/43, 276 YDS, 1 TD, 1 INT\n\n#CFB #GoRebels",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760414",
+      "expiresAt": "2025-11-17T16:44:06.026Z",
+      "source": "espn",
+      "generatedAt": "2025-11-16T04:44:06.026Z"
+    },
+    {
+      "id": "final_401752900",
+      "kind": "final",
+      "text": "FINAL: 48-10\n#1 Ohio State Buckeyes - 48\nUCLA Bruins - 10\n\n(UCLA): Rico Flores Jr. 2 REC, 59 YDS\n(OSU): Julian Sayin 23/31, 184 YDS, 1 TD\n\n#Blowout #CFB #GoBucks",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752900",
+      "expiresAt": "2025-11-17T16:44:06.026Z",
+      "source": "espn",
+      "generatedAt": "2025-11-16T04:44:06.026Z"
+    },
+    {
+      "id": "final_401754594",
+      "kind": "final",
+      "text": "FINAL: 34-14\nFlorida State Seminoles - 34\nVirginia Tech Hokies - 14\n\n(VT): Marcellous Hawkins 12 CAR, 101 YDS\n(FSU): Tommy Castellanos 12/24, 189 YDS, 1 TD\n\n#CFB #Noles",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754594",
+      "expiresAt": "2025-11-17T16:44:06.030Z",
+      "source": "espn",
+      "generatedAt": "2025-11-16T04:44:06.030Z"
     }
   ]
 }
