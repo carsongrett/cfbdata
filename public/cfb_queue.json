@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-16T02:57:03.029Z",
+  "generatedAt": "2025-11-16T03:35:30.714Z",
   "posts": [
     {
       "id": "ap_top10_week12",
@@ -801,6 +801,15 @@
       "expiresAt": "2025-11-17T14:25:22.928Z",
       "source": "espn",
       "generatedAt": "2025-11-16T02:25:22.928Z"
+    },
+    {
+      "id": "final_401761650",
+      "kind": "final",
+      "text": "FINAL: 45-40\nGeorgia Southern Eagles - 45\nCoastal Carolina Chanticleers - 40\n\n(GASO): Camden Brown 5 REC, 133 YDS, 3 TD\n\n#Shootout #CFB #HailSouthern",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761650",
+      "expiresAt": "2025-11-17T15:35:31.094Z",
+      "source": "espn",
+      "generatedAt": "2025-11-16T03:35:31.094Z"
     }
   ]
 }
