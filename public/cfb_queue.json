@@ -477,51 +477,6 @@
       "expiresAt": "2025-11-21T18:24:26.352Z",
       "source": "cfbd",
       "generatedAt": "2025-11-20T18:24:26.352Z"
-    },
-    {
-      "id": "final_401762862",
-      "kind": "final",
-      "text": "FINAL: 19-16\nAkron Zips - 19\nBowling Green Falcons - 16\n\n(AKR): Ben Finley 9/26, 176 YDS, 1 TD, 1 INT\n(BGSU): Austyn Dendy 27 CAR, 110 YDS\n\n#CFB #GoZips",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762862",
-      "expiresAt": "2025-11-22T15:04:59.902Z",
-      "source": "espn",
-      "generatedAt": "2025-11-21T03:04:59.902Z"
-    },
-    {
-      "id": "final_401762864",
-      "kind": "final",
-      "text": "FINAL: 35-19\nWestern Michigan Broncos - 35\nNorthern Illinois Huskies - 19\n\n(WMU): Jalen Buckley 24 CAR, 133 YDS, 2 TD\n(NIU): Brady Davidson 5/8, 73 YDS, 1 TD\n\n#CFB #RowTheBoat",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762864",
-      "expiresAt": "2025-11-22T15:04:59.902Z",
-      "source": "espn",
-      "generatedAt": "2025-11-21T03:04:59.902Z"
-    },
-    {
-      "id": "final_401762863",
-      "kind": "final",
-      "text": "FINAL: 42-14\nOhio Bobcats - 42\nMassachusetts Minutemen - 14\n\n(MASS): Grant Jordan 10/21, 56 YDS, 1 TD, 1 INT\n(OHIO): Sieh Bangura 27 CAR, 196 YDS, 2 TD\n\n#CFB #BleedGreen",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762863",
-      "expiresAt": "2025-11-22T15:04:59.902Z",
-      "source": "espn",
-      "generatedAt": "2025-11-21T03:04:59.902Z"
-    },
-    {
-      "id": "final_401762865",
-      "kind": "final",
-      "text": "FINAL: 37-20\nMiami (OH) RedHawks - 37\nBuffalo Bulls - 20\n\n(M-OH): Jordan Brunson 16 CAR, 123 YDS\n(BUFF): Ta'Quan Roberson 24/48, 303 YDS, 2 TD, 2 INT\n\n#CFB #LoveAndHonor",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762865",
-      "expiresAt": "2025-11-22T15:04:59.902Z",
-      "source": "espn",
-      "generatedAt": "2025-11-21T03:04:59.902Z"
-    },
-    {
-      "id": "final_401762866",
-      "kind": "final",
-      "text": "FINAL: 28-16\nCentral Michigan Chippewas - 28\nKent State Golden Flashes - 16\n\n(KENT): Dru DeShields 14/28, 185 YDS\n\n#CFB #FireUpChips",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762866",
-      "expiresAt": "2025-11-22T15:04:59.902Z",
-      "source": "espn",
-      "generatedAt": "2025-11-21T03:04:59.902Z"
     }
   ]
 }
