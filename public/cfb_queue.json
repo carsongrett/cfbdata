@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-22T04:42:06.489Z",
+  "generatedAt": "2025-11-22T19:08:09.307Z",
   "posts": [
     {
       "id": "ap_top10_week13",
@@ -477,6 +477,24 @@
       "expiresAt": "2025-11-21T18:24:26.352Z",
       "source": "cfbd",
       "generatedAt": "2025-11-20T18:24:26.352Z"
+    },
+    {
+      "id": "final_401754598",
+      "kind": "final",
+      "text": "FINAL: 21-11\nNC State Wolfpack - 21\nFlorida State Seminoles - 11\n\n(FSU): Tommy Castellanos 16/32, 203 YDS, 1 TD, 2 INT\n(NCSU): Hollywood Smothers 21 CAR, 84 YDS\n\n#CFB #GoPack",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754598",
+      "expiresAt": "2025-11-24T07:08:09.692Z",
+      "source": "espn",
+      "generatedAt": "2025-11-22T19:08:09.692Z"
+    },
+    {
+      "id": "final_401760418",
+      "kind": "final",
+      "text": "FINAL: 38-10\nUNLV Rebels - 38\nHawai'i Rainbow Warriors - 10\n\n(HAW): Jackson Harris 3 REC, 79 YDS, 1 TD\n(UNLV): Anthony Colandrea 21/26, 253 YDS, 3 TD\n\n#CFB #GoRebels",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760418",
+      "expiresAt": "2025-11-24T07:08:09.692Z",
+      "source": "espn",
+      "generatedAt": "2025-11-22T19:08:09.692Z"
     }
   ]
 }
