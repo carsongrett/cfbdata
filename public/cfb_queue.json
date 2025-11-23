@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-23T04:49:45.339Z",
+  "generatedAt": "2025-11-23T05:39:17.048Z",
   "posts": [
     {
       "id": "ap_top10_week13",
@@ -945,6 +945,33 @@
       "expiresAt": "2025-11-24T16:49:45.716Z",
       "source": "espn",
       "generatedAt": "2025-11-23T04:49:45.716Z"
+    },
+    {
+      "id": "final_401752777",
+      "kind": "final",
+      "text": "FINAL: 13-10\nLSU Tigers - 13\nWestern Kentucky Hilltoppers - 10\n\n(LSU): Michael Van Buren Jr. 25/42, 202 YDS, 1 TD, 1 INT\n\n#CFB #GeauxTigers",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752777",
+      "expiresAt": "2025-11-24T17:39:17.475Z",
+      "source": "espn",
+      "generatedAt": "2025-11-23T05:39:17.475Z"
+    },
+    {
+      "id": "final_401756955",
+      "kind": "final",
+      "text": "FINAL: 26-14\n#11 BYU Cougars - 26\nCincinnati Bearcats - 14\n\n(BYU): LJ Martin 32 CAR, 222 YDS, 2 TD\n(CIN): Brendan Sorsby 25/38, 300 YDS, 2 TD, 1 INT\n\n#CFB #GoCougs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756955",
+      "expiresAt": "2025-11-24T17:39:17.475Z",
+      "source": "espn",
+      "generatedAt": "2025-11-23T05:39:17.475Z"
+    },
+    {
+      "id": "final_401756956",
+      "kind": "final",
+      "text": "FINAL: 42-17\n#25 Arizona State Sun Devils - 42\nColorado Buffaloes - 17\n\n(ASU): Jeff Sims 11/24, 206 YDS, 2 TD, 1 INT\n\n#CFB #ForksUp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756956",
+      "expiresAt": "2025-11-24T17:39:17.475Z",
+      "source": "espn",
+      "generatedAt": "2025-11-23T05:39:17.475Z"
     }
   ]
 }
