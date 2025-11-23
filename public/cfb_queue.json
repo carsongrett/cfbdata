@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-23T03:08:41.193Z",
+  "generatedAt": "2025-11-23T03:44:39.124Z",
   "posts": [
     {
       "id": "ap_top10_week13",
@@ -873,6 +873,15 @@
       "expiresAt": "2025-11-24T14:33:53.865Z",
       "source": "espn",
       "generatedAt": "2025-11-23T02:33:53.865Z"
+    },
+    {
+      "id": "final_401760415",
+      "kind": "final",
+      "text": "FINAL: 20-3\nNew Mexico Lobos - 20\nAir Force Falcons - 3\n\n(UNM): Damon Bankston 10 CAR, 61 YDS, 1 TD\n\n#CFB #GoLobos",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760415",
+      "expiresAt": "2025-11-24T15:44:40.188Z",
+      "source": "espn",
+      "generatedAt": "2025-11-23T03:44:40.188Z"
     }
   ]
 }
