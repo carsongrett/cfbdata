@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-23T03:44:39.124Z",
+  "generatedAt": "2025-11-23T04:06:38.901Z",
   "posts": [
     {
       "id": "ap_top10_week13",
@@ -882,6 +882,33 @@
       "expiresAt": "2025-11-24T15:44:40.188Z",
       "source": "espn",
       "generatedAt": "2025-11-23T03:44:40.188Z"
+    },
+    {
+      "id": "final_401754601",
+      "kind": "final",
+      "text": "FINAL: 42-28\nPittsburgh Panthers - 42\n#16 Georgia Tech Yellow Jackets - 28\n\n(PITT): Ja'Kyrian Turner 21 CAR, 201 YDS, 1 TD\n(GT): Haynes King 27/41, 257 YDS, 2 TD, 2 INT\n\n#Upset #CFB #H2P",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754601",
+      "expiresAt": "2025-11-24T16:06:39.203Z",
+      "source": "espn",
+      "generatedAt": "2025-11-23T04:06:39.203Z"
+    },
+    {
+      "id": "final_401752908",
+      "kind": "final",
+      "text": "FINAL: 37-10\nPenn State Nittany Lions - 37\nNebraska Cornhuskers - 10\n\n(NEB): TJ Lateef 21/37, 187 YDS\n(PSU): Kaytron Allen 25 CAR, 160 YDS, 2 TD\n\n#CFB #WeAre",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752908",
+      "expiresAt": "2025-11-24T16:06:39.203Z",
+      "source": "espn",
+      "generatedAt": "2025-11-23T04:06:39.203Z"
+    },
+    {
+      "id": "final_401762514",
+      "kind": "final",
+      "text": "FINAL: 56-24\nNorth Texas Mean Green - 56\nRice Owls - 24\n\n(UNT): Drew Mestemaker 19/23, 469 YDS, 3 TD\n\n#Blowout #CFB #GMG",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762514",
+      "expiresAt": "2025-11-24T16:06:39.203Z",
+      "source": "espn",
+      "generatedAt": "2025-11-23T04:06:39.203Z"
     }
   ]
 }
