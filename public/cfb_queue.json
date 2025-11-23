@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-23T04:06:38.901Z",
+  "generatedAt": "2025-11-23T04:49:45.339Z",
   "posts": [
     {
       "id": "ap_top10_week13",
@@ -909,6 +909,42 @@
       "expiresAt": "2025-11-24T16:06:39.203Z",
       "source": "espn",
       "generatedAt": "2025-11-23T04:06:39.203Z"
+    },
+    {
+      "id": "final_401760416",
+      "kind": "final",
+      "text": "FINAL: 49-21\nBoise State Broncos - 49\nColorado State Rams - 21\n\n(CSU): Darius Curry 26/46, 293 YDS, 2 TD, 3 INT\n(BOIS): Sire Gaines 22 CAR, 149 YDS, 2 TD\n\n#CFB #BleedBlue",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760416",
+      "expiresAt": "2025-11-24T16:49:45.716Z",
+      "source": "espn",
+      "generatedAt": "2025-11-23T04:49:45.716Z"
+    },
+    {
+      "id": "final_401752775",
+      "kind": "final",
+      "text": "FINAL: 31-11\n#20 Tennessee Volunteers - 31\nFlorida Gators - 11\n\n(TENN): DeSean Bishop 24 CAR, 116 YDS, 2 TD\n\n#CFB #GBO",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752775",
+      "expiresAt": "2025-11-24T16:49:45.716Z",
+      "source": "espn",
+      "generatedAt": "2025-11-23T04:49:45.716Z"
+    },
+    {
+      "id": "final_401752915",
+      "kind": "final",
+      "text": "FINAL: 27-10\nWisconsin Badgers - 27\n#21 Illinois Fighting Illini - 10\n\n(ILL): Luke Altmyer 21/35, 248 YDS\n(WIS): Darrion Dupree 17 CAR, 131 YDS, 2 TD\n\n#Upset #CFB #OnWisconsin",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752915",
+      "expiresAt": "2025-11-24T16:49:45.716Z",
+      "source": "espn",
+      "generatedAt": "2025-11-23T04:49:45.716Z"
+    },
+    {
+      "id": "final_401754599",
+      "kind": "final",
+      "text": "FINAL: 31-10\nStanford Cardinal - 31\nCalifornia Golden Bears - 10\n\n(CAL): Jaron-Keawe Sagapolutele 33/49, 269 YDS\n(STAN): Micah Ford 29 CAR, 150 YDS, 1 TD\n\n#CFB #GoStanford",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754599",
+      "expiresAt": "2025-11-24T16:49:45.716Z",
+      "source": "espn",
+      "generatedAt": "2025-11-23T04:49:45.716Z"
     }
   ]
 }
