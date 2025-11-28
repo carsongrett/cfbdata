@@ -540,24 +540,6 @@
       "expiresAt": "2025-11-28T18:22:51.495Z",
       "source": "cfbd",
       "generatedAt": "2025-11-27T18:22:51.495Z"
-    },
-    {
-      "id": "final_401762868",
-      "kind": "final",
-      "text": "FINAL: 45-14\nBowling Green Falcons - 45\nMassachusetts Minutemen - 14\n\n(BGSU): Austyn Dendy 22 CAR, 115 YDS, 2 TD\n(MASS): Grant Jordan 22/35, 223 YDS, 2 TD\n\n#Blowout #CFB #AyZiggy",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762868",
-      "expiresAt": "2025-11-29T15:05:20.841Z",
-      "source": "espn",
-      "generatedAt": "2025-11-28T03:05:20.841Z"
-    },
-    {
-      "id": "final_401762869",
-      "kind": "final",
-      "text": "FINAL: 31-21\nWestern Michigan Broncos - 31\nEastern Michigan Eagles - 21\n\n(EMU): Noah Kim 24/41, 327 YDS, 2 TD, 3 INT\n\n#CFB #RowTheBoat",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762869",
-      "expiresAt": "2025-11-29T15:05:20.841Z",
-      "source": "espn",
-      "generatedAt": "2025-11-28T03:05:20.841Z"
     }
   ]
 }
