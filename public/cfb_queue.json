@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-29T04:43:50.177Z",
+  "generatedAt": "2025-11-29T19:08:22.694Z",
   "posts": [
     {
       "id": "ap_top10_week14",
@@ -540,6 +540,33 @@
       "expiresAt": "2025-11-28T18:22:51.495Z",
       "source": "cfbd",
       "generatedAt": "2025-11-27T18:22:51.495Z"
+    },
+    {
+      "id": "final_401752924",
+      "kind": "final",
+      "text": "FINAL: 56-3\n#2 Indiana Hoosiers - 56\nPurdue Boilermakers - 3\n\n(IU): Roman Hemby 12 CAR, 152 YDS, 1 TD\n(PUR): Ryan Browne 25/47, 238 YDS, 1 INT\n\n#Blowout #CFB #LEO",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752924",
+      "expiresAt": "2025-12-01T07:08:23.029Z",
+      "source": "espn",
+      "generatedAt": "2025-11-29T19:08:23.029Z"
+    },
+    {
+      "id": "final_401752792",
+      "kind": "final",
+      "text": "FINAL: 27-17\n#16 Texas Longhorns - 27\n#3 Texas A&M Aggies - 17\n\n(TA&M): Marcel Reed 20/32, 180 YDS, 2 INT\n(TEX): Quintrevion Wisner 19 CAR, 155 YDS\n\n#Upset #CFB #HookEm",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752792",
+      "expiresAt": "2025-12-01T07:08:23.029Z",
+      "source": "espn",
+      "generatedAt": "2025-11-29T19:08:23.029Z"
+    },
+    {
+      "id": "final_401756961",
+      "kind": "final",
+      "text": "FINAL: 23-7\n#25 Arizona Wildcats - 23\n#20 Arizona State Sun Devils - 7\n\n(ARIZ): Noah Fifita 28/45, 286 YDS, 1 TD\n(ASU): Raleek Brown 13 CAR, 63 YDS\n\n#Upset #CFB #BearDown",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756961",
+      "expiresAt": "2025-12-01T07:08:23.029Z",
+      "source": "espn",
+      "generatedAt": "2025-11-29T19:08:23.029Z"
     }
   ]
 }
