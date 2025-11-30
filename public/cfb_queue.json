@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-30T20:40:55.413Z",
+  "generatedAt": "2025-11-30T22:21:50.021Z",
   "posts": [
     {
       "id": "betting_preview_week14_401756967",
@@ -501,45 +501,45 @@
       "kind": "poll_top10",
       "text": "AP Top 10 - Week 15\n1. Ohio State\n2. Indiana\n3. Georgia\n4. Oregon\n5. Texas Tech\n6. Ole Miss\n7. Texas A&M\n8. Oklahoma\n9. Notre Dame\n10. Alabama\n\n#APTop25 #CFB",
       "link": "",
-      "expiresAt": "2025-12-07T20:40:57.090Z",
+      "expiresAt": "2025-12-07T22:21:51.670Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-30T20:40:57.090Z"
+      "generatedAt": "2025-11-30T22:21:51.670Z"
     },
     {
       "id": "ap_movers_week15",
       "kind": "poll_movers",
       "text": "AP Poll Movers - Week 15\n⬇️-4 Texas A&M (3→7)\n⬇️-3 Michigan (15→18)\nNEW: #22 Arizona\nNEW: #23 Navy\nNEW: #25 Missouri\n\n#APTop25 #CFB",
       "link": "",
-      "expiresAt": "2025-12-07T20:40:57.090Z",
+      "expiresAt": "2025-12-07T22:21:51.671Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-30T20:40:57.090Z"
+      "generatedAt": "2025-11-30T22:21:51.671Z"
     },
     {
       "id": "coaches_top10_week15",
       "kind": "poll_top10",
       "text": "Coaches Poll Top 10 - Week 15\n1. Ohio State\n2. Indiana\n3. Georgia\n4. Oregon\n5. Ole Miss\n6. Texas Tech\n7. Texas A&M\n8. Oklahoma\n9. Notre Dame\n10. Alabama\n\n#CoachesPoll #CFB",
       "link": "",
-      "expiresAt": "2025-12-07T20:40:59.440Z",
+      "expiresAt": "2025-12-07T22:21:54.044Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-30T20:40:59.440Z"
+      "generatedAt": "2025-11-30T22:21:54.044Z"
     },
     {
       "id": "coaches_movers_week15",
       "kind": "poll_movers",
       "text": "Coaches Poll Movers - Week 15\n⬇️-6 Tennessee (18→24)\n⬇️-4 Texas A&M (3→7)\n⬇️-4 Georgia Tech (19→23)\n⬆️+3 USC (20→17)\n⬇️-3 Michigan (15→18)\nNEW: #22 Arizona\nNEW: #25 Navy\n\n#CoachesPoll #CFB",
       "link": "",
-      "expiresAt": "2025-12-07T20:40:59.441Z",
+      "expiresAt": "2025-12-07T22:21:54.045Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-30T20:40:59.441Z"
+      "generatedAt": "2025-11-30T22:21:54.045Z"
     },
     {
       "id": "sp_top10_week15",
       "kind": "poll_top10",
       "text": "SP+ Power Rankings - Week 15\n1. Ohio State (32.4)\n2. Indiana (29.9)\n3. Texas Tech (28.7)\n4. Oregon (26.6)\n5. Georgia (24.3)\n6. Notre Dame (24.3)\n7. Texas A&M (22.6)\n8. Ole Miss (21.9)\n9. Utah (21.4)\n10. Alabama (21)\n\n#SPPlus #CFB",
       "link": "",
-      "expiresAt": "2025-12-07T20:41:01.814Z",
+      "expiresAt": "2025-12-07T22:21:56.527Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-30T20:41:01.814Z"
+      "generatedAt": "2025-11-30T22:21:56.527Z"
     }
   ]
 }
