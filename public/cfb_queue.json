@@ -1,878 +1,905 @@
 {
-  "generatedAt": "2025-11-23T03:08:41.193Z",
+  "generatedAt": "2025-11-30T03:07:48.218Z",
   "posts": [
     {
-      "id": "ap_top10_week13",
+      "id": "ap_top10_week14",
       "kind": "poll_top10",
-      "text": "AP Top 10 - Week 13\n1. Ohio State\n2. Indiana\n3. Texas A&M\n4. Georgia\n5. Ole Miss\n6. Oregon\n7. Texas Tech\n8. Oklahoma\n9. Notre Dame\n10. Alabama\n\n#APTop25 #CFB",
+      "text": "AP Top 10 - Week 14\n1. Ohio State\n2. Indiana\n3. Texas A&M\n4. Georgia\n5. Oregon\n6. Ole Miss\n7. Texas Tech\n8. Oklahoma\n9. Notre Dame\n10. Alabama\n\n#APTop25 #CFB",
       "link": "",
-      "expiresAt": "2025-11-23T23:15:45.017Z",
+      "expiresAt": "2025-11-30T23:15:55.457Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-16T23:15:45.017Z"
+      "generatedAt": "2025-11-23T23:15:55.457Z"
     },
     {
-      "id": "ap_movers_week13",
+      "id": "ap_movers_week14",
       "kind": "poll_movers",
-      "text": "AP Poll Movers - Week 13\n⬇️-7 Texas (10→17)\n⬇️-6 Alabama (4→10)\n⬆️+3 Oklahoma (11→8)\n⬆️+3 James Madison (24→21)\nNEW: #22 North Texas\nNEW: #23 Missouri\nNEW: #24 Tulane\nNEW: #25 Houston\n\n#APTop25 #CFB",
+      "text": "AP Poll Movers - Week 14\n⬇️-8 Georgia Tech (15→23)\n⬆️+3 Michigan (18→15)\n⬇️-3 USC (16→19)\nNEW: #24 Pittsburgh\nNEW: #25 SMU\n\n#APTop25 #CFB",
       "link": "",
-      "expiresAt": "2025-11-23T23:15:45.018Z",
+      "expiresAt": "2025-11-30T23:15:55.458Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-16T23:15:45.018Z"
+      "generatedAt": "2025-11-23T23:15:55.458Z"
     },
     {
-      "id": "coaches_top10_week13",
+      "id": "coaches_top10_week14",
       "kind": "poll_top10",
-      "text": "Coaches Poll Top 10 - Week 13\n1. Ohio State\n2. Indiana\n3. Texas A&M\n4. Georgia\n5. Oregon\n6. Ole Miss\n7. Texas Tech\n8. Oklahoma\n9. Notre Dame\n10. Alabama\n\n#CoachesPoll #CFB",
+      "text": "Coaches Poll Top 10 - Week 14\n1. Ohio State\n2. Indiana\n3. Texas A&M\n4. Georgia\n5. Oregon\n6. Ole Miss\n7. Texas Tech\n8. Oklahoma\n9. Notre Dame\n10. Alabama\n\n#CoachesPoll #CFB",
       "link": "",
-      "expiresAt": "2025-11-23T23:15:47.251Z",
+      "expiresAt": "2025-11-30T23:15:57.898Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-16T23:15:47.251Z"
+      "generatedAt": "2025-11-23T23:15:57.898Z"
     },
     {
-      "id": "coaches_movers_week13",
+      "id": "coaches_movers_week14",
       "kind": "poll_movers",
-      "text": "Coaches Poll Movers - Week 13\n⬇️-8 Texas (10→18)\n⬇️-6 Alabama (4→10)\n⬆️+3 Missouri (24→21)\n⬆️+3 James Madison (25→22)\nNEW: #23 North Texas\nNEW: #24 Houston\nNEW: #25 Tulane\n\n#CoachesPoll #CFB",
+      "text": "Coaches Poll Movers - Week 14\n⬇️-7 Georgia Tech (12→19)\n⬇️-4 USC (16→20)\nNEW: #24 Pittsburgh\nNEW: #25 SMU\n\n#CoachesPoll #CFB",
       "link": "",
-      "expiresAt": "2025-11-23T23:15:47.251Z",
+      "expiresAt": "2025-11-30T23:15:57.898Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-16T23:15:47.251Z"
+      "generatedAt": "2025-11-23T23:15:57.898Z"
     },
     {
-      "id": "sp_top10_week13",
+      "id": "sp_top10_week14",
       "kind": "poll_top10",
-      "text": "SP+ Power Rankings - Week 13\n1. Ohio State (31.4)\n2. Indiana (30)\n3. Texas Tech (28.8)\n4. Oregon (26.6)\n5. Notre Dame (22.5)\n6. Georgia (22.4)\n7. Ole Miss (21.8)\n8. Utah (21.5)\n9. Texas A&M (21.3)\n10. Alabama (19.9)\n\n#SPPlus #CFB",
+      "text": "SP+ Power Rankings - Week 14\n1. Ohio State (32.4)\n2. Indiana (29.9)\n3. Texas Tech (28.7)\n4. Oregon (26.6)\n5. Georgia (24.3)\n6. Notre Dame (24.3)\n7. Texas A&M (22.6)\n8. Ole Miss (21.9)\n9. Utah (21.4)\n10. Alabama (21)\n\n#SPPlus #CFB",
       "link": "",
-      "expiresAt": "2025-11-23T23:15:49.502Z",
+      "expiresAt": "2025-11-30T23:16:00.280Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-16T23:15:49.502Z"
+      "generatedAt": "2025-11-23T23:16:00.280Z"
     },
     {
-      "id": "betting_preview_week13_401754600",
+      "id": "betting_preview_week14_401756967",
       "kind": "betting_preview",
-      "text": "Week 13 ACC Betting Preview\nDuke Blue Devils (-6.5) @ North Carolina Tar Heels (+205)\nO/U: 51.5\n\n#GoDuke #GoHeels",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401754600",
-      "expiresAt": "2025-11-21T18:24:26.348Z",
+      "text": "Week 14 Big 12 Betting Preview\nCincinnati Bearcats (+140) @ TCU Horned Frogs (-3)\nO/U: 57.5\n\n#Bearcats #GoFrogs",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756967",
+      "expiresAt": "2025-11-28T18:22:51.490Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.348Z"
+      "generatedAt": "2025-11-27T18:22:51.490Z"
     },
     {
-      "id": "betting_preview_week13_401752911",
+      "id": "betting_preview_week14_401761666",
       "kind": "betting_preview",
-      "text": "Week 13 Big Ten Betting Preview\nUSC Trojans (+295) @ Oregon Ducks (-9.5)\nO/U: 59.5\n\n#FightOn #GoDucks",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752911",
-      "expiresAt": "2025-11-21T18:24:26.348Z",
+      "text": "Week 14 Sun Belt Betting Preview\nTroy Trojans (+205) @ Southern Miss Golden Eagles (-7)\nO/U: 50.5\n\n#OneTROY #ToTheTop",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401761666",
+      "expiresAt": "2025-11-28T18:22:51.491Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.348Z"
+      "generatedAt": "2025-11-27T18:22:51.491Z"
     },
     {
-      "id": "betting_preview_week13_401752775",
+      "id": "betting_preview_week14_401761662",
       "kind": "betting_preview",
-      "text": "Week 13 SEC Betting Preview\nTennessee Volunteers (-4) @ Florida Gators (+164)\nO/U: 57.5\n\n#GBO #GoGators",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752775",
-      "expiresAt": "2025-11-21T18:24:26.348Z",
+      "text": "Week 14 Sun Belt Betting Preview\nJames Madison Dukes (-21.5) @ Coastal Carolina Chanticleers (+1100)\nO/U: 52.5\n\n#GoDukes #TealNation",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401761662",
+      "expiresAt": "2025-11-28T18:22:51.491Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.348Z"
+      "generatedAt": "2025-11-27T18:22:51.491Z"
     },
     {
-      "id": "betting_preview_week13_401756956",
+      "id": "betting_preview_week14_401752919",
       "kind": "betting_preview",
-      "text": "Week 13 Big 12 Betting Preview\nArizona State Sun Devils (-7) @ Colorado Buffaloes (+220)\nO/U: 47.5\n\n#ForksUp #SkoBuffs",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401756956",
-      "expiresAt": "2025-11-21T18:24:26.348Z",
+      "text": "Week 14 Big Ten Betting Preview\nUCLA Bruins (+1000) @ USC Trojans (-22.5)\nO/U: 59.5\n\n#GoBruins #FightOn",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752919",
+      "expiresAt": "2025-11-28T18:22:51.491Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.348Z"
+      "generatedAt": "2025-11-27T18:22:51.491Z"
     },
     {
-      "id": "betting_preview_week13_401756960",
+      "id": "betting_preview_week14_401752946",
       "kind": "betting_preview",
-      "text": "Week 13 Big 12 Betting Preview\nKansas State Wildcats (+550) @ Utah Utes (-17.5)\nO/U: 51.5\n\n#EMAW #GoUtes",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401756960",
-      "expiresAt": "2025-11-21T18:24:26.348Z",
+      "text": "Week 14 Pac-12 Betting Preview\nOregon State Beavers (+410) @ Washington State Cougars (-13.5)\nO/U: 43.5\n\n#GoBeavs #GoCougs",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752946",
+      "expiresAt": "2025-11-28T18:22:51.491Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.348Z"
+      "generatedAt": "2025-11-27T18:22:51.491Z"
     },
     {
-      "id": "betting_preview_week13_401752778",
+      "id": "betting_preview_week14_401754613",
       "kind": "betting_preview",
-      "text": "Week 13 SEC Betting Preview\nMissouri Tigers (+250) @ Oklahoma Sooners (-7.5)\nO/U: 41.5\n\n#MIZ #BoomerSooner",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752778",
-      "expiresAt": "2025-11-21T18:24:26.348Z",
+      "text": "Week 14 ACC Betting Preview\nVirginia Tech Hokies (+295) @ Virginia Cavaliers (-10)\nO/U: 52.5\n\n#Hokies #GoHoos",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754613",
+      "expiresAt": "2025-11-28T18:22:51.491Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.348Z"
+      "generatedAt": "2025-11-27T18:22:51.491Z"
     },
     {
-      "id": "betting_preview_week13_401760418",
+      "id": "betting_preview_week14_401752923",
       "kind": "betting_preview",
-      "text": "Week 13 Mountain West Betting Preview\nHawai'i Rainbow Warriors (+120) @ UNLV Rebels (-3)\nO/U: 64.5\n\n#GoBows #GoRebels",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401760418",
-      "expiresAt": "2025-11-21T18:24:26.349Z",
+      "text": "Week 14 Big Ten Betting Preview\nMaryland Terrapins (+154) @ Michigan State Spartans (-4)\nO/U: 48.5\n\n#GoTerps #GoGreen",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752923",
+      "expiresAt": "2025-11-28T18:22:51.491Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.349Z"
+      "generatedAt": "2025-11-27T18:22:51.491Z"
     },
     {
-      "id": "betting_preview_week13_401756955",
+      "id": "betting_preview_week14_401752784",
       "kind": "betting_preview",
-      "text": "Week 13 Big 12 Betting Preview\nBYU Cougars (-2.5) @ Cincinnati Bearcats (+114)\nO/U: 55.5\n\n#GoCougs #Bearcats",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401756955",
-      "expiresAt": "2025-11-21T18:24:26.349Z",
+      "text": "Week 14 SEC Betting Preview\nAlabama Crimson Tide (-6) @ Auburn Tigers (+185)\nO/U: 46.5\n\n#RollTide #WarEagle",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752784",
+      "expiresAt": "2025-11-28T18:22:51.491Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.349Z"
+      "generatedAt": "2025-11-27T18:22:51.491Z"
     },
     {
-      "id": "betting_preview_week13_401754598",
+      "id": "betting_preview_week14_401752922",
       "kind": "betting_preview",
-      "text": "Week 13 ACC Betting Preview\nFlorida State Seminoles (-5.5) @ NC State Wolfpack (+170)\nO/U: 59.5\n\n#Noles #GoPack",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401754598",
-      "expiresAt": "2025-11-21T18:24:26.349Z",
+      "text": "Week 14 Big Ten Betting Preview\nNorthwestern Wildcats (+230) @ Illinois Fighting Illini (-7.5)\nO/U: 44.5\n\n#GoCats #Illini",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752922",
+      "expiresAt": "2025-11-28T18:22:51.491Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.349Z"
+      "generatedAt": "2025-11-27T18:22:51.491Z"
     },
     {
-      "id": "betting_preview_week13_401754601",
+      "id": "betting_preview_week14_401762516",
       "kind": "betting_preview",
-      "text": "Week 13 ACC Betting Preview\nPittsburgh Panthers (+114) @ Georgia Tech Yellow Jackets (-2.5)\nO/U: 61.5\n\n#H2P #GoJackets",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401754601",
-      "expiresAt": "2025-11-21T18:24:26.349Z",
+      "text": "Week 14 American Athletic Betting Preview\nNavy Midshipmen (+140) @ Memphis Tigers (-3.5)\nO/U: 58.5\n\n#GoNavy #GoTigersGo",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762516",
+      "expiresAt": "2025-11-28T18:22:51.491Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.349Z"
+      "generatedAt": "2025-11-27T18:22:51.491Z"
     },
     {
-      "id": "betting_preview_week13_401752780",
+      "id": "betting_preview_week14_401756964",
       "kind": "betting_preview",
-      "text": "Week 13 SEC Betting Preview\nArkansas Razorbacks (+270) @ Texas Longhorns (-8.5)\nO/U: 58.5\n\n#WPS #HookEm",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752780",
-      "expiresAt": "2025-11-21T18:24:26.349Z",
+      "text": "Week 14 Big 12 Betting Preview\nUtah Utes (-10.5) @ Kansas Jayhawks (+330)\nO/U: 60.5\n\n#GoUtes #RockChalk",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756964",
+      "expiresAt": "2025-11-28T18:22:51.492Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.349Z"
+      "generatedAt": "2025-11-27T18:22:51.492Z"
     },
     {
-      "id": "betting_preview_week13_401762515",
+      "id": "betting_preview_week14_401762517",
       "kind": "betting_preview",
-      "text": "Week 13 American Athletic Betting Preview\nTulane Green Wave (-8.5) @ Temple Owls (+275)\nO/U: 55.5\n\n#RollWave #TempleTUFF",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762515",
-      "expiresAt": "2025-11-21T18:24:26.349Z",
+      "text": "Week 14 American Athletic Betting Preview\nUAB Blazers (+260) @ Tulsa Golden Hurricane (-9.5)\nO/U: 58.5\n\n#WinAsOne #ReignCane",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762517",
+      "expiresAt": "2025-11-28T18:22:51.492Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.349Z"
+      "generatedAt": "2025-11-27T18:22:51.492Z"
     },
     {
-      "id": "betting_preview_week13_401761657",
+      "id": "betting_preview_week14_401754609",
       "kind": "betting_preview",
-      "text": "Week 13 Sun Belt Betting Preview\nOld Dominion Monarchs (-12.5) @ Georgia Southern Eagles (+370)\nO/U: 62.5\n\n#ReignOn #HailSouthern",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401761657",
-      "expiresAt": "2025-11-21T18:24:26.349Z",
+      "text": "Week 14 ACC Betting Preview\nSMU Mustangs (-13.5) @ California Golden Bears (+410)\nO/U: 52.5\n\n#PonyUpDallas #GoBears",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754609",
+      "expiresAt": "2025-11-28T18:22:51.492Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.349Z"
+      "generatedAt": "2025-11-27T18:22:51.492Z"
     },
     {
-      "id": "betting_preview_week13_401754602",
+      "id": "betting_preview_week14_401760423",
       "kind": "betting_preview",
-      "text": "Week 13 ACC Betting Preview\nLouisville Cardinals (+120) @ SMU Mustangs (-2.5)\nO/U: 53.5\n\n#GoCards #PonyUpDallas",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401754602",
-      "expiresAt": "2025-11-21T18:24:26.349Z",
+      "text": "Week 14 Mountain West Betting Preview\nFresno State Bulldogs (-3.5) @ San José State Spartans (+136)\nO/U: 46.5\n\n#GoDogs #SpartanUp",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760423",
+      "expiresAt": "2025-11-28T18:22:51.492Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.349Z"
+      "generatedAt": "2025-11-27T18:22:51.492Z"
     },
     {
-      "id": "betting_preview_week13_401752782",
+      "id": "betting_preview_week14_401762869",
       "kind": "betting_preview",
-      "text": "Week 13 SEC Betting Preview\nKentucky Wildcats (+280) @ Vanderbilt Commodores (-8.5)\nO/U: 52.5\n\n#BBN #AnchorDown",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752782",
-      "expiresAt": "2025-11-21T18:24:26.349Z",
+      "text": "Week 14 Mid-American Betting Preview\nWestern Michigan Broncos (-10) @ Eastern Michigan Eagles (+300)\nO/U: 49.5\n\n#RowTheBoat #EMUEagles",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762869",
+      "expiresAt": "2025-11-28T18:22:51.492Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.349Z"
+      "generatedAt": "2025-11-27T18:22:51.492Z"
     },
     {
-      "id": "betting_preview_week13_401752908",
+      "id": "betting_preview_week14_401762870",
       "kind": "betting_preview",
-      "text": "Week 13 Big Ten Betting Preview\nNebraska Cornhuskers (+245) @ Penn State Nittany Lions (-7.5)\nO/U: 43.5\n\n#GBR #WeAre",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752908",
-      "expiresAt": "2025-11-21T18:24:26.349Z",
+      "text": "Week 14 Mid-American Betting Preview\nOhio Bobcats (-7) @ Buffalo Bulls (+210)\nO/U: 44.5\n\n#BleedGreen #UBhornsUP",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762870",
+      "expiresAt": "2025-11-28T18:22:51.492Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.349Z"
+      "generatedAt": "2025-11-27T18:22:51.492Z"
     },
     {
-      "id": "betting_preview_week13_401756959",
+      "id": "betting_preview_week14_401762871",
       "kind": "betting_preview",
-      "text": "Week 13 Big 12 Betting Preview\nOklahoma State Cowboys (+410) @ UCF Knights (-13.5)\nO/U: 48.5\n\n#GoPokes #ChargeOn",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401756959",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 Mid-American Betting Preview\nKent State Golden Flashes (+170) @ Northern Illinois Huskies (-5.5)\nO/U: 46.5\n\n#FlashFAST #TheHardWay",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762871",
+      "expiresAt": "2025-11-28T18:22:51.492Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.492Z"
     },
     {
-      "id": "betting_preview_week13_401762512",
+      "id": "betting_preview_week14_401760421",
       "kind": "betting_preview",
-      "text": "Week 13 American Athletic Betting Preview\nTulsa Golden Hurricane (+320) @ Army Black Knights (-10)\nO/U: 45.5\n\n#ReignCane #GoArmy",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762512",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 Mountain West Betting Preview\nAir Force Falcons (-2.5) @ Colorado State Rams (+114)\nO/U: 46.5\n\n#LetsFly #Stalwart",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760421",
+      "expiresAt": "2025-11-28T18:22:51.492Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.492Z"
     },
     {
-      "id": "betting_preview_week13_401752912",
+      "id": "betting_preview_week14_401760426",
       "kind": "betting_preview",
-      "text": "Week 13 Big Ten Betting Preview\nRutgers Scarlet Knights (+2500) @ Ohio State Buckeyes (-31.5)\nO/U: 55.5\n\n#CHOP #GoBucks",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752912",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 Mountain West Betting Preview\nSan Diego State Aztecs (-1.5) @ New Mexico Lobos (+100)\nO/U: 41.5\n\n#GoAztecs #GoLobos",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760426",
+      "expiresAt": "2025-11-28T18:22:51.492Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.492Z"
     },
     {
-      "id": "betting_preview_week13_401752914",
+      "id": "betting_preview_week14_401762442",
       "kind": "betting_preview",
-      "text": "Week 13 Big Ten Betting Preview\nMichigan Wolverines (-14) @ Maryland Terrapins (+410)\nO/U: 46.5\n\n#GoBlue #GoTerps",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752914",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 American Athletic Betting Preview\nTemple Owls (+800) @ North Texas Mean Green (-20.5)\nO/U: 65.5\n\n#TempleTUFF #GMG",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762442",
+      "expiresAt": "2025-11-28T18:22:51.492Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.492Z"
     },
     {
-      "id": "betting_preview_week13_401762867",
+      "id": "betting_preview_week14_401760422",
       "kind": "betting_preview",
-      "text": "Week 13 Mid-American Betting Preview\nBall State Cardinals (+2000) @ Toledo Rockets (-27.5)\nO/U: 45.5\n\n#ChirpChirp #GoRockets",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762867",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 Mountain West Betting Preview\nBoise State Broncos (-3) @ Utah State Aggies (+130)\nO/U: 55.5\n\n#BleedBlue #AggiesAllTheWay",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760422",
+      "expiresAt": "2025-11-28T18:22:51.492Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.492Z"
     },
     {
-      "id": "betting_preview_week13_401754603",
+      "id": "betting_preview_week14_401752924",
       "kind": "betting_preview",
-      "text": "Week 13 ACC Betting Preview\nMiami Hurricanes (-17.5) @ Virginia Tech Hokies (+625)\nO/U: 48.5\n\n#GoCanes #Hokies",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401754603",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 Big Ten Betting Preview\nIndiana Hoosiers (-28.5) @ Purdue Boilermakers (+1600)\nO/U: 53.5\n\n#LEO #BoilerUp",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752924",
+      "expiresAt": "2025-11-28T18:22:51.492Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.492Z"
     },
     {
-      "id": "betting_preview_week13_401760416",
+      "id": "betting_preview_week14_401752792",
       "kind": "betting_preview",
-      "text": "Week 13 Mountain West Betting Preview\nColorado State Rams (+550) @ Boise State Broncos (-16.5)\nO/U: 45.5\n\n#Stalwart #BleedBlue",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401760416",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 SEC Betting Preview\nTexas A&M Aggies (-2.5) @ Texas Longhorns (+114)\nO/U: 52.5\n\n#GigEm #HookEm",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752792",
+      "expiresAt": "2025-11-28T18:22:51.492Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.492Z"
     },
     {
-      "id": "betting_preview_week13_401754599",
+      "id": "betting_preview_week14_401756961",
       "kind": "betting_preview",
-      "text": "Week 13 ACC Betting Preview\nCalifornia Golden Bears (-3) @ Stanford Cardinal (+120)\nO/U: 46.5\n\n#GoBears #GoStanford",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401754599",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 Big 12 Betting Preview\nArizona Wildcats (-1.5) @ Arizona State Sun Devils (+102)\nO/U: 47.5\n\n#BearDown #ForksUp",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756961",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401762864",
+      "id": "betting_preview_week14_401752921",
       "kind": "betting_preview",
-      "text": "Week 13 Mid-American Betting Preview\nWestern Michigan Broncos (-7) @ Northern Illinois Huskies (+225)\nO/U: 39.5\n\n#RowTheBoat #TheHardWay",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762864",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 Big Ten Betting Preview\nOhio State Buckeyes (-9.5) @ Michigan Wolverines (+320)\nO/U: 43.5\n\n#GoBucks #GoBlue",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752921",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401762862",
+      "id": "betting_preview_week14_401756968",
       "kind": "betting_preview",
-      "text": "Week 13 Mid-American Betting Preview\nAkron Zips (+114) @ Bowling Green Falcons (-2.5)\nO/U: 47.5\n\n#GoZips #AyZiggy",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762862",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 Big 12 Betting Preview\nTexas Tech Red Raiders (-23.5) @ West Virginia Mountaineers (+950)\nO/U: 52.5\n\n#WreckEm #HailWV",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756968",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401756957",
+      "id": "betting_preview_week14_401754611",
       "kind": "betting_preview",
-      "text": "Week 13 Big 12 Betting Preview\nTCU Horned Frogs (+-105) @ Houston Cougars (-1.5)\nO/U: 55.5\n\n#GoFrogs #GoCoogs",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401756957",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 ACC Betting Preview\nMiami Hurricanes (-7) @ Pittsburgh Panthers (+220)\nO/U: 49.5\n\n#GoCanes #H2P",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754611",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401762866",
+      "id": "betting_preview_week14_401756962",
       "kind": "betting_preview",
-      "text": "Week 13 Mid-American Betting Preview\nCentral Michigan Chippewas (-7.5) @ Kent State Golden Flashes (+245)\nO/U: 50.5\n\n#FireUpChips #FlashFAST",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762866",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 Big 12 Betting Preview\nHouston Cougars (+124) @ Baylor Bears (-3)\nO/U: 58.5\n\n#GoCoogs #SicEm",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756962",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401762865",
+      "id": "betting_preview_week14_401757315",
       "kind": "betting_preview",
-      "text": "Week 13 Mid-American Betting Preview\nMiami (OH) RedHawks (-2.5) @ Buffalo Bulls (+110)\nO/U: 38.5\n\n#LoveAndHonor #UBhornsUP",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762865",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 Conference USA Betting Preview\nMiddle Tennessee Blue Raiders (+145) @ New Mexico State Aggies (-3.5)\nO/U: 52.5\n\n#BlueRaiders #AggieUp",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401757315",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401761655",
+      "id": "betting_preview_week14_401761667",
       "kind": "betting_preview",
-      "text": "Week 13 Sun Belt Betting Preview\nLouisiana Ragin' Cajuns (+110) @ Arkansas State Red Wolves (-2.5)\nO/U: 53.5\n\n#GeauxCajuns #WolvesUp",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401761655",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 Sun Belt Betting Preview\nSouth Alabama Jaguars (+275) @ Texas State Bobcats (-8.5)\nO/U: 62.5\n\n#GoJags #EatEmUp",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401761667",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401756954",
+      "id": "betting_preview_week14_401752917",
       "kind": "betting_preview",
-      "text": "Week 13 Big 12 Betting Preview\nBaylor Bears (+205) @ Arizona Wildcats (-7)\nO/U: 62.5\n\n#SicEm #BearDown",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401756954",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 Big Ten Betting Preview\nOregon Ducks (-7) @ Washington Huskies (+220)\nO/U: 51.5\n\n#GoDucks #PurpleReign",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752917",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401760419",
+      "id": "betting_preview_week14_401752789",
       "kind": "betting_preview",
-      "text": "Week 13 Mountain West Betting Preview\nNevada Wolf Pack (+205) @ Wyoming Cowboys (-6.5)\nO/U: 40.5\n\n#BattleBorn #GoWyo",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401760419",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 SEC Betting Preview\nLSU Tigers (+350) @ Oklahoma Sooners (-10.5)\nO/U: 35.5\n\n#GeauxTigers #BoomerSooner",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752789",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401760420",
+      "id": "betting_preview_week14_401752791",
       "kind": "betting_preview",
-      "text": "Week 13 Mountain West Betting Preview\nSan José State Spartans (+400) @ San Diego State Aztecs (-12.5)\nO/U: 49.5\n\n#SpartanUp #GoAztecs",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401760420",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 SEC Betting Preview\nVanderbilt Commodores (+124) @ Tennessee Volunteers (-3)\nO/U: 65.5\n\n#AnchorDown #GBO",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752791",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401757308",
+      "id": "betting_preview_week14_401752783",
       "kind": "betting_preview",
-      "text": "Week 13 Conference USA Betting Preview\nSam Houston Bearkats (+205) @ Middle Tennessee Blue Raiders (-6.5)\nO/U: 53.5\n\n#EatEmUpKats #BlueRaiders",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401757308",
-      "expiresAt": "2025-11-21T18:24:26.350Z",
+      "text": "Week 14 SEC Betting Preview\nMissouri Tigers (-3) @ Arkansas Razorbacks (+124)\nO/U: 55.5\n\n#MIZ #WPS",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752783",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.350Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401752910",
+      "id": "betting_preview_week14_401752918",
       "kind": "betting_preview",
-      "text": "Week 13 Big Ten Betting Preview\nWashington Huskies (-10.5) @ UCLA Bruins (+320)\nO/U: 51.5\n\n#PurpleReign #GoBruins",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752910",
-      "expiresAt": "2025-11-21T18:24:26.351Z",
+      "text": "Week 14 Big Ten Betting Preview\nWisconsin Badgers (-1.5) @ Minnesota Golden Gophers (+-108)\nO/U: 38.5\n\n#OnWisconsin #SkiUMah",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752918",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.351Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401757307",
+      "id": "betting_preview_week14_401752920",
       "kind": "betting_preview",
-      "text": "Week 13 Conference USA Betting Preview\nLiberty Flames (-1.5) @ Louisiana Tech Bulldogs (+-108)\nO/U: 44.5\n\n#RiseWithUs #EverLoyalBe",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401757307",
-      "expiresAt": "2025-11-21T18:24:26.351Z",
+      "text": "Week 14 Big Ten Betting Preview\nPenn State Nittany Lions (-13.5) @ Rutgers Scarlet Knights (+440)\nO/U: 55.5\n\n#WeAre #CHOP",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752920",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.351Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401757309",
+      "id": "betting_preview_week14_401754610",
       "kind": "betting_preview",
-      "text": "Week 13 Conference USA Betting Preview\nNew Mexico State Aggies (+140) @ UTEP Miners (-3)\nO/U: 45.5\n\n#AggieUp #PicksUp",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401757309",
-      "expiresAt": "2025-11-21T18:24:26.351Z",
+      "text": "Week 14 ACC Betting Preview\nWake Forest Demon Deacons (+-105) @ Duke Blue Devils (-1.5)\nO/U: 53.5\n\n#GoDeacs #GoDuke",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754610",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.351Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401752909",
+      "id": "betting_preview_week14_401762518",
       "kind": "betting_preview",
-      "text": "Week 13 Big Ten Betting Preview\nMinnesota Golden Gophers (+150) @ Northwestern Wildcats (-4)\nO/U: 40.5\n\n#SkiUMah #GoCats",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752909",
-      "expiresAt": "2025-11-21T18:24:26.351Z",
+      "text": "Week 14 American Athletic Betting Preview\nCharlotte 49ers (+2200) @ Tulane Green Wave (-29.5)\nO/U: 52.5\n\n#GoldStandard #RollWave",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762518",
+      "expiresAt": "2025-11-28T18:22:51.493Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.351Z"
+      "generatedAt": "2025-11-27T18:22:51.493Z"
     },
     {
-      "id": "betting_preview_week13_401752913",
+      "id": "betting_preview_week14_401754612",
       "kind": "betting_preview",
-      "text": "Week 13 Big Ten Betting Preview\nMichigan State Spartans (+600) @ Iowa Hawkeyes (-16.5)\nO/U: 42.5\n\n#GoGreen #Hawkeyes",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752913",
-      "expiresAt": "2025-11-21T18:24:26.351Z",
+      "text": "Week 14 ACC Betting Preview\nNorth Carolina Tar Heels (+250) @ NC State Wolfpack (-7.5)\nO/U: 47.5\n\n#GoHeels #GoPack",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754612",
+      "expiresAt": "2025-11-28T18:22:51.494Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.351Z"
+      "generatedAt": "2025-11-27T18:22:51.494Z"
     },
     {
-      "id": "betting_preview_week13_401756958",
+      "id": "betting_preview_week14_401756965",
       "kind": "betting_preview",
-      "text": "Week 13 Big 12 Betting Preview\nKansas Jayhawks (+145) @ Iowa State Cyclones (-3.5)\nO/U: 55.5\n\n#RockChalk #CyclONEnation",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401756958",
-      "expiresAt": "2025-11-21T18:24:26.351Z",
+      "text": "Week 14 Big 12 Betting Preview\nColorado Buffaloes (+600) @ Kansas State Wildcats (-17.5)\nO/U: 50.5\n\n#SkoBuffs #EMAW",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756965",
+      "expiresAt": "2025-11-28T18:22:51.494Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.351Z"
+      "generatedAt": "2025-11-27T18:22:51.494Z"
     },
     {
-      "id": "betting_preview_week13_401762513",
+      "id": "betting_preview_week14_401756966",
       "kind": "betting_preview",
-      "text": "Week 13 American Athletic Betting Preview\nEast Carolina Pirates (-2.5) @ UTSA Roadrunners (+110)\nO/U: 62.5\n\n#GoPirates #BirdsUp",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762513",
-      "expiresAt": "2025-11-21T18:24:26.351Z",
+      "text": "Week 14 Big 12 Betting Preview\nIowa State Cyclones (-14) @ Oklahoma State Cowboys (+440)\nO/U: 46.5\n\n#CyclONEnation #GoPokes",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756966",
+      "expiresAt": "2025-11-28T18:22:51.494Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.351Z"
+      "generatedAt": "2025-11-27T18:22:51.494Z"
     },
     {
-      "id": "betting_preview_week13_401752915",
+      "id": "betting_preview_week14_401762519",
       "kind": "betting_preview",
-      "text": "Week 13 Big Ten Betting Preview\nIllinois Fighting Illini (-7.5) @ Wisconsin Badgers (+240)\nO/U: 40.5\n\n#Illini #OnWisconsin",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401752915",
-      "expiresAt": "2025-11-21T18:24:26.352Z",
+      "text": "Week 14 American Athletic Betting Preview\nEast Carolina Pirates (-7) @ Florida Atlantic Owls (+200)\nO/U: 66.5\n\n#GoPirates #GoOwls",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762519",
+      "expiresAt": "2025-11-28T18:22:51.494Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.352Z"
+      "generatedAt": "2025-11-27T18:22:51.494Z"
     },
     {
-      "id": "betting_preview_week13_401762514",
+      "id": "betting_preview_week14_401762872",
       "kind": "betting_preview",
-      "text": "Week 13 American Athletic Betting Preview\nNorth Texas Mean Green (-17.5) @ Rice Owls (+625)\nO/U: 55.5\n\n#GMG #GoOwls",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401762514",
-      "expiresAt": "2025-11-21T18:24:26.352Z",
+      "text": "Week 14 Mid-American Betting Preview\nToledo Rockets (-10) @ Central Michigan Chippewas (+320)\nO/U: 44.5\n\n#GoRockets #FireUpChips",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762872",
+      "expiresAt": "2025-11-28T18:22:51.494Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.352Z"
+      "generatedAt": "2025-11-27T18:22:51.494Z"
     },
     {
-      "id": "betting_preview_week13_401760417",
+      "id": "betting_preview_week14_401762875",
       "kind": "betting_preview",
-      "text": "Week 13 Mountain West Betting Preview\nUtah State Aggies (+124) @ Fresno State Bulldogs (-3)\nO/U: 50.5\n\n#AggiesAllTheWay #GoDogs",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401760417",
-      "expiresAt": "2025-11-21T18:24:26.352Z",
+      "text": "Week 14 Mid-American Betting Preview\nBall State Cardinals (+650) @ Miami (OH) RedHawks (-17.5)\nO/U: 41.5\n\n#ChirpChirp #LoveAndHonor",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762875",
+      "expiresAt": "2025-11-28T18:22:51.494Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.352Z"
+      "generatedAt": "2025-11-27T18:22:51.494Z"
     },
     {
-      "id": "betting_preview_week13_401757305",
+      "id": "betting_preview_week14_401756963",
       "kind": "betting_preview",
-      "text": "Week 13 Conference USA Betting Preview\nJacksonville State Gamecocks (-1.5) @ Florida International Panthers (+-105)\nO/U: 55.5\n\n#GoGamecocks #PawsUp",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401757305",
-      "expiresAt": "2025-11-21T18:24:26.352Z",
+      "text": "Week 14 Big 12 Betting Preview\nUCF Knights (+700) @ BYU Cougars (-17.5)\nO/U: 47.5\n\n#ChargeOn #GoCougs",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401756963",
+      "expiresAt": "2025-11-28T18:22:51.494Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.352Z"
+      "generatedAt": "2025-11-27T18:22:51.494Z"
     },
     {
-      "id": "betting_preview_week13_401761658",
+      "id": "betting_preview_week14_401757311",
       "kind": "betting_preview",
-      "text": "Week 13 Sun Belt Betting Preview\nSouthern Miss Golden Eagles (-1.5) @ South Alabama Jaguars (+-102)\nO/U: 53.5\n\n#ToTheTop #GoJags",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401761658",
-      "expiresAt": "2025-11-21T18:24:26.352Z",
+      "text": "Week 14 Conference USA Betting Preview\nFlorida International Panthers (-11.5) @ Sam Houston Bearkats (+350)\nO/U: 51.5\n\n#PawsUp #EatEmUpKats",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401757311",
+      "expiresAt": "2025-11-28T18:22:51.494Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.352Z"
+      "generatedAt": "2025-11-27T18:22:51.494Z"
     },
     {
-      "id": "betting_preview_week13_401761660",
+      "id": "betting_preview_week14_401761663",
       "kind": "betting_preview",
-      "text": "Week 13 Sun Belt Betting Preview\nGeorgia State Panthers (+330) @ Troy Trojans (-10.5)\nO/U: 51.5\n\n#StateNotSouthern #OneTROY",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401761660",
-      "expiresAt": "2025-11-21T18:24:26.352Z",
+      "text": "Week 14 Sun Belt Betting Preview\nGeorgia Southern Eagles (+320) @ Marshall Thundering Herd (-10.5)\nO/U: 63.5\n\n#HailSouthern #WeAreMarshall",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401761663",
+      "expiresAt": "2025-11-28T18:22:51.494Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.352Z"
+      "generatedAt": "2025-11-27T18:22:51.494Z"
     },
     {
-      "id": "betting_preview_week13_401760415",
+      "id": "betting_preview_week14_401757312",
       "kind": "betting_preview",
-      "text": "Week 13 Mountain West Betting Preview\nNew Mexico Lobos (-3.5) @ Air Force Falcons (+140)\nO/U: 55.5\n\n#GoLobos #LetsFly",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401760415",
-      "expiresAt": "2025-11-21T18:24:26.352Z",
+      "text": "Week 14 Conference USA Betting Preview\nWestern Kentucky Hilltoppers (-2.5) @ Jacksonville State Gamecocks (+114)\nO/U: 55.5\n\n#GoTops #GoGamecocks",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401757312",
+      "expiresAt": "2025-11-28T18:22:51.494Z",
       "source": "cfbd",
-      "generatedAt": "2025-11-20T18:24:26.352Z"
+      "generatedAt": "2025-11-27T18:22:51.494Z"
     },
     {
-      "id": "final_401754598",
+      "id": "betting_preview_week14_401761664",
+      "kind": "betting_preview",
+      "text": "Week 14 Sun Belt Betting Preview\nGeorgia State Panthers (+2000) @ Old Dominion Monarchs (-27.5)\nO/U: 58.5\n\n#StateNotSouthern #ReignOn",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401761664",
+      "expiresAt": "2025-11-28T18:22:51.494Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-27T18:22:51.494Z"
+    },
+    {
+      "id": "betting_preview_week14_401754608",
+      "kind": "betting_preview",
+      "text": "Week 14 ACC Betting Preview\nBoston College Eagles (-3) @ Syracuse Orange (+130)\nO/U: 52.5\n\n#WeAreBC #OrangeNation",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401754608",
+      "expiresAt": "2025-11-28T18:22:51.495Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-27T18:22:51.495Z"
+    },
+    {
+      "id": "betting_preview_week14_401762441",
+      "kind": "betting_preview",
+      "text": "Week 14 American Athletic Betting Preview\nArmy Black Knights (+230) @ UTSA Roadrunners (-7.5)\nO/U: 51.5\n\n#GoArmy #BirdsUp",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401762441",
+      "expiresAt": "2025-11-28T18:22:51.495Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-27T18:22:51.495Z"
+    },
+    {
+      "id": "betting_preview_week14_401752788",
+      "kind": "betting_preview",
+      "text": "Week 14 SEC Betting Preview\nOle Miss Rebels (-7) @ Mississippi State Bulldogs (+215)\nO/U: 62.5\n\n#HottyToddy #HailState",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752788",
+      "expiresAt": "2025-11-28T18:22:51.495Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-27T18:22:51.495Z"
+    },
+    {
+      "id": "betting_preview_week14_401752916",
+      "kind": "betting_preview",
+      "text": "Week 14 Big Ten Betting Preview\nIowa Hawkeyes (-6) @ Nebraska Cornhuskers (+185)\nO/U: 39.5\n\n#Hawkeyes #GBR",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401752916",
+      "expiresAt": "2025-11-28T18:22:51.495Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-27T18:22:51.495Z"
+    },
+    {
+      "id": "betting_preview_week14_401760425",
+      "kind": "betting_preview",
+      "text": "Week 14 Mountain West Betting Preview\nUNLV Rebels (-7.5) @ Nevada Wolf Pack (+260)\nO/U: 53.5\n\n#GoRebels #BattleBorn",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760425",
+      "expiresAt": "2025-11-28T18:22:51.495Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-27T18:22:51.495Z"
+    },
+    {
+      "id": "betting_preview_week14_401760424",
+      "kind": "betting_preview",
+      "text": "Week 14 Mountain West Betting Preview\nWyoming Cowboys (+250) @ Hawai'i Rainbow Warriors (-7.5)\nO/U: 44.5\n\n#GoWyo #GoBows",
+      "link": "https://www.espn.com/college-football/game/_/gameId/401760424",
+      "expiresAt": "2025-11-28T18:22:51.495Z",
+      "source": "cfbd",
+      "generatedAt": "2025-11-27T18:22:51.495Z"
+    },
+    {
+      "id": "final_401752924",
       "kind": "final",
-      "text": "FINAL: 21-11\nNC State Wolfpack - 21\nFlorida State Seminoles - 11\n\n(FSU): Tommy Castellanos 16/32, 203 YDS, 1 TD, 2 INT\n(NCSU): Hollywood Smothers 21 CAR, 84 YDS\n\n#CFB #GoPack",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754598",
-      "expiresAt": "2025-11-24T07:08:09.692Z",
+      "text": "FINAL: 56-3\n#2 Indiana Hoosiers - 56\nPurdue Boilermakers - 3\n\n(IU): Roman Hemby 12 CAR, 152 YDS, 1 TD\n(PUR): Ryan Browne 25/47, 238 YDS, 1 INT\n\n#Blowout #CFB #LEO",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752924",
+      "expiresAt": "2025-12-01T07:08:23.029Z",
       "source": "espn",
-      "generatedAt": "2025-11-22T19:08:09.692Z"
+      "generatedAt": "2025-11-29T19:08:23.029Z"
     },
     {
-      "id": "final_401760418",
+      "id": "final_401752792",
       "kind": "final",
-      "text": "FINAL: 38-10\nUNLV Rebels - 38\nHawai'i Rainbow Warriors - 10\n\n(HAW): Jackson Harris 3 REC, 79 YDS, 1 TD\n(UNLV): Anthony Colandrea 21/26, 253 YDS, 3 TD\n\n#CFB #GoRebels",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760418",
-      "expiresAt": "2025-11-24T07:08:09.692Z",
+      "text": "FINAL: 27-17\n#16 Texas Longhorns - 27\n#3 Texas A&M Aggies - 17\n\n(TA&M): Marcel Reed 20/32, 180 YDS, 2 INT\n(TEX): Quintrevion Wisner 19 CAR, 155 YDS\n\n#Upset #CFB #HookEm",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752792",
+      "expiresAt": "2025-12-01T07:08:23.029Z",
       "source": "espn",
-      "generatedAt": "2025-11-22T19:08:09.692Z"
+      "generatedAt": "2025-11-29T19:08:23.029Z"
     },
     {
-      "id": "final_401752912",
+      "id": "final_401756961",
       "kind": "final",
-      "text": "FINAL: 42-9\n#1 Ohio State Buckeyes - 42\nRutgers Scarlet Knights - 9\n\n(OSU): Julian Sayin 13/19, 157 YDS, 2 TD\n\n#Blowout #CFB #GoBucks",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752912",
-      "expiresAt": "2025-11-24T14:33:53.862Z",
+      "text": "FINAL: 23-7\n#25 Arizona Wildcats - 23\n#20 Arizona State Sun Devils - 7\n\n(ARIZ): Noah Fifita 28/45, 286 YDS, 1 TD\n(ASU): Raleek Brown 13 CAR, 63 YDS\n\n#Upset #CFB #BearDown",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756961",
+      "expiresAt": "2025-12-01T07:08:23.029Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.862Z"
+      "generatedAt": "2025-11-29T19:08:23.029Z"
     },
     {
-      "id": "final_401752781",
+      "id": "final_401752921",
       "kind": "final",
-      "text": "FINAL: 48-0\n#3 Texas A&M Aggies - 48\nSamford Bulldogs - 0\n\n(TA&M): Marcel Reed 10/15, 120 YDS, 3 TD\n\n#Blowout #Shutout #CFB #GigEm",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752781",
-      "expiresAt": "2025-11-24T14:33:53.862Z",
+      "text": "FINAL: 27-9\n#1 Ohio State Buckeyes - 27\n#15 Michigan Wolverines - 9\n\n(OSU): Julian Sayin 19/26, 233 YDS, 3 TD, 1 INT\n\n#CFB #GoBucks",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752921",
+      "expiresAt": "2025-12-01T14:32:37.650Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.862Z"
+      "generatedAt": "2025-11-30T02:32:37.650Z"
     },
     {
-      "id": "final_401752776",
+      "id": "final_401756968",
       "kind": "final",
-      "text": "FINAL: 35-3\n#4 Georgia Bulldogs - 35\nCharlotte 49ers - 3\n\n(UGA): Nate Frazier 12 CAR, 54 YDS, 2 TD\n\n#Blowout #CFB #GoDawgs",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752776",
-      "expiresAt": "2025-11-24T14:33:53.862Z",
+      "text": "FINAL: 49-0\n#5 Texas Tech Red Raiders - 49\nWest Virginia Mountaineers - 0\n\n(TTU): Behren Morton 25/32, 310 YDS, 3 TD\n\n#Blowout #Shutout #CFB #WreckEm",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756968",
+      "expiresAt": "2025-12-01T14:32:37.650Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.862Z"
+      "generatedAt": "2025-11-30T02:32:37.650Z"
     },
     {
-      "id": "final_401752911",
+      "id": "final_401752917",
       "kind": "final",
-      "text": "FINAL: 42-27\n#7 Oregon Ducks - 42\n#15 USC Trojans - 27\n\n(USC): Jayden Maiava 25/43, 306 YDS, 3 TD, 2 INT\n(ORE): Noah Whittington 19 CAR, 104 YDS, 1 TD\n\n#CFB #GoDucks",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752911",
-      "expiresAt": "2025-11-24T14:33:53.862Z",
+      "text": "FINAL: 26-14\n#6 Oregon Ducks - 26\nWashington Huskies - 14\n\n(ORE): Dante Moore 20/29, 286 YDS, 1 TD\n(WASH): Adam Mohammed 14 CAR, 105 YDS\n\n#CFB #GoDucks",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752917",
+      "expiresAt": "2025-12-01T14:32:37.651Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.862Z"
+      "generatedAt": "2025-11-30T02:32:37.651Z"
     },
     {
-      "id": "final_401752778",
+      "id": "final_401752789",
       "kind": "final",
-      "text": "FINAL: 17-6\n#8 Oklahoma Sooners - 17\n#22 Missouri Tigers - 6\n\n(MIZ): Beau Pribula 20/36, 231 YDS, 2 INT\n(OU): John Mateer 18 CAR, 60 YDS\n\n#CFB #BoomerSooner",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752778",
-      "expiresAt": "2025-11-24T14:33:53.862Z",
+      "text": "FINAL: 17-13\n#8 Oklahoma Sooners - 17\nLSU Tigers - 13\n\n(OU): John Mateer 23/38, 318 YDS, 2 TD, 3 INT\n\n#CFB #BoomerSooner",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752789",
+      "expiresAt": "2025-12-01T14:32:37.651Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.862Z"
+      "generatedAt": "2025-11-30T02:32:37.651Z"
     },
     {
-      "id": "final_401754604",
+      "id": "final_401756963",
       "kind": "final",
-      "text": "FINAL: 70-7\n#9 Notre Dame Fighting Irish - 70\nSyracuse Orange - 7\n\n(SYR): Joseph Filardi 14/26, 83 YDS, 3 INT\n(ND): Jeremiyah Love 8 CAR, 171 YDS, 3 TD\n\n#Blowout #CFB #GoIrish",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754604",
-      "expiresAt": "2025-11-24T14:33:53.863Z",
+      "text": "FINAL: 41-21\n#11 BYU Cougars - 41\nUCF Knights - 21\n\n(BYU): LJ Martin 22 CAR, 95 YDS, 3 TD\n\n#CFB #GoCougs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756963",
+      "expiresAt": "2025-12-01T14:32:37.651Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.863Z"
+      "generatedAt": "2025-11-30T02:32:37.651Z"
     },
     {
-      "id": "final_401752773",
+      "id": "final_401754611",
       "kind": "final",
-      "text": "FINAL: 56-0\n#10 Alabama Crimson Tide - 56\nEastern Illinois Panthers - 0\n\n(ALA): Jam Miller 11 CAR, 62 YDS, 1 TD\n\n#Blowout #Shutout #CFB #RollTide",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752773",
-      "expiresAt": "2025-11-24T14:33:53.863Z",
+      "text": "FINAL: 38-7\n#12 Miami Hurricanes - 38\n#22 Pittsburgh Panthers - 7\n\n(MIA): Carson Beck 23/29, 267 YDS, 3 TD, 1 INT\n\n#Blowout #CFB #GoCanes",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754611",
+      "expiresAt": "2025-12-01T14:32:37.651Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.863Z"
+      "generatedAt": "2025-11-30T02:32:37.651Z"
     },
     {
-      "id": "final_401756960",
+      "id": "final_401752791",
       "kind": "final",
-      "text": "FINAL: 51-47\n#12 Utah Utes - 51\nKansas State Wildcats - 47\n\n(KSU): Joe Jackson 24 CAR, 293 YDS, 3 TD\n(UTAH): Devon Dampier 18/33, 259 YDS, 2 TD\n\n#Shootout #CFB #GoUtes",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756960",
-      "expiresAt": "2025-11-24T14:33:53.863Z",
+      "text": "FINAL: 45-24\n#14 Vanderbilt Commodores - 45\n#19 Tennessee Volunteers - 24\n\n(VAN): Diego Pavia 20 CAR, 165 YDS, 1 TD\n(TENN): Joey Aguilar 29/44, 299 YDS, 1 TD\n\n#CFB #AnchorDown",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752791",
+      "expiresAt": "2025-12-01T14:32:37.651Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.863Z"
+      "generatedAt": "2025-11-30T02:32:37.651Z"
     },
     {
-      "id": "final_401754603",
+      "id": "final_401752787",
       "kind": "final",
-      "text": "FINAL: 34-17\n#13 Miami Hurricanes - 34\nVirginia Tech Hokies - 17\n\n(MIA): Carson Beck 27/32, 320 YDS, 4 TD\n(VT): Marcellous Hawkins 8 CAR, 72 YDS\n\n#CFB #GoCanes",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754603",
-      "expiresAt": "2025-11-24T14:33:53.863Z",
+      "text": "FINAL: 41-0\nLouisville Cardinals - 41\nKentucky Wildcats - 0\n\n(LOU): Miller Moss 12/20, 182 YDS, 3 TD\n\n#Blowout #Shutout #CFB #GoCards",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752787",
+      "expiresAt": "2025-12-01T14:32:37.651Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.863Z"
+      "generatedAt": "2025-11-30T02:32:37.651Z"
     },
     {
-      "id": "final_401752782",
+      "id": "final_401752790",
       "kind": "final",
-      "text": "FINAL: 45-17\n#14 Vanderbilt Commodores - 45\nKentucky Wildcats - 17\n\n(VAN): Diego Pavia 33/39, 484 YDS, 5 TD, 1 INT\n\n#CFB #AnchorDown",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752782",
-      "expiresAt": "2025-11-24T14:33:53.863Z",
+      "text": "FINAL: 28-14\nClemson Tigers - 28\nSouth Carolina Gamecocks - 14\n\n(CLEM): Adam Randall 24 CAR, 102 YDS, 1 TD\n(SC): LaNorris Sellers 23/42, 381 YDS, 2 TD, 2 INT\n\n#CFB #ALLIN",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752790",
+      "expiresAt": "2025-12-01T14:32:37.651Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.863Z"
+      "generatedAt": "2025-11-30T02:32:37.651Z"
     },
     {
-      "id": "final_401752780",
+      "id": "final_401756962",
       "kind": "final",
-      "text": "FINAL: 52-37\n#17 Texas Longhorns - 52\nArkansas Razorbacks - 37\n\n(ARK): Mike Washington Jr. 17 CAR, 105 YDS, 1 TD\n(TEX): Arch Manning 18/30, 389 YDS, 4 TD\n\n#Shootout #CFB #HookEm",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752780",
-      "expiresAt": "2025-11-24T14:33:53.863Z",
+      "text": "FINAL: 31-24\nHouston Cougars - 31\nBaylor Bears - 24\n\n(HOU): Conner Weigman 22 CAR, 121 YDS, 2 TD\n(BAY): Sawyer Robertson 23/46, 309 YDS, 1 TD, 1 INT\n\n#CFB #GoCoogs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756962",
+      "expiresAt": "2025-12-01T14:32:37.651Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.863Z"
+      "generatedAt": "2025-11-30T02:32:37.651Z"
     },
     {
-      "id": "final_401752914",
+      "id": "final_401756965",
       "kind": "final",
-      "text": "FINAL: 45-20\n#18 Michigan Wolverines - 45\nMaryland Terrapins - 20\n\n(MICH): Bryson Kuzdzal 20 CAR, 100 YDS, 3 TD\n(MD): Shaleak Knotts 4 REC, 82 YDS\n\n#CFB #GoBlue",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752914",
-      "expiresAt": "2025-11-24T14:33:53.863Z",
+      "text": "FINAL: 24-14\nKansas State Wildcats - 24\nColorado Buffaloes - 14\n\n(COLO): Kaidon Salter 14/25, 172 YDS, 1 INT\n(KSU): Joe Jackson 26 CAR, 142 YDS, 3 TD\n\n#CFB #EMAW",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756965",
+      "expiresAt": "2025-12-01T14:32:37.651Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.863Z"
+      "generatedAt": "2025-11-30T02:32:37.651Z"
     },
     {
-      "id": "final_401756957",
+      "id": "final_401756966",
       "kind": "final",
-      "text": "FINAL: 17-14\nTCU Horned Frogs - 17\n#23 Houston Cougars - 14\n\n(TCU): Josh Hoover 24/33, 293 YDS, 2 TD, 3 INT\n(HOU): Conner Weigman 15 CAR, 114 YDS\n\n#Upset #CFB #GoFrogs",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756957",
-      "expiresAt": "2025-11-24T14:33:53.863Z",
+      "text": "FINAL: 20-13\nIowa State Cyclones - 20\nOklahoma State Cowboys - 13\n\n(ISU): Carson Hansen 24 CAR, 109 YDS\n(OKST): Zane Flores 19/30, 166 YDS, 1 INT\n\n#CFB #CyclONEnation",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756966",
+      "expiresAt": "2025-12-01T14:32:37.651Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.863Z"
+      "generatedAt": "2025-11-30T02:32:37.651Z"
     },
     {
-      "id": "final_401762515",
+      "id": "final_401762519",
       "kind": "final",
-      "text": "FINAL: 37-13\n#24 Tulane Green Wave - 37\nTemple Owls - 13\n\n(TULN): Jake Retzlaff 17/28, 231 YDS, 2 TD\n\n#CFB #RollWave",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762515",
-      "expiresAt": "2025-11-24T14:33:53.863Z",
+      "text": "FINAL: 42-3\nEast Carolina Pirates - 42\nFlorida Atlantic Owls - 3\n\n(ECU): Katin Houser 20/29, 258 YDS, 2 TD\n\n#Blowout #CFB #GoPirates",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762519",
+      "expiresAt": "2025-12-01T14:32:37.651Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.863Z"
+      "generatedAt": "2025-11-30T02:32:37.651Z"
     },
     {
-      "id": "final_401752909",
+      "id": "final_401762872",
       "kind": "final",
-      "text": "FINAL: 38-35\nNorthwestern Wildcats - 38\nMinnesota Golden Gophers - 35\n\n(NU): Preston Stone 25/30, 305 YDS, 2 TD\n\n#Shootout #CFB #GoCats",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752909",
-      "expiresAt": "2025-11-24T14:33:53.863Z",
+      "text": "FINAL: 21-3\nToledo Rockets - 21\nCentral Michigan Chippewas - 3\n\n(TOL): Chip Trayanum 16 CAR, 94 YDS, 1 TD\n(CMU): Joe Labas 19/30, 242 YDS, 1 INT\n\n#CFB #GoRockets",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762872",
+      "expiresAt": "2025-12-01T14:32:37.652Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.863Z"
+      "generatedAt": "2025-11-30T02:32:37.652Z"
     },
     {
-      "id": "final_401754602",
+      "id": "final_401762875",
       "kind": "final",
-      "text": "FINAL: 38-6\nSMU Mustangs - 38\nLouisville Cardinals - 6\n\n(SMU): Kevin Jennings 29/37, 303 YDS, 3 TD\n\n#Blowout #CFB #PonyUpDallas",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754602",
-      "expiresAt": "2025-11-24T14:33:53.863Z",
+      "text": "FINAL: 45-24\nMiami (OH) RedHawks - 45\nBall State Cardinals - 24\n\n(BALL): Donovan Hamilton 4 REC, 72 YDS\n(M-OH): Thomas Gotkowski 12/24, 226 YDS, 3 TD\n\n#CFB #LoveAndHonor",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762875",
+      "expiresAt": "2025-12-01T14:32:37.652Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.863Z"
+      "generatedAt": "2025-11-30T02:32:37.652Z"
     },
     {
-      "id": "final_401754606",
+      "id": "final_401757310",
       "kind": "final",
-      "text": "FINAL: 52-14\nWake Forest Demon Deacons - 52\nDelaware Blue Hens - 14\n\n(WAKE): Robby Ashford 15/22, 292 YDS, 3 TD, 1 INT\n\n#Blowout #CFB #GoDeacs",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754606",
-      "expiresAt": "2025-11-24T14:33:53.863Z",
+      "text": "FINAL: 61-31\nDelaware Blue Hens - 61\nUTEP Miners - 31\n\n(UTEP): Skyler Locklear 22/39, 338 YDS, 4 TD, 5 INT\n(DEL): Jo Silver 7 CAR, 64 YDS, 1 TD\n\n#Blowout #CFB",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757310",
+      "expiresAt": "2025-12-01T14:32:37.652Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.863Z"
+      "generatedAt": "2025-11-30T02:32:37.652Z"
     },
     {
-      "id": "final_401756958",
+      "id": "final_401757311",
       "kind": "final",
-      "text": "FINAL: 38-14\nIowa State Cyclones - 38\nKansas Jayhawks - 14\n\n(KU): Boden Groen 5 REC, 76 YDS, 1 TD\n(ISU): Rocco Becht 18/23, 241 YDS, 3 TD\n\n#CFB #CyclONEnation",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756958",
-      "expiresAt": "2025-11-24T14:33:53.864Z",
+      "text": "FINAL: 56-16\nFlorida International Panthers - 56\nSam Houston Bearkats - 16\n\n(FIU): Keyone Jenkins 15/24, 291 YDS, 3 TD, 1 INT\n\n#Blowout #CFB #PawsUp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757311",
+      "expiresAt": "2025-12-01T14:32:37.652Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.864Z"
+      "generatedAt": "2025-11-30T02:32:37.652Z"
     },
     {
-      "id": "final_401762512",
+      "id": "final_401761663",
       "kind": "final",
-      "text": "FINAL: 26-25\nTulsa Golden Hurricane - 26\nArmy Black Knights - 25\n\n(TLSA): Baylor Hayes 20/31, 267 YDS, 1 TD\n\n#CFB #ReignCane",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762512",
-      "expiresAt": "2025-11-24T14:33:53.864Z",
+      "text": "FINAL: 24-19\nGeorgia Southern Eagles - 24\nMarshall Thundering Herd - 19\n\n(GASO): JC French IV 24/37, 313 YDS, 2 TD\n(MRSH): Adrian Norton 8 REC, 160 YDS, 1 TD\n\n#CFB #HailSouthern",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761663",
+      "expiresAt": "2025-12-01T14:32:37.652Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.864Z"
+      "generatedAt": "2025-11-30T02:32:37.652Z"
     },
     {
-      "id": "final_401752954",
+      "id": "final_401757312",
       "kind": "final",
-      "text": "FINAL: 24-20\nJames Madison Dukes - 24\nWashington State Cougars - 20\n\n(WSU): Zevi Eckhaus 19/31, 171 YDS, 1 TD, 1 INT\n(JMU): Wayne Knight 15 CAR, 126 YDS, 1 TD\n\n#CFB #GoDukes",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752954",
-      "expiresAt": "2025-11-24T14:33:53.864Z",
+      "text": "FINAL: 37-34\nJacksonville State Gamecocks - 37\nWestern Kentucky Hilltoppers - 34\n\n(JVST): Caden Creel 12/19, 204 YDS, 2 TD\n\n#CFB #GoGamecocks",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757312",
+      "expiresAt": "2025-12-01T14:32:37.652Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.864Z"
+      "generatedAt": "2025-11-30T02:32:37.652Z"
     },
     {
-      "id": "final_401756954",
+      "id": "final_401757314",
       "kind": "final",
-      "text": "FINAL: 41-17\nArizona Wildcats - 41\nBaylor Bears - 17\n\n(BAY): Caden Knighten 17 CAR, 100 YDS\n(ARIZ): Noah Fifita 14/25, 183 YDS, 1 TD, 1 INT\n\n#CFB #BearDown",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756954",
-      "expiresAt": "2025-11-24T14:33:53.864Z",
+      "text": "FINAL: 42-30\nLouisiana Tech Bulldogs - 42\nMissouri State Bears - 30\n\n(LT): Trey Kukuk 16 CAR, 172 YDS, 3 TD\n(MOST): Jacob Clark 17/31, 294 YDS, 2 TD, 1 INT\n\n#CFB #EverLoyalBe",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757314",
+      "expiresAt": "2025-12-01T14:32:37.652Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.864Z"
+      "generatedAt": "2025-11-30T02:32:37.652Z"
     },
     {
-      "id": "final_401761657",
+      "id": "final_401761664",
       "kind": "final",
-      "text": "FINAL: 45-10\nOld Dominion Monarchs - 45\nGeorgia Southern Eagles - 10\n\n(ODU): Colton Joseph 20 CAR, 189 YDS, 1 TD\n(GASO): JC French IV 16/24, 147 YDS, 1 INT\n\n#Blowout #CFB #ReignOn",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761657",
-      "expiresAt": "2025-11-24T14:33:53.864Z",
+      "text": "FINAL: 27-10\nOld Dominion Monarchs - 27\nGeorgia State Panthers - 10\n\n(GAST): Christian Veilleux 18/37, 154 YDS, 1 TD, 1 INT\n(ODU): Devin Roche 21 CAR, 137 YDS, 2 TD\n\n#CFB #ReignOn",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761664",
+      "expiresAt": "2025-12-01T14:32:37.652Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.864Z"
+      "generatedAt": "2025-11-30T02:32:37.652Z"
     },
     {
-      "id": "final_401752774",
+      "id": "final_401761661",
       "kind": "final",
-      "text": "FINAL: 62-17\nAuburn Tigers - 62\nMercer Bears - 17\n\n(AUB): Deuce Knight 9 CAR, 162 YDS, 4 TD\n\n#Blowout #CFB #WarEagle",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752774",
-      "expiresAt": "2025-11-24T14:33:53.864Z",
+      "text": "FINAL: 30-29\nArkansas State Red Wolves - 30\nApp State Mountaineers - 29\n\n(ARST): Jaylen Raynor 32/47, 363 YDS, 3 TD, 1 INT\n(APP): Jaquari Lewis 22 CAR, 108 YDS\n\n#CFB #WolvesUp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761661",
+      "expiresAt": "2025-12-01T14:32:37.652Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.864Z"
+      "generatedAt": "2025-11-30T02:32:37.652Z"
     },
     {
-      "id": "final_401757306",
+      "id": "final_401754608",
       "kind": "final",
-      "text": "FINAL: 41-34\nKennesaw State Owls - 41\nMissouri State Bears - 34\n\n(MOST): Shomari Lawrence 20 CAR, 173 YDS, 1 TD\n(KENN): Amari Odom 24/34, 387 YDS, 5 TD\n\n#CFB",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757306",
-      "expiresAt": "2025-11-24T14:33:53.864Z",
+      "text": "FINAL: 34-12\nBoston College Eagles - 34\nSyracuse Orange - 12\n\n(BC): Turbo Richard 15 CAR, 102 YDS, 2 TD\n\n#CFB #WeAreBC",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754608",
+      "expiresAt": "2025-12-01T14:32:37.652Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.864Z"
+      "generatedAt": "2025-11-30T02:32:37.652Z"
     },
     {
-      "id": "final_401760419",
+      "id": "final_401757315",
       "kind": "final",
-      "text": "FINAL: 13-7\nNevada Wolf Pack - 13\nWyoming Cowboys - 7\n\n(NEV): Caleb Ramseur 19 CAR, 88 YDS\n(WYO): Kaden Anderson 22/39, 157 YDS, 1 TD\n\n#CFB #BattleBorn",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401760419",
-      "expiresAt": "2025-11-24T14:33:53.864Z",
+      "text": "FINAL: 31-24\nMiddle Tennessee Blue Raiders - 31\nNew Mexico State Aggies - 24\n\n(MTSU): Jekail Middlebrook 20 CAR, 95 YDS\n(NMSU): Adam Damante 29/44, 311 YDS, 2 TD, 2 INT\n\n#CFB #BlueRaiders",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757315",
+      "expiresAt": "2025-12-01T14:32:37.652Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.864Z"
+      "generatedAt": "2025-11-30T02:32:37.652Z"
     },
     {
-      "id": "final_401762867",
+      "id": "final_401761665",
       "kind": "final",
-      "text": "FINAL: 38-9\nToledo Rockets - 38\nBall State Cardinals - 9\n\n(TOL): Tucker Gleason 15/24, 218 YDS, 4 TD, 2 INT\n\n#CFB #GoRockets",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762867",
-      "expiresAt": "2025-11-24T14:33:53.864Z",
+      "text": "FINAL: 30-27\nLouisiana Ragin' Cajuns - 30\nUL Monroe Warhawks - 27\n\n(ULM): Aidan Armenta 19/31, 311 YDS, 3 TD\n(UL): Bill Davis 15 CAR, 126 YDS, 1 TD\n\n#CFB #GeauxCajuns",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761665",
+      "expiresAt": "2025-12-01T14:32:37.653Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.864Z"
+      "generatedAt": "2025-11-30T02:32:37.653Z"
     },
     {
-      "id": "final_401761656",
+      "id": "final_401761667",
       "kind": "final",
-      "text": "FINAL: 26-24\nApp State Mountaineers - 26\nMarshall Thundering Herd - 24\n\n(MRSH): Carlos Del Rio-Wilson 13/21, 146 YDS, 1 INT\n(APP): Jaquari Lewis 33 CAR, 175 YDS, 2 TD\n\n#CFB",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761656",
-      "expiresAt": "2025-11-24T14:33:53.864Z",
+      "text": "FINAL: 49-26\nTexas State Bobcats - 49\nSouth Alabama Jaguars - 26\n\n(TXST): Brad Jackson 13 CAR, 113 YDS, 3 TD\n\n#CFB #EatEmUp",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761667",
+      "expiresAt": "2025-12-01T14:32:37.653Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.864Z"
+      "generatedAt": "2025-11-30T02:32:37.653Z"
     },
     {
-      "id": "final_401757175",
+      "id": "final_401762517",
       "kind": "final",
-      "text": "FINAL: 48-45\nUConn Huskies - 48\nFlorida Atlantic Owls - 45\n\n(CONN): Cam Edwards 16 CAR, 101 YDS, 2 TD\n(FAU): Caden Veltkamp 42/55, 494 YDS, 2 TD, 1 INT\n\n#Shootout #CFB",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757175",
-      "expiresAt": "2025-11-24T14:33:53.864Z",
+      "text": "FINAL: 31-24\nUAB Blazers - 31\nTulsa Golden Hurricane - 24\n\n(UAB): Jalen Kitna 14/17, 166 YDS, 2 TD\n(TLSA): Ajay Allen 27 CAR, 129 YDS, 1 TD\n\n#CFB #WinAsOne",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762517",
+      "expiresAt": "2025-12-01T14:32:37.653Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.864Z"
+      "generatedAt": "2025-11-30T02:32:37.653Z"
     },
     {
-      "id": "final_401757307",
+      "id": "final_401752783",
       "kind": "final",
-      "text": "FINAL: 34-28\nLouisiana Tech Bulldogs - 34\nLiberty Flames - 28\n\n(LIB): Evan Dickens 30 CAR, 228 YDS, 2 TD\n\n#CFB #EverLoyalBe",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757307",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
+      "text": "FINAL: 31-17\nMissouri Tigers - 31\nArkansas Razorbacks - 17\n\n(MIZ): Ahmad Hardy 27 CAR, 157 YDS, 1 TD\n(ARK): KJ Jackson 11/17, 126 YDS, 1 TD\n\n#CFB #MIZ",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752783",
+      "expiresAt": "2025-12-01T14:32:37.653Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
+      "generatedAt": "2025-11-30T02:32:37.653Z"
     },
     {
-      "id": "final_401757308",
+      "id": "final_401752918",
       "kind": "final",
-      "text": "FINAL: 31-17\nMiddle Tennessee Blue Raiders - 31\nSam Houston Bearkats - 17\n\n(SHSU): Landyn Locke 25/40, 281 YDS, 2 TD, 1 INT\n(MTSU): Jekail Middlebrook 15 CAR, 106 YDS\n\n#CFB #BlueRaiders",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757308",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
+      "text": "FINAL: 17-7\nMinnesota Golden Gophers - 17\nWisconsin Badgers - 7\n\n(WIS): Hunter Simmons 12/19, 162 YDS, 2 INT\n(MINN): Darius Taylor 19 CAR, 100 YDS, 1 TD\n\n#CFB #SkiUMah",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752918",
+      "expiresAt": "2025-12-01T14:32:37.653Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
+      "generatedAt": "2025-11-30T02:32:37.653Z"
     },
     {
-      "id": "final_401757309",
+      "id": "final_401752920",
       "kind": "final",
-      "text": "FINAL: 34-31\nNew Mexico State Aggies - 34\nUTEP Miners - 31\n\n(NMSU): Adam Damante 29/41, 253 YDS, 3 TD, 1 INT\n(UTEP): Ashten Emory 18 CAR, 181 YDS, 1 TD\n\n#CFB #AggieUp",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757309",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
+      "text": "FINAL: 40-36\nPenn State Nittany Lions - 40\nRutgers Scarlet Knights - 36\n\n(PSU): Kaytron Allen 22 CAR, 226 YDS, 1 TD\n(RUTG): Athan Kaliakmanis 16/22, 338 YDS, 3 TD\n\n#Shootout #CFB #WeAre",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752920",
+      "expiresAt": "2025-12-01T14:32:37.653Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
+      "generatedAt": "2025-11-30T02:32:37.653Z"
     },
     {
-      "id": "final_401762511",
+      "id": "final_401754610",
       "kind": "final",
-      "text": "FINAL: 48-18\nSouth Florida Bulls - 48\nUAB Blazers - 18\n\n(USF): Byrum Brown 19/25, 353 YDS, 3 TD\n\n#Blowout #CFB",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762511",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
+      "text": "FINAL: 49-32\nDuke Blue Devils - 49\nWake Forest Demon Deacons - 32\n\n(WAKE): Robby Ashford 27/43, 342 YDS, 2 TD, 1 INT\n(DUKE): Nate Sheppard 23 CAR, 75 YDS, 2 TD\n\n#CFB #GoDuke",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754610",
+      "expiresAt": "2025-12-01T14:32:37.653Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
+      "generatedAt": "2025-11-30T02:32:37.653Z"
     },
     {
-      "id": "final_401752913",
+      "id": "final_401756967",
       "kind": "final",
-      "text": "FINAL: 20-17\nIowa Hawkeyes - 20\nMichigan State Spartans - 17\n\n(MSU): Alessio Milivojevic 25/42, 255 YDS, 2 TD, 1 INT\n(IOWA): Kamari Moulton 18 CAR, 78 YDS\n\n#CFB #Hawkeyes",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752913",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
+      "text": "FINAL: 45-23\nTCU Horned Frogs - 45\nCincinnati Bearcats - 23\n\n(TCU): Josh Hoover 19/22, 306 YDS, 4 TD\n\n#CFB #GoFrogs",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756967",
+      "expiresAt": "2025-12-01T14:32:37.653Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
+      "generatedAt": "2025-11-30T02:32:37.653Z"
     },
     {
-      "id": "final_401754600",
+      "id": "final_401757313",
       "kind": "final",
-      "text": "FINAL: 32-25\nDuke Blue Devils - 32\nNorth Carolina Tar Heels - 25\n\n(DUKE): Jeremiah Hasley 7 REC, 85 YDS, 1 TD\n(UNC): Gio Lopez 21/27, 204 YDS, 1 TD\n\n#CFB #GoDuke",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754600",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
+      "text": "FINAL: 48-42\nKennesaw State Owls - 48\nLiberty Flames - 42\n\n(KENN): Amari Odom 14/23, 240 YDS, 4 TD\n(LIB): Evan Dickens 43 CAR, 267 YDS, 4 TD\n\n#Shootout #CFB",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757313",
+      "expiresAt": "2025-12-01T14:32:37.653Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
+      "generatedAt": "2025-11-30T02:32:37.653Z"
     },
     {
-      "id": "final_401757305",
+      "id": "final_401761666",
       "kind": "final",
-      "text": "FINAL: 27-21\nFlorida International Panthers - 27\nJacksonville State Gamecocks - 21\n\n(JVST): Caden Creel 17/30, 198 YDS, 2 TD\n(FIU): Alex Perry 4 REC, 109 YDS, 1 TD\n\n#CFB #PawsUp",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401757305",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
+      "text": "FINAL: 28-18\nTroy Trojans - 28\nSouthern Miss Golden Eagles - 18\n\n(TROY): Goose Crowder 24/34, 285 YDS, 3 TD, 1 INT\n\n#CFB #OneTROY",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761666",
+      "expiresAt": "2025-12-01T14:32:37.653Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
+      "generatedAt": "2025-11-30T02:32:37.653Z"
     },
     {
-      "id": "final_401761658",
+      "id": "final_401762441",
       "kind": "final",
-      "text": "FINAL: 42-35\nSouth Alabama Jaguars - 42\nSouthern Miss Golden Eagles - 35\n\n(USM): Braylon Braxton 31/52, 400 YDS, 3 TD, 1 INT\n(USA): Kentrel Bullock 23 CAR, 187 YDS, 3 TD\n\n#Shootout #CFB #GoJags",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761658",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
+      "text": "FINAL: 27-24\nArmy Black Knights - 27\nUTSA Roadrunners - 24\n\n(ARMY): Noah Short 14 CAR, 127 YDS, 1 TD\n(UTSA): Owen McCown 27/40, 266 YDS, 2 TD, 1 INT\n\n#CFB #GoArmy",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762441",
+      "expiresAt": "2025-12-01T14:32:37.653Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
+      "generatedAt": "2025-11-30T02:32:37.653Z"
     },
     {
-      "id": "final_401762513",
+      "id": "final_401761662",
       "kind": "final",
-      "text": "FINAL: 58-24\nUTSA Roadrunners - 58\nEast Carolina Pirates - 24\n\n(ECU): Anthony Smith 8 REC, 143 YDS, 1 TD\n(UTSA): Owen McCown 24/33, 248 YDS, 5 TD\n\n#Blowout #CFB #BirdsUp",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762513",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
+      "text": "FINAL: 59-10\nJames Madison Dukes - 59\nCoastal Carolina Chanticleers - 10\n\n(JMU): Alonza Barnett III 15/21, 207 YDS, 3 TD, 1 INT\n\n#Blowout #CFB #GoDukes",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761662",
+      "expiresAt": "2025-12-01T14:32:37.653Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
+      "generatedAt": "2025-11-30T02:32:37.653Z"
     },
     {
-      "id": "final_401756959",
+      "id": "final_401752785",
       "kind": "final",
-      "text": "FINAL: 17-14\nUCF Knights - 17\nOklahoma State Cowboys - 14\n\n(OKST): Rodney Fields Jr. 19 CAR, 87 YDS\n(UCF): Tayven Jackson 16/25, 271 YDS, 2 TD, 2 INT\n\n#CFB #ChargeOn",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401756959",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
+      "text": "FINAL: 40-21\nFlorida Gators - 40\nFlorida State Seminoles - 21\n\n(FSU): Tommy Castellanos 17/28, 240 YDS, 2 TD, 1 INT\n(FLA): Jadan Baugh 38 CAR, 266 YDS, 2 TD\n\n#CFB #GoGators",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752785",
+      "expiresAt": "2025-12-01T14:32:37.653Z",
       "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
-    },
-    {
-      "id": "final_401761660",
-      "kind": "final",
-      "text": "FINAL: 31-19\nTroy Trojans - 31\nGeorgia State Panthers - 19\n\n(GAST): Javon Robinson 7 REC, 146 YDS, 1 TD\n(TROY): Goose Crowder 27/43, 361 YDS, 4 TD\n\n#CFB #OneTROY",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761660",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
-      "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
-    },
-    {
-      "id": "final_401752779",
-      "kind": "final",
-      "text": "FINAL: 51-7\nSouth Carolina Gamecocks - 51\nCoastal Carolina Chanticleers - 7\n\n(SC): LaNorris Sellers 16/20, 274 YDS, 2 TD\n\n#Blowout #CFB #SpursUp",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752779",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
-      "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
-    },
-    {
-      "id": "final_401754605",
-      "kind": "final",
-      "text": "FINAL: 45-10\nClemson Tigers - 45\nFurman Paladins - 10\n\n(FUR): Trey Hedden 22/38, 179 YDS, 1 TD, 1 INT\n(CLEM): Chris Denson 6 CAR, 106 YDS, 1 TD\n\n#Blowout #CFB #ALLIN",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754605",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
-      "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
-    },
-    {
-      "id": "final_401761659",
-      "kind": "final",
-      "text": "FINAL: 31-14\nTexas State Bobcats - 31\nUL Monroe Warhawks - 14\n\n(TXST): Brad Jackson 25/32, 201 YDS, 2 TD, 1 INT\n\n#CFB #EatEmUp",
-      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401761659",
-      "expiresAt": "2025-11-24T14:33:53.865Z",
-      "source": "espn",
-      "generatedAt": "2025-11-23T02:33:53.865Z"
+      "generatedAt": "2025-11-30T02:32:37.653Z"
     }
   ]
 }
