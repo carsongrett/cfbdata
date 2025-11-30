@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-30T04:07:06.714Z",
+  "generatedAt": "2025-11-30T04:50:50.971Z",
   "posts": [
     {
       "id": "ap_top10_week14",
@@ -927,6 +927,51 @@
       "expiresAt": "2025-12-01T16:07:07.161Z",
       "source": "espn",
       "generatedAt": "2025-11-30T04:07:07.161Z"
+    },
+    {
+      "id": "final_401752923",
+      "kind": "final",
+      "text": "FINAL: 38-28\nMichigan State Spartans - 38\nMaryland Terrapins - 28\n\n(MD): Malik Washington 38/61, 459 YDS, 3 TD, 1 INT\n(MSU): Elijah Tau-Tolliver 13 CAR, 95 YDS\n\n#CFB #GoGreen",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752923",
+      "expiresAt": "2025-12-01T16:50:51.588Z",
+      "source": "espn",
+      "generatedAt": "2025-11-30T04:50:51.588Z"
+    },
+    {
+      "id": "final_401752919",
+      "kind": "final",
+      "text": "FINAL: 29-10\n#17 USC Trojans - 29\nUCLA Bruins - 10\n\n(UCLA): Kwazi Gilmer 11 REC, 95 YDS, 1 TD\n(USC): Jayden Maiava 21/29, 257 YDS, 2 TD\n\n#CFB #FightOn",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752919",
+      "expiresAt": "2025-12-01T16:50:51.588Z",
+      "source": "espn",
+      "generatedAt": "2025-11-30T04:50:51.588Z"
+    },
+    {
+      "id": "final_401762518",
+      "kind": "final",
+      "text": "FINAL: 27-0\n#24 Tulane Green Wave - 27\nCharlotte 49ers - 0\n\n(TULN): Jake Retzlaff 28/38, 291 YDS, 2 INT\n\n#Shutout #CFB #RollWave",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401762518",
+      "expiresAt": "2025-12-01T16:50:51.588Z",
+      "source": "espn",
+      "generatedAt": "2025-11-30T04:50:51.588Z"
+    },
+    {
+      "id": "final_401752922",
+      "kind": "final",
+      "text": "FINAL: 20-13\nIllinois Fighting Illini - 20\nNorthwestern Wildcats - 13\n\n(NU): Preston Stone 19/36, 163 YDS, 1 TD, 3 INT\n\n#CFB #Illini",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401752922",
+      "expiresAt": "2025-12-01T16:50:51.588Z",
+      "source": "espn",
+      "generatedAt": "2025-11-30T04:50:51.588Z"
+    },
+    {
+      "id": "final_401754612",
+      "kind": "final",
+      "text": "FINAL: 42-19\nNC State Wolfpack - 42\nNorth Carolina Tar Heels - 19\n\n(UNC): Jordan Shipp 8 REC, 90 YDS, 1 TD\n(NCSU): CJ Bailey 21/30, 201 YDS, 2 TD\n\n#CFB #GoPack",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754612",
+      "expiresAt": "2025-12-01T16:50:51.588Z",
+      "source": "espn",
+      "generatedAt": "2025-11-30T04:50:51.588Z"
     }
   ]
 }
