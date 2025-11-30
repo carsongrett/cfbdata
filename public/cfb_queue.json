@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-30T03:44:52.567Z",
+  "generatedAt": "2025-11-30T04:07:06.714Z",
   "posts": [
     {
       "id": "ap_top10_week14",
@@ -918,6 +918,15 @@
       "expiresAt": "2025-12-01T15:44:53.039Z",
       "source": "espn",
       "generatedAt": "2025-11-30T03:44:53.039Z"
+    },
+    {
+      "id": "final_401754613",
+      "kind": "final",
+      "text": "FINAL: 27-7\n#18 Virginia Cavaliers - 27\nVirginia Tech Hokies - 7\n\n(VT): Shamarius Peterkin 1 REC, 57 YDS, 1 TD\n(UVA): J'Mari Taylor 20 CAR, 80 YDS, 1 TD\n\n#CFB #GoHoos",
+      "link": "https://www.espn.com/college-football/boxscore/_/gameId/401754613",
+      "expiresAt": "2025-12-01T16:07:07.161Z",
+      "source": "espn",
+      "generatedAt": "2025-11-30T04:07:07.161Z"
     }
   ]
 }
